@@ -1,0 +1,120 @@
+\documentclass[12pt,a4paper]{book}
+
+% --- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{nicefrac}
+
+% Degree symbol
+\newcommand{\degree}{\ensuremath{^\circ}}
+
+
+% --- Per-chapter mini tables of contents ---
+\usepackage{minitoc}
+\setcounter{tocdepth}{0} % Global ToC: chapters only
+\mtcsettitle{minitoc}{In this chapter} % Mini-TOC heading text
+
+% --- Page Setup ---
+\geometry{margin=2cm}
+% --- Spacing tweaks ---
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+
+% --- Compact lists ---
+\usepackage{enumitem}
+\setlist[itemize]{topsep=2pt,itemsep=2pt}
+\setlist[enumerate]{topsep=2pt,itemsep=2pt}
+
+% --- Section spacing (optional, keeps headings tight) ---
+\usepackage{titlesec}
+\titlespacing*{\chapter}{0pt}{2ex plus .5ex}{1ex}
+\titlespacing*{\section}{0pt}{1.2ex plus .3ex}{0.6ex}
+\titlespacing*{\subsection}{0pt}{1ex plus .2ex}{0.4ex}
+
+% --- Pretty recipe boxes ---
+\usepackage[most]{tcolorbox}
+\tcbset{
+  recipe style/.style={
+    enhanced, breakable,
+    colback=white,
+    colframe=black!20,
+    boxrule=0.6pt,
+    arc=3mm,
+    drop shadow,
+    left=6mm,right=6mm,top=4mm,bottom=4mm,
+  }
+}
+\newenvironment{recipebox}[3]% #1 Title, #2 Servings, #3 Time
+{%
+  \phantomsection
+  \addcontentsline{toc}{section}{#1}% add recipe to chapter mini-TOC
+  \begin{tcolorbox}[recipe style, title={\textbf{\large #1}}]
+  \textit{Servings:} #2 \hfill \textit{Time:} #3
+  \par\medskip
+}
+{\end{tcolorbox}}
+
+% Sub-environments for structure inside the box
+\newenvironment{ingredients}
+  {\subsection*{Ingredients}\begin{itemize}[leftmargin=2em]}
+  {\end{itemize}\medskip}
+
+\newenvironment{method}
+  {\subsection*{Method}\begin{enumerate}[leftmargin=2em]}
+  {\end{enumerate}}
+
+% Sub-environment for optional notes (paragraph style)
+\newenvironment{notes}
+  {\subsection*{Notes}\begin{quote}\small\itshape}
+  {\end{quote}\medskip}
+
+% (Optional) Bullet-style notes if you ever want them
+\newenvironment{notelist}
+  {\subsection*{Notes}\begin{itemize}[leftmargin=2em]}
+  {\end{itemize}\medskip}
+
+% --- Variation boxes inside recipes ---
+\tcbset{
+  variation style/.style={
+    enhanced,
+    colback=black!1,
+    colframe=black!15,
+    boxrule=0.4pt,
+    arc=2mm,
+    left=3mm,right=3mm,top=2mm,bottom=2mm,
+    before skip=4pt,after skip=4pt,
+  }
+}
+
+% #1 = variation title
+\newenvironment{variationbox}[1]
+  {\begin{tcolorbox}[variation style, title={\textbf{#1}}]}
+  {\end{tcolorbox}}
+
+
+
+% --- Header/Footer ---
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\leftmark}
+\fancyhead[R]{\thepage}
+
+\begin{document}
+
+\include{InstantPot/Beefaroni}
+\include{InstantPot/chicken&rice}
+\include{InstantPot/chicken coconut curry}
+\include{InstantPot/pork mince Bolognese}
+\include{InstantPot/Sausage_Ragu}
+\include{InstantPot/SausagePasta}
+\include{InstantPot/Sausage&Rice}
+\include{InstantPot/Thai Peanut Chicken}
+
+\end{document}

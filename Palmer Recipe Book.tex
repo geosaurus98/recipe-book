@@ -1,0 +1,286 @@
+\documentclass[13pt,a4paper]{book}
+
+% --- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{nicefrac}
+
+% Degree symbol
+\newcommand{\degree}{\ensuremath{^\circ}}
+
+
+% --- Per-chapter mini tables of contents ---
+\usepackage{minitoc}
+\setcounter{tocdepth}{0} % Global ToC: chapters only
+\mtcsettitle{minitoc}{In this chapter} % Mini-TOC heading text
+
+% --- Page Setup ---
+\geometry{margin=2.5cm}
+% --- Spacing tweaks ---
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+
+% --- Compact lists ---
+\usepackage{enumitem}
+\setlist[itemize]{topsep=2pt,itemsep=2pt}
+\setlist[enumerate]{topsep=2pt,itemsep=2pt}
+
+% --- Section spacing (optional, keeps headings tight) ---
+\usepackage{titlesec}
+\titlespacing*{\chapter}{0pt}{2ex plus .5ex}{1ex}
+\titlespacing*{\section}{0pt}{1.2ex plus .3ex}{0.6ex}
+\titlespacing*{\subsection}{0pt}{1ex plus .2ex}{0.4ex}
+
+% --- Pretty recipe boxes ---
+\usepackage[most]{tcolorbox}
+\tcbset{
+  recipe style/.style={
+    enhanced, breakable,
+    colback=white,
+    colframe=black!20,
+    boxrule=0.6pt,
+    arc=3mm,
+    drop shadow,
+    left=6mm,right=6mm,top=4mm,bottom=4mm,
+  }
+}
+\newenvironment{recipebox}[3]% #1 Title, #2 Servings, #3 Time
+{%
+  \phantomsection
+  \addcontentsline{toc}{section}{#1}% add recipe to chapter mini-TOC
+  \begin{tcolorbox}[recipe style, title={\textbf{\large #1}}]
+  \textit{Servings:} #2 \hfill \textit{Time:} #3
+  \par\medskip
+}
+{\end{tcolorbox}}
+
+% Sub-environments for structure inside the box
+\newenvironment{ingredients}
+  {\subsection*{Ingredients}\begin{itemize}[leftmargin=2em]}
+  {\end{itemize}\medskip}
+
+\newenvironment{method}
+  {\subsection*{Method}\begin{enumerate}[leftmargin=2em]}
+  {\end{enumerate}}
+
+% Sub-environment for optional notes (paragraph style)
+\newenvironment{notes}
+  {\subsection*{Notes}\begin{quote}\small\itshape}
+  {\end{quote}\medskip}
+
+% (Optional) Bullet-style notes if you ever want them
+\newenvironment{notelist}
+  {\subsection*{Notes}\begin{itemize}[leftmargin=2em]}
+  {\end{itemize}\medskip}
+
+
+% --- Header/Footer ---
+%\pagestyle{fancy}
+%\fancyhf{}
+%\fancyhead[L]{\leftmark}
+%\fancyhead[R]{\thepage}
+\pagestyle{empty}
+
+\begin{document}
+\dominitoc % Initialize the per-chapter mini TOCs
+
+\title{GP’s Recipe Book}
+\date{\today}
+\maketitle
+
+\tableofcontents
+
+\chapter{Fakeaways}
+\minitoc
+\newpage
+\input{Fakeaways/Butter_Chicken}
+\newpage
+\input{Fakeaways/Chicken_Pad_Thai}
+\newpage
+\input{Fakeaways/DIY-Pizzas}
+\newpage
+\input{Fakeaways/Pork_Fried_Rice_with_Omelette}
+\newpage
+\input{Fakeaways/Stir-Fry}
+\chapter{Italian}
+\minitoc
+\newpage
+\input{Italian/Asparugus}
+\newpage
+\input{Italian/Beef_Schnitzel_Roll}
+\newpage
+\input{Italian/Gnocchi}
+\newpage
+\input{Italian/Lasagne}
+\newpage
+\input{Italian/Rigatoni}
+\newpage
+\input{Italian/Rustic_Salad}
+
+\newpage
+\begin{multicols}{2}
+
+\section*{Fakeaways \& Mains}
+\begin{itemize}
+\item Teriyaki Chicken Donburi
+\item Honey Soy Chicken Noodle Stir-Fry
+\item Beef Bulgogi Rice Bowls
+\item Creamy Tuscan Chicken (spinach \& sun-dried tomato)
+\item Lemon Pepper Chicken Thighs with Roast Veg
+\item Sticky Hoisin Pork Lettuce Cups
+\item Crispy Chilli Beef with Rice
+\item Garlic Butter Prawn Pasta
+\item One-Pan Sausage, Potato \& Capsicum Bake
+\item Sheet-Pan Chicken Fajitas
+\item Beef \& Broccoli Stir-Fry
+\item Thai Basil Chicken (Pad Krapow)
+\item Chickpea \& Spinach Coconut Curry
+\item Red Lentil Dhal with Garlic Naan
+\item Pumpkin \& Feta Pasta Bake
+\item Creamy Mushroom \& Bacon Penne
+\item Greek Chicken Gyros Plates
+\item Lamb Kofta with Tzatziki \& Pita
+\item Salmon Teriyaki with Sesame Greens
+\item Pork Schnitzel with Lemon Slaw
+\end{itemize}
+
+\section*{Quick \& Cheap}
+\begin{itemize}
+\item Egg Fried Rice (15-min)
+\item Cheesy Tuna Pasta
+\item Veggie Quesadillas
+\item Shakshuka (Eggs in Spicy Tomato)
+\item Peanut Butter Sesame Noodles
+\item Creamy Tomato One-Pot Orzo
+\item Curried Sausages \& Rice
+\item Loaded Omelette Wraps
+\end{itemize}
+
+\section*{Curries \& Stews}
+\begin{itemize}
+\item Thai Red Chicken Curry
+\item Massaman Beef Curry (shortcut)
+\item Paneer Butter Masala
+\item Sri Lankan Coconut Fish Curry
+\item Japanese Chicken Katsu Curry
+\item Moroccan Chickpea \& Pumpkin Stew
+\item Slow Cooker Beef Rendang (easy)
+\item Butter Bean \& Kale Stew with Lemon
+\end{itemize}
+
+\section*{Soups \& Salads}
+\begin{itemize}
+\item Roast Pumpkin \& Kumara Soup
+\item Chicken Sweetcorn Soup
+\item Tom Yum Soup (prawn or chicken)
+\item Minestrone with Pesto
+\item Greek Salad with Lemon Oregano Chicken
+\item Roast Veg \& Halloumi Salad
+\item Vietnamese Rice Noodle Salad (bun cha-style)
+\item Crunchy Asian Slaw with Sesame Dressing
+\end{itemize}
+
+\section*{Wraps, Sandwiches \& Bowls}
+\begin{itemize}
+\item Peri-Peri Chicken Wraps
+\item Crispy Fish Tacos with Lime Crema
+\item BBQ Pulled Pork Rolls
+\item Falafel Bowls with Hummus \& Pickles
+\item Korean Beef (bulgogi) Lettuce Wraps
+\item Sriracha Mayo Chicken Sushi Bowls
+\item Mediterranean Grain Bowls (feta, olive, tomato)
+\item Chili Lime Prawn Tacos
+\end{itemize}
+
+\section*{Pasta \& Bakes}
+\begin{itemize}
+\item Creamy Chicken \& Leek Pie
+\item Cottage Pie with Kumara Mash
+\item Spinach \& Ricotta Cannelloni
+\item Baked Feta Pasta (tomato \& basil)
+\item Chicken Alfredo Bake
+\item Pesto Chicken Pasta Salad
+\item Lasagne (classic or veggie)
+\item Pumpkin Sage Gnocchi (pan-fried)
+\end{itemize}
+
+\section*{Breakfast \& Brunch}
+\begin{itemize}
+\item Pancakes (fluffy café-style)
+\item Breakfast Burritos (freezer-friendly)
+\item Cheesy Scrambled Egg Croissants
+\item Avocado \& Feta Smash on Toast
+\item Chorizo \& Potato Hash
+\item Banana Oat Pikelets
+\item Granola Clusters with Yoghurt
+\item Berry Smoothie Bowls
+\end{itemize}
+
+\section*{Muffins \& Baking (Sweet)}
+\begin{itemize}
+\item Apple Cinnamon Muffins
+\item Carrot Cake Muffins with Cream Cheese Drizzle
+\item Strawberry \& Cream Cheese Muffins
+\item Gingerbread Muffins
+\item Passionfruit White Chocolate Muffins
+\item Apple \& Feijoa Crumble Muffins
+\item Afghan Biscuits (Kiwi classic)
+\item ANZAC Biscuits (chewy)
+\end{itemize}
+
+\section*{Muffins \& Baking (Savoury)}
+\begin{itemize}
+\item Bacon, Corn \& Cheddar Muffins
+\item Sundried Tomato, Olive \& Feta Muffins
+\item Courgette \& Parmesan Muffins
+\item Ham \& Cheese Breakfast Muffins
+\item Caramelised Onion \& Cheddar Scones
+\item Spinach Ricotta Pinwheels (puff pastry)
+\end{itemize}
+
+\section*{Breads \& Sides}
+\begin{itemize}
+\item Garlic Butter Naan (skillet)
+\item Turkish Bread (easy)
+\item No-Knead Overnight Bread
+\item Cheesy Pull-Apart Bread
+\item Herbed Couscous (5-min)
+\item Lemon \& Herb Quinoa
+\item Fried Rice (kimchi or veggie)
+\item Kumara Wedges with Aioli
+\end{itemize}
+
+\section*{Sauces, Dressings \& Extras}
+\begin{itemize}
+\item Creamy Garlic Sauce (万能)
+\item Lemon Herb Yoghurt (for wraps)
+\item Honey Mustard Dressing
+\item Gochujang Mayo
+\item Coriander Lime Rice
+\item Quick Pickled Onions
+\item Salsa Verde (parsley caper)
+\item Peanut Satay Sauce
+\end{itemize}
+
+\section*{Desserts}
+\begin{itemize}
+\item Chocolate Self-Saucing Pudding
+\item Lemon Posset (3-ingredient)
+\item Berry Crumble with Custard
+\item Banoffee Pie (cheat’s)
+\item Pavlova with Seasonal Fruit
+\item Feijoa \& Apple Crumble
+\item Sticky Date Pudding
+\item No-Bake Cheesecake Cups
+\end{itemize}
+
+\end{multicols} 
+
+\end{document}
