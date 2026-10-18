@@ -203,7 +203,7 @@ const BY_ID = Object.fromEntries(RECIPES.map(r => [r.id, r]));
 const SLOTS = [
   { key: "slow", label: "Slow cooker", hint: "Start it in the morning", chapters: ["slow"] },
   { key: "pressure", label: "Pressure cooker", hint: "Instant Pot under pressure", chapters: ["pressure"] },
-  { key: "quick", label: "Quick", hint: "Stovetop, sauté or oven", chapters: ["stovetop", "oven", "sides"] },
+  { key: "quick", label: "Quick", hint: "Stovetop, sauté or oven", chapters: ["stovetop", "oven"] },
 ];
 const CHAPTERS = [
   ["pressure", "Instant Pot"], ["slow", "Slow cooker"], ["stovetop", "Stovetop"], ["oven", "Oven"],
@@ -308,7 +308,7 @@ const md = s => esc(s).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
 const plain = s => String(s).replace(/\*\*/g, "");
 function slotFor(r) {
   return r.chapter === "slow" ? "slow" : r.chapter === "pressure" ? "pressure"
-    : ["stovetop", "oven", "sides"].includes(r.chapter) ? "quick" : null;
+    : ["stovetop", "oven"].includes(r.chapter) ? "quick" : null;
 }
 function plannedIds() {
   return [...Object.values(state.slots).filter(Boolean), ...state.extras];
@@ -498,7 +498,7 @@ function renderWeek() {
   <section class="trio" aria-label="This week's trio">${SLOTS.map(slotCard).join("")}</section>
   <section class="extras" aria-label="Extras">
     <div class="section-head">
-      <div><h2>Extras</h2><p>Baking, breakfasts or anything else you want on the shopping list.</p></div>
+      <div><h2>Extras</h2><p>Sides, baking, breakfasts or anything else you want on the shopping list.</p></div>
       <button class="btn" data-act="goto-recipes">Add from recipes</button>
     </div>
     ${extras || `<p class="empty-note">No extras this week.</p>`}
