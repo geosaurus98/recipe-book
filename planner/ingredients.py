@@ -177,6 +177,7 @@ CANON = [
     (r"gnocchi", "gnocchi", "Gnocchi", GRAINS),
     (r"noodle", "noodles", "Noodles", GRAINS),
     (r"couscous", "couscous", "Couscous", GRAINS),
+    (r"quinoa", "quinoa", "Quinoa", GRAINS),
     (r"\bpasta\b|penne|fusilli|spirals", "pasta", "Pasta", GRAINS),
     (r"rolled oats|\boats\b", "oats", "Rolled oats", GRAINS),
     (r"cornflakes", "cornflakes", "Cornflakes", GRAINS),
