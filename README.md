@@ -38,6 +38,28 @@ because the original didn't give one.
    \input{InstantPot/Recipe_Name}
    ```
 
+### Ingredient style
+
+Write each ingredient as amount, unit, ingredient, then any preparation after
+a comma:
+
+```latex
+\item 500\,g lean beef mince
+\item 1 large onion, diced
+\item 3 garlic cloves, crushed
+\item 2 cans (400\,g) kidney beans, drained and rinsed
+\item 1\nicefrac{1}{2} cups chicken stock
+```
+
+- Metric units with a thin space (`500\,g`, `250\,ml`, `1\,L`); spoons as
+  `tbsp` and `tsp`; fractions with `\nicefrac`.
+- NZ names: beef mince, chicken stock, capsicum, courgette, spring onions,
+  plain flour, cornflour, yoghurt, coriander.
+
+`python3 tools/standardise_ingredients.py` rewrites recipes into this style.
+It's safe to run again after adding recipes from Claude; it only changes
+lines that don't match yet.
+
 Recipe files can use `recipebox`, `ingredients`, `method` (optionally
 `\begin{method}[Rice (Rice Cooker)]` for a custom heading), `notes`,
 `notelist`, `variationbox` and `\nutritiontable`.
