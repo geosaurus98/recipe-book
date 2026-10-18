@@ -41,3 +41,17 @@ because the original didn't give one.
 Recipe files can use `recipebox`, `ingredients`, `method` (optionally
 `\begin{method}[Rice (Rice Cooker)]` for a custom heading), `notes`,
 `notelist`, `variationbox` and `\nutritiontable`.
+
+## Meal planner
+
+`planner/index.html` is a web page for planning the week: one slow cooker, one
+pressure cooker and one quick meal, plus extras, with a combined shopping list
+grouped by aisle. It's built from the recipe files, so after adding or
+changing recipes, rebuild it:
+
+```
+python3 planner/build.py
+```
+
+This reads the chapters in `main.tex`, writes `planner/recipes.json` and
+regenerates `planner/index.html` from `planner/template.html`.
