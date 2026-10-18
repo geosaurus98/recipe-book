@@ -10,7 +10,7 @@ recipe can appear in more than one book.
 | `main.tex` | **George's Recipe Book** — everything, split into chapters by how it's cooked |
 | `Palmer Recipe Book.tex` | **GP's Recipe Book** — the easier course recipes (Fakeaways, Italian) for the flat |
 | `Preview.tex` | Quick preview of a handful of recipes |
-| `To_Add.tex` | Checklist of recipes to add next and ideas that could be added |
+| `To_Add.tex` | Checklist of recipe ideas for every chapter, built from each folder's `Ideas.tex` |
 
 ## Recipe folders
 
@@ -22,6 +22,11 @@ recipe can appear in more than one book.
 | `Oven/` | Oven |
 | `Breakfast/`, `Snacks/`, `Shakes/`, `Desserts/`, `Baking/` | One chapter each |
 | `Fakeaways/`, `Italian/` | Cooking-course recipes. Used by Palmer, and placed by method in `main.tex` |
+| `Sides/` | Salads & Sides (new recipes go here; the course salad and asparagus stay in `Italian/`) |
+
+Each folder (except the course folders) also has an `Ideas.tex`: a checklist of
+recipes that could go in that chapter. `To_Add.tex` shows them all in one PDF.
+Tick an idea with `\done`, or delete its line once the recipe is in the book.
 
 Recipes converted from earlier Claude-made books start with a `% From ...`
 comment saying where they came from (those books have since been removed).
