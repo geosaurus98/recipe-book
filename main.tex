@@ -11,6 +11,9 @@
 \usepackage{xcolor}
 \usepackage{fancyhdr}
 \usepackage{nicefrac}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{textcomp}
 
 % Degree symbol
 \newcommand{\degree}{\ensuremath{^\circ}}
@@ -66,8 +69,9 @@
   {\subsection*{Ingredients}\begin{itemize}[leftmargin=2em]}
   {\end{itemize}\medskip}
 
-\newenvironment{method}
-  {\subsection*{Method}\begin{enumerate}[leftmargin=2em]}
+% Optional argument renames the heading, e.g. \begin{method}[Rice (Rice Cooker)]
+\newenvironment{method}[1][Method]
+  {\subsection*{#1}\begin{enumerate}[leftmargin=2em]}
   {\end{enumerate}}
 
 % Sub-environment for optional notes (paragraph style)
@@ -80,6 +84,37 @@
   {\subsection*{Notes}\begin{itemize}[leftmargin=2em]}
   {\end{itemize}\medskip}
 
+% --- Variation boxes (smaller box inside a recipe) ---
+\tcbset{
+  variation style/.style={
+    enhanced,
+    colback=black!1,
+    colframe=black!15,
+    boxrule=0.4pt,
+    arc=2mm,
+    left=3mm,right=3mm,top=2mm,bottom=2mm,
+    before skip=4pt,after skip=4pt,
+  }
+}
+
+% #1 = variation title
+\newenvironment{variationbox}[1]
+  {\begin{tcolorbox}[variation style, title={\textbf{#1}}]}
+  {\end{tcolorbox}}
+
+% --- Nutrition table (used by the Meal Prep recipes) ---
+\newcommand{\nutritiontable}[4]{%
+\begin{center}
+\begin{tabular}{l r}
+\toprule
+Energy & #1 kcal \\
+Protein & #2 g \\
+Fat & #3 g \\
+Saturated Fat & #4 g \\
+\bottomrule
+\end{tabular}
+\end{center}
+}
 
 % --- Header/Footer ---
 \pagestyle{fancy}
@@ -97,59 +132,243 @@
 
 \tableofcontents
 
-\chapter{Instant Pot}
+% Each recipe lives in its own file, in a folder named after how it's cooked.
+% Recipes from the cooking course (Fakeaways/, Italian/) are shared with Palmer Recipe Book.tex.
+
+\chapter{Instant Pot \& Pressure Cooker}
 \minitoc
 \newpage
-
-\begin{recipebox}{Healthy Mac and Cheese with Broccoli}{8}{30 min}
-  \begin{ingredients}
-    \item 1 tbsp sunflower oil
-    \item 4 cups water
-    \item 1 tsp salt
-    \item 1 lb macaroni spirals (scoobi do)
-    \item 2 tbsp butter
-    \item 1 can evaporated milk
-    \item 3 cups white cheddar cheese, grated
-    \item 1 cup mixed vegetables
-  \end{ingredients}
-
-  \begin{method}
-    \item Add oil, water, salt, macaroni, and butter to Instant Pot in that order.
-          Cook on HIGH pressure for 2 minutes. Quick release when finished.
-    \item Stir in evaporated milk and white cheddar until creamy.
-    \item Add mixed vegetables and stir. Replace lid and let sit 5 minutes before serving.           
-  \end{method}
-\end{recipebox}
-
+\input{InstantPot/Beef_and_Mixed_Bean_Chilli}
 \newpage
+\input{InstantPot/Budget_Beef_and_Vegetable_Stew}
+\newpage
+\input{InstantPot/Budget_Chicken_and_Vegetable_Soup}
+\newpage
+\input{InstantPot/Budget_Lentil_Coconut_Curry}
+\newpage
+\input{InstantPot/Budget_Protein_Pasta_Sauce}
+\newpage
+\input{InstantPot/Budget_Pulled_BBQ_Chicken_with_Lentils}
+\newpage
+\input{InstantPot/Budget_Teriyaki_Chicken_and_Veg}
+\newpage
+\input{InstantPot/Cajun_Chicken_Bean_Rice_Bowls}
+\newpage
+\input{InstantPot/Chicken_Lentil_Coconut_Curry}
+\newpage
+\input{InstantPot/Healthy_Mac_and_Cheese}
+\newpage
+\input{InstantPot/Beefaroni}
+\newpage
+\input{InstantPot/Chicken_and_Rice}
+\newpage
+\input{InstantPot/SausagePasta}
+\newpage
+\input{InstantPot/Sausage_and_Rice}
+\newpage
+\input{InstantPot/Peanut_Chicken_and_Sugar_Snap_Peas_with_Noodles}
+\newpage
+\input{InstantPot/Thai_Peanut_Chicken}
 
-\begin{recipebox}{Peanut Chicken \& Sugar Snap Peas with Noodles}{6}{More than 2 hrs}
-  \begin{ingredients}
-    \item 1\nicefrac{1}{4} lb chicken breast tenders, cubed
-    \item 3 Tbsp cornstarch
-    \item 2 Tbsp teriyaki sauce
-    \item 2 tsp fresh garlic, minced
-    \item \nicefrac{1}{4} tsp crushed red pepper
-    \item 1 tsp dark sesame oil
-    \item 2 cups chicken broth
-    \item \nicefrac{1}{4} cup peanut butter
-    \item 2\nicefrac{1}{2} cups sugar snap peas, trimmed
-    \item 1 cup carrots, julienned
-    \item 12 oz spaghetti
-    \item \nicefrac{1}{2} cup green onion, sliced
-    \item \nicefrac{1}{4} cup unsalted roasted peanuts, chopped
-    \item Lime wedges, for serving
-  \end{ingredients}
+\chapter{Slow Cooker}
+\minitoc
+\newpage
+\input{SlowCooker/Apple_Mustard_Pork_Split_Pea_Stew}
+\newpage
+\input{SlowCooker/Beef_and_Potato_Stew}
+\newpage
+\input{SlowCooker/Slow_Cooker_Beef_and_Vegetable_Soup}
+\newpage
+\input{SlowCooker/Slow_Cooker_Chicken_and_Chickpea_Stew}
+\newpage
+\input{SlowCooker/Chicken_Coconut_Curry}
+\newpage
+\input{SlowCooker/Slow_Cooker_Honey_Garlic_Chicken}
+\newpage
+\input{SlowCooker/Slow_Cooker_Mexican_Chicken}
+\newpage
+\input{SlowCooker/Mexican_Shredded_Chicken}
+\newpage
+\input{SlowCooker/Slow_Cooker_Pork_and_Kumara_Curry}
+\newpage
+\input{SlowCooker/Pork_Mince_Bolognese}
+\newpage
+\input{SlowCooker/Slow_Cooker_Pulled_Pork_Wraps}
 
-  \begin{method}
-    \item In a bowl, toss the chicken with 2 Tbsp cornstarch, 1 Tbsp teriyaki sauce, 1 tsp garlic, and crushed red pepper.
-    \item Heat a nonstick skillet over medium-high. Add oil, then the chicken mixture; brown for about 6 min. Stir in \nicefrac{1}{2} cup broth, scraping up browned bits. Transfer to Instant Pot.
-    \item In another bowl, mix the remaining 1\nicefrac{1}{2} cups broth, peanut butter, 1 Tbsp cornstarch, remaining 1 Tbsp teriyaki sauce, and remaining 1 tsp garlic. Pour over the chicken.
-    \item Close and lock lid. Select \textbf{Slow Cook}, “More” mode, set time to 1 hour 30 minutes.
-    \item When done, stir in peas and carrots. Repeat slow cook for 30 minutes until veggies are crisp-tender.
-    \item Meanwhile, cook spaghetti per package instructions (no salt/fat); drain.
-    \item Add spaghetti to the Instant Pot and toss. Garnish with scallions, peanuts, and serve with lime wedges.
-  \end{method}
-\end{recipebox}
+\chapter{Stovetop}
+\minitoc
+\newpage
+\input{Stovetop/Beef_and_Broccoli_Stir_Fry}
+\newpage
+\input{Stovetop/Beef_and_Vegetable_Chilli}
+\newpage
+\input{Stovetop/Beef_Mince_Stir_Fry}
+\newpage
+\input{Italian/Beef_Schnitzel_Roll}
+\newpage
+\input{Stovetop/Burrito_Bowls}
+\newpage
+\input{Fakeaways/Butter_Chicken}
+\newpage
+\input{Fakeaways/Stir-Fry}
+\newpage
+\input{Fakeaways/Chicken_Pad_Thai}
+\newpage
+\input{Stovetop/Chicken_Shawarma_Wraps}
+\newpage
+\input{Stovetop/Chicken_Thai_Green_Curry}
+\newpage
+\input{Stovetop/Chicken_Tikka_Masala}
+\newpage
+\input{Stovetop/Classic_Spaghetti_Bolognese}
+\newpage
+\input{Italian/Gnocchi}
+\newpage
+\input{Stovetop/Homemade_Burgers_and_Fries}
+\newpage
+\input{Stovetop/Homemade_Sub_Sandwiches}
+\newpage
+\input{Stovetop/Korean_Bibimbap}
+\newpage
+\input{Stovetop/Old_School_Beef_Tacos}
+\newpage
+\input{Stovetop/Pork_and_Lentil_Bolognese}
+\newpage
+\input{Fakeaways/Pork_Fried_Rice_with_Omelette}
+\newpage
+\input{Stovetop/Pork_Mince_Lettuce_Cups}
+\newpage
+\input{Stovetop/Quick_Ramen_Bowls}
+\newpage
+\input{Italian/Rigatoni}
+\newpage
+\input{Stovetop/Sesame_Beef_Edamame_Noodles}
+\newpage
+\input{Stovetop/Sausage_Ragu}
+\newpage
+\input{Stovetop/Turkey_and_Lentil_Bolognese}
+\newpage
+\input{Stovetop/Turkey_Mince_Stir_Fry}
+\newpage
+\input{Stovetop/Vietnamese_Banh_Mi}
+\newpage
+\input{Stovetop/Sweet_and_Sour_Chicken}
+\newpage
+\input{Stovetop/Chicken_or_Falafel_Wraps}
+
+\chapter{Oven}
+\minitoc
+\newpage
+\input{Oven/Beef_Mince_and_Lentil_Shepherds_Pie}
+\newpage
+\input{Oven/Beef_Mince_Stuffed_Capsicums}
+\newpage
+\input{Oven/Chicken_and_Vegetable_Bake}
+\newpage
+\input{Italian/Lasagne}
+\newpage
+\input{Oven/Crunchy_Crumbed_Chicken_Drumsticks}
+\newpage
+\input{Fakeaways/DIY-Pizzas}
+\newpage
+\input{Oven/Lemon_Herb_Baked_Salmon_Tray}
+\newpage
+\input{Oven/Loaded_Beef_Nachos}
+\newpage
+\input{Oven/Loaded_Jacket_Potatoes}
+
+\chapter{Salads \& Sides}
+\minitoc
+\newpage
+\input{Italian/Asparugus}
+\newpage
+\input{Italian/Rustic_Salad}
+
+\chapter{Breakfast}
+\minitoc
+\newpage
+\input{Breakfast/Banana_Protein_Pancakes}
+\newpage
+\input{Breakfast/Breakfast_Burritos}
+\newpage
+\input{Breakfast/Egg_Muffins}
+\newpage
+\input{Breakfast/Frittata_Slices}
+\newpage
+\input{Breakfast/High_Protein_Chia_Pudding}
+\newpage
+\input{Breakfast/Overnight_Oats}
+\newpage
+\input{Breakfast/Savoury_Egg_and_Rice_Bowl}
+
+\chapter{Snacks}
+\minitoc
+\newpage
+\input{Snacks/Boiled_Eggs_and_Crackers}
+\newpage
+\input{Snacks/Cottage_Cheese_and_Tomato_Toast}
+\newpage
+\input{Snacks/Edamame_with_Sea_Salt}
+\newpage
+\input{Snacks/Greek_Yogurt_and_Berry_Bowl}
+\newpage
+\input{Snacks/Homemade_Protein_Balls}
+\newpage
+\input{Snacks/Hummus_and_Vegetable_Sticks}
+\newpage
+\input{Snacks/Peanut_Butter_and_Banana_Rice_Cakes}
+\newpage
+\input{Snacks/Tuna_and_Crackers}
+
+\chapter{Protein Shakes}
+\minitoc
+\newpage
+\input{Shakes/Berry_and_Oat_Power_Shake}
+\newpage
+\input{Shakes/Classic_Chocolate_Peanut_Butter_Shake}
+\newpage
+\input{Shakes/Green_Spinach_and_Banana_Shake}
+\newpage
+\input{Shakes/Mango_and_Coconut_Tropical_Shake}
+\newpage
+\input{Shakes/Vanilla_Cinnamon_Shake}
+
+\chapter{Desserts}
+\minitoc
+\newpage
+\input{Desserts/Baked_Cinnamon_Apples}
+\newpage
+\input{Desserts/Banana_Nice_Cream}
+\newpage
+\input{Desserts/Chocolate_Protein_Mug_Cake}
+\newpage
+\input{Desserts/Frozen_Yogurt_Bark}
+\newpage
+\input{Desserts/No_Bake_Chocolate_Oat_Cookies}
+
+\chapter{Baking \& Breads}
+\minitoc
+\newpage
+\input{Baking/Banana_Chocolate_Chip_Muffins}
+\newpage
+\input{Baking/Blueberry_Muffins}
+\newpage
+\input{Baking/Chocolate_Muffins}
+\newpage
+\input{Baking/Corn_Muffins}
+\newpage
+\input{Baking/Crunchy_Lemon_Poppyseed_Muffins}
+\newpage
+\input{Baking/Feijoa_Muffins}
+\newpage
+\input{Baking/Harrys_Favourite_Chocolate_Cake}
+\newpage
+\input{Baking/Lemon_Muffins}
+\newpage
+\input{Baking/Raspberry_and_White_Chocolate_Muffins}
+\newpage
+\input{Baking/Spinach_and_Feta_Muffins}
+\newpage
+\input{Baking/Yoghurt_Naan_Bread}
 
 \end{document}
