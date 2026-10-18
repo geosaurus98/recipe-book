@@ -116,6 +116,14 @@ Saturated Fat & #4 g \\
 \end{center}
 }
 
+% --- Groups inside a chapter (e.g. Rice & grains) ---
+% Shows as a heading above the group's first recipe and in "In this chapter".
+\newcommand{\recipegroup}[1]{%
+  \phantomsection
+  \addcontentsline{toc}{section}{\textbf{#1}}%
+  {\noindent\Large\bfseries #1\par}\medskip
+}
+
 % --- Header/Footer ---
 \pagestyle{fancy}
 \fancyhf{}
@@ -358,29 +366,21 @@ Saturated Fat & #4 g \\
 \chapter{Salads \& Sides}
 \minitoc
 \newpage
-\input{Italian/Asparagus}
+\recipegroup{Salads}
+\input{Italian/Rustic_Salad}
 \newpage
+\recipegroup{Rice \& grains}
 \input{Sides/Cajun_Rice}
-\newpage
-\input{Sides/Cauliflower_Cheese}
 \newpage
 \input{Sides/Coconut_Rice}
 \newpage
 \input{Sides/Coriander_Lime_Rice}
 \newpage
-\input{Sides/Crispy_Smashed_Potatoes}
-\newpage
 \input{Sides/Egg_Fried_Rice}
 \newpage
 \input{Sides/Garlic_Butter_Rice}
 \newpage
-\input{Sides/Garlic_Green_Beans}
-\newpage
 \input{Sides/Herbed_Couscous}
-\newpage
-\input{Sides/Kumara_Mash}
-\newpage
-\input{Sides/Kumara_Wedges_Aioli}
 \newpage
 \input{Sides/Lemon_Herb_Quinoa}
 \newpage
@@ -388,13 +388,24 @@ Saturated Fat & #4 g \\
 \newpage
 \input{Sides/Rice_Peas_Parmesan}
 \newpage
+\input{Sides/Turmeric_Rice}
+\newpage
+\recipegroup{Vegetables \& potatoes}
+\input{Italian/Asparagus}
+\newpage
+\input{Sides/Cauliflower_Cheese}
+\newpage
+\input{Sides/Crispy_Smashed_Potatoes}
+\newpage
+\input{Sides/Garlic_Green_Beans}
+\newpage
+\input{Sides/Kumara_Mash}
+\newpage
+\input{Sides/Kumara_Wedges_Aioli}
+\newpage
 \input{Sides/Roast_Vegetables}
 \newpage
-\input{Italian/Rustic_Salad}
-\newpage
 \input{Sides/Sesame_Asian_Greens}
-\newpage
-\input{Sides/Turmeric_Rice}
 
 \chapter{Breakfast}
 \minitoc

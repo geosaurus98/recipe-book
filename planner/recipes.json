@@ -24979,9 +24979,9 @@
   ]
  },
  {
-  "title": "Asparagus with Capers and Parsley Mayonnaise",
-  "servings": "2–3",
-  "time": "45 min",
+  "title": "Rustic Chickpea & Rocket Salad with Mustard-Garlic Vinaigrette",
+  "servings": "2",
+  "time": "15 min",
   "intro": "",
   "sections": [
    {
@@ -24989,28 +24989,46 @@
     "heading": "Ingredients",
     "items": [
      {
-      "text": "1 bunch asparagus spears"
+      "group": "For the salad"
      },
      {
-      "text": "6 capers, chopped"
+      "text": "100 g rocket or mixed greens"
      },
      {
-      "text": "Sprigs of flat-leaf parsley"
+      "text": "200 g cooked chickpeas (canned is fine, drained and rinsed)"
      },
      {
-      "text": "3 tbsp mayonnaise and/or 3 tbsp thick plain yoghurt"
+      "text": "10 cherry tomatoes, halved"
      },
      {
-      "text": "Sea salt flakes"
+      "text": "¼ red onion, thinly sliced"
      },
      {
-      "text": "Salt and pepper, to taste"
+      "text": "2 tbsp pitted olives"
      },
      {
-      "text": "Extra virgin olive oil"
+      "text": "Parmesan or pecorino shavings (optional)"
      },
      {
-      "text": "1 sheet baking paper"
+      "group": "For the dressing"
+     },
+     {
+      "text": "1 garlic clove, finely minced or crushed"
+     },
+     {
+      "text": "½ tsp salt"
+     },
+     {
+      "text": "Black pepper, to taste"
+     },
+     {
+      "text": "3 tbsp extra virgin olive oil"
+     },
+     {
+      "text": "1 tsp Dijon or mild mustard"
+     },
+     {
+      "text": "1 tbsp white wine vinegar or apple cider vinegar"
      }
     ]
    },
@@ -25019,19 +25037,27 @@
     "heading": "Method",
     "items": [
      {
-      "text": "**Preheat the oven:** Set to 180°C."
+      "text": "**Step 1 — Make the Dressing:**",
+      "sub": [
+       "In a small bowl, combine the garlic, salt, and pepper.",
+       "Add the mustard and vinegar, and mix well.",
+       "Slowly drizzle in the olive oil while whisking to emulsify."
+      ]
      },
      {
-      "text": "**Prepare the asparagus:** Arrange the asparagus spears in a neat layer in the centre of the baking paper. Drizzle with olive oil, sprinkle with sea salt flakes, and scatter parsley leaves on top."
+      "text": "**Step 2 — Prepare the Salad:**",
+      "sub": [
+       "In a large bowl, add the rocket, chickpeas, tomatoes, red onion, and olives.",
+       "Add cheese shavings if using."
+      ]
      },
      {
-      "text": "**Wrap and bake:** Fold the baking paper over the spears, tucking the ends under to form a tight parcel. Place on a tray and bake for 45 minutes, or until the spears are tender when pressed through the paper."
-     },
-     {
-      "text": "**Make the sauce:** Finely chop the capers and stir into the mayonnaise (or yoghurt) in a small bowl. Mix until smooth and season with salt and pepper."
-     },
-     {
-      "text": "**To serve:** Cut open the paper parcel, transfer the asparagus to a serving platter, and spoon the caper–parsley mayonnaise over the top."
+      "text": "**Step 3 — Dress and Serve:**",
+      "sub": [
+       "Pour the dressing over the salad just before serving.",
+       "Toss gently to coat everything evenly.",
+       "Serve immediately — optionally with toasted bread on the side."
+      ]
      }
     ]
    },
@@ -25040,79 +25066,101 @@
     "heading": "Notes",
     "items": [
      {
-      "text": "This method of baking asparagus in olive oil inside a paper parcel intensifies its flavour and creates a soft, delicate texture. For a lighter option, substitute the mayonnaise entirely with thick plain yoghurt, or combine both for extra creaminess. Serve as a side dish to grilled meats or enjoy as a simple starter."
+      "text": "Light, fresh, and protein-rich — perfect as a summer lunch or a side to grilled meat."
      }
     ]
    }
   ],
-  "id": "Italian-Asparagus",
-  "file": "Italian/Asparagus.tex",
+  "id": "Italian-Rustic_Salad",
+  "file": "Italian/Rustic_Salad.tex",
   "chapter": "sides",
   "chapterName": "Salads & Sides",
   "ingredients": [
-   "1 bunch asparagus spears",
-   "6 capers, chopped",
-   "Sprigs of flat-leaf parsley",
-   "3 tbsp mayonnaise and/or 3 tbsp thick plain yoghurt",
-   "Sea salt flakes",
-   "Salt and pepper, to taste",
-   "Extra virgin olive oil",
-   "1 sheet baking paper"
+   "100 g rocket or mixed greens",
+   "200 g cooked chickpeas (canned is fine, drained and rinsed)",
+   "10 cherry tomatoes, halved",
+   "¼ red onion, thinly sliced",
+   "2 tbsp pitted olives",
+   "Parmesan or pecorino shavings (optional)",
+   "1 garlic clove, finely minced or crushed",
+   "½ tsp salt",
+   "Black pepper, to taste",
+   "3 tbsp extra virgin olive oil",
+   "1 tsp Dijon or mild mustard",
+   "1 tbsp white wine vinegar or apple cider vinegar"
   ],
   "shop": [
    {
-    "key": "asparagus",
-    "name": "Asparagus",
+    "key": "lettuce",
+    "name": "Lettuce or salad leaves",
     "aisle": "Fruit & veg",
-    "qty": 1.0,
-    "unit": "bunch",
+    "qty": 100.0,
+    "unit": "g",
     "optional": false,
-    "raw": "1 bunch asparagus spears"
+    "raw": "100 g rocket or mixed greens"
    },
    {
-    "key": "capers",
-    "name": "Capers",
+    "key": "chickpeas",
+    "name": "Chickpeas",
     "aisle": "Cans, jars & pulses",
-    "qty": 6.0,
-    "unit": "",
+    "qty": 0.5,
+    "unit": "can",
     "optional": false,
-    "raw": "6 capers, chopped"
+    "raw": "200 g cooked chickpeas (canned is fine, drained and rinsed)"
    },
    {
-    "key": "parsley",
-    "name": "Fresh parsley",
+    "key": "tomato",
+    "name": "Tomatoes",
     "aisle": "Fruit & veg",
-    "qty": null,
+    "qty": 10.0,
     "unit": "",
     "optional": false,
-    "raw": "Sprigs of flat-leaf parsley"
+    "raw": "10 cherry tomatoes, halved"
    },
    {
-    "key": "mayonnaise",
-    "name": "Mayonnaise",
-    "aisle": "Pantry: check first",
-    "qty": 3.0,
+    "key": "red-onion",
+    "name": "Red onion",
+    "aisle": "Fruit & veg",
+    "qty": 0.25,
+    "unit": "",
+    "optional": false,
+    "raw": "¼ red onion, thinly sliced"
+   },
+   {
+    "key": "olives",
+    "name": "Olives",
+    "aisle": "Cans, jars & pulses",
+    "qty": 2.0,
     "unit": "tbsp",
     "optional": false,
-    "raw": "3 tbsp mayonnaise and/or 3 tbsp thick plain yoghurt"
+    "raw": "2 tbsp pitted olives"
    },
    {
-    "key": "salt",
-    "name": "Salt",
-    "aisle": "Pantry: check first",
-    "qty": null,
-    "unit": "",
-    "optional": false,
-    "raw": "Sea salt flakes"
-   },
-   {
-    "key": "salt",
-    "name": "Salt",
-    "aisle": "Pantry: check first",
+    "key": "parmesan",
+    "name": "Parmesan",
+    "aisle": "Dairy, eggs & chilled",
     "qty": null,
     "unit": "",
     "optional": true,
-    "raw": "Salt and pepper, to taste"
+    "raw": "Parmesan or pecorino shavings (optional)"
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "1 garlic clove, finely minced or crushed"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 0.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "½ tsp salt"
    },
    {
     "key": "pepper",
@@ -25120,17 +25168,35 @@
     "aisle": "Pantry: check first",
     "qty": null,
     "unit": "",
-    "optional": true,
-    "raw": "Salt and pepper, to taste"
+    "optional": false,
+    "raw": "Black pepper, to taste"
    },
    {
     "key": "olive-oil",
     "name": "Olive oil",
     "aisle": "Pantry: check first",
-    "qty": null,
-    "unit": "",
+    "qty": 3.0,
+    "unit": "tbsp",
     "optional": false,
-    "raw": "Extra virgin olive oil"
+    "raw": "3 tbsp extra virgin olive oil"
+   },
+   {
+    "key": "mustard",
+    "name": "Mustard",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp Dijon or mild mustard"
+   },
+   {
+    "key": "wine",
+    "name": "Wine (for cooking)",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp white wine vinegar or apple cider vinegar"
    }
   ],
   "tags": []
@@ -25362,171 +25428,6 @@
     "unit": "",
     "optional": true,
     "raw": "2 spring onions, sliced, to serve"
-   }
-  ],
-  "tags": []
- },
- {
-  "title": "Cauliflower Cheese",
-  "servings": "4",
-  "time": "35 min",
-  "intro": "Tender cauliflower baked in a golden cheese sauce. A comforting side for roasts, sausages and meatloaf. Roughly 13 g protein per serve.",
-  "sections": [
-   {
-    "kind": "ingredients",
-    "heading": "Ingredients",
-    "items": [
-     {
-      "text": "1 medium cauliflower, cut into florets"
-     },
-     {
-      "group": "Cheese sauce"
-     },
-     {
-      "text": "30 g butter"
-     },
-     {
-      "text": "2 tbsp plain flour"
-     },
-     {
-      "text": "1½ cups milk"
-     },
-     {
-      "text": "1 tsp Dijon or wholegrain mustard"
-     },
-     {
-      "text": "1 cup grated tasty cheese, plus ¼ cup to top"
-     },
-     {
-      "text": "Salt and black pepper"
-     }
-    ]
-   },
-   {
-    "kind": "steps",
-    "heading": "Method",
-    "items": [
-     {
-      "text": "Preheat oven to 200°C bake."
-     },
-     {
-      "text": "Boil or steam the cauliflower for 5 minutes, until just tender. Drain well and put in a baking dish."
-     },
-     {
-      "text": "Melt the butter in a saucepan over medium heat. Stir in the flour and cook for 1 minute."
-     },
-     {
-      "text": "Gradually whisk in the milk and keep stirring until it boils and thickens, about 3–4 minutes."
-     },
-     {
-      "text": "Take off the heat and stir in the mustard and 1 cup of cheese. Season."
-     },
-     {
-      "text": "Pour the sauce over the cauliflower and sprinkle with the remaining cheese."
-     },
-     {
-      "text": "Bake for 15–20 minutes, until bubbling and golden."
-     }
-    ]
-   },
-   {
-    "kind": "notes",
-    "heading": "Notes",
-    "items": [
-     {
-      "text": "Add the milk slowly while whisking to keep the sauce smooth."
-     },
-     {
-      "text": "Half broccoli, half cauliflower works well too."
-     }
-    ]
-   }
-  ],
-  "id": "Sides-Cauliflower_Cheese",
-  "file": "Sides/Cauliflower_Cheese.tex",
-  "chapter": "sides",
-  "chapterName": "Salads & Sides",
-  "ingredients": [
-   "1 medium cauliflower, cut into florets",
-   "30 g butter",
-   "2 tbsp plain flour",
-   "1½ cups milk",
-   "1 tsp Dijon or wholegrain mustard",
-   "1 cup grated tasty cheese, plus ¼ cup to top",
-   "Salt and black pepper"
-  ],
-  "shop": [
-   {
-    "key": "cauliflower",
-    "name": "Cauliflower",
-    "aisle": "Fruit & veg",
-    "qty": 1.0,
-    "unit": "",
-    "optional": false,
-    "raw": "1 medium cauliflower, cut into florets"
-   },
-   {
-    "key": "butter",
-    "name": "Butter",
-    "aisle": "Dairy, eggs & chilled",
-    "qty": 30.0,
-    "unit": "g",
-    "optional": false,
-    "raw": "30 g butter"
-   },
-   {
-    "key": "flour",
-    "name": "Plain flour",
-    "aisle": "Baking",
-    "qty": 2.0,
-    "unit": "tbsp",
-    "optional": false,
-    "raw": "2 tbsp plain flour"
-   },
-   {
-    "key": "milk",
-    "name": "Milk",
-    "aisle": "Dairy, eggs & chilled",
-    "qty": 1.5,
-    "unit": "cup",
-    "optional": false,
-    "raw": "1½ cups milk"
-   },
-   {
-    "key": "mustard",
-    "name": "Mustard",
-    "aisle": "Pantry: check first",
-    "qty": 1.0,
-    "unit": "tsp",
-    "optional": false,
-    "raw": "1 tsp Dijon or wholegrain mustard"
-   },
-   {
-    "key": "cheese",
-    "name": "Tasty cheese",
-    "aisle": "Dairy, eggs & chilled",
-    "qty": 1.0,
-    "unit": "cup",
-    "optional": true,
-    "raw": "1 cup grated tasty cheese, plus ¼ cup to top"
-   },
-   {
-    "key": "salt",
-    "name": "Salt",
-    "aisle": "Pantry: check first",
-    "qty": null,
-    "unit": "",
-    "optional": true,
-    "raw": "Salt and black pepper"
-   },
-   {
-    "key": "pepper",
-    "name": "Black pepper",
-    "aisle": "Pantry: check first",
-    "qty": null,
-    "unit": "",
-    "optional": true,
-    "raw": "Salt and black pepper"
    }
   ],
   "tags": []
@@ -25767,143 +25668,6 @@
     "unit": "",
     "optional": false,
     "raw": "Large handful of fresh coriander, chopped"
-   }
-  ],
-  "tags": []
- },
- {
-  "title": "Crispy Smashed Potatoes",
-  "servings": "4",
-  "time": "10 min prep + 50 min",
-  "intro": "Boiled, squashed and roasted until the edges shatter. Better than roast potatoes with less effort.",
-  "sections": [
-   {
-    "kind": "ingredients",
-    "heading": "Ingredients",
-    "items": [
-     {
-      "text": "1 kg small or baby potatoes"
-     },
-     {
-      "text": "2 tbsp olive oil"
-     },
-     {
-      "text": "2 garlic cloves, crushed"
-     },
-     {
-      "text": "1 tsp dried rosemary or thyme"
-     },
-     {
-      "text": "½ tsp salt"
-     },
-     {
-      "text": "Black pepper"
-     }
-    ]
-   },
-   {
-    "kind": "steps",
-    "heading": "Method",
-    "items": [
-     {
-      "text": "Put the potatoes in a pot of cold salted water, bring to the boil and simmer for 15–20 minutes, until a knife slides in easily."
-     },
-     {
-      "text": "Preheat oven to 220°C bake while the potatoes cook."
-     },
-     {
-      "text": "Drain the potatoes and leave in the colander for 5 minutes to steam dry."
-     },
-     {
-      "text": "Spread half the oil on a large tray. Space out the potatoes and press each one flat with the bottom of a glass or a potato masher until about 1.5 cm thick."
-     },
-     {
-      "text": "Mix the rest of the oil with the garlic and drizzle over. Sprinkle with the herbs, salt and pepper."
-     },
-     {
-      "text": "Roast for 30–35 minutes, until deep golden and crisp at the edges."
-     }
-    ]
-   },
-   {
-    "kind": "notes",
-    "heading": "Notes",
-    "items": [
-     {
-      "text": "Letting the boiled potatoes steam dry is what makes them crisp."
-     },
-     {
-      "text": "Larger potatoes work too — cut them into 5 cm chunks before boiling."
-     }
-    ]
-   }
-  ],
-  "id": "Sides-Crispy_Smashed_Potatoes",
-  "file": "Sides/Crispy_Smashed_Potatoes.tex",
-  "chapter": "sides",
-  "chapterName": "Salads & Sides",
-  "ingredients": [
-   "1 kg small or baby potatoes",
-   "2 tbsp olive oil",
-   "2 garlic cloves, crushed",
-   "1 tsp dried rosemary or thyme",
-   "½ tsp salt",
-   "Black pepper"
-  ],
-  "shop": [
-   {
-    "key": "potato",
-    "name": "Potatoes",
-    "aisle": "Fruit & veg",
-    "qty": 1000.0,
-    "unit": "g",
-    "optional": false,
-    "raw": "1 kg small or baby potatoes"
-   },
-   {
-    "key": "olive-oil",
-    "name": "Olive oil",
-    "aisle": "Pantry: check first",
-    "qty": 2.0,
-    "unit": "tbsp",
-    "optional": false,
-    "raw": "2 tbsp olive oil"
-   },
-   {
-    "key": "garlic",
-    "name": "Garlic",
-    "aisle": "Fruit & veg",
-    "qty": 2.0,
-    "unit": "clove",
-    "optional": false,
-    "raw": "2 garlic cloves, crushed"
-   },
-   {
-    "key": "thyme",
-    "name": "Dried thyme",
-    "aisle": "Pantry: check first",
-    "qty": 1.0,
-    "unit": "tsp",
-    "optional": false,
-    "raw": "1 tsp dried rosemary or thyme"
-   },
-   {
-    "key": "salt",
-    "name": "Salt",
-    "aisle": "Pantry: check first",
-    "qty": 0.5,
-    "unit": "tsp",
-    "optional": false,
-    "raw": "½ tsp salt"
-   },
-   {
-    "key": "pepper",
-    "name": "Black pepper",
-    "aisle": "Pantry: check first",
-    "qty": null,
-    "unit": "",
-    "optional": false,
-    "raw": "Black pepper"
    }
   ],
   "tags": []
@@ -26225,143 +25989,6 @@
   "tags": []
  },
  {
-  "title": "Garlic Green Beans",
-  "servings": "4",
-  "time": "10 min",
-  "intro": "Bright green beans tossed in garlic butter. Works just as well with frozen beans.",
-  "sections": [
-   {
-    "kind": "ingredients",
-    "heading": "Ingredients",
-    "items": [
-     {
-      "text": "400 g green beans, trimmed (fresh or frozen)"
-     },
-     {
-      "text": "1 tbsp butter or olive oil"
-     },
-     {
-      "text": "2 garlic cloves, thinly sliced"
-     },
-     {
-      "text": "Squeeze of lemon juice"
-     },
-     {
-      "text": "Salt and black pepper"
-     },
-     {
-      "text": "2 tbsp toasted sliced almonds (optional)"
-     }
-    ]
-   },
-   {
-    "kind": "steps",
-    "heading": "Method",
-    "items": [
-     {
-      "text": "Cook the beans in a pot of boiling salted water for 2–3 minutes (3–4 from frozen), until bright green and just tender. Drain."
-     },
-     {
-      "text": "Melt the butter in a frying pan over medium heat and cook the garlic for about 1 minute, until fragrant and just golden."
-     },
-     {
-      "text": "Add the beans and toss for 1 minute to coat."
-     },
-     {
-      "text": "Finish with lemon juice, salt, pepper and almonds if using."
-     }
-    ]
-   },
-   {
-    "kind": "notes",
-    "heading": "Notes",
-    "items": [
-     {
-      "text": "Don't let the garlic go brown — it turns bitter."
-     }
-    ]
-   }
-  ],
-  "id": "Sides-Garlic_Green_Beans",
-  "file": "Sides/Garlic_Green_Beans.tex",
-  "chapter": "sides",
-  "chapterName": "Salads & Sides",
-  "ingredients": [
-   "400 g green beans, trimmed (fresh or frozen)",
-   "1 tbsp butter or olive oil",
-   "2 garlic cloves, thinly sliced",
-   "Squeeze of lemon juice",
-   "Salt and black pepper",
-   "2 tbsp toasted sliced almonds (optional)"
-  ],
-  "shop": [
-   {
-    "key": "green-beans",
-    "name": "Green beans",
-    "aisle": "Frozen",
-    "qty": 400.0,
-    "unit": "g",
-    "optional": false,
-    "raw": "400 g green beans, trimmed (fresh or frozen)"
-   },
-   {
-    "key": "olive-oil",
-    "name": "Olive oil",
-    "aisle": "Pantry: check first",
-    "qty": 1.0,
-    "unit": "tbsp",
-    "optional": false,
-    "raw": "1 tbsp butter or olive oil"
-   },
-   {
-    "key": "garlic",
-    "name": "Garlic",
-    "aisle": "Fruit & veg",
-    "qty": 2.0,
-    "unit": "clove",
-    "optional": false,
-    "raw": "2 garlic cloves, thinly sliced"
-   },
-   {
-    "key": "lemon",
-    "name": "Lemons",
-    "aisle": "Fruit & veg",
-    "qty": null,
-    "unit": "",
-    "optional": false,
-    "raw": "Squeeze of lemon juice"
-   },
-   {
-    "key": "salt",
-    "name": "Salt",
-    "aisle": "Pantry: check first",
-    "qty": null,
-    "unit": "",
-    "optional": true,
-    "raw": "Salt and black pepper"
-   },
-   {
-    "key": "pepper",
-    "name": "Black pepper",
-    "aisle": "Pantry: check first",
-    "qty": null,
-    "unit": "",
-    "optional": true,
-    "raw": "Salt and black pepper"
-   },
-   {
-    "key": "almonds",
-    "name": "Almonds",
-    "aisle": "Pantry: check first",
-    "qty": 2.0,
-    "unit": "tbsp",
-    "optional": true,
-    "raw": "2 tbsp toasted sliced almonds (optional)"
-   }
-  ],
-  "tags": []
- },
- {
   "title": "Herbed Couscous",
   "servings": "4",
   "time": "10 min",
@@ -26515,293 +26142,6 @@
   "tags": [
    "chicken"
   ]
- },
- {
-  "title": "Kumara Mash",
-  "servings": "4",
-  "time": "25 min",
-  "intro": "Smooth, slightly sweet orange kumara mash. Great under slow-cooker stews and as a topping for cottage pie.",
-  "sections": [
-   {
-    "kind": "ingredients",
-    "heading": "Ingredients",
-    "items": [
-     {
-      "text": "1 kg orange kumara, peeled and cut into chunks"
-     },
-     {
-      "text": "20 g butter"
-     },
-     {
-      "text": "¼ cup milk"
-     },
-     {
-      "text": "½ tsp salt"
-     },
-     {
-      "text": "Black pepper"
-     },
-     {
-      "text": "Pinch of ground cinnamon or nutmeg (optional)"
-     }
-    ]
-   },
-   {
-    "kind": "steps",
-    "heading": "Method",
-    "items": [
-     {
-      "text": "Put the kumara in a pot of salted water, bring to the boil and simmer for 12–15 minutes, until very tender."
-     },
-     {
-      "text": "Drain well and return to the pot over low heat for 1 minute to dry out."
-     },
-     {
-      "text": "Mash with the butter, milk, salt and pepper until smooth. Add the cinnamon or nutmeg if using."
-     }
-    ]
-   },
-   {
-    "kind": "notes",
-    "heading": "Notes",
-    "items": [
-     {
-      "text": "For half-and-half mash, use 500 g kumara and 500 g potatoes, boiled together."
-     },
-     {
-      "text": "In the Instant Pot, cook the chunks on a trivet over 1 cup water on High for 8 minutes, then quick release."
-     }
-    ]
-   }
-  ],
-  "id": "Sides-Kumara_Mash",
-  "file": "Sides/Kumara_Mash.tex",
-  "chapter": "sides",
-  "chapterName": "Salads & Sides",
-  "ingredients": [
-   "1 kg orange kumara, peeled and cut into chunks",
-   "20 g butter",
-   "¼ cup milk",
-   "½ tsp salt",
-   "Black pepper",
-   "Pinch of ground cinnamon or nutmeg (optional)"
-  ],
-  "shop": [
-   {
-    "key": "kumara",
-    "name": "Kumara",
-    "aisle": "Fruit & veg",
-    "qty": 1000.0,
-    "unit": "g",
-    "optional": false,
-    "raw": "1 kg orange kumara, peeled and cut into chunks"
-   },
-   {
-    "key": "butter",
-    "name": "Butter",
-    "aisle": "Dairy, eggs & chilled",
-    "qty": 20.0,
-    "unit": "g",
-    "optional": false,
-    "raw": "20 g butter"
-   },
-   {
-    "key": "milk",
-    "name": "Milk",
-    "aisle": "Dairy, eggs & chilled",
-    "qty": 0.25,
-    "unit": "cup",
-    "optional": false,
-    "raw": "¼ cup milk"
-   },
-   {
-    "key": "salt",
-    "name": "Salt",
-    "aisle": "Pantry: check first",
-    "qty": 0.5,
-    "unit": "tsp",
-    "optional": false,
-    "raw": "½ tsp salt"
-   },
-   {
-    "key": "pepper",
-    "name": "Black pepper",
-    "aisle": "Pantry: check first",
-    "qty": null,
-    "unit": "",
-    "optional": false,
-    "raw": "Black pepper"
-   },
-   {
-    "key": "cinnamon",
-    "name": "Ground cinnamon",
-    "aisle": "Pantry: check first",
-    "qty": null,
-    "unit": "",
-    "optional": true,
-    "raw": "Pinch of ground cinnamon or nutmeg (optional)"
-   },
-   {
-    "key": "nutmeg",
-    "name": "Nutmeg",
-    "aisle": "Pantry: check first",
-    "qty": null,
-    "unit": "",
-    "optional": true,
-    "raw": "Pinch of ground cinnamon or nutmeg (optional)"
-   }
-  ],
-  "tags": []
- },
- {
-  "title": "Kumara Wedges with Aioli",
-  "servings": "4",
-  "time": "10 min prep + 30 min",
-  "intro": "Crispy-edged smoky kumara wedges with a quick garlic dipping sauce.",
-  "sections": [
-   {
-    "kind": "ingredients",
-    "heading": "Ingredients",
-    "items": [
-     {
-      "text": "800 g kumara (about 2 large), scrubbed"
-     },
-     {
-      "text": "1 tbsp oil"
-     },
-     {
-      "text": "1 tsp smoked paprika"
-     },
-     {
-      "text": "½ tsp salt"
-     },
-     {
-      "group": "Quick aioli"
-     },
-     {
-      "text": "⅓ cup mayonnaise (or half Greek yoghurt)"
-     },
-     {
-      "text": "1 small garlic clove, crushed"
-     },
-     {
-      "text": "1 tsp lemon juice"
-     }
-    ]
-   },
-   {
-    "kind": "steps",
-    "heading": "Method",
-    "items": [
-     {
-      "text": "Preheat oven to 220°C bake. Line a large tray with baking paper."
-     },
-     {
-      "text": "Cut the kumara into wedges about 2 cm thick (no need to peel)."
-     },
-     {
-      "text": "Toss with the oil, paprika and salt and spread out in a single layer with space between them."
-     },
-     {
-      "text": "Roast for 25–30 minutes, turning halfway, until tender and browned at the edges."
-     },
-     {
-      "text": "Meanwhile, mix the mayonnaise, garlic and lemon juice."
-     },
-     {
-      "text": "Serve the wedges hot with the aioli."
-     }
-    ]
-   },
-   {
-    "kind": "notes",
-    "heading": "Notes",
-    "items": [
-     {
-      "text": "Don't crowd the tray — crowded wedges steam instead of crisping. Use two trays if needed."
-     }
-    ]
-   }
-  ],
-  "id": "Sides-Kumara_Wedges_Aioli",
-  "file": "Sides/Kumara_Wedges_Aioli.tex",
-  "chapter": "sides",
-  "chapterName": "Salads & Sides",
-  "ingredients": [
-   "800 g kumara (about 2 large), scrubbed",
-   "1 tbsp oil",
-   "1 tsp smoked paprika",
-   "½ tsp salt",
-   "⅓ cup mayonnaise (or half Greek yoghurt)",
-   "1 small garlic clove, crushed",
-   "1 tsp lemon juice"
-  ],
-  "shop": [
-   {
-    "key": "kumara",
-    "name": "Kumara",
-    "aisle": "Fruit & veg",
-    "qty": 800.0,
-    "unit": "g",
-    "optional": false,
-    "raw": "800 g kumara (about 2 large), scrubbed"
-   },
-   {
-    "key": "oil",
-    "name": "Cooking oil",
-    "aisle": "Pantry: check first",
-    "qty": 1.0,
-    "unit": "tbsp",
-    "optional": false,
-    "raw": "1 tbsp oil"
-   },
-   {
-    "key": "smoked-paprika",
-    "name": "Smoked paprika",
-    "aisle": "Pantry: check first",
-    "qty": 1.0,
-    "unit": "tsp",
-    "optional": false,
-    "raw": "1 tsp smoked paprika"
-   },
-   {
-    "key": "salt",
-    "name": "Salt",
-    "aisle": "Pantry: check first",
-    "qty": 0.5,
-    "unit": "tsp",
-    "optional": false,
-    "raw": "½ tsp salt"
-   },
-   {
-    "key": "mayonnaise",
-    "name": "Mayonnaise",
-    "aisle": "Pantry: check first",
-    "qty": 0.3333333333333333,
-    "unit": "cup",
-    "optional": false,
-    "raw": "⅓ cup mayonnaise (or half Greek yoghurt)"
-   },
-   {
-    "key": "garlic",
-    "name": "Garlic",
-    "aisle": "Fruit & veg",
-    "qty": 1.0,
-    "unit": "clove",
-    "optional": false,
-    "raw": "1 small garlic clove, crushed"
-   },
-   {
-    "key": "lemon",
-    "name": "Lemons",
-    "aisle": "Fruit & veg",
-    "qty": 0.5,
-    "unit": "",
-    "optional": false,
-    "raw": "1 tsp lemon juice"
-   }
-  ],
-  "tags": []
  },
  {
   "title": "Lemon & Herb Quinoa",
@@ -27311,6 +26651,1059 @@
   "tags": []
  },
  {
+  "title": "Turmeric Rice with Peas",
+  "servings": "4",
+  "time": "25 min",
+  "intro": "Golden, gently spiced basmati with peas. Goes with keema, biryani bowls and any curry.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "1½ cups basmati rice"
+     },
+     {
+      "text": "1 tbsp butter or oil"
+     },
+     {
+      "text": "1 small onion, finely chopped (optional)"
+     },
+     {
+      "text": "1 tsp ground turmeric"
+     },
+     {
+      "text": "½ tsp ground cumin"
+     },
+     {
+      "text": "1 bay leaf"
+     },
+     {
+      "text": "½ tsp salt"
+     },
+     {
+      "text": "2¼ cups water or chicken stock"
+     },
+     {
+      "text": "1 cup frozen peas"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "Rinse the rice in a sieve until the water runs mostly clear. Drain well."
+     },
+     {
+      "text": "Heat the butter in a saucepan over medium heat and cook the onion for 3–4 minutes until soft. Stir in the turmeric and cumin for 30 seconds."
+     },
+     {
+      "text": "Add the rice and stir to coat, then add the bay leaf, salt and water. Bring to the boil."
+     },
+     {
+      "text": "Cover, turn the heat to the lowest setting and cook for 12 minutes."
+     },
+     {
+      "text": "Scatter the frozen peas over the top, put the lid back on and take off the heat. Leave for 10 minutes — the steam cooks the peas."
+     },
+     {
+      "text": "Remove the bay leaf and fluff with a fork."
+     }
+    ]
+   },
+   {
+    "kind": "variation",
+    "heading": "Rice cooker",
+    "text": "Soften the onion and spices in a pan (or skip the onion), then put everything except the peas in the rice cooker. When it finishes, scatter over the peas, close the lid and leave on keep warm for 10 minutes.",
+    "sections": []
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Turmeric stains — wipe up spills straight away."
+     }
+    ]
+   }
+  ],
+  "id": "Sides-Turmeric_Rice",
+  "file": "Sides/Turmeric_Rice.tex",
+  "chapter": "sides",
+  "chapterName": "Salads & Sides",
+  "ingredients": [
+   "1½ cups basmati rice",
+   "1 tbsp butter or oil",
+   "1 small onion, finely chopped (optional)",
+   "1 tsp ground turmeric",
+   "½ tsp ground cumin",
+   "1 bay leaf",
+   "½ tsp salt",
+   "2¼ cups water or chicken stock",
+   "1 cup frozen peas"
+  ],
+  "shop": [
+   {
+    "key": "basmati-rice",
+    "name": "Basmati rice",
+    "aisle": "Pasta, rice & grains",
+    "qty": 1.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1½ cups basmati rice"
+   },
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp butter or oil"
+   },
+   {
+    "key": "onion",
+    "name": "Onions",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": true,
+    "raw": "1 small onion, finely chopped (optional)"
+   },
+   {
+    "key": "turmeric",
+    "name": "Turmeric",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp ground turmeric"
+   },
+   {
+    "key": "cumin",
+    "name": "Ground cumin",
+    "aisle": "Pantry: check first",
+    "qty": 0.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "½ tsp ground cumin"
+   },
+   {
+    "key": "bay-leaves",
+    "name": "Bay leaves",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 bay leaf"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 0.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "½ tsp salt"
+   },
+   {
+    "key": "frozen-peas",
+    "name": "Frozen peas",
+    "aisle": "Frozen",
+    "qty": 1.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1 cup frozen peas"
+   }
+  ],
+  "tags": []
+ },
+ {
+  "title": "Asparagus with Capers and Parsley Mayonnaise",
+  "servings": "2–3",
+  "time": "45 min",
+  "intro": "",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "1 bunch asparagus spears"
+     },
+     {
+      "text": "6 capers, chopped"
+     },
+     {
+      "text": "Sprigs of flat-leaf parsley"
+     },
+     {
+      "text": "3 tbsp mayonnaise and/or 3 tbsp thick plain yoghurt"
+     },
+     {
+      "text": "Sea salt flakes"
+     },
+     {
+      "text": "Salt and pepper, to taste"
+     },
+     {
+      "text": "Extra virgin olive oil"
+     },
+     {
+      "text": "1 sheet baking paper"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Preheat the oven:** Set to 180°C."
+     },
+     {
+      "text": "**Prepare the asparagus:** Arrange the asparagus spears in a neat layer in the centre of the baking paper. Drizzle with olive oil, sprinkle with sea salt flakes, and scatter parsley leaves on top."
+     },
+     {
+      "text": "**Wrap and bake:** Fold the baking paper over the spears, tucking the ends under to form a tight parcel. Place on a tray and bake for 45 minutes, or until the spears are tender when pressed through the paper."
+     },
+     {
+      "text": "**Make the sauce:** Finely chop the capers and stir into the mayonnaise (or yoghurt) in a small bowl. Mix until smooth and season with salt and pepper."
+     },
+     {
+      "text": "**To serve:** Cut open the paper parcel, transfer the asparagus to a serving platter, and spoon the caper–parsley mayonnaise over the top."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "This method of baking asparagus in olive oil inside a paper parcel intensifies its flavour and creates a soft, delicate texture. For a lighter option, substitute the mayonnaise entirely with thick plain yoghurt, or combine both for extra creaminess. Serve as a side dish to grilled meats or enjoy as a simple starter."
+     }
+    ]
+   }
+  ],
+  "id": "Italian-Asparagus",
+  "file": "Italian/Asparagus.tex",
+  "chapter": "sides",
+  "chapterName": "Salads & Sides",
+  "ingredients": [
+   "1 bunch asparagus spears",
+   "6 capers, chopped",
+   "Sprigs of flat-leaf parsley",
+   "3 tbsp mayonnaise and/or 3 tbsp thick plain yoghurt",
+   "Sea salt flakes",
+   "Salt and pepper, to taste",
+   "Extra virgin olive oil",
+   "1 sheet baking paper"
+  ],
+  "shop": [
+   {
+    "key": "asparagus",
+    "name": "Asparagus",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "bunch",
+    "optional": false,
+    "raw": "1 bunch asparagus spears"
+   },
+   {
+    "key": "capers",
+    "name": "Capers",
+    "aisle": "Cans, jars & pulses",
+    "qty": 6.0,
+    "unit": "",
+    "optional": false,
+    "raw": "6 capers, chopped"
+   },
+   {
+    "key": "parsley",
+    "name": "Fresh parsley",
+    "aisle": "Fruit & veg",
+    "qty": null,
+    "unit": "",
+    "optional": false,
+    "raw": "Sprigs of flat-leaf parsley"
+   },
+   {
+    "key": "mayonnaise",
+    "name": "Mayonnaise",
+    "aisle": "Pantry: check first",
+    "qty": 3.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "3 tbsp mayonnaise and/or 3 tbsp thick plain yoghurt"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": false,
+    "raw": "Sea salt flakes"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Salt and pepper, to taste"
+   },
+   {
+    "key": "pepper",
+    "name": "Black pepper",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Salt and pepper, to taste"
+   },
+   {
+    "key": "olive-oil",
+    "name": "Olive oil",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": false,
+    "raw": "Extra virgin olive oil"
+   }
+  ],
+  "tags": []
+ },
+ {
+  "title": "Cauliflower Cheese",
+  "servings": "4",
+  "time": "35 min",
+  "intro": "Tender cauliflower baked in a golden cheese sauce. A comforting side for roasts, sausages and meatloaf. Roughly 13 g protein per serve.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "1 medium cauliflower, cut into florets"
+     },
+     {
+      "group": "Cheese sauce"
+     },
+     {
+      "text": "30 g butter"
+     },
+     {
+      "text": "2 tbsp plain flour"
+     },
+     {
+      "text": "1½ cups milk"
+     },
+     {
+      "text": "1 tsp Dijon or wholegrain mustard"
+     },
+     {
+      "text": "1 cup grated tasty cheese, plus ¼ cup to top"
+     },
+     {
+      "text": "Salt and black pepper"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "Preheat oven to 200°C bake."
+     },
+     {
+      "text": "Boil or steam the cauliflower for 5 minutes, until just tender. Drain well and put in a baking dish."
+     },
+     {
+      "text": "Melt the butter in a saucepan over medium heat. Stir in the flour and cook for 1 minute."
+     },
+     {
+      "text": "Gradually whisk in the milk and keep stirring until it boils and thickens, about 3–4 minutes."
+     },
+     {
+      "text": "Take off the heat and stir in the mustard and 1 cup of cheese. Season."
+     },
+     {
+      "text": "Pour the sauce over the cauliflower and sprinkle with the remaining cheese."
+     },
+     {
+      "text": "Bake for 15–20 minutes, until bubbling and golden."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Add the milk slowly while whisking to keep the sauce smooth."
+     },
+     {
+      "text": "Half broccoli, half cauliflower works well too."
+     }
+    ]
+   }
+  ],
+  "id": "Sides-Cauliflower_Cheese",
+  "file": "Sides/Cauliflower_Cheese.tex",
+  "chapter": "sides",
+  "chapterName": "Salads & Sides",
+  "ingredients": [
+   "1 medium cauliflower, cut into florets",
+   "30 g butter",
+   "2 tbsp plain flour",
+   "1½ cups milk",
+   "1 tsp Dijon or wholegrain mustard",
+   "1 cup grated tasty cheese, plus ¼ cup to top",
+   "Salt and black pepper"
+  ],
+  "shop": [
+   {
+    "key": "cauliflower",
+    "name": "Cauliflower",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 medium cauliflower, cut into florets"
+   },
+   {
+    "key": "butter",
+    "name": "Butter",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 30.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "30 g butter"
+   },
+   {
+    "key": "flour",
+    "name": "Plain flour",
+    "aisle": "Baking",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp plain flour"
+   },
+   {
+    "key": "milk",
+    "name": "Milk",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 1.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1½ cups milk"
+   },
+   {
+    "key": "mustard",
+    "name": "Mustard",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp Dijon or wholegrain mustard"
+   },
+   {
+    "key": "cheese",
+    "name": "Tasty cheese",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 1.0,
+    "unit": "cup",
+    "optional": true,
+    "raw": "1 cup grated tasty cheese, plus ¼ cup to top"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Salt and black pepper"
+   },
+   {
+    "key": "pepper",
+    "name": "Black pepper",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Salt and black pepper"
+   }
+  ],
+  "tags": []
+ },
+ {
+  "title": "Crispy Smashed Potatoes",
+  "servings": "4",
+  "time": "10 min prep + 50 min",
+  "intro": "Boiled, squashed and roasted until the edges shatter. Better than roast potatoes with less effort.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "1 kg small or baby potatoes"
+     },
+     {
+      "text": "2 tbsp olive oil"
+     },
+     {
+      "text": "2 garlic cloves, crushed"
+     },
+     {
+      "text": "1 tsp dried rosemary or thyme"
+     },
+     {
+      "text": "½ tsp salt"
+     },
+     {
+      "text": "Black pepper"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "Put the potatoes in a pot of cold salted water, bring to the boil and simmer for 15–20 minutes, until a knife slides in easily."
+     },
+     {
+      "text": "Preheat oven to 220°C bake while the potatoes cook."
+     },
+     {
+      "text": "Drain the potatoes and leave in the colander for 5 minutes to steam dry."
+     },
+     {
+      "text": "Spread half the oil on a large tray. Space out the potatoes and press each one flat with the bottom of a glass or a potato masher until about 1.5 cm thick."
+     },
+     {
+      "text": "Mix the rest of the oil with the garlic and drizzle over. Sprinkle with the herbs, salt and pepper."
+     },
+     {
+      "text": "Roast for 30–35 minutes, until deep golden and crisp at the edges."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Letting the boiled potatoes steam dry is what makes them crisp."
+     },
+     {
+      "text": "Larger potatoes work too — cut them into 5 cm chunks before boiling."
+     }
+    ]
+   }
+  ],
+  "id": "Sides-Crispy_Smashed_Potatoes",
+  "file": "Sides/Crispy_Smashed_Potatoes.tex",
+  "chapter": "sides",
+  "chapterName": "Salads & Sides",
+  "ingredients": [
+   "1 kg small or baby potatoes",
+   "2 tbsp olive oil",
+   "2 garlic cloves, crushed",
+   "1 tsp dried rosemary or thyme",
+   "½ tsp salt",
+   "Black pepper"
+  ],
+  "shop": [
+   {
+    "key": "potato",
+    "name": "Potatoes",
+    "aisle": "Fruit & veg",
+    "qty": 1000.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "1 kg small or baby potatoes"
+   },
+   {
+    "key": "olive-oil",
+    "name": "Olive oil",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp olive oil"
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "2 garlic cloves, crushed"
+   },
+   {
+    "key": "thyme",
+    "name": "Dried thyme",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp dried rosemary or thyme"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 0.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "½ tsp salt"
+   },
+   {
+    "key": "pepper",
+    "name": "Black pepper",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": false,
+    "raw": "Black pepper"
+   }
+  ],
+  "tags": []
+ },
+ {
+  "title": "Garlic Green Beans",
+  "servings": "4",
+  "time": "10 min",
+  "intro": "Bright green beans tossed in garlic butter. Works just as well with frozen beans.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "400 g green beans, trimmed (fresh or frozen)"
+     },
+     {
+      "text": "1 tbsp butter or olive oil"
+     },
+     {
+      "text": "2 garlic cloves, thinly sliced"
+     },
+     {
+      "text": "Squeeze of lemon juice"
+     },
+     {
+      "text": "Salt and black pepper"
+     },
+     {
+      "text": "2 tbsp toasted sliced almonds (optional)"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "Cook the beans in a pot of boiling salted water for 2–3 minutes (3–4 from frozen), until bright green and just tender. Drain."
+     },
+     {
+      "text": "Melt the butter in a frying pan over medium heat and cook the garlic for about 1 minute, until fragrant and just golden."
+     },
+     {
+      "text": "Add the beans and toss for 1 minute to coat."
+     },
+     {
+      "text": "Finish with lemon juice, salt, pepper and almonds if using."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Don't let the garlic go brown — it turns bitter."
+     }
+    ]
+   }
+  ],
+  "id": "Sides-Garlic_Green_Beans",
+  "file": "Sides/Garlic_Green_Beans.tex",
+  "chapter": "sides",
+  "chapterName": "Salads & Sides",
+  "ingredients": [
+   "400 g green beans, trimmed (fresh or frozen)",
+   "1 tbsp butter or olive oil",
+   "2 garlic cloves, thinly sliced",
+   "Squeeze of lemon juice",
+   "Salt and black pepper",
+   "2 tbsp toasted sliced almonds (optional)"
+  ],
+  "shop": [
+   {
+    "key": "green-beans",
+    "name": "Green beans",
+    "aisle": "Frozen",
+    "qty": 400.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "400 g green beans, trimmed (fresh or frozen)"
+   },
+   {
+    "key": "olive-oil",
+    "name": "Olive oil",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp butter or olive oil"
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "2 garlic cloves, thinly sliced"
+   },
+   {
+    "key": "lemon",
+    "name": "Lemons",
+    "aisle": "Fruit & veg",
+    "qty": null,
+    "unit": "",
+    "optional": false,
+    "raw": "Squeeze of lemon juice"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Salt and black pepper"
+   },
+   {
+    "key": "pepper",
+    "name": "Black pepper",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Salt and black pepper"
+   },
+   {
+    "key": "almonds",
+    "name": "Almonds",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": true,
+    "raw": "2 tbsp toasted sliced almonds (optional)"
+   }
+  ],
+  "tags": []
+ },
+ {
+  "title": "Kumara Mash",
+  "servings": "4",
+  "time": "25 min",
+  "intro": "Smooth, slightly sweet orange kumara mash. Great under slow-cooker stews and as a topping for cottage pie.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "1 kg orange kumara, peeled and cut into chunks"
+     },
+     {
+      "text": "20 g butter"
+     },
+     {
+      "text": "¼ cup milk"
+     },
+     {
+      "text": "½ tsp salt"
+     },
+     {
+      "text": "Black pepper"
+     },
+     {
+      "text": "Pinch of ground cinnamon or nutmeg (optional)"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "Put the kumara in a pot of salted water, bring to the boil and simmer for 12–15 minutes, until very tender."
+     },
+     {
+      "text": "Drain well and return to the pot over low heat for 1 minute to dry out."
+     },
+     {
+      "text": "Mash with the butter, milk, salt and pepper until smooth. Add the cinnamon or nutmeg if using."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "For half-and-half mash, use 500 g kumara and 500 g potatoes, boiled together."
+     },
+     {
+      "text": "In the Instant Pot, cook the chunks on a trivet over 1 cup water on High for 8 minutes, then quick release."
+     }
+    ]
+   }
+  ],
+  "id": "Sides-Kumara_Mash",
+  "file": "Sides/Kumara_Mash.tex",
+  "chapter": "sides",
+  "chapterName": "Salads & Sides",
+  "ingredients": [
+   "1 kg orange kumara, peeled and cut into chunks",
+   "20 g butter",
+   "¼ cup milk",
+   "½ tsp salt",
+   "Black pepper",
+   "Pinch of ground cinnamon or nutmeg (optional)"
+  ],
+  "shop": [
+   {
+    "key": "kumara",
+    "name": "Kumara",
+    "aisle": "Fruit & veg",
+    "qty": 1000.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "1 kg orange kumara, peeled and cut into chunks"
+   },
+   {
+    "key": "butter",
+    "name": "Butter",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 20.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "20 g butter"
+   },
+   {
+    "key": "milk",
+    "name": "Milk",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 0.25,
+    "unit": "cup",
+    "optional": false,
+    "raw": "¼ cup milk"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 0.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "½ tsp salt"
+   },
+   {
+    "key": "pepper",
+    "name": "Black pepper",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": false,
+    "raw": "Black pepper"
+   },
+   {
+    "key": "cinnamon",
+    "name": "Ground cinnamon",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Pinch of ground cinnamon or nutmeg (optional)"
+   },
+   {
+    "key": "nutmeg",
+    "name": "Nutmeg",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Pinch of ground cinnamon or nutmeg (optional)"
+   }
+  ],
+  "tags": []
+ },
+ {
+  "title": "Kumara Wedges with Aioli",
+  "servings": "4",
+  "time": "10 min prep + 30 min",
+  "intro": "Crispy-edged smoky kumara wedges with a quick garlic dipping sauce.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "800 g kumara (about 2 large), scrubbed"
+     },
+     {
+      "text": "1 tbsp oil"
+     },
+     {
+      "text": "1 tsp smoked paprika"
+     },
+     {
+      "text": "½ tsp salt"
+     },
+     {
+      "group": "Quick aioli"
+     },
+     {
+      "text": "⅓ cup mayonnaise (or half Greek yoghurt)"
+     },
+     {
+      "text": "1 small garlic clove, crushed"
+     },
+     {
+      "text": "1 tsp lemon juice"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "Preheat oven to 220°C bake. Line a large tray with baking paper."
+     },
+     {
+      "text": "Cut the kumara into wedges about 2 cm thick (no need to peel)."
+     },
+     {
+      "text": "Toss with the oil, paprika and salt and spread out in a single layer with space between them."
+     },
+     {
+      "text": "Roast for 25–30 minutes, turning halfway, until tender and browned at the edges."
+     },
+     {
+      "text": "Meanwhile, mix the mayonnaise, garlic and lemon juice."
+     },
+     {
+      "text": "Serve the wedges hot with the aioli."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Don't crowd the tray — crowded wedges steam instead of crisping. Use two trays if needed."
+     }
+    ]
+   }
+  ],
+  "id": "Sides-Kumara_Wedges_Aioli",
+  "file": "Sides/Kumara_Wedges_Aioli.tex",
+  "chapter": "sides",
+  "chapterName": "Salads & Sides",
+  "ingredients": [
+   "800 g kumara (about 2 large), scrubbed",
+   "1 tbsp oil",
+   "1 tsp smoked paprika",
+   "½ tsp salt",
+   "⅓ cup mayonnaise (or half Greek yoghurt)",
+   "1 small garlic clove, crushed",
+   "1 tsp lemon juice"
+  ],
+  "shop": [
+   {
+    "key": "kumara",
+    "name": "Kumara",
+    "aisle": "Fruit & veg",
+    "qty": 800.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "800 g kumara (about 2 large), scrubbed"
+   },
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp oil"
+   },
+   {
+    "key": "smoked-paprika",
+    "name": "Smoked paprika",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp smoked paprika"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 0.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "½ tsp salt"
+   },
+   {
+    "key": "mayonnaise",
+    "name": "Mayonnaise",
+    "aisle": "Pantry: check first",
+    "qty": 0.3333333333333333,
+    "unit": "cup",
+    "optional": false,
+    "raw": "⅓ cup mayonnaise (or half Greek yoghurt)"
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "1 small garlic clove, crushed"
+   },
+   {
+    "key": "lemon",
+    "name": "Lemons",
+    "aisle": "Fruit & veg",
+    "qty": 0.5,
+    "unit": "",
+    "optional": false,
+    "raw": "1 tsp lemon juice"
+   }
+  ],
+  "tags": []
+ },
+ {
   "title": "Roast Vegetables",
   "servings": "4",
   "time": "15 min prep + 45 min",
@@ -27497,229 +27890,6 @@
   "tags": []
  },
  {
-  "title": "Rustic Chickpea & Rocket Salad with Mustard-Garlic Vinaigrette",
-  "servings": "2",
-  "time": "15 min",
-  "intro": "",
-  "sections": [
-   {
-    "kind": "ingredients",
-    "heading": "Ingredients",
-    "items": [
-     {
-      "group": "For the salad"
-     },
-     {
-      "text": "100 g rocket or mixed greens"
-     },
-     {
-      "text": "200 g cooked chickpeas (canned is fine, drained and rinsed)"
-     },
-     {
-      "text": "10 cherry tomatoes, halved"
-     },
-     {
-      "text": "¼ red onion, thinly sliced"
-     },
-     {
-      "text": "2 tbsp pitted olives"
-     },
-     {
-      "text": "Parmesan or pecorino shavings (optional)"
-     },
-     {
-      "group": "For the dressing"
-     },
-     {
-      "text": "1 garlic clove, finely minced or crushed"
-     },
-     {
-      "text": "½ tsp salt"
-     },
-     {
-      "text": "Black pepper, to taste"
-     },
-     {
-      "text": "3 tbsp extra virgin olive oil"
-     },
-     {
-      "text": "1 tsp Dijon or mild mustard"
-     },
-     {
-      "text": "1 tbsp white wine vinegar or apple cider vinegar"
-     }
-    ]
-   },
-   {
-    "kind": "steps",
-    "heading": "Method",
-    "items": [
-     {
-      "text": "**Step 1 — Make the Dressing:**",
-      "sub": [
-       "In a small bowl, combine the garlic, salt, and pepper.",
-       "Add the mustard and vinegar, and mix well.",
-       "Slowly drizzle in the olive oil while whisking to emulsify."
-      ]
-     },
-     {
-      "text": "**Step 2 — Prepare the Salad:**",
-      "sub": [
-       "In a large bowl, add the rocket, chickpeas, tomatoes, red onion, and olives.",
-       "Add cheese shavings if using."
-      ]
-     },
-     {
-      "text": "**Step 3 — Dress and Serve:**",
-      "sub": [
-       "Pour the dressing over the salad just before serving.",
-       "Toss gently to coat everything evenly.",
-       "Serve immediately — optionally with toasted bread on the side."
-      ]
-     }
-    ]
-   },
-   {
-    "kind": "notes",
-    "heading": "Notes",
-    "items": [
-     {
-      "text": "Light, fresh, and protein-rich — perfect as a summer lunch or a side to grilled meat."
-     }
-    ]
-   }
-  ],
-  "id": "Italian-Rustic_Salad",
-  "file": "Italian/Rustic_Salad.tex",
-  "chapter": "sides",
-  "chapterName": "Salads & Sides",
-  "ingredients": [
-   "100 g rocket or mixed greens",
-   "200 g cooked chickpeas (canned is fine, drained and rinsed)",
-   "10 cherry tomatoes, halved",
-   "¼ red onion, thinly sliced",
-   "2 tbsp pitted olives",
-   "Parmesan or pecorino shavings (optional)",
-   "1 garlic clove, finely minced or crushed",
-   "½ tsp salt",
-   "Black pepper, to taste",
-   "3 tbsp extra virgin olive oil",
-   "1 tsp Dijon or mild mustard",
-   "1 tbsp white wine vinegar or apple cider vinegar"
-  ],
-  "shop": [
-   {
-    "key": "lettuce",
-    "name": "Lettuce or salad leaves",
-    "aisle": "Fruit & veg",
-    "qty": 100.0,
-    "unit": "g",
-    "optional": false,
-    "raw": "100 g rocket or mixed greens"
-   },
-   {
-    "key": "chickpeas",
-    "name": "Chickpeas",
-    "aisle": "Cans, jars & pulses",
-    "qty": 0.5,
-    "unit": "can",
-    "optional": false,
-    "raw": "200 g cooked chickpeas (canned is fine, drained and rinsed)"
-   },
-   {
-    "key": "tomato",
-    "name": "Tomatoes",
-    "aisle": "Fruit & veg",
-    "qty": 10.0,
-    "unit": "",
-    "optional": false,
-    "raw": "10 cherry tomatoes, halved"
-   },
-   {
-    "key": "red-onion",
-    "name": "Red onion",
-    "aisle": "Fruit & veg",
-    "qty": 0.25,
-    "unit": "",
-    "optional": false,
-    "raw": "¼ red onion, thinly sliced"
-   },
-   {
-    "key": "olives",
-    "name": "Olives",
-    "aisle": "Cans, jars & pulses",
-    "qty": 2.0,
-    "unit": "tbsp",
-    "optional": false,
-    "raw": "2 tbsp pitted olives"
-   },
-   {
-    "key": "parmesan",
-    "name": "Parmesan",
-    "aisle": "Dairy, eggs & chilled",
-    "qty": null,
-    "unit": "",
-    "optional": true,
-    "raw": "Parmesan or pecorino shavings (optional)"
-   },
-   {
-    "key": "garlic",
-    "name": "Garlic",
-    "aisle": "Fruit & veg",
-    "qty": 1.0,
-    "unit": "clove",
-    "optional": false,
-    "raw": "1 garlic clove, finely minced or crushed"
-   },
-   {
-    "key": "salt",
-    "name": "Salt",
-    "aisle": "Pantry: check first",
-    "qty": 0.5,
-    "unit": "tsp",
-    "optional": false,
-    "raw": "½ tsp salt"
-   },
-   {
-    "key": "pepper",
-    "name": "Black pepper",
-    "aisle": "Pantry: check first",
-    "qty": null,
-    "unit": "",
-    "optional": false,
-    "raw": "Black pepper, to taste"
-   },
-   {
-    "key": "olive-oil",
-    "name": "Olive oil",
-    "aisle": "Pantry: check first",
-    "qty": 3.0,
-    "unit": "tbsp",
-    "optional": false,
-    "raw": "3 tbsp extra virgin olive oil"
-   },
-   {
-    "key": "mustard",
-    "name": "Mustard",
-    "aisle": "Pantry: check first",
-    "qty": 1.0,
-    "unit": "tsp",
-    "optional": false,
-    "raw": "1 tsp Dijon or mild mustard"
-   },
-   {
-    "key": "wine",
-    "name": "Wine (for cooking)",
-    "aisle": "Pantry: check first",
-    "qty": 1.0,
-    "unit": "tbsp",
-    "optional": false,
-    "raw": "1 tbsp white wine vinegar or apple cider vinegar"
-   }
-  ],
-  "tags": []
- },
- {
   "title": "Sesame Asian Greens",
   "servings": "4",
   "time": "10 min",
@@ -27876,176 +28046,6 @@
     "unit": "tsp",
     "optional": false,
     "raw": "1 tsp sesame seeds"
-   }
-  ],
-  "tags": []
- },
- {
-  "title": "Turmeric Rice with Peas",
-  "servings": "4",
-  "time": "25 min",
-  "intro": "Golden, gently spiced basmati with peas. Goes with keema, biryani bowls and any curry.",
-  "sections": [
-   {
-    "kind": "ingredients",
-    "heading": "Ingredients",
-    "items": [
-     {
-      "text": "1½ cups basmati rice"
-     },
-     {
-      "text": "1 tbsp butter or oil"
-     },
-     {
-      "text": "1 small onion, finely chopped (optional)"
-     },
-     {
-      "text": "1 tsp ground turmeric"
-     },
-     {
-      "text": "½ tsp ground cumin"
-     },
-     {
-      "text": "1 bay leaf"
-     },
-     {
-      "text": "½ tsp salt"
-     },
-     {
-      "text": "2¼ cups water or chicken stock"
-     },
-     {
-      "text": "1 cup frozen peas"
-     }
-    ]
-   },
-   {
-    "kind": "steps",
-    "heading": "Method",
-    "items": [
-     {
-      "text": "Rinse the rice in a sieve until the water runs mostly clear. Drain well."
-     },
-     {
-      "text": "Heat the butter in a saucepan over medium heat and cook the onion for 3–4 minutes until soft. Stir in the turmeric and cumin for 30 seconds."
-     },
-     {
-      "text": "Add the rice and stir to coat, then add the bay leaf, salt and water. Bring to the boil."
-     },
-     {
-      "text": "Cover, turn the heat to the lowest setting and cook for 12 minutes."
-     },
-     {
-      "text": "Scatter the frozen peas over the top, put the lid back on and take off the heat. Leave for 10 minutes — the steam cooks the peas."
-     },
-     {
-      "text": "Remove the bay leaf and fluff with a fork."
-     }
-    ]
-   },
-   {
-    "kind": "variation",
-    "heading": "Rice cooker",
-    "text": "Soften the onion and spices in a pan (or skip the onion), then put everything except the peas in the rice cooker. When it finishes, scatter over the peas, close the lid and leave on keep warm for 10 minutes.",
-    "sections": []
-   },
-   {
-    "kind": "notes",
-    "heading": "Notes",
-    "items": [
-     {
-      "text": "Turmeric stains — wipe up spills straight away."
-     }
-    ]
-   }
-  ],
-  "id": "Sides-Turmeric_Rice",
-  "file": "Sides/Turmeric_Rice.tex",
-  "chapter": "sides",
-  "chapterName": "Salads & Sides",
-  "ingredients": [
-   "1½ cups basmati rice",
-   "1 tbsp butter or oil",
-   "1 small onion, finely chopped (optional)",
-   "1 tsp ground turmeric",
-   "½ tsp ground cumin",
-   "1 bay leaf",
-   "½ tsp salt",
-   "2¼ cups water or chicken stock",
-   "1 cup frozen peas"
-  ],
-  "shop": [
-   {
-    "key": "basmati-rice",
-    "name": "Basmati rice",
-    "aisle": "Pasta, rice & grains",
-    "qty": 1.5,
-    "unit": "cup",
-    "optional": false,
-    "raw": "1½ cups basmati rice"
-   },
-   {
-    "key": "oil",
-    "name": "Cooking oil",
-    "aisle": "Pantry: check first",
-    "qty": 1.0,
-    "unit": "tbsp",
-    "optional": false,
-    "raw": "1 tbsp butter or oil"
-   },
-   {
-    "key": "onion",
-    "name": "Onions",
-    "aisle": "Fruit & veg",
-    "qty": 1.0,
-    "unit": "",
-    "optional": true,
-    "raw": "1 small onion, finely chopped (optional)"
-   },
-   {
-    "key": "turmeric",
-    "name": "Turmeric",
-    "aisle": "Pantry: check first",
-    "qty": 1.0,
-    "unit": "tsp",
-    "optional": false,
-    "raw": "1 tsp ground turmeric"
-   },
-   {
-    "key": "cumin",
-    "name": "Ground cumin",
-    "aisle": "Pantry: check first",
-    "qty": 0.5,
-    "unit": "tsp",
-    "optional": false,
-    "raw": "½ tsp ground cumin"
-   },
-   {
-    "key": "bay-leaves",
-    "name": "Bay leaves",
-    "aisle": "Pantry: check first",
-    "qty": 1.0,
-    "unit": "",
-    "optional": false,
-    "raw": "1 bay leaf"
-   },
-   {
-    "key": "salt",
-    "name": "Salt",
-    "aisle": "Pantry: check first",
-    "qty": 0.5,
-    "unit": "tsp",
-    "optional": false,
-    "raw": "½ tsp salt"
-   },
-   {
-    "key": "frozen-peas",
-    "name": "Frozen peas",
-    "aisle": "Frozen",
-    "qty": 1.0,
-    "unit": "cup",
-    "optional": false,
-    "raw": "1 cup frozen peas"
    }
   ],
   "tags": []
