@@ -20,7 +20,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 FOLDERS = ["InstantPot", "SlowCooker", "Stovetop", "Oven", "Fakeaways", "Italian",
-           "Breakfast", "Snacks", "Shakes", "Desserts", "Baking"]
+           "Breakfast", "Snacks", "Shakes", "Desserts", "Baking", "Sides"]
 
 UNICODE_FRACS = {"½": "1}{2", "¼": "1}{4", "¾": "3}{4", "⅓": "1}{3", "⅔": "2}{3", "⅛": "1}{8"}
 
@@ -178,6 +178,8 @@ def main():
     changed = 0
     for folder in FOLDERS:
         for path in sorted((ROOT / folder).glob("*.tex")):
+            if path.name == "Ideas.tex":
+                continue
             src = path.read_text()
             new = standardise(src)
             if new != src:

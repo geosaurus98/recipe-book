@@ -1,6 +1,7 @@
 \documentclass[11pt,a4paper]{article}
 
-% Running list of recipes to add to George's Recipe Book (main.tex).
+% Recipe ideas for George's Recipe Book (main.tex). Each recipe folder keeps its own
+% list in Ideas.tex; this file pulls them together into one checklist.
 % Tick an item by changing \todo to \done. Delete it once the recipe is in the book.
 
 \usepackage[utf8]{inputenc}
@@ -21,17 +22,20 @@
 \newcommand{\done}{$\boxtimes$\ }
 % Short tag for which chapter a recipe would go in
 \newcommand{\ch}[1]{\hfill{\small\textcolor{black!55}{#1}}}
+% A short note after an idea, and a small heading inside a chapter's list
+\newcommand{\hint}[1]{{\small\textcolor{black!55}{--- #1}}}
+\newcommand{\group}[1]{\par\smallskip{\small\bfseries #1}\par}
 
-\title{Recipe Book: To Add / Could Add}
+\title{Recipe Book: To Add}
 \date{}
 
 \begin{document}
 \maketitle
 \vspace{-2em}
 
-\textbf{To add} = recipes you've asked for. \textbf{Could add} = ideas that fit how you cook
-(4 servings, \textasciitilde500\,g beef or pork mince, \textasciitilde40\,g protein, cheap staples
-like red lentils, split peas, barley, beans, edamame and frozen veg).
+Ideas for every chapter, kept in each folder's \texttt{Ideas.tex}. They fit how you cook:
+4 servings, \textasciitilde500\,g beef or pork mince, \textasciitilde40\,g protein, and cheap staples
+like red lentils, split peas, barley, beans, edamame and frozen veg.
 
 % ════════════════════════════════════════════════════════════════════════════
 \section*{Tidy-ups in the existing book}
@@ -44,139 +48,19 @@ like red lentils, split peas, barley, beans, edamame and frozen veg).
 \end{itemize}
 
 % ════════════════════════════════════════════════════════════════════════════
-\section*{To add (from the Palmer wishlist)}
-
+\section*{Recipe ideas by chapter}
 \begin{multicols}{2}
-\subsection*{Mains}
-\begin{itemize}
-  \item \todo Teriyaki Chicken Donburi
-  \item \todo Honey Soy Chicken Noodle Stir-Fry
-  \item \todo Beef Bulgogi Rice Bowls
-  \item \todo Creamy Tuscan Chicken
-  \item \todo Lemon Pepper Chicken Thighs with Roast Veg
-  \item \todo Sticky Hoisin Pork Lettuce Cups
-  \item \todo Crispy Chilli Beef with Rice
-  \item \todo Garlic Butter Prawn Pasta
-  \item \todo One-Pan Sausage, Potato \& Capsicum Bake
-  \item \todo Sheet-Pan Chicken Fajitas
-  \item \todo Thai Basil Chicken (Pad Krapow)
-  \item \todo Chickpea \& Spinach Coconut Curry
-  \item \todo Red Lentil Dhal
-  \item \todo Pumpkin \& Feta Pasta Bake
-  \item \todo Creamy Mushroom \& Bacon Penne
-  \item \todo Greek Chicken Gyros Plates
-  \item \todo Lamb Kofta with Tzatziki \& Pita
-  \item \todo Salmon Teriyaki with Sesame Greens
-  \item \todo Pork Schnitzel with Lemon Slaw
-\end{itemize}
-
-\subsection*{Quick \& cheap}
-\begin{itemize}
-  \item \todo Egg Fried Rice (15-min)
-  \item \todo Cheesy Tuna Pasta
-  \item \todo Veggie Quesadillas
-  \item \todo Shakshuka
-  \item \todo Peanut Butter Sesame Noodles
-  \item \todo Creamy Tomato One-Pot Orzo
-  \item \todo Curried Sausages \& Rice
-  \item \todo Loaded Omelette Wraps
-\end{itemize}
-
-\subsection*{Curries \& stews}
-\begin{itemize}
-  \item \todo Thai Red Chicken Curry
-  \item \todo Massaman Beef Curry
-  \item \todo Paneer Butter Masala
-  \item \todo Sri Lankan Coconut Fish Curry
-  \item \todo Japanese Chicken Katsu Curry
-  \item \todo Moroccan Chickpea \& Pumpkin Stew
-  \item \todo Slow Cooker Beef Rendang
-  \item \todo Butter Bean \& Kale Stew with Lemon
-\end{itemize}
-
-\subsection*{Soups \& salads}
-\begin{itemize}
-  \item \todo Roast Pumpkin \& Kumara Soup
-  \item \todo Chicken Sweetcorn Soup
-  \item \todo Tom Yum Soup
-  \item \todo Minestrone with Pesto
-  \item \todo Greek Salad with Lemon Oregano Chicken
-  \item \todo Roast Veg \& Halloumi Salad
-  \item \todo Vietnamese Rice Noodle Salad
-  \item \todo Crunchy Asian Slaw with Sesame Dressing
-\end{itemize}
-
-\subsection*{Wraps, sandwiches \& bowls}
-\begin{itemize}
-  \item \todo Peri-Peri Chicken Wraps
-  \item \todo Crispy Fish Tacos with Lime Crema
-  \item \todo BBQ Pulled Pork Rolls
-  \item \todo Falafel Bowls with Hummus \& Pickles
-  \item \todo Korean Beef Lettuce Wraps
-  \item \todo Sriracha Mayo Chicken Sushi Bowls
-  \item \todo Mediterranean Grain Bowls
-  \item \todo Chilli Lime Prawn Tacos
-\end{itemize}
-
-\subsection*{Pasta \& bakes}
-\begin{itemize}
-  \item \todo Creamy Chicken \& Leek Pie
-  \item \todo Cottage Pie with Kumara Mash
-  \item \todo Spinach \& Ricotta Cannelloni
-  \item \todo Baked Feta Pasta
-  \item \todo Chicken Alfredo Bake
-  \item \todo Pesto Chicken Pasta Salad
-  \item \todo Pumpkin Sage Gnocchi
-\end{itemize}
-
-\subsection*{Breakfast \& brunch}
-\begin{itemize}
-  \item \todo Fluffy Café-Style Pancakes
-  \item \todo Cheesy Scrambled Egg Croissants
-  \item \todo Avocado \& Feta Smash on Toast
-  \item \todo Chorizo \& Potato Hash
-  \item \todo Banana Oat Pikelets
-  \item \todo Granola Clusters with Yoghurt
-  \item \todo Berry Smoothie Bowls
-\end{itemize}
-
-\subsection*{Baking}
-\begin{itemize}
-  \item \todo Strawberry \& Cream Cheese Muffins
-  \item \todo Gingerbread Muffins
-  \item \todo Sundried Tomato, Olive \& Feta Muffins
-  \item \todo Spinach Ricotta Pinwheels
-  \item \todo Turkish Bread
-\end{itemize}
-
-\subsection*{Sides, sauces \& extras}
-\begin{itemize}
-  \item \todo Herbed Couscous
-  \item \todo Lemon \& Herb Quinoa
-  \item \todo Kumara Wedges with Aioli
-  \item \todo Creamy Garlic Sauce
-  \item \todo Lemon Herb Yoghurt
-  \item \todo Honey Mustard Dressing
-  \item \todo Gochujang Mayo
-  \item \todo Coriander Lime Rice
-  \item \todo Quick Pickled Onions
-  \item \todo Salsa Verde
-  \item \todo Peanut Satay Sauce
-\end{itemize}
-
-\subsection*{Desserts}
-\begin{itemize}
-  \item \todo Lemon Posset
-  \item \todo Berry Crumble with Custard
-  \item \todo Banoffee Pie
-  \item \todo No-Bake Cheesecake Cups
-\end{itemize}
+\raggedcolumns
+\input{InstantPot/Ideas}
+\input{SlowCooker/Ideas}
+\input{Stovetop/Ideas}
+\input{Oven/Ideas}
+\input{Sides/Ideas}
+\input{Breakfast/Ideas}
+\input{Snacks/Ideas}
+\input{Shakes/Ideas}
+\input{Desserts/Ideas}
+\input{Baking/Ideas}
 \end{multicols}
-
-% ════════════════════════════════════════════════════════════════════════════
-\section*{Could add}
-\begin{itemize}
-  \item \textit{Empty for now --- the mince-based ideas are all in the book. Ask Claude for the next batch.}
-\end{itemize}
 
 \end{document}
