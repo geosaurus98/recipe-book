@@ -36,7 +36,16 @@ didn't give one.
 ## Adding a recipe made in Claude
 
 1. Save it as `Folder/Recipe_Name.tex` (no spaces or `&` in the file name).
-2. Add a line to the right chapter in `main.tex` (and any other book):
+2. Add it to the right chapter in `main.tex`, which keeps chapters in title order:
+
+   ```
+   python3 tools/add_to_book.py "Slow Cooker" SlowCooker/Recipe_Name
+   python3 tools/add_to_book.py "Salads \& Sides" --group "Rice & grains" Sides/Recipe_Name
+   ```
+
+   Salads & Sides is split into groups (`\recipegroup{...}` lines in
+   `main.tex`), so new sides need `--group`: "Salads", "Rice & grains" or
+   "Vegetables & potatoes". Other books still take a plain line:
 
    ```latex
    \newpage
