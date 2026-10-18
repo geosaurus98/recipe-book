@@ -574,7 +574,8 @@ function renderShop(groups) {
     <div><h2>Shopping list</h2><p>${ids.length} ${ids.length === 1 ? "recipe" : "recipes"} this week. Amounts are added up across recipes. Tap a recipe name under an item to see exactly what each one needs.</p></div>
     <div class="actions">
       <label class="toggle"><input type="checkbox" id="hide-pantry" data-act="hide-pantry" ${ui.hidePantry ? "checked" : ""}> Hide pantry items</label>
-      <button class="btn" data-act="copy-list">Copy list</button>
+      <button class="btn" data-act="share-list">Share list</button>
+      <button class="btn ghost" data-act="copy-list">Copy list</button>
       <button class="btn ghost" data-act="uncheck-all">Untick all</button>
     </div>
   </section>
@@ -687,6 +688,7 @@ document.addEventListener("click", e => {
     case "protein": ui.protein = ui.protein === el.dataset.v ? null : el.dataset.v; render(); break;
     case "uncheck-all": commit(s => { s.checked = {}; }); break;
     case "copy-list": copyList(); break;
+    case "share-list": shareList(); break;
   }
 });
 document.addEventListener("change", e => {
@@ -710,15 +712,28 @@ document.querySelectorAll(".tabs button").forEach(b => b.addEventListener("click
   ui.tab = b.dataset.tab; if (ui.tab !== "recipes") ui.choosing = null; render(); window.scrollTo(0, 0);
 }));
 
-async function copyList() {
+function listText() {
   const groups = shoppingList();
-  const text = AISLES
+  return AISLES
     .filter(a => !(ui.hidePantry && a.startsWith("Pantry")))
     .map(a => [a, groups[a].filter(x => !state.checked[x.key])])
     .filter(([, items]) => items.length)
     .map(([a, items]) => `${a}\n${items.map(x => `- ${x.name}${x.amount ? ` (${x.amount})` : ""}${x.optional ? " [optional]" : ""}`).join("\n")}`)
     .join("\n\n");
-  try { await navigator.clipboard.writeText(text); toast("Shopping list copied"); }
+}
+
+// Opens the phone's share menu (Notes, WhatsApp, Messages, Keep...).
+// Falls back to copying where sharing isn't available.
+async function shareList() {
+  const text = listText();
+  if (!navigator.share) return copyList("Sharing isn't available here, so the list was copied instead");
+  try { await navigator.share({ title: "Shopping list", text }); }
+  catch (e) { if (e.name !== "AbortError") copyList("Couldn't open the share menu, so the list was copied instead"); }
+}
+
+async function copyList(msg) {
+  const text = listText();
+  try { await navigator.clipboard.writeText(text); toast(typeof msg === "string" ? msg : "Shopping list copied"); }
   catch {
     const ta = document.createElement("textarea");
     ta.value = text; document.body.appendChild(ta); ta.select();
