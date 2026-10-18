@@ -17802,7 +17802,7 @@
   "shop": [
    {
     "key": "steak",
-    "name": "Rump steak",
+    "name": "Beef steak (rump or topside)",
     "aisle": "Meat & fish",
     "qty": 400.0,
     "unit": "g",
@@ -25465,9 +25465,9 @@
     "raw": "4 eggs"
    },
    {
-    "key": "vanilla",
-    "name": "Vanilla essence",
-    "aisle": "Baking",
+    "key": "protein-powder",
+    "name": "Protein powder",
+    "aisle": "Pantry: check first",
     "qty": 1.0,
     "unit": "scoop",
     "optional": false,
@@ -26246,9 +26246,9 @@
     "raw": "½ cup Greek yoghurt"
    },
    {
-    "key": "vanilla",
-    "name": "Vanilla essence",
-    "aisle": "Baking",
+    "key": "protein-powder",
+    "name": "Protein powder",
+    "aisle": "Pantry: check first",
     "qty": 1.0,
     "unit": "scoop",
     "optional": false,
@@ -26407,9 +26407,9 @@
     "raw": "1 cup milk (or almond/oat milk)"
    },
    {
-    "key": "vanilla",
-    "name": "Vanilla essence",
-    "aisle": "Baking",
+    "key": "protein-powder",
+    "name": "Protein powder",
+    "aisle": "Pantry: check first",
     "qty": 1.0,
     "unit": "scoop",
     "optional": false,
@@ -26758,6 +26758,190 @@
   "tags": []
  },
  {
+  "title": "Cheese & Marmite Scrolls",
+  "servings": "12 scrolls",
+  "time": "20 min prep + 20 min",
+  "intro": "The Kiwi lunchbox classic, made on a quick scone dough with no yeast. Roughly 8 g protein per scroll.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "group": "Scone dough"
+     },
+     {
+      "text": "3 cups plain flour"
+     },
+     {
+      "text": "6 tsp baking powder"
+     },
+     {
+      "text": "¼ tsp salt"
+     },
+     {
+      "text": "75 g cold butter, cubed"
+     },
+     {
+      "text": "1–1¼ cups milk"
+     },
+     {
+      "group": "Filling"
+     },
+     {
+      "text": "2 tbsp Marmite (or Vegemite)"
+     },
+     {
+      "text": "25 g butter, softened"
+     },
+     {
+      "text": "1½ cups grated tasty cheese"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "Preheat oven to 200°C bake. Line a tray or 20 × 30 cm tin with baking paper."
+     },
+     {
+      "text": "Sift the flour, baking powder and salt into a bowl. Rub in the butter with your fingertips until it looks like fine breadcrumbs."
+     },
+     {
+      "text": "Add 1 cup of milk and mix quickly with a knife to a soft dough, adding more milk if needed."
+     },
+     {
+      "text": "On a floured bench, roll or pat the dough into a rectangle about 30 × 40 cm."
+     },
+     {
+      "text": "Mix the Marmite and softened butter and spread thinly over the dough. Sprinkle with the cheese, keeping a little back for the top."
+     },
+     {
+      "text": "Roll up tightly from a long side and cut into 12 slices."
+     },
+     {
+      "text": "Place cut-side up, just touching, in the tin. Sprinkle with the rest of the cheese."
+     },
+     {
+      "text": "Bake for 18–20 minutes, until golden and cooked through."
+     }
+    ]
+   },
+   {
+    "kind": "variation",
+    "heading": "Pizza scrolls",
+    "text": "Swap the Marmite filling for 3 tbsp tomato paste mixed with 1 tsp dried oregano, 100 g diced ham, and the cheese.",
+    "sections": []
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "The scone base follows the Edmonds scone recipe used for the Cheese Scones."
+     },
+     {
+      "text": "Mixing the Marmite with butter makes it spread thinly and evenly. A little goes a long way."
+     },
+     {
+      "text": "Freeze in bags and pull out for lunches; they thaw by morning tea."
+     }
+    ]
+   }
+  ],
+  "id": "Snacks-Cheese_Marmite_Scrolls",
+  "file": "Snacks/Cheese_Marmite_Scrolls.tex",
+  "chapter": "snacks",
+  "chapterName": "Snacks",
+  "ingredients": [
+   "3 cups plain flour",
+   "6 tsp baking powder",
+   "¼ tsp salt",
+   "75 g cold butter, cubed",
+   "1–1¼ cups milk",
+   "2 tbsp Marmite (or Vegemite)",
+   "25 g butter, softened",
+   "1½ cups grated tasty cheese"
+  ],
+  "shop": [
+   {
+    "key": "flour",
+    "name": "Plain flour",
+    "aisle": "Baking",
+    "qty": 3.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "3 cups plain flour"
+   },
+   {
+    "key": "baking-powder",
+    "name": "Baking powder",
+    "aisle": "Baking",
+    "qty": 6.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "6 tsp baking powder"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 0.25,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "¼ tsp salt"
+   },
+   {
+    "key": "butter",
+    "name": "Butter",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 75.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "75 g cold butter, cubed"
+   },
+   {
+    "key": "milk",
+    "name": "Milk",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 1.25,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1–1¼ cups milk"
+   },
+   {
+    "key": "marmite",
+    "name": "Marmite",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp Marmite (or Vegemite)"
+   },
+   {
+    "key": "butter",
+    "name": "Butter",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 25.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "25 g butter, softened"
+   },
+   {
+    "key": "cheese",
+    "name": "Tasty cheese",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 1.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1½ cups grated tasty cheese"
+   }
+  ],
+  "tags": []
+ },
+ {
   "title": "Cottage Cheese & Tomato Toast",
   "servings": "1",
   "time": "–",
@@ -26882,6 +27066,308 @@
     "unit": "",
     "optional": true,
     "raw": "Salt, pepper, dried herbs or chilli flakes"
+   }
+  ],
+  "tags": []
+ },
+ {
+  "title": "Crunchy Spiced Roasted Chickpeas",
+  "servings": "4",
+  "time": "5 min prep + 35 min",
+  "intro": "A crunchy, salty snack made from two tins of chickpeas. Roughly 7 g protein and a good amount of fibre per serve.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "2 cans (400 g) chickpeas, drained and rinsed"
+     },
+     {
+      "text": "1 tbsp olive oil"
+     },
+     {
+      "text": "½ tsp salt"
+     },
+     {
+      "group": "Spice mix"
+     },
+     {
+      "text": "1 tsp smoked paprika"
+     },
+     {
+      "text": "½ tsp ground cumin"
+     },
+     {
+      "text": "½ tsp garlic powder"
+     },
+     {
+      "text": "Pinch of cayenne pepper (optional)"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "Preheat oven to 200°C bake. Line a large tray with baking paper."
+     },
+     {
+      "text": "Dry the chickpeas really well with a clean tea towel, rubbing off any loose skins."
+     },
+     {
+      "text": "Toss with the oil and salt and spread out in a single layer."
+     },
+     {
+      "text": "Roast for 30–40 minutes, shaking the tray every 10 minutes, until golden and crunchy all the way through."
+     },
+     {
+      "text": "Toss the hot chickpeas with the spice mix straight away."
+     },
+     {
+      "text": "Cool on the tray — they crisp up more as they cool."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Drying the chickpeas properly is what makes them crunchy."
+     },
+     {
+      "text": "The spices go on after roasting so they don't burn."
+     },
+     {
+      "text": "Best on the day. They soften after a couple of days in an airtight container; re-crisp at 180°C for 5 minutes."
+     }
+    ]
+   }
+  ],
+  "id": "Snacks-Roasted_Chickpeas",
+  "file": "Snacks/Roasted_Chickpeas.tex",
+  "chapter": "snacks",
+  "chapterName": "Snacks",
+  "ingredients": [
+   "2 cans (400 g) chickpeas, drained and rinsed",
+   "1 tbsp olive oil",
+   "½ tsp salt",
+   "1 tsp smoked paprika",
+   "½ tsp ground cumin",
+   "½ tsp garlic powder",
+   "Pinch of cayenne pepper (optional)"
+  ],
+  "shop": [
+   {
+    "key": "chickpeas",
+    "name": "Chickpeas",
+    "aisle": "Cans, jars & pulses",
+    "qty": 2.0,
+    "unit": "can",
+    "optional": false,
+    "raw": "2 cans (400 g) chickpeas, drained and rinsed"
+   },
+   {
+    "key": "olive-oil",
+    "name": "Olive oil",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp olive oil"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 0.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "½ tsp salt"
+   },
+   {
+    "key": "smoked-paprika",
+    "name": "Smoked paprika",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp smoked paprika"
+   },
+   {
+    "key": "cumin",
+    "name": "Ground cumin",
+    "aisle": "Pantry: check first",
+    "qty": 0.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "½ tsp ground cumin"
+   },
+   {
+    "key": "garlic-powder",
+    "name": "Garlic powder",
+    "aisle": "Pantry: check first",
+    "qty": 0.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "½ tsp garlic powder"
+   },
+   {
+    "key": "cayenne",
+    "name": "Cayenne pepper",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Pinch of cayenne pepper (optional)"
+   }
+  ],
+  "tags": []
+ },
+ {
+  "title": "Devilled Eggs",
+  "servings": "3 (4 halves each)",
+  "time": "20 min",
+  "intro": "Creamy, tangy filled eggs made lighter with Greek yoghurt. Good for snacks or taking to a flat dinner. Roughly 14 g protein per serve.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "6 eggs"
+     },
+     {
+      "text": "2 tbsp Greek yoghurt"
+     },
+     {
+      "text": "1 tbsp mayonnaise"
+     },
+     {
+      "text": "1 tsp Dijon or American mustard"
+     },
+     {
+      "text": "Salt and black pepper"
+     },
+     {
+      "text": "Smoked paprika and chopped chives or spring onion, to garnish"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "Lower the eggs into a pot of boiling water and boil for 10 minutes."
+     },
+     {
+      "text": "Transfer to a bowl of cold water with ice for 5 minutes, then peel."
+     },
+     {
+      "text": "Halve the eggs lengthways and scoop the yolks into a bowl."
+     },
+     {
+      "text": "Mash the yolks with the yoghurt, mayonnaise, mustard, salt and pepper until smooth."
+     },
+     {
+      "text": "Spoon or pipe the filling back into the whites."
+     },
+     {
+      "text": "Sprinkle with paprika and chives."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Older eggs peel more easily than very fresh ones."
+     },
+     {
+      "text": "Keep in a covered container in the fridge for up to 2 days."
+     }
+    ]
+   }
+  ],
+  "id": "Snacks-Devilled_Eggs",
+  "file": "Snacks/Devilled_Eggs.tex",
+  "chapter": "snacks",
+  "chapterName": "Snacks",
+  "ingredients": [
+   "6 eggs",
+   "2 tbsp Greek yoghurt",
+   "1 tbsp mayonnaise",
+   "1 tsp Dijon or American mustard",
+   "Salt and black pepper",
+   "Smoked paprika and chopped chives or spring onion, to garnish"
+  ],
+  "shop": [
+   {
+    "key": "eggs",
+    "name": "Eggs",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 6.0,
+    "unit": "",
+    "optional": false,
+    "raw": "6 eggs"
+   },
+   {
+    "key": "greek-yoghurt",
+    "name": "Greek yoghurt",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp Greek yoghurt"
+   },
+   {
+    "key": "mayonnaise",
+    "name": "Mayonnaise",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp mayonnaise"
+   },
+   {
+    "key": "mustard",
+    "name": "Mustard",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp Dijon or American mustard"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Salt and black pepper"
+   },
+   {
+    "key": "pepper",
+    "name": "Black pepper",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Salt and black pepper"
+   },
+   {
+    "key": "smoked-paprika",
+    "name": "Smoked paprika",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Smoked paprika and chopped chives or spring onion, to garnish"
    }
   ],
   "tags": []
@@ -27087,6 +27573,166 @@
   "tags": []
  },
  {
+  "title": "Homemade Hummus",
+  "servings": "6 (about ¼ cup each)",
+  "time": "10 min",
+  "intro": "Smooth, lemony hummus from one tin of chickpeas, for a fraction of the price of bought. Use it for Hummus & Vegetable Sticks, wraps or kofta.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "1 can (400 g) chickpeas, drained (keep the liquid)"
+     },
+     {
+      "text": "2 tbsp tahini (or 1 tbsp peanut butter)"
+     },
+     {
+      "text": "1 garlic clove, crushed"
+     },
+     {
+      "text": "Juice of 1 lemon"
+     },
+     {
+      "text": "2 tbsp olive oil"
+     },
+     {
+      "text": "½ tsp ground cumin"
+     },
+     {
+      "text": "¼ tsp salt"
+     },
+     {
+      "text": "Smoked paprika, to serve (optional)"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "Put the chickpeas, tahini, garlic, lemon juice, olive oil, cumin and salt in a blender or food processor."
+     },
+     {
+      "text": "Blend, adding the reserved chickpea liquid 1 tbsp at a time, until very smooth — usually 2–4 tbsp."
+     },
+     {
+      "text": "Taste and add more lemon or salt if needed."
+     },
+     {
+      "text": "Spoon into a bowl, drizzle with a little oil and sprinkle with paprika."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Tahini is the traditional flavour. Peanut butter is a cheaper swap that still tastes good."
+     },
+     {
+      "text": "Keeps 4–5 days in a sealed container in the fridge."
+     },
+     {
+      "text": "For extra-smooth hummus, blend for a full 3–4 minutes."
+     }
+    ]
+   }
+  ],
+  "id": "Snacks-Homemade_Hummus",
+  "file": "Snacks/Homemade_Hummus.tex",
+  "chapter": "snacks",
+  "chapterName": "Snacks",
+  "ingredients": [
+   "1 can (400 g) chickpeas, drained (keep the liquid)",
+   "2 tbsp tahini (or 1 tbsp peanut butter)",
+   "1 garlic clove, crushed",
+   "Juice of 1 lemon",
+   "2 tbsp olive oil",
+   "½ tsp ground cumin",
+   "¼ tsp salt",
+   "Smoked paprika, to serve (optional)"
+  ],
+  "shop": [
+   {
+    "key": "chickpeas",
+    "name": "Chickpeas",
+    "aisle": "Cans, jars & pulses",
+    "qty": 1.0,
+    "unit": "can",
+    "optional": false,
+    "raw": "1 can (400 g) chickpeas, drained (keep the liquid)"
+   },
+   {
+    "key": "tahini",
+    "name": "Tahini",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp tahini (or 1 tbsp peanut butter)"
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "1 garlic clove, crushed"
+   },
+   {
+    "key": "lemon",
+    "name": "Lemons",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "Juice of 1 lemon"
+   },
+   {
+    "key": "olive-oil",
+    "name": "Olive oil",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp olive oil"
+   },
+   {
+    "key": "cumin",
+    "name": "Ground cumin",
+    "aisle": "Pantry: check first",
+    "qty": 0.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "½ tsp ground cumin"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 0.25,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "¼ tsp salt"
+   },
+   {
+    "key": "smoked-paprika",
+    "name": "Smoked paprika",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Smoked paprika, to serve (optional)"
+   }
+  ],
+  "tags": []
+ },
+ {
   "title": "Homemade Protein Balls",
   "servings": "20",
   "time": "–",
@@ -27186,9 +27832,9 @@
     "raw": "½ cup natural peanut butter"
    },
    {
-    "key": "vanilla",
-    "name": "Vanilla essence",
-    "aisle": "Baking",
+    "key": "protein-powder",
+    "name": "Protein powder",
+    "aisle": "Pantry: check first",
     "qty": 2.0,
     "unit": "scoop",
     "optional": false,
@@ -27349,6 +27995,470 @@
   "tags": []
  },
  {
+  "title": "Microwave Mug Omelette",
+  "servings": "1",
+  "time": "3 min",
+  "intro": "A hot, high-protein snack in a mug in under three minutes. Roughly 20 g protein.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "2 eggs"
+     },
+     {
+      "text": "2 tbsp milk"
+     },
+     {
+      "text": "2 tbsp grated tasty cheese"
+     },
+     {
+      "text": "30 g ham, diced (or 2 tbsp leftover cooked mince)"
+     },
+     {
+      "text": "Small handful of baby spinach, chopped"
+     },
+     {
+      "text": "Salt and black pepper"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "Grease a large microwave-safe mug."
+     },
+     {
+      "text": "Whisk the eggs and milk in the mug with a fork. Stir in the cheese, ham, spinach, salt and pepper."
+     },
+     {
+      "text": "Microwave on high for 45 seconds. Stir."
+     },
+     {
+      "text": "Microwave for another 30–45 seconds, until puffed and just set in the middle."
+     },
+     {
+      "text": "Leave for 30 seconds before eating — it keeps cooking."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Microwaves vary. Start with shorter times; the eggs should be set, not rubbery."
+     },
+     {
+      "text": "Use a mug at least twice the volume of the mixture — it rises while cooking."
+     }
+    ]
+   }
+  ],
+  "id": "Snacks-Microwave_Mug_Omelette",
+  "file": "Snacks/Microwave_Mug_Omelette.tex",
+  "chapter": "snacks",
+  "chapterName": "Snacks",
+  "ingredients": [
+   "2 eggs",
+   "2 tbsp milk",
+   "2 tbsp grated tasty cheese",
+   "30 g ham, diced (or 2 tbsp leftover cooked mince)",
+   "Small handful of baby spinach, chopped",
+   "Salt and black pepper"
+  ],
+  "shop": [
+   {
+    "key": "eggs",
+    "name": "Eggs",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 2.0,
+    "unit": "",
+    "optional": false,
+    "raw": "2 eggs"
+   },
+   {
+    "key": "milk",
+    "name": "Milk",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp milk"
+   },
+   {
+    "key": "cheese",
+    "name": "Tasty cheese",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp grated tasty cheese"
+   },
+   {
+    "key": "ham",
+    "name": "Ham",
+    "aisle": "Meat & fish",
+    "qty": 30.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "30 g ham, diced (or 2 tbsp leftover cooked mince)"
+   },
+   {
+    "key": "spinach",
+    "name": "Baby spinach",
+    "aisle": "Fruit & veg",
+    "qty": null,
+    "unit": "",
+    "optional": false,
+    "raw": "Small handful of baby spinach, chopped"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Salt and black pepper"
+   },
+   {
+    "key": "pepper",
+    "name": "Black pepper",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Salt and black pepper"
+   }
+  ],
+  "tags": [
+   "pork",
+   "mince"
+  ]
+ },
+ {
+  "title": "Oven Beef Jerky",
+  "servings": "8 (about 25 g each)",
+  "time": "15 min prep + marinating + 3–4 hr drying",
+  "intro": "Chewy, smoky jerky made in a normal oven. Much cheaper than bought jerky and very high in protein. Roughly 14 g protein per 25 g serve.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "500 g lean beef (topside or rump), trimmed of all visible fat"
+     },
+     {
+      "group": "Marinade"
+     },
+     {
+      "text": "¼ cup reduced-salt soy sauce"
+     },
+     {
+      "text": "1 tbsp Worcestershire sauce"
+     },
+     {
+      "text": "1 tbsp brown sugar"
+     },
+     {
+      "text": "1 tsp smoked paprika"
+     },
+     {
+      "text": "1 tsp garlic powder"
+     },
+     {
+      "text": "½ tsp onion powder"
+     },
+     {
+      "text": "½ tsp black pepper"
+     },
+     {
+      "text": "½ tsp chilli flakes (optional)"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Slice.** Freeze the beef for about 1 hour until firm, then slice into 3–5 mm strips. Slice along the grain for chewy jerky, across it for more tender jerky."
+     },
+     {
+      "text": "**Marinate.** Mix the marinade in a container, add the beef and toss to coat. Cover and refrigerate for 4–24 hours."
+     },
+     {
+      "text": "**Prepare the oven.** Heat the oven to 80°C (or 70°C fan bake). Set wire racks over lined oven trays."
+     },
+     {
+      "text": "**Dry.** Pat the strips dry with paper towels and lay them on the racks without touching. Dry for 3–4 hours with the oven door propped open slightly with a wooden spoon, turning once, until the jerky bends and cracks but doesn't snap."
+     },
+     {
+      "text": "**Make it safe.** Turn the oven up to 135°C and heat the jerky for 10 minutes. This kills any bacteria the low drying temperature might not."
+     },
+     {
+      "text": "Cool completely before storing."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "The final 10 minutes at 135°C follows US food-safety (USDA) advice for home-dried meat. Don't skip it."
+     },
+     {
+      "text": "Store in an airtight container in the fridge for up to 2 weeks."
+     },
+     {
+      "text": "500 g raw beef makes roughly 200 g of jerky."
+     }
+    ]
+   }
+  ],
+  "id": "Snacks-Oven_Beef_Jerky",
+  "file": "Snacks/Oven_Beef_Jerky.tex",
+  "chapter": "snacks",
+  "chapterName": "Snacks",
+  "ingredients": [
+   "500 g lean beef (topside or rump), trimmed of all visible fat",
+   "¼ cup reduced-salt soy sauce",
+   "1 tbsp Worcestershire sauce",
+   "1 tbsp brown sugar",
+   "1 tsp smoked paprika",
+   "1 tsp garlic powder",
+   "½ tsp onion powder",
+   "½ tsp black pepper",
+   "½ tsp chilli flakes (optional)"
+  ],
+  "shop": [
+   {
+    "key": "steak",
+    "name": "Beef steak (rump or topside)",
+    "aisle": "Meat & fish",
+    "qty": 500.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "500 g lean beef (topside or rump), trimmed of all visible fat"
+   },
+   {
+    "key": "soy-sauce",
+    "name": "Soy sauce",
+    "aisle": "Pantry: check first",
+    "qty": 0.25,
+    "unit": "cup",
+    "optional": false,
+    "raw": "¼ cup reduced-salt soy sauce"
+   },
+   {
+    "key": "worcestershire",
+    "name": "Worcestershire sauce",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp Worcestershire sauce"
+   },
+   {
+    "key": "brown-sugar",
+    "name": "Brown sugar",
+    "aisle": "Baking",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp brown sugar"
+   },
+   {
+    "key": "smoked-paprika",
+    "name": "Smoked paprika",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp smoked paprika"
+   },
+   {
+    "key": "garlic-powder",
+    "name": "Garlic powder",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp garlic powder"
+   },
+   {
+    "key": "onion-powder",
+    "name": "Onion powder",
+    "aisle": "Pantry: check first",
+    "qty": 0.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "½ tsp onion powder"
+   },
+   {
+    "key": "pepper",
+    "name": "Black pepper",
+    "aisle": "Pantry: check first",
+    "qty": 0.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "½ tsp black pepper"
+   },
+   {
+    "key": "chilli-flakes",
+    "name": "Chilli flakes",
+    "aisle": "Pantry: check first",
+    "qty": 0.5,
+    "unit": "tsp",
+    "optional": true,
+    "raw": "½ tsp chilli flakes (optional)"
+   }
+  ],
+  "tags": [
+   "beef"
+  ]
+ },
+ {
+  "title": "Parmesan & Garlic Popcorn",
+  "servings": "4",
+  "time": "10 min",
+  "intro": "A big bowl of savoury popcorn made on the stove for well under a dollar. Lower in protein than the other snacks (about 4 g per serve) but cheap, filling and high in fibre.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "½ cup popcorn kernels"
+     },
+     {
+      "text": "1 tbsp oil"
+     },
+     {
+      "text": "20 g butter"
+     },
+     {
+      "text": "½ tsp garlic powder"
+     },
+     {
+      "text": "30 g parmesan, finely grated"
+     },
+     {
+      "text": "¼ tsp salt"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "Heat the oil and 3 kernels in a large pot with a lid over medium-high heat."
+     },
+     {
+      "text": "When those kernels pop, add the rest in a single layer, cover and take off the heat for 30 seconds (this helps them all pop at once)."
+     },
+     {
+      "text": "Return to the heat. Shake the pot gently as they pop, keeping the lid slightly ajar to let steam out."
+     },
+     {
+      "text": "When the popping slows to 2–3 seconds between pops, tip into a large bowl."
+     },
+     {
+      "text": "Melt the butter with the garlic powder and drizzle over. Toss with the parmesan and salt."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Plain popcorn kernels are much cheaper than microwave bags."
+     },
+     {
+      "text": "Other toppings: smoked paprika and salt, or cinnamon and a little sugar."
+     }
+    ]
+   }
+  ],
+  "id": "Snacks-Parmesan_Garlic_Popcorn",
+  "file": "Snacks/Parmesan_Garlic_Popcorn.tex",
+  "chapter": "snacks",
+  "chapterName": "Snacks",
+  "ingredients": [
+   "½ cup popcorn kernels",
+   "1 tbsp oil",
+   "20 g butter",
+   "½ tsp garlic powder",
+   "30 g parmesan, finely grated",
+   "¼ tsp salt"
+  ],
+  "shop": [
+   {
+    "key": "popcorn",
+    "name": "Popcorn kernels",
+    "aisle": "Pasta, rice & grains",
+    "qty": 0.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "½ cup popcorn kernels"
+   },
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp oil"
+   },
+   {
+    "key": "butter",
+    "name": "Butter",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 20.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "20 g butter"
+   },
+   {
+    "key": "garlic-powder",
+    "name": "Garlic powder",
+    "aisle": "Pantry: check first",
+    "qty": 0.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "½ tsp garlic powder"
+   },
+   {
+    "key": "parmesan",
+    "name": "Parmesan",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 30.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "30 g parmesan, finely grated"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 0.25,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "¼ tsp salt"
+   }
+  ],
+  "tags": []
+ },
+ {
   "title": "Peanut Butter & Banana Rice Cakes",
   "servings": "1",
   "time": "–",
@@ -27446,6 +28556,270 @@
    }
   ],
   "tags": []
+ },
+ {
+  "title": "Pork Mince Rice Paper Rolls",
+  "servings": "4 (16 rolls)",
+  "time": "30 min",
+  "intro": "Fresh Vietnamese-style rolls with gingery pork mince, noodles and crunchy veg. A filling snack or light lunch. Roughly 25 g protein per serve of 4 rolls.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "group": "Pork filling"
+     },
+     {
+      "text": "500 g pork mince"
+     },
+     {
+      "text": "2 garlic cloves, crushed"
+     },
+     {
+      "text": "1 tbsp grated ginger"
+     },
+     {
+      "text": "2 tbsp soy sauce"
+     },
+     {
+      "text": "1 tbsp fish sauce"
+     },
+     {
+      "text": "1 tsp sugar"
+     },
+     {
+      "group": "Rolls"
+     },
+     {
+      "text": "100 g rice vermicelli noodles"
+     },
+     {
+      "text": "16 rice paper sheets"
+     },
+     {
+      "text": "8 lettuce leaves, torn"
+     },
+     {
+      "text": "1 carrot, cut into thin sticks"
+     },
+     {
+      "text": "½ cucumber, cut into thin sticks"
+     },
+     {
+      "text": "Handful of mint and coriander leaves"
+     },
+     {
+      "group": "Dipping sauce"
+     },
+     {
+      "text": "2 tbsp hoisin sauce"
+     },
+     {
+      "text": "1 tbsp peanut butter"
+     },
+     {
+      "text": "2–3 tbsp warm water"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Pork.** Fry the pork in a frying pan over high heat, breaking it up, until browned and cooked through. Add the garlic and ginger for 1 minute, then the soy, fish sauce and sugar. Cook until any liquid has evaporated. Cool."
+     },
+     {
+      "text": "**Noodles.** Soak the vermicelli in boiling water for 3–4 minutes, drain, rinse under cold water and drain well."
+     },
+     {
+      "text": "**Sauce.** Whisk the hoisin, peanut butter and warm water until smooth."
+     },
+     {
+      "text": "**Roll.** Dip one rice paper sheet in warm water for about 10 seconds until just soft, and lay it on a damp board. Put a little lettuce, noodles, carrot, cucumber, herbs and 2 tbsp of pork across the lower third. Fold in the sides and roll up tightly."
+     },
+     {
+      "text": "Repeat with the rest, keeping finished rolls under a damp tea towel. Serve with the dipping sauce."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Best eaten the day they're made. To pack for lunch, wrap each roll in cling film so they don't stick together."
+     },
+     {
+      "text": "The rice paper keeps softening after you take it out of the water, so don't over-soak it."
+     }
+    ]
+   }
+  ],
+  "id": "Snacks-Pork_Rice_Paper_Rolls",
+  "file": "Snacks/Pork_Rice_Paper_Rolls.tex",
+  "chapter": "snacks",
+  "chapterName": "Snacks",
+  "ingredients": [
+   "500 g pork mince",
+   "2 garlic cloves, crushed",
+   "1 tbsp grated ginger",
+   "2 tbsp soy sauce",
+   "1 tbsp fish sauce",
+   "1 tsp sugar",
+   "100 g rice vermicelli noodles",
+   "16 rice paper sheets",
+   "8 lettuce leaves, torn",
+   "1 carrot, cut into thin sticks",
+   "½ cucumber, cut into thin sticks",
+   "Handful of mint and coriander leaves",
+   "2 tbsp hoisin sauce",
+   "1 tbsp peanut butter",
+   "2–3 tbsp warm water"
+  ],
+  "shop": [
+   {
+    "key": "pork-mince",
+    "name": "Pork mince",
+    "aisle": "Meat & fish",
+    "qty": 500.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "500 g pork mince"
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "2 garlic cloves, crushed"
+   },
+   {
+    "key": "ginger",
+    "name": "Fresh ginger",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp grated ginger"
+   },
+   {
+    "key": "soy-sauce",
+    "name": "Soy sauce",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp soy sauce"
+   },
+   {
+    "key": "fish-sauce",
+    "name": "Fish sauce",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp fish sauce"
+   },
+   {
+    "key": "sugar",
+    "name": "White sugar",
+    "aisle": "Baking",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp sugar"
+   },
+   {
+    "key": "rice-noodles",
+    "name": "Rice noodles",
+    "aisle": "Pasta, rice & grains",
+    "qty": 100.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "100 g rice vermicelli noodles"
+   },
+   {
+    "key": "rice-paper",
+    "name": "Rice paper sheets",
+    "aisle": "Pasta, rice & grains",
+    "qty": 16.0,
+    "unit": "",
+    "optional": false,
+    "raw": "16 rice paper sheets"
+   },
+   {
+    "key": "lettuce",
+    "name": "Lettuce or salad leaves",
+    "aisle": "Fruit & veg",
+    "qty": 8.0,
+    "unit": "",
+    "optional": false,
+    "raw": "8 lettuce leaves, torn"
+   },
+   {
+    "key": "carrot",
+    "name": "Carrots",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 carrot, cut into thin sticks"
+   },
+   {
+    "key": "cucumber",
+    "name": "Cucumber",
+    "aisle": "Fruit & veg",
+    "qty": 0.5,
+    "unit": "",
+    "optional": false,
+    "raw": "½ cucumber, cut into thin sticks"
+   },
+   {
+    "key": "mint",
+    "name": "Fresh mint",
+    "aisle": "Fruit & veg",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Handful of mint and coriander leaves"
+   },
+   {
+    "key": "coriander",
+    "name": "Fresh coriander",
+    "aisle": "Fruit & veg",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Handful of mint and coriander leaves"
+   },
+   {
+    "key": "hoisin",
+    "name": "Hoisin sauce",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp hoisin sauce"
+   },
+   {
+    "key": "peanut-butter",
+    "name": "Peanut butter",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp peanut butter"
+   }
+  ],
+  "tags": [
+   "pork",
+   "fish",
+   "mince"
+  ]
  },
  {
   "title": "Tuna & Crackers",
@@ -27605,6 +28979,388 @@
   ]
  },
  {
+  "title": "Tuna & Sweetcorn Fritters",
+  "servings": "4 (12 fritters)",
+  "time": "10 min prep + 15 min",
+  "intro": "Cheap, high-protein fritters from pantry tins. Good hot or cold, and they freeze well. Roughly 24 g protein per serve of 3.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "2 cans (185 g) tuna in springwater, drained"
+     },
+     {
+      "text": "1 can (410 g) whole kernel corn, drained (or 1½ cups frozen corn)"
+     },
+     {
+      "text": "3 eggs"
+     },
+     {
+      "text": "½ cup self-raising flour"
+     },
+     {
+      "text": "¼ cup milk"
+     },
+     {
+      "text": "½ cup grated tasty cheese"
+     },
+     {
+      "text": "2 spring onions, sliced"
+     },
+     {
+      "text": "Black pepper"
+     },
+     {
+      "text": "1 tbsp oil, for frying"
+     },
+     {
+      "text": "Sweet chilli sauce or Greek yoghurt, to serve"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "Whisk the eggs and milk in a bowl, then stir in the flour until smooth."
+     },
+     {
+      "text": "Fold in the tuna, corn, cheese, spring onion and a good grind of pepper."
+     },
+     {
+      "text": "Heat a little oil in a large frying pan over medium heat."
+     },
+     {
+      "text": "Drop in ¼-cup scoops of mixture, flatten slightly, and cook for 2–3 minutes each side until golden and set in the middle."
+     },
+     {
+      "text": "Drain on paper towels and repeat with the rest, adding a little oil as needed."
+     },
+     {
+      "text": "Serve with sweet chilli sauce or a spoonful of Greek yoghurt."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Freeze cooked fritters with baking paper between them. Reheat in a frying pan or the microwave."
+     },
+     {
+      "text": "Swap the tuna for 1 can (415 g) salmon, drained and flaked."
+     }
+    ]
+   }
+  ],
+  "id": "Snacks-Tuna_Sweetcorn_Fritters",
+  "file": "Snacks/Tuna_Sweetcorn_Fritters.tex",
+  "chapter": "snacks",
+  "chapterName": "Snacks",
+  "ingredients": [
+   "2 cans (185 g) tuna in springwater, drained",
+   "1 can (410 g) whole kernel corn, drained (or 1½ cups frozen corn)",
+   "3 eggs",
+   "½ cup self-raising flour",
+   "¼ cup milk",
+   "½ cup grated tasty cheese",
+   "2 spring onions, sliced",
+   "Black pepper",
+   "1 tbsp oil, for frying",
+   "Sweet chilli sauce or Greek yoghurt, to serve"
+  ],
+  "shop": [
+   {
+    "key": "tuna",
+    "name": "Tuna",
+    "aisle": "Cans, jars & pulses",
+    "qty": 2.0,
+    "unit": "can",
+    "optional": false,
+    "raw": "2 cans (185 g) tuna in springwater, drained"
+   },
+   {
+    "key": "corn",
+    "name": "Corn (frozen or canned)",
+    "aisle": "Frozen",
+    "qty": 1.0,
+    "unit": "can",
+    "optional": false,
+    "raw": "1 can (410 g) whole kernel corn, drained (or 1½ cups frozen corn)"
+   },
+   {
+    "key": "eggs",
+    "name": "Eggs",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 3.0,
+    "unit": "",
+    "optional": false,
+    "raw": "3 eggs"
+   },
+   {
+    "key": "sr-flour",
+    "name": "Self-raising flour",
+    "aisle": "Baking",
+    "qty": 0.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "½ cup self-raising flour"
+   },
+   {
+    "key": "milk",
+    "name": "Milk",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 0.25,
+    "unit": "cup",
+    "optional": false,
+    "raw": "¼ cup milk"
+   },
+   {
+    "key": "cheese",
+    "name": "Tasty cheese",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 0.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "½ cup grated tasty cheese"
+   },
+   {
+    "key": "spring-onion",
+    "name": "Spring onions",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "",
+    "optional": false,
+    "raw": "2 spring onions, sliced"
+   },
+   {
+    "key": "pepper",
+    "name": "Black pepper",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": false,
+    "raw": "Black pepper"
+   },
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp oil, for frying"
+   },
+   {
+    "key": "sweet-chilli",
+    "name": "Sweet chilli sauce",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Sweet chilli sauce or Greek yoghurt, to serve"
+   },
+   {
+    "key": "greek-yoghurt",
+    "name": "Greek yoghurt",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Sweet chilli sauce or Greek yoghurt, to serve"
+   }
+  ],
+  "tags": [
+   "fish"
+  ]
+ },
+ {
+  "title": "Tzatziki with Baked Pita Chips",
+  "servings": "4",
+  "time": "15 min",
+  "intro": "A cool, garlicky yoghurt dip with crunchy oven-baked pita chips. Roughly 9 g protein per serve.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "group": "Tzatziki"
+     },
+     {
+      "text": "250 g Greek yoghurt"
+     },
+     {
+      "text": "½ cucumber, grated"
+     },
+     {
+      "text": "1 small garlic clove, crushed"
+     },
+     {
+      "text": "1 tbsp lemon juice"
+     },
+     {
+      "text": "1 tbsp chopped fresh mint or dill (or 1 tsp dried mint)"
+     },
+     {
+      "text": "Pinch of salt"
+     },
+     {
+      "group": "Pita chips"
+     },
+     {
+      "text": "4 pita breads (or wraps)"
+     },
+     {
+      "text": "1 tbsp olive oil"
+     },
+     {
+      "text": "½ tsp salt"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "Preheat oven to 200°C bake."
+     },
+     {
+      "text": "Cut each pita into 8 wedges (split thick pitas in half first). Toss with the oil and salt and spread on a tray."
+     },
+     {
+      "text": "Bake for 6–8 minutes, turning once, until golden and crisp. Watch them closely — they go from golden to burnt quickly."
+     },
+     {
+      "text": "Meanwhile, squeeze as much liquid out of the cucumber as you can, then mix with the yoghurt, garlic, lemon juice, herbs and salt."
+     },
+     {
+      "text": "Serve the dip with the warm or cooled chips, and vegetable sticks if you like."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Squeezing the cucumber stops the tzatziki going watery."
+     },
+     {
+      "text": "Tzatziki keeps 3 days in the fridge and goes well with Beef Kofta or Greek-Style Chicken Bowls."
+     },
+     {
+      "text": "Pita chips keep a week in an airtight container."
+     }
+    ]
+   }
+  ],
+  "id": "Snacks-Tzatziki_Pita_Chips",
+  "file": "Snacks/Tzatziki_Pita_Chips.tex",
+  "chapter": "snacks",
+  "chapterName": "Snacks",
+  "ingredients": [
+   "250 g Greek yoghurt",
+   "½ cucumber, grated",
+   "1 small garlic clove, crushed",
+   "1 tbsp lemon juice",
+   "1 tbsp chopped fresh mint or dill (or 1 tsp dried mint)",
+   "Pinch of salt",
+   "4 pita breads (or wraps)",
+   "1 tbsp olive oil",
+   "½ tsp salt"
+  ],
+  "shop": [
+   {
+    "key": "greek-yoghurt",
+    "name": "Greek yoghurt",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 250.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "250 g Greek yoghurt"
+   },
+   {
+    "key": "cucumber",
+    "name": "Cucumber",
+    "aisle": "Fruit & veg",
+    "qty": 0.5,
+    "unit": "",
+    "optional": false,
+    "raw": "½ cucumber, grated"
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "1 small garlic clove, crushed"
+   },
+   {
+    "key": "lemon",
+    "name": "Lemons",
+    "aisle": "Fruit & veg",
+    "qty": 0.5,
+    "unit": "",
+    "optional": false,
+    "raw": "1 tbsp lemon juice"
+   },
+   {
+    "key": "mint",
+    "name": "Fresh mint",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp chopped fresh mint or dill (or 1 tsp dried mint)"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": false,
+    "raw": "Pinch of salt"
+   },
+   {
+    "key": "pita",
+    "name": "Pita bread",
+    "aisle": "Bread & wraps",
+    "qty": 4.0,
+    "unit": "",
+    "optional": false,
+    "raw": "4 pita breads (or wraps)"
+   },
+   {
+    "key": "olive-oil",
+    "name": "Olive oil",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp olive oil"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 0.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "½ tsp salt"
+   }
+  ],
+  "tags": []
+ },
+ {
   "title": "Berry & Oat Power Shake",
   "servings": "1",
   "time": "–",
@@ -27680,9 +29436,9 @@
   ],
   "shop": [
    {
-    "key": "vanilla",
-    "name": "Vanilla essence",
-    "aisle": "Baking",
+    "key": "protein-powder",
+    "name": "Protein powder",
+    "aisle": "Pantry: check first",
     "qty": 1.0,
     "unit": "scoop",
     "optional": false,
@@ -27808,9 +29564,9 @@
   ],
   "shop": [
    {
-    "key": "vanilla",
-    "name": "Vanilla essence",
-    "aisle": "Baking",
+    "key": "protein-powder",
+    "name": "Protein powder",
+    "aisle": "Pantry: check first",
     "qty": 1.0,
     "unit": "scoop",
     "optional": false,
@@ -27931,9 +29687,9 @@
   ],
   "shop": [
    {
-    "key": "vanilla",
-    "name": "Vanilla essence",
-    "aisle": "Baking",
+    "key": "protein-powder",
+    "name": "Protein powder",
+    "aisle": "Pantry: check first",
     "qty": 1.0,
     "unit": "scoop",
     "optional": false,
@@ -28059,9 +29815,9 @@
   ],
   "shop": [
    {
-    "key": "vanilla",
-    "name": "Vanilla essence",
-    "aisle": "Baking",
+    "key": "protein-powder",
+    "name": "Protein powder",
+    "aisle": "Pantry: check first",
     "qty": 1.0,
     "unit": "scoop",
     "optional": false,
@@ -28169,9 +29925,9 @@
   ],
   "shop": [
    {
-    "key": "vanilla",
-    "name": "Vanilla essence",
-    "aisle": "Baking",
+    "key": "protein-powder",
+    "name": "Protein powder",
+    "aisle": "Pantry: check first",
     "qty": 1.0,
     "unit": "scoop",
     "optional": false,
@@ -28449,9 +30205,9 @@
     "raw": "3 ripe bananas, peeled, sliced, and frozen overnight"
    },
    {
-    "key": "vanilla",
-    "name": "Vanilla essence",
-    "aisle": "Baking",
+    "key": "protein-powder",
+    "name": "Protein powder",
+    "aisle": "Pantry: check first",
     "qty": 0.5,
     "unit": "scoop",
     "optional": false,
