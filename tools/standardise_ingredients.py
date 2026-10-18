@@ -20,7 +20,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 FOLDERS = ["InstantPot", "SlowCooker", "Stovetop", "Oven", "Fakeaways", "Italian",
-           "Breakfast", "Snacks", "Shakes", "Desserts", "Baking", "Sides"]
+           "Breakfast", "Snacks", "Shakes", "Desserts", "Baking", "Sides", "BreadMaker"]
 
 UNICODE_FRACS = {"½": "1}{2", "¼": "1}{4", "¾": "3}{4", "⅓": "1}{3", "⅔": "2}{3", "⅛": "1}{8"}
 

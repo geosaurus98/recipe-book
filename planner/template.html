@@ -82,7 +82,7 @@ main.wrap { padding-block: 20px 48px; display: grid; gap: 28px; }
 [data-m="pressure"] { --m: var(--pressure); }
 [data-m="quick"], [data-m="stovetop"], [data-m="sides"] { --m: var(--quick); }
 [data-m="oven"] { --m: var(--oven); }
-[data-m="baking"], [data-m="desserts"] { --m: var(--bake); }
+[data-m="baking"], [data-m="desserts"], [data-m="breadmaker"] { --m: var(--bake); }
 [data-m="breakfast"], [data-m="snacks"], [data-m="shakes"], [data-m="extra"] { --m: var(--other); }
 .chip { display: inline-flex; align-items: center; gap: 6px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--m, var(--muted)); }
 .chip::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--m, var(--muted)); }
@@ -208,7 +208,7 @@ const SLOTS = [
 const CHAPTERS = [
   ["pressure", "Instant Pot"], ["slow", "Slow cooker"], ["stovetop", "Stovetop"], ["oven", "Oven"],
   ["sides", "Salads & sides"], ["breakfast", "Breakfast"], ["snacks", "Snacks"], ["shakes", "Shakes"],
-  ["desserts", "Desserts"], ["baking", "Baking"],
+  ["desserts", "Desserts"], ["baking", "Baking"], ["breadmaker", "Bread maker"],
 ];
 const CHAPTER_LABEL = Object.fromEntries(CHAPTERS);
 const PROTEINS = [["mince", "Mince"], ["beef", "Beef"], ["pork", "Pork"], ["chicken", "Chicken"], ["fish", "Fish"]];

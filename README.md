@@ -23,6 +23,7 @@ recipe can appear in more than one book.
 | `Breakfast/`, `Snacks/`, `Shakes/`, `Desserts/`, `Baking/` | One chapter each |
 | `Fakeaways/`, `Italian/` | Cooking-course recipes. Used by Palmer, and placed by method in `main.tex` |
 | `Sides/` | Salads & Sides (new recipes go here; the course salad and asparagus stay in `Italian/`) |
+| `BreadMaker/` | Bread Maker (Panasonic SD-2501 NZ recipes: machine loaves, doughs, and a tea bread) |
 
 Each folder (except the course folders) also has an `Ideas.tex`: a checklist of
 recipes that could go in that chapter. `To_Add.tex` shows them all in one PDF.
