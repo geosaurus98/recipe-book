@@ -17992,7 +17992,7 @@
    },
    {
     "key": "sesame-seeds",
-    "name": "Sesame seeds",
+    "name": "Sesame or poppy seeds",
     "aisle": "Pantry: check first",
     "qty": 1.0,
     "unit": "tsp",
@@ -23697,8 +23697,8 @@
   ],
   "shop": [
    {
-    "key": "yeast",
-    "name": "Instant dried yeast",
+    "key": "surebake",
+    "name": "Surebake yeast",
     "aisle": "Baking",
     "qty": 4.0,
     "unit": "tsp",
@@ -25069,7 +25069,7 @@
    },
    {
     "key": "sesame-seeds",
-    "name": "Sesame seeds",
+    "name": "Sesame or poppy seeds",
     "aisle": "Pantry: check first",
     "qty": null,
     "unit": "",
@@ -28163,7 +28163,7 @@
    },
    {
     "key": "sesame-seeds",
-    "name": "Sesame seeds",
+    "name": "Sesame or poppy seeds",
     "aisle": "Pantry: check first",
     "qty": 1.0,
     "unit": "tsp",
@@ -35826,7 +35826,7 @@
     "key": "lemon",
     "name": "Lemons",
     "aisle": "Fruit & veg",
-    "qty": 0.5,
+    "qty": 1,
     "unit": "",
     "optional": false,
     "raw": "1 tsp lemon zest"
@@ -39817,6 +39817,3317 @@
     "unit": "tbsp",
     "optional": false,
     "raw": "2 tbsp oil (plus extra for frying)"
+   }
+  ],
+  "tags": []
+ },
+ {
+  "title": "Brioche",
+  "servings": "1 loaf (one size)",
+  "time": "3 hr 30 min in the machine",
+  "intro": "Rich, buttery, eggy bread. Brilliant for French toast.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "5 tsp Surebake yeast"
+     },
+     {
+      "text": "400 g high-grade (white) flour"
+     },
+     {
+      "text": "1 tsp salt"
+     },
+     {
+      "text": "2 tbsp sugar"
+     },
+     {
+      "text": "50 g cold butter, cut into 2 cm cubes"
+     },
+     {
+      "text": "2 tbsp milk powder"
+     },
+     {
+      "text": "2 medium eggs (100 g)"
+     },
+     {
+      "text": "180 ml water"
+     },
+     {
+      "text": "**Added at the beep:** 70 g cold butter, cut into 1–2 cm cubes"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Load the pan.** Fit the kneading blade in the bread pan. Put the yeast in first, then cover it with the flour and the other dry ingredients. Add the butter, then pour in the water and other liquids last."
+     },
+     {
+      "text": "**Set the machine.** Put the pan in the machine and close the lid. Select menu **11 (Brioche)**, crust **Medium**, and press Start. Don't use the timer for this recipe."
+     },
+     {
+      "text": "**Cool.** When it beeps, press Stop and lift the bread out straight away using oven gloves. Cool on a wire rack before slicing."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "From the Panasonic SD-2501 manual (NZ recipe), page 27."
+     },
+     {
+      "text": "About 55 minutes in, the machine beeps: add the extra 70 g butter cubes and press Start again (manual, p. 15). If you'd rather not wait, add all the butter at the start — the texture is slightly different."
+     },
+     {
+      "text": "Keep the butter cold until it goes in."
+     },
+     {
+      "text": "In a hot room, use chilled water (manual, p. 8)."
+     },
+     {
+      "text": "Red Top Surebake yeast has bread improver in it. If you use plain active dried yeast instead, use 1½–1¾ tsp and add bread improver (manual, p. 21)."
+     }
+    ]
+   }
+  ],
+  "id": "BreadMaker-Basic_Brioche",
+  "file": "BreadMaker/Basic_Brioche.tex",
+  "chapter": "breadmaker",
+  "chapterName": "Bread Maker",
+  "group": "Loaves (baked in the machine)",
+  "ingredients": [
+   "5 tsp Surebake yeast",
+   "400 g high-grade (white) flour",
+   "1 tsp salt",
+   "2 tbsp sugar",
+   "50 g cold butter, cut into 2 cm cubes",
+   "2 tbsp milk powder",
+   "2 medium eggs (100 g)",
+   "180 ml water",
+   "**Added at the beep:** 70 g cold butter, cut into 1–2 cm cubes"
+  ],
+  "shop": [
+   {
+    "key": "surebake",
+    "name": "Surebake yeast",
+    "aisle": "Baking",
+    "qty": 5.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "5 tsp Surebake yeast"
+   },
+   {
+    "key": "bread-flour",
+    "name": "High-grade flour",
+    "aisle": "Baking",
+    "qty": 400.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "400 g high-grade (white) flour"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp salt"
+   },
+   {
+    "key": "sugar",
+    "name": "White sugar",
+    "aisle": "Baking",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp sugar"
+   },
+   {
+    "key": "butter",
+    "name": "Butter",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 50.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "50 g cold butter, cut into 2 cm cubes"
+   },
+   {
+    "key": "milk-powder",
+    "name": "Milk powder",
+    "aisle": "Baking",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp milk powder"
+   },
+   {
+    "key": "eggs",
+    "name": "Eggs",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 2.0,
+    "unit": "",
+    "optional": false,
+    "raw": "2 medium eggs (100 g)"
+   },
+   {
+    "key": "butter",
+    "name": "Butter",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 70.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "Added at the beep: 70 g cold butter, cut into 1–2 cm cubes"
+   }
+  ],
+  "tags": []
+ },
+ {
+  "title": "Cheese & Mustard Loaf",
+  "servings": "1 loaf (L)",
+  "time": "4 hr in the machine",
+  "intro": "A savoury loaf with tasty cheese, mustard and Worcestershire. Great toasted with soup.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "3½ tsp Surebake yeast"
+     },
+     {
+      "text": "450 g high-grade (white) flour"
+     },
+     {
+      "text": "1½ tsp salt"
+     },
+     {
+      "text": "2 tbsp milk powder"
+     },
+     {
+      "text": "2 tbsp butter"
+     },
+     {
+      "text": "1 tsp sugar"
+     },
+     {
+      "text": "1 tsp mustard powder"
+     },
+     {
+      "text": "¾ cup finely grated tasty cheese"
+     },
+     {
+      "text": "1 tbsp Worcestershire sauce"
+     },
+     {
+      "text": "310 ml water"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Load the pan.** Fit the kneading blade in the bread pan. Put the yeast in first, then cover it with the flour and the other dry ingredients. Add the butter, then pour in the water and other liquids last."
+     },
+     {
+      "text": "**Set the machine.** Put the pan in the machine and close the lid. Select menu **01 (Basic)**, size **L**, crust **Medium**, and press Start. Don't use the timer for this recipe."
+     },
+     {
+      "text": "**Cool.** When it beeps, press Stop and lift the bread out straight away using oven gloves. Cool on a wire rack before slicing."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "From the Panasonic SD-2501 manual (NZ recipe), page 22."
+     },
+     {
+      "text": "Red Top Surebake yeast has bread improver in it. If you use plain active dried yeast instead, use 1½–1¾ tsp and add bread improver (manual, p. 21)."
+     }
+    ]
+   }
+  ],
+  "id": "BreadMaker-Cheese_Mustard_Loaf",
+  "file": "BreadMaker/Cheese_Mustard_Loaf.tex",
+  "chapter": "breadmaker",
+  "chapterName": "Bread Maker",
+  "group": "Loaves (baked in the machine)",
+  "ingredients": [
+   "3½ tsp Surebake yeast",
+   "450 g high-grade (white) flour",
+   "1½ tsp salt",
+   "2 tbsp milk powder",
+   "2 tbsp butter",
+   "1 tsp sugar",
+   "1 tsp mustard powder",
+   "¾ cup finely grated tasty cheese",
+   "1 tbsp Worcestershire sauce",
+   "310 ml water"
+  ],
+  "shop": [
+   {
+    "key": "surebake",
+    "name": "Surebake yeast",
+    "aisle": "Baking",
+    "qty": 3.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "3½ tsp Surebake yeast"
+   },
+   {
+    "key": "bread-flour",
+    "name": "High-grade flour",
+    "aisle": "Baking",
+    "qty": 450.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "450 g high-grade (white) flour"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 1.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1½ tsp salt"
+   },
+   {
+    "key": "milk-powder",
+    "name": "Milk powder",
+    "aisle": "Baking",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp milk powder"
+   },
+   {
+    "key": "butter",
+    "name": "Butter",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp butter"
+   },
+   {
+    "key": "sugar",
+    "name": "White sugar",
+    "aisle": "Baking",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp sugar"
+   },
+   {
+    "key": "mustard-powder",
+    "name": "Mustard powder",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp mustard powder"
+   },
+   {
+    "key": "cheese",
+    "name": "Tasty cheese",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 0.75,
+    "unit": "cup",
+    "optional": false,
+    "raw": "¾ cup finely grated tasty cheese"
+   },
+   {
+    "key": "worcestershire",
+    "name": "Worcestershire sauce",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp Worcestershire sauce"
+   }
+  ],
+  "tags": []
+ },
+ {
+  "title": "Date & Walnut Loaf",
+  "servings": "1 loaf (L)",
+  "time": "5 hr in the machine",
+  "intro": "A slightly sweet wholemeal loaf with chopped dates and walnuts. Lovely toasted with butter.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "4 tsp Surebake yeast"
+     },
+     {
+      "text": "225 g wholemeal flour"
+     },
+     {
+      "text": "225 g high-grade (white) flour"
+     },
+     {
+      "text": "1 tsp salt"
+     },
+     {
+      "text": "2 tbsp milk powder"
+     },
+     {
+      "text": "1 tbsp brown sugar"
+     },
+     {
+      "text": "2 tbsp butter"
+     },
+     {
+      "text": "½ cup chopped dates"
+     },
+     {
+      "text": "340 ml water"
+     },
+     {
+      "group": "Raisin nut dispenser"
+     },
+     {
+      "text": "½ cup chopped walnuts"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Load the pan.** Fit the kneading blade in the bread pan. Put the yeast in first, then cover it with the flour and the other dry ingredients. Add the butter, then pour in the water and other liquids last."
+     },
+     {
+      "text": "**Add-ins.** Put the add-ins listed under Raisin nut dispenser in the dispenser. The machine adds them at the right time."
+     },
+     {
+      "text": "**Set the machine.** Put the pan in the machine and close the lid. Select menu **06 (Whole wheat raisin)**, size **L**, crust **Medium**, and press Start. You can use the timer to have it ready later."
+     },
+     {
+      "text": "**Cool.** When it beeps, press Stop and lift the bread out straight away using oven gloves. Cool on a wire rack before slicing."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "From the Panasonic SD-2501 manual (NZ recipe), page 25."
+     },
+     {
+      "text": "Red Top Surebake yeast has bread improver in it. If you use plain active dried yeast instead, use 1½–1¾ tsp and add bread improver (manual, p. 21)."
+     }
+    ]
+   }
+  ],
+  "id": "BreadMaker-Date_Nut_Loaf",
+  "file": "BreadMaker/Date_Nut_Loaf.tex",
+  "chapter": "breadmaker",
+  "chapterName": "Bread Maker",
+  "group": "Loaves (baked in the machine)",
+  "ingredients": [
+   "4 tsp Surebake yeast",
+   "225 g wholemeal flour",
+   "225 g high-grade (white) flour",
+   "1 tsp salt",
+   "2 tbsp milk powder",
+   "1 tbsp brown sugar",
+   "2 tbsp butter",
+   "½ cup chopped dates",
+   "340 ml water",
+   "½ cup chopped walnuts"
+  ],
+  "shop": [
+   {
+    "key": "surebake",
+    "name": "Surebake yeast",
+    "aisle": "Baking",
+    "qty": 4.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "4 tsp Surebake yeast"
+   },
+   {
+    "key": "wholemeal-flour",
+    "name": "Wholemeal flour",
+    "aisle": "Baking",
+    "qty": 225.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "225 g wholemeal flour"
+   },
+   {
+    "key": "bread-flour",
+    "name": "High-grade flour",
+    "aisle": "Baking",
+    "qty": 225.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "225 g high-grade (white) flour"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp salt"
+   },
+   {
+    "key": "milk-powder",
+    "name": "Milk powder",
+    "aisle": "Baking",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp milk powder"
+   },
+   {
+    "key": "brown-sugar",
+    "name": "Brown sugar",
+    "aisle": "Baking",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp brown sugar"
+   },
+   {
+    "key": "butter",
+    "name": "Butter",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp butter"
+   },
+   {
+    "key": "dates",
+    "name": "Pitted dates",
+    "aisle": "Baking",
+    "qty": 0.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "½ cup chopped dates"
+   },
+   {
+    "key": "walnuts",
+    "name": "Walnuts",
+    "aisle": "Baking",
+    "qty": 0.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "½ cup chopped walnuts"
+   }
+  ],
+  "tags": []
+ },
+ {
+  "title": "French Loaf",
+  "servings": "1 loaf (one size)",
+  "time": "6 hr in the machine",
+  "intro": "A crisp-crusted, chewy white loaf with just flour, yeast, salt, water and a little butter.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "3 tsp Surebake yeast"
+     },
+     {
+      "text": "450 g high-grade (white) flour"
+     },
+     {
+      "text": "1½ tsp salt"
+     },
+     {
+      "text": "1 tsp butter"
+     },
+     {
+      "text": "330 ml water"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Load the pan.** Fit the kneading blade in the bread pan. Put the yeast in first, then cover it with the flour and the other dry ingredients. Add the butter, then pour in the water and other liquids last."
+     },
+     {
+      "text": "**Set the machine.** Put the pan in the machine and close the lid. Select menu **08 (French)**, crust **Medium**, and press Start. You can use the timer to have it ready later."
+     },
+     {
+      "text": "**Cool.** When it beeps, press Stop and lift the bread out straight away using oven gloves. Cool on a wire rack before slicing."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "From the Panasonic SD-2501 manual (NZ recipe), page 26."
+     },
+     {
+      "text": "For a herby version, add 2 tsp dried tarragon and 2 tsp dried thyme."
+     },
+     {
+      "text": "In a hot room, use chilled water (manual, p. 8)."
+     },
+     {
+      "text": "Red Top Surebake yeast has bread improver in it. If you use plain active dried yeast instead, use 1½–1¾ tsp and add bread improver (manual, p. 21)."
+     }
+    ]
+   }
+  ],
+  "id": "BreadMaker-French_Bread_Loaf",
+  "file": "BreadMaker/French_Bread_Loaf.tex",
+  "chapter": "breadmaker",
+  "chapterName": "Bread Maker",
+  "group": "Loaves (baked in the machine)",
+  "ingredients": [
+   "3 tsp Surebake yeast",
+   "450 g high-grade (white) flour",
+   "1½ tsp salt",
+   "1 tsp butter",
+   "330 ml water"
+  ],
+  "shop": [
+   {
+    "key": "surebake",
+    "name": "Surebake yeast",
+    "aisle": "Baking",
+    "qty": 3.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "3 tsp Surebake yeast"
+   },
+   {
+    "key": "bread-flour",
+    "name": "High-grade flour",
+    "aisle": "Baking",
+    "qty": 450.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "450 g high-grade (white) flour"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 1.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1½ tsp salt"
+   },
+   {
+    "key": "butter",
+    "name": "Butter",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp butter"
+   }
+  ],
+  "tags": []
+ },
+ {
+  "title": "Garlic Herb Loaf",
+  "servings": "1 loaf (L)",
+  "time": "4 hr in the machine",
+  "intro": "A white loaf with garlic and fresh herbs baked right through it.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "3½ tsp Surebake yeast"
+     },
+     {
+      "text": "450 g high-grade (white) flour"
+     },
+     {
+      "text": "1½ tsp salt"
+     },
+     {
+      "text": "2 tbsp milk powder"
+     },
+     {
+      "text": "2 tbsp butter"
+     },
+     {
+      "text": "1 tsp sugar"
+     },
+     {
+      "text": "2 tsp crushed garlic"
+     },
+     {
+      "text": "3 tbsp chopped fresh herbs (parsley, chives, basil or oregano)"
+     },
+     {
+      "text": "330 ml water"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Load the pan.** Fit the kneading blade in the bread pan. Put the yeast in first, then cover it with the flour and the other dry ingredients. Add the butter, then pour in the water and other liquids last."
+     },
+     {
+      "text": "**Set the machine.** Put the pan in the machine and close the lid. Select menu **01 (Basic)**, size **L**, crust **Medium**, and press Start. You can use the timer to have it ready later."
+     },
+     {
+      "text": "**Cool.** When it beeps, press Stop and lift the bread out straight away using oven gloves. Cool on a wire rack before slicing."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "From the Panasonic SD-2501 manual (NZ recipe), page 22."
+     },
+     {
+      "text": "Red Top Surebake yeast has bread improver in it. If you use plain active dried yeast instead, use 1½–1¾ tsp and add bread improver (manual, p. 21)."
+     }
+    ]
+   }
+  ],
+  "id": "BreadMaker-Garlic_Herb_Bread",
+  "file": "BreadMaker/Garlic_Herb_Bread.tex",
+  "chapter": "breadmaker",
+  "chapterName": "Bread Maker",
+  "group": "Loaves (baked in the machine)",
+  "ingredients": [
+   "3½ tsp Surebake yeast",
+   "450 g high-grade (white) flour",
+   "1½ tsp salt",
+   "2 tbsp milk powder",
+   "2 tbsp butter",
+   "1 tsp sugar",
+   "2 tsp crushed garlic",
+   "3 tbsp chopped fresh herbs (parsley, chives, basil or oregano)",
+   "330 ml water"
+  ],
+  "shop": [
+   {
+    "key": "surebake",
+    "name": "Surebake yeast",
+    "aisle": "Baking",
+    "qty": 3.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "3½ tsp Surebake yeast"
+   },
+   {
+    "key": "bread-flour",
+    "name": "High-grade flour",
+    "aisle": "Baking",
+    "qty": 450.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "450 g high-grade (white) flour"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 1.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1½ tsp salt"
+   },
+   {
+    "key": "milk-powder",
+    "name": "Milk powder",
+    "aisle": "Baking",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp milk powder"
+   },
+   {
+    "key": "butter",
+    "name": "Butter",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp butter"
+   },
+   {
+    "key": "sugar",
+    "name": "White sugar",
+    "aisle": "Baking",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp sugar"
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "2 tsp crushed garlic"
+   },
+   {
+    "key": "oregano",
+    "name": "Dried oregano",
+    "aisle": "Pantry: check first",
+    "qty": 3.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "3 tbsp chopped fresh herbs (parsley, chives, basil or oregano)"
+   }
+  ],
+  "tags": []
+ },
+ {
+  "title": "Half-and-Half Wholemeal Loaf",
+  "servings": "1 loaf (L)",
+  "time": "5 hr in the machine",
+  "intro": "Half wholemeal, half white flour: more fibre than a white loaf but still light and soft.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "4 tsp Surebake yeast"
+     },
+     {
+      "text": "225 g wholemeal flour"
+     },
+     {
+      "text": "225 g high-grade (white) flour"
+     },
+     {
+      "text": "1 tsp salt"
+     },
+     {
+      "text": "2 tbsp milk powder"
+     },
+     {
+      "text": "2 tbsp butter"
+     },
+     {
+      "text": "1 tbsp treacle"
+     },
+     {
+      "text": "340 ml water"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Load the pan.** Fit the kneading blade in the bread pan. Put the yeast in first, then cover it with the flour and the other dry ingredients. Add the butter, then pour in the water and other liquids last."
+     },
+     {
+      "text": "**Set the machine.** Put the pan in the machine and close the lid. Select menu **04 (Whole wheat)**, size **L**, crust **Medium**, and press Start. You can use the timer to have it ready later."
+     },
+     {
+      "text": "**Cool.** When it beeps, press Stop and lift the bread out straight away using oven gloves. Cool on a wire rack before slicing."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "From the Panasonic SD-2501 manual (NZ recipe), page 24."
+     },
+     {
+      "text": "The manual also has 75 % and 100 % wholemeal versions on page 24. 100 % wholemeal needs gluten flour to rise."
+     },
+     {
+      "text": "Red Top Surebake yeast has bread improver in it. If you use plain active dried yeast instead, use 1½–1¾ tsp and add bread improver (manual, p. 21)."
+     }
+    ]
+   }
+  ],
+  "id": "BreadMaker-Wholemeal_Loaf_50",
+  "file": "BreadMaker/Wholemeal_Loaf_50.tex",
+  "chapter": "breadmaker",
+  "chapterName": "Bread Maker",
+  "group": "Loaves (baked in the machine)",
+  "ingredients": [
+   "4 tsp Surebake yeast",
+   "225 g wholemeal flour",
+   "225 g high-grade (white) flour",
+   "1 tsp salt",
+   "2 tbsp milk powder",
+   "2 tbsp butter",
+   "1 tbsp treacle",
+   "340 ml water"
+  ],
+  "shop": [
+   {
+    "key": "surebake",
+    "name": "Surebake yeast",
+    "aisle": "Baking",
+    "qty": 4.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "4 tsp Surebake yeast"
+   },
+   {
+    "key": "wholemeal-flour",
+    "name": "Wholemeal flour",
+    "aisle": "Baking",
+    "qty": 225.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "225 g wholemeal flour"
+   },
+   {
+    "key": "bread-flour",
+    "name": "High-grade flour",
+    "aisle": "Baking",
+    "qty": 225.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "225 g high-grade (white) flour"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp salt"
+   },
+   {
+    "key": "milk-powder",
+    "name": "Milk powder",
+    "aisle": "Baking",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp milk powder"
+   },
+   {
+    "key": "butter",
+    "name": "Butter",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp butter"
+   },
+   {
+    "key": "treacle",
+    "name": "Treacle",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp treacle"
+   }
+  ],
+  "tags": []
+ },
+ {
+  "title": "Kumara Bread",
+  "servings": "1 loaf (L)",
+  "time": "4 hr in the machine",
+  "intro": "A soft, golden loaf with mashed kumara and a little honey. A true Kiwi bread-maker loaf.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "3½ tsp Surebake yeast"
+     },
+     {
+      "text": "450 g high-grade (white) flour"
+     },
+     {
+      "text": "1½ tsp salt"
+     },
+     {
+      "text": "2 tbsp milk powder"
+     },
+     {
+      "text": "2 tbsp butter"
+     },
+     {
+      "text": "½ cup mashed kumara (cooled)"
+     },
+     {
+      "text": "1 tbsp honey"
+     },
+     {
+      "text": "300 ml water"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Load the pan.** Fit the kneading blade in the bread pan. Put the yeast in first, then cover it with the flour and the other dry ingredients. Add the butter, then pour in the water and other liquids last."
+     },
+     {
+      "text": "**Set the machine.** Put the pan in the machine and close the lid. Select menu **01 (Basic)**, size **L**, crust **Medium**, and press Start. Don't use the timer for this recipe."
+     },
+     {
+      "text": "**Cool.** When it beeps, press Stop and lift the bread out straight away using oven gloves. Cool on a wire rack before slicing."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "From the Panasonic SD-2501 manual (NZ recipe), page 22."
+     },
+     {
+      "text": "Use plain mashed kumara with no butter or milk added, and let it cool first."
+     },
+     {
+      "text": "The Australian version adds 1 tsp cinnamon — nice if you like a hint of spice."
+     },
+     {
+      "text": "Red Top Surebake yeast has bread improver in it. If you use plain active dried yeast instead, use 1½–1¾ tsp and add bread improver (manual, p. 21)."
+     }
+    ]
+   }
+  ],
+  "id": "BreadMaker-Kumara_Bread",
+  "file": "BreadMaker/Kumara_Bread.tex",
+  "chapter": "breadmaker",
+  "chapterName": "Bread Maker",
+  "group": "Loaves (baked in the machine)",
+  "ingredients": [
+   "3½ tsp Surebake yeast",
+   "450 g high-grade (white) flour",
+   "1½ tsp salt",
+   "2 tbsp milk powder",
+   "2 tbsp butter",
+   "½ cup mashed kumara (cooled)",
+   "1 tbsp honey",
+   "300 ml water"
+  ],
+  "shop": [
+   {
+    "key": "surebake",
+    "name": "Surebake yeast",
+    "aisle": "Baking",
+    "qty": 3.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "3½ tsp Surebake yeast"
+   },
+   {
+    "key": "bread-flour",
+    "name": "High-grade flour",
+    "aisle": "Baking",
+    "qty": 450.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "450 g high-grade (white) flour"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 1.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1½ tsp salt"
+   },
+   {
+    "key": "milk-powder",
+    "name": "Milk powder",
+    "aisle": "Baking",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp milk powder"
+   },
+   {
+    "key": "butter",
+    "name": "Butter",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp butter"
+   },
+   {
+    "key": "kumara",
+    "name": "Kumara",
+    "aisle": "Fruit & veg",
+    "qty": 0.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "½ cup mashed kumara (cooled)"
+   },
+   {
+    "key": "honey",
+    "name": "Honey",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp honey"
+   }
+  ],
+  "tags": []
+ },
+ {
+  "title": "Mexican Chilli Loaf",
+  "servings": "1 loaf (L)",
+  "time": "4 hr in the machine",
+  "intro": "A lightly spiced loaf with tomato, cumin and corn. Good with chilli or for toasted sandwiches.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "3½ tsp Surebake yeast"
+     },
+     {
+      "text": "450 g high-grade (white) flour"
+     },
+     {
+      "text": "1½ tsp salt"
+     },
+     {
+      "text": "2 tbsp milk powder"
+     },
+     {
+      "text": "2 tbsp butter"
+     },
+     {
+      "text": "1 tbsp brown sugar"
+     },
+     {
+      "text": "½ tsp chilli powder"
+     },
+     {
+      "text": "1 tbsp tomato paste"
+     },
+     {
+      "text": "¼ cup cooked corn kernels"
+     },
+     {
+      "text": "1 tsp ground cumin"
+     },
+     {
+      "text": "1 tsp dried oregano"
+     },
+     {
+      "text": "300 ml water"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Load the pan.** Fit the kneading blade in the bread pan. Put the yeast in first, then cover it with the flour and the other dry ingredients. Add the butter, then pour in the water and other liquids last."
+     },
+     {
+      "text": "**Set the machine.** Put the pan in the machine and close the lid. Select menu **01 (Basic)**, size **L**, crust **Medium**, and press Start. Don't use the timer for this recipe."
+     },
+     {
+      "text": "**Cool.** When it beeps, press Stop and lift the bread out straight away using oven gloves. Cool on a wire rack before slicing."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "From the Panasonic SD-2501 manual (NZ recipe), page 22."
+     },
+     {
+      "text": "Red Top Surebake yeast has bread improver in it. If you use plain active dried yeast instead, use 1½–1¾ tsp and add bread improver (manual, p. 21)."
+     }
+    ]
+   }
+  ],
+  "id": "BreadMaker-Mexican_Chilli_Loaf",
+  "file": "BreadMaker/Mexican_Chilli_Loaf.tex",
+  "chapter": "breadmaker",
+  "chapterName": "Bread Maker",
+  "group": "Loaves (baked in the machine)",
+  "ingredients": [
+   "3½ tsp Surebake yeast",
+   "450 g high-grade (white) flour",
+   "1½ tsp salt",
+   "2 tbsp milk powder",
+   "2 tbsp butter",
+   "1 tbsp brown sugar",
+   "½ tsp chilli powder",
+   "1 tbsp tomato paste",
+   "¼ cup cooked corn kernels",
+   "1 tsp ground cumin",
+   "1 tsp dried oregano",
+   "300 ml water"
+  ],
+  "shop": [
+   {
+    "key": "surebake",
+    "name": "Surebake yeast",
+    "aisle": "Baking",
+    "qty": 3.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "3½ tsp Surebake yeast"
+   },
+   {
+    "key": "bread-flour",
+    "name": "High-grade flour",
+    "aisle": "Baking",
+    "qty": 450.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "450 g high-grade (white) flour"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 1.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1½ tsp salt"
+   },
+   {
+    "key": "milk-powder",
+    "name": "Milk powder",
+    "aisle": "Baking",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp milk powder"
+   },
+   {
+    "key": "butter",
+    "name": "Butter",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp butter"
+   },
+   {
+    "key": "brown-sugar",
+    "name": "Brown sugar",
+    "aisle": "Baking",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp brown sugar"
+   },
+   {
+    "key": "chilli-powder",
+    "name": "Chilli powder",
+    "aisle": "Pantry: check first",
+    "qty": 0.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "½ tsp chilli powder"
+   },
+   {
+    "key": "tomato-paste",
+    "name": "Tomato paste",
+    "aisle": "Cans, jars & pulses",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp tomato paste"
+   },
+   {
+    "key": "corn",
+    "name": "Corn (frozen or canned)",
+    "aisle": "Frozen",
+    "qty": 0.25,
+    "unit": "cup",
+    "optional": false,
+    "raw": "¼ cup cooked corn kernels"
+   },
+   {
+    "key": "cumin",
+    "name": "Ground cumin",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp ground cumin"
+   },
+   {
+    "key": "oregano",
+    "name": "Dried oregano",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp dried oregano"
+   }
+  ],
+  "tags": []
+ },
+ {
+  "title": "Mixed Grain Bread",
+  "servings": "1 loaf (L)",
+  "time": "5 hr in the machine",
+  "intro": "A hearty, seedy loaf with oats, buckwheat, cornmeal and linseed.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "4 tsp Surebake yeast"
+     },
+     {
+      "text": "100 g wholemeal flour"
+     },
+     {
+      "text": "300 g high-grade (white) flour"
+     },
+     {
+      "text": "50 g oatmeal"
+     },
+     {
+      "text": "50 g buckwheat groats"
+     },
+     {
+      "text": "30 g cornmeal (polenta)"
+     },
+     {
+      "text": "1 tbsp whole linseed"
+     },
+     {
+      "text": "1 tbsp brown sugar"
+     },
+     {
+      "text": "2 tbsp butter"
+     },
+     {
+      "text": "2 tbsp milk powder"
+     },
+     {
+      "text": "1 tsp salt"
+     },
+     {
+      "text": "370 ml water"
+     },
+     {
+      "group": "Raisin nut dispenser"
+     },
+     {
+      "text": "1 tbsp toasted sunflower seeds"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Load the pan.** Fit the kneading blade in the bread pan. Put the yeast in first, then cover it with the flour and the other dry ingredients. Add the butter, then pour in the water and other liquids last."
+     },
+     {
+      "text": "**Add-ins.** Put the add-ins listed under Raisin nut dispenser in the dispenser. The machine adds them at the right time."
+     },
+     {
+      "text": "**Set the machine.** Put the pan in the machine and close the lid. Select menu **06 (Whole wheat raisin)**, size **L**, crust **Medium**, and press Start. You can use the timer to have it ready later."
+     },
+     {
+      "text": "**Cool.** When it beeps, press Stop and lift the bread out straight away using oven gloves. Cool on a wire rack before slicing."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "From the Panasonic SD-2501 manual (NZ recipe), page 25."
+     },
+     {
+      "text": "Red Top Surebake yeast has bread improver in it. If you use plain active dried yeast instead, use 1½–1¾ tsp and add bread improver (manual, p. 21)."
+     }
+    ]
+   }
+  ],
+  "id": "BreadMaker-Mixed_Grain_Bread",
+  "file": "BreadMaker/Mixed_Grain_Bread.tex",
+  "chapter": "breadmaker",
+  "chapterName": "Bread Maker",
+  "group": "Loaves (baked in the machine)",
+  "ingredients": [
+   "4 tsp Surebake yeast",
+   "100 g wholemeal flour",
+   "300 g high-grade (white) flour",
+   "50 g oatmeal",
+   "50 g buckwheat groats",
+   "30 g cornmeal (polenta)",
+   "1 tbsp whole linseed",
+   "1 tbsp brown sugar",
+   "2 tbsp butter",
+   "2 tbsp milk powder",
+   "1 tsp salt",
+   "370 ml water",
+   "1 tbsp toasted sunflower seeds"
+  ],
+  "shop": [
+   {
+    "key": "surebake",
+    "name": "Surebake yeast",
+    "aisle": "Baking",
+    "qty": 4.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "4 tsp Surebake yeast"
+   },
+   {
+    "key": "wholemeal-flour",
+    "name": "Wholemeal flour",
+    "aisle": "Baking",
+    "qty": 100.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "100 g wholemeal flour"
+   },
+   {
+    "key": "bread-flour",
+    "name": "High-grade flour",
+    "aisle": "Baking",
+    "qty": 300.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "300 g high-grade (white) flour"
+   },
+   {
+    "key": "oats",
+    "name": "Rolled oats",
+    "aisle": "Pasta, rice & grains",
+    "qty": 50.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "50 g oatmeal"
+   },
+   {
+    "key": "buckwheat",
+    "name": "Buckwheat groats",
+    "aisle": "Pasta, rice & grains",
+    "qty": 50.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "50 g buckwheat groats"
+   },
+   {
+    "key": "polenta",
+    "name": "Cornmeal (polenta)",
+    "aisle": "Pasta, rice & grains",
+    "qty": 30.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "30 g cornmeal (polenta)"
+   },
+   {
+    "key": "seeds",
+    "name": "Seeds (linseed, sunflower)",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp whole linseed"
+   },
+   {
+    "key": "brown-sugar",
+    "name": "Brown sugar",
+    "aisle": "Baking",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp brown sugar"
+   },
+   {
+    "key": "butter",
+    "name": "Butter",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp butter"
+   },
+   {
+    "key": "milk-powder",
+    "name": "Milk powder",
+    "aisle": "Baking",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp milk powder"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp salt"
+   },
+   {
+    "key": "seeds",
+    "name": "Seeds (linseed, sunflower)",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp toasted sunflower seeds"
+   }
+  ],
+  "tags": []
+ },
+ {
+  "title": "Soft Sandwich Bread",
+  "servings": "1 loaf (one size)",
+  "time": "5 hr in the machine",
+  "intro": "A soft-crusted, fine-textured loaf made for sandwiches and school lunches.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "3 tsp Surebake yeast"
+     },
+     {
+      "text": "350 g high-grade (white) flour"
+     },
+     {
+      "text": "1 tsp salt"
+     },
+     {
+      "text": "1 tbsp milk powder"
+     },
+     {
+      "text": "1 tbsp butter"
+     },
+     {
+      "text": "1 tsp sugar"
+     },
+     {
+      "text": "260 ml water"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Load the pan.** Fit the kneading blade in the bread pan. Put the yeast in first, then cover it with the flour and the other dry ingredients. Add the butter, then pour in the water and other liquids last."
+     },
+     {
+      "text": "**Set the machine.** Put the pan in the machine and close the lid. Select menu **10 (Sandwich)**, crust **Medium**, and press Start. You can use the timer to have it ready later."
+     },
+     {
+      "text": "**Cool.** When it beeps, press Stop and lift the bread out straight away using oven gloves. Cool on a wire rack before slicing."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "From the Panasonic SD-2501 manual (NZ recipe), page 27."
+     },
+     {
+      "text": "A wholemeal sandwich loaf is on the same page."
+     },
+     {
+      "text": "Red Top Surebake yeast has bread improver in it. If you use plain active dried yeast instead, use 1½–1¾ tsp and add bread improver (manual, p. 21)."
+     }
+    ]
+   }
+  ],
+  "id": "BreadMaker-Sandwich_Bread",
+  "file": "BreadMaker/Sandwich_Bread.tex",
+  "chapter": "breadmaker",
+  "chapterName": "Bread Maker",
+  "group": "Loaves (baked in the machine)",
+  "ingredients": [
+   "3 tsp Surebake yeast",
+   "350 g high-grade (white) flour",
+   "1 tsp salt",
+   "1 tbsp milk powder",
+   "1 tbsp butter",
+   "1 tsp sugar",
+   "260 ml water"
+  ],
+  "shop": [
+   {
+    "key": "surebake",
+    "name": "Surebake yeast",
+    "aisle": "Baking",
+    "qty": 3.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "3 tsp Surebake yeast"
+   },
+   {
+    "key": "bread-flour",
+    "name": "High-grade flour",
+    "aisle": "Baking",
+    "qty": 350.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "350 g high-grade (white) flour"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp salt"
+   },
+   {
+    "key": "milk-powder",
+    "name": "Milk powder",
+    "aisle": "Baking",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp milk powder"
+   },
+   {
+    "key": "butter",
+    "name": "Butter",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp butter"
+   },
+   {
+    "key": "sugar",
+    "name": "White sugar",
+    "aisle": "Baking",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp sugar"
+   }
+  ],
+  "tags": []
+ },
+ {
+  "title": "Spicy Fruit Loaf",
+  "servings": "1 loaf (M)",
+  "time": "4 hr in the machine",
+  "intro": "A soft, spiced fruit loaf with eggs and milk — like a hot cross bun in loaf form.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "3¼ tsp Surebake yeast"
+     },
+     {
+      "text": "400 g high-grade (white) flour"
+     },
+     {
+      "text": "1 tsp salt"
+     },
+     {
+      "text": "75 g butter"
+     },
+     {
+      "text": "2 tsp sugar"
+     },
+     {
+      "text": "2 tsp ground cinnamon"
+     },
+     {
+      "text": "1 tsp mixed spice"
+     },
+     {
+      "text": "2 medium eggs"
+     },
+     {
+      "text": "100 ml milk"
+     },
+     {
+      "text": "100 ml water"
+     },
+     {
+      "group": "Raisin nut dispenser"
+     },
+     {
+      "text": "150 g mixed dried fruit"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Load the pan.** Fit the kneading blade in the bread pan. Put the yeast in first, then cover it with the flour and the other dry ingredients. Add the butter, then pour in the water and other liquids last."
+     },
+     {
+      "text": "**Add-ins.** Put the add-ins listed under Raisin nut dispenser in the dispenser. The machine adds them at the right time."
+     },
+     {
+      "text": "**Set the machine.** Put the pan in the machine and close the lid. Select menu **03 (Basic raisin)**, size **M**, crust **Medium**, and press Start. Don't use the timer for this recipe."
+     },
+     {
+      "text": "**Cool.** When it beeps, press Stop and lift the bread out straight away using oven gloves. Cool on a wire rack before slicing."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "From the Panasonic SD-2501 manual (NZ recipe), page 23."
+     },
+     {
+      "text": "This recipe only comes in the M size."
+     },
+     {
+      "text": "A wholemeal version (menu 06) is on page 24."
+     },
+     {
+      "text": "Red Top Surebake yeast has bread improver in it. If you use plain active dried yeast instead, use 1½–1¾ tsp and add bread improver (manual, p. 21)."
+     }
+    ]
+   }
+  ],
+  "id": "BreadMaker-Spicy_Fruit_Loaf",
+  "file": "BreadMaker/Spicy_Fruit_Loaf.tex",
+  "chapter": "breadmaker",
+  "chapterName": "Bread Maker",
+  "group": "Loaves (baked in the machine)",
+  "ingredients": [
+   "3¼ tsp Surebake yeast",
+   "400 g high-grade (white) flour",
+   "1 tsp salt",
+   "75 g butter",
+   "2 tsp sugar",
+   "2 tsp ground cinnamon",
+   "1 tsp mixed spice",
+   "2 medium eggs",
+   "100 ml milk",
+   "100 ml water",
+   "150 g mixed dried fruit"
+  ],
+  "shop": [
+   {
+    "key": "surebake",
+    "name": "Surebake yeast",
+    "aisle": "Baking",
+    "qty": 3.25,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "3¼ tsp Surebake yeast"
+   },
+   {
+    "key": "bread-flour",
+    "name": "High-grade flour",
+    "aisle": "Baking",
+    "qty": 400.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "400 g high-grade (white) flour"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp salt"
+   },
+   {
+    "key": "butter",
+    "name": "Butter",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 75.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "75 g butter"
+   },
+   {
+    "key": "sugar",
+    "name": "White sugar",
+    "aisle": "Baking",
+    "qty": 2.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "2 tsp sugar"
+   },
+   {
+    "key": "cinnamon",
+    "name": "Ground cinnamon",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "2 tsp ground cinnamon"
+   },
+   {
+    "key": "mixed-spice",
+    "name": "Mixed spice",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp mixed spice"
+   },
+   {
+    "key": "eggs",
+    "name": "Eggs",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 2.0,
+    "unit": "",
+    "optional": false,
+    "raw": "2 medium eggs"
+   },
+   {
+    "key": "milk",
+    "name": "Milk",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 100.0,
+    "unit": "ml",
+    "optional": false,
+    "raw": "100 ml milk"
+   },
+   {
+    "key": "dried-fruit",
+    "name": "Mixed dried fruit",
+    "aisle": "Baking",
+    "qty": 150.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "150 g mixed dried fruit"
+   }
+  ],
+  "tags": []
+ },
+ {
+  "title": "White Loaf",
+  "servings": "1 loaf (L)",
+  "time": "4 hr in the machine",
+  "intro": "The everyday white sandwich loaf. Set the timer before bed and wake up to fresh bread.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "3½ tsp Surebake yeast"
+     },
+     {
+      "text": "450 g high-grade (white) flour"
+     },
+     {
+      "text": "1½ tsp salt"
+     },
+     {
+      "text": "2 tbsp milk powder"
+     },
+     {
+      "text": "2 tbsp butter"
+     },
+     {
+      "text": "1 tsp sugar"
+     },
+     {
+      "text": "330 ml water"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Load the pan.** Fit the kneading blade in the bread pan. Put the yeast in first, then cover it with the flour and the other dry ingredients. Add the butter, then pour in the water and other liquids last."
+     },
+     {
+      "text": "**Set the machine.** Put the pan in the machine and close the lid. Select menu **01 (Basic)**, size **L**, crust **Medium**, and press Start. You can use the timer to have it ready later."
+     },
+     {
+      "text": "**Cool.** When it beeps, press Stop and lift the bread out straight away using oven gloves. Cool on a wire rack before slicing."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "From the Panasonic SD-2501 manual (NZ recipe), page 21."
+     },
+     {
+      "text": "Medium and XL sizes: see the manual's table. The rapid version (menu 02) is quicker, but the manual says the loaf may not rise as well."
+     },
+     {
+      "text": "Red Top Surebake yeast has bread improver in it. If you use plain active dried yeast instead, use 1½–1¾ tsp and add bread improver (manual, p. 21)."
+     }
+    ]
+   }
+  ],
+  "id": "BreadMaker-White_Loaf",
+  "file": "BreadMaker/White_Loaf.tex",
+  "chapter": "breadmaker",
+  "chapterName": "Bread Maker",
+  "group": "Loaves (baked in the machine)",
+  "ingredients": [
+   "3½ tsp Surebake yeast",
+   "450 g high-grade (white) flour",
+   "1½ tsp salt",
+   "2 tbsp milk powder",
+   "2 tbsp butter",
+   "1 tsp sugar",
+   "330 ml water"
+  ],
+  "shop": [
+   {
+    "key": "surebake",
+    "name": "Surebake yeast",
+    "aisle": "Baking",
+    "qty": 3.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "3½ tsp Surebake yeast"
+   },
+   {
+    "key": "bread-flour",
+    "name": "High-grade flour",
+    "aisle": "Baking",
+    "qty": 450.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "450 g high-grade (white) flour"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 1.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1½ tsp salt"
+   },
+   {
+    "key": "milk-powder",
+    "name": "Milk powder",
+    "aisle": "Baking",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp milk powder"
+   },
+   {
+    "key": "butter",
+    "name": "Butter",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp butter"
+   },
+   {
+    "key": "sugar",
+    "name": "White sugar",
+    "aisle": "Baking",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp sugar"
+   }
+  ],
+  "tags": []
+ },
+ {
+  "title": "Bagels",
+  "servings": "12–16 bagels",
+  "time": "2 hr 20 min in the machine + 1 hr",
+  "intro": "Chewy boiled-then-baked bagels.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "4 tsp Surebake yeast"
+     },
+     {
+      "text": "450 g high-grade (white) flour"
+     },
+     {
+      "text": "1 tsp salt"
+     },
+     {
+      "text": "2 tbsp milk powder"
+     },
+     {
+      "text": "2 tbsp butter or oil"
+     },
+     {
+      "text": "1 tbsp sugar"
+     },
+     {
+      "text": "250 ml water"
+     },
+     {
+      "group": "To finish"
+     },
+     {
+      "text": "1 egg, beaten"
+     },
+     {
+      "text": "Sesame or poppy seeds"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Make the dough.** Fit the kneading blade in the bread pan. Put the yeast in first, cover with the flour and other dry ingredients, add the butter or oil, then pour in the liquids last. Select menu **16 (Basic dough)** (2 hr 20 min) and press Start."
+     },
+     {
+      "text": "**Shape.** Divide the dough into 12–16 pieces. Roll each into a log about 20 cm long and join the ends into a ring, pressing tightly to seal."
+     },
+     {
+      "text": "**Rise.** Put on a lightly greased tray, cover with cling film and leave somewhere warm for 30 minutes."
+     },
+     {
+      "text": "**Boil.** Bring a large pot of water to the boil. Boil 3–4 bagels at a time for 1 minute, turning once. Lift out with a slotted spoon and drain."
+     },
+     {
+      "text": "**Bake.** Brush with beaten egg, sprinkle with seeds, and bake at 200°C for 20–30 minutes, until golden."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "From the Panasonic SD-2501 manual (NZ recipe), page 35."
+     },
+     {
+      "text": "Red Top Surebake yeast has bread improver in it. If you use plain active dried yeast instead, use 1½–1¾ tsp and add bread improver (manual, p. 21)."
+     }
+    ]
+   }
+  ],
+  "id": "BreadMaker-Bagels",
+  "file": "BreadMaker/Bagels.tex",
+  "chapter": "breadmaker",
+  "chapterName": "Bread Maker",
+  "group": "Dough (shaped and oven-baked)",
+  "ingredients": [
+   "4 tsp Surebake yeast",
+   "450 g high-grade (white) flour",
+   "1 tsp salt",
+   "2 tbsp milk powder",
+   "2 tbsp butter or oil",
+   "1 tbsp sugar",
+   "250 ml water",
+   "1 egg, beaten",
+   "Sesame or poppy seeds"
+  ],
+  "shop": [
+   {
+    "key": "surebake",
+    "name": "Surebake yeast",
+    "aisle": "Baking",
+    "qty": 4.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "4 tsp Surebake yeast"
+   },
+   {
+    "key": "bread-flour",
+    "name": "High-grade flour",
+    "aisle": "Baking",
+    "qty": 450.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "450 g high-grade (white) flour"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp salt"
+   },
+   {
+    "key": "milk-powder",
+    "name": "Milk powder",
+    "aisle": "Baking",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp milk powder"
+   },
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp butter or oil"
+   },
+   {
+    "key": "sugar",
+    "name": "White sugar",
+    "aisle": "Baking",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp sugar"
+   },
+   {
+    "key": "eggs",
+    "name": "Eggs",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 egg, beaten"
+   },
+   {
+    "key": "sesame-seeds",
+    "name": "Sesame or poppy seeds",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": false,
+    "raw": "Sesame or poppy seeds"
+   }
+  ],
+  "tags": []
+ },
+ {
+  "title": "Bread Maker Pizza Dough",
+  "servings": "6 small or 2 large pizzas",
+  "time": "45 min in the machine + 30 min",
+  "intro": "Quick pizza bases from the 45-minute pizza program. Use for the DIY Pizzas recipe.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "4 tsp Surebake yeast"
+     },
+     {
+      "text": "450 g high-grade (white) flour"
+     },
+     {
+      "text": "1 tsp salt"
+     },
+     {
+      "text": "1 tsp sugar"
+     },
+     {
+      "text": "5 tbsp olive oil"
+     },
+     {
+      "text": "230 ml water"
+     },
+     {
+      "group": "Topping"
+     },
+     {
+      "text": "Tomato paste"
+     },
+     {
+      "text": "Grated mozzarella"
+     },
+     {
+      "text": "Your choice of toppings"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Make the dough.** Fit the kneading blade in the bread pan. Put the yeast in first, cover with the flour and other dry ingredients, add the butter or oil, then pour in the liquids last. Select menu **22 (Pizza)** (45 min) and press Start."
+     },
+     {
+      "text": "**Shape.** Knead the dough briefly on a floured bench until it springs back. Divide into 6 small or 2 large balls and rest in a warm place for 10 minutes."
+     },
+     {
+      "text": "**Roll.** Roll each ball into a flat circle, put on baking trays and prick all over with a fork. Leave to rise for 15 minutes."
+     },
+     {
+      "text": "**Top.** Brush with tomato paste, sprinkle with mozzarella and add your toppings — onion, pepperoni, cooked sausage, capsicum or olives."
+     },
+     {
+      "text": "**Bake.** Bake at 210°C for 15–20 minutes, until the base is crisp and the cheese bubbling."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "From the Panasonic SD-2501 manual (NZ recipe), page 38."
+     },
+     {
+      "text": "The pizza program is short, so the manual says to melt Surebake yeast first: stir it into 30 ml lukewarm water and use 30 ml less water in the recipe (200 ml instead of 230 ml). Don't use the timer with melted yeast."
+     },
+     {
+      "text": "Red Top Surebake yeast has bread improver in it. If you use plain active dried yeast instead, use 1½–1¾ tsp and add bread improver (manual, p. 21)."
+     }
+    ]
+   }
+  ],
+  "id": "BreadMaker-Pizza_Dough",
+  "file": "BreadMaker/Pizza_Dough.tex",
+  "chapter": "breadmaker",
+  "chapterName": "Bread Maker",
+  "group": "Dough (shaped and oven-baked)",
+  "ingredients": [
+   "4 tsp Surebake yeast",
+   "450 g high-grade (white) flour",
+   "1 tsp salt",
+   "1 tsp sugar",
+   "5 tbsp olive oil",
+   "230 ml water",
+   "Tomato paste",
+   "Grated mozzarella",
+   "Your choice of toppings"
+  ],
+  "shop": [
+   {
+    "key": "surebake",
+    "name": "Surebake yeast",
+    "aisle": "Baking",
+    "qty": 4.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "4 tsp Surebake yeast"
+   },
+   {
+    "key": "bread-flour",
+    "name": "High-grade flour",
+    "aisle": "Baking",
+    "qty": 450.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "450 g high-grade (white) flour"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp salt"
+   },
+   {
+    "key": "sugar",
+    "name": "White sugar",
+    "aisle": "Baking",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp sugar"
+   },
+   {
+    "key": "olive-oil",
+    "name": "Olive oil",
+    "aisle": "Pantry: check first",
+    "qty": 5.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "5 tbsp olive oil"
+   },
+   {
+    "key": "tomato-paste",
+    "name": "Tomato paste",
+    "aisle": "Cans, jars & pulses",
+    "qty": null,
+    "unit": "",
+    "optional": false,
+    "raw": "Tomato paste"
+   },
+   {
+    "key": "mozzarella",
+    "name": "Mozzarella",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": null,
+    "unit": "",
+    "optional": false,
+    "raw": "Grated mozzarella"
+   },
+   {
+    "key": "your-choice-of-toppings",
+    "name": "Your choice of toppings",
+    "aisle": null,
+    "qty": null,
+    "unit": "",
+    "optional": false,
+    "raw": "Your choice of toppings"
+   }
+  ],
+  "tags": []
+ },
+ {
+  "title": "Bread Rolls",
+  "servings": "12 rolls",
+  "time": "2 hr 20 min in the machine + 1 hr",
+  "intro": "Soft white dinner rolls. The machine kneads and rises the dough; you shape and bake.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "4 tsp Surebake yeast"
+     },
+     {
+      "text": "450 g high-grade (white) flour"
+     },
+     {
+      "text": "1 tsp salt"
+     },
+     {
+      "text": "3 tbsp milk powder"
+     },
+     {
+      "text": "4 tbsp butter"
+     },
+     {
+      "text": "1½ tsp sugar"
+     },
+     {
+      "text": "270 ml water"
+     },
+     {
+      "group": "To finish"
+     },
+     {
+      "text": "1 egg, beaten"
+     },
+     {
+      "text": "Sesame or poppy seeds (optional)"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Make the dough.** Fit the kneading blade in the bread pan. Put the yeast in first, cover with the flour and other dry ingredients, add the butter or oil, then pour in the liquids last. Select menu **16 (Basic dough)** (2 hr 20 min) and press Start."
+     },
+     {
+      "text": "**Shape.** Tip the dough onto a lightly floured bench and divide into 12. Roll each into a smooth ball (or knots or plaits) and place on a greased tray."
+     },
+     {
+      "text": "**Prove.** Cover with oiled cling film and leave somewhere warm (30–35°C) for 30–50 minutes, until doubled."
+     },
+     {
+      "text": "**Bake.** Brush with beaten egg and sprinkle with seeds if you like. Bake at 200°C for 12–18 minutes, until golden and hollow-sounding underneath."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "From the Panasonic SD-2501 manual (NZ recipe), page 31."
+     },
+     {
+      "text": "The same dough makes doughnuts: shape, rise 30 minutes, deep-fry and roll in cinnamon sugar (manual, p. 32)."
+     },
+     {
+      "text": "Red Top Surebake yeast has bread improver in it. If you use plain active dried yeast instead, use 1½–1¾ tsp and add bread improver (manual, p. 21)."
+     }
+    ]
+   }
+  ],
+  "id": "BreadMaker-Bread_Rolls",
+  "file": "BreadMaker/Bread_Rolls.tex",
+  "chapter": "breadmaker",
+  "chapterName": "Bread Maker",
+  "group": "Dough (shaped and oven-baked)",
+  "ingredients": [
+   "4 tsp Surebake yeast",
+   "450 g high-grade (white) flour",
+   "1 tsp salt",
+   "3 tbsp milk powder",
+   "4 tbsp butter",
+   "1½ tsp sugar",
+   "270 ml water",
+   "1 egg, beaten",
+   "Sesame or poppy seeds (optional)"
+  ],
+  "shop": [
+   {
+    "key": "surebake",
+    "name": "Surebake yeast",
+    "aisle": "Baking",
+    "qty": 4.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "4 tsp Surebake yeast"
+   },
+   {
+    "key": "bread-flour",
+    "name": "High-grade flour",
+    "aisle": "Baking",
+    "qty": 450.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "450 g high-grade (white) flour"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp salt"
+   },
+   {
+    "key": "milk-powder",
+    "name": "Milk powder",
+    "aisle": "Baking",
+    "qty": 3.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "3 tbsp milk powder"
+   },
+   {
+    "key": "butter",
+    "name": "Butter",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 4.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "4 tbsp butter"
+   },
+   {
+    "key": "sugar",
+    "name": "White sugar",
+    "aisle": "Baking",
+    "qty": 1.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1½ tsp sugar"
+   },
+   {
+    "key": "eggs",
+    "name": "Eggs",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 egg, beaten"
+   },
+   {
+    "key": "sesame-seeds",
+    "name": "Sesame or poppy seeds",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Sesame or poppy seeds (optional)"
+   }
+  ],
+  "tags": []
+ },
+ {
+  "title": "Cinnamon Tea Ring",
+  "servings": "1 large ring (10–12 slices)",
+  "time": "2 hr 20 min in the machine + 1 hr",
+  "intro": "A Swedish tea ring: a big cinnamon-sugar swirl joined into a circle and snipped into petals.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "4 tsp Surebake yeast"
+     },
+     {
+      "text": "450 g high-grade (white) flour"
+     },
+     {
+      "text": "1 tsp salt"
+     },
+     {
+      "text": "3 tbsp milk powder"
+     },
+     {
+      "text": "4 tbsp butter"
+     },
+     {
+      "text": "4 tbsp sugar"
+     },
+     {
+      "text": "230 ml water"
+     },
+     {
+      "group": "Filling"
+     },
+     {
+      "text": "2 tsp melted butter"
+     },
+     {
+      "text": "2 tsp ground cinnamon"
+     },
+     {
+      "text": "½ cup brown sugar"
+     },
+     {
+      "group": "To finish"
+     },
+     {
+      "text": "1 egg, beaten"
+     },
+     {
+      "text": "Vanilla icing (optional)"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Make the dough.** Fit the kneading blade in the bread pan. Put the yeast in first, cover with the flour and other dry ingredients, add the butter or oil, then pour in the liquids last. Select menu **16 (Basic dough)** (2 hr 20 min) and press Start."
+     },
+     {
+      "text": "**Roll.** Roll or pat the dough into a rectangle about 50 × 30 cm. Brush with the melted butter and sprinkle with the cinnamon and brown sugar."
+     },
+     {
+      "text": "**Shape.** Roll up like a Swiss roll from a long side and press the edge underneath. Join the ends into a circle on a greased tray and pinch together."
+     },
+     {
+      "text": "**Cut.** With scissors, cut almost through to the centre every 2.5 cm, turning each section on its side so the swirl faces up."
+     },
+     {
+      "text": "**Rise.** Cover with cling film and leave somewhere warm (30–35°C) for 30 minutes."
+     },
+     {
+      "text": "**Bake.** Brush with beaten egg and bake at 180°C for 15–25 minutes, until golden. Ice with vanilla icing if you like."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "From the Panasonic SD-2501 manual (NZ recipe), page 34."
+     },
+     {
+      "text": "Other fillings work too: dried fruit, jam or chopped nuts."
+     },
+     {
+      "text": "Red Top Surebake yeast has bread improver in it. If you use plain active dried yeast instead, use 1½–1¾ tsp and add bread improver (manual, p. 21)."
+     }
+    ]
+   }
+  ],
+  "id": "BreadMaker-Swedish_Tea_Ring",
+  "file": "BreadMaker/Swedish_Tea_Ring.tex",
+  "chapter": "breadmaker",
+  "chapterName": "Bread Maker",
+  "group": "Dough (shaped and oven-baked)",
+  "ingredients": [
+   "4 tsp Surebake yeast",
+   "450 g high-grade (white) flour",
+   "1 tsp salt",
+   "3 tbsp milk powder",
+   "4 tbsp butter",
+   "4 tbsp sugar",
+   "230 ml water",
+   "2 tsp melted butter",
+   "2 tsp ground cinnamon",
+   "½ cup brown sugar",
+   "1 egg, beaten",
+   "Vanilla icing (optional)"
+  ],
+  "shop": [
+   {
+    "key": "surebake",
+    "name": "Surebake yeast",
+    "aisle": "Baking",
+    "qty": 4.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "4 tsp Surebake yeast"
+   },
+   {
+    "key": "bread-flour",
+    "name": "High-grade flour",
+    "aisle": "Baking",
+    "qty": 450.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "450 g high-grade (white) flour"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp salt"
+   },
+   {
+    "key": "milk-powder",
+    "name": "Milk powder",
+    "aisle": "Baking",
+    "qty": 3.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "3 tbsp milk powder"
+   },
+   {
+    "key": "butter",
+    "name": "Butter",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 4.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "4 tbsp butter"
+   },
+   {
+    "key": "sugar",
+    "name": "White sugar",
+    "aisle": "Baking",
+    "qty": 4.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "4 tbsp sugar"
+   },
+   {
+    "key": "butter",
+    "name": "Butter",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 2.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "2 tsp melted butter"
+   },
+   {
+    "key": "cinnamon",
+    "name": "Ground cinnamon",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "2 tsp ground cinnamon"
+   },
+   {
+    "key": "brown-sugar",
+    "name": "Brown sugar",
+    "aisle": "Baking",
+    "qty": 0.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "½ cup brown sugar"
+   },
+   {
+    "key": "eggs",
+    "name": "Eggs",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 egg, beaten"
+   },
+   {
+    "key": "vanilla",
+    "name": "Vanilla essence",
+    "aisle": "Baking",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Vanilla icing (optional)"
+   }
+  ],
+  "tags": []
+ },
+ {
+  "title": "Focaccia",
+  "servings": "1 large focaccia (8 pieces)",
+  "time": "45 min in the machine + 1 hr",
+  "intro": "Soft, dimpled Italian flatbread with olive oil, salt and herbs.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "4 tsp Surebake yeast"
+     },
+     {
+      "text": "450 g high-grade (white) flour"
+     },
+     {
+      "text": "1 tsp salt"
+     },
+     {
+      "text": "1 tbsp milk powder"
+     },
+     {
+      "text": "1 tsp sugar"
+     },
+     {
+      "text": "1 tbsp butter"
+     },
+     {
+      "text": "300 ml water"
+     },
+     {
+      "group": "Topping"
+     },
+     {
+      "text": "2 tbsp olive oil"
+     },
+     {
+      "text": "½ tsp salt"
+     },
+     {
+      "text": "1 tsp each dried basil, rosemary and thyme"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Make the dough.** Fit the kneading blade in the bread pan. Put the yeast in first, cover with the flour and other dry ingredients, add the butter or oil, then pour in the liquids last. Select menu **22 (Pizza)** (45 min) and press Start."
+     },
+     {
+      "text": "**Shape.** Knead the dough on a floured bench until it springs back. Press into a flat circle or rectangle on a baking tray and make deep holes all over with the end of a wooden spoon, about 5 cm apart."
+     },
+     {
+      "text": "**Rise.** Cover and leave somewhere warm (30–35°C) for 20–30 minutes, until almost doubled."
+     },
+     {
+      "text": "**Top.** Brush with the olive oil and sprinkle with the salt and herbs."
+     },
+     {
+      "text": "**Bake.** Bake at 210°C for 26–30 minutes, until golden."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "From the Panasonic SD-2501 manual (NZ recipe), page 38."
+     },
+     {
+      "text": "Like the pizza dough, melt the yeast in 30 ml of the lukewarm water first (manual, p. 21)."
+     },
+     {
+      "text": "Red Top Surebake yeast has bread improver in it. If you use plain active dried yeast instead, use 1½–1¾ tsp and add bread improver (manual, p. 21)."
+     }
+    ]
+   }
+  ],
+  "id": "BreadMaker-Focaccia",
+  "file": "BreadMaker/Focaccia.tex",
+  "chapter": "breadmaker",
+  "chapterName": "Bread Maker",
+  "group": "Dough (shaped and oven-baked)",
+  "ingredients": [
+   "4 tsp Surebake yeast",
+   "450 g high-grade (white) flour",
+   "1 tsp salt",
+   "1 tbsp milk powder",
+   "1 tsp sugar",
+   "1 tbsp butter",
+   "300 ml water",
+   "2 tbsp olive oil",
+   "½ tsp salt",
+   "1 tsp each dried basil, rosemary and thyme"
+  ],
+  "shop": [
+   {
+    "key": "surebake",
+    "name": "Surebake yeast",
+    "aisle": "Baking",
+    "qty": 4.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "4 tsp Surebake yeast"
+   },
+   {
+    "key": "bread-flour",
+    "name": "High-grade flour",
+    "aisle": "Baking",
+    "qty": 450.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "450 g high-grade (white) flour"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp salt"
+   },
+   {
+    "key": "milk-powder",
+    "name": "Milk powder",
+    "aisle": "Baking",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp milk powder"
+   },
+   {
+    "key": "sugar",
+    "name": "White sugar",
+    "aisle": "Baking",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp sugar"
+   },
+   {
+    "key": "butter",
+    "name": "Butter",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp butter"
+   },
+   {
+    "key": "olive-oil",
+    "name": "Olive oil",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp olive oil"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 0.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "½ tsp salt"
+   },
+   {
+    "key": "basil",
+    "name": "Fresh basil",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp each dried basil, rosemary and thyme"
+   }
+  ],
+  "tags": []
+ },
+ {
+  "title": "Hot Cross Buns",
+  "servings": "10–12 buns",
+  "time": "2 hr 20 min in the machine + 1 hr",
+  "intro": "Spiced, fruity Easter buns with piped crosses and a sticky glaze.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "4 tsp Surebake yeast"
+     },
+     {
+      "text": "450 g high-grade (white) flour"
+     },
+     {
+      "text": "½ tsp salt"
+     },
+     {
+      "text": "2 tbsp milk powder"
+     },
+     {
+      "text": "6 tbsp butter"
+     },
+     {
+      "text": "3 tbsp brown sugar"
+     },
+     {
+      "text": "1 tbsp grated orange rind"
+     },
+     {
+      "text": "3 tsp allspice"
+     },
+     {
+      "text": "200 ml water"
+     },
+     {
+      "text": "1 medium egg"
+     },
+     {
+      "group": "Raisin nut dispenser"
+     },
+     {
+      "text": "¾ cup sultanas"
+     },
+     {
+      "group": "Crosses"
+     },
+     {
+      "text": "½ cup plain flour"
+     },
+     {
+      "text": "2 tbsp oil"
+     },
+     {
+      "text": "Water to mix"
+     },
+     {
+      "group": "Glaze"
+     },
+     {
+      "text": "3 tbsp milk"
+     },
+     {
+      "text": "3 tbsp caster sugar"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Make the dough.** Fit the kneading blade in the bread pan. Put the yeast in first, cover with the flour and other dry ingredients, add the butter or oil, then pour in the liquids last. Put the add-ins in the raisin nut dispenser. Select menu **17 (Basic raisin dough)** (2 hr 20 min) and press Start."
+     },
+     {
+      "text": "**Shape.** Divide the dough into 10 or 12, roll each into a ball and rest for 20 minutes. Shape into smooth balls and place on a greased tray, just touching."
+     },
+     {
+      "text": "**Prove.** Cover and leave somewhere warm (30–35°C) for about 30 minutes, until doubled."
+     },
+     {
+      "text": "**Crosses.** Mix the flour and oil with enough water to make a stiff paste. Pipe crosses over the buns (a plastic bag with a corner snipped off works)."
+     },
+     {
+      "text": "**Bake.** Bake at 200°C for 15–25 minutes, until golden."
+     },
+     {
+      "text": "**Glaze.** Boil the milk and caster sugar until syrupy and brush over the hot buns."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "From the Panasonic SD-2501 manual (NZ recipe), page 33."
+     },
+     {
+      "text": "Red Top Surebake yeast has bread improver in it. If you use plain active dried yeast instead, use 1½–1¾ tsp and add bread improver (manual, p. 21)."
+     }
+    ]
+   }
+  ],
+  "id": "BreadMaker-Hot_Cross_Buns",
+  "file": "BreadMaker/Hot_Cross_Buns.tex",
+  "chapter": "breadmaker",
+  "chapterName": "Bread Maker",
+  "group": "Dough (shaped and oven-baked)",
+  "ingredients": [
+   "4 tsp Surebake yeast",
+   "450 g high-grade (white) flour",
+   "½ tsp salt",
+   "2 tbsp milk powder",
+   "6 tbsp butter",
+   "3 tbsp brown sugar",
+   "1 tbsp grated orange rind",
+   "3 tsp allspice",
+   "200 ml water",
+   "1 medium egg",
+   "¾ cup sultanas",
+   "½ cup plain flour",
+   "2 tbsp oil",
+   "Water to mix",
+   "3 tbsp milk",
+   "3 tbsp caster sugar"
+  ],
+  "shop": [
+   {
+    "key": "surebake",
+    "name": "Surebake yeast",
+    "aisle": "Baking",
+    "qty": 4.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "4 tsp Surebake yeast"
+   },
+   {
+    "key": "bread-flour",
+    "name": "High-grade flour",
+    "aisle": "Baking",
+    "qty": 450.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "450 g high-grade (white) flour"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 0.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "½ tsp salt"
+   },
+   {
+    "key": "milk-powder",
+    "name": "Milk powder",
+    "aisle": "Baking",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp milk powder"
+   },
+   {
+    "key": "butter",
+    "name": "Butter",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 6.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "6 tbsp butter"
+   },
+   {
+    "key": "brown-sugar",
+    "name": "Brown sugar",
+    "aisle": "Baking",
+    "qty": 3.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "3 tbsp brown sugar"
+   },
+   {
+    "key": "orange",
+    "name": "Oranges",
+    "aisle": "Fruit & veg",
+    "qty": 1,
+    "unit": "",
+    "optional": false,
+    "raw": "1 tbsp grated orange rind"
+   },
+   {
+    "key": "allspice",
+    "name": "Allspice",
+    "aisle": "Pantry: check first",
+    "qty": 3.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "3 tsp allspice"
+   },
+   {
+    "key": "eggs",
+    "name": "Eggs",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 medium egg"
+   },
+   {
+    "key": "sultanas",
+    "name": "Sultanas",
+    "aisle": "Baking",
+    "qty": 0.75,
+    "unit": "cup",
+    "optional": false,
+    "raw": "¾ cup sultanas"
+   },
+   {
+    "key": "flour",
+    "name": "Plain flour",
+    "aisle": "Baking",
+    "qty": 0.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "½ cup plain flour"
+   },
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp oil"
+   },
+   {
+    "key": "milk",
+    "name": "Milk",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 3.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "3 tbsp milk"
+   },
+   {
+    "key": "caster-sugar",
+    "name": "Caster sugar",
+    "aisle": "Baking",
+    "qty": 3.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "3 tbsp caster sugar"
+   }
+  ],
+  "tags": []
+ },
+ {
+  "title": "Banana Yoghurt Tea Bread",
+  "servings": "1 loaf",
+  "time": "15 min prep + 55 min in the machine",
+  "intro": "A moist banana loaf baked in the bread maker on the Bake only program.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "200 g plain flour"
+     },
+     {
+      "text": "2 tsp baking powder"
+     },
+     {
+      "text": "½ tsp baking soda"
+     },
+     {
+      "text": "½ cup brown sugar"
+     },
+     {
+      "text": "2 medium eggs"
+     },
+     {
+      "text": "¼ cup plain yoghurt"
+     },
+     {
+      "text": "2 bananas, mashed"
+     },
+     {
+      "text": "50 g butter, melted and cooled"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "Sift the flour, baking powder and baking soda into a bowl. Stir in the brown sugar."
+     },
+     {
+      "text": "In another bowl, mix the eggs, yoghurt and mashed banana."
+     },
+     {
+      "text": "Add the banana mixture and melted butter to the dry ingredients and stir quickly and lightly until just combined."
+     },
+     {
+      "text": "Remove the kneading blade from the bread pan and line the base and sides with baking paper. Pour in the mixture."
+     },
+     {
+      "text": "Select menu **15 (Bake only)** and set the timer to 55 minutes. Press Start."
+     },
+     {
+      "text": "Test with a skewer. If it isn't cooked, select menu 15 again for another 5–10 minutes."
+     },
+     {
+      "text": "Lift out the pan with oven gloves and stand for 5 minutes before turning out to cool."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "From the Panasonic SD-2501 manual, page 39."
+     },
+     {
+      "text": "Make sure the kneading blade is out before adding the mixture."
+     },
+     {
+      "text": "The manual also has butter, chocolate and fruit & walnut cakes on the same page."
+     }
+    ]
+   }
+  ],
+  "id": "BreadMaker-Banana_Yoghurt_Tea_Bread",
+  "file": "BreadMaker/Banana_Yoghurt_Tea_Bread.tex",
+  "chapter": "breadmaker",
+  "chapterName": "Bread Maker",
+  "group": "Cake",
+  "ingredients": [
+   "200 g plain flour",
+   "2 tsp baking powder",
+   "½ tsp baking soda",
+   "½ cup brown sugar",
+   "2 medium eggs",
+   "¼ cup plain yoghurt",
+   "2 bananas, mashed",
+   "50 g butter, melted and cooled"
+  ],
+  "shop": [
+   {
+    "key": "flour",
+    "name": "Plain flour",
+    "aisle": "Baking",
+    "qty": 200.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "200 g plain flour"
+   },
+   {
+    "key": "baking-powder",
+    "name": "Baking powder",
+    "aisle": "Baking",
+    "qty": 2.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "2 tsp baking powder"
+   },
+   {
+    "key": "baking-soda",
+    "name": "Baking soda",
+    "aisle": "Baking",
+    "qty": 0.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "½ tsp baking soda"
+   },
+   {
+    "key": "brown-sugar",
+    "name": "Brown sugar",
+    "aisle": "Baking",
+    "qty": 0.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "½ cup brown sugar"
+   },
+   {
+    "key": "eggs",
+    "name": "Eggs",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 2.0,
+    "unit": "",
+    "optional": false,
+    "raw": "2 medium eggs"
+   },
+   {
+    "key": "yoghurt",
+    "name": "Plain yoghurt",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 0.25,
+    "unit": "cup",
+    "optional": false,
+    "raw": "¼ cup plain yoghurt"
+   },
+   {
+    "key": "banana",
+    "name": "Bananas",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "",
+    "optional": false,
+    "raw": "2 bananas, mashed"
+   },
+   {
+    "key": "butter",
+    "name": "Butter",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 50.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "50 g butter, melted and cooled"
    }
   ],
   "tags": []

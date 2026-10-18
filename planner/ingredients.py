@@ -103,7 +103,8 @@ CANON = [
     (r"bay lea", "bay-leaves", "Bay leaves", PANTRY),
     (r"garlic powder", "garlic-powder", "Garlic powder", PANTRY),
     (r"onion powder", "onion-powder", "Onion powder", PANTRY),
-    (r"mustard powder", "mustard-powder", "Mustard powder", PANTRY),
+    (r"mustard powder|dry mustard", "mustard-powder", "Mustard powder", PANTRY),
+    (r"allspice", "allspice", "Allspice", PANTRY),
     (r"sichuan pepper", "sichuan-pepper", "Sichuan pepper", PANTRY),
     (r"white pepper", "white-pepper", "White pepper", PANTRY),
     (r"taco seasoning", "taco-seasoning", "Taco seasoning", PANTRY),
@@ -112,10 +113,11 @@ CANON = [
     (r"black pepper|\bpepper\b(?!s)", "pepper", "Black pepper", PANTRY),
     (r"mustard", "mustard", "Mustard", PANTRY),
     (r"golden syrup", "golden-syrup", "Golden syrup", PANTRY),
+    (r"treacle", "treacle", "Treacle", PANTRY),
     (r"honey", "honey", "Honey", PANTRY),
     (r"protein powder", "protein-powder", "Protein powder", PANTRY),
     (r"vanilla", "vanilla", "Vanilla essence", BAKING),
-    (r"sesame seeds", "sesame-seeds", "Sesame seeds", PANTRY),
+    (r"sesame seeds|sesame or poppy|poppy seeds", "sesame-seeds", "Sesame or poppy seeds", PANTRY),
     # Meat and fish
     (r"chicken breast|chicken tenderloin|chicken breasts", "chicken-breast", "Chicken breast or tenderloins", MEAT),
     (r"chicken thigh", "chicken-thigh", "Chicken thighs", MEAT),
@@ -179,7 +181,9 @@ CANON = [
     (r"couscous", "couscous", "Couscous", GRAINS),
     (r"quinoa", "quinoa", "Quinoa", GRAINS),
     (r"\bpasta\b|penne|fusilli|spirals", "pasta", "Pasta", GRAINS),
-    (r"rolled oats|\boats\b", "oats", "Rolled oats", GRAINS),
+    (r"rolled oats|\boats\b|oatmeal", "oats", "Rolled oats", GRAINS),
+    (r"buckwheat", "buckwheat", "Buckwheat groats", GRAINS),
+    (r"cornmeal|polenta", "polenta", "Cornmeal (polenta)", GRAINS),
     (r"cornflakes", "cornflakes", "Cornflakes", GRAINS),
     (r"dumpling|gyoza|wonton", "dumpling-wrappers", "Dumpling wrappers", DAIRY),
     (r"taco shells?", "taco-shells", "Taco shells", BREAD),
@@ -192,6 +196,7 @@ CANON = [
     # Baking
     (r"self[- ]raising flour", "sr-flour", "Self-raising flour", BAKING),
     (r"high[- ]grade|bread flour", "bread-flour", "High-grade flour", BAKING),
+    (r"wholemeal flour|whole ?wheat flour", "wholemeal-flour", "Wholemeal flour", BAKING),
     (r"cornflour|cornstarch", "cornflour", "Cornflour", BAKING),
     (r"flour", "flour", "Plain flour", BAKING),
     (r"baking powder", "baking-powder", "Baking powder", BAKING),
@@ -205,9 +210,12 @@ CANON = [
     (r"white chocolate", "white-choc", "White chocolate chips", BAKING),
     (r"dark chocolate", "dark-choc", "Dark chocolate", BAKING),
     (r"desiccated coconut|long-thread coconut|\bcoconut\b", "coconut", "Desiccated coconut", BAKING),
+    (r"surebake", "surebake", "Surebake yeast", BAKING),
     (r"\byeast\b", "yeast", "Instant dried yeast", BAKING),
     (r"\bdates\b", "dates", "Pitted dates", BAKING),
     (r"sultanas?|raisins", "sultanas", "Sultanas", BAKING),
+    (r"mixed dried fruit|dried fruit", "dried-fruit", "Mixed dried fruit", BAKING),
+    (r"linseed|sunflower seeds|pumpkin seeds", "seeds", "Seeds (linseed, sunflower)", PANTRY),
     (r"walnut", "walnuts", "Walnuts", BAKING),
     (r"peanuts", "peanuts", "Peanuts", PANTRY),
     (r"chia", "chia", "Chia seeds", PANTRY),
@@ -217,6 +225,7 @@ CANON = [
     (r"cottage cheese", "cottage-cheese", "Cottage cheese", DAIRY),
     (r"greek yo", "greek-yoghurt", "Greek yoghurt", DAIRY),
     (r"yoghurt|yogurt", "yoghurt", "Plain yoghurt", DAIRY),
+    (r"milk powder|powdered milk", "milk-powder", "Milk powder", BAKING),
     (r"\bmilk\b", "milk", "Milk", DAIRY),
     (r"\bcream\b", "cream", "Cream", DAIRY),
     (r"butter", "butter", "Butter", DAIRY),
@@ -256,6 +265,7 @@ CANON = [
     (r"pumpkin", "pumpkin", "Pumpkin", VEG),
     (r"asparagus", "asparagus", "Asparagus", VEG),
     (r"lemon", "lemon", "Lemons", VEG),
+    (r"orange", "orange", "Oranges", VEG),
     (r"\blimes?\b", "lime", "Limes", VEG),
     (r"apple", "apple", "Apples", VEG),
     (r"banana", "banana", "Bananas", VEG),
@@ -373,6 +383,9 @@ def parse(raw):
     # Cooked rice is about three times the dry amount you buy.
     if key.endswith("rice") and unit == "cup" and qty and re.search(r"\bcooked\b", name, re.I) and not re.search(r"uncooked", name, re.I):
         qty = round(qty / 3 * 4) / 4
+    # Grated rind in spoons -> one orange or lemon is plenty.
+    if key in ("orange", "lemon") and unit in ("tsp", "tbsp") and qty and re.search(r"rind|zest", full):
+        qty, unit = 1, ""
     # Citrus juice in spoons -> whole fruit (a lemon or lime gives about 2 tbsp).
     if key in ("lemon", "lime") and unit in ("tsp", "tbsp", "cup") and qty:
         tsp = qty * {"tsp": 1, "tbsp": 3, "cup": 48}[unit]

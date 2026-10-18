@@ -28,6 +28,7 @@ CHAPTER_KEYS = {
     "Protein Shakes": "shakes",
     "Desserts": "desserts",
     "Baking & Breads": "baking",
+    "Bread Maker": "breadmaker",
 }
 
 # ─── LaTeX → plain text ─────────────────────────────────────────────────────
