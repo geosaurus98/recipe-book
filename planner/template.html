@@ -226,7 +226,7 @@ const EXAMPLE = {
 };
 
 let state = clone(EXAMPLE);
-let ui = { tab: "week", q: "", chapter: null, protein: null, choosing: null, hidePantry: false, minceOnly: false, open: null };
+let ui = { tab: "week", q: "", chapter: null, group: null, protein: null, choosing: null, hidePantry: false, minceOnly: false, open: null };
 let store = null;        // db document ref, or null
 let saveMode = "local";  // "db" | "local" | "none"
 
@@ -512,6 +512,7 @@ function filteredRecipes() {
   return RECIPES.filter(r =>
     (!slot || slot.chapters.includes(r.chapter)) &&
     (!ui.chapter || r.chapter === ui.chapter) &&
+    (!ui.group || r.group === ui.group) &&
     (!ui.protein || r.tags.includes(ui.protein)) &&
     (!q || r.title.toLowerCase().includes(q) || r.ingredients.some(l => l.toLowerCase().includes(q))));
 }
@@ -522,9 +523,12 @@ function renderRecipes() {
   const planned = new Set(plannedIds());
   const chapterChips = (slot ? CHAPTERS.filter(([k]) => slot.chapters.includes(k)) : CHAPTERS)
     .map(([k, l]) => `<button class="fchip" data-act="chapter" data-v="${k}" aria-pressed="${ui.chapter === k}">${l}</button>`).join("");
+  // Chapters split into groups (e.g. Salads & sides) get a second row of chips.
+  const groupNames = ui.chapter ? [...new Set(RECIPES.filter(r => r.chapter === ui.chapter && r.group).map(r => r.group))] : [];
+  const groupChips = groupNames.map(g => `<button class="fchip" data-act="group" data-v="${esc(g)}" aria-pressed="${ui.group === g}">${esc(g)}</button>`).join("");
   const proteinChips = PROTEINS.map(([k, l]) => `<button class="fchip" data-act="protein" data-v="${k}" aria-pressed="${ui.protein === k}">${l}</button>`).join("");
   const cards = list.map(r => `<button class="card" data-m="${r.chapter}" data-act="open" data-id="${r.id}">
-      <span class="chip">${esc(CHAPTER_LABEL[r.chapter])}</span>
+      <span class="chip">${esc(CHAPTER_LABEL[r.chapter])}${r.group ? ` · ${esc(r.group)}` : ""}</span>
       <span class="name">${esc(r.title)}</span>
       <span class="meta"><span>Serves ${esc(r.servings)}</span>${r.time !== "–" ? `<span>${esc(r.time)}</span>` : ""}</span>
       ${planned.has(r.id) ? `<span class="planned">On this week's plan</span>` : ""}
@@ -537,6 +541,7 @@ function renderRecipes() {
   <section class="filters">
     <input class="search" id="search" type="search" placeholder="Search by name or ingredient, e.g. split peas" value="${esc(ui.q)}" aria-label="Search recipes">
     <div class="chips" role="group" aria-label="Chapter">${chapterChips}</div>
+    ${groupChips ? `<div class="chips" role="group" aria-label="Section">${groupChips}</div>` : ""}
     <div class="chips" role="group" aria-label="Main protein">${proteinChips}</div>
   </section>
   <p class="result-count">${list.length} ${list.length === 1 ? "recipe" : "recipes"}</p>
@@ -607,7 +612,7 @@ function renderSheet() {
   root.innerHTML = `<div class="overlay" data-act="close-overlay">
     <article class="sheet" data-m="${r.chapter}" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
       <div class="sheet-head">
-        <div class="top-row"><span class="chip">${esc(r.chapterName)}</span><button class="btn small ghost" data-act="close" aria-label="Close recipe">Close</button></div>
+        <div class="top-row"><span class="chip">${esc(r.chapterName)}${r.group ? ` · ${esc(r.group)}` : ""}</span><button class="btn small ghost" data-act="close" aria-label="Close recipe">Close</button></div>
         <h2 id="sheet-title">${esc(r.title)}</h2>
         <div class="meta"><span>Serves ${esc(r.servings)}</span>${r.time !== "–" ? `<span>${esc(r.time)}</span>` : ""}</div>
         ${r.intro ? `<p class="intro">${md(r.intro)}</p>` : ""}
@@ -677,7 +682,8 @@ document.addEventListener("click", e => {
       toast("Last week saved to history");
       break;
     }
-    case "chapter": ui.chapter = ui.chapter === el.dataset.v ? null : el.dataset.v; render(); break;
+    case "chapter": ui.chapter = ui.chapter === el.dataset.v ? null : el.dataset.v; ui.group = null; render(); break;
+    case "group": ui.group = ui.group === el.dataset.v ? null : el.dataset.v; render(); break;
     case "protein": ui.protein = ui.protein === el.dataset.v ? null : el.dataset.v; render(); break;
     case "uncheck-all": commit(s => { s.checked = {}; }); break;
     case "copy-list": copyList(); break;
