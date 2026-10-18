@@ -11,7 +11,7 @@ recipe can appear in more than one book.
 | `Palmer Recipe Book.tex` | **GP's Recipe Book** — the easier course recipes (Fakeaways, Italian) for the flat |
 | `Preview.tex` | Quick preview of a handful of recipes |
 | `To_Add.tex` | Checklist of recipes to add next and ideas that could be added |
-| `recipe_book.tex`, `weightloss.tex`, `Meal Prep.tex` | Original Claude-made books, kept for reference. Their recipes have been copied into the folders below. |
+| `recipe_book.tex`, `weightloss.tex` | Original Claude-made books, kept for reference. Their recipes have been copied into the folders below. |
 
 ## Recipe folders
 
