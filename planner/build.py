@@ -351,11 +351,16 @@ def tags(recipe):
 def main():
     main_tex = (ROOT / "main.tex").read_text()
     recipes = []
-    chapter = None
+    chapter = group = None
     for line in main_tex.splitlines():
         cm = re.match(r"\\chapter\{(.*)\}", line)
         if cm:
             chapter = cm.group(1).replace("\\&", "&")
+            group = None
+            continue
+        gm = re.match(r"\\recipegroup\{(.*)\}", line)
+        if gm:
+            group = gm.group(1).replace("\\&", "&")
             continue
         im = re.match(r"\\input\{(.*)\}", line)
         if im and chapter:
@@ -365,6 +370,7 @@ def main():
             r["file"] = im.group(1) + ".tex"
             r["chapter"] = CHAPTER_KEYS[chapter]
             r["chapterName"] = chapter
+            r["group"] = group
             r["ingredients"] = ingredient_lines(r)
             r["shop"] = shop_items(r)
             r["tags"] = tags(r)
