@@ -371,7 +371,7 @@ def parse(raw):
         qty, unit = round(qty / 400 * 2) / 2 or 0.5, "can"
 
     # Cooked rice is about three times the dry amount you buy.
-    if key.endswith("rice") and unit == "cup" and qty and re.search(r"\bcooked\b", full) and not re.search(r"uncooked", full):
+    if key.endswith("rice") and unit == "cup" and qty and re.search(r"\bcooked\b", name, re.I) and not re.search(r"uncooked", name, re.I):
         qty = round(qty / 3 * 4) / 4
     # Citrus juice in spoons -> whole fruit (a lemon or lime gives about 2 tbsp).
     if key in ("lemon", "lime") and unit in ("tsp", "tbsp", "cup") and qty:

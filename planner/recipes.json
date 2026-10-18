@@ -19444,7 +19444,7 @@
     "key": "rice",
     "name": "Rice",
     "aisle": "Pasta, rice & grains",
-    "qty": 0.75,
+    "qty": 2.0,
     "unit": "cup",
     "optional": false,
     "raw": "2 cups rice (4 cups cooked rice - preferably day-old)"
@@ -25136,6 +25136,237 @@
   "tags": []
  },
  {
+  "title": "Cajun Rice",
+  "servings": "4",
+  "time": "30 min",
+  "intro": "Smoky rice with onion, capsicum and Cajun spices. Goes with the Cajun chicken, sausages, grilled chicken or prawns.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "1½ cups long-grain white rice"
+     },
+     {
+      "text": "1 tbsp oil"
+     },
+     {
+      "text": "1 onion, finely diced"
+     },
+     {
+      "text": "1 capsicum, finely diced"
+     },
+     {
+      "text": "1 celery stalk, finely diced (optional)"
+     },
+     {
+      "text": "2 garlic cloves, crushed"
+     },
+     {
+      "text": "2 tsp smoked paprika"
+     },
+     {
+      "text": "1 tsp dried thyme"
+     },
+     {
+      "text": "½ tsp dried oregano"
+     },
+     {
+      "text": "¼ tsp cayenne pepper (or to taste)"
+     },
+     {
+      "text": "2¼ cups chicken stock"
+     },
+     {
+      "text": "Salt, to taste"
+     },
+     {
+      "text": "2 spring onions, sliced, to serve"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "Rinse the rice in a sieve until the water runs mostly clear. Drain well."
+     },
+     {
+      "text": "Heat the oil in a saucepan over medium heat. Cook the onion, capsicum and celery for 5 minutes, until soft."
+     },
+     {
+      "text": "Add the garlic and spices and cook for 30 seconds."
+     },
+     {
+      "text": "Stir in the rice, then the stock, and bring to the boil."
+     },
+     {
+      "text": "Cover, turn the heat to the lowest setting and cook for 12 minutes."
+     },
+     {
+      "text": "Take off the heat and leave covered for 10 minutes. Fluff, taste for salt, and top with spring onion."
+     }
+    ]
+   },
+   {
+    "kind": "variation",
+    "heading": "Rice cooker",
+    "text": "Soften the vegetables and spices in a pan (or with the rice cooker's cook or sauté setting), then add to the rice cooker with the rice and stock and cook as normal.",
+    "sections": []
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Add a sliced cooked sausage or two with the stock to turn it into a quick meal."
+     }
+    ]
+   }
+  ],
+  "id": "Sides-Cajun_Rice",
+  "file": "Sides/Cajun_Rice.tex",
+  "chapter": "sides",
+  "chapterName": "Salads & Sides",
+  "ingredients": [
+   "1½ cups long-grain white rice",
+   "1 tbsp oil",
+   "1 onion, finely diced",
+   "1 capsicum, finely diced",
+   "1 celery stalk, finely diced (optional)",
+   "2 garlic cloves, crushed",
+   "2 tsp smoked paprika",
+   "1 tsp dried thyme",
+   "½ tsp dried oregano",
+   "¼ tsp cayenne pepper (or to taste)",
+   "2¼ cups chicken stock",
+   "Salt, to taste",
+   "2 spring onions, sliced, to serve"
+  ],
+  "shop": [
+   {
+    "key": "rice",
+    "name": "Rice",
+    "aisle": "Pasta, rice & grains",
+    "qty": 1.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1½ cups long-grain white rice"
+   },
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp oil"
+   },
+   {
+    "key": "onion",
+    "name": "Onions",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 onion, finely diced"
+   },
+   {
+    "key": "capsicum",
+    "name": "Capsicums",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 capsicum, finely diced"
+   },
+   {
+    "key": "celery",
+    "name": "Celery",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": true,
+    "raw": "1 celery stalk, finely diced (optional)"
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "2 garlic cloves, crushed"
+   },
+   {
+    "key": "smoked-paprika",
+    "name": "Smoked paprika",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "2 tsp smoked paprika"
+   },
+   {
+    "key": "thyme",
+    "name": "Dried thyme",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp dried thyme"
+   },
+   {
+    "key": "oregano",
+    "name": "Dried oregano",
+    "aisle": "Pantry: check first",
+    "qty": 0.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "½ tsp dried oregano"
+   },
+   {
+    "key": "cayenne",
+    "name": "Cayenne pepper",
+    "aisle": "Pantry: check first",
+    "qty": 0.25,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "¼ tsp cayenne pepper (or to taste)"
+   },
+   {
+    "key": "chicken-stock",
+    "name": "Chicken stock",
+    "aisle": "Pantry: check first",
+    "qty": 2.25,
+    "unit": "cup",
+    "optional": false,
+    "raw": "2¼ cups chicken stock"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": false,
+    "raw": "Salt, to taste"
+   },
+   {
+    "key": "spring-onion",
+    "name": "Spring onions",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "",
+    "optional": true,
+    "raw": "2 spring onions, sliced, to serve"
+   }
+  ],
+  "tags": []
+ },
+ {
   "title": "Cauliflower Cheese",
   "servings": "4",
   "time": "35 min",
@@ -25296,6 +25527,121 @@
     "unit": "",
     "optional": true,
     "raw": "Salt and black pepper"
+   }
+  ],
+  "tags": []
+ },
+ {
+  "title": "Coconut Rice",
+  "servings": "4",
+  "time": "25 min",
+  "intro": "Rich, lightly sweet rice cooked in lite coconut milk. Goes with curries, satay and anything spicy.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "1½ cups jasmine rice"
+     },
+     {
+      "text": "1 can (400 ml) lite coconut milk"
+     },
+     {
+      "text": "¾ cup water"
+     },
+     {
+      "text": "½ tsp salt"
+     },
+     {
+      "text": "1 tsp sugar (optional)"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "Rinse the rice in a sieve until the water runs mostly clear."
+     },
+     {
+      "text": "Put the rice, coconut milk, water, salt and sugar in a saucepan with a tight lid. Bring to a simmer over medium heat, stirring so it doesn't catch on the bottom."
+     },
+     {
+      "text": "Cover, turn the heat to the lowest setting and cook for 15 minutes without lifting the lid."
+     },
+     {
+      "text": "Take off the heat and leave covered for 10 minutes. Fluff with a fork."
+     }
+    ]
+   },
+   {
+    "kind": "variation",
+    "heading": "Rice cooker",
+    "text": "Put everything in the rice cooker, stir well, and cook as normal. Leave on keep warm for 10 minutes, then fluff.",
+    "sections": []
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Coconut milk can catch on the base — stir it before covering, and keep the heat really low."
+     },
+     {
+      "text": "Top with toasted coconut or sliced spring onion."
+     }
+    ]
+   }
+  ],
+  "id": "Sides-Coconut_Rice",
+  "file": "Sides/Coconut_Rice.tex",
+  "chapter": "sides",
+  "chapterName": "Salads & Sides",
+  "ingredients": [
+   "1½ cups jasmine rice",
+   "1 can (400 ml) lite coconut milk",
+   "¾ cup water",
+   "½ tsp salt",
+   "1 tsp sugar (optional)"
+  ],
+  "shop": [
+   {
+    "key": "jasmine-rice",
+    "name": "Jasmine rice",
+    "aisle": "Pasta, rice & grains",
+    "qty": 1.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1½ cups jasmine rice"
+   },
+   {
+    "key": "coconut-milk",
+    "name": "Coconut milk",
+    "aisle": "Cans, jars & pulses",
+    "qty": 1.0,
+    "unit": "can",
+    "optional": false,
+    "raw": "1 can (400 ml) lite coconut milk"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 0.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "½ tsp salt"
+   },
+   {
+    "key": "sugar",
+    "name": "White sugar",
+    "aisle": "Baking",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": true,
+    "raw": "1 tsp sugar (optional)"
    }
   ],
   "tags": []
@@ -25558,6 +25904,322 @@
     "unit": "",
     "optional": false,
     "raw": "Black pepper"
+   }
+  ],
+  "tags": []
+ },
+ {
+  "title": "Egg Fried Rice",
+  "servings": "4",
+  "time": "15 min",
+  "intro": "The 15-minute fried rice that uses up leftover rice. A side for stir-fries, or a quick meal on its own. Roughly 9 g protein per serve.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "4 cups cold cooked rice (from about 1⅓ cups uncooked, ideally day-old)"
+     },
+     {
+      "text": "3 eggs, beaten"
+     },
+     {
+      "text": "1 tbsp oil"
+     },
+     {
+      "text": "3 spring onions, sliced (white and green parts separated)"
+     },
+     {
+      "text": "2 garlic cloves, crushed"
+     },
+     {
+      "text": "1 cup frozen peas or mixed vegetables"
+     },
+     {
+      "text": "2 tbsp soy sauce"
+     },
+     {
+      "text": "1 tsp sesame oil"
+     },
+     {
+      "text": "Pinch of white pepper"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "Break up any clumps in the rice with your fingers."
+     },
+     {
+      "text": "Heat half the oil in a wok or large frying pan over high heat. Pour in the eggs and scramble until just set. Tip onto a plate."
+     },
+     {
+      "text": "Add the rest of the oil, the white parts of the spring onion and the garlic, and stir-fry for 30 seconds."
+     },
+     {
+      "text": "Add the frozen vegetables and stir-fry for 2 minutes."
+     },
+     {
+      "text": "Add the rice and stir-fry for 3–4 minutes, pressing it against the pan, until hot through and starting to crisp."
+     },
+     {
+      "text": "Add the soy sauce, sesame oil and white pepper, return the egg, and toss with the green spring onion."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Cold rice fries best — freshly cooked rice goes mushy. To make it the same day, spread hot rice on a tray and chill for 30 minutes."
+     },
+     {
+      "text": "Cool cooked rice quickly, keep it in the fridge, and use it within a day."
+     },
+     {
+      "text": "Add leftover meat, ham or prawns with the rice to make it a meal."
+     }
+    ]
+   }
+  ],
+  "id": "Sides-Egg_Fried_Rice",
+  "file": "Sides/Egg_Fried_Rice.tex",
+  "chapter": "sides",
+  "chapterName": "Salads & Sides",
+  "ingredients": [
+   "4 cups cold cooked rice (from about 1⅓ cups uncooked, ideally day-old)",
+   "3 eggs, beaten",
+   "1 tbsp oil",
+   "3 spring onions, sliced (white and green parts separated)",
+   "2 garlic cloves, crushed",
+   "1 cup frozen peas or mixed vegetables",
+   "2 tbsp soy sauce",
+   "1 tsp sesame oil",
+   "Pinch of white pepper"
+  ],
+  "shop": [
+   {
+    "key": "rice",
+    "name": "Rice",
+    "aisle": "Pasta, rice & grains",
+    "qty": 1.25,
+    "unit": "cup",
+    "optional": false,
+    "raw": "4 cups cold cooked rice (from about 1⅓ cups uncooked, ideally day-old)"
+   },
+   {
+    "key": "eggs",
+    "name": "Eggs",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 3.0,
+    "unit": "",
+    "optional": false,
+    "raw": "3 eggs, beaten"
+   },
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp oil"
+   },
+   {
+    "key": "spring-onion",
+    "name": "Spring onions",
+    "aisle": "Fruit & veg",
+    "qty": 3.0,
+    "unit": "",
+    "optional": false,
+    "raw": "3 spring onions, sliced (white and green parts separated)"
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "2 garlic cloves, crushed"
+   },
+   {
+    "key": "frozen-peas",
+    "name": "Frozen peas",
+    "aisle": "Frozen",
+    "qty": 1.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1 cup frozen peas or mixed vegetables"
+   },
+   {
+    "key": "soy-sauce",
+    "name": "Soy sauce",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp soy sauce"
+   },
+   {
+    "key": "sesame-oil",
+    "name": "Sesame oil",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp sesame oil"
+   },
+   {
+    "key": "white-pepper",
+    "name": "White pepper",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": false,
+    "raw": "Pinch of white pepper"
+   }
+  ],
+  "tags": []
+ },
+ {
+  "title": "Garlic Butter Rice",
+  "servings": "4",
+  "time": "25 min",
+  "intro": "Fluffy rice cooked in chicken stock with garlic butter. An easy upgrade on plain rice that goes with almost anything.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "1½ cups long-grain white rice"
+     },
+     {
+      "text": "20 g butter"
+     },
+     {
+      "text": "3 garlic cloves, crushed"
+     },
+     {
+      "text": "2¼ cups chicken stock"
+     },
+     {
+      "text": "2 tbsp chopped parsley"
+     },
+     {
+      "text": "Salt, to taste"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "Rinse the rice in a sieve until the water runs mostly clear. Drain well."
+     },
+     {
+      "text": "Melt the butter in a saucepan over medium heat. Cook the garlic for 1 minute, until fragrant but not brown."
+     },
+     {
+      "text": "Add the rice and stir for 1 minute to coat in the butter."
+     },
+     {
+      "text": "Pour in the stock and bring to the boil. Cover, turn the heat to the lowest setting and cook for 12 minutes."
+     },
+     {
+      "text": "Take off the heat and leave covered for 10 minutes. Fluff with a fork, stir through the parsley, and taste for salt."
+     }
+    ]
+   },
+   {
+    "kind": "variation",
+    "heading": "Rice cooker",
+    "text": "Cook the garlic in the butter in a small pan (or with the rice cooker's cook or sauté setting), then add it to the rice cooker with the rice and stock. Cook as normal and stir in the parsley at the end.",
+    "sections": []
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Taste before adding salt — stock is usually salty enough."
+     }
+    ]
+   }
+  ],
+  "id": "Sides-Garlic_Butter_Rice",
+  "file": "Sides/Garlic_Butter_Rice.tex",
+  "chapter": "sides",
+  "chapterName": "Salads & Sides",
+  "ingredients": [
+   "1½ cups long-grain white rice",
+   "20 g butter",
+   "3 garlic cloves, crushed",
+   "2¼ cups chicken stock",
+   "2 tbsp chopped parsley",
+   "Salt, to taste"
+  ],
+  "shop": [
+   {
+    "key": "rice",
+    "name": "Rice",
+    "aisle": "Pasta, rice & grains",
+    "qty": 1.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1½ cups long-grain white rice"
+   },
+   {
+    "key": "butter",
+    "name": "Butter",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 20.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "20 g butter"
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 3.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "3 garlic cloves, crushed"
+   },
+   {
+    "key": "chicken-stock",
+    "name": "Chicken stock",
+    "aisle": "Pantry: check first",
+    "qty": 2.25,
+    "unit": "cup",
+    "optional": false,
+    "raw": "2¼ cups chicken stock"
+   },
+   {
+    "key": "parsley",
+    "name": "Fresh parsley",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp chopped parsley"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": false,
+    "raw": "Salt, to taste"
    }
   ],
   "tags": []
@@ -26306,6 +26968,349 @@
   "tags": []
  },
  {
+  "title": "Mexican Tomato Rice",
+  "servings": "4",
+  "time": "30 min",
+  "intro": "Toasted rice cooked in tomato and stock with cumin and smoked paprika. The classic side for chilli, burritos, tacos and enchiladas.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "1½ cups long-grain white rice"
+     },
+     {
+      "text": "1 tbsp oil"
+     },
+     {
+      "text": "1 small onion, finely diced"
+     },
+     {
+      "text": "2 garlic cloves, crushed"
+     },
+     {
+      "text": "1 tsp ground cumin"
+     },
+     {
+      "text": "1 tsp smoked paprika"
+     },
+     {
+      "text": "½ cup passata (or 2 tbsp tomato paste)"
+     },
+     {
+      "text": "1¾ cups chicken stock"
+     },
+     {
+      "text": "½ tsp salt"
+     },
+     {
+      "text": "½ cup frozen corn or peas (optional)"
+     },
+     {
+      "text": "Chopped fresh coriander, to serve"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "Rinse the rice and drain it really well."
+     },
+     {
+      "text": "Heat the oil in a saucepan over medium heat. Add the rice and stir for 3–4 minutes, until some grains turn lightly golden."
+     },
+     {
+      "text": "Add the onion and cook for 2 minutes, then the garlic, cumin and paprika for 30 seconds."
+     },
+     {
+      "text": "Stir in the passata, stock and salt and bring to the boil. Cover, turn the heat to the lowest setting and cook for 15 minutes."
+     },
+     {
+      "text": "Scatter over the corn, put the lid back on and take off the heat. Leave for 10 minutes."
+     },
+     {
+      "text": "Fluff with a fork and top with coriander."
+     }
+    ]
+   },
+   {
+    "kind": "variation",
+    "heading": "Rice cooker",
+    "text": "Toast the rice with the onion, garlic and spices in a pan (or with the rice cooker's cook or sauté setting), then add to the rice cooker with the passata, stock and salt. Stir in the corn when it finishes and leave on keep warm for 10 minutes.",
+    "sections": []
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Toasting the rice first gives the nutty flavour and keeps the grains separate."
+     }
+    ]
+   }
+  ],
+  "id": "Sides-Mexican_Tomato_Rice",
+  "file": "Sides/Mexican_Tomato_Rice.tex",
+  "chapter": "sides",
+  "chapterName": "Salads & Sides",
+  "ingredients": [
+   "1½ cups long-grain white rice",
+   "1 tbsp oil",
+   "1 small onion, finely diced",
+   "2 garlic cloves, crushed",
+   "1 tsp ground cumin",
+   "1 tsp smoked paprika",
+   "½ cup passata (or 2 tbsp tomato paste)",
+   "1¾ cups chicken stock",
+   "½ tsp salt",
+   "½ cup frozen corn or peas (optional)",
+   "Chopped fresh coriander, to serve"
+  ],
+  "shop": [
+   {
+    "key": "rice",
+    "name": "Rice",
+    "aisle": "Pasta, rice & grains",
+    "qty": 1.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1½ cups long-grain white rice"
+   },
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp oil"
+   },
+   {
+    "key": "onion",
+    "name": "Onions",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 small onion, finely diced"
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "2 garlic cloves, crushed"
+   },
+   {
+    "key": "cumin",
+    "name": "Ground cumin",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp ground cumin"
+   },
+   {
+    "key": "smoked-paprika",
+    "name": "Smoked paprika",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp smoked paprika"
+   },
+   {
+    "key": "passata",
+    "name": "Passata",
+    "aisle": "Cans, jars & pulses",
+    "qty": 0.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "½ cup passata (or 2 tbsp tomato paste)"
+   },
+   {
+    "key": "chicken-stock",
+    "name": "Chicken stock",
+    "aisle": "Pantry: check first",
+    "qty": 1.75,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1¾ cups chicken stock"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 0.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "½ tsp salt"
+   },
+   {
+    "key": "frozen-peas",
+    "name": "Frozen peas",
+    "aisle": "Frozen",
+    "qty": 0.5,
+    "unit": "cup",
+    "optional": true,
+    "raw": "½ cup frozen corn or peas (optional)"
+   },
+   {
+    "key": "coriander",
+    "name": "Fresh coriander",
+    "aisle": "Fruit & veg",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Chopped fresh coriander, to serve"
+   }
+  ],
+  "tags": []
+ },
+ {
+  "title": "Rice with Peas & Parmesan",
+  "servings": "4",
+  "time": "25 min",
+  "intro": "Creamy-tasting rice with sweet peas, butter and parmesan, without the stirring of a risotto. Goes with chicken, fish and meatballs.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "1½ cups long-grain white rice"
+     },
+     {
+      "text": "2¼ cups chicken stock"
+     },
+     {
+      "text": "1½ cups frozen peas"
+     },
+     {
+      "text": "30 g parmesan, finely grated"
+     },
+     {
+      "text": "15 g butter"
+     },
+     {
+      "text": "Black pepper"
+     },
+     {
+      "text": "Zest of ½ lemon (optional)"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "Rinse the rice in a sieve until the water runs mostly clear."
+     },
+     {
+      "text": "Put the rice and stock in a saucepan, bring to the boil, then cover and cook on the lowest heat for 12 minutes."
+     },
+     {
+      "text": "Scatter the frozen peas over the top, put the lid back on and take off the heat. Leave for 10 minutes."
+     },
+     {
+      "text": "Stir through the parmesan, butter, pepper and lemon zest."
+     }
+    ]
+   },
+   {
+    "kind": "variation",
+    "heading": "Rice cooker",
+    "text": "Cook the rice and stock as normal. When it finishes, scatter over the peas, close the lid and leave on keep warm for 10 minutes, then stir in the parmesan, butter, pepper and lemon.",
+    "sections": []
+   }
+  ],
+  "id": "Sides-Rice_Peas_Parmesan",
+  "file": "Sides/Rice_Peas_Parmesan.tex",
+  "chapter": "sides",
+  "chapterName": "Salads & Sides",
+  "ingredients": [
+   "1½ cups long-grain white rice",
+   "2¼ cups chicken stock",
+   "1½ cups frozen peas",
+   "30 g parmesan, finely grated",
+   "15 g butter",
+   "Black pepper",
+   "Zest of ½ lemon (optional)"
+  ],
+  "shop": [
+   {
+    "key": "rice",
+    "name": "Rice",
+    "aisle": "Pasta, rice & grains",
+    "qty": 1.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1½ cups long-grain white rice"
+   },
+   {
+    "key": "chicken-stock",
+    "name": "Chicken stock",
+    "aisle": "Pantry: check first",
+    "qty": 2.25,
+    "unit": "cup",
+    "optional": false,
+    "raw": "2¼ cups chicken stock"
+   },
+   {
+    "key": "frozen-peas",
+    "name": "Frozen peas",
+    "aisle": "Frozen",
+    "qty": 1.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1½ cups frozen peas"
+   },
+   {
+    "key": "parmesan",
+    "name": "Parmesan",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 30.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "30 g parmesan, finely grated"
+   },
+   {
+    "key": "butter",
+    "name": "Butter",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 15.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "15 g butter"
+   },
+   {
+    "key": "pepper",
+    "name": "Black pepper",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": false,
+    "raw": "Black pepper"
+   },
+   {
+    "key": "lemon",
+    "name": "Lemons",
+    "aisle": "Fruit & veg",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Zest of ½ lemon (optional)"
+   }
+  ],
+  "tags": []
+ },
+ {
   "title": "Roast Vegetables",
   "servings": "4",
   "time": "15 min prep + 45 min",
@@ -26871,6 +27876,176 @@
     "unit": "tsp",
     "optional": false,
     "raw": "1 tsp sesame seeds"
+   }
+  ],
+  "tags": []
+ },
+ {
+  "title": "Turmeric Rice with Peas",
+  "servings": "4",
+  "time": "25 min",
+  "intro": "Golden, gently spiced basmati with peas. Goes with keema, biryani bowls and any curry.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "1½ cups basmati rice"
+     },
+     {
+      "text": "1 tbsp butter or oil"
+     },
+     {
+      "text": "1 small onion, finely chopped (optional)"
+     },
+     {
+      "text": "1 tsp ground turmeric"
+     },
+     {
+      "text": "½ tsp ground cumin"
+     },
+     {
+      "text": "1 bay leaf"
+     },
+     {
+      "text": "½ tsp salt"
+     },
+     {
+      "text": "2¼ cups water or chicken stock"
+     },
+     {
+      "text": "1 cup frozen peas"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "Rinse the rice in a sieve until the water runs mostly clear. Drain well."
+     },
+     {
+      "text": "Heat the butter in a saucepan over medium heat and cook the onion for 3–4 minutes until soft. Stir in the turmeric and cumin for 30 seconds."
+     },
+     {
+      "text": "Add the rice and stir to coat, then add the bay leaf, salt and water. Bring to the boil."
+     },
+     {
+      "text": "Cover, turn the heat to the lowest setting and cook for 12 minutes."
+     },
+     {
+      "text": "Scatter the frozen peas over the top, put the lid back on and take off the heat. Leave for 10 minutes — the steam cooks the peas."
+     },
+     {
+      "text": "Remove the bay leaf and fluff with a fork."
+     }
+    ]
+   },
+   {
+    "kind": "variation",
+    "heading": "Rice cooker",
+    "text": "Soften the onion and spices in a pan (or skip the onion), then put everything except the peas in the rice cooker. When it finishes, scatter over the peas, close the lid and leave on keep warm for 10 minutes.",
+    "sections": []
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Turmeric stains — wipe up spills straight away."
+     }
+    ]
+   }
+  ],
+  "id": "Sides-Turmeric_Rice",
+  "file": "Sides/Turmeric_Rice.tex",
+  "chapter": "sides",
+  "chapterName": "Salads & Sides",
+  "ingredients": [
+   "1½ cups basmati rice",
+   "1 tbsp butter or oil",
+   "1 small onion, finely chopped (optional)",
+   "1 tsp ground turmeric",
+   "½ tsp ground cumin",
+   "1 bay leaf",
+   "½ tsp salt",
+   "2¼ cups water or chicken stock",
+   "1 cup frozen peas"
+  ],
+  "shop": [
+   {
+    "key": "basmati-rice",
+    "name": "Basmati rice",
+    "aisle": "Pasta, rice & grains",
+    "qty": 1.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1½ cups basmati rice"
+   },
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp butter or oil"
+   },
+   {
+    "key": "onion",
+    "name": "Onions",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": true,
+    "raw": "1 small onion, finely chopped (optional)"
+   },
+   {
+    "key": "turmeric",
+    "name": "Turmeric",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp ground turmeric"
+   },
+   {
+    "key": "cumin",
+    "name": "Ground cumin",
+    "aisle": "Pantry: check first",
+    "qty": 0.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "½ tsp ground cumin"
+   },
+   {
+    "key": "bay-leaves",
+    "name": "Bay leaves",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 bay leaf"
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 0.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "½ tsp salt"
+   },
+   {
+    "key": "frozen-peas",
+    "name": "Frozen peas",
+    "aisle": "Frozen",
+    "qty": 1.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1 cup frozen peas"
    }
   ],
   "tags": []
