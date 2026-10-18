@@ -8,7 +8,11 @@ Usage (from the repo root): python3 planner/build.py
 """
 import json
 import re
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from ingredients import parse as parse_ingredient  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 HERE = Path(__file__).resolve().parent
@@ -272,6 +276,66 @@ def ingredient_lines(recipe):
     return lines
 
 
+OPTIONAL_GROUP = re.compile(r"serve|serving|\btop\b|garnish|optional", re.I)
+
+
+def shop_items(recipe):
+    """Ingredient lines as shopping-list entries, keeping 'To serve' groups optional."""
+    out = []
+    seen_steps = False
+    for sec in recipe["sections"]:
+        if sec["kind"] == "steps":
+            seen_steps = True
+        is_list = sec["kind"] == "ingredients" or (
+            sec["kind"] == "list" and not seen_steps
+            and not re.search(r"why|works|serving|storage|tip|note|option", sec.get("heading") or "", re.I))
+        if not is_list:
+            continue
+        group_optional = bool(OPTIONAL_GROUP.search(sec.get("heading") or ""))
+        for it in sec["items"]:
+            if "group" in it:
+                group_optional = bool(OPTIONAL_GROUP.search(it["group"]))
+                continue
+            for raw in [it["text"]] + it.get("sub", []):
+                out.extend(split_and_parse(raw, group_optional))
+    return out
+
+
+# Words that describe preparation, not a separate ingredient ("..., sliced").
+PREP_ONLY = re.compile(r"(finely |roughly |thinly )?(sliced|chopped|diced|grated|minced|crushed|halved|shredded|torn|to taste|optional|for serving|to serve|extra)", re.I)
+
+
+def split_and_parse(raw, optional):
+    """'Greek yoghurt, salsa, lettuce' -> three optional items; '1 onion, diced' -> one."""
+    first = parse_ingredient(raw)
+    if first is None:
+        return []
+    entries = [(raw, first)]
+    plain = re.sub(r"\*\*", "", raw)
+    if first["qty"] is None:
+        parts = [p for p in re.split(r",|;| or | and |/", re.sub(r"^[^:]{0,40}:\s*", "", plain))
+                 if p.strip() and not PREP_ONLY.fullmatch(p.strip())]
+        parsed = [parse_ingredient(p) for p in parts]
+        known = [x for x in parsed if x and x["aisle"]]
+        if len(parts) > 1 and len(known) * 3 >= len(parts) * 2:
+            entries = [(raw, x) for x in parsed if x]
+            optional = True  # a list of serving options
+    out = []
+    for line, p in entries:
+        p = dict(p, raw=re.sub(r"\*\*", "", line).strip())
+        # A "To serve" group only makes items optional when they have no amount:
+        # "1¼ cups dry rice, to serve" is still needed.
+        p["optional"] = p["optional"] if p["qty"] is not None else (p["optional"] or optional)
+        if p["qty"] is not None and re.search(r"\boptional\b", p["raw"], re.I):
+            p["optional"] = True
+        out.append(p)
+    # The same ingredient named twice in one split line counts once.
+    uniq = {}
+    for p in out:
+        uniq.setdefault(p["key"], p)
+    return list(uniq.values())
+
+
 def tags(recipe):
     text = " ".join(ingredient_lines(recipe)).lower() + " " + recipe["title"].lower()
     text = re.sub(r"(chicken|beef|pork) (stock|broth)", "", text)
@@ -302,6 +366,7 @@ def main():
             r["chapter"] = CHAPTER_KEYS[chapter]
             r["chapterName"] = chapter
             r["ingredients"] = ingredient_lines(r)
+            r["shop"] = shop_items(r)
             r["tags"] = tags(r)
             recipes.append(r)
     data = json.dumps(recipes, ensure_ascii=False, separators=(",", ":"))
