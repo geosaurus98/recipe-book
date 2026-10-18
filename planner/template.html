@@ -135,11 +135,20 @@ main.wrap { padding-block: 20px 48px; display: grid; gap: 28px; }
 .aisle h3 { font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; display: flex; justify-content: space-between; }
 .aisle h3 span { font-family: var(--font-mono); letter-spacing: 0; }
 .aisle ul { list-style: none; margin: 0; padding: 0; display: grid; }
-.aisle li label { display: grid; grid-template-columns: auto 1fr; gap: 10px; padding: 6px 0; border-top: 1px solid var(--line); align-items: start; cursor: pointer; }
-.aisle li:first-child label { border-top: 0; }
 .aisle input[type="checkbox"] { width: 18px; height: 18px; margin: 2px 0 0; accent-color: var(--accent); }
-.aisle .from { display: block; font-size: 0.72rem; color: var(--m); font-weight: 600; }
-.aisle li.done .txt { text-decoration: line-through; color: var(--muted); }
+.aisle > ul > li { border-top: 1px solid var(--line); padding: 6px 0; }
+.aisle > ul > li:first-child { border-top: 0; }
+.aisle li label { display: grid; grid-template-columns: auto 1fr; gap: 10px; align-items: start; cursor: pointer; border: 0; padding: 0; }
+.aisle .txt { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 10px; }
+.aisle .item-name { font-weight: 600; }
+.aisle .amt { font-family: var(--font-mono); font-size: 0.8rem; color: var(--ink); background: var(--sunk); padding: 0 6px; border-radius: 6px; }
+.aisle .opt { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); }
+.aisle details { margin: 2px 0 0 28px; font-size: 0.8rem; color: var(--muted); }
+.aisle summary { cursor: pointer; width: fit-content; }
+.aisle summary:hover { color: var(--ink); }
+.aisle .uses { list-style: none; padding: 4px 0 2px; margin: 0; display: grid; gap: 4px; }
+.aisle .from { display: block; font-size: 0.72rem; color: var(--m); font-weight: 700; }
+.aisle li.done .item-name, .aisle li.done .amt { text-decoration: line-through; color: var(--muted); }
 
 /* Recipe sheet */
 .overlay { position: fixed; inset: 0; z-index: 20; background: rgb(10 16 12 / 45%); display: flex; justify-content: center; align-items: flex-start; overflow-y: auto; padding: calc(24px + env(safe-area-inset-top, 0px)) max(12px, env(safe-area-inset-right, 0px)) calc(24px + env(safe-area-inset-bottom, 0px)) max(12px, env(safe-area-inset-left, 0px)); }
@@ -326,36 +335,100 @@ function pickRandom(slotKey, exclude) {
 
 // ─── Shopping list ──────────────────────────────────────────────────────────
 const AISLES = ["Meat & fish", "Fruit & veg", "Dairy, eggs & chilled", "Frozen", "Bread & wraps", "Pasta, rice & grains", "Cans, jars & pulses", "Baking", "Pantry: check first"];
-// First match wins, so the order of these checks matters.
+// Fallback for any ingredient the build step couldn't name. First match wins.
 const AISLE_RULES = [
   ["Pantry: check first", /\bstock\b|broth|vinegar|soy sauce|fish sauce|oyster sauce|hoisin|worcestershire|peanut butter|\boil\b/],
   ["Frozen", /frozen/],
-  ["Cans, jars & pulses", /coconut (milk|cream)|\bcans?\b|\btins?\b|tinned|canned|chickpea|cannellini|kidney bean|black bean|butter bean|baked bean|lentil|split pea|passata|crushed tomato|diced tomato|tomato paste|\bjam\b|salsa|gherkin|curry roux|chilli bean paste/],
-  ["Meat & fish", /mince|chicken|beef|pork|sausage|bacon|\bham\b|steak|salmon|tuna|prawn|lamb|guanciale|chorizo|drumstick|schnitzel/],
-  ["Pasta, rice & grains", /\brice\b|pasta|macaroni|spaghetti|rigatoni|penne|noodle|couscous|barley|\boats\b|lasagne|gnocchi|quinoa|orzo|cornflakes|dumpling|gyoza/],
-  ["Bread & wraps", /tortilla|\bwraps?\b|\bbuns?\b|bread|loaf|naan|pita|crackers/],
-  ["Dairy, eggs & chilled", /milk|cream|butter|cheese|cheddar|parmesan|mozzarella|feta|yoghurt|yogurt|\beggs?\b|halloumi|ricotta|tofu|pastry/],
-  ["Baking", /flour|sugar|baking powder|baking soda|cocoa|chocolate|coconut|icing|sultana|\bdates\b|walnut|yeast|poppy/],
-  ["Pantry: check first", /paprika|cumin|ground |dried |powder|spice|curry|garam masala|turmeric|cinnamon|oregano|thyme|sage|chilli flakes|cayenne|bay lea|herbs|essence|vanilla|honey|golden syrup|mustard|sauce|\bsalt\b|black pepper|white pepper|sesame seeds/],
-  ["Fruit & veg", /onion|garlic|carrot|potato|kumara|capsicum|spinach|cabbage|lemon|lime|apple|banana|feijoa|mushroom|courgette|zucchini|eggplant|ginger|parsley|mint|basil|celery|cucumber|lettuce|broccoli|avocado|bok choy|tomato|berr|kiwifruit|passionfruit|pumpkin|sprouts|rocket|asparagus|coriander|leek|pear|mango|beans/],
+  ["Cans, jars & pulses", /\bcans?\b|\btins?\b|tinned|canned|beans|lentil|chickpea|passata|tomato paste|\bjam\b|salsa/],
+  ["Meat & fish", /mince|chicken|beef|pork|sausage|bacon|\bham\b|steak|salmon|prawn|lamb/],
+  ["Pasta, rice & grains", /\brice\b|pasta|noodle|couscous|barley|\boats\b/],
+  ["Bread & wraps", /tortilla|\bwraps?\b|\bbuns?\b|bread|fries/],
+  ["Dairy, eggs & chilled", /milk|cream|butter|cheese|yoghurt|yogurt|\beggs?\b/],
+  ["Baking", /flour|sugar|cocoa|chocolate/],
+  ["Fruit & veg", /onion|garlic|carrot|potato|lemon|lime|tomato|lettuce|tabbouleh/],
 ];
 function aisleOf(line) {
   const t = plain(line).toLowerCase();
   for (const [aisle, re] of AISLE_RULES) if (re.test(t)) return aisle;
   return "Pantry: check first";
 }
-// Water and ice aren't shopping.
-const NOT_SHOPPING = /^[\d½¼¾⅓⅔.,/\s–-]*(ml|l|cups?|tbsp|tsp)?\s*\(?[\d\s.ml)]*\)?\s*(boiling |cold |warm |lukewarm |hot )?water\b|^water\b|ice cubes/i;
+
+// ─── Adding up amounts ──────────────────────────────────────────────────────
+const SPOON_TSP = { tsp: 1, tbsp: 3, cup: 48 };      // spoons and cups in teaspoons
+const TO_ML = { tsp: 5, tbsp: 15, cup: 250, ml: 1 };
+const COUNT_WORDS = { can: ["can", "cans"], clove: ["clove", "cloves"], sheet: ["sheet", "sheets"], bulb: ["bulb", "bulbs"],
+  jar: ["jar", "jars"], packet: ["packet", "packets"], bunch: ["bunch", "bunches"], head: ["head", "heads"],
+  stalk: ["stalk", "stalks"], rasher: ["rasher", "rashers"], slice: ["slice", "slices"], scoop: ["scoop", "scoops"],
+  handful: ["handful", "handfuls"], block: ["block", "blocks"], box: ["box", "boxes"] };
+
+function nice(n) {
+  const whole = Math.floor(n + 1e-9);
+  const rest = n - whole;
+  const fracs = [[0, ""], [0.25, "¼"], [1 / 3, "⅓"], [0.5, "½"], [2 / 3, "⅔"], [0.75, "¾"], [1, ""]];
+  let best = fracs[0];
+  for (const f of fracs) if (Math.abs(rest - f[0]) < Math.abs(rest - best[0])) best = f;
+  const w = best[0] === 1 ? whole + 1 : whole;
+  return (w ? String(w) : (best[1] ? "" : "0")) + best[1];
+}
+function fmtMetric(n, small, big) {
+  if (n >= 1000) return `${+(n / 1000).toFixed(n % 1000 ? 2 : 0)} ${big}`;
+  return `${Math.round(n)} ${small}`;
+}
+function fmtSpoons(tsp) {
+  if (tsp >= 12) return `${nice(Math.ceil(tsp / 12) / 4)} ${tsp > 48 ? "cups" : "cup"}`;
+  if (tsp >= 3) return `${nice(Math.round(tsp / 1.5) / 2)} tbsp`;
+  return `${nice(Math.round(tsp * 4) / 4)} tsp`;
+}
+// Rough weight of one, for veg that some recipes count and others weigh.
+const PIECE_G = { carrot: 100, onion: 150, "red-onion": 150, potato: 200, capsicum: 150, apple: 150, courgette: 200, kumara: 300, tomato: 120 };
+// parts: [{qty, unit}] for one ingredient across recipes -> "1.1 kg + 2", "3 cans", "1½ cups"
+function amountText(parts, key) {
+  const w = PIECE_G[key];
+  if (w && parts.some(p => p.qty != null && p.unit === "") && parts.some(p => p.qty != null && p.unit === "g")) {
+    const n = parts.reduce((a, p) => a + (p.qty == null ? 0 : p.unit === "g" ? p.qty / w : p.unit === "" ? p.qty : 0), 0);
+    return `about ${Math.ceil(n)}`;
+  }
+  const has = u => parts.some(p => p.qty != null && p.unit === u);
+  const sum = pred => parts.filter(p => p.qty != null && pred(p)).reduce((a, p) => a + p.qty, 0);
+  const out = [];
+  if (has("g")) out.push(fmtMetric(sum(p => p.unit === "g"), "g", "kg"));
+  if (has("ml")) {
+    // Mix of millilitres and cups: show it all as millilitres/litres.
+    const ml = parts.filter(p => p.qty != null && TO_ML[p.unit]).reduce((a, p) => a + p.qty * TO_ML[p.unit], 0);
+    out.push(fmtMetric(ml, "ml", "L"));
+  } else if (parts.some(p => p.qty != null && SPOON_TSP[p.unit])) {
+    out.push(fmtSpoons(parts.filter(p => p.qty != null && SPOON_TSP[p.unit]).reduce((a, p) => a + p.qty * SPOON_TSP[p.unit], 0)));
+  }
+  for (const [u, [one, many]] of Object.entries(COUNT_WORDS)) {
+    if (has(u)) { const n = sum(p => p.unit === u); out.push(`${nice(n)} ${n > 1 ? many : one}`); }
+  }
+  if (has("")) out.push(nice(sum(p => p.unit === "")));
+  return out.join(" + ");
+}
+
 function shoppingList() {
-  const groups = Object.fromEntries(AISLES.map(a => [a, []]));
+  const rows = new Map();
   for (const id of plannedIds()) {
     const r = BY_ID[id];
-    r.ingredients.forEach((line, i) => {
-      if (NOT_SHOPPING.test(plain(line).trim())) return;
-      const key = `${id}#${i}`;
-      groups[aisleOf(line)].push({ key, line: plain(line), recipe: r });
-    });
+    for (const item of r.shop) {
+      let row = rows.get(item.key);
+      if (!row) {
+        row = { key: "item:" + item.key, name: item.name, aisle: item.aisle || aisleOf(item.raw), parts: [], uses: [], optional: true };
+        rows.set(item.key, row);
+      }
+      row.parts.push({ qty: item.qty, unit: item.unit });
+      row.optional = row.optional && item.optional;
+      const use = row.uses.find(u => u.recipe === r);
+      if (use) { if (!use.lines.includes(item.raw)) use.lines.push(item.raw); }
+      else row.uses.push({ recipe: r, lines: [item.raw] });
+    }
   }
+  const groups = Object.fromEntries(AISLES.map(a => [a, []]));
+  for (const row of rows.values()) {
+    row.amount = amountText(row.parts, row.key.slice(5));
+    groups[row.aisle].push(row);
+  }
+  for (const a of AISLES) groups[a].sort((x, y) => (x.optional - y.optional) || x.name.localeCompare(y.name));
   return groups;
 }
 
@@ -476,18 +549,24 @@ function renderShop(groups) {
     return `<section class="section-head"><div><h2>Shopping list</h2><p>Plan some meals and their ingredients will appear here, grouped by aisle.</p></div></section>`;
   }
   const aisleCards = AISLES.map(a => {
-    let items = groups[a];
+    const items = groups[a];
     if (ui.hidePantry && a.startsWith("Pantry")) return "";
     if (!items.length) return "";
     const left = items.filter(x => !state.checked[x.key]).length;
     return `<section class="aisle"><h3>${esc(a)}<span>${left}/${items.length}</span></h3><ul>${items.map(x => {
       const done = !!state.checked[x.key];
-      return `<li class="${done ? "done" : ""}" data-m="${x.recipe.chapter}"><label><input type="checkbox" data-act="check" data-key="${esc(x.key)}" ${done ? "checked" : ""}><span><span class="txt">${esc(x.line)}</span><span class="from">${esc(x.recipe.title)}</span></span></label></li>`;
+      const uses = x.uses.map(u => `<li><span class="from" data-m="${u.recipe.chapter}">${esc(u.recipe.title)}</span>${u.lines.map(l => esc(l)).join("; ")}</li>`).join("");
+      return `<li class="${done ? "done" : ""}">
+        <label><input type="checkbox" data-act="check" data-key="${esc(x.key)}" ${done ? "checked" : ""}>
+          <span class="txt"><span class="item-name">${esc(x.name)}</span>${x.amount ? `<span class="amt">${esc(x.amount)}</span>` : ""}${x.optional ? `<span class="opt">optional</span>` : ""}</span>
+        </label>
+        <details><summary>${x.uses.length === 1 ? esc(x.uses[0].recipe.title) : `${x.uses.length} recipes`}</summary><ul class="uses">${uses}</ul></details>
+      </li>`;
     }).join("")}</ul></section>`;
   }).join("");
   return `
   <section class="section-head">
-    <div><h2>Shopping list</h2><p>${ids.length} ${ids.length === 1 ? "recipe" : "recipes"} this week. Quantities are per recipe, so add up repeats like onions as you shop.</p></div>
+    <div><h2>Shopping list</h2><p>${ids.length} ${ids.length === 1 ? "recipe" : "recipes"} this week. Amounts are added up across recipes. Tap a recipe name under an item to see exactly what each one needs.</p></div>
     <div class="actions">
       <label class="toggle"><input type="checkbox" id="hide-pantry" data-act="hide-pantry" ${ui.hidePantry ? "checked" : ""}> Hide pantry items</label>
       <button class="btn" data-act="copy-list">Copy list</button>
@@ -631,7 +710,7 @@ async function copyList() {
     .filter(a => !(ui.hidePantry && a.startsWith("Pantry")))
     .map(a => [a, groups[a].filter(x => !state.checked[x.key])])
     .filter(([, items]) => items.length)
-    .map(([a, items]) => `${a}\n${items.map(x => `- ${x.line}`).join("\n")}`)
+    .map(([a, items]) => `${a}\n${items.map(x => `- ${x.name}${x.amount ? ` (${x.amount})` : ""}${x.optional ? " [optional]" : ""}`).join("\n")}`)
     .join("\n\n");
   try { await navigator.clipboard.writeText(text); toast("Shopping list copied"); }
   catch {
