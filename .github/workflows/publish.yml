@@ -1,0 +1,64 @@
+# Builds the meal planner and the PDF recipe books, then publishes them to
+# GitHub Pages: the planner at the site root, the books under books/.
+name: Publish site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build meal planner
+        run: python planner/build.py
+
+      # latexmk is happier without spaces in the file name
+      - name: Prepare books
+        run: cp "Palmer Recipe Book.tex" palmer.tex
+
+      - name: Compile PDF books
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: |
+            main.tex
+            palmer.tex
+
+      - name: Assemble site
+        run: |
+          mkdir -p _site/books
+          cp planner/index.html _site/
+          cp main.pdf _site/books/main.pdf
+          cp palmer.pdf _site/books/palmer.pdf
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
