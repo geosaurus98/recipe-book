@@ -92,3 +92,16 @@ python3 planner/build.py
 
 This reads the chapters in `main.tex`, writes `planner/recipes.json` and
 regenerates `planner/index.html` from `planner/template.html`.
+
+## Website
+
+Every push to `main` runs `.github/workflows/publish.yml`, which rebuilds the
+planner, compiles `main.tex` and `Palmer Recipe Book.tex` to PDF, and publishes
+them to GitHub Pages:
+
+- Planner: <https://geosaurus98.github.io/recipe-book/>
+- Books: [`books/main.pdf`](https://geosaurus98.github.io/recipe-book/books/main.pdf)
+  and [`books/palmer.pdf`](https://geosaurus98.github.io/recipe-book/books/palmer.pdf)
+
+So there's no need to run `build.py` before pushing, though it's handy for
+checking changes locally. Progress and errors show on the repo's Actions tab.
