@@ -33,6 +33,7 @@
   --oven: #b0392c;
   --bake: #7a4d9e;
   --other: #66726b;
+  --star: #b67a00;
   --shadow: 0 1px 2px rgb(23 34 28 / 6%), 0 4px 14px rgb(23 34 28 / 6%);
   --font-display: "Young Serif", Georgia, "Times New Roman", serif;
   --font-body: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -42,7 +43,7 @@
   :root:not([data-theme="light"]) {
     --bg: #111713; --surface: #18201b; --sunk: #202a23; --ink: #e5ede8; --muted: #9aaaa1;
     --line: #2a362f; --accent: #7cc49b; --accent-ink: #0f1a14;
-    --slow: #e59a55; --pressure: #7fa8e6; --quick: #7cc48d; --oven: #e98476; --bake: #bb95dc; --other: #a2aea7;
+    --slow: #e59a55; --pressure: #7fa8e6; --quick: #7cc48d; --oven: #e98476; --bake: #bb95dc; --other: #a2aea7; --star: #f0b429;
     --shadow: 0 1px 2px rgb(0 0 0 / 30%), 0 4px 14px rgb(0 0 0 / 25%);
     color-scheme: dark;
   }
@@ -50,7 +51,7 @@
 :root[data-theme="dark"] {
   --bg: #111713; --surface: #18201b; --sunk: #202a23; --ink: #e5ede8; --muted: #9aaaa1;
   --line: #2a362f; --accent: #7cc49b; --accent-ink: #0f1a14;
-  --slow: #e59a55; --pressure: #7fa8e6; --quick: #7cc48d; --oven: #e98476; --bake: #bb95dc; --other: #a2aea7;
+  --slow: #e59a55; --pressure: #7fa8e6; --quick: #7cc48d; --oven: #e98476; --bake: #bb95dc; --other: #a2aea7; --star: #f0b429;
   --shadow: 0 1px 2px rgb(0 0 0 / 30%), 0 4px 14px rgb(0 0 0 / 25%);
   color-scheme: dark;
 }
@@ -131,6 +132,14 @@ main.wrap { padding-block: 20px 48px; display: grid; gap: 28px; }
 .scale .fchip { padding: 4px 12px; }
 .scale-note { font-size: 0.75rem; color: var(--muted); margin: 6px 0 0; }
 .times { font-family: var(--font-mono); font-size: 0.75rem; font-weight: 600; color: var(--accent); }
+.stars { display: inline-flex; align-items: center; gap: 0; }
+.stars button { border: 0; background: none; padding: 2px 3px; font-size: 1.25rem; line-height: 1; color: var(--muted); opacity: 0.35; cursor: pointer; }
+.stars button[aria-pressed="true"] { color: var(--star); opacity: 1; }
+.rate-row { display: flex; align-items: center; gap: 6px; font-size: 0.85rem; color: var(--muted); margin-top: 8px; }
+.fav { border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 4px 12px; font-weight: 600; font-size: 0.85rem; color: var(--muted); cursor: pointer; }
+.fav[aria-pressed="true"] { color: var(--star); border-color: var(--star); }
+.fav-mark { color: var(--star); }
+.history-line { font-size: 0.8rem; color: var(--muted); margin: 8px 0 0; }
 .week-nutrition { margin: 4px 0 0; font-size: 0.9rem; color: var(--muted); }
 .week-nutrition strong { color: var(--ink); font-variant-numeric: tabular-nums; }
 .slot .row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
@@ -261,11 +270,11 @@ const EXAMPLE = {
     pressure: "InstantPot-Cheeseburger_Macaroni",
     quick: "Stovetop-Pork_Larb",
   },
-  extras: [], cooked: {}, checked: {}, scale: {}, history: [], example: true,
+  extras: [], cooked: {}, checked: {}, scale: {}, fav: {}, rating: {}, log: {}, history: [], example: true,
 };
 
 let state = clone(EXAMPLE);
-let ui = { tab: "week", q: "", chapter: null, group: null, protein: null, choosing: null, hidePantry: false, minceOnly: false, highProtein: false, diet: [], open: null };
+let ui = { tab: "week", q: "", chapter: null, group: null, protein: null, choosing: null, hidePantry: false, minceOnly: false, highProtein: false, diet: [], favOnly: false, open: null };
 let store = null;        // db document ref, or null
 let saveMode = "local";  // "db" | "local" | "none"
 
@@ -286,6 +295,7 @@ function sanitize(s) {
   for (const k of Object.keys(out.slots)) if (out.slots[k] && !BY_ID[out.slots[k]]) out.slots[k] = null;
   out.extras = (out.extras || []).filter(id => BY_ID[id]);
   out.cooked = out.cooked || {}; out.checked = out.checked || {}; out.scale = out.scale || {};
+  out.fav = out.fav || {}; out.rating = out.rating || {}; out.log = out.log || {};
   out.history = (out.history || []).slice(0, 12);
   return out;
 }
@@ -394,6 +404,34 @@ function weekNutrition() {
   return `<p class="week-nutrition">This week: <strong>${s}</strong> servings, averaging <strong>${Math.round(kcal / servings / 10) * 10} kcal</strong> and <strong>${Math.round(protein / servings)} g protein</strong> each (<strong>${Math.round(protein).toLocaleString()} g</strong> protein in total).</p>`;
 }
 
+// ─── Favourites, ratings and cooking history ───────────────────────────────
+function todayISO() {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+}
+function daysSince(iso) {
+  const [y, m, d] = iso.split("-").map(Number);
+  return Math.floor((Date.now() - new Date(y, m - 1, d).getTime()) / 86400000);
+}
+function cookedRecently(id) { return (state.log[id] || []).some(d => daysSince(d) < 28); }
+function stars(id, act) {
+  const v = state.rating[id] || 0;
+  return `<span class="stars" role="group" aria-label="Rating">${[1, 2, 3, 4, 5].map(n =>
+    `<button data-act="${act}" data-id="${id}" data-v="${n}" aria-pressed="${n <= v}" aria-label="${n} star${n > 1 ? "s" : ""}">★</button>`).join("")}</span>`;
+}
+function historyLine(id) {
+  const log = state.log[id] || [];
+  if (!log.length) return "";
+  const last = log[log.length - 1].split("-").map(Number);
+  const when = new Date(last[0], last[1] - 1, last[2]).toLocaleDateString("en-NZ", { day: "numeric", month: "short" });
+  return `<p class="history-line">Cooked ${log.length === 1 ? "once" : `${log.length} times`} · last on ${esc(when)}</p>`;
+}
+// Favourites and well-rated recipes come up more often; low ratings less.
+const RATING_WEIGHT = { 1: 0.2, 2: 0.5, 3: 1, 4: 2, 5: 3 };
+function weight(r) {
+  return (state.fav[r.id] ? 3 : 1) * (RATING_WEIGHT[state.rating[r.id]] || 1);
+}
+
 function pickRandom(slotKey, exclude) {
   const slot = SLOTS.find(s => s.key === slotKey);
   const recent = recentIds();
@@ -401,9 +439,13 @@ function pickRandom(slotKey, exclude) {
   let pool = RECIPES.filter(r => slot.chapters.includes(r.chapter) && r.id !== exclude && !used.has(r.id));
   if (ui.minceOnly) pool = pool.filter(r => r.tags.includes("mince"));
   if (ui.highProtein) pool = pool.filter(isHighProtein);
-  const fresh = pool.filter(r => !recent.has(r.id));
+  // Skip anything planned in the last four weeks or cooked in the last 28 days, if there's enough left.
+  const fresh = pool.filter(r => !recent.has(r.id) && !cookedRecently(r.id));
   const from = fresh.length ? fresh : pool;
-  return from.length ? from[Math.floor(Math.random() * from.length)].id : null;
+  if (!from.length) return null;
+  let roll = Math.random() * from.reduce((a, r) => a + weight(r), 0);
+  for (const r of from) { roll -= weight(r); if (roll <= 0) return r.id; }
+  return from[from.length - 1].id;
 }
 
 // ─── Shopping list ──────────────────────────────────────────────────────────
@@ -569,7 +611,7 @@ function slotCard(s) {
   const cooked = !!state.cooked[id];
   return `<article class="slot${cooked ? " is-cooked" : ""}" data-m="${s.key}">
     <span class="chip">${s.label}</span>
-    <h3><button data-act="open" data-id="${id}">${esc(r.title)}</button></h3>
+    <h3><button data-act="open" data-id="${id}">${state.fav[id] ? `<span class="fav-mark" aria-label="Favourite">★</span> ` : ""}${esc(r.title)}</button></h3>
     <div class="meta">${scaleOf(id) !== 1 ? `<span class="times">${SCALE_LABEL[scaleOf(id)]}</span>` : ""}<span>Serves ${esc(scaledServingsText(r))}</span><span>${esc(r.time === "–" ? "Time not set" : r.time)}</span>${macroSpans(r)}</div>
     <div class="row">
       <button class="btn small" data-act="shuffle-slot" data-slot="${s.key}" title="Swap for another random recipe">Swap</button>
@@ -577,6 +619,7 @@ function slotCard(s) {
       <button class="btn small ghost" data-act="clear-slot" data-slot="${s.key}">Remove</button>
       <label class="cooked-toggle"><input type="checkbox" id="cooked-${s.key}" data-act="cooked" data-id="${id}" ${cooked ? "checked" : ""}> Cooked</label>
     </div>
+    ${cooked ? `<div class="rate-row">${state.rating[id] ? "Your rating" : "How was it?"} ${stars(id, "rate")}</div>` : ""}
   </article>`;
 }
 
@@ -626,6 +669,7 @@ function filteredRecipes() {
     (!ui.protein || r.tags.includes(ui.protein)) &&
     (!ui.highProtein || isHighProtein(r)) &&
     ui.diet.every(t => r.diet.includes(t)) &&
+    (!ui.favOnly || state.fav[r.id]) &&
     (!q || r.title.toLowerCase().includes(q) || r.ingredients.some(l => l.toLowerCase().includes(q))));
 }
 
@@ -642,7 +686,7 @@ function renderRecipes() {
   const proteinChips = PROTEINS.map(([k, l]) => `<button class="fchip" data-act="protein" data-v="${k}" aria-pressed="${ui.protein === k}">${l}</button>`).join("");
   const cards = list.map(r => `<button class="card" data-m="${r.chapter}" data-act="open" data-id="${r.id}">
       <span class="chip">${esc(CHAPTER_LABEL[r.chapter])}${r.group ? ` · ${esc(r.group)}` : ""}</span>
-      <span class="name">${esc(r.title)}</span>
+      <span class="name">${state.fav[r.id] ? `<span class="fav-mark" aria-label="Favourite">★</span> ` : ""}${esc(r.title)}${state.rating[r.id] ? ` <span class="fav-mark">${"★".repeat(state.rating[r.id])}</span>` : ""}</span>
       <span class="meta"><span>Serves ${esc(r.servings)}</span>${r.time !== "–" ? `<span>${esc(r.time)}</span>` : ""}${macroSpans(r)}</span>
       ${badges(r)}
       ${planned.has(r.id) ? `<span class="planned">On this week's plan</span>` : ""}
@@ -657,7 +701,7 @@ function renderRecipes() {
     <div class="chips" role="group" aria-label="Chapter">${chapterChips}</div>
     ${groupChips ? `<div class="chips" role="group" aria-label="Section">${groupChips}</div>` : ""}
     <div class="chips" role="group" aria-label="Main protein">${proteinChips}<button class="fchip" data-act="high-protein-chip" aria-pressed="${ui.highProtein}">${HIGH_PROTEIN} g+ protein</button></div>
-    <div class="chips" role="group" aria-label="Diet and meal prep">${dietChips}</div>
+    <div class="chips" role="group" aria-label="Diet and meal prep">${dietChips}<button class="fchip" data-act="fav-only" aria-pressed="${ui.favOnly}">★ Favourites</button></div>
   </section>
   <p class="result-count">${list.length} ${list.length === 1 ? "recipe" : "recipes"}</p>
   <section class="list">${cards || `<p class="empty-note">No recipes match. Try clearing a filter.</p>`}</section>`;
@@ -728,7 +772,7 @@ function renderSheet() {
   root.innerHTML = `<div class="overlay" data-act="close-overlay">
     <article class="sheet" data-m="${r.chapter}" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
       <div class="sheet-head">
-        <div class="top-row"><span class="chip">${esc(r.chapterName)}${r.group ? ` · ${esc(r.group)}` : ""}</span><button class="btn small ghost" data-act="close" aria-label="Close recipe">Close</button></div>
+        <div class="top-row"><span class="chip">${esc(r.chapterName)}${r.group ? ` · ${esc(r.group)}` : ""}</span><span class="row"><button class="fav" data-act="fav" data-id="${r.id}" aria-pressed="${!!state.fav[r.id]}">★ ${state.fav[r.id] ? "Favourite" : "Add to favourites"}</button><button class="btn small ghost" data-act="close" aria-label="Close recipe">Close</button></span></div>
         <h2 id="sheet-title">${esc(r.title)}</h2>
         <div class="meta"><span>Serves ${esc(scaledServingsText(r))}${scaleOf(r.id) !== 1 ? ` (recipe serves ${esc(r.servings)})` : ""}</span>${r.time !== "–" ? `<span>${esc(r.time)}</span>` : ""}</div>
         <div class="scale" role="group" aria-label="Scale the recipe">Make
@@ -736,6 +780,8 @@ function renderSheet() {
         </div>
         ${scaleOf(r.id) !== 1 ? `<p class="scale-note">Ingredient amounts and the shopping list are scaled. Cooking times and pot size may need adjusting.</p>` : ""}
         ${badges(r)}
+        <div class="rate-row">Your rating ${stars(r.id, "rate")}</div>
+        ${historyLine(r.id)}
         ${macroBlock(r)}
         ${r.intro ? `<p class="intro">${md(r.intro)}</p>` : ""}
         <div class="sheet-actions">${actions}</div>
@@ -809,6 +855,13 @@ document.addEventListener("click", e => {
     case "group": ui.group = ui.group === el.dataset.v ? null : el.dataset.v; render(); break;
     case "protein": ui.protein = ui.protein === el.dataset.v ? null : el.dataset.v; render(); break;
     case "high-protein-chip": ui.highProtein = !ui.highProtein; render(); break;
+    case "fav-only": ui.favOnly = !ui.favOnly; render(); break;
+    case "fav": commit(s => { if (s.fav[id]) delete s.fav[id]; else s.fav[id] = true; }); break;
+    case "rate": {
+      const v = Number(el.dataset.v);
+      commit(s => { if (s.rating[id] === v) delete s.rating[id]; else s.rating[id] = v; });
+      break;
+    }
     case "scale": {
       const id = el.dataset.id, v = Number(el.dataset.v);
       commit(s => { if (v === 1) delete s.scale[id]; else s.scale[id] = v; });
@@ -828,7 +881,19 @@ document.addEventListener("click", e => {
 document.addEventListener("change", e => {
   const el = e.target;
   const act = el.dataset.act;
-  if (act === "cooked") commit(s => { if (el.checked) s.cooked[el.dataset.id] = true; else delete s.cooked[el.dataset.id]; });
+  if (act === "cooked") commit(s => {
+    const id = el.dataset.id, today = todayISO();
+    const log = s.log[id] || [];
+    if (el.checked) {
+      s.cooked[id] = true;
+      if (log[log.length - 1] !== today) s.log[id] = [...log, today].slice(-20);
+    } else {
+      delete s.cooked[id];
+      // Unticking straight away undoes today's entry.
+      if (log[log.length - 1] === today) s.log[id] = log.slice(0, -1);
+      if (s.log[id] && !s.log[id].length) delete s.log[id];
+    }
+  });
   if (act === "check") commit(s => { if (el.checked) s.checked[el.dataset.key] = true; else delete s.checked[el.dataset.key]; });
   if (act === "mince-only") { ui.minceOnly = el.checked; }
   if (act === "high-protein") { ui.highProtein = el.checked; }

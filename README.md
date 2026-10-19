@@ -129,6 +129,15 @@ the shopping list and weekly totals follow. Only the leading amount on each
 ingredient line changes (so "2 cans (400 g)" becomes "4 cans (400 g)");
 cooking times aren't adjusted.
 
+### Favourites, ratings and history
+
+Star recipes as favourites and rate them 1-5 in the planner. Ticking
+**Cooked** on a planned meal logs the date (shown as "Cooked 3 times · last on
+12 Oct") and asks for a rating. **Pick for me** and **Shuffle the trio** favour
+favourites (3×) and well-rated recipes (4★ 2×, 5★ 3×), rarely pick 1-2★ ones,
+and skip anything cooked in the last 28 days or planned in the last four
+weeks.
+
 ## Website
 
 Every push to `main` runs `.github/workflows/publish.yml`, which rebuilds the
