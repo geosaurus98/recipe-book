@@ -59,6 +59,8 @@ header.top {
 .brand { display: flex; align-items: baseline; gap: 10px; margin-right: auto; }
 .brand h1 { font-family: var(--font-display); font-weight: 400; font-size: 1.5rem; letter-spacing: -0.01em; }
 .sync { font-size: 0.75rem; color: var(--muted); white-space: nowrap; }
+.books { font-size: 0.85rem; color: var(--muted); white-space: nowrap; }
+.books a { color: var(--ink); font-weight: 600; }
 .tabs { display: flex; background: var(--sunk); border-radius: 999px; padding: 3px; gap: 2px; }
 .tabs button { border: 0; background: transparent; padding: 6px 14px; border-radius: 999px; font-weight: 600; font-size: 0.9rem; color: var(--muted); }
 .tabs button[aria-selected="true"] { background: var(--surface); color: var(--ink); box-shadow: var(--shadow); }
@@ -184,6 +186,7 @@ main.wrap { padding-block: 20px 48px; display: grid; gap: 28px; }
 <header class="top">
   <div class="wrap">
     <div class="brand"><h1>George's Meal Planner</h1><span class="sync" id="sync">Loading…</span></div>
+    <nav class="books" aria-label="Recipe books">PDF: <a href="books/main.pdf">Recipe Book</a> · <a href="books/palmer.pdf">GP's Book</a></nav>
     <nav class="tabs" role="tablist" aria-label="Sections">
       <button role="tab" id="tab-week" aria-selected="true" data-tab="week">This week</button>
       <button role="tab" id="tab-recipes" aria-selected="false" data-tab="recipes">Recipes</button>

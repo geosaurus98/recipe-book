@@ -8,3 +8,7 @@
 *.mtc*
 *.maf
 *.pdf
+
+# Python
+__pycache__/
+*.pyc
