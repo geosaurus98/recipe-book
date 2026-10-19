@@ -57,8 +57,8 @@
   \addcontentsline{toc}{section}{#1}% add recipe to chapter mini-TOC
   \begin{tcolorbox}[recipe style, title={\textbf{\large #1}}]
   \textit{Servings:} #2 \hfill \textit{Time:} #3
-  \ifcsname nutri@\detokenize{#1}\endcsname
-    \par{\small\itshape\csname nutri@\detokenize{#1}\endcsname}%
+  \ifcsname info@\detokenize{#1}\endcsname
+    \par{\small\itshape\csname info@\detokenize{#1}\endcsname}%
   \fi
   \par\medskip
 }
@@ -109,9 +109,9 @@
 \fancyhead[L]{\leftmark}
 \fancyhead[R]{\thepage}
 
-% --- Nutrition per serving (estimates written by planner/build.py) ---
-\newcommand{\nutri}[2]{\expandafter\def\csname nutri@\detokenize{#1}\endcsname{#2}}
-\InputIfFileExists{nutrition}{}{}
+% --- Nutrition estimate and tags per recipe (written by planner/build.py) ---
+\newcommand{\recipeinfo}[2]{\expandafter\def\csname info@\detokenize{#1}\endcsname{#2}}
+\InputIfFileExists{recipe_info}{}{}
 
 \begin{document}
 

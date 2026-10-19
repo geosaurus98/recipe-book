@@ -297,7 +297,12 @@
    "fat": 21,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": []
  },
  {
   "title": "Beef & Mixed Bean Chilli",
@@ -551,7 +556,16 @@
    "fat": 20,
    "per": "serving",
    "count": 6
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "Suitable for meal prep and freezing.",
+   "This recipe freezes well for up to 3 months.",
+   "Optional additions include frozen peas, frozen broccoli or cauliflower, or a handful of frozen spinach stirred through when reheating."
+  ]
  },
  {
   "title": "Beef & Red Lentil Moussaka-Style Stew",
@@ -860,7 +874,11 @@
    "fat": 21,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "freezes"
+  ],
+  "storage": []
  },
  {
   "title": "Beef & Vegetable Stew",
@@ -1177,7 +1195,17 @@
    "fat": 14,
    "per": "serving",
    "count": 8
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "Refrigerate for up to 4 days",
+   "Freeze portions for up to 3 months",
+   "Flavour improves after 24 hours",
+   "Ideal for reheating on low heat"
+  ]
  },
  {
   "title": "Beef, Barley & Mushroom Stew",
@@ -1441,7 +1469,14 @@
    "fat": 11,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "Barley keeps absorbing liquid as it sits — add a splash of water or stock when reheating."
+  ]
  },
  {
   "title": "Beef, Red Lentil & Vegetable Cottage Pie Bowls",
@@ -1712,7 +1747,13 @@
    "fat": 17,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "freezes"
+  ],
+  "storage": [
+   "Peel the potatoes shortly before cooking (or keep them submerged in water in the fridge)."
+  ]
  },
  {
   "title": "Beefaroni",
@@ -2015,7 +2056,14 @@
    "fat": 24,
    "per": "serving",
    "count": 8
-  }
+  },
+  "diet": [
+   "quick"
+  ],
+  "storage": [
+   "Store leftovers in the fridge for 2–3 days.",
+   "Reheat with a splash of water or milk."
+  ]
  },
  {
   "title": "Butter Chicken-Style Chicken & Lentil Curry",
@@ -2283,7 +2331,14 @@
    "fat": 36,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "Freezes well."
+  ]
  },
  {
   "title": "Cajun Chicken, Bean & Rice Bowls",
@@ -2697,7 +2752,15 @@
    "fat": 6,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "Storage: refrigerate within 1 hour of cooking and eat within 3 days, or freeze in portions.",
+   "Reheat until steaming hot."
+  ]
  },
  {
   "title": "Cheeseburger Macaroni with Hidden Lentils",
@@ -2953,7 +3016,9 @@
    "fat": 27,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [],
+  "storage": []
  },
  {
   "title": "Chicken & Rice",
@@ -3167,7 +3232,11 @@
    "fat": 9,
    "per": "serving",
    "count": 6
-  }
+  },
+  "diet": [
+   "dairy-free"
+  ],
+  "storage": []
  },
  {
   "title": "Chicken & Vegetable Soup",
@@ -3467,7 +3536,17 @@
    "fat": 14,
    "per": "serving",
    "count": 8
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "Portion into 8 equal containers",
+   "Refrigerate 6 servings for the week",
+   "Freeze 2 servings for later use (e.g. Friday dinners)",
+   "Thickens slightly after chilling; thin when reheating"
+  ]
  },
  {
   "title": "Chicken, Chickpea & Edamame Biryani Bowls",
@@ -3769,7 +3848,12 @@
    "fat": 8,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": []
  },
  {
   "title": "Chicken, Lentil & Coconut Curry with Rice",
@@ -4036,7 +4120,12 @@
    "fat": 17,
    "per": "serving",
    "count": 8
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": []
  },
  {
   "title": "Chicken, Rice & Lentils",
@@ -4288,7 +4377,13 @@
    "fat": 16,
    "per": "serving",
    "count": 3
-  }
+  },
+  "diet": [
+   "freezes"
+  ],
+  "storage": [
+   "Leftovers reheat and freeze well."
+  ]
  },
  {
   "title": "Coconut Chicken, Potato & Chickpea Curry",
@@ -4563,7 +4658,12 @@
    "fat": 25,
    "per": "serving",
    "count": 3.5
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": []
  },
  {
   "title": "Filipino-Style Pork Adobo with Edamame",
@@ -4783,7 +4883,12 @@
    "fat": 12,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": []
  },
  {
   "title": "High-Protein Pasta Sauce (Beef or Lentil)",
@@ -5113,7 +5218,17 @@
    "fat": 30,
    "per": "serving",
    "count": 6
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "Reheats cleanly and pairs with fresh pasta",
+   "Portion sauce into 6 containers",
+   "Refrigerate up to 4 days or freeze individual portions",
+   "This sauce freezes well without texture loss."
+  ]
  },
  {
   "title": "Lentil Coconut Curry",
@@ -5407,7 +5522,18 @@
    "fat": 13,
    "per": "serving",
    "count": 6
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian",
+   "dairy-free"
+  ],
+  "storage": [
+   "Ideal for lunches and reheats well",
+   "All 6 servings: refrigerate",
+   "Best consumed within 4 days",
+   "Thickens further after chilling; thin with water when reheating"
+  ]
  },
  {
   "title": "Mac & Cheese with Vegetables",
@@ -5549,7 +5675,12 @@
    "fat": 19,
    "per": "serving",
    "count": 8
-  }
+  },
+  "diet": [
+   "vegetarian",
+   "quick"
+  ],
+  "storage": []
  },
  {
   "title": "Peanut Chicken & Sugar Snap Peas with Noodles",
@@ -5792,7 +5923,11 @@
    "fat": 12,
    "per": "serving",
    "count": 6
-  }
+  },
+  "diet": [
+   "dairy-free"
+  ],
+  "storage": []
  },
  {
   "title": "Pork Mince Congee with Edamame",
@@ -6042,7 +6177,14 @@
    "fat": 25,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "Congee thickens to a solid in the fridge; reheat with plenty of water."
+  ]
  },
  {
   "title": "Pork Mince Japanese Curry with Potato & Carrot",
@@ -6218,7 +6360,14 @@
    "fat": 21,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "Thickens a lot in the fridge; add water when reheating."
+  ]
  },
  {
   "title": "Pulled BBQ Chicken with Lentils",
@@ -6600,7 +6749,17 @@
    "fat": 8,
    "per": "serving",
    "count": 8
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "Remains moist and reheats well",
+   "6 servings: refrigerate for up to 4 days",
+   "2 servings: freeze and label “Week 2 BBQ Chicken – Fri Dinner”",
+   "Recipe freezes well with no texture loss."
+  ]
  },
  {
   "title": "Sausage & Rice",
@@ -6913,7 +7072,11 @@
    "fat": 21,
    "per": "serving",
    "count": 6
-  }
+  },
+  "diet": [
+   "dairy-free"
+  ],
+  "storage": []
  },
  {
   "title": "Sausage & Spinach Pasta",
@@ -7114,7 +7277,11 @@
    "fat": 20,
    "per": "serving",
    "count": 6
-  }
+  },
+  "diet": [
+   "dairy-free"
+  ],
+  "storage": []
  },
  {
   "title": "Stuffed Capsicum Soup",
@@ -7357,7 +7524,14 @@
    "fat": 17,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "The rice keeps absorbing liquid — add water or stock when reheating leftovers."
+  ]
  },
  {
   "title": "Teriyaki Chicken & Veg",
@@ -7658,7 +7832,16 @@
    "fat": 14,
    "per": "serving",
    "count": 6
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free",
+   "quick"
+  ],
+  "storage": [
+   "Refrigerate for up to 4 days",
+   "Freezes well for up to 3 months"
+  ]
  },
  {
   "title": "Thai Peanut Chicken",
@@ -8021,7 +8204,12 @@
    "fat": 39,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "dairy-free",
+   "quick"
+  ],
+  "storage": []
  },
  {
   "title": "Apple-Mustard Pork & Split-Pea Stew",
@@ -8307,7 +8495,14 @@
    "fat": 24,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "Split peas keep thickening as they sit, so add a splash of hot water when reheating."
+  ]
  },
  {
   "title": "Beef & Potato Stew over Rice",
@@ -8628,7 +8823,14 @@
    "fat": 13,
    "per": "serving",
    "count": 5.0
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "This dish freezes well and makes excellent leftovers."
+  ]
  },
  {
   "title": "Beef & Vegetable Soup",
@@ -8874,7 +9076,15 @@
    "fat": 7,
    "per": "serving",
    "count": 6
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "Tip: This is a great winter warmer and keeps extremely well in the fridge for 4–5 days.",
+   "Freeze any extra portions in individual containers."
+  ]
  },
  {
   "title": "Beef Mince & Yellow Split Pea Keema",
@@ -9145,7 +9355,12 @@
    "fat": 17,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": []
  },
  {
   "title": "Beef Mince Taco Filling (Freezer Batch)",
@@ -9483,7 +9698,16 @@
    "fat": 17,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "To freeze: cool quickly, portion into bags or containers and freeze for up to 3 months.",
+   "Thaw overnight in the fridge and reheat until steaming.",
+   "Leftovers make Beef & Black Bean Quesadillas or Freezer Burritos (both in Stovetop)."
+  ]
  },
  {
   "title": "Butter Chicken-Style Chicken & Lentil Curry",
@@ -9751,7 +9975,14 @@
    "fat": 32,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "Freezes well."
+  ]
  },
  {
   "title": "Chicken & Chickpea Stew",
@@ -9941,7 +10172,12 @@
    "fat": 27,
    "per": "serving",
    "count": 6
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": []
  },
  {
   "title": "Chicken & Yellow Split Pea Soup",
@@ -10201,7 +10437,14 @@
    "fat": 4,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "Thickens a lot in the fridge; loosen leftovers with water when reheating."
+  ]
  },
  {
   "title": "Chilli Con Carne with Red Lentils & Kidney Beans",
@@ -10522,7 +10765,14 @@
    "fat": 17,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "Freezes brilliantly — portion leftovers for nachos, jacket potatoes or burritos."
+  ]
  },
  {
   "title": "Coconut Chicken, Kumara & Chickpea Curry",
@@ -10781,7 +11031,12 @@
    "fat": 25,
    "per": "serving",
    "count": 3.5
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": []
  },
  {
   "title": "Honey Garlic Chicken",
@@ -10983,7 +11238,11 @@
    "fat": 14,
    "per": "serving",
    "count": 6
-  }
+  },
+  "diet": [
+   "dairy-free"
+  ],
+  "storage": []
  },
  {
   "title": "Honey-Mustard Chicken & White Bean Stew",
@@ -11247,7 +11506,12 @@
    "fat": 4,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": []
  },
  {
   "title": "Mexican Salsa Chicken",
@@ -11436,7 +11700,14 @@
    "fat": 14,
    "per": "serving",
    "count": 6
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "Leftovers keep in the fridge for 3–4 days or freeze for up to 3 months."
+  ]
  },
  {
   "title": "Mexican Shredded Chicken",
@@ -11717,7 +11988,14 @@
    "fat": 14,
    "per": "serving",
    "count": 5.0
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "Leftovers keep well in the fridge or freezer and are also great in quesadillas, burrito bowls, stuffed potatoes, or on rice."
+  ]
  },
  {
   "title": "Pork & Kumara Curry",
@@ -11933,7 +12211,12 @@
    "fat": 43,
    "per": "serving",
    "count": 6
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": []
  },
  {
   "title": "Pork & Lentil Bolognese",
@@ -12228,7 +12511,14 @@
    "fat": 21,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "Keeps well in the fridge for 4 days and freezes for up to 3 months – great for batch cooking."
+  ]
  },
  {
   "title": "Pork Mince, Barley & Vegetable Soup",
@@ -12496,7 +12786,15 @@
    "fat": 23,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "Add water when reheating.",
+   "Freezes well in portions."
+  ]
  },
  {
   "title": "Pulled Pork Wraps",
@@ -12691,7 +12989,14 @@
    "fat": 30,
    "per": "serving",
    "count": 6
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "Buy it on special and freeze — it slow cooks perfectly from thawed."
+  ]
  },
  {
   "title": "Satay Chicken & Red Lentil Curry",
@@ -12955,7 +13260,12 @@
    "fat": 24,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": []
  },
  {
   "title": "Savoury Mince with Barley & Veg",
@@ -13203,7 +13513,15 @@
    "fat": 16,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "Freezes well.",
+   "A great one to have in the freezer for nights when nobody wants to cook."
+  ]
  },
  {
   "title": "Smoky Chicken, Black Bean & Red Lentil Stew",
@@ -13530,7 +13848,15 @@
    "fat": 4,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free",
+   "leftovers"
+  ],
+  "storage": [
+   "The stew thickens again in the fridge, so loosen leftovers with a splash of water when reheating."
+  ]
  },
  {
   "title": "Beef & Broccoli Stir-Fry",
@@ -13747,7 +14073,11 @@
    "fat": 15,
    "per": "serving",
    "count": 6
-  }
+  },
+  "diet": [
+   "dairy-free"
+  ],
+  "storage": []
  },
  {
   "title": "Beef & Vegetable Chilli",
@@ -13989,7 +14319,14 @@
    "fat": 12,
    "per": "serving",
    "count": 6
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "Tip: This freezes brilliantly — make a double batch and freeze half in portions for a quick future dinner."
+  ]
  },
  {
   "title": "Beef Kofta with Couscous & Yoghurt",
@@ -14321,7 +14658,11 @@
    "fat": 20,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "freezes"
+  ],
+  "storage": []
  },
  {
   "title": "Beef Mince & Black Bean Quesadillas",
@@ -14551,7 +14892,11 @@
    "fat": 29,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "quick"
+  ],
+  "storage": []
  },
  {
   "title": "Beef Mince Stir-Fry",
@@ -14751,7 +15096,11 @@
    "fat": 14,
    "per": "serving",
    "count": 6
-  }
+  },
+  "diet": [
+   "dairy-free"
+  ],
+  "storage": []
  },
  {
   "title": "Beef Schnitzel Rolls",
@@ -14957,7 +15306,9 @@
    "fat": 17,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [],
+  "storage": []
  },
  {
   "title": "Burrito Bowls",
@@ -15090,7 +15441,12 @@
    "fat": 14,
    "per": "serving",
    "count": 2.5
-  }
+  },
+  "diet": [
+   "quick",
+   "leftovers"
+  ],
+  "storage": []
  },
  {
   "title": "Butter Chicken",
@@ -15383,7 +15739,11 @@
    "fat": 32,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "freezes"
+  ],
+  "storage": []
  },
  {
   "title": "Chicken & Veg Stir-Fry Bowl",
@@ -15653,7 +16013,12 @@
    "fat": 15,
    "per": "serving",
    "count": 2
-  }
+  },
+  "diet": [
+   "dairy-free",
+   "quick"
+  ],
+  "storage": []
  },
  {
   "title": "Chicken & Vegetable Stir-Fry",
@@ -15900,7 +16265,12 @@
    "fat": 11,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "dairy-free",
+   "quick"
+  ],
+  "storage": []
  },
  {
   "title": "Chicken or Falafel Wraps",
@@ -16050,7 +16420,11 @@
    "fat": 6,
    "per": "serving",
    "count": 2.5
-  }
+  },
+  "diet": [
+   "quick"
+  ],
+  "storage": []
  },
  {
   "title": "Chicken Pad Thai",
@@ -16284,7 +16658,12 @@
    "fat": 14,
    "per": "serving",
    "count": 2.5
-  }
+  },
+  "diet": [
+   "dairy-free",
+   "quick"
+  ],
+  "storage": []
  },
  {
   "title": "Chicken Shawarma Wraps",
@@ -16417,7 +16796,9 @@
    "fat": 14,
    "per": "serving",
    "count": 2.5
-  }
+  },
+  "diet": [],
+  "storage": []
  },
  {
   "title": "Chicken Tikka Masala",
@@ -16568,7 +16949,11 @@
    "fat": 5,
    "per": "serving",
    "count": 2.5
-  }
+  },
+  "diet": [
+   "freezes"
+  ],
+  "storage": []
  },
  {
   "title": "Chicken, Tomato & White Bean Pasta",
@@ -16816,7 +17201,13 @@
    "fat": 4,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "dairy-free"
+  ],
+  "storage": [
+   "Keeps well for lunches — add a splash of water when reheating."
+  ]
  },
  {
   "title": "Classic Spaghetti Bolognese",
@@ -17029,7 +17420,14 @@
    "fat": 19,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "itemize Freezes well."
+  ]
  },
  {
   "title": "Freezer Burritos with Beef, Beans & Rice",
@@ -17260,7 +17658,13 @@
    "fat": 30,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "freezes"
+  ],
+  "storage": [
+   "Reheat from frozen: unwrap, wrap in a damp paper towel and microwave for 2–3 minutes, turning halfway."
+  ]
  },
  {
   "title": "Gnocchi alla Sorrentina",
@@ -17486,7 +17890,13 @@
    "fat": 9,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "vegetarian"
+  ],
+  "storage": [
+   "Nowadays, fresh or packaged gnocchi are available in most supermarkets, both refrigerated and frozen."
+  ]
  },
  {
   "title": "Greek-Style Chicken & Chickpea Couscous Bowls",
@@ -17755,7 +18165,11 @@
    "fat": 8,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [],
+  "storage": [
+   "Keep the yoghurt sauce separate if packing leftovers, and add it after reheating."
+  ]
  },
  {
   "title": "Homemade Burgers & Fries",
@@ -18019,7 +18433,11 @@
    "fat": 42,
    "per": "serving",
    "count": 2
-  }
+  },
+  "diet": [
+   "dairy-free"
+  ],
+  "storage": []
  },
  {
   "title": "Homemade Sub Sandwiches",
@@ -18190,7 +18608,11 @@
    "fat": 7,
    "per": "serving",
    "count": 2.5
-  }
+  },
+  "diet": [
+   "quick"
+  ],
+  "storage": []
  },
  {
   "title": "Korean Bibimbap",
@@ -18326,7 +18748,12 @@
    "fat": 9,
    "per": "serving",
    "count": 2.5
-  }
+  },
+  "diet": [
+   "dairy-free",
+   "leftovers"
+  ],
+  "storage": []
  },
  {
   "title": "Korean-Style Steak Bowl",
@@ -18613,7 +19040,12 @@
    "fat": 30,
    "per": "serving",
    "count": 2
-  }
+  },
+  "diet": [
+   "dairy-free",
+   "leftovers"
+  ],
+  "storage": []
  },
  {
   "title": "Lean Sausage Ragu with Brown Rice",
@@ -18894,7 +19326,14 @@
    "fat": 23,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "Keeps 3–4 days in the fridge and freezes well."
+  ]
  },
  {
   "title": "Mapo Tofu with Pork Mince",
@@ -19125,7 +19564,12 @@
    "fat": 13,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "dairy-free",
+   "quick"
+  ],
+  "storage": []
  },
  {
   "title": "Old School Beef Tacos",
@@ -19495,7 +19939,11 @@
    "fat": 27,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "quick"
+  ],
+  "storage": []
  },
  {
   "title": "Pork & Lentil Bolognese",
@@ -19741,7 +20189,12 @@
    "fat": 14,
    "per": "serving",
    "count": 6
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": []
  },
  {
   "title": "Pork & Veg Dumplings",
@@ -19987,7 +20440,14 @@
    "fat": 23,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "To freeze: freeze on a lined tray so they don't touch, then bag."
+  ]
  },
  {
   "title": "Pork Fried Rice with Omelette",
@@ -20191,7 +20651,13 @@
    "fat": 17,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "dairy-free",
+   "quick",
+   "leftovers"
+  ],
+  "storage": []
  },
  {
   "title": "Pork Mince Dan Dan-Style Noodles",
@@ -20466,7 +20932,12 @@
    "fat": 32,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "dairy-free",
+   "quick"
+  ],
+  "storage": []
  },
  {
   "title": "Pork Mince Larb with Rice & Crunchy Veg",
@@ -20714,7 +21185,12 @@
    "fat": 24,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "dairy-free",
+   "quick"
+  ],
+  "storage": []
  },
  {
   "title": "Pork Mince Lettuce Cups (San Choy Bow)",
@@ -20945,7 +21421,11 @@
    "fat": 18,
    "per": "serving",
    "count": 6
-  }
+  },
+  "diet": [
+   "dairy-free"
+  ],
+  "storage": []
  },
  {
   "title": "Quick Ramen Bowls",
@@ -21077,7 +21557,13 @@
    "fat": 11,
    "per": "serving",
    "count": 2.5
-  }
+  },
+  "diet": [
+   "dairy-free",
+   "quick",
+   "leftovers"
+  ],
+  "storage": []
  },
  {
   "title": "Rigatoni all’Amatriciana",
@@ -21289,7 +21775,9 @@
    "fat": 21,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [],
+  "storage": []
  },
  {
   "title": "Sausage Ragu",
@@ -21566,7 +22054,12 @@
    "fat": 24,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": []
  },
  {
   "title": "Sesame Beef, Edamame & Vegetable Noodles",
@@ -21803,7 +22296,12 @@
    "fat": 22,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "dairy-free",
+   "quick"
+  ],
+  "storage": []
  },
  {
   "title": "Sloppy Joes with Lentils",
@@ -22053,7 +22551,14 @@
    "fat": 19,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "The filling freezes well — reheat and serve on buns, toast or jacket potatoes."
+  ]
  },
  {
   "title": "Spicy Arrabbiata-Style Mince Pasta",
@@ -22363,7 +22868,12 @@
    "fat": 34,
    "per": "serving",
    "count": 2
-  }
+  },
+  "diet": [
+   "dairy-free",
+   "quick"
+  ],
+  "storage": []
  },
  {
   "title": "Spicy Beef Bolognese with Rigatoni",
@@ -22663,7 +23173,11 @@
    "fat": 24,
    "per": "serving",
    "count": 3.5
-  }
+  },
+  "diet": [
+   "freezes"
+  ],
+  "storage": []
  },
  {
   "title": "Sweet & Sour Chicken",
@@ -22795,7 +23309,11 @@
    "fat": 3,
    "per": "serving",
    "count": 2.5
-  }
+  },
+  "diet": [
+   "dairy-free"
+  ],
+  "storage": []
  },
  {
   "title": "Thai Green Chicken Curry",
@@ -23054,7 +23572,12 @@
    "fat": 33,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": []
  },
  {
   "title": "Vietnamese Banh Mi",
@@ -23183,7 +23706,11 @@
    "fat": 7,
    "per": "serving",
    "count": 2.5
-  }
+  },
+  "diet": [
+   "dairy-free"
+  ],
+  "storage": []
  },
  {
   "title": "Beef Mince & Lentil Shepherd's Pie",
@@ -23402,7 +23929,12 @@
    "fat": 11,
    "per": "serving",
    "count": 6
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": []
  },
  {
   "title": "Beef Mince Stuffed Capsicums",
@@ -23628,7 +24160,13 @@
    "fat": 16,
    "per": "serving",
    "count": 6
-  }
+  },
+  "diet": [
+   "leftovers"
+  ],
+  "storage": [
+   "Leftovers reheat well in the microwave for 2 minutes."
+  ]
  },
  {
   "title": "Chicken & Vegetable Bake",
@@ -23873,7 +24411,11 @@
    "fat": 21,
    "per": "serving",
    "count": 6
-  }
+  },
+  "diet": [
+   "dairy-free"
+  ],
+  "storage": []
  },
  {
   "title": "Classic Bolognese Lasagne",
@@ -24160,7 +24702,11 @@
    "fat": 16,
    "per": "serving",
    "count": 7.0
-  }
+  },
+  "diet": [
+   "freezes"
+  ],
+  "storage": []
  },
  {
   "title": "Crunchy Crumbed Chicken Drumsticks",
@@ -24383,7 +24929,13 @@
    "fat": 25,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "dairy-free"
+  ],
+  "storage": [
+   "Leftovers keep 3 days in fridge."
+  ]
  },
  {
   "title": "DIY Pizzas",
@@ -24610,7 +25162,12 @@
    "fat": 39,
    "per": "serving",
    "count": 2.5
-  }
+  },
+  "diet": [
+   "vegetarian",
+   "quick"
+  ],
+  "storage": []
  },
  {
   "title": "Lemon Herb Salmon Tray Bake",
@@ -24819,7 +25376,11 @@
    "fat": 24,
    "per": "serving",
    "count": 6
-  }
+  },
+  "diet": [
+   "dairy-free"
+  ],
+  "storage": []
  },
  {
   "title": "Loaded Beef Nachos",
@@ -25094,7 +25655,13 @@
    "fat": 56,
    "per": "serving",
    "count": 3.5
-  }
+  },
+  "diet": [
+   "quick"
+  ],
+  "storage": [
+   "itemize Makes a big batch of mince — leftovers can be stored in the fridge or freezer for later."
+  ]
  },
  {
   "title": "Loaded Jacket Potatoes",
@@ -25211,7 +25778,11 @@
    "fat": 12,
    "per": "serving",
    "count": 2.5
-  }
+  },
+  "diet": [
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Meatloaf Muffins",
@@ -25442,7 +26013,14 @@
    "fat": 18,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "Freeze cooked muffins; reheat in the microwave for 1–2 minutes."
+  ]
  },
  {
   "title": "Mince & Cheese Pie Bake",
@@ -25694,7 +26272,11 @@
    "fat": 33,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "freezes"
+  ],
+  "storage": []
  },
  {
   "title": "Sausage Rolls with Grated Veg",
@@ -25921,7 +26503,14 @@
    "fat": 54,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "Freeze unbaked on a tray, then bag."
+  ]
  },
  {
   "title": "Rustic Chickpea & Rocket Salad with Mustard-Garlic Vinaigrette",
@@ -26153,7 +26742,13 @@
    "fat": 25,
    "per": "serving",
    "count": 2
-  }
+  },
+  "diet": [
+   "vegetarian",
+   "dairy-free",
+   "quick"
+  ],
+  "storage": []
  },
  {
   "title": "Cajun Rice",
@@ -26393,7 +26988,12 @@
    "fat": 5,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "dairy-free",
+   "quick"
+  ],
+  "storage": []
  },
  {
   "title": "Coconut Rice",
@@ -26517,7 +27117,13 @@
    "fat": 17,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "vegetarian",
+   "dairy-free",
+   "quick"
+  ],
+  "storage": []
  },
  {
   "title": "Coriander Lime Rice",
@@ -26651,7 +27257,16 @@
    "fat": 4,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "vegetarian",
+   "dairy-free",
+   "quick"
+  ],
+  "storage": [
+   "Cool leftover rice quickly and refrigerate within an hour.",
+   "Reheat until steaming hot."
+  ]
  },
  {
   "title": "Egg Fried Rice",
@@ -26839,7 +27454,16 @@
    "fat": 9,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "vegetarian",
+   "dairy-free",
+   "quick",
+   "leftovers"
+  ],
+  "storage": [
+   "Cool cooked rice quickly, keep it in the fridge, and use it within a day."
+  ]
  },
  {
   "title": "Garlic Butter Rice",
@@ -26985,7 +27609,11 @@
    "fat": 5,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "quick"
+  ],
+  "storage": []
  },
  {
   "title": "Herbed Couscous",
@@ -27149,7 +27777,13 @@
    "fat": 4,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "vegetarian",
+   "dairy-free",
+   "quick"
+  ],
+  "storage": []
  },
  {
   "title": "Lemon & Herb Quinoa",
@@ -27322,7 +27956,15 @@
    "fat": 9,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "vegetarian",
+   "dairy-free",
+   "quick"
+  ],
+  "storage": [
+   "Keeps 4 days in the fridge, so it's good for packed lunches."
+  ]
  },
  {
   "title": "Mexican Tomato Rice",
@@ -27536,7 +28178,12 @@
    "fat": 4,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "dairy-free",
+   "quick"
+  ],
+  "storage": []
  },
  {
   "title": "Rice with Peas & Parmesan",
@@ -27683,7 +28330,11 @@
    "fat": 6,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "quick"
+  ],
+  "storage": []
  },
  {
   "title": "Turmeric Rice with Peas",
@@ -27862,7 +28513,13 @@
    "fat": 4,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "vegetarian",
+   "dairy-free",
+   "quick"
+  ],
+  "storage": []
  },
  {
   "title": "Asparagus with Capers and Parsley Mayonnaise",
@@ -28028,7 +28685,13 @@
    "fat": 13,
    "per": "serving",
    "count": 2.5
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian",
+   "dairy-free"
+  ],
+  "storage": []
  },
  {
   "title": "Cauliflower Cheese",
@@ -28202,7 +28865,11 @@
    "fat": 10,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Crispy Smashed Potatoes",
@@ -28348,7 +29015,12 @@
    "fat": 7,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "vegetarian",
+   "dairy-free"
+  ],
+  "storage": []
  },
  {
   "title": "Garlic Green Beans",
@@ -28494,7 +29166,13 @@
    "fat": 4,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "vegetarian",
+   "dairy-free",
+   "quick"
+  ],
+  "storage": []
  },
  {
   "title": "Kumara Mash",
@@ -28640,7 +29318,12 @@
    "fat": 5,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "vegetarian",
+   "quick"
+  ],
+  "storage": []
  },
  {
   "title": "Kumara Wedges with Aioli",
@@ -28799,7 +29482,12 @@
    "fat": 17,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "vegetarian",
+   "dairy-free"
+  ],
+  "storage": []
  },
  {
   "title": "Roast Vegetables",
@@ -28994,7 +29682,12 @@
    "fat": 7,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "vegetarian",
+   "dairy-free"
+  ],
+  "storage": []
  },
  {
   "title": "Sesame Asian Greens",
@@ -29164,7 +29857,12 @@
    "fat": 3,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "dairy-free",
+   "quick"
+  ],
+  "storage": []
  },
  {
   "title": "Banana Protein Pancakes",
@@ -29363,7 +30061,12 @@
    "fat": 3,
    "per": "serving",
    "count": 9
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Breakfast Burritos",
@@ -29589,7 +30292,14 @@
    "fat": 21,
    "per": "serving",
    "count": 6
-  }
+  },
+  "diet": [
+   "freezes"
+  ],
+  "storage": [
+   "Reheat from frozen: Remove foil, wrap in a damp paper towel, microwave for 2–3 minutes.",
+   "Or reheat in foil in oven at 180°C for 15–20 minutes for a crispier result."
+  ]
  },
  {
   "title": "Egg Muffins",
@@ -29761,7 +30471,13 @@
   "tags": [
    "pork"
   ],
-  "nutrition": null
+  "nutrition": null,
+  "diet": [
+   "freezes"
+  ],
+  "storage": [
+   "Reheat: 60–90 seconds in the microwave."
+  ]
  },
  {
   "title": "Frittata Slices",
@@ -29973,7 +30689,14 @@
    "fat": 10,
    "per": "serving",
    "count": 8
-  }
+  },
+  "diet": [
+   "freezes",
+   "leftovers"
+  ],
+  "storage": [
+   "Reheat: 60–90 seconds in the microwave or a few minutes in a dry frying pan."
+  ]
  },
  {
   "title": "High-Protein Chia Pudding",
@@ -30146,7 +30869,11 @@
    "fat": 5,
    "per": "serving",
    "count": 5
-  }
+  },
+  "diet": [
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Overnight Oats",
@@ -30316,7 +31043,13 @@
    "fat": 5,
    "per": "serving",
    "count": 5
-  }
+  },
+  "diet": [
+   "vegetarian"
+  ],
+  "storage": [
+   "Tip: Keeps in the fridge for up to 5 days."
+  ]
  },
  {
   "title": "Savoury Egg & Rice Bowl",
@@ -30493,7 +31226,12 @@
    "pork",
    "chicken"
   ],
-  "nutrition": null
+  "nutrition": null,
+  "diet": [
+   "dairy-free",
+   "leftovers"
+  ],
+  "storage": []
  },
  {
   "title": "Boiled Eggs & Crackers",
@@ -30621,7 +31359,14 @@
    "fat": 20,
    "per": "serving",
    "count": 1
-  }
+  },
+  "diet": [
+   "vegetarian",
+   "dairy-free"
+  ],
+  "storage": [
+   "Tip: Batch boil 6–8 eggs at once and keep them unpeeled in the fridge for up to a week — perfect grab-and-go snack."
+  ]
  },
  {
   "title": "Cheese & Marmite Scrolls",
@@ -30814,7 +31559,14 @@
    "fat": 12,
    "per": "serving",
    "count": 12
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian"
+  ],
+  "storage": [
+   "Freeze in bags and pull out for lunches; they thaw by morning tea."
+  ]
  },
  {
   "title": "Cottage Cheese & Tomato Toast",
@@ -30952,7 +31704,11 @@
    "fat": 6,
    "per": "serving",
    "count": 1
-  }
+  },
+  "diet": [
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Crunchy Spiced Roasted Chickpeas",
@@ -31117,7 +31873,14 @@
    "fat": 6,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "vegetarian",
+   "dairy-free"
+  ],
+  "storage": [
+   "They soften after a couple of days in an airtight container; re-crisp at 180°C for 5 minutes."
+  ]
  },
  {
   "title": "Devilled Eggs",
@@ -31272,7 +32035,14 @@
    "fat": 15,
    "per": "serving",
    "count": 3
-  }
+  },
+  "diet": [
+   "vegetarian",
+   "quick"
+  ],
+  "storage": [
+   "Keep in a covered container in the fridge for up to 2 days."
+  ]
  },
  {
   "title": "Edamame with Sea Salt",
@@ -31379,7 +32149,14 @@
    "fat": 10,
    "per": "serving",
    "count": 1
-  }
+  },
+  "diet": [
+   "vegetarian",
+   "dairy-free"
+  ],
+  "storage": [
+   "Frozen bags are available cheaply at Pak'nSave and keep in the freezer for months."
+  ]
  },
  {
   "title": "Greek Yoghurt & Berry Bowl",
@@ -31490,7 +32267,11 @@
    "fat": 12,
    "per": "serving",
    "count": 1
-  }
+  },
+  "diet": [
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Homemade Hummus",
@@ -31659,7 +32440,15 @@
    "fat": 8,
    "per": "serving",
    "count": 6
-  }
+  },
+  "diet": [
+   "vegetarian",
+   "dairy-free",
+   "quick"
+  ],
+  "storage": [
+   "Keeps 4–5 days in a sealed container in the fridge."
+  ]
  },
  {
   "title": "Homemade Protein Balls",
@@ -31815,7 +32604,12 @@
    "fat": 5,
    "per": "serving",
    "count": 20
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Hummus & Vegetable Sticks",
@@ -31939,7 +32733,14 @@
    "fat": 30,
    "per": "serving",
    "count": 1
-  }
+  },
+  "diet": [
+   "vegetarian",
+   "dairy-free"
+  ],
+  "storage": [
+   "Tip: Prep a container of cut vegetables at the start of the week and keep in the fridge — it removes all friction from choosing this as a snack."
+  ]
  },
  {
   "title": "Microwave Mug Omelette",
@@ -32094,7 +32895,12 @@
    "fat": 17,
    "per": "serving",
    "count": 1
-  }
+  },
+  "diet": [
+   "quick",
+   "leftovers"
+  ],
+  "storage": []
  },
  {
   "title": "Oven Beef Jerky",
@@ -32287,7 +33093,13 @@
    "fat": 3,
    "per": "serving",
    "count": 8
-  }
+  },
+  "diet": [
+   "dairy-free"
+  ],
+  "storage": [
+   "Store in an airtight container in the fridge for up to 2 weeks."
+  ]
  },
  {
   "title": "Parmesan & Garlic Popcorn",
@@ -32430,7 +33242,12 @@
    "fat": 11,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "vegetarian",
+   "quick"
+  ],
+  "storage": []
  },
  {
   "title": "Peanut Butter & Banana Rice Cakes",
@@ -32538,7 +33355,13 @@
    "fat": 17,
    "per": "serving",
    "count": 1
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian",
+   "dairy-free"
+  ],
+  "storage": []
  },
  {
   "title": "Pork Mince Rice Paper Rolls",
@@ -32811,7 +33634,12 @@
    "fat": 23,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "dairy-free",
+   "quick"
+  ],
+  "storage": []
  },
  {
   "title": "Tuna & Crackers",
@@ -32977,7 +33805,11 @@
    "fat": 17,
    "per": "serving",
    "count": 1
-  }
+  },
+  "diet": [
+   "dairy-free"
+  ],
+  "storage": []
  },
  {
   "title": "Tuna & Sweetcorn Fritters",
@@ -33186,7 +34018,15 @@
    "fat": 14,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "freezes",
+   "quick"
+  ],
+  "storage": [
+   "Freeze cooked fritters with baking paper between them.",
+   "Reheat in a frying pan or the microwave."
+  ]
  },
  {
   "title": "Tzatziki with Baked Pita Chips",
@@ -33377,7 +34217,15 @@
    "fat": 7,
    "per": "serving",
    "count": 4
-  }
+  },
+  "diet": [
+   "vegetarian",
+   "quick"
+  ],
+  "storage": [
+   "Tzatziki keeps 3 days in the fridge and goes well with Beef Kofta or Greek-Style Chicken Bowls.",
+   "Pita chips keep a week in an airtight container."
+  ]
  },
  {
   "title": "Berry & Oat Power Shake",
@@ -33518,7 +34366,11 @@
    "fat": 24,
    "per": "serving",
    "count": 1
-  }
+  },
+  "diet": [
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Classic Chocolate Peanut Butter Shake",
@@ -33646,7 +34498,13 @@
    "fat": 20,
    "per": "serving",
    "count": 1
-  }
+  },
+  "diet": [
+   "vegetarian"
+  ],
+  "storage": [
+   "Peel and freeze overripe bananas in a zip-lock bag — they last months and are perfect for shakes."
+  ]
  },
  {
   "title": "Green Spinach & Banana Shake",
@@ -33787,7 +34645,11 @@
    "fat": 14,
    "per": "serving",
    "count": 1
-  }
+  },
+  "diet": [
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Mango & Coconut Tropical Shake",
@@ -33906,7 +34768,11 @@
    "fat": 36,
    "per": "serving",
    "count": 1
-  }
+  },
+  "diet": [
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Vanilla Cinnamon Shake",
@@ -34034,7 +34900,11 @@
    "fat": 12,
    "per": "serving",
    "count": 1
-  }
+  },
+  "diet": [
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Baked Cinnamon Apples",
@@ -34186,7 +35056,11 @@
    }
   ],
   "tags": [],
-  "nutrition": null
+  "nutrition": null,
+  "diet": [
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Banana Nice Cream",
@@ -34327,7 +35201,14 @@
    }
   ],
   "tags": [],
-  "nutrition": null
+  "nutrition": null,
+  "diet": [
+   "freezes",
+   "vegetarian"
+  ],
+  "storage": [
+   "Keep a bag of frozen bananas in the freezer at all times for both shakes and this dessert."
+  ]
  },
  {
   "title": "Chocolate Protein Mug Cake",
@@ -34489,7 +35370,12 @@
    }
   ],
   "tags": [],
-  "nutrition": null
+  "nutrition": null,
+  "diet": [
+   "freezes",
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Chocolate Self-Saucing Pudding",
@@ -34697,7 +35583,11 @@
    "fat": 10,
    "per": "serving",
    "count": 6
-  }
+  },
+  "diet": [
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Feijoa & Apple Crumble",
@@ -34902,7 +35792,11 @@
    "fat": 15,
    "per": "serving",
    "count": 6
-  }
+  },
+  "diet": [
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Frozen Yoghurt Bark",
@@ -35045,7 +35939,14 @@
    "fat": 4,
    "per": "serving",
    "count": 8
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian"
+  ],
+  "storage": [
+   "Tip: Keeps in the freezer for up to 2 months."
+  ]
  },
  {
   "title": "No-Bake Chocolate Oat Cookies",
@@ -35217,7 +36118,11 @@
    "fat": 5,
    "per": "serving",
    "count": 18
-  }
+  },
+  "diet": [
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Pavlova",
@@ -35397,7 +36302,13 @@
    "fat": 16,
    "per": "serving",
    "count": 8
-  }
+  },
+  "diet": [
+   "vegetarian"
+  ],
+  "storage": [
+   "An un-topped pavlova keeps in an airtight container for 2–3 days."
+  ]
  },
  {
   "title": "Sticky Date Pudding",
@@ -35605,7 +36516,16 @@
    "fat": 24,
    "per": "serving",
    "count": 8
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian"
+  ],
+  "storage": [
+   "The sauce makes plenty — leftovers keep in the fridge for a week.",
+   "The pudding freezes well in portions.",
+   "Reheat a square in the microwave and pour over warm sauce."
+  ]
  },
  {
   "title": "Afghan Biscuits",
@@ -35813,7 +36733,12 @@
    "fat": 7,
    "per": "serving",
    "count": 24
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "ANZAC Biscuits",
@@ -35976,7 +36901,13 @@
    "fat": 5,
    "per": "serving",
    "count": 18
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian",
+   "quick"
+  ],
+  "storage": []
  },
  {
   "title": "Apple & Feijoa Crumble Muffins",
@@ -36232,7 +37163,12 @@
    "fat": 11,
    "per": "serving",
    "count": 12
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Apple Cinnamon Muffins",
@@ -36462,7 +37398,12 @@
    "fat": 8,
    "per": "serving",
    "count": 12
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Bacon, Corn & Cheddar Muffins",
@@ -36646,7 +37587,13 @@
    "fat": 7,
    "per": "serving",
    "count": 12
-  }
+  },
+  "diet": [
+   "freezes"
+  ],
+  "storage": [
+   "They freeze well — reheat for 20–30 seconds in the microwave."
+  ]
  },
  {
   "title": "Banana Bread",
@@ -36828,7 +37775,15 @@
    "fat": 7,
    "per": "slice",
    "count": 10
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian"
+  ],
+  "storage": [
+   "Freeze overripe bananas in their skins and thaw them for this.",
+   "Slices freeze well — toast them straight from frozen."
+  ]
  },
  {
   "title": "Banana Chocolate Chip Muffins",
@@ -37013,7 +37968,15 @@
    "fat": 6,
    "per": "serving",
    "count": 12
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian",
+   "quick"
+  ],
+  "storage": [
+   "Muffins keep 5–7 days in an airtight container or can be frozen for up to 3 months."
+  ]
  },
  {
   "title": "Blueberry Muffins",
@@ -37211,7 +38174,12 @@
    "fat": 6,
    "per": "serving",
    "count": 12
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Caramelised Onion & Cheddar Scones",
@@ -37412,7 +38380,12 @@
    "fat": 8,
    "per": "serving",
    "count": 11.0
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Carrot Cake Muffins with Cream Cheese Drizzle",
@@ -37720,7 +38693,15 @@
    "fat": 13,
    "per": "serving",
    "count": 12
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian"
+  ],
+  "storage": [
+   "Store iced muffins in the fridge because of the cream cheese.",
+   "Un-iced muffins freeze well — drizzle after thawing."
+  ]
  },
  {
   "title": "Cheese Scones",
@@ -37892,7 +38873,13 @@
    "fat": 7,
    "per": "serving",
    "count": 12
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian",
+   "quick"
+  ],
+  "storage": []
  },
  {
   "title": "Cheesy Garlic Pull-Apart Bread",
@@ -38025,7 +39012,12 @@
    "fat": 16,
    "per": "serving",
    "count": 6
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Chocolate Brownies",
@@ -38207,7 +39199,12 @@
    "fat": 14,
    "per": "serving",
    "count": 16
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Chocolate Muffins",
@@ -38405,7 +39402,12 @@
    "fat": 13,
    "per": "serving",
    "count": 12
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Corn Muffins",
@@ -38561,7 +39563,13 @@
    "fat": 2,
    "per": "serving",
    "count": 13.5
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian",
+   "quick"
+  ],
+  "storage": []
  },
  {
   "title": "Courgette & Parmesan Muffins",
@@ -38740,7 +39748,12 @@
    "fat": 9,
    "per": "serving",
    "count": 12
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Crunchy Lemon Poppyseed Muffins",
@@ -38918,7 +39931,15 @@
    "fat": 9,
    "per": "serving",
    "count": 12
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian",
+   "quick"
+  ],
+  "storage": [
+   "Best enjoyed on the day of baking, but they can be stored in an airtight container for 2–3 days."
+  ]
  },
  {
   "title": "Date Scones",
@@ -39100,7 +40121,13 @@
    "fat": 7,
    "per": "serving",
    "count": 12
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian",
+   "quick"
+  ],
+  "storage": []
  },
  {
   "title": "Feijoa Muffins",
@@ -39288,7 +40315,15 @@
    "fat": 7,
    "per": "serving",
    "count": 12
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian",
+   "quick"
+  ],
+  "storage": [
+   "You can freeze them for up to 3 months."
+  ]
  },
  {
   "title": "Garlic Butter Naan (Yeasted)",
@@ -39477,7 +40512,11 @@
    "fat": 9,
    "per": "serving",
    "count": 6
-  }
+  },
+  "diet": [
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Ginger Crunch",
@@ -39668,7 +40707,11 @@
    "fat": 7,
    "per": "serving",
    "count": 24
-  }
+  },
+  "diet": [
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Ham & Cheese Breakfast Muffins",
@@ -39846,7 +40889,14 @@
    "fat": 10,
    "per": "serving",
    "count": 12
-  }
+  },
+  "diet": [
+   "freezes",
+   "quick"
+  ],
+  "storage": [
+   "Freeze, then microwave for 30 seconds from frozen."
+  ]
  },
  {
   "title": "Harry’s Favourite Chocolate Cake",
@@ -40090,7 +41140,12 @@
    "fat": 11,
    "per": "serving",
    "count": 11.0
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Lemon Muffins",
@@ -40281,7 +41336,13 @@
    "fat": 10,
    "per": "serving",
    "count": 12
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian",
+   "quick"
+  ],
+  "storage": []
  },
  {
   "title": "Louise Slice",
@@ -40488,7 +41549,12 @@
    "fat": 8,
    "per": "serving",
    "count": 24
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "No-Knead Overnight Bread",
@@ -40599,7 +41665,13 @@
    "fat": 1,
    "per": "slice",
    "count": 12
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian",
+   "dairy-free"
+  ],
+  "storage": []
  },
  {
   "title": "Passionfruit & White Chocolate Muffins",
@@ -40826,7 +41898,12 @@
    "fat": 11,
    "per": "serving",
    "count": 12
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Raspberry & White Chocolate Muffins",
@@ -40995,7 +42072,13 @@
    "fat": 11,
    "per": "serving",
    "count": 12
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian",
+   "quick"
+  ],
+  "storage": []
  },
  {
   "title": "Spinach & Feta Muffins",
@@ -41196,7 +42279,13 @@
    "fat": 5,
    "per": "serving",
    "count": 12
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian",
+   "quick"
+  ],
+  "storage": []
  },
  {
   "title": "Yoghurt Naan Bread",
@@ -41329,7 +42418,13 @@
    "fat": 6,
    "per": "serving",
    "count": 6
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian",
+   "quick"
+  ],
+  "storage": []
  },
  {
   "title": "Brioche",
@@ -41505,7 +42600,11 @@
    "fat": 10,
    "per": "slice",
    "count": 12
-  }
+  },
+  "diet": [
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Cheese & Mustard Loaf",
@@ -41685,7 +42784,12 @@
    "fat": 5,
    "per": "slice",
    "count": 12
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Date & Walnut Loaf",
@@ -41871,7 +42975,12 @@
    "fat": 5,
    "per": "slice",
    "count": 12
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "French Loaf",
@@ -41992,7 +43101,12 @@
    "fat": 1,
    "per": "slice",
    "count": 12
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Garlic Herb Loaf",
@@ -42159,7 +43273,12 @@
    "fat": 3,
    "per": "slice",
    "count": 12
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Half-and-Half Wholemeal Loaf",
@@ -42316,7 +43435,12 @@
    "fat": 3,
    "per": "slice",
    "count": 12
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Kumara Bread",
@@ -42476,7 +43600,12 @@
    "fat": 2,
    "per": "slice",
    "count": 12
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Mexican Chilli Loaf",
@@ -42682,7 +43811,12 @@
    "fat": 3,
    "per": "slice",
    "count": 12
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Mixed Grain Bread",
@@ -42907,7 +44041,12 @@
    "fat": 4,
    "per": "slice",
    "count": 12
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Soft Sandwich Bread",
@@ -43051,7 +44190,12 @@
    "fat": 1,
    "per": "slice",
    "count": 12
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Spicy Fruit Loaf",
@@ -43256,7 +44400,12 @@
    "fat": 7,
    "per": "slice",
    "count": 12
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "White Loaf",
@@ -43400,7 +44549,12 @@
    "fat": 2,
    "per": "slice",
    "count": 12
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Bagels",
@@ -43576,7 +44730,11 @@
    "fat": 3,
    "per": "serving",
    "count": 14.0
-  }
+  },
+  "diet": [
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Bread Maker Pizza Dough",
@@ -43755,7 +44913,12 @@
    "fat": 12,
    "per": "serving",
    "count": 6
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Bread Rolls",
@@ -43931,7 +45094,12 @@
    "fat": 5,
    "per": "serving",
    "count": 12
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Cinnamon Tea Ring",
@@ -44155,7 +45323,11 @@
    "fat": 6,
    "per": "slice",
    "count": 11.0
-  }
+  },
+  "diet": [
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Focaccia",
@@ -44347,7 +45519,11 @@
    "fat": 6,
    "per": "slice",
    "count": 8
-  }
+  },
+  "diet": [
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Hot Cross Buns",
@@ -44614,7 +45790,12 @@
    "fat": 10,
    "per": "serving",
    "count": 11.0
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian"
+  ],
+  "storage": []
  },
  {
   "title": "Banana Yoghurt Tea Bread",
@@ -44792,6 +45973,11 @@
    "fat": 5,
    "per": "slice",
    "count": 12
-  }
+  },
+  "diet": [
+   "freezes",
+   "vegetarian"
+  ],
+  "storage": []
  }
 ]

@@ -100,11 +100,26 @@ each recipe's ingredients (`planner/nutrition.py` holds the per-100 g values
 and typical weights, such as one onion or a cup of flour). They show on every
 recipe in the planner, power the "30 g+ protein" filter and the weekly totals,
 and appear under Servings/Time in the PDF books via the generated
-`nutrition.tex`. A recipe's own `
+`recipe_info.tex`. A recipe's own `
 utritiontable` takes priority. Estimates
 are for comparing recipes, so expect them to be within about 10-15%. If a new
 ingredient isn't in `nutrition.py` it's simply left out, so add it there when
 you add recipes with something unusual.
+
+### Tags and storage notes
+
+Each recipe also gets tags for the planner's filters and the books:
+**Freezer-friendly**, **Vegetarian**, **Dairy-free**, **Under 30 min** and
+**Uses leftovers**. They're worked out automatically from the ingredients,
+time and notes (see `diet_tags` in `planner/build.py`). To correct one, add a
+comment line anywhere in the recipe file:
+
+```latex
+% tags: +freezes -vegetarian
+```
+
+The planner also shows a **Storage** box on each recipe, pulled from the
+fridge, freezer and reheating advice in its notes.
 
 ## Website
 
