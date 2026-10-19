@@ -138,6 +138,15 @@ favourites (3×) and well-rated recipes (4★ 2×, 5★ 3×), rarely pick 1-2★
 and skip anything cooked in the last 28 days or planned in the last four
 weeks.
 
+### Cooking mode
+
+**Start cooking** on any recipe opens a full-screen view: a "Get ready"
+ingredient checklist, then one step at a time in large text with the
+ingredients that step uses (at the chosen scale). Swipe, tap Next/Back or use
+the arrow keys. Steps that mention a time get a one-tap timer that beeps and
+vibrates, and the screen stays on while cooking mode is open (on browsers that
+support it). Timers stop if the app is closed.
+
 ### Sharing between people
 
 With Firebase set up, a **Share** button appears in the planner's header. It
