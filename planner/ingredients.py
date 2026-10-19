@@ -267,6 +267,7 @@ CANON = [
     (r"lemon", "lemon", "Lemons", VEG),
     (r"orange", "orange", "Oranges", VEG),
     (r"\blimes?\b", "lime", "Limes", VEG),
+    (r"pineapple", "pineapple", "Pineapple (canned)", CANS),
     (r"apple", "apple", "Apples", VEG),
     (r"banana", "banana", "Bananas", VEG),
     (r"feijoa", "feijoa", "Feijoas", VEG),

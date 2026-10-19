@@ -13,6 +13,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from ingredients import parse as parse_ingredient  # noqa: E402
+from nutrition import estimate  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 HERE = Path(__file__).resolve().parent
@@ -240,7 +241,10 @@ def parse_recipe(path):
     (title, servings, time), j = args(src, m.end(), 3)
     end = src.rindex("\\end{recipebox}")
     intro, sections = parse_body(src[j:end])
+    book = re.search(r"\\nutritiontable\{([\d.]+)\}\{([\d.]+)\}\{([\d.]+)\}", src)
     return {
+        "texTitle": title,
+        "bookNutrition": book and [float(x) for x in book.groups()],
         "title": tex(title),
         "servings": tex(servings),
         "time": tex(time),
@@ -346,12 +350,34 @@ def tags(recipe):
     return found
 
 
+def nutrition(recipe, tex_title, book):
+    """Per-serving estimate, using the recipe's own \\nutritiontable where it has one."""
+    est = estimate(recipe["shop"], recipe["servings"])
+    if not est:
+        return None
+    est.pop("missing")
+    if book:
+        est.update(kcal=round(book[0]), protein=round(book[1]), fat=round(book[2]))
+    return est
+
+
+def nutrition_tex(rows):
+    """nutrition.tex: one \\nutri{title}{line} per recipe, read by the books."""
+    out = ["% Written by planner/build.py from each recipe's ingredients. Don't edit by hand."]
+    for tex_title, n in rows:
+        out.append(
+            f"\\nutri{{{tex_title}}}{{Per {n['per']} (estimate): {n['kcal']} kcal"
+            f" \\textbullet{{}} {n['protein']}\\,g protein \\textbullet{{}} {n['carbs']}\\,g carbs"
+            f" \\textbullet{{}} {n['fat']}\\,g fat}}")
+    return "\n".join(out) + "\n"
+
+
 # ─── Build ──────────────────────────────────────────────────────────────────
 
 
 def main():
     main_tex = (ROOT / "main.tex").read_text(encoding="utf-8")
-    recipes = []
+    recipes, nutri_rows = [], []
     chapter = group = None
     for line in main_tex.splitlines():
         cm = re.match(r"\\chapter\{(.*)\}", line)
@@ -375,7 +401,12 @@ def main():
             r["ingredients"] = ingredient_lines(r)
             r["shop"] = shop_items(r)
             r["tags"] = tags(r)
+            tex_title, book = r.pop("texTitle"), r.pop("bookNutrition")
+            r["nutrition"] = nutrition(r, tex_title, book)
+            if r["nutrition"]:
+                nutri_rows.append((tex_title, r["nutrition"]))
             recipes.append(r)
+    (ROOT / "nutrition.tex").write_text(nutrition_tex(nutri_rows), encoding="utf-8", newline="\n")
     data = json.dumps(recipes, ensure_ascii=False, separators=(",", ":"))
     (HERE / "recipes.json").write_text(json.dumps(recipes, ensure_ascii=False, indent=1), encoding="utf-8", newline="\n")
     template = (HERE / "template.html").read_text(encoding="utf-8")
