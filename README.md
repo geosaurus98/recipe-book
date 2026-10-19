@@ -147,6 +147,14 @@ the arrow keys. Steps that mention a time get a one-tap timer that beeps and
 vibrates, and the screen stays on while cooking mode is open (on browsers that
 support it). Timers stop if the app is closed.
 
+### Pantry
+
+Tap **Have it** on a shopping-list item you always keep at home and it moves
+to a collapsed **At home** section, off the list and out of the shared/copied
+text, for every future week. **Spices & staples are at home** does the whole
+"Pantry: check first" aisle at once. Ran out? Tap the item under **At home** to
+put it back. The pantry syncs with the rest of the planner when sharing.
+
 ### Sharing between people
 
 With Firebase set up, a **Share** button appears in the planner's header. It

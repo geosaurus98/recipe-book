@@ -165,6 +165,14 @@ main.wrap { padding-block: 20px 48px; display: grid; gap: 28px; }
 .cook-nav .btn { flex: 1; padding: 14px; font-size: 1.05rem; }
 .timer-chip { font-family: var(--font-mono); font-weight: 600; background: var(--accent); color: var(--accent-ink); border-radius: 999px; padding: 4px 12px; border: 0; }
 .timer-chip.done { background: var(--oven); }
+.aisle li { position: relative; }
+.have { position: absolute; top: 6px; right: 0; border: 1px solid var(--line); background: var(--surface); color: var(--muted); border-radius: 999px; font-size: 0.72rem; font-weight: 600; padding: 2px 9px; cursor: pointer; }
+.aisle > ul > li > label { padding-right: 70px; }
+.at-home { margin-top: 14px; }
+.at-home summary { cursor: pointer; font-weight: 600; color: var(--muted); }
+.at-home p { font-size: 0.85rem; color: var(--muted); margin: 8px 0; }
+.at-home ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.at-home li button { border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 999px; padding: 4px 10px; font-size: 0.82rem; cursor: pointer; }
 .week-nutrition { margin: 4px 0 0; font-size: 0.9rem; color: var(--muted); }
 .week-nutrition strong { color: var(--ink); font-variant-numeric: tabular-nums; }
 .slot .row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
@@ -295,11 +303,11 @@ const EXAMPLE = {
     pressure: "InstantPot-Cheeseburger_Macaroni",
     quick: "Stovetop-Pork_Larb",
   },
-  extras: [], cooked: {}, checked: {}, scale: {}, fav: {}, rating: {}, log: {}, history: [], example: true,
+  extras: [], cooked: {}, checked: {}, scale: {}, fav: {}, rating: {}, log: {}, pantry: {}, history: [], example: true,
 };
 
 let state = clone(EXAMPLE);
-let ui = { tab: "week", q: "", chapter: null, group: null, protein: null, choosing: null, hidePantry: false, minceOnly: false, highProtein: false, diet: [], favOnly: false, open: null, cook: null };
+let ui = { tab: "week", q: "", chapter: null, group: null, protein: null, choosing: null, minceOnly: false, highProtein: false, diet: [], favOnly: false, open: null, cook: null };
 let store = null;        // db document ref, or null
 let saveMode = "local";  // "db" | "local" | "none"
 
@@ -320,7 +328,7 @@ function sanitize(s) {
   for (const k of Object.keys(out.slots)) if (out.slots[k] && !BY_ID[out.slots[k]]) out.slots[k] = null;
   out.extras = (out.extras || []).filter(id => BY_ID[id]);
   out.cooked = out.cooked || {}; out.checked = out.checked || {}; out.scale = out.scale || {};
-  out.fav = out.fav || {}; out.rating = out.rating || {}; out.log = out.log || {};
+  out.fav = out.fav || {}; out.rating = out.rating || {}; out.log = out.log || {}; out.pantry = out.pantry || {};
   out.history = (out.history || []).slice(0, 12);
   return out;
 }
@@ -376,7 +384,7 @@ function setSync(t) { document.getElementById("sync").textContent = t; }
 const SYNC = /*SYNC*/null;
 const FIREBASE_VERSION = "10.12.2";
 const HOUSE_KEY = "george-meal-planner-household";
-const MAP_KEYS = ["checked", "cooked", "scale", "fav", "rating", "log"];
+const MAP_KEYS = ["checked", "cooked", "scale", "fav", "rating", "log", "pantry"];
 let fb = null;          // { fs, ref } once connected
 let lastSynced = null;  // the state as the server last saw it
 function householdCode() { try { return localStorage.getItem(HOUSE_KEY); } catch { return null; } }
@@ -843,6 +851,7 @@ function shoppingList() {
   const groups = Object.fromEntries(AISLES.map(a => [a, []]));
   for (const row of rows.values()) {
     row.amount = amountText(row.parts, row.key.slice(5));
+    row.atHome = !!state.pantry[row.key];
     groups[row.aisle].push(row);
   }
   for (const a of AISLES) groups[a].sort((x, y) => (x.optional - y.optional) || x.name.localeCompare(y.name));
@@ -853,8 +862,9 @@ function shoppingList() {
 function render() {
   document.querySelectorAll(".tabs button").forEach(b => b.setAttribute("aria-selected", String(b.dataset.tab === ui.tab)));
   const groups = shoppingList();
-  const total = Object.values(groups).flat().length;
-  const left = Object.values(groups).flat().filter(x => !state.checked[x.key]).length;
+  const toBuy = Object.values(groups).flat().filter(x => !x.atHome);
+  const total = toBuy.length;
+  const left = toBuy.filter(x => !state.checked[x.key]).length;
   document.getElementById("shop-count").textContent = total ? left : "";
   const app = document.getElementById("app");
   app.innerHTML = ui.tab === "week" ? renderWeek() : ui.tab === "recipes" ? renderRecipes() : renderShop(groups);
@@ -979,9 +989,10 @@ function renderShop(groups) {
   if (!ids.length) {
     return `<section class="section-head"><div><h2>Shopping list</h2><p>Plan some meals and their ingredients will appear here, grouped by aisle.</p></div></section>`;
   }
+  const home = Object.values(groups).flat().filter(x => x.atHome).sort((x, y) => x.name.localeCompare(y.name));
+  const staples = groups["Pantry: check first"].filter(x => !x.atHome);
   const aisleCards = AISLES.map(a => {
-    const items = groups[a];
-    if (ui.hidePantry && a.startsWith("Pantry")) return "";
+    const items = groups[a].filter(x => !x.atHome);
     if (!items.length) return "";
     const left = items.filter(x => !state.checked[x.key]).length;
     return `<section class="aisle"><h3>${esc(a)}<span>${left}/${items.length}</span></h3><ul>${items.map(x => {
@@ -991,6 +1002,7 @@ function renderShop(groups) {
         <label><input type="checkbox" data-act="check" data-key="${esc(x.key)}" ${done ? "checked" : ""}>
           <span class="txt"><span class="item-name">${esc(x.name)}</span>${x.amount ? `<span class="amt">${esc(x.amount)}</span>` : ""}${x.optional ? `<span class="opt">optional</span>` : ""}</span>
         </label>
+        <button class="have" data-act="have" data-key="${esc(x.key)}" title="Always have this at home">Have it</button>
         <details><summary>${x.uses.length === 1 ? esc(x.uses[0].recipe.title) : `${x.uses.length} recipes`}</summary><ul class="uses">${uses}</ul></details>
       </li>`;
     }).join("")}</ul></section>`;
@@ -999,13 +1011,17 @@ function renderShop(groups) {
   <section class="section-head">
     <div><h2>Shopping list</h2><p>${ids.length} ${ids.length === 1 ? "recipe" : "recipes"} this week. Amounts are added up across recipes. Tap a recipe name under an item to see exactly what each one needs.</p></div>
     <div class="actions">
-      <label class="toggle"><input type="checkbox" id="hide-pantry" data-act="hide-pantry" ${ui.hidePantry ? "checked" : ""}> Hide pantry items</label>
+      ${staples.length ? `<button class="btn ghost" data-act="have-staples">Spices &amp; staples are at home</button>` : ""}
       <button class="btn" data-act="share-list">Share list</button>
       <button class="btn ghost" data-act="copy-list">Copy list</button>
       <button class="btn ghost" data-act="uncheck-all">Untick all</button>
     </div>
   </section>
-  <section class="aisles">${aisleCards}</section>`;
+  <section class="aisles">${aisleCards}</section>
+  ${home.length ? `<details class="at-home"><summary>At home (${home.length})</summary>
+    <p>You've said you always have these, so they're left off the list. Tap one if you've run out.</p>
+    <ul>${home.map(x => `<li><button data-act="need" data-key="${esc(x.key)}" title="Put back on the list">${esc(x.name)} · Need it</button></li>`).join("")}</ul>
+  </details>` : ""}`;
 }
 
 function renderItems(items, ordered, f = 1) {
@@ -1073,6 +1089,14 @@ document.addEventListener("click", e => {
     case "open": ui.open = id; renderSheet(); break;
     case "close": case "close-overlay": ui.open = null; ui.share = false; renderSheet(); break;
     case "share": ui.share = true; renderSheet(); break;
+    case "have": commit(s => { s.pantry[el.dataset.key] = true; delete s.checked[el.dataset.key]; }); toast("Moved to At home"); break;
+    case "need": commit(s => { delete s.pantry[el.dataset.key]; }); toast("Back on the list"); break;
+    case "have-staples": {
+      const keys = shoppingList()["Pantry: check first"].filter(x => !x.atHome).map(x => x.key);
+      commit(s => { for (const k of keys) s.pantry[k] = true; });
+      toast(`${keys.length} staples moved to At home`);
+      break;
+    }
     case "cook-start": ui.cook = { id, step: 0, have: {} }; keepAwake(true); renderSheet(); break;
     case "cook-next": cookGo(1); break;
     case "cook-prev": cookGo(-1); break;
@@ -1195,7 +1219,6 @@ document.addEventListener("change", e => {
   if (act === "check") commit(s => { if (el.checked) s.checked[el.dataset.key] = true; else delete s.checked[el.dataset.key]; });
   if (act === "mince-only") { ui.minceOnly = el.checked; }
   if (act === "high-protein") { ui.highProtein = el.checked; }
-  if (act === "hide-pantry") { ui.hidePantry = el.checked; render(); }
   if (act === "cook-have" && ui.cook) ui.cook.have[el.dataset.n] = el.checked;
 });
 document.addEventListener("input", e => {
@@ -1231,8 +1254,7 @@ document.querySelectorAll(".tabs button").forEach(b => b.addEventListener("click
 function listText() {
   const groups = shoppingList();
   return AISLES
-    .filter(a => !(ui.hidePantry && a.startsWith("Pantry")))
-    .map(a => [a, groups[a].filter(x => !state.checked[x.key])])
+    .map(a => [a, groups[a].filter(x => !state.checked[x.key] && !x.atHome)])
     .filter(([, items]) => items.length)
     .map(([a, items]) => `${a}\n${items.map(x => `- ${x.name}${x.amount ? ` (${x.amount})` : ""}${x.optional ? " [optional]" : ""}`).join("\n")}`)
     .join("\n\n");
