@@ -235,7 +235,7 @@ def parse_body(body):
 
 
 def parse_recipe(path):
-    src = strip_comments(path.read_text())
+    src = strip_comments(path.read_text(encoding="utf-8"))
     m = re.search(r"\\begin\{recipebox\}", src)
     (title, servings, time), j = args(src, m.end(), 3)
     end = src.rindex("\\end{recipebox}")
@@ -350,7 +350,7 @@ def tags(recipe):
 
 
 def main():
-    main_tex = (ROOT / "main.tex").read_text()
+    main_tex = (ROOT / "main.tex").read_text(encoding="utf-8")
     recipes = []
     chapter = group = None
     for line in main_tex.splitlines():
@@ -377,11 +377,11 @@ def main():
             r["tags"] = tags(r)
             recipes.append(r)
     data = json.dumps(recipes, ensure_ascii=False, separators=(",", ":"))
-    (HERE / "recipes.json").write_text(json.dumps(recipes, ensure_ascii=False, indent=1))
-    template = (HERE / "template.html").read_text()
+    (HERE / "recipes.json").write_text(json.dumps(recipes, ensure_ascii=False, indent=1), encoding="utf-8", newline="\n")
+    template = (HERE / "template.html").read_text(encoding="utf-8")
     html = template.replace("/*RECIPES*/[]", data.replace("</", "<\\/"))
-    (HERE / "index.html").write_text(html)
-    print(f"{len(recipes)} recipes → planner/index.html ({len(html) // 1024} KB)")
+    (HERE / "index.html").write_text(html, encoding="utf-8", newline="\n")
+    print(f"{len(recipes)} recipes -> planner/index.html ({len(html) // 1024} KB)")
 
 
 if __name__ == "__main__":

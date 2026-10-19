@@ -180,12 +180,12 @@ def main():
         for path in sorted((ROOT / folder).glob("*.tex")):
             if path.name == "Ideas.tex":
                 continue
-            src = path.read_text()
+            src = path.read_text(encoding="utf-8")
             new = standardise(src)
             if new != src:
                 changed += 1
                 if not dry:
-                    path.write_text(new)
+                    path.write_text(new, encoding="utf-8", newline="\n")
     print(f"{changed} files {'would change' if dry else 'changed'}")
 
 

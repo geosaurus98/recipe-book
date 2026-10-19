@@ -18,7 +18,7 @@ MAIN = ROOT / "main.tex"
 
 
 def sort_key(path):
-    m = re.search(r"\\begin\{recipebox\}\{(.*?)\}\{", (ROOT / (path + ".tex")).read_text())
+    m = re.search(r"\\begin\{recipebox\}\{(.*?)\}\{", (ROOT / (path + ".tex")).read_text(encoding="utf-8"))
     return re.sub(r"\\[a-z]+|[{}\\&’']", "", m.group(1)).lower()
 
 
@@ -54,7 +54,7 @@ def main(argv):
     if rest[:1] == ["--group"]:
         group, rest = rest[1].replace("&", "\\&").replace("\\\\&", "\\&"), rest[2:]
     files = rest
-    s = MAIN.read_text()
+    s = MAIN.read_text(encoding="utf-8")
 
     def fix(m):
         name, body = m.group(1), m.group(2)
@@ -79,7 +79,7 @@ def main(argv):
     if chapter and chapter not in s:
         raise SystemExit(f"no chapter called {chapter}")
     new = re.sub(r"\\chapter\{(.*?)\}\n\\minitoc\n(.*?)\n(?=\\chapter|\\end\{document\})", fix, s, flags=re.S)
-    MAIN.write_text(new)
+    MAIN.write_text(new, encoding="utf-8", newline="\n")
 
 
 if __name__ == "__main__":
