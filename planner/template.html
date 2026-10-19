@@ -127,6 +127,10 @@ main.wrap { padding-block: 20px 48px; display: grid; gap: 28px; }
 .storage { background: var(--sunk); border-radius: 12px; padding: 10px 14px; margin: 4px 0 16px; }
 .storage strong { display: block; font-size: 0.8rem; margin-bottom: 4px; }
 .storage ul { margin: 0; padding-left: 1.1em; font-size: 0.88rem; }
+.scale { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 10px; font-size: 0.85rem; color: var(--muted); }
+.scale .fchip { padding: 4px 12px; }
+.scale-note { font-size: 0.75rem; color: var(--muted); margin: 6px 0 0; }
+.times { font-family: var(--font-mono); font-size: 0.75rem; font-weight: 600; color: var(--accent); }
 .week-nutrition { margin: 4px 0 0; font-size: 0.9rem; color: var(--muted); }
 .week-nutrition strong { color: var(--ink); font-variant-numeric: tabular-nums; }
 .slot .row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
@@ -257,7 +261,7 @@ const EXAMPLE = {
     pressure: "InstantPot-Cheeseburger_Macaroni",
     quick: "Stovetop-Pork_Larb",
   },
-  extras: [], cooked: {}, checked: {}, history: [], example: true,
+  extras: [], cooked: {}, checked: {}, scale: {}, history: [], example: true,
 };
 
 let state = clone(EXAMPLE);
@@ -281,7 +285,7 @@ function sanitize(s) {
   out.slots = Object.assign({ slow: null, pressure: null, quick: null }, out.slots || {});
   for (const k of Object.keys(out.slots)) if (out.slots[k] && !BY_ID[out.slots[k]]) out.slots[k] = null;
   out.extras = (out.extras || []).filter(id => BY_ID[id]);
-  out.cooked = out.cooked || {}; out.checked = out.checked || {};
+  out.cooked = out.cooked || {}; out.checked = out.checked || {}; out.scale = out.scale || {};
   out.history = (out.history || []).slice(0, 12);
   return out;
 }
@@ -381,9 +385,10 @@ function weekNutrition() {
   if (!meals.length) return "";
   let servings = 0, kcal = 0, protein = 0;
   for (const r of meals) {
-    servings += r.nutrition.count;
-    kcal += r.nutrition.kcal * r.nutrition.count;
-    protein += r.nutrition.protein * r.nutrition.count;
+    const n = r.nutrition.count * scaleOf(r.id);
+    servings += n;
+    kcal += r.nutrition.kcal * n;
+    protein += r.nutrition.protein * n;
   }
   const s = Math.round(servings);
   return `<p class="week-nutrition">This week: <strong>${s}</strong> servings, averaging <strong>${Math.round(kcal / servings / 10) * 10} kcal</strong> and <strong>${Math.round(protein / servings)} g protein</strong> each (<strong>${Math.round(protein).toLocaleString()} g</strong> protein in total).</p>`;
@@ -419,6 +424,39 @@ function aisleOf(line) {
   const t = plain(line).toLowerCase();
   for (const [aisle, re] of AISLE_RULES) if (re.test(t)) return aisle;
   return "Pantry: check first";
+}
+
+// ─── Scaling ────────────────────────────────────────────────────────────────
+const SCALES = [[0.5, "½×"], [1, "1×"], [1.5, "1½×"], [2, "2×"], [3, "3×"]];
+const SCALE_LABEL = Object.fromEntries(SCALES);
+const FRAC = { "½": 0.5, "¼": 0.25, "¾": 0.75, "⅓": 1 / 3, "⅔": 2 / 3, "⅛": 0.125 };
+const NUM = String.raw`(?:\d+(?:\.\d+)?\s*[½¼¾⅓⅔⅛]?|[½¼¾⅓⅔⅛])`;
+function scaleOf(id) { return (state.scale && state.scale[id]) || 1; }
+function toNum(t) {
+  const m = t.replace(/\s+/g, "").match(/^(\d+(?:\.\d+)?)?([½¼¾⅓⅔⅛])?$/);
+  return m ? (m[1] ? parseFloat(m[1]) : 0) + (m[2] ? FRAC[m[2]] : 0) : null;
+}
+function fmtNum(n) { return n >= 10 ? String(Math.round(n)) : nice(n); }
+// "1½ cups stock" × 2 -> "3 cups stock"; "2–3 garlic cloves" × 2 -> "4–6 garlic cloves".
+// Only the leading amount changes, so "(400 g)" can sizes stay as they are.
+function scaleText(text, f) {
+  if (f === 1) return text;
+  const re = new RegExp(String.raw`^(\*\*)?(${NUM})(\s*(?:–|-|to)\s*)?(${NUM})?`);
+  return text.replace(re, (all, bold, a, sep, b) => {
+    const x = toNum(a), y = b ? toNum(b) : null;
+    if (x == null) return all;
+    const gap = t => (t || "").match(/\s*$/)[0];  // keep the space the number pattern swallowed
+    return (bold || "") + fmtNum(x * f) + gap(a) + (sep || "") + (y != null ? fmtNum(y * f) + gap(b) : "");
+  });
+}
+// "4 (8 burritos)" × 2 -> "8 (16 burritos)"; "(about ½ cup each)" is a portion size, so it stays.
+function scaleServings(text, f) {
+  if (f === 1) return text;
+  return scaleText(text, f).replace(/\((\d+)([^)]*)\)/, (all, n, rest) => /each/.test(rest) ? all : `(${fmtNum(n * f)}${rest})`);
+}
+function scaledServingsText(r) {
+  const f = scaleOf(r.id);
+  return f === 1 ? r.servings : scaleServings(r.servings, f);
 }
 
 // ─── Adding up amounts ──────────────────────────────────────────────────────
@@ -478,17 +516,19 @@ function shoppingList() {
   const rows = new Map();
   for (const id of plannedIds()) {
     const r = BY_ID[id];
+    const f = scaleOf(id);
     for (const item of r.shop) {
       let row = rows.get(item.key);
       if (!row) {
         row = { key: "item:" + item.key, name: item.name, aisle: item.aisle || aisleOf(item.raw), parts: [], uses: [], optional: true };
         rows.set(item.key, row);
       }
-      row.parts.push({ qty: item.qty, unit: item.unit });
+      row.parts.push({ qty: item.qty == null ? null : item.qty * f, unit: item.unit });
       row.optional = row.optional && item.optional;
       const use = row.uses.find(u => u.recipe === r);
-      if (use) { if (!use.lines.includes(item.raw)) use.lines.push(item.raw); }
-      else row.uses.push({ recipe: r, lines: [item.raw] });
+      const line = scaleText(item.raw, f);
+      if (use) { if (!use.lines.includes(line)) use.lines.push(line); }
+      else row.uses.push({ recipe: r, lines: [line] });
     }
   }
   const groups = Object.fromEntries(AISLES.map(a => [a, []]));
@@ -530,7 +570,7 @@ function slotCard(s) {
   return `<article class="slot${cooked ? " is-cooked" : ""}" data-m="${s.key}">
     <span class="chip">${s.label}</span>
     <h3><button data-act="open" data-id="${id}">${esc(r.title)}</button></h3>
-    <div class="meta"><span>Serves ${esc(r.servings)}</span><span>${esc(r.time === "–" ? "Time not set" : r.time)}</span>${macroSpans(r)}</div>
+    <div class="meta">${scaleOf(id) !== 1 ? `<span class="times">${SCALE_LABEL[scaleOf(id)]}</span>` : ""}<span>Serves ${esc(scaledServingsText(r))}</span><span>${esc(r.time === "–" ? "Time not set" : r.time)}</span>${macroSpans(r)}</div>
     <div class="row">
       <button class="btn small" data-act="shuffle-slot" data-slot="${s.key}" title="Swap for another random recipe">Swap</button>
       <button class="btn small" data-act="choose" data-slot="${s.key}">Browse</button>
@@ -545,7 +585,7 @@ function renderWeek() {
     const r = BY_ID[id];
     return `<div class="extra-row" data-m="${r.chapter}">
       <span class="chip">${esc(CHAPTER_LABEL[r.chapter])}</span>
-      <span class="title"><button data-act="open" data-id="${id}">${esc(r.title)}</button></span>
+      <span class="title"><button data-act="open" data-id="${id}">${esc(r.title)}</button>${scaleOf(id) !== 1 ? ` <span class="times">${SCALE_LABEL[scaleOf(id)]}</span>` : ""}</span>
       <button class="btn small ghost" data-act="remove-extra" data-id="${id}">Remove</button>
     </div>`;
   }).join("");
@@ -657,18 +697,18 @@ function renderShop(groups) {
   <section class="aisles">${aisleCards}</section>`;
 }
 
-function renderItems(items, ordered) {
+function renderItems(items, ordered, f = 1) {
   const tag = ordered ? "ol" : "ul";
   return `<${tag}>${items.map(it => it.group
     ? `<li class="group">${md(it.group)}</li>`
-    : `<li>${md(it.text)}${it.sub ? `<ul>${it.sub.map(s => `<li>${md(s)}</li>`).join("")}</ul>` : ""}</li>`).join("")}</${tag}>`;
+    : `<li>${md(scaleText(it.text, f))}${it.sub ? `<ul>${it.sub.map(s => `<li>${md(scaleText(s, f))}</li>`).join("")}</ul>` : ""}</li>`).join("")}</${tag}>`;
 }
-function renderSections(sections) {
+function renderSections(sections, f = 1) {
   return sections.map(s => {
     const h = s.heading ? `<h4>${esc(s.heading)}</h4>` : "";
     if (s.kind === "text") return `<div>${h}<p>${md(s.text)}</p></div>`;
     if (s.kind === "variation") return `<div class="variation"><h4>${esc(s.heading || "Variation")}</h4>${s.text ? `<p>${md(s.text)}</p>` : ""}${renderSections(s.sections || [])}</div>`;
-    return `<div>${h}${renderItems(s.items, s.kind === "steps")}</div>`;
+    return `<div>${h}${renderItems(s.items, s.kind === "steps", s.kind === "ingredients" ? f : 1)}</div>`;
   }).join("");
 }
 
@@ -690,14 +730,18 @@ function renderSheet() {
       <div class="sheet-head">
         <div class="top-row"><span class="chip">${esc(r.chapterName)}${r.group ? ` · ${esc(r.group)}` : ""}</span><button class="btn small ghost" data-act="close" aria-label="Close recipe">Close</button></div>
         <h2 id="sheet-title">${esc(r.title)}</h2>
-        <div class="meta"><span>Serves ${esc(r.servings)}</span>${r.time !== "–" ? `<span>${esc(r.time)}</span>` : ""}</div>
+        <div class="meta"><span>Serves ${esc(scaledServingsText(r))}${scaleOf(r.id) !== 1 ? ` (recipe serves ${esc(r.servings)})` : ""}</span>${r.time !== "–" ? `<span>${esc(r.time)}</span>` : ""}</div>
+        <div class="scale" role="group" aria-label="Scale the recipe">Make
+          ${SCALES.map(([v, l]) => `<button class="fchip" data-act="scale" data-id="${r.id}" data-v="${v}" aria-pressed="${scaleOf(r.id) === v}">${l}</button>`).join("")}
+        </div>
+        ${scaleOf(r.id) !== 1 ? `<p class="scale-note">Ingredient amounts and the shopping list are scaled. Cooking times and pot size may need adjusting.</p>` : ""}
         ${badges(r)}
         ${macroBlock(r)}
         ${r.intro ? `<p class="intro">${md(r.intro)}</p>` : ""}
         <div class="sheet-actions">${actions}</div>
       </div>
       ${storageBox(r)}
-      ${renderSections(r.sections)}
+      ${renderSections(r.sections, scaleOf(r.id))}
       <span class="file">${esc(r.file)}</span>
     </article>
   </div>`;
@@ -765,6 +809,11 @@ document.addEventListener("click", e => {
     case "group": ui.group = ui.group === el.dataset.v ? null : el.dataset.v; render(); break;
     case "protein": ui.protein = ui.protein === el.dataset.v ? null : el.dataset.v; render(); break;
     case "high-protein-chip": ui.highProtein = !ui.highProtein; render(); break;
+    case "scale": {
+      const id = el.dataset.id, v = Number(el.dataset.v);
+      commit(s => { if (v === 1) delete s.scale[id]; else s.scale[id] = v; });
+      break;
+    }
     case "diet": {
       const t = el.dataset.v;
       ui.diet = ui.diet.includes(t) ? ui.diet.filter(x => x !== t) : [...ui.diet, t];

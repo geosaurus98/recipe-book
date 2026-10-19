@@ -121,6 +121,14 @@ comment line anywhere in the recipe file:
 The planner also shows a **Storage** box on each recipe, pulled from the
 fridge, freezer and reheating advice in its notes.
 
+### Scaling
+
+Open any recipe in the planner and pick ½×, 1×, 1½×, 2× or 3× under
+**Make**. The ingredient amounts and servings update, and for planned meals
+the shopping list and weekly totals follow. Only the leading amount on each
+ingredient line changes (so "2 cans (400 g)" becomes "4 cans (400 g)");
+cooking times aren't adjusted.
+
 ## Website
 
 Every push to `main` runs `.github/workflows/publish.yml`, which rebuilds the
