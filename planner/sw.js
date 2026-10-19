@@ -1,7 +1,7 @@
 // Lets the planner open with no signal (e.g. in the supermarket).
 // Network first so recipe updates show up straight away; if the network is
 // down or slower than 3 seconds, the last copy saved on the phone is used.
-const CACHE = "meal-planner-v1";
+const CACHE = "meal-planner-v2";
 const CORE = ["./", "manifest.webmanifest", "icons/icon-192.png", "icons/apple-touch-icon.png"];
 
 self.addEventListener("install", e => {
@@ -21,8 +21,9 @@ self.addEventListener("fetch", e => {
   if (req.method !== "GET") return;
   const url = new URL(req.url);
 
-  // Google Fonts never change at a given URL: cache first
-  if (url.hostname.endsWith("fonts.googleapis.com") || url.hostname.endsWith("fonts.gstatic.com")) {
+  // Google Fonts and the versioned Firebase code never change at a given URL: cache first
+  if (url.hostname.endsWith("fonts.googleapis.com") || url.hostname.endsWith("fonts.gstatic.com")
+      || (url.hostname === "www.gstatic.com" && url.pathname.startsWith("/firebasejs/"))) {
     e.respondWith(caches.match(req).then(hit => hit || fetch(req).then(res => save(req, res))));
     return;
   }
