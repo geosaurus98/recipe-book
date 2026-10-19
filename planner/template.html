@@ -120,6 +120,13 @@ main.wrap { padding-block: 20px 48px; display: grid; gap: 28px; }
 .macros dt { font-size: 0.72rem; color: var(--muted); }
 .macros dd { margin: 0; font-family: var(--font-mono); font-size: 0.95rem; color: var(--ink); }
 .macros-note { font-size: 0.75rem; color: var(--muted); margin: 0 0 10px; }
+.badges { display: flex; flex-wrap: wrap; gap: 4px 6px; }
+.badge { font-size: 0.72rem; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: var(--sunk); color: var(--ink); white-space: nowrap; }
+.card .badges { margin-top: 2px; }
+.sheet-head .badges { margin-top: 8px; }
+.storage { background: var(--sunk); border-radius: 12px; padding: 10px 14px; margin: 4px 0 16px; }
+.storage strong { display: block; font-size: 0.8rem; margin-bottom: 4px; }
+.storage ul { margin: 0; padding-left: 1.1em; font-size: 0.88rem; }
 .week-nutrition { margin: 4px 0 0; font-size: 0.9rem; color: var(--muted); }
 .week-nutrition strong { color: var(--ink); font-variant-numeric: tabular-nums; }
 .slot .row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
@@ -237,6 +244,8 @@ const CHAPTERS = [
   ["desserts", "Desserts"], ["baking", "Baking"], ["breadmaker", "Bread maker"],
 ];
 const CHAPTER_LABEL = Object.fromEntries(CHAPTERS);
+const DIET = [["freezes", "Freezer-friendly"], ["vegetarian", "Vegetarian"], ["dairy-free", "Dairy-free"], ["quick", "Under 30 min"], ["leftovers", "Uses leftovers"]];
+const DIET_LABEL = Object.fromEntries(DIET);
 const PROTEINS = [["mince", "Mince"], ["beef", "Beef"], ["pork", "Pork"], ["chicken", "Chicken"], ["fish", "Fish"]];
 
 // ─── State ──────────────────────────────────────────────────────────────────
@@ -252,7 +261,7 @@ const EXAMPLE = {
 };
 
 let state = clone(EXAMPLE);
-let ui = { tab: "week", q: "", chapter: null, group: null, protein: null, choosing: null, hidePantry: false, minceOnly: false, highProtein: false, open: null };
+let ui = { tab: "week", q: "", chapter: null, group: null, protein: null, choosing: null, hidePantry: false, minceOnly: false, highProtein: false, diet: [], open: null };
 let store = null;        // db document ref, or null
 let saveMode = "local";  // "db" | "local" | "none"
 
@@ -353,6 +362,12 @@ function isHighProtein(r) { return !!r.nutrition && r.nutrition.protein >= HIGH_
 function macroSpans(r) {
   const n = r.nutrition;
   return n ? `<span class="kcal">${n.kcal} kcal</span><span class="kcal">${n.protein} g protein</span>` : "";
+}
+function badges(r) {
+  return r.diet.length ? `<span class="badges">${r.diet.map(t => `<span class="badge">${esc(DIET_LABEL[t])}</span>`).join("")}</span>` : "";
+}
+function storageBox(r) {
+  return r.storage.length ? `<div class="storage"><strong>Storage</strong><ul>${r.storage.map(x => `<li>${md(x)}</li>`).join("")}</ul></div>` : "";
 }
 function macroBlock(r) {
   const n = r.nutrition;
@@ -570,6 +585,7 @@ function filteredRecipes() {
     (!ui.group || r.group === ui.group) &&
     (!ui.protein || r.tags.includes(ui.protein)) &&
     (!ui.highProtein || isHighProtein(r)) &&
+    ui.diet.every(t => r.diet.includes(t)) &&
     (!q || r.title.toLowerCase().includes(q) || r.ingredients.some(l => l.toLowerCase().includes(q))));
 }
 
@@ -582,11 +598,13 @@ function renderRecipes() {
   // Chapters split into groups (e.g. Salads & sides) get a second row of chips.
   const groupNames = ui.chapter ? [...new Set(RECIPES.filter(r => r.chapter === ui.chapter && r.group).map(r => r.group))] : [];
   const groupChips = groupNames.map(g => `<button class="fchip" data-act="group" data-v="${esc(g)}" aria-pressed="${ui.group === g}">${esc(g)}</button>`).join("");
+  const dietChips = DIET.map(([k, l]) => `<button class="fchip" data-act="diet" data-v="${k}" aria-pressed="${ui.diet.includes(k)}">${l}</button>`).join("");
   const proteinChips = PROTEINS.map(([k, l]) => `<button class="fchip" data-act="protein" data-v="${k}" aria-pressed="${ui.protein === k}">${l}</button>`).join("");
   const cards = list.map(r => `<button class="card" data-m="${r.chapter}" data-act="open" data-id="${r.id}">
       <span class="chip">${esc(CHAPTER_LABEL[r.chapter])}${r.group ? ` · ${esc(r.group)}` : ""}</span>
       <span class="name">${esc(r.title)}</span>
       <span class="meta"><span>Serves ${esc(r.servings)}</span>${r.time !== "–" ? `<span>${esc(r.time)}</span>` : ""}${macroSpans(r)}</span>
+      ${badges(r)}
       ${planned.has(r.id) ? `<span class="planned">On this week's plan</span>` : ""}
     </button>`).join("");
   return `
@@ -599,6 +617,7 @@ function renderRecipes() {
     <div class="chips" role="group" aria-label="Chapter">${chapterChips}</div>
     ${groupChips ? `<div class="chips" role="group" aria-label="Section">${groupChips}</div>` : ""}
     <div class="chips" role="group" aria-label="Main protein">${proteinChips}<button class="fchip" data-act="high-protein-chip" aria-pressed="${ui.highProtein}">${HIGH_PROTEIN} g+ protein</button></div>
+    <div class="chips" role="group" aria-label="Diet and meal prep">${dietChips}</div>
   </section>
   <p class="result-count">${list.length} ${list.length === 1 ? "recipe" : "recipes"}</p>
   <section class="list">${cards || `<p class="empty-note">No recipes match. Try clearing a filter.</p>`}</section>`;
@@ -672,10 +691,12 @@ function renderSheet() {
         <div class="top-row"><span class="chip">${esc(r.chapterName)}${r.group ? ` · ${esc(r.group)}` : ""}</span><button class="btn small ghost" data-act="close" aria-label="Close recipe">Close</button></div>
         <h2 id="sheet-title">${esc(r.title)}</h2>
         <div class="meta"><span>Serves ${esc(r.servings)}</span>${r.time !== "–" ? `<span>${esc(r.time)}</span>` : ""}</div>
+        ${badges(r)}
         ${macroBlock(r)}
         ${r.intro ? `<p class="intro">${md(r.intro)}</p>` : ""}
         <div class="sheet-actions">${actions}</div>
       </div>
+      ${storageBox(r)}
       ${renderSections(r.sections)}
       <span class="file">${esc(r.file)}</span>
     </article>
@@ -744,6 +765,12 @@ document.addEventListener("click", e => {
     case "group": ui.group = ui.group === el.dataset.v ? null : el.dataset.v; render(); break;
     case "protein": ui.protein = ui.protein === el.dataset.v ? null : el.dataset.v; render(); break;
     case "high-protein-chip": ui.highProtein = !ui.highProtein; render(); break;
+    case "diet": {
+      const t = el.dataset.v;
+      ui.diet = ui.diet.includes(t) ? ui.diet.filter(x => x !== t) : [...ui.diet, t];
+      render();
+      break;
+    }
     case "uncheck-all": commit(s => { s.checked = {}; }); break;
     case "copy-list": copyList(); break;
     case "share-list": shareList(); break;
