@@ -105,3 +105,10 @@ them to GitHub Pages:
 
 So there's no need to run `build.py` before pushing, though it's handy for
 checking changes locally. Progress and errors show on the repo's Actions tab.
+
+The planner works as a home-screen app: open the planner link on your phone,
+then use **Share → Add to Home Screen** (iPhone, in Safari) or **⋮ → Add to
+Home screen** (Android, in Chrome). It opens full-screen and still works with
+no signal. The icon is drawn by `tools/make_icons.py` (needs Pillow); the app
+settings are in `planner/manifest.webmanifest` and `planner/sw.js`. If you
+change `sw.js`, bump the `CACHE` name in it so phones pick up the new version.

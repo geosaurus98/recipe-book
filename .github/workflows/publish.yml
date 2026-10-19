@@ -43,7 +43,8 @@ jobs:
       - name: Assemble site
         run: |
           mkdir -p _site/books
-          cp planner/index.html _site/
+          cp planner/index.html planner/manifest.webmanifest planner/sw.js _site/
+          cp -r planner/icons _site/
           cp main.pdf _site/books/main.pdf
           cp palmer.pdf _site/books/palmer.pdf
 
