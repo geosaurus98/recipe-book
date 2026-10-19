@@ -519,6 +519,11 @@ def main():
     (HERE / "recipes.json").write_text(json.dumps(recipes, ensure_ascii=False, indent=1), encoding="utf-8", newline="\n")
     template = (HERE / "template.html").read_text(encoding="utf-8")
     html = template.replace("/*RECIPES*/[]", data.replace("</", "<\\/"))
+    # Firebase settings for sharing between people (see README). Without the
+    # file the planner just saves on each device.
+    sync = HERE / "sync-config.json"
+    if sync.exists():
+        html = html.replace("/*SYNC*/null", json.dumps(json.loads(sync.read_text(encoding="utf-8"))))
     (HERE / "index.html").write_text(html, encoding="utf-8", newline="\n")
     print(f"{len(recipes)} recipes -> planner/index.html ({len(html) // 1024} KB)")
 

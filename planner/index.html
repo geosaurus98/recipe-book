@@ -140,6 +140,9 @@ main.wrap { padding-block: 20px 48px; display: grid; gap: 28px; }
 .fav[aria-pressed="true"] { color: var(--star); border-color: var(--star); }
 .fav-mark { color: var(--star); }
 .history-line { font-size: 0.8rem; color: var(--muted); margin: 8px 0 0; }
+.share-btn { margin-left: 2px; }
+.share-sheet p { color: var(--muted); font-size: 0.92rem; margin: 0 0 12px; }
+.share-link { width: 100%; font-family: var(--font-mono); font-size: 0.8rem; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--sunk); color: var(--ink); margin-bottom: 12px; }
 .week-nutrition { margin: 4px 0 0; font-size: 0.9rem; color: var(--muted); }
 .week-nutrition strong { color: var(--ink); font-variant-numeric: tabular-nums; }
 .slot .row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
@@ -228,7 +231,7 @@ main.wrap { padding-block: 20px 48px; display: grid; gap: 28px; }
 
 <header class="top">
   <div class="wrap">
-    <div class="brand"><h1>George's Meal Planner</h1><span class="sync" id="sync">Loading…</span></div>
+    <div class="brand"><h1>George's Meal Planner</h1><span class="sync" id="sync">Loading…</span><button class="btn small ghost share-btn" id="share-btn" data-act="share" hidden>Share</button></div>
     <nav class="books" aria-label="Recipe books">PDF: <a href="books/main.pdf">Recipe Book</a> · <a href="books/palmer.pdf">GP's Book</a></nav>
     <nav class="tabs" role="tablist" aria-label="Sections">
       <button role="tab" id="tab-week" aria-selected="true" data-tab="week">This week</button>
@@ -321,7 +324,14 @@ async function flush() {
   if (!dirty) return;
   if (saving) { saveTimer = setTimeout(flush, 300); return; }
   dirty = false;
-  if (store && saveMode === "db") {
+  if (fb && saveMode === "shared") {
+    saving = true;
+    saveLocal();
+    setSync("Saving…");
+    try { await pushShared(); setSync("Shared · up to date"); }
+    catch { dirty = true; setSync("Couldn't sync — will retry"); saveTimer = setTimeout(flush, 5000); }
+    finally { saving = false; }
+  } else if (store && saveMode === "db") {
     saving = true;
     setSync("Saving…");
     try { await store.set(clone(state)); setSync("Synced across your devices"); }
@@ -335,9 +345,111 @@ async function flush() {
 }
 function setSync(t) { document.getElementById("sync").textContent = t; }
 
+// ─── Sharing between people (Firebase Firestore) ────────────────────────────
+// Everyone with the household link reads and writes households/{code}. The
+// code is 24 random characters, so the link is the key. Changes go up as
+// small field updates (one ticked item, one rating) so two people editing at
+// once don't overwrite each other. The device copy in localStorage stays as
+// a backup and for offline use.
+const SYNC = /*SYNC*/null;
+const FIREBASE_VERSION = "10.12.2";
+const HOUSE_KEY = "george-meal-planner-household";
+const MAP_KEYS = ["checked", "cooked", "scale", "fav", "rating", "log"];
+let fb = null;          // { fs, ref } once connected
+let lastSynced = null;  // the state as the server last saw it
+function householdCode() { try { return localStorage.getItem(HOUSE_KEY); } catch { return null; } }
+function setHouseholdCode(c) { try { if (c) localStorage.setItem(HOUSE_KEY, c); else localStorage.removeItem(HOUSE_KEY); } catch {} }
+function newHouseholdCode() {
+  const bytes = crypto.getRandomValues(new Uint8Array(24));
+  return [...bytes].map(b => "abcdefghijkmnpqrstuvwxyz23456789"[b % 32]).join("");
+}
+function shareLink(code) { return `${location.origin}${location.pathname}#join=${code}`; }
+
+// [[path...], value] for every part of the state that changed.
+function diffState(a, b) {
+  const out = [];
+  for (const k of new Set([...Object.keys(a), ...Object.keys(b)])) {
+    if (MAP_KEYS.includes(k) && a[k] && b[k]) {
+      for (const sk of new Set([...Object.keys(a[k]), ...Object.keys(b[k])]))
+        if (JSON.stringify(a[k][sk]) !== JSON.stringify(b[k][sk])) out.push([[k, sk], b[k][sk]]);
+    } else if (JSON.stringify(a[k]) !== JSON.stringify(b[k])) out.push([[k], b[k]]);
+  }
+  return out;
+}
+
+async function startSharing(code, { upload = false } = {}) {
+  setSync("Connecting…");
+  const base = `https://www.gstatic.com/firebasejs/${FIREBASE_VERSION}`;
+  const [{ initializeApp }, fs] = await Promise.all([import(`${base}/firebase-app.js`), import(`${base}/firebase-firestore.js`)]);
+  const ref = fs.doc(fs.getFirestore(initializeApp(SYNC)), "households", code);
+  const snap = await fs.getDoc(ref);
+  if (upload || !snap.exists()) {
+    await fs.setDoc(ref, { state: clone(state), updated: fs.serverTimestamp() });
+    lastSynced = clone(state);
+  }
+  fb = { fs, ref };
+  saveMode = "shared";
+  fs.onSnapshot(ref, snapshot => {
+    if (snapshot.metadata.hasPendingWrites || dirty || saving) return;
+    const data = snapshot.data();
+    if (!data || !data.state) return;
+    state = sanitize(data.state);
+    lastSynced = clone(state);
+    saveLocal();
+    render();
+    setSync("Shared · up to date");
+  }, () => { saveMode = "local"; fb = null; setSync("Sharing paused — saved on this device"); });
+}
+
+async function pushShared() {
+  const { fs, ref } = fb;
+  const args = [];
+  for (const [path, value] of diffState(lastSynced || {}, state))
+    args.push(new fs.FieldPath("state", ...path), value === undefined ? fs.deleteField() : value);
+  if (!args.length) return;
+  const sent = clone(state);
+  const slow = setTimeout(() => setSync("Waiting for signal to sync…"), 4000);
+  try { await fs.updateDoc(ref, ...args, "updated", fs.serverTimestamp()); }
+  finally { clearTimeout(slow); }
+  lastSynced = sent;
+}
+
+function shareDialog() {
+  const code = householdCode();
+  const body = fb && code
+    ? `<p>Send this link to anyone who should share the planner. You'll both see the same week, ticks and ratings as they change.</p>
+       <input class="share-link" id="share-link" readonly value="${esc(shareLink(code))}" aria-label="Share link">
+       <div class="sheet-actions"><button class="btn primary" data-act="share-send">Share link</button><button class="btn" data-act="share-copy">Copy</button><button class="btn ghost" data-act="share-stop">Stop sharing on this device</button></div>
+       <p style="margin-top:12px">Anyone with the link can see and change the planner, so only send it to people you plan meals with.</p>`
+    : `<p>Share this planner so someone else sees the same week, ticks off the same shopping list and adds their own ratings. Your current week and favourites are shared too.</p>
+       <div class="sheet-actions"><button class="btn primary" data-act="share-start">Start sharing</button></div>`;
+  return `<div class="overlay" data-act="close-overlay">
+    <article class="sheet share-sheet" role="dialog" aria-modal="true" aria-labelledby="share-title">
+      <div class="sheet-head">
+        <div class="top-row"><span class="chip">Sharing</span><button class="btn small ghost" data-act="close" aria-label="Close">Close</button></div>
+        <h2 id="share-title">Share the planner</h2>
+      </div>
+      ${body}
+    </article>
+  </div>`;
+}
+
 async function connect() {
   const local = loadLocal();
   if (local) { state = sanitize(local); render(); }
+  if (SYNC) {
+    document.getElementById("share-btn").hidden = false;
+    const join = location.hash.match(/^#join=([a-z0-9]{20,})$/);
+    if (join) {
+      setHouseholdCode(join[1]);
+      history.replaceState(null, "", location.pathname);
+    }
+    const code = householdCode();
+    if (code) {
+      try { await startSharing(code); if (join) toast("Joined the shared planner"); return; }
+      catch { setSync("Couldn't reach the shared planner — saved on this device"); return; }
+    }
+  }
   let db = null;
   try { db = window.claude && window.claude.use ? await window.claude.use("db") : null; } catch { db = null; }
   if (!db) { setSync(local ? "Saved on this device" : "Example week — your changes save on this device"); return; }
@@ -758,7 +870,7 @@ function renderSections(sections, f = 1) {
 
 function renderSheet() {
   const root = document.getElementById("sheet-root");
-  if (!ui.open) { root.innerHTML = ""; return; }
+  if (!ui.open) { root.innerHTML = ui.share ? shareDialog() : ""; return; }
   const r = BY_ID[ui.open];
   const target = ui.choosing || slotFor(r);
   const inSlot = Object.entries(state.slots).find(([, v]) => v === r.id);
@@ -803,7 +915,31 @@ document.addEventListener("click", e => {
   const id = el.dataset.id, slot = el.dataset.slot;
   switch (act) {
     case "open": ui.open = id; renderSheet(); break;
-    case "close": case "close-overlay": ui.open = null; renderSheet(); break;
+    case "close": case "close-overlay": ui.open = null; ui.share = false; renderSheet(); break;
+    case "share": ui.share = true; renderSheet(); break;
+    case "share-start": {
+      const code = newHouseholdCode();
+      setHouseholdCode(code);
+      startSharing(code, { upload: true }).then(() => { renderSheet(); setSync("Shared · up to date"); })
+        .catch(() => { setHouseholdCode(null); toast("Couldn't start sharing — check your connection"); setSync("Saved on this device"); });
+      break;
+    }
+    case "share-send": {
+      const url = shareLink(householdCode());
+      if (navigator.share) navigator.share({ title: "Meal planner", text: "Join our meal planner", url }).catch(() => {});
+      else navigator.clipboard?.writeText(url).then(() => toast("Link copied"));
+      break;
+    }
+    case "share-copy": {
+      const input = document.getElementById("share-link");
+      input.select();
+      (navigator.clipboard ? navigator.clipboard.writeText(input.value) : Promise.reject()).then(() => toast("Link copied"), () => toast("Press Ctrl+C to copy"));
+      break;
+    }
+    case "share-stop":
+      setHouseholdCode(null);
+      location.reload();
+      break;
     case "shuffle-slot": {
       const pick = pickRandom(slot, state.slots[slot]);
       if (!pick) { toast("No other recipes fit that slot"); break; }
@@ -907,7 +1043,7 @@ document.addEventListener("input", e => {
   const s = document.getElementById("search");
   s.focus(); s.setSelectionRange(pos, pos);
 });
-document.addEventListener("keydown", e => { if (e.key === "Escape" && ui.open) { ui.open = null; renderSheet(); } });
+document.addEventListener("keydown", e => { if (e.key === "Escape" && (ui.open || ui.share)) { ui.open = null; ui.share = false; renderSheet(); } });
 document.querySelectorAll(".tabs button").forEach(b => b.addEventListener("click", () => {
   ui.tab = b.dataset.tab; if (ui.tab !== "recipes") ui.choosing = null; render(); window.scrollTo(0, 0);
 }));

@@ -138,6 +138,33 @@ favourites (3×) and well-rated recipes (4★ 2×, 5★ 3×), rarely pick 1-2★
 and skip anything cooked in the last 28 days or planned in the last four
 weeks.
 
+### Sharing between people
+
+With Firebase set up, a **Share** button appears in the planner's header. It
+creates a household link; everyone who opens it sees the same week, shopping
+list ticks, scales, favourites and ratings, live. Changes are sent as small
+updates, so two people ticking items at once don't overwrite each other, and
+each device keeps its own copy for offline use. **Stop sharing on this
+device** leaves the household.
+
+One-time setup (free Firebase Spark plan):
+
+1. At <https://console.firebase.google.com>, add a project (Analytics off).
+2. **Build > Firestore Database > Create database**, production mode, a nearby
+   location (e.g. `australia-southeast1`).
+3. On its **Rules** tab, paste `firestore.rules` from this repo and publish.
+4. **Project settings > Your apps > Web (`</>`)**, register an app, and copy
+   the `firebaseConfig` values into `planner/sync-config.json`:
+
+   ```json
+   { "apiKey": "...", "authDomain": "...", "projectId": "...",
+     "storageBucket": "...", "messagingSenderId": "...", "appId": "..." }
+   ```
+
+These values identify the project rather than grant access, so they're safe
+to commit; the rules are what protect the data. Households can only be read
+or changed by someone with their link.
+
 ## Website
 
 Every push to `main` runs `.github/workflows/publish.yml`, which rebuilds the
