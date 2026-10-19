@@ -114,6 +114,14 @@ main.wrap { padding-block: 20px 48px; display: grid; gap: 28px; }
 .slot h3 button:hover { text-decoration: underline; text-underline-offset: 3px; }
 .slot h3 button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .meta { display: flex; flex-wrap: wrap; gap: 4px 14px; font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted); }
+.meta .kcal { color: var(--ink); }
+.macros { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin: 12px 0 4px; }
+.macros div { background: var(--sunk); border-radius: 10px; padding: 8px 10px; }
+.macros dt { font-size: 0.72rem; color: var(--muted); }
+.macros dd { margin: 0; font-family: var(--font-mono); font-size: 0.95rem; color: var(--ink); }
+.macros-note { font-size: 0.75rem; color: var(--muted); margin: 0 0 10px; }
+.week-nutrition { margin: 4px 0 0; font-size: 0.9rem; color: var(--muted); }
+.week-nutrition strong { color: var(--ink); font-variant-numeric: tabular-nums; }
 .slot .row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
 .slot.empty { border-style: dashed; box-shadow: none; background: transparent; }
 .slot.empty .placeholder { color: var(--muted); font-size: 0.92rem; }
@@ -244,7 +252,7 @@ const EXAMPLE = {
 };
 
 let state = clone(EXAMPLE);
-let ui = { tab: "week", q: "", chapter: null, group: null, protein: null, choosing: null, hidePantry: false, minceOnly: false, open: null };
+let ui = { tab: "week", q: "", chapter: null, group: null, protein: null, choosing: null, hidePantry: false, minceOnly: false, highProtein: false, open: null };
 let store = null;        // db document ref, or null
 let saveMode = "local";  // "db" | "local" | "none"
 
@@ -340,12 +348,39 @@ function toast(msg) {
   clearTimeout(toast.t);
   toast.t = setTimeout(() => { root.innerHTML = ""; }, 2200);
 }
+const HIGH_PROTEIN = 30; // g per serving
+function isHighProtein(r) { return !!r.nutrition && r.nutrition.protein >= HIGH_PROTEIN; }
+function macroSpans(r) {
+  const n = r.nutrition;
+  return n ? `<span class="kcal">${n.kcal} kcal</span><span class="kcal">${n.protein} g protein</span>` : "";
+}
+function macroBlock(r) {
+  const n = r.nutrition;
+  if (!n) return "";
+  const cell = (label, v) => `<div><dt>${label}</dt><dd>${v}</dd></div>`;
+  return `<dl class="macros">${cell("Calories", n.kcal)}${cell("Protein", `${n.protein} g`)}${cell("Carbs", `${n.carbs} g`)}${cell("Fat", `${n.fat} g`)}</dl>
+    <p class="macros-note">Per ${n.per}, estimated from the ingredients.</p>`;
+}
+function weekNutrition() {
+  const meals = plannedIds().map(id => BY_ID[id]).filter(r => r && r.nutrition && r.nutrition.per === "serving");
+  if (!meals.length) return "";
+  let servings = 0, kcal = 0, protein = 0;
+  for (const r of meals) {
+    servings += r.nutrition.count;
+    kcal += r.nutrition.kcal * r.nutrition.count;
+    protein += r.nutrition.protein * r.nutrition.count;
+  }
+  const s = Math.round(servings);
+  return `<p class="week-nutrition">This week: <strong>${s}</strong> servings, averaging <strong>${Math.round(kcal / servings / 10) * 10} kcal</strong> and <strong>${Math.round(protein / servings)} g protein</strong> each (<strong>${Math.round(protein).toLocaleString()} g</strong> protein in total).</p>`;
+}
+
 function pickRandom(slotKey, exclude) {
   const slot = SLOTS.find(s => s.key === slotKey);
   const recent = recentIds();
   const used = new Set(plannedIds());
   let pool = RECIPES.filter(r => slot.chapters.includes(r.chapter) && r.id !== exclude && !used.has(r.id));
   if (ui.minceOnly) pool = pool.filter(r => r.tags.includes("mince"));
+  if (ui.highProtein) pool = pool.filter(isHighProtein);
   const fresh = pool.filter(r => !recent.has(r.id));
   const from = fresh.length ? fresh : pool;
   return from.length ? from[Math.floor(Math.random() * from.length)].id : null;
@@ -480,7 +515,7 @@ function slotCard(s) {
   return `<article class="slot${cooked ? " is-cooked" : ""}" data-m="${s.key}">
     <span class="chip">${s.label}</span>
     <h3><button data-act="open" data-id="${id}">${esc(r.title)}</button></h3>
-    <div class="meta"><span>Serves ${esc(r.servings)}</span><span>${esc(r.time === "–" ? "Time not set" : r.time)}</span></div>
+    <div class="meta"><span>Serves ${esc(r.servings)}</span><span>${esc(r.time === "–" ? "Time not set" : r.time)}</span>${macroSpans(r)}</div>
     <div class="row">
       <button class="btn small" data-act="shuffle-slot" data-slot="${s.key}" title="Swap for another random recipe">Swap</button>
       <button class="btn small" data-act="choose" data-slot="${s.key}">Browse</button>
@@ -506,9 +541,11 @@ function renderWeek() {
     <div>
       <h2>Week of ${esc(prettyWeek(state.week))}</h2>
       <p>${state.example ? "This is an example week. Swap or browse to make it yours." : "One slow cooker, one pressure cooker and one quick meal, 4 servings each."}</p>
+      ${weekNutrition()}
     </div>
     <div class="actions">
       <label class="toggle"><input type="checkbox" id="mince-only" data-act="mince-only" ${ui.minceOnly ? "checked" : ""}> Mince recipes only</label>
+      <label class="toggle"><input type="checkbox" id="high-protein-week" data-act="high-protein" ${ui.highProtein ? "checked" : ""}> ${HIGH_PROTEIN} g+ protein</label>
       <button class="btn" data-act="shuffle-all">Shuffle the trio</button>
       <button class="btn primary" data-act="new-week">Start next week</button>
     </div>
@@ -532,6 +569,7 @@ function filteredRecipes() {
     (!ui.chapter || r.chapter === ui.chapter) &&
     (!ui.group || r.group === ui.group) &&
     (!ui.protein || r.tags.includes(ui.protein)) &&
+    (!ui.highProtein || isHighProtein(r)) &&
     (!q || r.title.toLowerCase().includes(q) || r.ingredients.some(l => l.toLowerCase().includes(q))));
 }
 
@@ -548,7 +586,7 @@ function renderRecipes() {
   const cards = list.map(r => `<button class="card" data-m="${r.chapter}" data-act="open" data-id="${r.id}">
       <span class="chip">${esc(CHAPTER_LABEL[r.chapter])}${r.group ? ` · ${esc(r.group)}` : ""}</span>
       <span class="name">${esc(r.title)}</span>
-      <span class="meta"><span>Serves ${esc(r.servings)}</span>${r.time !== "–" ? `<span>${esc(r.time)}</span>` : ""}</span>
+      <span class="meta"><span>Serves ${esc(r.servings)}</span>${r.time !== "–" ? `<span>${esc(r.time)}</span>` : ""}${macroSpans(r)}</span>
       ${planned.has(r.id) ? `<span class="planned">On this week's plan</span>` : ""}
     </button>`).join("");
   return `
@@ -560,7 +598,7 @@ function renderRecipes() {
     <input class="search" id="search" type="search" placeholder="Search by name or ingredient, e.g. split peas" value="${esc(ui.q)}" aria-label="Search recipes">
     <div class="chips" role="group" aria-label="Chapter">${chapterChips}</div>
     ${groupChips ? `<div class="chips" role="group" aria-label="Section">${groupChips}</div>` : ""}
-    <div class="chips" role="group" aria-label="Main protein">${proteinChips}</div>
+    <div class="chips" role="group" aria-label="Main protein">${proteinChips}<button class="fchip" data-act="high-protein-chip" aria-pressed="${ui.highProtein}">${HIGH_PROTEIN} g+ protein</button></div>
   </section>
   <p class="result-count">${list.length} ${list.length === 1 ? "recipe" : "recipes"}</p>
   <section class="list">${cards || `<p class="empty-note">No recipes match. Try clearing a filter.</p>`}</section>`;
@@ -634,6 +672,7 @@ function renderSheet() {
         <div class="top-row"><span class="chip">${esc(r.chapterName)}${r.group ? ` · ${esc(r.group)}` : ""}</span><button class="btn small ghost" data-act="close" aria-label="Close recipe">Close</button></div>
         <h2 id="sheet-title">${esc(r.title)}</h2>
         <div class="meta"><span>Serves ${esc(r.servings)}</span>${r.time !== "–" ? `<span>${esc(r.time)}</span>` : ""}</div>
+        ${macroBlock(r)}
         ${r.intro ? `<p class="intro">${md(r.intro)}</p>` : ""}
         <div class="sheet-actions">${actions}</div>
       </div>
@@ -704,6 +743,7 @@ document.addEventListener("click", e => {
     case "chapter": ui.chapter = ui.chapter === el.dataset.v ? null : el.dataset.v; ui.group = null; render(); break;
     case "group": ui.group = ui.group === el.dataset.v ? null : el.dataset.v; render(); break;
     case "protein": ui.protein = ui.protein === el.dataset.v ? null : el.dataset.v; render(); break;
+    case "high-protein-chip": ui.highProtein = !ui.highProtein; render(); break;
     case "uncheck-all": commit(s => { s.checked = {}; }); break;
     case "copy-list": copyList(); break;
     case "share-list": shareList(); break;
@@ -715,6 +755,7 @@ document.addEventListener("change", e => {
   if (act === "cooked") commit(s => { if (el.checked) s.cooked[el.dataset.id] = true; else delete s.cooked[el.dataset.id]; });
   if (act === "check") commit(s => { if (el.checked) s.checked[el.dataset.key] = true; else delete s.checked[el.dataset.key]; });
   if (act === "mince-only") { ui.minceOnly = el.checked; }
+  if (act === "high-protein") { ui.highProtein = el.checked; }
   if (act === "hide-pantry") { ui.hidePantry = el.checked; render(); }
 });
 document.addEventListener("input", e => {

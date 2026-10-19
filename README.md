@@ -93,6 +93,19 @@ python3 planner/build.py
 This reads the chapters in `main.tex`, writes `planner/recipes.json` and
 regenerates `planner/index.html` from `planner/template.html`.
 
+### Nutrition estimates
+
+The build also estimates calories, protein, carbs and fat per serving from
+each recipe's ingredients (`planner/nutrition.py` holds the per-100 g values
+and typical weights, such as one onion or a cup of flour). They show on every
+recipe in the planner, power the "30 g+ protein" filter and the weekly totals,
+and appear under Servings/Time in the PDF books via the generated
+`nutrition.tex`. A recipe's own `
+utritiontable` takes priority. Estimates
+are for comparing recipes, so expect them to be within about 10-15%. If a new
+ingredient isn't in `nutrition.py` it's simply left out, so add it there when
+you add recipes with something unusual.
+
 ## Website
 
 Every push to `main` runs `.github/workflows/publish.yml`, which rebuilds the

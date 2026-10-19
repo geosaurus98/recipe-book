@@ -289,7 +289,15 @@
   "tags": [
    "beef",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 860,
+   "protein": 56,
+   "carbs": 105,
+   "fat": 21,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Beef & Mixed Bean Chilli",
@@ -535,7 +543,15 @@
   "tags": [
    "beef",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 530,
+   "protein": 44,
+   "carbs": 39,
+   "fat": 20,
+   "per": "serving",
+   "count": 6
+  }
  },
  {
   "title": "Beef & Red Lentil Moussaka-Style Stew",
@@ -836,7 +852,15 @@
   "tags": [
    "beef",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 490,
+   "protein": 41,
+   "carbs": 31,
+   "fat": 21,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Beef & Vegetable Stew",
@@ -1145,7 +1169,15 @@
   ],
   "tags": [
    "beef"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 510,
+   "protein": 44,
+   "carbs": 50,
+   "fat": 14,
+   "per": "serving",
+   "count": 8
+  }
  },
  {
   "title": "Beef, Barley & Mushroom Stew",
@@ -1401,7 +1433,15 @@
   ],
   "tags": [
    "beef"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 510,
+   "protein": 42,
+   "carbs": 60,
+   "fat": 11,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Beef, Red Lentil & Vegetable Cottage Pie Bowls",
@@ -1664,7 +1704,15 @@
   "tags": [
    "beef",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 540,
+   "protein": 36,
+   "carbs": 60,
+   "fat": 17,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Beefaroni",
@@ -1959,7 +2007,15 @@
   "tags": [
    "beef",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 570,
+   "protein": 26,
+   "carbs": 61,
+   "fat": 24,
+   "per": "serving",
+   "count": 8
+  }
  },
  {
   "title": "Butter Chicken-Style Chicken & Lentil Curry",
@@ -2219,7 +2275,15 @@
   ],
   "tags": [
    "chicken"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 670,
+   "protein": 45,
+   "carbs": 36,
+   "fat": 36,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Cajun Chicken, Bean & Rice Bowls",
@@ -2625,7 +2689,15 @@
   ],
   "tags": [
    "chicken"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 600,
+   "protein": 44,
+   "carbs": 91,
+   "fat": 6,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Cheeseburger Macaroni with Hidden Lentils",
@@ -2873,7 +2945,15 @@
   "tags": [
    "beef",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 810,
+   "protein": 54,
+   "carbs": 85,
+   "fat": 27,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Chicken & Rice",
@@ -3079,7 +3159,15 @@
   ],
   "tags": [
    "chicken"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 360,
+   "protein": 14,
+   "carbs": 57,
+   "fat": 9,
+   "per": "serving",
+   "count": 6
+  }
  },
  {
   "title": "Chicken & Vegetable Soup",
@@ -3371,7 +3459,15 @@
   ],
   "tags": [
    "chicken"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 420,
+   "protein": 41,
+   "carbs": 30,
+   "fat": 14,
+   "per": "serving",
+   "count": 8
+  }
  },
  {
   "title": "Chicken, Chickpea & Edamame Biryani Bowls",
@@ -3665,7 +3761,15 @@
   ],
   "tags": [
    "chicken"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 620,
+   "protein": 49,
+   "carbs": 86,
+   "fat": 8,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Chicken, Lentil & Coconut Curry with Rice",
@@ -3924,7 +4028,15 @@
   ],
   "tags": [
    "chicken"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 680,
+   "protein": 40,
+   "carbs": 79,
+   "fat": 17,
+   "per": "serving",
+   "count": 8
+  }
  },
  {
   "title": "Chicken, Rice & Lentils",
@@ -4168,7 +4280,15 @@
   ],
   "tags": [
    "chicken"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 630,
+   "protein": 45,
+   "carbs": 73,
+   "fat": 16,
+   "per": "serving",
+   "count": 3
+  }
  },
  {
   "title": "Coconut Chicken, Potato & Chickpea Curry",
@@ -4435,7 +4555,15 @@
   "tags": [
    "chicken",
    "fish"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 780,
+   "protein": 43,
+   "carbs": 94,
+   "fat": 25,
+   "per": "serving",
+   "count": 3.5
+  }
  },
  {
   "title": "Filipino-Style Pork Adobo with Edamame",
@@ -4647,7 +4775,15 @@
   ],
   "tags": [
    "pork"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 390,
+   "protein": 42,
+   "carbs": 27,
+   "fat": 12,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "High-Protein Pasta Sauce (Beef or Lentil)",
@@ -4969,7 +5105,15 @@
   "tags": [
    "beef",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 850,
+   "protein": 72,
+   "carbs": 65,
+   "fat": 30,
+   "per": "serving",
+   "count": 6
+  }
  },
  {
   "title": "Lentil Coconut Curry",
@@ -5255,7 +5399,15 @@
     "raw": "1–2 cups frozen vegetables (see options below)"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 460,
+   "protein": 24,
+   "carbs": 58,
+   "fat": 13,
+   "per": "serving",
+   "count": 6
+  }
  },
  {
   "title": "Mac & Cheese with Vegetables",
@@ -5389,7 +5541,15 @@
     "raw": "1 cup mixed vegetables"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 430,
+   "protein": 19,
+   "carbs": 44,
+   "fat": 19,
+   "per": "serving",
+   "count": 8
+  }
  },
  {
   "title": "Peanut Chicken & Sugar Snap Peas with Noodles",
@@ -5624,7 +5784,15 @@
   ],
   "tags": [
    "chicken"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 500,
+   "protein": 38,
+   "carbs": 59,
+   "fat": 12,
+   "per": "serving",
+   "count": 6
+  }
  },
  {
   "title": "Pork Mince Congee with Edamame",
@@ -5866,7 +6034,15 @@
   "tags": [
    "pork",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 520,
+   "protein": 37,
+   "carbs": 37,
+   "fat": 25,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Pork Mince Japanese Curry with Potato & Carrot",
@@ -6034,7 +6210,15 @@
   "tags": [
    "pork",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 440,
+   "protein": 29,
+   "carbs": 35,
+   "fat": 21,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Pulled BBQ Chicken with Lentils",
@@ -6408,7 +6592,15 @@
   ],
   "tags": [
    "chicken"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 660,
+   "protein": 45,
+   "carbs": 99,
+   "fat": 8,
+   "per": "serving",
+   "count": 8
+  }
  },
  {
   "title": "Sausage & Rice",
@@ -6713,7 +6905,15 @@
   ],
   "tags": [
    "pork"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 440,
+   "protein": 15,
+   "carbs": 48,
+   "fat": 21,
+   "per": "serving",
+   "count": 6
+  }
  },
  {
   "title": "Sausage & Spinach Pasta",
@@ -6906,7 +7106,15 @@
   ],
   "tags": [
    "pork"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 480,
+   "protein": 20,
+   "carbs": 56,
+   "fat": 20,
+   "per": "serving",
+   "count": 6
+  }
  },
  {
   "title": "Stuffed Capsicum Soup",
@@ -7141,7 +7349,15 @@
   "tags": [
    "beef",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 480,
+   "protein": 36,
+   "carbs": 44,
+   "fat": 17,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Teriyaki Chicken & Veg",
@@ -7434,7 +7650,15 @@
   ],
   "tags": [
    "chicken"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 590,
+   "protein": 41,
+   "carbs": 76,
+   "fat": 14,
+   "per": "serving",
+   "count": 6
+  }
  },
  {
   "title": "Thai Peanut Chicken",
@@ -7789,7 +8013,15 @@
   "tags": [
    "chicken",
    "fish"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 660,
+   "protein": 38,
+   "carbs": 38,
+   "fat": 39,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Apple-Mustard Pork & Split-Pea Stew",
@@ -8067,7 +8299,15 @@
   ],
   "tags": [
    "pork"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 450,
+   "protein": 29,
+   "carbs": 32,
+   "fat": 24,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Beef & Potato Stew over Rice",
@@ -8380,7 +8620,15 @@
   ],
   "tags": [
    "beef"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 570,
+   "protein": 49,
+   "carbs": 62,
+   "fat": 13,
+   "per": "serving",
+   "count": 5.0
+  }
  },
  {
   "title": "Beef & Vegetable Soup",
@@ -8618,7 +8866,15 @@
   ],
   "tags": [
    "beef"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 280,
+   "protein": 24,
+   "carbs": 28,
+   "fat": 7,
+   "per": "serving",
+   "count": 6
+  }
  },
  {
   "title": "Beef Mince & Yellow Split Pea Keema",
@@ -8881,7 +9137,15 @@
   "tags": [
    "beef",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 600,
+   "protein": 39,
+   "carbs": 74,
+   "fat": 17,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Beef Mince Taco Filling (Freezer Batch)",
@@ -9211,7 +9475,15 @@
   "tags": [
    "beef",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 480,
+   "protein": 39,
+   "carbs": 40,
+   "fat": 17,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Butter Chicken-Style Chicken & Lentil Curry",
@@ -9471,7 +9743,15 @@
   ],
   "tags": [
    "chicken"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 640,
+   "protein": 45,
+   "carbs": 36,
+   "fat": 32,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Chicken & Chickpea Stew",
@@ -9653,7 +9933,15 @@
   ],
   "tags": [
    "chicken"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 500,
+   "protein": 40,
+   "carbs": 20,
+   "fat": 27,
+   "per": "serving",
+   "count": 6
+  }
  },
  {
   "title": "Chicken & Yellow Split Pea Soup",
@@ -9905,7 +10193,15 @@
   ],
   "tags": [
    "chicken"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 300,
+   "protein": 37,
+   "carbs": 29,
+   "fat": 4,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Chilli Con Carne with Red Lentils & Kidney Beans",
@@ -10218,7 +10514,15 @@
   "tags": [
    "beef",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 520,
+   "protein": 42,
+   "carbs": 43,
+   "fat": 17,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Coconut Chicken, Kumara & Chickpea Curry",
@@ -10469,7 +10773,15 @@
   "tags": [
    "chicken",
    "fish"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 750,
+   "protein": 42,
+   "carbs": 88,
+   "fat": 25,
+   "per": "serving",
+   "count": 3.5
+  }
  },
  {
   "title": "Honey Garlic Chicken",
@@ -10663,7 +10975,15 @@
   ],
   "tags": [
    "chicken"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 340,
+   "protein": 35,
+   "carbs": 16,
+   "fat": 14,
+   "per": "serving",
+   "count": 6
+  }
  },
  {
   "title": "Honey-Mustard Chicken & White Bean Stew",
@@ -10919,7 +11239,15 @@
   ],
   "tags": [
    "chicken"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 490,
+   "protein": 45,
+   "carbs": 65,
+   "fat": 4,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Mexican Salsa Chicken",
@@ -11100,7 +11428,15 @@
   ],
   "tags": [
    "chicken"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 360,
+   "protein": 37,
+   "carbs": 19,
+   "fat": 14,
+   "per": "serving",
+   "count": 6
+  }
  },
  {
   "title": "Mexican Shredded Chicken",
@@ -11373,7 +11709,15 @@
   ],
   "tags": [
    "chicken"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 380,
+   "protein": 37,
+   "carbs": 24,
+   "fat": 14,
+   "per": "serving",
+   "count": 5.0
+  }
  },
  {
   "title": "Pork & Kumara Curry",
@@ -11581,7 +11925,15 @@
   ],
   "tags": [
    "pork"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 680,
+   "protein": 35,
+   "carbs": 36,
+   "fat": 43,
+   "per": "serving",
+   "count": 6
+  }
  },
  {
   "title": "Pork & Lentil Bolognese",
@@ -11868,7 +12220,15 @@
   "tags": [
    "pork",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 700,
+   "protein": 35,
+   "carbs": 89,
+   "fat": 21,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Pork Mince, Barley & Vegetable Soup",
@@ -12128,7 +12488,15 @@
   "tags": [
    "pork",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 660,
+   "protein": 42,
+   "carbs": 67,
+   "fat": 23,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Pulled Pork Wraps",
@@ -12315,7 +12683,15 @@
   ],
   "tags": [
    "pork"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 440,
+   "protein": 32,
+   "carbs": 8,
+   "fat": 30,
+   "per": "serving",
+   "count": 6
+  }
  },
  {
   "title": "Satay Chicken & Red Lentil Curry",
@@ -12571,7 +12947,15 @@
   ],
   "tags": [
    "chicken"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 710,
+   "protein": 46,
+   "carbs": 75,
+   "fat": 24,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Savoury Mince with Barley & Veg",
@@ -12811,7 +13195,15 @@
   "tags": [
    "beef",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 460,
+   "protein": 34,
+   "carbs": 44,
+   "fat": 16,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Smoky Chicken, Black Bean & Red Lentil Stew",
@@ -13130,7 +13522,15 @@
   ],
   "tags": [
    "chicken"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 610,
+   "protein": 52,
+   "carbs": 85,
+   "fat": 4,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Beef & Broccoli Stir-Fry",
@@ -13339,7 +13739,15 @@
   "tags": [
    "beef",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 270,
+   "protein": 24,
+   "carbs": 13,
+   "fat": 15,
+   "per": "serving",
+   "count": 6
+  }
  },
  {
   "title": "Beef & Vegetable Chilli",
@@ -13573,7 +13981,15 @@
   "tags": [
    "beef",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 340,
+   "protein": 26,
+   "carbs": 30,
+   "fat": 12,
+   "per": "serving",
+   "count": 6
+  }
  },
  {
   "title": "Beef Kofta with Couscous & Yoghurt",
@@ -13897,7 +14313,15 @@
   "tags": [
    "beef",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 550,
+   "protein": 40,
+   "carbs": 49,
+   "fat": 20,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Beef Mince & Black Bean Quesadillas",
@@ -14119,7 +14543,15 @@
   "tags": [
    "beef",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 670,
+   "protein": 43,
+   "carbs": 55,
+   "fat": 29,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Beef Mince Stir-Fry",
@@ -14311,7 +14743,15 @@
   "tags": [
    "beef",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 260,
+   "protein": 23,
+   "carbs": 11,
+   "fat": 14,
+   "per": "serving",
+   "count": 6
+  }
  },
  {
   "title": "Beef Schnitzel Rolls",
@@ -14509,7 +14949,15 @@
    "beef",
    "pork",
    "chicken"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 470,
+   "protein": 46,
+   "carbs": 29,
+   "fat": 17,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Burrito Bowls",
@@ -14634,7 +15082,15 @@
   "tags": [
    "beef",
    "chicken"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 610,
+   "protein": 44,
+   "carbs": 71,
+   "fat": 14,
+   "per": "serving",
+   "count": 2.5
+  }
  },
  {
   "title": "Butter Chicken",
@@ -14919,7 +15375,15 @@
   ],
   "tags": [
    "chicken"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 420,
+   "protein": 22,
+   "carbs": 11,
+   "fat": 32,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Chicken & Veg Stir-Fry Bowl",
@@ -15181,7 +15645,15 @@
   ],
   "tags": [
    "chicken"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 720,
+   "protein": 61,
+   "carbs": 88,
+   "fat": 15,
+   "per": "serving",
+   "count": 2
+  }
  },
  {
   "title": "Chicken & Vegetable Stir-Fry",
@@ -15420,7 +15892,15 @@
   ],
   "tags": [
    "chicken"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 360,
+   "protein": 38,
+   "carbs": 29,
+   "fat": 11,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Chicken or Falafel Wraps",
@@ -15562,7 +16042,15 @@
   ],
   "tags": [
    "chicken"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 320,
+   "protein": 33,
+   "carbs": 32,
+   "fat": 6,
+   "per": "serving",
+   "count": 2.5
+  }
  },
  {
   "title": "Chicken Pad Thai",
@@ -15788,7 +16276,15 @@
   "tags": [
    "chicken",
    "fish"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 600,
+   "protein": 32,
+   "carbs": 84,
+   "fat": 14,
+   "per": "serving",
+   "count": 2.5
+  }
  },
  {
   "title": "Chicken Shawarma Wraps",
@@ -15913,7 +16409,15 @@
   ],
   "tags": [
    "chicken"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 370,
+   "protein": 28,
+   "carbs": 32,
+   "fat": 14,
+   "per": "serving",
+   "count": 2.5
+  }
  },
  {
   "title": "Chicken Tikka Masala",
@@ -16056,7 +16560,15 @@
   ],
   "tags": [
    "chicken"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 760,
+   "protein": 43,
+   "carbs": 132,
+   "fat": 5,
+   "per": "serving",
+   "count": 2.5
+  }
  },
  {
   "title": "Chicken, Tomato & White Bean Pasta",
@@ -16296,7 +16808,15 @@
   ],
   "tags": [
    "chicken"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 530,
+   "protein": 47,
+   "carbs": 74,
+   "fat": 4,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Classic Spaghetti Bolognese",
@@ -16501,7 +17021,15 @@
   "tags": [
    "beef",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 350,
+   "protein": 28,
+   "carbs": 17,
+   "fat": 19,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Freezer Burritos with Beef, Beans & Rice",
@@ -16724,7 +17252,15 @@
   "tags": [
    "beef",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 770,
+   "protein": 46,
+   "carbs": 75,
+   "fat": 30,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Gnocchi alla Sorrentina",
@@ -16942,7 +17478,15 @@
     "raw": "Extra virgin olive oil"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 440,
+   "protein": 19,
+   "carbs": 72,
+   "fat": 9,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Greek-Style Chicken & Chickpea Couscous Bowls",
@@ -17203,7 +17747,15 @@
   ],
   "tags": [
    "chicken"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 570,
+   "protein": 49,
+   "carbs": 71,
+   "fat": 8,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Homemade Burgers & Fries",
@@ -17459,7 +18011,15 @@
   "tags": [
    "beef",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 1450,
+   "protein": 81,
+   "carbs": 186,
+   "fat": 42,
+   "per": "serving",
+   "count": 2
+  }
  },
  {
   "title": "Homemade Sub Sandwiches",
@@ -17622,7 +18182,15 @@
   "tags": [
    "pork",
    "chicken"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 320,
+   "protein": 22,
+   "carbs": 43,
+   "fat": 7,
+   "per": "serving",
+   "count": 2.5
+  }
  },
  {
   "title": "Korean Bibimbap",
@@ -17750,7 +18318,15 @@
   "tags": [
    "beef",
    "chicken"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 410,
+   "protein": 28,
+   "carbs": 55,
+   "fat": 9,
+   "per": "serving",
+   "count": 2.5
+  }
  },
  {
   "title": "Korean-Style Steak Bowl",
@@ -18029,7 +18605,15 @@
   ],
   "tags": [
    "beef"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 800,
+   "protein": 60,
+   "carbs": 72,
+   "fat": 30,
+   "per": "serving",
+   "count": 2
+  }
  },
  {
   "title": "Lean Sausage Ragu with Brown Rice",
@@ -18302,7 +18886,15 @@
   "tags": [
    "beef",
    "pork"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 420,
+   "protein": 19,
+   "carbs": 29,
+   "fat": 23,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Mapo Tofu with Pork Mince",
@@ -18525,7 +19117,15 @@
   "tags": [
    "pork",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 240,
+   "protein": 18,
+   "carbs": 13,
+   "fat": 13,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Old School Beef Tacos",
@@ -18887,7 +19487,15 @@
   "tags": [
    "beef",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 490,
+   "protein": 29,
+   "carbs": 34,
+   "fat": 27,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Pork & Lentil Bolognese",
@@ -19125,7 +19733,15 @@
    "beef",
    "pork",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 360,
+   "protein": 25,
+   "carbs": 30,
+   "fat": 14,
+   "per": "serving",
+   "count": 6
+  }
  },
  {
   "title": "Pork & Veg Dumplings",
@@ -19363,7 +19979,15 @@
   "tags": [
    "pork",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 610,
+   "protein": 34,
+   "carbs": 66,
+   "fat": 23,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Pork Fried Rice with Omelette",
@@ -19559,7 +20183,15 @@
   "tags": [
    "pork",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 630,
+   "protein": 29,
+   "carbs": 89,
+   "fat": 17,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Pork Mince Dan Dan-Style Noodles",
@@ -19826,7 +20458,15 @@
   "tags": [
    "pork",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 780,
+   "protein": 47,
+   "carbs": 76,
+   "fat": 32,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Pork Mince Larb with Rice & Crunchy Veg",
@@ -20066,7 +20706,15 @@
    "pork",
    "fish",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 600,
+   "protein": 37,
+   "carbs": 60,
+   "fat": 24,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Pork Mince Lettuce Cups (San Choy Bow)",
@@ -20289,7 +20937,15 @@
   "tags": [
    "pork",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 270,
+   "protein": 21,
+   "carbs": 6,
+   "fat": 18,
+   "per": "serving",
+   "count": 6
+  }
  },
  {
   "title": "Quick Ramen Bowls",
@@ -20413,7 +21069,15 @@
   ],
   "tags": [
    "chicken"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 450,
+   "protein": 35,
+   "carbs": 53,
+   "fat": 11,
+   "per": "serving",
+   "count": 2.5
+  }
  },
  {
   "title": "Rigatoni all’Amatriciana",
@@ -20617,7 +21281,15 @@
   ],
   "tags": [
    "pork"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 770,
+   "protein": 35,
+   "carbs": 103,
+   "fat": 21,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Sausage Ragu",
@@ -20886,7 +21558,15 @@
   "tags": [
    "beef",
    "pork"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 700,
+   "protein": 29,
+   "carbs": 86,
+   "fat": 24,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Sesame Beef, Edamame & Vegetable Noodles",
@@ -21115,7 +21795,15 @@
   "tags": [
    "beef",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 670,
+   "protein": 47,
+   "carbs": 69,
+   "fat": 22,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Sloppy Joes with Lentils",
@@ -21357,7 +22045,15 @@
   "tags": [
    "beef",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 610,
+   "protein": 39,
+   "carbs": 69,
+   "fat": 19,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Spicy Arrabbiata-Style Mince Pasta",
@@ -21659,7 +22355,15 @@
   "tags": [
    "beef",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 1180,
+   "protein": 67,
+   "carbs": 147,
+   "fat": 34,
+   "per": "serving",
+   "count": 2
+  }
  },
  {
   "title": "Spicy Beef Bolognese with Rigatoni",
@@ -21951,7 +22655,15 @@
   "tags": [
    "beef",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 820,
+   "protein": 48,
+   "carbs": 101,
+   "fat": 24,
+   "per": "serving",
+   "count": 3.5
+  }
  },
  {
   "title": "Sweet & Sour Chicken",
@@ -22046,9 +22758,9 @@
     "raw": "1 carrot, sliced"
    },
    {
-    "key": "apple",
-    "name": "Apples",
-    "aisle": "Fruit & veg",
+    "key": "pineapple",
+    "name": "Pineapple (canned)",
+    "aisle": "Cans, jars & pulses",
     "qty": 1.0,
     "unit": "",
     "optional": false,
@@ -22075,7 +22787,15 @@
   ],
   "tags": [
    "chicken"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 770,
+   "protein": 39,
+   "carbs": 144,
+   "fat": 3,
+   "per": "serving",
+   "count": 2.5
+  }
  },
  {
   "title": "Thai Green Chicken Curry",
@@ -22326,7 +23046,15 @@
   "tags": [
    "chicken",
    "fish"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 490,
+   "protein": 36,
+   "carbs": 14,
+   "fat": 33,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Vietnamese Banh Mi",
@@ -22447,7 +23175,15 @@
   "tags": [
    "pork",
    "chicken"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 260,
+   "protein": 29,
+   "carbs": 19,
+   "fat": 7,
+   "per": "serving",
+   "count": 2.5
+  }
  },
  {
   "title": "Beef Mince & Lentil Shepherd's Pie",
@@ -22658,7 +23394,15 @@
   "tags": [
    "beef",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 500,
+   "protein": 30,
+   "carbs": 68,
+   "fat": 11,
+   "per": "serving",
+   "count": 6
+  }
  },
  {
   "title": "Beef Mince Stuffed Capsicums",
@@ -22876,7 +23620,15 @@
   "tags": [
    "beef",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 380,
+   "protein": 27,
+   "carbs": 28,
+   "fat": 16,
+   "per": "serving",
+   "count": 6
+  }
  },
  {
   "title": "Chicken & Vegetable Bake",
@@ -23113,7 +23865,15 @@
   ],
   "tags": [
    "chicken"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 470,
+   "protein": 38,
+   "carbs": 31,
+   "fat": 21,
+   "per": "serving",
+   "count": 6
+  }
  },
  {
   "title": "Classic Bolognese Lasagne",
@@ -23392,7 +24152,15 @@
    "beef",
    "pork",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 440,
+   "protein": 29,
+   "carbs": 40,
+   "fat": 16,
+   "per": "serving",
+   "count": 7.0
+  }
  },
  {
   "title": "Crunchy Crumbed Chicken Drumsticks",
@@ -23607,7 +24375,15 @@
   ],
   "tags": [
    "chicken"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 510,
+   "protein": 41,
+   "carbs": 28,
+   "fat": 25,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "DIY Pizzas",
@@ -23796,9 +24572,9 @@
     "raw": "Toppings: mushrooms, capsicum, olives, pineapple, chicken, ham"
    },
    {
-    "key": "apple",
-    "name": "Apples",
-    "aisle": "Fruit & veg",
+    "key": "pineapple",
+    "name": "Pineapple (canned)",
+    "aisle": "Cans, jars & pulses",
     "qty": null,
     "unit": "",
     "optional": true,
@@ -23826,7 +24602,15 @@
   "tags": [
    "pork",
    "chicken"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 1030,
+   "protein": 30,
+   "carbs": 136,
+   "fat": 39,
+   "per": "serving",
+   "count": 2.5
+  }
  },
  {
   "title": "Lemon Herb Salmon Tray Bake",
@@ -24027,7 +24811,15 @@
   ],
   "tags": [
    "fish"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 380,
+   "protein": 33,
+   "carbs": 9,
+   "fat": 24,
+   "per": "serving",
+   "count": 6
+  }
  },
  {
   "title": "Loaded Beef Nachos",
@@ -24294,7 +25086,15 @@
   "tags": [
    "beef",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 980,
+   "protein": 44,
+   "carbs": 72,
+   "fat": 56,
+   "per": "serving",
+   "count": 3.5
+  }
  },
  {
   "title": "Loaded Jacket Potatoes",
@@ -24403,7 +25203,15 @@
     "raw": "Spring onion, salad on the side"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 400,
+   "protein": 16,
+   "carbs": 54,
+   "fat": 12,
+   "per": "serving",
+   "count": 2.5
+  }
  },
  {
   "title": "Meatloaf Muffins",
@@ -24626,7 +25434,15 @@
    "beef",
    "pork",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 380,
+   "protein": 30,
+   "carbs": 25,
+   "fat": 18,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Mince & Cheese Pie Bake",
@@ -24870,7 +25686,15 @@
   "tags": [
    "beef",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 620,
+   "protein": 40,
+   "carbs": 39,
+   "fat": 33,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Sausage Rolls with Grated Veg",
@@ -25089,7 +25913,15 @@
   "tags": [
    "pork",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 880,
+   "protein": 36,
+   "carbs": 59,
+   "fat": 54,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Rustic Chickpea & Rocket Salad with Mustard-Garlic Vinaigrette",
@@ -25313,7 +26145,15 @@
     "raw": "1 tbsp white wine vinegar or apple cider vinegar"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 400,
+   "protein": 11,
+   "carbs": 38,
+   "fat": 25,
+   "per": "serving",
+   "count": 2
+  }
  },
  {
   "title": "Cajun Rice",
@@ -25545,7 +26385,15 @@
     "raw": "2 spring onions, sliced, to serve"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 320,
+   "protein": 7,
+   "carbs": 63,
+   "fat": 5,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Coconut Rice",
@@ -25661,7 +26509,15 @@
     "raw": "1 tsp sugar (optional)"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 420,
+   "protein": 7,
+   "carbs": 58,
+   "fat": 17,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Coriander Lime Rice",
@@ -25787,7 +26643,15 @@
     "raw": "Large handful of fresh coriander, chopped"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 280,
+   "protein": 5,
+   "carbs": 56,
+   "fat": 4,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Egg Fried Rice",
@@ -25967,7 +26831,15 @@
     "raw": "Pinch of white pepper"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 340,
+   "protein": 12,
+   "carbs": 53,
+   "fat": 9,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Garlic Butter Rice",
@@ -26105,7 +26977,15 @@
     "raw": "Salt, to taste"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 300,
+   "protein": 6,
+   "carbs": 57,
+   "fat": 5,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Herbed Couscous",
@@ -26261,7 +27141,15 @@
   ],
   "tags": [
    "chicken"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 200,
+   "protein": 6,
+   "carbs": 33,
+   "fat": 4,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Lemon & Herb Quinoa",
@@ -26426,7 +27314,15 @@
     "raw": "Black pepper"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 220,
+   "protein": 6,
+   "carbs": 28,
+   "fat": 9,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Mexican Tomato Rice",
@@ -26632,7 +27528,15 @@
     "raw": "Chopped fresh coriander, to serve"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 310,
+   "protein": 7,
+   "carbs": 62,
+   "fat": 4,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Rice with Peas & Parmesan",
@@ -26771,7 +27675,15 @@
     "raw": "Zest of ½ lemon (optional)"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 350,
+   "protein": 11,
+   "carbs": 63,
+   "fat": 6,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Turmeric Rice with Peas",
@@ -26942,7 +27854,15 @@
     "raw": "1 cup frozen peas"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 310,
+   "protein": 7,
+   "carbs": 60,
+   "fat": 4,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Asparagus with Capers and Parsley Mayonnaise",
@@ -27100,7 +28020,15 @@
     "raw": "Extra virgin olive oil"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 140,
+   "protein": 3,
+   "carbs": 5,
+   "fat": 13,
+   "per": "serving",
+   "count": 2.5
+  }
  },
  {
   "title": "Cauliflower Cheese",
@@ -27266,7 +28194,15 @@
     "raw": "Salt and black pepper"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 170,
+   "protein": 7,
+   "carbs": 15,
+   "fat": 10,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Crispy Smashed Potatoes",
@@ -27404,7 +28340,15 @@
     "raw": "Black pepper"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 260,
+   "protein": 5,
+   "carbs": 44,
+   "fat": 7,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Garlic Green Beans",
@@ -27542,7 +28486,15 @@
     "raw": "2 tbsp toasted sliced almonds (optional)"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 60,
+   "protein": 2,
+   "carbs": 8,
+   "fat": 4,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Kumara Mash",
@@ -27680,7 +28632,15 @@
     "raw": "Pinch of ground cinnamon or nutmeg (optional)"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 260,
+   "protein": 5,
+   "carbs": 51,
+   "fat": 5,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Kumara Wedges with Aioli",
@@ -27831,7 +28791,15 @@
     "raw": "1 tsp lemon juice"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 330,
+   "protein": 4,
+   "carbs": 41,
+   "fat": 17,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Roast Vegetables",
@@ -28018,7 +28986,15 @@
     "raw": "Black pepper"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 270,
+   "protein": 5,
+   "carbs": 48,
+   "fat": 7,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Sesame Asian Greens",
@@ -28180,7 +29156,15 @@
     "raw": "1 tsp sesame seeds"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 50,
+   "protein": 2,
+   "carbs": 5,
+   "fat": 3,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Banana Protein Pancakes",
@@ -28371,7 +29355,15 @@
     "raw": "To serve: Greek yoghurt, sliced banana, honey, mixed berries"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 90,
+   "protein": 7,
+   "carbs": 10,
+   "fat": 3,
+   "per": "serving",
+   "count": 9
+  }
  },
  {
   "title": "Breakfast Burritos",
@@ -28589,7 +29581,15 @@
   ],
   "tags": [
    "pork"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 430,
+   "protein": 24,
+   "carbs": 32,
+   "fat": 21,
+   "per": "serving",
+   "count": 6
+  }
  },
  {
   "title": "Egg Muffins",
@@ -28760,7 +29760,8 @@
   ],
   "tags": [
    "pork"
-  ]
+  ],
+  "nutrition": null
  },
  {
   "title": "Frittata Slices",
@@ -28964,7 +29965,15 @@
   ],
   "tags": [
    "chicken"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 160,
+   "protein": 16,
+   "carbs": 3,
+   "fat": 10,
+   "per": "serving",
+   "count": 8
+  }
  },
  {
   "title": "High-Protein Chia Pudding",
@@ -29129,7 +30138,15 @@
     "raw": "Toppings: mixed berries, sliced mango, toasted coconut, granola"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 120,
+   "protein": 10,
+   "carbs": 8,
+   "fat": 5,
+   "per": "serving",
+   "count": 5
+  }
  },
  {
   "title": "Overnight Oats",
@@ -29291,7 +30308,15 @@
     "raw": "Toppings (add in the morning): banana, mixed berries, honey, granola"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 130,
+   "protein": 10,
+   "carbs": 10,
+   "fat": 5,
+   "per": "serving",
+   "count": 5
+  }
  },
  {
   "title": "Savoury Egg & Rice Bowl",
@@ -29467,7 +30492,8 @@
   "tags": [
    "pork",
    "chicken"
-  ]
+  ],
+  "nutrition": null
  },
  {
   "title": "Boiled Eggs & Crackers",
@@ -29587,7 +30613,15 @@
     "raw": "Salt, pepper, and a dash of hot sauce or mustard"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 360,
+   "protein": 23,
+   "carbs": 22,
+   "fat": 20,
+   "per": "serving",
+   "count": 1
+  }
  },
  {
   "title": "Cheese & Marmite Scrolls",
@@ -29772,7 +30806,15 @@
     "raw": "1½ cups grated tasty cheese"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 260,
+   "protein": 8,
+   "carbs": 27,
+   "fat": 12,
+   "per": "serving",
+   "count": 12
+  }
  },
  {
   "title": "Cottage Cheese & Tomato Toast",
@@ -29902,7 +30944,15 @@
     "raw": "Salt, pepper, dried herbs or chilli flakes"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 300,
+   "protein": 21,
+   "carbs": 41,
+   "fat": 6,
+   "per": "serving",
+   "count": 1
+  }
  },
  {
   "title": "Crunchy Spiced Roasted Chickpeas",
@@ -30059,7 +31109,15 @@
     "raw": "Pinch of cayenne pepper (optional)"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 190,
+   "protein": 9,
+   "carbs": 21,
+   "fat": 6,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Devilled Eggs",
@@ -30206,7 +31264,15 @@
     "raw": "Smoked paprika and chopped chives or spring onion, to garnish"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 200,
+   "protein": 15,
+   "carbs": 1,
+   "fat": 15,
+   "per": "serving",
+   "count": 3
+  }
  },
  {
   "title": "Edamame with Sea Salt",
@@ -30305,7 +31371,15 @@
     "raw": "Optional: soy sauce or chilli flakes"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 240,
+   "protein": 24,
+   "carbs": 18,
+   "fat": 10,
+   "per": "serving",
+   "count": 1
+  }
  },
  {
   "title": "Greek Yoghurt & Berry Bowl",
@@ -30408,7 +31482,15 @@
     "raw": "1 tbsp granola or crushed almonds"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 340,
+   "protein": 20,
+   "carbs": 37,
+   "fat": 12,
+   "per": "serving",
+   "count": 1
+  }
  },
  {
   "title": "Homemade Hummus",
@@ -30569,7 +31651,15 @@
     "raw": "Smoked paprika, to serve (optional)"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 130,
+   "protein": 4,
+   "carbs": 9,
+   "fat": 8,
+   "per": "serving",
+   "count": 6
+  }
  },
  {
   "title": "Homemade Protein Balls",
@@ -30717,7 +31807,15 @@
     "raw": "2–4 tbsp milk (to bind if needed)"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 90,
+   "protein": 5,
+   "carbs": 8,
+   "fat": 5,
+   "per": "serving",
+   "count": 20
+  }
  },
  {
   "title": "Hummus & Vegetable Sticks",
@@ -30833,7 +31931,15 @@
     "raw": "½ cucumber, cut into sticks"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 520,
+   "protein": 13,
+   "carbs": 53,
+   "fat": 30,
+   "per": "serving",
+   "count": 1
+  }
  },
  {
   "title": "Microwave Mug Omelette",
@@ -30980,7 +32086,15 @@
   "tags": [
    "pork",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 270,
+   "protein": 24,
+   "carbs": 3,
+   "fat": 17,
+   "per": "serving",
+   "count": 1
+  }
  },
  {
   "title": "Oven Beef Jerky",
@@ -31165,7 +32279,15 @@
   ],
   "tags": [
    "beef"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 100,
+   "protein": 15,
+   "carbs": 3,
+   "fat": 3,
+   "per": "serving",
+   "count": 8
+  }
  },
  {
   "title": "Parmesan & Garlic Popcorn",
@@ -31300,7 +32422,15 @@
     "raw": "¼ tsp salt"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 190,
+   "protein": 6,
+   "carbs": 19,
+   "fat": 11,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Peanut Butter & Banana Rice Cakes",
@@ -31400,7 +32530,15 @@
     "raw": "Pinch of cinnamon"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 400,
+   "protein": 11,
+   "carbs": 56,
+   "fat": 17,
+   "per": "serving",
+   "count": 1
+  }
  },
  {
   "title": "Pork Mince Rice Paper Rolls",
@@ -31665,7 +32803,15 @@
    "pork",
    "fish",
    "mince"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 570,
+   "protein": 28,
+   "carbs": 63,
+   "fat": 23,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Tuna & Crackers",
@@ -31823,7 +32969,15 @@
   ],
   "tags": [
    "fish"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 440,
+   "protein": 41,
+   "carbs": 30,
+   "fat": 17,
+   "per": "serving",
+   "count": 1
+  }
  },
  {
   "title": "Tuna & Sweetcorn Fritters",
@@ -32024,7 +33178,15 @@
   ],
   "tags": [
    "fish"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 360,
+   "protein": 32,
+   "carbs": 26,
+   "fat": 14,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Tzatziki with Baked Pita Chips",
@@ -32207,7 +33369,15 @@
     "raw": "½ tsp salt"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 270,
+   "protein": 11,
+   "carbs": 38,
+   "fat": 7,
+   "per": "serving",
+   "count": 4
+  }
  },
  {
   "title": "Berry & Oat Power Shake",
@@ -32340,7 +33510,15 @@
     "raw": "1 tsp honey"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 700,
+   "protein": 56,
+   "carbs": 62,
+   "fat": 24,
+   "per": "serving",
+   "count": 1
+  }
  },
  {
   "title": "Classic Chocolate Peanut Butter Shake",
@@ -32460,7 +33638,15 @@
     "raw": "1 tsp cocoa powder"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 510,
+   "protein": 38,
+   "carbs": 48,
+   "fat": 20,
+   "per": "serving",
+   "count": 1
+  }
  },
  {
   "title": "Green Spinach & Banana Shake",
@@ -32593,7 +33779,15 @@
     "raw": "1 tsp honey"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 470,
+   "protein": 35,
+   "carbs": 54,
+   "fat": 14,
+   "per": "serving",
+   "count": 1
+  }
  },
  {
   "title": "Mango & Coconut Tropical Shake",
@@ -32704,7 +33898,15 @@
     "raw": "Juice of ½ lime"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 560,
+   "protein": 27,
+   "carbs": 35,
+   "fat": 36,
+   "per": "serving",
+   "count": 1
+  }
  },
  {
   "title": "Vanilla Cinnamon Shake",
@@ -32824,7 +34026,15 @@
     "raw": "1 tsp honey or maple syrup"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 340,
+   "protein": 33,
+   "carbs": 24,
+   "fat": 12,
+   "per": "serving",
+   "count": 1
+  }
  },
  {
   "title": "Baked Cinnamon Apples",
@@ -32975,7 +34185,8 @@
     "raw": "To serve: Greek yoghurt"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": null
  },
  {
   "title": "Banana Nice Cream",
@@ -33115,7 +34326,8 @@
     "raw": "Optional toppings: dark chocolate chips, granola, sliced banana"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": null
  },
  {
   "title": "Chocolate Protein Mug Cake",
@@ -33276,7 +34488,8 @@
     "raw": "1 tbsp dark chocolate chips (optional)"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": null
  },
  {
   "title": "Chocolate Self-Saucing Pudding",
@@ -33476,7 +34689,15 @@
     "raw": "1 tbsp cornflour"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 320,
+   "protein": 6,
+   "carbs": 54,
+   "fat": 10,
+   "per": "serving",
+   "count": 6
+  }
  },
  {
   "title": "Feijoa & Apple Crumble",
@@ -33673,7 +34894,15 @@
     "raw": "¼ cup desiccated coconut (optional)"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 390,
+   "protein": 4,
+   "carbs": 62,
+   "fat": 15,
+   "per": "serving",
+   "count": 6
+  }
  },
  {
   "title": "Frozen Yoghurt Bark",
@@ -33808,7 +35037,15 @@
     "raw": "2 tbsp granola or crushed almonds"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 110,
+   "protein": 6,
+   "carbs": 11,
+   "fat": 4,
+   "per": "serving",
+   "count": 8
+  }
  },
  {
   "title": "No-Bake Chocolate Oat Cookies",
@@ -33972,7 +35209,15 @@
     "raw": "Pinch of salt"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 120,
+   "protein": 5,
+   "carbs": 16,
+   "fat": 5,
+   "per": "serving",
+   "count": 18
+  }
  },
  {
   "title": "Pavlova",
@@ -34144,7 +35389,15 @@
     "raw": "Seasonal fruit: kiwifruit, strawberries, passionfruit or berries"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 270,
+   "protein": 4,
+   "carbs": 27,
+   "fat": 16,
+   "per": "serving",
+   "count": 8
+  }
  },
  {
   "title": "Sticky Date Pudding",
@@ -34344,7 +35597,15 @@
     "raw": "1 tsp vanilla essence"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 620,
+   "protein": 5,
+   "carbs": 99,
+   "fat": 24,
+   "per": "serving",
+   "count": 8
+  }
  },
  {
   "title": "Afghan Biscuits",
@@ -34544,7 +35805,15 @@
     "raw": "Walnut halves, to decorate"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 140,
+   "protein": 1,
+   "carbs": 17,
+   "fat": 7,
+   "per": "serving",
+   "count": 24
+  }
  },
  {
   "title": "ANZAC Biscuits",
@@ -34699,7 +35968,15 @@
     "raw": "½ tsp baking soda"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 90,
+   "protein": 1,
+   "carbs": 10,
+   "fat": 5,
+   "per": "serving",
+   "count": 18
+  }
  },
  {
   "title": "Apple & Feijoa Crumble Muffins",
@@ -34947,7 +36224,15 @@
     "raw": "30 g cold butter, cubed"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 270,
+   "protein": 5,
+   "carbs": 40,
+   "fat": 11,
+   "per": "serving",
+   "count": 12
+  }
  },
  {
   "title": "Apple Cinnamon Muffins",
@@ -35169,7 +36454,15 @@
     "raw": "½ tsp ground cinnamon"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 240,
+   "protein": 4,
+   "carbs": 37,
+   "fat": 8,
+   "per": "serving",
+   "count": 12
+  }
  },
  {
   "title": "Bacon, Corn & Cheddar Muffins",
@@ -35345,7 +36638,15 @@
   ],
   "tags": [
    "pork"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 170,
+   "protein": 5,
+   "carbs": 20,
+   "fat": 7,
+   "per": "serving",
+   "count": 12
+  }
  },
  {
   "title": "Banana Bread",
@@ -35519,7 +36820,15 @@
     "raw": "½ cup chocolate chips or chopped walnuts (optional)"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 230,
+   "protein": 3,
+   "carbs": 38,
+   "fat": 7,
+   "per": "slice",
+   "count": 10
+  }
  },
  {
   "title": "Banana Chocolate Chip Muffins",
@@ -35696,7 +37005,15 @@
     "raw": "1 tsp vanilla essence (5 ml)"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 190,
+   "protein": 3,
+   "carbs": 31,
+   "fat": 6,
+   "per": "serving",
+   "count": 12
+  }
  },
  {
   "title": "Blueberry Muffins",
@@ -35886,7 +37203,15 @@
     "raw": "Icing Sugar, for dusting (optional)"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 230,
+   "protein": 4,
+   "carbs": 38,
+   "fat": 6,
+   "per": "serving",
+   "count": 12
+  }
  },
  {
   "title": "Caramelised Onion & Cheddar Scones",
@@ -36079,7 +37404,15 @@
     "raw": "1–1½ cups milk"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 230,
+   "protein": 6,
+   "carbs": 32,
+   "fat": 8,
+   "per": "serving",
+   "count": 11.0
+  }
  },
  {
   "title": "Carrot Cake Muffins with Cream Cheese Drizzle",
@@ -36379,7 +37712,15 @@
     "raw": "½ tsp vanilla essence"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 320,
+   "protein": 5,
+   "carbs": 47,
+   "fat": 13,
+   "per": "serving",
+   "count": 12
+  }
  },
  {
   "title": "Cheese Scones",
@@ -36543,7 +37884,15 @@
     "raw": "1–1½ cups milk, plus extra to brush"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 190,
+   "protein": 5,
+   "carbs": 27,
+   "fat": 7,
+   "per": "serving",
+   "count": 12
+  }
  },
  {
   "title": "Cheesy Garlic Pull-Apart Bread",
@@ -36668,7 +38017,15 @@
     "raw": "1½ cups grated mozzarella or tasty cheddar (or a mix)"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 190,
+   "protein": 7,
+   "carbs": 4,
+   "fat": 16,
+   "per": "serving",
+   "count": 6
+  }
  },
  {
   "title": "Chocolate Brownies",
@@ -36842,7 +38199,15 @@
     "raw": "½ cup chocolate chips (optional)"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 250,
+   "protein": 3,
+   "carbs": 28,
+   "fat": 14,
+   "per": "serving",
+   "count": 16
+  }
  },
  {
   "title": "Chocolate Muffins",
@@ -37032,7 +38397,15 @@
     "raw": "⅔ cup chocolate chips (130 g), tossed with 1 tbsp flour (optional)"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 240,
+   "protein": 4,
+   "carbs": 27,
+   "fat": 13,
+   "per": "serving",
+   "count": 12
+  }
  },
  {
   "title": "Corn Muffins",
@@ -37180,7 +38553,15 @@
     "raw": "440 g can creamed corn or whole kernel corn"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 100,
+   "protein": 4,
+   "carbs": 15,
+   "fat": 2,
+   "per": "serving",
+   "count": 13.5
+  }
  },
  {
   "title": "Courgette & Parmesan Muffins",
@@ -37351,7 +38732,15 @@
     "raw": "¼ cup neutral oil"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 180,
+   "protein": 7,
+   "carbs": 19,
+   "fat": 9,
+   "per": "serving",
+   "count": 12
+  }
  },
  {
   "title": "Crunchy Lemon Poppyseed Muffins",
@@ -37521,7 +38910,15 @@
     "raw": "½ cup white sugar"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 270,
+   "protein": 4,
+   "carbs": 44,
+   "fat": 9,
+   "per": "serving",
+   "count": 12
+  }
  },
  {
   "title": "Date Scones",
@@ -37695,7 +39092,15 @@
     "raw": "Cinnamon sugar, to sprinkle (optional)"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 220,
+   "protein": 5,
+   "carbs": 35,
+   "fat": 7,
+   "per": "serving",
+   "count": 12
+  }
  },
  {
   "title": "Feijoa Muffins",
@@ -37875,7 +39280,15 @@
     "raw": "1½ tsp cinnamon"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 220,
+   "protein": 4,
+   "carbs": 34,
+   "fat": 7,
+   "per": "serving",
+   "count": 12
+  }
  },
  {
   "title": "Garlic Butter Naan (Yeasted)",
@@ -38056,7 +39469,15 @@
     "raw": "1 tbsp chopped fresh coriander or parsley"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 250,
+   "protein": 6,
+   "carbs": 36,
+   "fat": 9,
+   "per": "serving",
+   "count": 6
+  }
  },
  {
   "title": "Ginger Crunch",
@@ -38239,7 +39660,15 @@
     "raw": "3 tsp ground ginger"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 130,
+   "protein": 1,
+   "carbs": 16,
+   "fat": 7,
+   "per": "serving",
+   "count": 24
+  }
  },
  {
   "title": "Ham & Cheese Breakfast Muffins",
@@ -38409,7 +39838,15 @@
   ],
   "tags": [
    "pork"
-  ]
+  ],
+  "nutrition": {
+   "kcal": 200,
+   "protein": 9,
+   "carbs": 19,
+   "fat": 10,
+   "per": "serving",
+   "count": 12
+  }
  },
  {
   "title": "Harry’s Favourite Chocolate Cake",
@@ -38645,7 +40082,15 @@
     "raw": "1 tsp vanilla essence"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 400,
+   "protein": 7,
+   "carbs": 70,
+   "fat": 11,
+   "per": "serving",
+   "count": 11.0
+  }
  },
  {
   "title": "Lemon Muffins",
@@ -38828,7 +40273,15 @@
     "raw": "60 g butter, melted"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 260,
+   "protein": 4,
+   "carbs": 40,
+   "fat": 10,
+   "per": "serving",
+   "count": 12
+  }
  },
  {
   "title": "Louise Slice",
@@ -39027,7 +40480,15 @@
     "raw": "1 tsp vanilla essence"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 160,
+   "protein": 3,
+   "carbs": 21,
+   "fat": 8,
+   "per": "serving",
+   "count": 24
+  }
  },
  {
   "title": "No-Knead Overnight Bread",
@@ -39130,7 +40591,15 @@
     "raw": "¼ tsp instant dried yeast"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 120,
+   "protein": 4,
+   "carbs": 25,
+   "fat": 1,
+   "per": "slice",
+   "count": 12
+  }
  },
  {
   "title": "Passionfruit & White Chocolate Muffins",
@@ -39349,7 +40818,15 @@
     "raw": "1–2 tbsp passionfruit pulp"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 300,
+   "protein": 4,
+   "carbs": 47,
+   "fat": 11,
+   "per": "serving",
+   "count": 12
+  }
  },
  {
   "title": "Raspberry & White Chocolate Muffins",
@@ -39510,7 +40987,15 @@
     "raw": "Icing Sugar, to dust (optional)"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 300,
+   "protein": 5,
+   "carbs": 44,
+   "fat": 11,
+   "per": "serving",
+   "count": 12
+  }
  },
  {
   "title": "Spinach & Feta Muffins",
@@ -39703,7 +41188,15 @@
     "raw": "Extra grated cheese or parmesan, for topping"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 140,
+   "protein": 6,
+   "carbs": 19,
+   "fat": 5,
+   "per": "serving",
+   "count": 12
+  }
  },
  {
   "title": "Yoghurt Naan Bread",
@@ -39828,7 +41321,15 @@
     "raw": "2 tbsp oil (plus extra for frying)"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 230,
+   "protein": 7,
+   "carbs": 37,
+   "fat": 6,
+   "per": "serving",
+   "count": 6
+  }
  },
  {
   "title": "Brioche",
@@ -39996,7 +41497,15 @@
     "raw": "Added at the beep: 70 g cold butter, cut into 1–2 cm cubes"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 220,
+   "protein": 6,
+   "carbs": 27,
+   "fat": 10,
+   "per": "slice",
+   "count": 12
+  }
  },
  {
   "title": "Cheese & Mustard Loaf",
@@ -40168,7 +41677,15 @@
     "raw": "1 tbsp Worcestershire sauce"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 180,
+   "protein": 7,
+   "carbs": 28,
+   "fat": 5,
+   "per": "slice",
+   "count": 12
+  }
  },
  {
   "title": "Date & Walnut Loaf",
@@ -40346,7 +41863,15 @@
     "raw": "½ cup chopped walnuts"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 200,
+   "protein": 6,
+   "carbs": 32,
+   "fat": 5,
+   "per": "slice",
+   "count": 12
+  }
  },
  {
   "title": "French Loaf",
@@ -40459,7 +41984,15 @@
     "raw": "1 tsp butter"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 140,
+   "protein": 5,
+   "carbs": 27,
+   "fat": 1,
+   "per": "slice",
+   "count": 12
+  }
  },
  {
   "title": "Garlic Herb Loaf",
@@ -40618,7 +42151,15 @@
     "raw": "3 tbsp chopped fresh herbs (parsley, chives, basil or oregano)"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 160,
+   "protein": 5,
+   "carbs": 29,
+   "fat": 3,
+   "per": "slice",
+   "count": 12
+  }
  },
  {
   "title": "Half-and-Half Wholemeal Loaf",
@@ -40767,7 +42308,15 @@
     "raw": "1 tbsp treacle"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 160,
+   "protein": 5,
+   "carbs": 27,
+   "fat": 3,
+   "per": "slice",
+   "count": 12
+  }
  },
  {
   "title": "Kumara Bread",
@@ -40919,7 +42468,15 @@
     "raw": "1 tbsp honey"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 170,
+   "protein": 5,
+   "carbs": 30,
+   "fat": 2,
+   "per": "slice",
+   "count": 12
+  }
  },
  {
   "title": "Mexican Chilli Loaf",
@@ -41117,7 +42674,15 @@
     "raw": "1 tsp dried oregano"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 160,
+   "protein": 5,
+   "carbs": 29,
+   "fat": 3,
+   "per": "slice",
+   "count": 12
+  }
  },
  {
   "title": "Mixed Grain Bread",
@@ -41334,7 +42899,15 @@
     "raw": "1 tbsp toasted sunflower seeds"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 190,
+   "protein": 6,
+   "carbs": 32,
+   "fat": 4,
+   "per": "slice",
+   "count": 12
+  }
  },
  {
   "title": "Soft Sandwich Bread",
@@ -41470,7 +43043,15 @@
     "raw": "1 tsp sugar"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 120,
+   "protein": 4,
+   "carbs": 21,
+   "fat": 1,
+   "per": "slice",
+   "count": 12
+  }
  },
  {
   "title": "Spicy Fruit Loaf",
@@ -41667,7 +43248,15 @@
     "raw": "150 g mixed dried fruit"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 220,
+   "protein": 6,
+   "carbs": 35,
+   "fat": 7,
+   "per": "slice",
+   "count": 12
+  }
  },
  {
   "title": "White Loaf",
@@ -41803,7 +43392,15 @@
     "raw": "1 tsp sugar"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 160,
+   "protein": 5,
+   "carbs": 28,
+   "fat": 2,
+   "per": "slice",
+   "count": 12
+  }
  },
  {
   "title": "Bagels",
@@ -41971,7 +43568,15 @@
     "raw": "Sesame or poppy seeds"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 140,
+   "protein": 5,
+   "carbs": 24,
+   "fat": 3,
+   "per": "serving",
+   "count": 14.0
+  }
  },
  {
   "title": "Bread Maker Pizza Dough",
@@ -42142,7 +43747,15 @@
     "raw": "Your choice of toppings"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 370,
+   "protein": 9,
+   "carbs": 54,
+   "fat": 12,
+   "per": "serving",
+   "count": 6
+  }
  },
  {
   "title": "Bread Rolls",
@@ -42310,7 +43923,15 @@
     "raw": "Sesame or poppy seeds (optional)"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 180,
+   "protein": 6,
+   "carbs": 28,
+   "fat": 5,
+   "per": "serving",
+   "count": 12
+  }
  },
  {
   "title": "Cinnamon Tea Ring",
@@ -42526,7 +44147,15 @@
     "raw": "Vanilla icing (optional)"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 260,
+   "protein": 7,
+   "carbs": 44,
+   "fat": 6,
+   "per": "slice",
+   "count": 11.0
+  }
  },
  {
   "title": "Focaccia",
@@ -42710,7 +44339,15 @@
     "raw": "1 tsp each dried basil, rosemary and thyme"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 250,
+   "protein": 7,
+   "carbs": 41,
+   "fat": 6,
+   "per": "slice",
+   "count": 8
+  }
  },
  {
   "title": "Hot Cross Buns",
@@ -42969,7 +44606,15 @@
     "raw": "3 tbsp caster sugar"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 330,
+   "protein": 8,
+   "carbs": 52,
+   "fat": 10,
+   "per": "serving",
+   "count": 11.0
+  }
  },
  {
   "title": "Banana Yoghurt Tea Bread",
@@ -43139,6 +44784,14 @@
     "raw": "50 g butter, melted and cooled"
    }
   ],
-  "tags": []
+  "tags": [],
+  "nutrition": {
+   "kcal": 160,
+   "protein": 3,
+   "carbs": 25,
+   "fat": 5,
+   "per": "slice",
+   "count": 12
+  }
  }
 ]
