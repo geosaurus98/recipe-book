@@ -173,6 +173,26 @@ main.wrap { padding-block: 20px 48px; display: grid; gap: 28px; }
 .at-home p { font-size: 0.85rem; color: var(--muted); margin: 8px 0; }
 .at-home ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 6px; }
 .at-home li button { border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 999px; padding: 4px 10px; font-size: 0.82rem; cursor: pointer; }
+.today { background: var(--surface); border: 1px solid var(--accent); border-radius: 14px; padding: 12px 16px; box-shadow: var(--shadow); }
+.today h2 { font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin-bottom: 4px; }
+.today ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+.tasks { list-style: none; margin: 0; padding: 0; display: grid; gap: 3px; font-size: 0.86rem; }
+.tasks li { display: grid; grid-template-columns: 4.6rem 1fr; gap: 8px; }
+.tasks .at { font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent); padding-top: 2px; white-space: nowrap; }
+.day-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.day { display: grid; grid-template-columns: 5.2rem 1fr; gap: 12px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; }
+.day.is-today { border-color: var(--accent); }
+.day.empty { background: transparent; border-style: dashed; }
+.day-name { font-weight: 700; font-size: 0.9rem; }
+.day-name small { display: block; font-weight: 500; color: var(--muted); font-size: 0.75rem; }
+.day-body { display: grid; gap: 6px; min-width: 0; }
+.day-meal { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; }
+.day-meal .title { font-weight: 600; min-width: 0; }
+.day-meal .title button { all: unset; cursor: pointer; }
+.day-select { font: inherit; font-size: 0.8rem; padding: 3px 6px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink); }
+.unscheduled { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; padding: 10px 14px; border-radius: 12px; background: var(--sunk); font-size: 0.88rem; }
+.unscheduled span { font-weight: 600; }
+.dinner-at input { font: inherit; font-size: 0.85rem; padding: 3px 6px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink); }
 .week-nutrition { margin: 4px 0 0; font-size: 0.9rem; color: var(--muted); }
 .week-nutrition strong { color: var(--ink); font-variant-numeric: tabular-nums; }
 .slot .row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
@@ -251,6 +271,8 @@ main.wrap { padding-block: 20px 48px; display: grid; gap: 28px; }
   @keyframes rise { from { transform: translateY(8px); opacity: 0.6; } to { transform: none; opacity: 1; } }
 }
 @media (max-width: 520px) {
+  .day { grid-template-columns: 1fr; gap: 6px; }
+  .day-name small { display: inline; margin-left: 6px; }
   .brand h1 { font-size: 1.25rem; }
   .sync { white-space: normal; }
   .tabs { width: 100%; }
@@ -304,6 +326,8 @@ const EXAMPLE = {
     quick: "Stovetop-Pork_Larb",
   },
   extras: [], cooked: {}, checked: {}, scale: {}, fav: {}, rating: {}, log: {}, pantry: {}, history: [], example: true,
+  days: { "SlowCooker-Smoky_Chicken_Bean_Lentil_Stew": 0, "InstantPot-Cheeseburger_Macaroni": 2, "Stovetop-Pork_Larb": 4 },
+  dinner: "18:30",
 };
 
 let state = clone(EXAMPLE);
@@ -329,6 +353,7 @@ function sanitize(s) {
   out.extras = (out.extras || []).filter(id => BY_ID[id]);
   out.cooked = out.cooked || {}; out.checked = out.checked || {}; out.scale = out.scale || {};
   out.fav = out.fav || {}; out.rating = out.rating || {}; out.log = out.log || {}; out.pantry = out.pantry || {};
+  out.days = out.days || {}; out.dinner = /^\d\d:\d\d$/.test(out.dinner || "") ? out.dinner : "18:30";
   out.history = (out.history || []).slice(0, 12);
   return out;
 }
@@ -384,7 +409,7 @@ function setSync(t) { document.getElementById("sync").textContent = t; }
 const SYNC = /*SYNC*/null;
 const FIREBASE_VERSION = "10.12.2";
 const HOUSE_KEY = "george-meal-planner-household";
-const MAP_KEYS = ["checked", "cooked", "scale", "fav", "rating", "log", "pantry"];
+const MAP_KEYS = ["checked", "cooked", "scale", "fav", "rating", "log", "pantry", "days"];
 let fb = null;          // { fs, ref } once connected
 let lastSynced = null;  // the state as the server last saw it
 function householdCode() { try { return localStorage.getItem(HOUSE_KEY); } catch { return null; } }
@@ -688,6 +713,9 @@ function daysSince(iso) {
   const [y, m, d] = iso.split("-").map(Number);
   return Math.floor((Date.now() - new Date(y, m - 1, d).getTime()) / 86400000);
 }
+function moveDay(s, from, to) {
+  if (from && to && from !== to && s.days[from] != null) { s.days[to] = s.days[from]; delete s.days[from]; }
+}
 function cookedRecently(id) { return (state.log[id] || []).some(d => daysSince(d) < 28); }
 function stars(id, act) {
   const v = state.rating[id] || 0;
@@ -858,6 +886,154 @@ function shoppingList() {
   return groups;
 }
 
+// ─── Day by day ─────────────────────────────────────────────────────────────
+// Each meal can sit on a night of the week. From the dinner time and the
+// recipe's cooking time the planner works out when to start, and the night
+// before it reminds you to defrost the meat or do the recipe's advance prep.
+const DAY_NAMES = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+const DEFAULT_MINUTES = { slow: 495, pressure: 50, stovetop: 30, oven: 45 };  // when a recipe gives no time
+const EVENING = 20 * 60;  // night-before reminders at 8 pm
+function weekDate(i) {
+  const [y, m, d] = state.week.split("-").map(Number);
+  return new Date(y, m - 1, d + i);
+}
+function shortDate(d) { return d.toLocaleDateString("en-NZ", { day: "numeric", month: "short" }); }
+function dayIndexToday() {
+  const t = new Date(), mon = weekDate(0);
+  return Math.round((new Date(t.getFullYear(), t.getMonth(), t.getDate()) - mon) / 86400000);
+}
+function clockMin(hhmm) { const [h, m] = hhmm.split(":").map(Number); return h * 60 + m; }
+function fmtTime(min) {
+  const h = Math.floor(min / 60) % 24, m = min % 60;
+  return `${h % 12 || 12}:${String(m).padStart(2, "0")} ${h < 12 ? "am" : "pm"}`;
+}
+function cookMinutes(r) { return r.minutes ?? DEFAULT_MINUTES[r.chapter] ?? null; }
+// Minutes after midnight to start so it's ready for dinner, rounded down to 5 minutes.
+function startAt(r) {
+  const n = cookMinutes(r);
+  return n == null ? null : Math.floor((clockMin(state.dinner) - n) / 5) * 5;
+}
+function scheduledIds() { return plannedIds().filter(id => state.days[id] != null); }
+// Reminders by day: index -1 is the Sunday before the week starts.
+function dayTasks() {
+  const days = {};
+  const add = (i, t) => (days[i] = days[i] || []).push(t);
+  for (const id of scheduledIds()) {
+    const r = BY_ID[id], d = state.days[id], title = plain(r.title);
+    const ahead = r.ahead || [];
+    for (const note of ahead) add(d - 1, { at: EVENING, id, text: `${note.replace(/\.$/, "")} for ${title}.` });
+    if (r.meat && !ahead.some(n => /defrost|thaw/i.test(n)))
+      add(d - 1, { at: EVENING, id, text: `If the ${r.meat.toLowerCase()} is frozen, move it to the fridge for ${title}.` });
+    const at = startAt(r);
+    if (at != null) {
+      const how = r.chapter === "slow" ? "Get the slow cooker going" : r.chapter === "pressure" ? "Start the Instant Pot" : "Start cooking";
+      add(d, { at, id, start: true, guess: r.minutes == null, text: `${how}: ${title}${r.minutes == null ? " (time not in the recipe, so this is a guess)" : ""}.` });
+    }
+  }
+  for (const k of Object.keys(days)) days[k].sort((a, b) => a.at - b.at);
+  return days;
+}
+function taskList(tasks) {
+  return `<ul class="tasks">${tasks.map(t => `<li><span class="at">${t.at === EVENING ? "Tonight" : fmtTime(t.at)}</span><span>${esc(t.text)}</span></li>`).join("")}</ul>`;
+}
+function daySelect(id) {
+  const v = state.days[id];
+  return `<select class="day-select" data-act="day" data-id="${id}" aria-label="Night for ${esc(BY_ID[id].title)}">
+    <option value="" ${v == null ? "selected" : ""}>No night</option>
+    ${DAY_NAMES.map((n, i) => `<option value="${i}" ${v === i ? "selected" : ""}>${n.slice(0, 3)} ${esc(shortDate(weekDate(i)))}</option>`).join("")}
+  </select>`;
+}
+// Spread meals without a night over the free nights, every other day first.
+function fillDays(s) {
+  const taken = new Set(Object.entries(s.days).filter(([id]) => plannedIds().includes(id)).map(([, d]) => d));
+  for (const id of plannedIds()) {
+    const r = BY_ID[id];
+    if (s.days[id] != null || !slotFor(r)) continue;
+    const d = [0, 2, 4, 6, 1, 3, 5].find(x => !taken.has(x));
+    if (d == null) break;
+    s.days[id] = d; taken.add(d);
+  }
+}
+function todayBox() {
+  if (state.example) return "";
+  const i = dayIndexToday();
+  if (i < -1 || i > 6) return "";
+  const tasks = (dayTasks()[i] || []).filter(t => t.at === EVENING || t.at >= 0);
+  const meals = scheduledIds().filter(id => state.days[id] === i);
+  if (!tasks.length && !meals.length) return "";
+  return `<section class="today" aria-label="Today">
+    <h2>Today${meals.length ? ` · ${meals.map(id => esc(BY_ID[id].title)).join(" & ")}` : ""}</h2>
+    ${tasks.length ? taskList(tasks) : `<p class="empty-note">Nothing to start ahead of time.</p>`}
+  </section>`;
+}
+function renderDays() {
+  const ids = plannedIds();
+  if (!ids.length) return "";
+  const tasks = dayTasks();
+  const today = dayIndexToday();
+  const loose = ids.filter(id => state.days[id] == null && slotFor(BY_ID[id]));
+  const meal = id => `<div class="day-meal" data-m="${BY_ID[id].chapter}"><span class="chip">${esc(CHAPTER_LABEL[BY_ID[id].chapter])}</span>
+      <span class="title"><button data-act="open" data-id="${id}">${esc(BY_ID[id].title)}</button></span>${daySelect(id)}</div>`;
+  const rows = [];
+  if (tasks[-1]) rows.push(`<li class="day"><div class="day-name">Sunday<small>${esc(shortDate(weekDate(-1)))}</small></div><div class="day-body">${taskList(tasks[-1])}</div></li>`);
+  DAY_NAMES.forEach((name, i) => {
+    const meals = ids.filter(id => state.days[id] === i);
+    const t = tasks[i] || [];
+    rows.push(`<li class="day${!meals.length && !t.length ? " empty" : ""}${i === today ? " is-today" : ""}">
+      <div class="day-name">${name.slice(0, 3)}<small>${esc(shortDate(weekDate(i)))}</small></div>
+      <div class="day-body">${meals.map(meal).join("")}${t.length ? taskList(t) : ""}${!meals.length && !t.length ? `<span class="empty-note">Leftovers or a night off</span>` : ""}</div>
+    </li>`);
+  });
+  return `<section class="days-section" aria-label="Day by day">
+    <div class="section-head">
+      <div><h2>Day by day</h2><p>Pick a night for each meal and you'll see when to start it and what to do the night before.</p></div>
+      <div class="actions">
+        <label class="toggle dinner-at">Dinner at <input type="time" id="dinner" data-act="dinner" value="${esc(state.dinner)}"></label>
+        ${loose.length ? `<button class="btn" data-act="fill-days">Spread over the week</button>` : ""}
+        ${scheduledIds().length ? `<button class="btn" data-act="calendar">Add to calendar</button>` : ""}
+      </div>
+    </div>
+    ${loose.length ? `<div class="unscheduled"><span>No night yet:</span>${loose.map(id => `<label>${esc(BY_ID[id].title)} ${daySelect(id)}</label>`).join("")}</div>` : ""}
+    <ol class="day-list">${rows.join("")}</ol>
+  </section>`;
+}
+
+// Calendar file: one event per reminder, each with an alert at the time.
+function icsEscape(t) { return String(t).replace(/[\\;,]/g, c => "\\" + c).replace(/\n/g, "\\n"); }
+function icsFold(line) {
+  const out = [];
+  while (line.length > 73) { out.push(line.slice(0, 73)); line = " " + line.slice(73); }
+  return [...out, line].join("\r\n");
+}
+function icsText() {
+  const pad = n => String(n).padStart(2, "0");
+  const stamp = d => `${d.getFullYear()}${pad(d.getMonth() + 1)}${pad(d.getDate())}T${pad(d.getHours())}${pad(d.getMinutes())}00`;
+  const now = new Date();
+  const lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//George's Meal Planner//EN", "CALSCALE:GREGORIAN", "METHOD:PUBLISH"];
+  let n = 0;
+  for (const [day, tasks] of Object.entries(dayTasks())) {
+    for (const t of tasks) {
+      const d = weekDate(Number(day));
+      d.setMinutes(t.at);
+      const summary = t.start ? t.text.split(":")[0] + ": " + plain(BY_ID[t.id].title) : `Prep for ${plain(BY_ID[t.id].title)}`;
+      lines.push("BEGIN:VEVENT", `UID:${state.week}-${n++}-${t.id}@meal-planner`, `DTSTAMP:${stamp(now)}`,
+        `DTSTART:${stamp(d)}`, "DURATION:PT15M", `SUMMARY:${icsEscape(summary)}`, `DESCRIPTION:${icsEscape(t.text)}`,
+        "BEGIN:VALARM", "ACTION:DISPLAY", "TRIGGER:PT0M", `DESCRIPTION:${icsEscape(summary)}`, "END:VALARM", "END:VEVENT");
+    }
+  }
+  lines.push("END:VCALENDAR");
+  return lines.map(icsFold).join("\r\n") + "\r\n";
+}
+function downloadCalendar() {
+  const blob = new Blob([icsText()], { type: "text/calendar" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = `meals-week-of-${state.week}.ics`;
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 10000);
+  toast("Calendar file saved. Open it to add the reminders");
+}
+
 // ─── Render ─────────────────────────────────────────────────────────────────
 function render() {
   document.querySelectorAll(".tabs button").forEach(b => b.setAttribute("aria-selected", String(b.dataset.tab === ui.tab)));
@@ -889,7 +1065,7 @@ function slotCard(s) {
   return `<article class="slot${cooked ? " is-cooked" : ""}" data-m="${s.key}">
     <span class="chip">${s.label}</span>
     <h3><button data-act="open" data-id="${id}">${state.fav[id] ? `<span class="fav-mark" aria-label="Favourite">★</span> ` : ""}${esc(r.title)}</button></h3>
-    <div class="meta">${scaleOf(id) !== 1 ? `<span class="times">${SCALE_LABEL[scaleOf(id)]}</span>` : ""}<span>Serves ${esc(scaledServingsText(r))}</span><span>${esc(r.time === "–" ? "Time not set" : r.time)}</span>${macroSpans(r)}</div>
+    <div class="meta">${state.days[id] != null ? `<span class="times">${DAY_NAMES[state.days[id]]}</span>` : ""}${scaleOf(id) !== 1 ? `<span class="times">${SCALE_LABEL[scaleOf(id)]}</span>` : ""}<span>Serves ${esc(scaledServingsText(r))}</span><span>${esc(r.time === "–" ? "Time not set" : r.time)}</span>${macroSpans(r)}</div>
     <div class="row">
       <button class="btn small" data-act="shuffle-slot" data-slot="${s.key}" title="Swap for another random recipe">Swap</button>
       <button class="btn small" data-act="choose" data-slot="${s.key}">Browse</button>
@@ -912,6 +1088,7 @@ function renderWeek() {
   const hist = state.history.slice(0, 6).map(h =>
     `<li><strong>${esc(prettyWeek(h.week))}</strong> · ${h.ids.map(id => esc(BY_ID[id]?.title || "Removed recipe")).join(" · ")}</li>`).join("");
   return `
+  ${todayBox()}
   <section class="section-head">
     <div>
       <h2>Week of ${esc(prettyWeek(state.week))}</h2>
@@ -933,6 +1110,7 @@ function renderWeek() {
     </div>
     ${extras || `<p class="empty-note">No extras this week.</p>`}
   </section>
+  ${renderDays()}
   ${hist ? `<section><div class="section-head"><div><h2>Recent weeks</h2><p>Shuffle avoids these for four weeks.</p></div></div><ul class="history">${hist}</ul></section>` : ""}`;
 }
 
@@ -1129,7 +1307,7 @@ document.addEventListener("click", e => {
     case "shuffle-slot": {
       const pick = pickRandom(slot, state.slots[slot]);
       if (!pick) { toast("No other recipes fit that slot"); break; }
-      commit(s => { s.slots[slot] = pick; delete s.cooked[pick]; });
+      commit(s => { moveDay(s, s.slots[slot], pick); s.slots[slot] = pick; delete s.cooked[pick]; });
       break;
     }
     case "shuffle-all":
@@ -1137,18 +1315,18 @@ document.addEventListener("click", e => {
         const old = { ...s.slots };
         for (const sl of SLOTS) s.slots[sl.key] = null;
         // pickRandom reads the live state, so each pick avoids the ones before it.
-        for (const sl of SLOTS) s.slots[sl.key] = pickRandom(sl.key, old[sl.key]);
+        for (const sl of SLOTS) { s.slots[sl.key] = pickRandom(sl.key, old[sl.key]); moveDay(s, old[sl.key], s.slots[sl.key]); }
       });
       toast("New trio picked");
       break;
     case "choose": ui.choosing = slot; ui.chapter = null; ui.tab = "recipes"; render(); break;
     case "cancel-choose": ui.choosing = null; render(); break;
     case "goto-recipes": ui.choosing = null; ui.tab = "recipes"; render(); break;
-    case "clear-slot": commit(s => { s.slots[slot] = null; }); break;
-    case "remove-extra": commit(s => { s.extras = s.extras.filter(x => x !== id); }); break;
+    case "clear-slot": commit(s => { delete s.days[s.slots[slot]]; s.slots[slot] = null; }); break;
+    case "remove-extra": commit(s => { s.extras = s.extras.filter(x => x !== id); delete s.days[id]; }); break;
     case "use": {
       const target = ui.choosing || slotFor(BY_ID[id]);
-      commit(s => { s.slots[target] = id; s.extras = s.extras.filter(x => x !== id); });
+      commit(s => { moveDay(s, s.slots[target], id); s.slots[target] = id; s.extras = s.extras.filter(x => x !== id); });
       ui.open = null; ui.choosing = null; ui.tab = "week"; render();
       toast(`Added to this week`);
       break;
@@ -1157,6 +1335,7 @@ document.addEventListener("click", e => {
     case "unplan": commit(s => {
       for (const k of Object.keys(s.slots)) if (s.slots[k] === id) s.slots[k] = null;
       s.extras = s.extras.filter(x => x !== id);
+      delete s.days[id];
     }); renderSheet(); toast("Removed from this week"); break;
     case "new-week": {
       const ids = plannedIds();
@@ -1168,7 +1347,7 @@ document.addEventListener("click", e => {
         const thisWeek = mondayOf(new Date());
         s.week = next > thisWeek ? next : thisWeek;
         s.slots = { slow: null, pressure: null, quick: null };
-        s.extras = []; s.cooked = {}; s.checked = {};
+        s.extras = []; s.cooked = {}; s.checked = {}; s.days = {};
       });
       toast("Last week saved to history");
       break;
@@ -1196,6 +1375,8 @@ document.addEventListener("click", e => {
       break;
     }
     case "uncheck-all": commit(s => { s.checked = {}; }); break;
+    case "fill-days": commit(fillDays); break;
+    case "calendar": downloadCalendar(); break;
     case "copy-list": copyList(); break;
     case "share-list": shareList(); break;
   }
@@ -1217,6 +1398,8 @@ document.addEventListener("change", e => {
     }
   });
   if (act === "check") commit(s => { if (el.checked) s.checked[el.dataset.key] = true; else delete s.checked[el.dataset.key]; });
+  if (act === "day") commit(s => { if (el.value === "") delete s.days[el.dataset.id]; else s.days[el.dataset.id] = Number(el.value); });
+  if (act === "dinner" && /^\d\d:\d\d$/.test(el.value)) commit(s => { s.dinner = el.value; });
   if (act === "mince-only") { ui.minceOnly = el.checked; }
   if (act === "high-protein") { ui.highProtein = el.checked; }
   if (act === "cook-have" && ui.cook) ui.cook.have[el.dataset.n] = el.checked;
