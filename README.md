@@ -207,6 +207,17 @@ them to GitHub Pages:
 So there's no need to run `build.py` before pushing, though it's handy for
 checking changes locally. Progress and errors show on the repo's Actions tab.
 
+Before publishing, the workflow runs two sets of checks, and a failure stops
+the site from updating (the Actions tab shows what broke):
+
+- `python -m unittest discover tests` checks every recipe file parses, has
+  ingredients and steps, uses known aisles and gets a sensible nutrition
+  estimate, and that both books only include files that exist.
+- `python tests/run_planner_tests.py` opens the built planner in headless
+  Chrome (or Edge) and works through it: every recipe and cooking-mode step,
+  scaling, the shopping list and pantry, sync updates, the day-by-day plan and
+  calendar file. Run `python planner/build.py` first when running it locally.
+
 The planner works as a home-screen app: open the planner link on your phone,
 then use **Share → Add to Home Screen** (iPhone, in Safari) or **⋮ → Add to
 Home screen** (Android, in Chrome). It opens full-screen and still works with
