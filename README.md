@@ -155,6 +155,18 @@ text, for every future week. **Spices & staples are at home** does the whole
 "Pantry: check first" aisle at once. Ran out? Tap the item under **At home** to
 put it back. The pantry syncs with the rest of the planner when sharing.
 
+### Day by day
+
+Under **Day by day** on the week tab, pick a night for each meal (or tap
+**Spread over the week**). Set your dinner time, and the planner uses each
+recipe's cooking time to say when to start: "Get the slow cooker going:
+11:15 am". The night before, it reminds you of the recipe's advance prep, or
+to move the meat from the freezer to the fridge. Today's jobs show in a box at
+the top of the planner. **Add to calendar** downloads a calendar file with an
+alert for each reminder. Swapping a meal keeps its night, and the nights sync
+when sharing. Recipes with no time in the book use a typical time (8 hr slow
+cooker, 50 min pressure cooker, 30–45 min quick) and say it's a guess.
+
 ### Sharing between people
 
 With Firebase set up, a **Share** button appears in the planner's header. It

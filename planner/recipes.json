@@ -302,7 +302,10 @@
    "freezes",
    "dairy-free"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 50,
+  "ahead": [],
+  "meat": "Beef mince"
  },
  {
   "title": "Beef & Mixed Bean Chilli",
@@ -565,7 +568,10 @@
    "Suitable for meal prep and freezing.",
    "This recipe freezes well for up to 3 months.",
    "Optional additions include frozen peas, frozen broccoli or cauliflower, or a handful of frozen spinach stirred through when reheating."
-  ]
+  ],
+  "minutes": 35,
+  "ahead": [],
+  "meat": "Beef mince"
  },
  {
   "title": "Beef & Red Lentil Moussaka-Style Stew",
@@ -878,7 +884,10 @@
   "diet": [
    "freezes"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 50,
+  "ahead": [],
+  "meat": "Beef mince"
  },
  {
   "title": "Beef & Vegetable Stew",
@@ -1205,7 +1214,10 @@
    "Freeze portions for up to 3 months",
    "Flavour improves after 24 hours",
    "Ideal for reheating on low heat"
-  ]
+  ],
+  "minutes": 60,
+  "ahead": [],
+  "meat": "Stewing beef"
  },
  {
   "title": "Beef, Barley & Mushroom Stew",
@@ -1476,7 +1488,12 @@
   ],
   "storage": [
    "Barley keeps absorbing liquid as it sits — add a splash of water or stock when reheating."
-  ]
+  ],
+  "minutes": 70,
+  "ahead": [
+   "Defrost the beef in the fridge the night before; the vegetables can be chopped ahead."
+  ],
+  "meat": "Stewing beef"
  },
  {
   "title": "Beef, Red Lentil & Vegetable Cottage Pie Bowls",
@@ -1753,7 +1770,12 @@
   ],
   "storage": [
    "Peel the potatoes shortly before cooking (or keep them submerged in water in the fridge)."
-  ]
+  ],
+  "minutes": 55,
+  "ahead": [
+   "Defrost the mince in the fridge the night before."
+  ],
+  "meat": "Beef mince"
  },
  {
   "title": "Beefaroni",
@@ -2063,7 +2085,10 @@
   "storage": [
    "Store leftovers in the fridge for 2–3 days.",
    "Reheat with a splash of water or milk."
-  ]
+  ],
+  "minutes": 30,
+  "ahead": [],
+  "meat": "Beef mince"
  },
  {
   "title": "Butter Chicken-Style Chicken & Lentil Curry",
@@ -2338,7 +2363,10 @@
   ],
   "storage": [
    "Freezes well."
-  ]
+  ],
+  "minutes": 50,
+  "ahead": [],
+  "meat": "Chicken drumsticks"
  },
  {
   "title": "Cajun Chicken, Bean & Rice Bowls",
@@ -2760,7 +2788,12 @@
   "storage": [
    "Storage: refrigerate within 1 hour of cooking and eat within 3 days, or freeze in portions.",
    "Reheat until steaming hot."
-  ]
+  ],
+  "minutes": 45,
+  "ahead": [
+   "Defrost the chicken overnight."
+  ],
+  "meat": "Chicken breast or tenderloins"
  },
  {
   "title": "Cheeseburger Macaroni with Hidden Lentils",
@@ -3018,7 +3051,10 @@
    "count": 4
   },
   "diet": [],
-  "storage": []
+  "storage": [],
+  "minutes": 35,
+  "ahead": [],
+  "meat": "Beef mince"
  },
  {
   "title": "Chicken & Rice",
@@ -3236,7 +3272,10 @@
   "diet": [
    "dairy-free"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 40,
+  "ahead": [],
+  "meat": "Chicken thighs"
  },
  {
   "title": "Chicken & Vegetable Soup",
@@ -3546,7 +3585,10 @@
    "Refrigerate 6 servings for the week",
    "Freeze 2 servings for later use (e.g. Friday dinners)",
    "Thickens slightly after chilling; thin when reheating"
-  ]
+  ],
+  "minutes": 35,
+  "ahead": [],
+  "meat": "Chicken thighs"
  },
  {
   "title": "Chicken, Chickpea & Edamame Biryani Bowls",
@@ -3853,7 +3895,12 @@
    "freezes",
    "dairy-free"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 45,
+  "ahead": [
+   "Defrost the chicken in the fridge the night before."
+  ],
+  "meat": "Chicken breast or tenderloins"
  },
  {
   "title": "Chicken, Lentil & Coconut Curry with Rice",
@@ -4125,7 +4172,10 @@
    "freezes",
    "dairy-free"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 40,
+  "ahead": [],
+  "meat": "Chicken thighs"
  },
  {
   "title": "Chicken, Rice & Lentils",
@@ -4383,7 +4433,10 @@
   ],
   "storage": [
    "Leftovers reheat and freeze well."
-  ]
+  ],
+  "minutes": 40,
+  "ahead": [],
+  "meat": "Chicken breast or tenderloins"
  },
  {
   "title": "Coconut Chicken, Potato & Chickpea Curry",
@@ -4663,7 +4716,10 @@
    "freezes",
    "dairy-free"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 40,
+  "ahead": [],
+  "meat": "Chicken breast or tenderloins"
  },
  {
   "title": "Filipino-Style Pork Adobo with Edamame",
@@ -4888,7 +4944,12 @@
    "freezes",
    "dairy-free"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 50,
+  "ahead": [
+   "Defrost the pork in the fridge the night before."
+  ],
+  "meat": "Pork loin"
  },
  {
   "title": "High-Protein Pasta Sauce (Beef or Lentil)",
@@ -5228,7 +5289,10 @@
    "Portion sauce into 6 containers",
    "Refrigerate up to 4 days or freeze individual portions",
    "This sauce freezes well without texture loss."
-  ]
+  ],
+  "minutes": 35,
+  "ahead": [],
+  "meat": "Beef mince"
  },
  {
   "title": "Lentil Coconut Curry",
@@ -5533,7 +5597,10 @@
    "All 6 servings: refrigerate",
    "Best consumed within 4 days",
    "Thickens further after chilling; thin with water when reheating"
-  ]
+  ],
+  "minutes": 32,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Mac & Cheese with Vegetables",
@@ -5680,7 +5747,10 @@
    "vegetarian",
    "quick"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 30,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Peanut Chicken & Sugar Snap Peas with Noodles",
@@ -5927,7 +5997,10 @@
   "diet": [
    "dairy-free"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": null,
+  "ahead": [],
+  "meat": "Chicken breast or tenderloins"
  },
  {
   "title": "Pork Mince Congee with Edamame",
@@ -6184,7 +6257,10 @@
   ],
   "storage": [
    "Congee thickens to a solid in the fridge; reheat with plenty of water."
-  ]
+  ],
+  "minutes": 60,
+  "ahead": [],
+  "meat": "Pork mince"
  },
  {
   "title": "Pork Mince Japanese Curry with Potato & Carrot",
@@ -6367,7 +6443,10 @@
   ],
   "storage": [
    "Thickens a lot in the fridge; add water when reheating."
-  ]
+  ],
+  "minutes": 45,
+  "ahead": [],
+  "meat": "Pork mince"
  },
  {
   "title": "Pulled BBQ Chicken with Lentils",
@@ -6759,7 +6838,10 @@
    "6 servings: refrigerate for up to 4 days",
    "2 servings: freeze and label “Week 2 BBQ Chicken – Fri Dinner”",
    "Recipe freezes well with no texture loss."
-  ]
+  ],
+  "minutes": 32,
+  "ahead": [],
+  "meat": "Chicken breast or tenderloins"
  },
  {
   "title": "Sausage & Rice",
@@ -7076,7 +7158,10 @@
   "diet": [
    "dairy-free"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 35,
+  "ahead": [],
+  "meat": "Sausages"
  },
  {
   "title": "Sausage & Spinach Pasta",
@@ -7281,7 +7366,10 @@
   "diet": [
    "dairy-free"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 35,
+  "ahead": [],
+  "meat": "Sausages"
  },
  {
   "title": "Stuffed Capsicum Soup",
@@ -7531,7 +7619,10 @@
   ],
   "storage": [
    "The rice keeps absorbing liquid — add water or stock when reheating leftovers."
-  ]
+  ],
+  "minutes": 45,
+  "ahead": [],
+  "meat": "Beef mince"
  },
  {
   "title": "Teriyaki Chicken & Veg",
@@ -7841,7 +7932,10 @@
   "storage": [
    "Refrigerate for up to 4 days",
    "Freezes well for up to 3 months"
-  ]
+  ],
+  "minutes": 20,
+  "ahead": [],
+  "meat": "Chicken thighs"
  },
  {
   "title": "Thai Peanut Chicken",
@@ -8209,7 +8303,10 @@
    "dairy-free",
    "quick"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 30,
+  "ahead": [],
+  "meat": "Chicken breast or tenderloins"
  },
  {
   "title": "Apple-Mustard Pork & Split-Pea Stew",
@@ -8502,7 +8599,12 @@
   ],
   "storage": [
    "Split peas keep thickening as they sit, so add a splash of hot water when reheating."
-  ]
+  ],
+  "minutes": 495,
+  "ahead": [
+   "Cut the pork and vegetables the night before, and defrost any frozen pork in the fridge."
+  ],
+  "meat": "Pork shoulder"
  },
  {
   "title": "Beef & Potato Stew over Rice",
@@ -8830,7 +8932,10 @@
   ],
   "storage": [
    "This dish freezes well and makes excellent leftovers."
-  ]
+  ],
+  "minutes": 495,
+  "ahead": [],
+  "meat": "Stewing beef"
  },
  {
   "title": "Beef & Vegetable Soup",
@@ -9084,7 +9189,10 @@
   "storage": [
    "Tip: This is a great winter warmer and keeps extremely well in the fridge for 4–5 days.",
    "Freeze any extra portions in individual containers."
-  ]
+  ],
+  "minutes": null,
+  "ahead": [],
+  "meat": "Stewing beef"
  },
  {
   "title": "Beef Mince & Yellow Split Pea Keema",
@@ -9360,7 +9468,12 @@
    "freezes",
    "dairy-free"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 495,
+  "ahead": [
+   "Brown the mince the night before and refrigerate; load it into the slow cooker in the morning."
+  ],
+  "meat": "Beef mince"
  },
  {
   "title": "Beef Mince Taco Filling (Freezer Batch)",
@@ -9707,7 +9820,10 @@
    "To freeze: cool quickly, portion into bags or containers and freeze for up to 3 months.",
    "Thaw overnight in the fridge and reheat until steaming.",
    "Leftovers make Beef & Black Bean Quesadillas or Freezer Burritos (both in Stovetop)."
-  ]
+  ],
+  "minutes": 375,
+  "ahead": [],
+  "meat": "Beef mince"
  },
  {
   "title": "Butter Chicken-Style Chicken & Lentil Curry",
@@ -9982,7 +10098,10 @@
   ],
   "storage": [
    "Freezes well."
-  ]
+  ],
+  "minutes": 435,
+  "ahead": [],
+  "meat": "Chicken drumsticks"
  },
  {
   "title": "Chicken & Chickpea Stew",
@@ -10177,7 +10296,10 @@
    "freezes",
    "dairy-free"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": null,
+  "ahead": [],
+  "meat": "Chicken thighs"
  },
  {
   "title": "Chicken & Yellow Split Pea Soup",
@@ -10444,7 +10566,12 @@
   ],
   "storage": [
    "Thickens a lot in the fridge; loosen leftovers with water when reheating."
-  ]
+  ],
+  "minutes": 495,
+  "ahead": [
+   "Chop the onion and carrots and defrost the chicken in the fridge the night before."
+  ],
+  "meat": "Chicken breast or tenderloins"
  },
  {
   "title": "Chilli Con Carne with Red Lentils & Kidney Beans",
@@ -10772,7 +10899,10 @@
   ],
   "storage": [
    "Freezes brilliantly — portion leftovers for nachos, jacket potatoes or burritos."
-  ]
+  ],
+  "minutes": 495,
+  "ahead": [],
+  "meat": "Beef mince"
  },
  {
   "title": "Coconut Chicken, Kumara & Chickpea Curry",
@@ -11036,7 +11166,10 @@
    "freezes",
    "dairy-free"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": null,
+  "ahead": [],
+  "meat": "Chicken breast or tenderloins"
  },
  {
   "title": "Honey Garlic Chicken",
@@ -11242,7 +11375,10 @@
   "diet": [
    "dairy-free"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": null,
+  "ahead": [],
+  "meat": "Chicken thighs"
  },
  {
   "title": "Honey-Mustard Chicken & White Bean Stew",
@@ -11511,7 +11647,12 @@
    "freezes",
    "dairy-free"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 435,
+  "ahead": [
+   "Chop the vegetables the night before and defrost the chicken in the fridge."
+  ],
+  "meat": "Chicken breast or tenderloins"
  },
  {
   "title": "Mexican Salsa Chicken",
@@ -11707,7 +11848,10 @@
   ],
   "storage": [
    "Leftovers keep in the fridge for 3–4 days or freeze for up to 3 months."
-  ]
+  ],
+  "minutes": null,
+  "ahead": [],
+  "meat": "Chicken thighs"
  },
  {
   "title": "Mexican Shredded Chicken",
@@ -11995,7 +12139,10 @@
   ],
   "storage": [
    "Leftovers keep well in the fridge or freezer and are also great in quesadillas, burrito bowls, stuffed potatoes, or on rice."
-  ]
+  ],
+  "minutes": 370,
+  "ahead": [],
+  "meat": "Chicken thighs"
  },
  {
   "title": "Pork & Kumara Curry",
@@ -12216,7 +12363,10 @@
    "freezes",
    "dairy-free"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": null,
+  "ahead": [],
+  "meat": "Pork shoulder"
  },
  {
   "title": "Pork & Lentil Bolognese",
@@ -12518,7 +12668,10 @@
   ],
   "storage": [
    "Keeps well in the fridge for 4 days and freezes for up to 3 months – great for batch cooking."
-  ]
+  ],
+  "minutes": null,
+  "ahead": [],
+  "meat": "Pork mince"
  },
  {
   "title": "Pork Mince, Barley & Vegetable Soup",
@@ -12794,7 +12947,10 @@
   "storage": [
    "Add water when reheating.",
    "Freezes well in portions."
-  ]
+  ],
+  "minutes": 435,
+  "ahead": [],
+  "meat": "Pork mince"
  },
  {
   "title": "Pulled Pork Wraps",
@@ -12996,7 +13152,10 @@
   ],
   "storage": [
    "Buy it on special and freeze — it slow cooks perfectly from thawed."
-  ]
+  ],
+  "minutes": null,
+  "ahead": [],
+  "meat": "Pork shoulder"
  },
  {
   "title": "Satay Chicken & Red Lentil Curry",
@@ -13265,7 +13424,12 @@
    "freezes",
    "dairy-free"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 435,
+  "ahead": [
+   "Dice the onion and defrost the chicken in the fridge the night before."
+  ],
+  "meat": "Chicken breast or tenderloins"
  },
  {
   "title": "Savoury Mince with Barley & Veg",
@@ -13521,7 +13685,10 @@
   "storage": [
    "Freezes well.",
    "A great one to have in the freezer for nights when nobody wants to cook."
-  ]
+  ],
+  "minutes": 375,
+  "ahead": [],
+  "meat": "Beef mince"
  },
  {
   "title": "Smoky Chicken, Black Bean & Red Lentil Stew",
@@ -13856,7 +14023,10 @@
   ],
   "storage": [
    "The stew thickens again in the fridge, so loosen leftovers with a splash of water when reheating."
-  ]
+  ],
+  "minutes": 420,
+  "ahead": [],
+  "meat": "Chicken breast or tenderloins"
  },
  {
   "title": "Beef & Broccoli Stir-Fry",
@@ -14077,7 +14247,10 @@
   "diet": [
    "dairy-free"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": null,
+  "ahead": [],
+  "meat": "Beef mince"
  },
  {
   "title": "Beef & Vegetable Chilli",
@@ -14326,7 +14499,10 @@
   ],
   "storage": [
    "Tip: This freezes brilliantly — make a double batch and freeze half in portions for a quick future dinner."
-  ]
+  ],
+  "minutes": null,
+  "ahead": [],
+  "meat": "Beef mince"
  },
  {
   "title": "Beef Kofta with Couscous & Yoghurt",
@@ -14662,7 +14838,10 @@
   "diet": [
    "freezes"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 35,
+  "ahead": [],
+  "meat": "Beef mince"
  },
  {
   "title": "Beef Mince & Black Bean Quesadillas",
@@ -14896,7 +15075,10 @@
   "diet": [
    "quick"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 30,
+  "ahead": [],
+  "meat": "Beef mince"
  },
  {
   "title": "Beef Mince Stir-Fry",
@@ -15100,7 +15282,10 @@
   "diet": [
    "dairy-free"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": null,
+  "ahead": [],
+  "meat": "Beef mince"
  },
  {
   "title": "Beef Schnitzel Rolls",
@@ -15308,7 +15493,10 @@
    "count": 4
   },
   "diet": [],
-  "storage": []
+  "storage": [],
+  "minutes": 45,
+  "ahead": [],
+  "meat": "Beef schnitzel"
  },
  {
   "title": "Burrito Bowls",
@@ -15446,7 +15634,10 @@
    "quick",
    "leftovers"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 30,
+  "ahead": [],
+  "meat": "Chicken"
  },
  {
   "title": "Butter Chicken",
@@ -15743,7 +15934,10 @@
   "diet": [
    "freezes"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 40,
+  "ahead": [],
+  "meat": "Chicken thighs"
  },
  {
   "title": "Chicken & Veg Stir-Fry Bowl",
@@ -16018,7 +16212,10 @@
    "dairy-free",
    "quick"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 30,
+  "ahead": [],
+  "meat": "Chicken breast or tenderloins"
  },
  {
   "title": "Chicken & Vegetable Stir-Fry",
@@ -16270,7 +16467,10 @@
    "dairy-free",
    "quick"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 30,
+  "ahead": [],
+  "meat": "Chicken breast or tenderloins"
  },
  {
   "title": "Chicken or Falafel Wraps",
@@ -16424,7 +16624,10 @@
   "diet": [
    "quick"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 30,
+  "ahead": [],
+  "meat": "Chicken breast or tenderloins"
  },
  {
   "title": "Chicken Pad Thai",
@@ -16663,7 +16866,10 @@
    "dairy-free",
    "quick"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 30,
+  "ahead": [],
+  "meat": "Chicken thighs"
  },
  {
   "title": "Chicken Shawarma Wraps",
@@ -16798,7 +17004,10 @@
    "count": 2.5
   },
   "diet": [],
-  "storage": []
+  "storage": [],
+  "minutes": 35,
+  "ahead": [],
+  "meat": "Chicken thighs"
  },
  {
   "title": "Chicken Tikka Masala",
@@ -16953,7 +17162,10 @@
   "diet": [
    "freezes"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 35,
+  "ahead": [],
+  "meat": "Chicken breast or tenderloins"
  },
  {
   "title": "Chicken, Tomato & White Bean Pasta",
@@ -17207,7 +17419,12 @@
   ],
   "storage": [
    "Keeps well for lunches — add a splash of water when reheating."
-  ]
+  ],
+  "minutes": 35,
+  "ahead": [
+   "Defrost the chicken overnight."
+  ],
+  "meat": "Chicken breast or tenderloins"
  },
  {
   "title": "Classic Spaghetti Bolognese",
@@ -17427,7 +17644,10 @@
   ],
   "storage": [
    "itemize Freezes well."
-  ]
+  ],
+  "minutes": 60,
+  "ahead": [],
+  "meat": "Beef mince"
  },
  {
   "title": "Freezer Burritos with Beef, Beans & Rice",
@@ -17664,7 +17884,10 @@
   ],
   "storage": [
    "Reheat from frozen: unwrap, wrap in a damp paper towel and microwave for 2–3 minutes, turning halfway."
-  ]
+  ],
+  "minutes": 40,
+  "ahead": [],
+  "meat": "Beef mince"
  },
  {
   "title": "Gnocchi alla Sorrentina",
@@ -17896,7 +18119,10 @@
   ],
   "storage": [
    "Nowadays, fresh or packaged gnocchi are available in most supermarkets, both refrigerated and frozen."
-  ]
+  ],
+  "minutes": 90,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Greek-Style Chicken & Chickpea Couscous Bowls",
@@ -18169,7 +18395,10 @@
   "diet": [],
   "storage": [
    "Keep the yoghurt sauce separate if packing leftovers, and add it after reheating."
-  ]
+  ],
+  "minutes": 35,
+  "ahead": [],
+  "meat": "Chicken breast or tenderloins"
  },
  {
   "title": "Homemade Burgers & Fries",
@@ -18437,7 +18666,10 @@
   "diet": [
    "dairy-free"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 40,
+  "ahead": [],
+  "meat": "Beef mince"
  },
  {
   "title": "Homemade Sub Sandwiches",
@@ -18612,7 +18844,10 @@
   "diet": [
    "quick"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 20,
+  "ahead": [],
+  "meat": "Ham"
  },
  {
   "title": "Korean Bibimbap",
@@ -18753,7 +18988,10 @@
    "dairy-free",
    "leftovers"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 35,
+  "ahead": [],
+  "meat": "Chicken"
  },
  {
   "title": "Korean-Style Steak Bowl",
@@ -19045,7 +19283,10 @@
    "dairy-free",
    "leftovers"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 40,
+  "ahead": [],
+  "meat": "Beef steak (rump or topside)"
  },
  {
   "title": "Lean Sausage Ragu with Brown Rice",
@@ -19333,7 +19574,10 @@
   ],
   "storage": [
    "Keeps 3–4 days in the fridge and freezes well."
-  ]
+  ],
+  "minutes": 45,
+  "ahead": [],
+  "meat": "Sausages"
  },
  {
   "title": "Mapo Tofu with Pork Mince",
@@ -19569,7 +19813,10 @@
    "dairy-free",
    "quick"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 25,
+  "ahead": [],
+  "meat": "Pork mince"
  },
  {
   "title": "Old School Beef Tacos",
@@ -19943,7 +20190,10 @@
   "diet": [
    "quick"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 30,
+  "ahead": [],
+  "meat": "Beef mince"
  },
  {
   "title": "Pork & Lentil Bolognese",
@@ -20194,7 +20444,10 @@
    "freezes",
    "dairy-free"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": null,
+  "ahead": [],
+  "meat": "Pork mince"
  },
  {
   "title": "Pork & Veg Dumplings",
@@ -20447,7 +20700,10 @@
   ],
   "storage": [
    "To freeze: freeze on a lined tray so they don't touch, then bag."
-  ]
+  ],
+  "minutes": 70,
+  "ahead": [],
+  "meat": "Pork mince"
  },
  {
   "title": "Pork Fried Rice with Omelette",
@@ -20657,7 +20913,10 @@
    "quick",
    "leftovers"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 30,
+  "ahead": [],
+  "meat": "Pork mince"
  },
  {
   "title": "Pork Mince Dan Dan-Style Noodles",
@@ -20937,7 +21196,10 @@
    "dairy-free",
    "quick"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 25,
+  "ahead": [],
+  "meat": "Pork mince"
  },
  {
   "title": "Pork Mince Larb with Rice & Crunchy Veg",
@@ -21190,7 +21452,10 @@
    "dairy-free",
    "quick"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 25,
+  "ahead": [],
+  "meat": "Pork mince"
  },
  {
   "title": "Pork Mince Lettuce Cups (San Choy Bow)",
@@ -21425,7 +21690,10 @@
   "diet": [
    "dairy-free"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": null,
+  "ahead": [],
+  "meat": "Pork mince"
  },
  {
   "title": "Quick Ramen Bowls",
@@ -21563,7 +21831,10 @@
    "quick",
    "leftovers"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 25,
+  "ahead": [],
+  "meat": "Chicken"
  },
  {
   "title": "Rigatoni all’Amatriciana",
@@ -21777,7 +22048,10 @@
    "count": 4
   },
   "diet": [],
-  "storage": []
+  "storage": [],
+  "minutes": 45,
+  "ahead": [],
+  "meat": "Bacon"
  },
  {
   "title": "Sausage Ragu",
@@ -22059,7 +22333,10 @@
    "freezes",
    "dairy-free"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 45,
+  "ahead": [],
+  "meat": "Sausages"
  },
  {
   "title": "Sesame Beef, Edamame & Vegetable Noodles",
@@ -22301,7 +22578,12 @@
    "dairy-free",
    "quick"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 30,
+  "ahead": [
+   "Defrost the mince overnight if frozen."
+  ],
+  "meat": "Beef mince"
  },
  {
   "title": "Sloppy Joes with Lentils",
@@ -22558,7 +22840,10 @@
   ],
   "storage": [
    "The filling freezes well — reheat and serve on buns, toast or jacket potatoes."
-  ]
+  ],
+  "minutes": 35,
+  "ahead": [],
+  "meat": "Beef mince"
  },
  {
   "title": "Spicy Arrabbiata-Style Mince Pasta",
@@ -22873,7 +23158,10 @@
    "dairy-free",
    "quick"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 30,
+  "ahead": [],
+  "meat": "Beef mince"
  },
  {
   "title": "Spicy Beef Bolognese with Rigatoni",
@@ -23177,7 +23465,10 @@
   "diet": [
    "freezes"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 40,
+  "ahead": [],
+  "meat": "Beef mince"
  },
  {
   "title": "Sweet & Sour Chicken",
@@ -23313,7 +23604,10 @@
   "diet": [
    "dairy-free"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 35,
+  "ahead": [],
+  "meat": "Chicken breast or tenderloins"
  },
  {
   "title": "Thai Green Chicken Curry",
@@ -23577,7 +23871,10 @@
    "freezes",
    "dairy-free"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 60,
+  "ahead": [],
+  "meat": "Chicken"
  },
  {
   "title": "Vietnamese Banh Mi",
@@ -23710,7 +24007,10 @@
   "diet": [
    "dairy-free"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 35,
+  "ahead": [],
+  "meat": "Chicken"
  },
  {
   "title": "Beef Mince & Lentil Shepherd's Pie",
@@ -23934,7 +24234,10 @@
    "freezes",
    "dairy-free"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": null,
+  "ahead": [],
+  "meat": "Beef mince"
  },
  {
   "title": "Beef Mince Stuffed Capsicums",
@@ -24166,7 +24469,10 @@
   ],
   "storage": [
    "Leftovers reheat well in the microwave for 2 minutes."
-  ]
+  ],
+  "minutes": null,
+  "ahead": [],
+  "meat": "Beef mince"
  },
  {
   "title": "Chicken & Vegetable Bake",
@@ -24415,7 +24721,12 @@
   "diet": [
    "dairy-free"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": null,
+  "ahead": [
+   "Prep the vegetables and marinate the chicken the night before to save time on cooking day."
+  ],
+  "meat": "Chicken thighs"
  },
  {
   "title": "Classic Bolognese Lasagne",
@@ -24706,7 +25017,10 @@
   "diet": [
    "freezes"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 150,
+  "ahead": [],
+  "meat": "Mince (beef or pork)"
  },
  {
   "title": "Crunchy Crumbed Chicken Drumsticks",
@@ -24935,7 +25249,10 @@
   ],
   "storage": [
    "Leftovers keep 3 days in fridge."
-  ]
+  ],
+  "minutes": 60,
+  "ahead": [],
+  "meat": "Chicken drumsticks"
  },
  {
   "title": "DIY Pizzas",
@@ -25167,7 +25484,10 @@
    "vegetarian",
    "quick"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 20,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Lemon Herb Salmon Tray Bake",
@@ -25380,7 +25700,10 @@
   "diet": [
    "dairy-free"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": null,
+  "ahead": [],
+  "meat": "Salmon"
  },
  {
   "title": "Loaded Beef Nachos",
@@ -25661,7 +25984,10 @@
   ],
   "storage": [
    "itemize Makes a big batch of mince — leftovers can be stored in the fridge or freezer for later."
-  ]
+  ],
+  "minutes": 30,
+  "ahead": [],
+  "meat": "Beef mince"
  },
  {
   "title": "Loaded Jacket Potatoes",
@@ -25782,7 +26108,10 @@
   "diet": [
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 60,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Meatloaf Muffins",
@@ -26020,7 +26349,10 @@
   ],
   "storage": [
    "Freeze cooked muffins; reheat in the microwave for 1–2 minutes."
-  ]
+  ],
+  "minutes": 40,
+  "ahead": [],
+  "meat": "Beef mince"
  },
  {
   "title": "Mince & Cheese Pie Bake",
@@ -26276,7 +26608,10 @@
   "diet": [
    "freezes"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 55,
+  "ahead": [],
+  "meat": "Beef mince"
  },
  {
   "title": "Sausage Rolls with Grated Veg",
@@ -26510,7 +26845,10 @@
   ],
   "storage": [
    "Freeze unbaked on a tray, then bag."
-  ]
+  ],
+  "minutes": 50,
+  "ahead": [],
+  "meat": "Pork mince"
  },
  {
   "title": "Rustic Chickpea & Rocket Salad with Mustard-Garlic Vinaigrette",
@@ -26748,7 +27086,10 @@
    "dairy-free",
    "quick"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 15,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Cajun Rice",
@@ -26993,7 +27334,10 @@
    "dairy-free",
    "quick"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 30,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Coconut Rice",
@@ -27123,7 +27467,10 @@
    "dairy-free",
    "quick"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 25,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Coriander Lime Rice",
@@ -27266,7 +27613,10 @@
   "storage": [
    "Cool leftover rice quickly and refrigerate within an hour.",
    "Reheat until steaming hot."
-  ]
+  ],
+  "minutes": 25,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Egg Fried Rice",
@@ -27463,7 +27813,10 @@
   ],
   "storage": [
    "Cool cooked rice quickly, keep it in the fridge, and use it within a day."
-  ]
+  ],
+  "minutes": 15,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Garlic Butter Rice",
@@ -27613,7 +27966,10 @@
   "diet": [
    "quick"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 25,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Herbed Couscous",
@@ -27783,7 +28139,10 @@
    "dairy-free",
    "quick"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 10,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Lemon & Herb Quinoa",
@@ -27964,7 +28323,10 @@
   ],
   "storage": [
    "Keeps 4 days in the fridge, so it's good for packed lunches."
-  ]
+  ],
+  "minutes": 25,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Mexican Tomato Rice",
@@ -28183,7 +28545,10 @@
    "dairy-free",
    "quick"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 30,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Rice with Peas & Parmesan",
@@ -28334,7 +28699,10 @@
   "diet": [
    "quick"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 25,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Turmeric Rice with Peas",
@@ -28519,7 +28887,10 @@
    "dairy-free",
    "quick"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 25,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Asparagus with Capers and Parsley Mayonnaise",
@@ -28691,7 +29062,10 @@
    "vegetarian",
    "dairy-free"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 45,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Cauliflower Cheese",
@@ -28869,7 +29243,10 @@
   "diet": [
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 35,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Crispy Smashed Potatoes",
@@ -29020,7 +29397,10 @@
    "vegetarian",
    "dairy-free"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 60,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Garlic Green Beans",
@@ -29172,7 +29552,10 @@
    "dairy-free",
    "quick"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 10,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Kumara Mash",
@@ -29323,7 +29706,10 @@
    "vegetarian",
    "quick"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 25,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Kumara Wedges with Aioli",
@@ -29487,7 +29873,10 @@
    "vegetarian",
    "dairy-free"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 40,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Roast Vegetables",
@@ -29687,7 +30076,10 @@
    "vegetarian",
    "dairy-free"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 60,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Sesame Asian Greens",
@@ -29862,7 +30254,10 @@
    "dairy-free",
    "quick"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 10,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Banana Protein Pancakes",
@@ -30066,7 +30461,10 @@
    "freezes",
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": null,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Breakfast Burritos",
@@ -30299,7 +30697,10 @@
   "storage": [
    "Reheat from frozen: Remove foil, wrap in a damp paper towel, microwave for 2–3 minutes.",
    "Or reheat in foil in oven at 180°C for 15–20 minutes for a crispier result."
-  ]
+  ],
+  "minutes": null,
+  "ahead": [],
+  "meat": "Sausages"
  },
  {
   "title": "Egg Muffins",
@@ -30477,7 +30878,10 @@
   ],
   "storage": [
    "Reheat: 60–90 seconds in the microwave."
-  ]
+  ],
+  "minutes": null,
+  "ahead": [],
+  "meat": "Bacon"
  },
  {
   "title": "Frittata Slices",
@@ -30696,7 +31100,10 @@
   ],
   "storage": [
    "Reheat: 60–90 seconds in the microwave or a few minutes in a dry frying pan."
-  ]
+  ],
+  "minutes": null,
+  "ahead": [],
+  "meat": "Chicken breast or tenderloins"
  },
  {
   "title": "High-Protein Chia Pudding",
@@ -30873,7 +31280,10 @@
   "diet": [
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": null,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Overnight Oats",
@@ -31049,7 +31459,10 @@
   ],
   "storage": [
    "Tip: Keeps in the fridge for up to 5 days."
-  ]
+  ],
+  "minutes": null,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Savoury Egg & Rice Bowl",
@@ -31231,7 +31644,10 @@
    "dairy-free",
    "leftovers"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": null,
+  "ahead": [],
+  "meat": "Ham"
  },
  {
   "title": "Boiled Eggs & Crackers",
@@ -31366,7 +31782,10 @@
   ],
   "storage": [
    "Tip: Batch boil 6–8 eggs at once and keep them unpeeled in the fridge for up to a week — perfect grab-and-go snack."
-  ]
+  ],
+  "minutes": null,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Cheese & Marmite Scrolls",
@@ -31566,7 +31985,10 @@
   ],
   "storage": [
    "Freeze in bags and pull out for lunches; they thaw by morning tea."
-  ]
+  ],
+  "minutes": 40,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Cottage Cheese & Tomato Toast",
@@ -31708,7 +32130,10 @@
   "diet": [
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": null,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Crunchy Spiced Roasted Chickpeas",
@@ -31880,7 +32305,10 @@
   ],
   "storage": [
    "They soften after a couple of days in an airtight container; re-crisp at 180°C for 5 minutes."
-  ]
+  ],
+  "minutes": 40,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Devilled Eggs",
@@ -32042,7 +32470,10 @@
   ],
   "storage": [
    "Keep in a covered container in the fridge for up to 2 days."
-  ]
+  ],
+  "minutes": 20,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Edamame with Sea Salt",
@@ -32156,7 +32587,10 @@
   ],
   "storage": [
    "Frozen bags are available cheaply at Pak'nSave and keep in the freezer for months."
-  ]
+  ],
+  "minutes": null,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Greek Yoghurt & Berry Bowl",
@@ -32271,7 +32705,10 @@
   "diet": [
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": null,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Homemade Hummus",
@@ -32448,7 +32885,10 @@
   ],
   "storage": [
    "Keeps 4–5 days in a sealed container in the fridge."
-  ]
+  ],
+  "minutes": 10,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Homemade Protein Balls",
@@ -32609,7 +33049,10 @@
    "freezes",
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": null,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Hummus & Vegetable Sticks",
@@ -32740,7 +33183,10 @@
   ],
   "storage": [
    "Tip: Prep a container of cut vegetables at the start of the week and keep in the fridge — it removes all friction from choosing this as a snack."
-  ]
+  ],
+  "minutes": null,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Microwave Mug Omelette",
@@ -32900,7 +33346,10 @@
    "quick",
    "leftovers"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 3,
+  "ahead": [],
+  "meat": "Ham"
  },
  {
   "title": "Oven Beef Jerky",
@@ -33099,7 +33548,10 @@
   ],
   "storage": [
    "Store in an airtight container in the fridge for up to 2 weeks."
-  ]
+  ],
+  "minutes": 255,
+  "ahead": [],
+  "meat": "Beef steak (rump or topside)"
  },
  {
   "title": "Parmesan & Garlic Popcorn",
@@ -33247,7 +33699,10 @@
    "vegetarian",
    "quick"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 10,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Peanut Butter & Banana Rice Cakes",
@@ -33361,7 +33816,10 @@
    "vegetarian",
    "dairy-free"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": null,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Pork Mince Rice Paper Rolls",
@@ -33639,7 +34097,10 @@
    "dairy-free",
    "quick"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 30,
+  "ahead": [],
+  "meat": "Pork mince"
  },
  {
   "title": "Tuna & Crackers",
@@ -33809,7 +34270,10 @@
   "diet": [
    "dairy-free"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": null,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Tuna & Sweetcorn Fritters",
@@ -34026,7 +34490,10 @@
   "storage": [
    "Freeze cooked fritters with baking paper between them.",
    "Reheat in a frying pan or the microwave."
-  ]
+  ],
+  "minutes": 25,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Tzatziki with Baked Pita Chips",
@@ -34225,7 +34692,10 @@
   "storage": [
    "Tzatziki keeps 3 days in the fridge and goes well with Beef Kofta or Greek-Style Chicken Bowls.",
    "Pita chips keep a week in an airtight container."
-  ]
+  ],
+  "minutes": 15,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Berry & Oat Power Shake",
@@ -34370,7 +34840,10 @@
   "diet": [
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": null,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Classic Chocolate Peanut Butter Shake",
@@ -34504,7 +34977,10 @@
   ],
   "storage": [
    "Peel and freeze overripe bananas in a zip-lock bag — they last months and are perfect for shakes."
-  ]
+  ],
+  "minutes": null,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Green Spinach & Banana Shake",
@@ -34649,7 +35125,10 @@
   "diet": [
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": null,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Mango & Coconut Tropical Shake",
@@ -34772,7 +35251,10 @@
   "diet": [
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": null,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Vanilla Cinnamon Shake",
@@ -34904,7 +35386,10 @@
   "diet": [
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": null,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Baked Cinnamon Apples",
@@ -35060,7 +35545,10 @@
   "diet": [
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": null,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Banana Nice Cream",
@@ -35208,7 +35696,10 @@
   ],
   "storage": [
    "Keep a bag of frozen bananas in the freezer at all times for both shakes and this dessert."
-  ]
+  ],
+  "minutes": null,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Chocolate Protein Mug Cake",
@@ -35375,7 +35866,10 @@
    "freezes",
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": null,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Chocolate Self-Saucing Pudding",
@@ -35587,7 +36081,10 @@
   "diet": [
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 50,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Feijoa & Apple Crumble",
@@ -35796,7 +36293,10 @@
   "diet": [
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 50,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Frozen Yoghurt Bark",
@@ -35946,7 +36446,10 @@
   ],
   "storage": [
    "Tip: Keeps in the freezer for up to 2 months."
-  ]
+  ],
+  "minutes": null,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "No-Bake Chocolate Oat Cookies",
@@ -36122,7 +36625,10 @@
   "diet": [
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": null,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Pavlova",
@@ -36308,7 +36814,10 @@
   ],
   "storage": [
    "An un-topped pavlova keeps in an airtight container for 2–3 days."
-  ]
+  ],
+  "minutes": 95,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Sticky Date Pudding",
@@ -36525,7 +37034,10 @@
    "The sauce makes plenty — leftovers keep in the fridge for a week.",
    "The pudding freezes well in portions.",
    "Reheat a square in the microwave and pour over warm sauce."
-  ]
+  ],
+  "minutes": 60,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Afghan Biscuits",
@@ -36738,7 +37250,10 @@
    "freezes",
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 45,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "ANZAC Biscuits",
@@ -36907,7 +37422,10 @@
    "vegetarian",
    "quick"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 30,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Apple & Feijoa Crumble Muffins",
@@ -37168,7 +37686,10 @@
    "freezes",
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 40,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Apple Cinnamon Muffins",
@@ -37403,7 +37924,10 @@
    "freezes",
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 35,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Bacon, Corn & Cheddar Muffins",
@@ -37593,7 +38117,10 @@
   ],
   "storage": [
    "They freeze well — reheat for 20–30 seconds in the microwave."
-  ]
+  ],
+  "minutes": 35,
+  "ahead": [],
+  "meat": "Bacon"
  },
  {
   "title": "Banana Bread",
@@ -37783,7 +38310,10 @@
   "storage": [
    "Freeze overripe bananas in their skins and thaw them for this.",
    "Slices freeze well — toast them straight from frozen."
-  ]
+  ],
+  "minutes": 75,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Banana Chocolate Chip Muffins",
@@ -37976,7 +38506,10 @@
   ],
   "storage": [
    "Muffins keep 5–7 days in an airtight container or can be frozen for up to 3 months."
-  ]
+  ],
+  "minutes": 30,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Blueberry Muffins",
@@ -38179,7 +38712,10 @@
    "freezes",
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 35,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Caramelised Onion & Cheddar Scones",
@@ -38385,7 +38921,10 @@
    "freezes",
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 50,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Carrot Cake Muffins with Cream Cheese Drizzle",
@@ -38701,7 +39240,10 @@
   "storage": [
    "Store iced muffins in the fridge because of the cream cheese.",
    "Un-iced muffins freeze well — drizzle after thawing."
-  ]
+  ],
+  "minutes": 40,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Cheese Scones",
@@ -38879,7 +39421,10 @@
    "vegetarian",
    "quick"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 25,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Cheesy Garlic Pull-Apart Bread",
@@ -39017,7 +39562,10 @@
    "freezes",
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 35,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Chocolate Brownies",
@@ -39204,7 +39752,10 @@
    "freezes",
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 45,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Chocolate Muffins",
@@ -39407,7 +39958,10 @@
    "freezes",
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 40,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Corn Muffins",
@@ -39569,7 +40123,10 @@
    "vegetarian",
    "quick"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 25,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Courgette & Parmesan Muffins",
@@ -39753,7 +40310,10 @@
    "freezes",
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 35,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Crunchy Lemon Poppyseed Muffins",
@@ -39939,7 +40499,10 @@
   ],
   "storage": [
    "Best enjoyed on the day of baking, but they can be stored in an airtight container for 2–3 days."
-  ]
+  ],
+  "minutes": 25,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Date Scones",
@@ -40127,7 +40690,10 @@
    "vegetarian",
    "quick"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 25,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Feijoa Muffins",
@@ -40323,7 +40889,10 @@
   ],
   "storage": [
    "You can freeze them for up to 3 months."
-  ]
+  ],
+  "minutes": 30,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Garlic Butter Naan (Yeasted)",
@@ -40516,7 +41085,10 @@
   "diet": [
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 80,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Ginger Crunch",
@@ -40711,7 +41283,10 @@
   "diet": [
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 40,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Ham & Cheese Breakfast Muffins",
@@ -40896,7 +41471,10 @@
   ],
   "storage": [
    "Freeze, then microwave for 30 seconds from frozen."
-  ]
+  ],
+  "minutes": 30,
+  "ahead": [],
+  "meat": "Ham"
  },
  {
   "title": "Harry’s Favourite Chocolate Cake",
@@ -41145,7 +41723,10 @@
    "freezes",
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 75,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Lemon Muffins",
@@ -41342,7 +41923,10 @@
    "vegetarian",
    "quick"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 30,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Louise Slice",
@@ -41554,7 +42138,10 @@
    "freezes",
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 50,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "No-Knead Overnight Bread",
@@ -41671,7 +42258,10 @@
    "vegetarian",
    "dairy-free"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 1135,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Passionfruit & White Chocolate Muffins",
@@ -41903,7 +42493,10 @@
    "freezes",
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 35,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Raspberry & White Chocolate Muffins",
@@ -42078,7 +42671,10 @@
    "vegetarian",
    "quick"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 30,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Spinach & Feta Muffins",
@@ -42285,7 +42881,10 @@
    "vegetarian",
    "quick"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 25,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Yoghurt Naan Bread",
@@ -42424,7 +43023,10 @@
    "vegetarian",
    "quick"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 30,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Brioche",
@@ -42604,7 +43206,10 @@
   "diet": [
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 210,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Cheese & Mustard Loaf",
@@ -42789,7 +43394,10 @@
    "freezes",
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 240,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Date & Walnut Loaf",
@@ -42980,7 +43588,10 @@
    "freezes",
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 300,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "French Loaf",
@@ -43106,7 +43717,10 @@
    "freezes",
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 360,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Garlic Herb Loaf",
@@ -43278,7 +43892,10 @@
    "freezes",
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 240,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Half-and-Half Wholemeal Loaf",
@@ -43440,7 +44057,10 @@
    "freezes",
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 300,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Kumara Bread",
@@ -43605,7 +44225,10 @@
    "freezes",
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 240,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Mexican Chilli Loaf",
@@ -43816,7 +44439,10 @@
    "freezes",
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 240,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Mixed Grain Bread",
@@ -44046,7 +44672,10 @@
    "freezes",
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 300,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Soft Sandwich Bread",
@@ -44195,7 +44824,10 @@
    "freezes",
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 300,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Spicy Fruit Loaf",
@@ -44405,7 +45037,10 @@
    "freezes",
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 240,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "White Loaf",
@@ -44554,7 +45189,10 @@
    "freezes",
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 240,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Bagels",
@@ -44734,7 +45372,10 @@
   "diet": [
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 200,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Bread Maker Pizza Dough",
@@ -44918,7 +45559,10 @@
    "freezes",
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 75,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Bread Rolls",
@@ -45099,7 +45743,10 @@
    "freezes",
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 200,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Cinnamon Tea Ring",
@@ -45327,7 +45974,10 @@
   "diet": [
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 200,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Focaccia",
@@ -45523,7 +46173,10 @@
   "diet": [
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 105,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Hot Cross Buns",
@@ -45795,7 +46448,10 @@
    "freezes",
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 200,
+  "ahead": [],
+  "meat": null
  },
  {
   "title": "Banana Yoghurt Tea Bread",
@@ -45978,6 +46634,9 @@
    "freezes",
    "vegetarian"
   ],
-  "storage": []
+  "storage": [],
+  "minutes": 70,
+  "ahead": [],
+  "meat": null
  }
 ]

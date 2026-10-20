@@ -450,6 +450,39 @@ def storage_notes(recipe):
     return out[:4]
 
 
+AHEAD_WHEN = re.compile(r"night before|overnight|the day before", re.I)
+AHEAD_WHAT = re.compile(r"defrost|thaw|chop|\bcut\b|brown|dice|prep|marinat|soak", re.I)
+AHEAD_LABEL = re.compile(r"^(advance prep(aration)?|make ahead|tip)\s*:\s*", re.I)
+
+
+def ahead_notes(recipe):
+    """Jobs to do the day before ('defrost the chicken in the fridge the night before')."""
+    out = []
+    def take(text):
+        for sent in re.split(r"(?<=[.!])\s+", re.sub(r"\*\*", "", text)):
+            if AHEAD_WHEN.search(sent) and AHEAD_WHAT.search(sent) and not re.search(r"reheat|to freeze", sent, re.I):
+                sent = AHEAD_LABEL.sub("", sent.strip())
+                out.append(sent[:1].upper() + sent[1:])
+    def walk(sections):
+        for s in sections:
+            if s.get("text"):
+                take(s["text"])
+            for it in s.get("items", []):
+                for t in [it.get("text") or ""] + it.get("sub", []):
+                    take(t)
+            walk(s.get("sections", []))
+    walk(recipe["sections"])
+    return list(dict.fromkeys(out))[:3]
+
+
+def main_meat(recipe):
+    """The first meat or fish the recipe needs, for 'take it out of the freezer' reminders."""
+    for s in recipe["shop"]:
+        if s["aisle"] == "Meat & fish" and not s["optional"]:
+            return s["name"]
+    return None
+
+
 def nutrition(recipe, tex_title, book):
     """Per-serving estimate, using the recipe's own \\nutritiontable where it has one."""
     est = estimate(recipe["shop"], recipe["servings"])
@@ -512,6 +545,9 @@ def main():
             r["nutrition"] = nutrition(r, tex_title, book)
             r["diet"] = diet_tags(r, r.pop("tagOverrides"))
             r["storage"] = storage_notes(r)
+            r["minutes"] = minutes(r["time"])
+            r["ahead"] = ahead_notes(r)
+            r["meat"] = main_meat(r)
             info_rows.append((tex_title, r["nutrition"], r["diet"]))
             recipes.append(r)
     (ROOT / "recipe_info.tex").write_text(recipe_info_tex(info_rows), encoding="utf-8", newline="\n")
