@@ -29,6 +29,13 @@ jobs:
       - name: Build meal planner
         run: python planner/build.py
 
+      # A failure here stops the site from being published.
+      - name: Check recipes and build
+        run: python -m unittest discover tests
+
+      - name: Test the planner in Chrome
+        run: python tests/run_planner_tests.py
+
       # latexmk is happier without spaces in the file name
       - name: Prepare books
         run: cp "Palmer Recipe Book.tex" palmer.tex
