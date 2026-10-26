@@ -167,6 +167,25 @@ alert for each reminder. Swapping a meal keeps its night, and the nights sync
 when sharing. Recipes with no time in the book use a typical time (8 hr slow
 cooker, 50 min pressure cooker, 30–45 min quick) and say it's a guess.
 
+### Food log
+
+The **Food log** tab tracks calories, protein, carbs and fat for each day
+against your own targets. Under **Your targets**, enter sex, age, height,
+weight, activity and goal and tap **Work them out**: calories come from the
+Mifflin-St Jeor formula (about 20% below maintenance to lose weight, 300 kcal
+above to build muscle), protein is 1.6-2 g per kg of body weight, fat is 25%
+of calories and carbs are the rest. Every number can then be changed by hand.
+
+Add food by searching your recipes (½, 1, 1½ or 2 serves, using each recipe's
+estimate), tapping a meal planned for that night, re-adding something from
+**Recent**, or **Quick add** for anything else (type its calories and
+macros). **Log a serve** on any recipe adds one serve to today. Entries are
+grouped into breakfast, lunch, dinner and snacks, and **Last 7 days** shows
+daily calories and protein with a tick for days on target.
+
+The log is private to each device: it's stored separately from the meal
+plan, so it isn't shared with your household or synced between devices.
+
 ### Sharing between people
 
 With Firebase set up, a **Share** button appears in the planner's header. It

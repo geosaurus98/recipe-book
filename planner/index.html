@@ -279,6 +279,54 @@ main.wrap { padding-block: 20px 48px; display: grid; gap: 28px; }
   .tabs button { flex: 1; padding-inline: 6px; }
   .sheet { padding: 18px 16px 24px; }
 }
+
+/* Food log */
+.day-nav { align-items: center; }
+.day-nav strong { min-width: 6.5rem; text-align: center; }
+.bars { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 720px) { .bars { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.bar { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px; box-shadow: var(--shadow); display: grid; gap: 6px; }
+.bar-top { display: flex; justify-content: space-between; align-items: baseline; gap: 6px; flex-wrap: wrap; }
+.bar-top span { font-family: var(--font-mono); font-size: 0.8rem; color: var(--muted); }
+.bar-track { height: 8px; border-radius: 4px; background: var(--sunk); overflow: hidden; }
+.bar-track span { display: block; height: 100%; background: var(--accent); border-radius: 4px; }
+.bar small { font-size: 0.78rem; color: var(--muted); }
+.bar.over .bar-track span { background: var(--oven); }
+.bar.over small { color: var(--oven); font-weight: 600; }
+.track-card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 16px; box-shadow: var(--shadow); display: grid; gap: 12px; }
+.track-card h3, .meal-block h3 { font-family: var(--font-display); font-weight: 400; font-size: 1.1rem; }
+.meal-block h3 span { font-family: var(--font-mono); font-size: 0.78rem; color: var(--muted); margin-left: 6px; }
+.chips.qty { align-items: center; font-size: 0.85rem; color: var(--muted); }
+.planned, .recent { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; }
+.planned strong, .recent strong { font-size: 0.82rem; color: var(--muted); width: 100%; }
+.recent .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.food-list { list-style: none; margin: 0; padding: 0; display: grid; }
+.food-list li { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--line); }
+.food-list li:last-child { border-bottom: 0; }
+.food-list li > span { min-width: 0; }
+.food-list small { display: block; font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted); }
+.food-list small.qty-label { display: inline; font-family: var(--font-body); margin-left: 4px; }
+.meals { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 24px; }
+@media (max-width: 720px) { .meals { grid-template-columns: 1fr; } }
+.meal-block { display: grid; gap: 4px; align-content: start; }
+.muted-note { font-size: 0.82rem; color: var(--muted); margin: 0; }
+.fields { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+@media (max-width: 720px) { .fields { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.field { display: grid; gap: 3px; font-size: 0.8rem; color: var(--muted); min-width: 0; }
+.field.wide { grid-column: span 2; }
+.field input, .field select { font: inherit; font-size: 0.95rem; color: var(--ink); padding: 7px 10px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); width: 100%; min-width: 0; }
+.with-unit { display: flex; align-items: center; gap: 6px; }
+.quick-add summary, .targets summary { cursor: pointer; font-weight: 600; }
+.quick-add[open] summary { margin-bottom: 10px; }
+.targets > summary { padding: 4px 0 10px; }
+.week-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+.week-table th, .week-table td { text-align: left; padding: 6px 4px; border-bottom: 1px solid var(--line); }
+.week-table td { font-family: var(--font-mono); font-size: 0.82rem; }
+.week-table thead th { font-size: 0.75rem; color: var(--muted); font-weight: 600; }
+.week-table th button { all: unset; cursor: pointer; font-weight: 600; }
+.week-table tr.is-day th button { color: var(--accent); }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+@media (max-width: 560px) { .tabs { width: 100%; } .tabs button { flex: 1; padding: 6px 4px; font-size: 0.84rem; white-space: nowrap; } }
 </style>
 
 <header class="top">
@@ -289,6 +337,7 @@ main.wrap { padding-block: 20px 48px; display: grid; gap: 28px; }
       <button role="tab" id="tab-week" aria-selected="true" data-tab="week">This week</button>
       <button role="tab" id="tab-recipes" aria-selected="false" data-tab="recipes">Recipes</button>
       <button role="tab" id="tab-shop" aria-selected="false" data-tab="shop">Shopping<span class="count" id="shop-count"></span></button>
+      <button role="tab" id="tab-track" aria-selected="false" data-tab="track">Food log</button>
     </nav>
   </div>
 </header>
@@ -1034,6 +1083,262 @@ function downloadCalendar() {
   toast("Calendar file saved. Open it to add the reminders");
 }
 
+// ─── Food log (calories and macros) ─────────────────────────────────────────
+// Private to this device: kept under its own localStorage key and never part
+// of `state`, so it isn't shared with the household or synced. Each entry
+// stores its own numbers, so later changes to a recipe's estimate don't
+// rewrite past days.
+const TRACK_KEY = "george-meal-planner-tracker";
+const MEALS = [["breakfast", "Breakfast"], ["lunch", "Lunch"], ["dinner", "Dinner"], ["snacks", "Snacks"]];
+const ACTIVITY = [
+  ["sedentary", "Mostly sitting", 1.2], ["light", "Light exercise 1–3 days a week", 1.375],
+  ["moderate", "Exercise 3–5 days a week", 1.55], ["active", "Hard exercise 6–7 days a week", 1.725],
+  ["very", "Physical job plus training", 1.9],
+];
+const GOALS = [["lose", "Lose weight"], ["maintain", "Stay the same"], ["gain", "Build muscle"]];
+const PROTEIN_PER_KG = { lose: 2.0, maintain: 1.6, gain: 1.8 };
+const MACROS = [["kcal", "Calories", ""], ["protein", "Protein", " g"], ["carbs", "Carbs", " g"], ["fat", "Fat", " g"]];
+const QTYS = [[0.5, "½"], [1, "1"], [1.5, "1½"], [2, "2"]];
+
+let tracker = loadTracker();
+function loadTracker() {
+  let t = null;
+  try { t = JSON.parse(localStorage.getItem(TRACK_KEY) || "null"); } catch {}
+  t = Object.assign({ profile: {}, targets: null, days: {} }, t || {});
+  t.profile = Object.assign({ sex: "male", age: "", height: "", weight: "", activity: "moderate", goal: "maintain" }, t.profile);
+  return t;
+}
+function trackCommit(mutator) {
+  mutator(tracker);
+  try { localStorage.setItem(TRACK_KEY, JSON.stringify(tracker)); } catch { toast("Couldn't save. Storage is blocked on this device"); }
+  render();
+}
+
+// Mifflin-St Jeor for energy, protein by body weight, 25% of calories from
+// fat and the rest from carbs.
+function calcTargets(p) {
+  const age = Number(p.age), cm = Number(p.height), kg = Number(p.weight);
+  if (!(age >= 14 && age <= 100 && cm >= 120 && cm <= 230 && kg >= 35 && kg <= 250)) return null;
+  const bmr = 10 * kg + 6.25 * cm - 5 * age + (p.sex === "female" ? -161 : 5);
+  const tdee = bmr * (ACTIVITY.find(a => a[0] === p.activity) || ACTIVITY[2])[2];
+  let kcal = p.goal === "lose" ? tdee * 0.8 : p.goal === "gain" ? tdee + 300 : tdee;
+  kcal = Math.max(kcal, p.sex === "female" ? 1200 : 1500);
+  const protein = kg * (PROTEIN_PER_KG[p.goal] || 1.6);
+  const fat = kcal * 0.25 / 9;
+  const carbs = Math.max(0, (kcal - protein * 4 - fat * 9) / 4);
+  return { kcal: Math.round(kcal / 10) * 10, protein: Math.round(protein), carbs: Math.round(carbs), fat: Math.round(fat) };
+}
+
+function isoAdd(iso, n) {
+  const [y, m, d] = iso.split("-").map(Number);
+  const x = new Date(y, m - 1, d + n);
+  return `${x.getFullYear()}-${String(x.getMonth() + 1).padStart(2, "0")}-${String(x.getDate()).padStart(2, "0")}`;
+}
+function prettyDay(iso) {
+  const t = todayISO();
+  if (iso === t) return "Today";
+  if (iso === isoAdd(t, -1)) return "Yesterday";
+  return prettyWeek(iso);
+}
+function mealNow() {
+  const h = new Date().getHours() + new Date().getMinutes() / 60;
+  return h < 11 ? "breakfast" : h < 14.5 ? "lunch" : h < 17 ? "snacks" : h < 21 ? "dinner" : "snacks";
+}
+function dayEntries(iso) { return tracker.days[iso] || []; }
+function dayTotals(iso) {
+  const t = { kcal: 0, protein: 0, carbs: 0, fat: 0 };
+  for (const e of dayEntries(iso)) for (const k of Object.keys(t)) t[k] += e[k] || 0;
+  return t;
+}
+function recipeEntry(r, q, meal) {
+  const n = r.nutrition;
+  const unit = n.per === "serving" ? (q === 1 ? "serve" : "serves") : (q === 1 ? n.per : n.per + "s");
+  return { name: r.title, rid: r.id, q, unit, meal,
+    kcal: Math.round(n.kcal * q), protein: Math.round(n.protein * q), carbs: Math.round(n.carbs * q), fat: Math.round(n.fat * q) };
+}
+function logEntry(iso, entry) {
+  trackCommit(t => { t.days[iso] = [...(t.days[iso] || []), entry]; });
+}
+// The last few different things logged, newest first, for one-tap re-adding.
+function recentFoods() {
+  const seen = new Set(), out = [];
+  for (const iso of Object.keys(tracker.days).sort().reverse())
+    for (const e of [...tracker.days[iso]].reverse()) {
+      const k = `${e.name}|${e.q || ""}`;
+      if (seen.has(k)) continue;
+      seen.add(k); out.push(e);
+      if (out.length >= 8) return out;
+    }
+  return out;
+}
+// Planned meals with a night that falls on this day.
+function plannedFor(iso) {
+  const i = Math.round((new Date(...iso.split("-").map((v, j) => j === 1 ? v - 1 : +v)) - weekDate(0)) / 86400000);
+  return scheduledIds().filter(id => state.days[id] === i && BY_ID[id].nutrition);
+}
+function trackSearch(q) {
+  const words = q.toLowerCase().split(/\s+/).filter(Boolean);
+  if (!words.length) return [];
+  return RECIPES.filter(r => r.nutrition && words.every(w => r.title.toLowerCase().includes(w))).slice(0, 8);
+}
+function entryLabel(e) { return e.rid ? `${esc(e.name)} <small class="qty-label">${QTYS.find(x => x[0] === e.q)?.[1] ?? e.q} ${esc(e.unit)}</small>` : esc(e.name); }
+function macroLine(e) { return `${e.kcal} kcal · ${e.protein} g P · ${e.carbs} g C · ${e.fat} g F`; }
+
+function renderTrackSearch() {
+  const hits = trackSearch(ui.trackQ || "");
+  if (!ui.trackQ) return "";
+  if (!hits.length) return `<p class="muted-note">No recipes match. Use Quick add below for anything else.</p>`;
+  return `<ul class="food-list">${hits.map(r => `<li><span>${esc(r.title)}<small>${macroLine(recipeEntry(r, 1, ""))} per ${esc(r.nutrition.per)}</small></span>
+    <button class="btn small" data-act="track-recipe" data-id="${r.id}">Add</button></li>`).join("")}</ul>`;
+}
+
+function renderTargetsForm() {
+  const p = tracker.profile, calc = calcTargets(p), t = tracker.targets || calc || {};
+  const opt = (list, v) => list.map(([k, l]) => `<option value="${k}" ${k === v ? "selected" : ""}>${esc(l)}</option>`).join("");
+  const num = (id, v, label, unit, min, max) => `<label class="field"><span>${label}</span><span class="with-unit"><input type="number" inputmode="decimal" id="${id}" value="${esc(v ?? "")}" min="${min}" max="${max}">${unit}</span></label>`;
+  return `<div class="track-card">
+    <h3>Work out my targets</h3>
+    <div class="fields">
+      <label class="field"><span>Sex</span><select id="tp-sex">${opt([["male", "Male"], ["female", "Female"]], p.sex)}</select></label>
+      ${num("tp-age", p.age, "Age", "yrs", 14, 100)}${num("tp-height", p.height, "Height", "cm", 120, 230)}${num("tp-weight", p.weight, "Weight", "kg", 35, 250)}
+      <label class="field wide"><span>Activity</span><select id="tp-activity">${opt(ACTIVITY, p.activity)}</select></label>
+      <label class="field wide"><span>Goal</span><select id="tp-goal">${opt(GOALS, p.goal)}</select></label>
+    </div>
+    <div class="actions"><button class="btn primary" data-act="track-calc">Work them out</button></div>
+    ${tracker.targets ? `<h3>Daily targets</h3>
+    <p class="muted-note">Change any number to fine-tune it.</p>
+    <div class="fields">${MACROS.map(([k, l, u]) => num(`tt-${k}`, t[k], l, u.trim() || "kcal", 0, 9999)).join("")}</div>
+    <div class="actions"><button class="btn" data-act="track-save-targets">Save targets</button></div>
+    <p class="muted-note">Calories use the Mifflin-St Jeor formula: about 20% below maintenance to lose weight, 300 kcal above to build muscle. Protein is ${PROTEIN_PER_KG[p.goal]} g per kg of body weight, fat is 25% of calories and carbs make up the rest. These are estimates; see a doctor or dietitian for medical advice.</p>` : ""}
+  </div>`;
+}
+
+function renderTrack() {
+  const iso = ui.trackDay || todayISO();
+  const t = tracker.targets, tot = dayTotals(iso), entries = dayEntries(iso);
+  const bars = MACROS.map(([k, l, u]) => {
+    const got = Math.round(tot[k]), want = t ? t[k] : 0;
+    const pct = want ? Math.min(100, got / want * 100) : 0;
+    const left = want - got;
+    const over = want && left < 0;
+    return `<div class="bar${over ? " over" : ""}"><div class="bar-top"><strong>${l}</strong><span>${got.toLocaleString()}${u}${want ? ` / ${want.toLocaleString()}${u}` : ""}</span></div>
+      <div class="bar-track"><span style="width:${pct}%"></span></div>
+      ${want ? `<small>${over ? `${Math.abs(left).toLocaleString()}${u} over` : `${left.toLocaleString()}${u} left`}</small>` : ""}</div>`;
+  }).join("");
+  const planned = plannedFor(iso).filter(id => !entries.some(e => e.rid === id));
+  const recent = recentFoods();
+  const meals = MEALS.map(([k, l]) => {
+    const list = entries.map((e, i) => [e, i]).filter(([e]) => e.meal === k);
+    const kcal = list.reduce((s, [e]) => s + e.kcal, 0);
+    return `<section class="meal-block"><h3>${l}${list.length ? ` <span>${kcal} kcal</span>` : ""}</h3>
+      ${list.length ? `<ul class="food-list">${list.map(([e, i]) => `<li><span>${entryLabel(e)}<small>${macroLine(e)}</small></span>
+        <button class="btn small ghost" data-act="track-del" data-i="${i}" aria-label="Remove ${esc(e.name)}">Remove</button></li>`).join("")}</ul>` : `<p class="muted-note">Nothing logged.</p>`}
+    </section>`;
+  }).join("");
+  const week = Array.from({ length: 7 }, (_, i) => isoAdd(iso, i - 6)).map(d => {
+    const x = dayTotals(d), n = dayEntries(d).length;
+    const hit = t && n && x.protein >= t.protein * 0.9 && Math.abs(x.kcal - t.kcal) <= t.kcal * 0.1;
+    return `<tr${d === iso ? ` class="is-day"` : ""}><th scope="row"><button data-act="track-day" data-v="${d}">${esc(prettyDay(d))}</button></th>
+      <td>${n ? Math.round(x.kcal).toLocaleString() : "–"}</td><td>${n ? Math.round(x.protein) + " g" : "–"}</td><td>${hit ? "✓" : ""}</td></tr>`;
+  }).join("");
+  const qtyChips = QTYS.map(([v, l]) => `<button class="fchip" data-act="track-qty" data-v="${v}" aria-pressed="${(ui.trackQty || 1) === v}">${l}</button>`).join("");
+  const mealChips = MEALS.map(([k, l]) => `<button class="fchip" data-act="track-meal" data-v="${k}" aria-pressed="${(ui.trackMeal || mealNow()) === k}">${l}</button>`).join("");
+  return `
+  <section class="section-head">
+    <div><h2>Food log</h2><p>Calories and macros for the day. Kept on this device only, and not shared with your household.</p></div>
+    <div class="actions day-nav">
+      <button class="btn small" data-act="track-day" data-v="${isoAdd(iso, -1)}" aria-label="Previous day">‹</button>
+      <strong>${esc(prettyDay(iso))}</strong>
+      <button class="btn small" data-act="track-day" data-v="${isoAdd(iso, 1)}" aria-label="Next day">›</button>
+      ${iso !== todayISO() ? `<button class="btn small ghost" data-act="track-day" data-v="${todayISO()}">Today</button>` : ""}
+    </div>
+  </section>
+  ${t ? "" : `<p class="today">Set up your daily targets below to see how much you have left each day.</p>`}
+  <section class="bars">${bars}</section>
+  <section class="track-card">
+    <h3>Add food</h3>
+    <div class="chips" role="group" aria-label="Meal">${mealChips}</div>
+    <div class="chips qty" role="group" aria-label="How much">How much ${qtyChips}</div>
+    ${planned.length ? `<div class="planned"><strong>Planned for this day</strong>${planned.map(id => `<button class="btn small primary" data-act="track-recipe" data-id="${id}">+ ${esc(BY_ID[id].title)}</button>`).join("")}</div>` : ""}
+    <input type="search" id="track-search" class="search" placeholder="Search your recipes…" value="${esc(ui.trackQ || "")}" autocomplete="off">
+    <div id="track-results">${renderTrackSearch()}</div>
+    ${recent.length ? `<div class="recent"><strong>Recent</strong><div class="chips">${recent.map((e, i) => `<button class="fchip" data-act="track-again" data-i="${i}">${esc(e.name)}${e.rid ? ` · ${QTYS.find(x => x[0] === e.q)?.[1] ?? e.q}` : ""}</button>`).join("")}</div></div>` : ""}
+    <details class="quick-add"${ui.quickOpen ? " open" : ""}><summary>Quick add something else</summary>
+      <div class="fields">
+        <label class="field wide"><span>What</span><input id="qa-name" placeholder="e.g. 2 Weet-Bix with milk"></label>
+        ${MACROS.map(([k, l, u]) => `<label class="field"><span>${l}</span><span class="with-unit"><input type="number" inputmode="decimal" id="qa-${k}" min="0">${u.trim() || "kcal"}</span></label>`).join("")}
+      </div>
+      <div class="actions"><button class="btn primary" data-act="track-quick">Add</button></div>
+    </details>
+  </section>
+  <section class="meals">${meals}</section>
+  <section class="track-card">
+    <h3>Last 7 days</h3>
+    <table class="week-table"><thead><tr><th scope="col">Day</th><th scope="col">kcal</th><th scope="col">Protein</th><th scope="col"><span class="sr">On target</span></th></tr></thead><tbody>${week}</tbody></table>
+    ${t ? `<p class="muted-note">✓ means within 10% of your calories and at least 90% of your protein.</p>` : ""}
+  </section>
+  <details class="targets"${t ? "" : " open"}><summary>Your targets${t ? `: ${t.kcal.toLocaleString()} kcal, ${t.protein} g protein` : ""}</summary>${renderTargetsForm()}</details>`;
+}
+function readNum(id) { const v = Number(document.getElementById(id)?.value); return Number.isFinite(v) && v >= 0 ? v : 0; }
+function trackClick(act, el) {
+  const iso = ui.trackDay || todayISO(), meal = ui.trackMeal || mealNow();
+  switch (act) {
+    case "track-day": ui.trackDay = el.dataset.v; render(); return true;
+    case "track-qty": ui.trackQty = Number(el.dataset.v); render(); return true;
+    case "track-meal": ui.trackMeal = el.dataset.v; render(); return true;
+    case "track-recipe": {
+      const r = BY_ID[el.dataset.id];
+      const e = recipeEntry(r, ui.trackQty || 1, meal);
+      logEntry(iso, e);
+      toast(`Added ${r.title} (${e.kcal} kcal)`);
+      return true;
+    }
+    case "track-log": {  // from a recipe sheet: one serve, today
+      const r = BY_ID[el.dataset.id];
+      const e = recipeEntry(r, 1, mealNow());
+      logEntry(todayISO(), e);
+      toast(`Logged 1 ${r.nutrition.per === "serving" ? "serve" : r.nutrition.per} of ${r.title} (${e.kcal} kcal)`);
+      return true;
+    }
+    case "track-again": {
+      const e = recentFoods()[Number(el.dataset.i)];
+      if (e) { logEntry(iso, Object.assign({}, e, { meal })); toast(`Added ${e.name}`); }
+      return true;
+    }
+    case "track-del": {
+      const i = Number(el.dataset.i);
+      trackCommit(t => { t.days[iso] = dayEntries(iso).filter((_, j) => j !== i); if (!t.days[iso].length) delete t.days[iso]; });
+      return true;
+    }
+    case "track-quick": {
+      const name = (document.getElementById("qa-name").value || "").trim();
+      const e = { name: name || "Quick add", meal, kcal: Math.round(readNum("qa-kcal")), protein: Math.round(readNum("qa-protein")), carbs: Math.round(readNum("qa-carbs")), fat: Math.round(readNum("qa-fat")) };
+      if (!e.kcal && !e.protein && !e.carbs && !e.fat) { toast("Enter at least the calories"); return true; }
+      ui.quickOpen = true;
+      logEntry(iso, e);
+      toast(`Added ${e.name}`);
+      return true;
+    }
+    case "track-calc": {
+      const val = id => document.getElementById(id).value;
+      const profile = { sex: val("tp-sex"), age: val("tp-age"), height: val("tp-height"), weight: val("tp-weight"), activity: val("tp-activity"), goal: val("tp-goal") };
+      const calc = calcTargets(profile);
+      if (!calc) { toast("Check your age, height and weight"); return true; }
+      trackCommit(t => { t.profile = profile; t.targets = calc; });
+      toast(`Targets set: ${calc.kcal.toLocaleString()} kcal, ${calc.protein} g protein`);
+      return true;
+    }
+    case "track-save-targets": {
+      const next = Object.fromEntries(MACROS.map(([k]) => [k, Math.round(readNum(`tt-${k}`))]));
+      if (!next.kcal) { toast("Calories can't be 0"); return true; }
+      trackCommit(t => { t.targets = next; });
+      toast("Targets saved");
+      return true;
+    }
+  }
+  return false;
+}
+
 // ─── Render ─────────────────────────────────────────────────────────────────
 function render() {
   document.querySelectorAll(".tabs button").forEach(b => b.setAttribute("aria-selected", String(b.dataset.tab === ui.tab)));
@@ -1043,7 +1348,7 @@ function render() {
   const left = toBuy.filter(x => !state.checked[x.key]).length;
   document.getElementById("shop-count").textContent = total ? left : "";
   const app = document.getElementById("app");
-  app.innerHTML = ui.tab === "week" ? renderWeek() : ui.tab === "recipes" ? renderRecipes() : renderShop(groups);
+  app.innerHTML = ui.tab === "week" ? renderWeek() : ui.tab === "recipes" ? renderRecipes() : ui.tab === "track" ? renderTrack() : renderShop(groups);
   renderSheet();
 }
 
@@ -1246,7 +1551,7 @@ function renderSheet() {
         ${historyLine(r.id)}
         ${macroBlock(r)}
         ${r.intro ? `<p class="intro">${md(r.intro)}</p>` : ""}
-        <div class="sheet-actions">${cookSteps(r).length ? `<button class="btn primary" data-act="cook-start" data-id="${r.id}">Start cooking</button>` : ""}${actions}</div>
+        <div class="sheet-actions">${cookSteps(r).length ? `<button class="btn primary" data-act="cook-start" data-id="${r.id}">Start cooking</button>` : ""}${actions}${r.nutrition ? `<button class="btn" data-act="track-log" data-id="${r.id}">Log a ${r.nutrition.per === "serving" ? "serve" : esc(r.nutrition.per)}</button>` : ""}</div>
       </div>
       ${storageBox(r)}
       ${renderSections(r.sections, scaleOf(r.id))}
@@ -1263,6 +1568,7 @@ document.addEventListener("click", e => {
   const act = el.dataset.act;
   if (act === "close-overlay" && e.target !== el) return;
   const id = el.dataset.id, slot = el.dataset.slot;
+  if (act.startsWith("track-") && trackClick(act, el)) return;
   switch (act) {
     case "open": ui.open = id; renderSheet(); break;
     case "close": case "close-overlay": ui.open = null; ui.share = false; renderSheet(); break;
@@ -1405,6 +1711,11 @@ document.addEventListener("change", e => {
   if (act === "cook-have" && ui.cook) ui.cook.have[el.dataset.n] = el.checked;
 });
 document.addEventListener("input", e => {
+  if (e.target.id === "track-search") {
+    ui.trackQ = e.target.value;
+    document.getElementById("track-results").innerHTML = renderTrackSearch();
+    return;
+  }
   if (e.target.id !== "search") return;
   ui.q = e.target.value;
   const pos = e.target.selectionStart;
