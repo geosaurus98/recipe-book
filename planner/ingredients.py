@@ -139,7 +139,7 @@ CANON = [
     (r"prawn", "prawns", "Prawns", MEAT),
     (r"\bchicken\b", "chicken", "Chicken", MEAT),
     # Frozen (before fresh veg so "frozen spinach" stays frozen)
-    (r"frozen (green )?peas|\bpeas\b(?! *\w*split)", "frozen-peas", "Frozen peas", FROZEN),
+    (r"frozen (green )?peas|(?<!split )\bpeas\b", "frozen-peas", "Frozen peas", FROZEN),
     (r"edamame", "edamame", "Frozen edamame", FROZEN),
     (r"frozen spinach", "frozen-spinach", "Frozen spinach", FROZEN),
     (r"stir[- ]fry veg", "frozen-stir-fry", "Frozen stir-fry vegetables", FROZEN),
