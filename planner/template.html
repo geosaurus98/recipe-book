@@ -326,6 +326,63 @@ main.wrap { padding-block: 20px 48px; display: grid; gap: 28px; }
 .week-table th button { all: unset; cursor: pointer; font-weight: 600; }
 .week-table tr.is-day th button { color: var(--accent); }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+/* Cost, leftovers, what can I make, own recipes */
+.meta .cost, .cost { font-family: var(--font-mono); color: var(--accent); }
+.prices { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 12px 16px; }
+.prices summary { cursor: pointer; font-weight: 600; }
+.prices[open] summary { margin-bottom: 8px; }
+.price-list { list-style: none; margin: 10px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 6px 20px; }
+.price-list li { display: flex; align-items: center; gap: 8px; font-size: 0.88rem; }
+.price-list label { flex: 1; min-width: 0; }
+.price-list input { width: 5.5em; font: inherit; font-size: 0.88rem; padding: 4px 6px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink); }
+.leftovers { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.leftover { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--m); border-radius: 12px; padding: 10px 12px; }
+.leftover.late { border-color: var(--oven); }
+.leftover.late .lo-meta { color: var(--oven); font-weight: 600; }
+.lo-main { flex: 1 1 200px; min-width: 0; display: grid; }
+.lo-title { all: unset; cursor: pointer; font-weight: 600; }
+.lo-title:hover { text-decoration: underline; }
+.lo-meta { font-size: 0.8rem; color: var(--muted); }
+.lo-count { display: flex; align-items: center; gap: 6px; font-family: var(--font-mono); }
+.lo-count span { min-width: 1.5em; text-align: center; }
+.leftover .row { display: flex; flex-wrap: wrap; gap: 6px; }
+.eaters select, .field textarea { font: inherit; font-size: 0.85rem; padding: 3px 6px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink); }
+.make { display: grid; gap: 10px; }
+.have-group { display: grid; gap: 4px; margin-top: 10px; }
+#have-picker summary { cursor: pointer; font-weight: 600; }
+.make .row, .track-card .row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 12px; }
+.have-group strong { font-size: 0.78rem; color: var(--muted); }
+.card .missing { font-size: 0.8rem; color: var(--muted); }
+.field.full { grid-column: 1 / -1; }
+.field em { font-style: normal; color: var(--muted); font-weight: 400; }
+.field textarea { width: 100%; font-size: 0.92rem; padding: 8px 10px; border-radius: 10px; resize: vertical; }
+.copy-fallback { position: fixed; bottom: 70px; left: 16px; right: 16px; height: 120px; z-index: 60; }
+.sheet .top-row { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 8px; }
+/* Barcode, weight and charts */
+.scan-box { background: #000; border-radius: 12px; overflow: hidden; aspect-ratio: 4 / 3; }
+.scan-box video { width: 100%; height: 100%; object-fit: cover; display: block; }
+.scan-type { display: flex; align-items: end; gap: 8px; margin-top: 12px; }
+.scan-type .field { flex: 1; }
+.weigh-row { display: flex; align-items: end; gap: 8px; flex-wrap: wrap; }
+.weigh-row .field { width: 9rem; }
+.weight-summary { margin: 0; font-size: 0.9rem; }
+.chart { margin: 0; }
+.chart figcaption { font-size: 0.82rem; font-weight: 600; margin-bottom: 4px; }
+.chart svg { width: 100%; height: auto; display: block; overflow: visible; }
+.chart .grid { stroke: var(--line); stroke-width: 1; }
+.chart .tick { font-family: var(--font-mono); font-size: 11px; fill: var(--muted); }
+.chart .bar-mark { fill: var(--accent); }
+.chart .hit { fill: transparent; }
+.chart .hit:hover { fill: color-mix(in srgb, var(--ink) 6%, transparent); }
+.chart .target { stroke: var(--ink); stroke-width: 1.5; stroke-dasharray: 5 4; }
+.chart .target-label { fill: var(--ink); }
+.chart .trend { fill: none; stroke: var(--accent); stroke-width: 2; }
+.chart .dot { fill: var(--accent); stroke: var(--surface); stroke-width: 2; }
+.small-head { font-size: 0.82rem; }
+.per-meal { list-style: none; margin: 6px 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+.per-meal li { background: var(--sunk); border-radius: 10px; padding: 6px 10px; display: grid; font-size: 0.78rem; color: var(--muted); }
+.per-meal strong { font-family: var(--font-mono); font-size: 0.95rem; color: var(--ink); }
+@media (max-width: 560px) { .per-meal { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 560px) { .tabs { width: 100%; } .tabs button { flex: 1; padding: 6px 4px; font-size: 0.84rem; white-space: nowrap; } }
 </style>
 
@@ -375,6 +432,7 @@ const EXAMPLE = {
     quick: "Stovetop-Pork_Larb",
   },
   extras: [], cooked: {}, checked: {}, scale: {}, fav: {}, rating: {}, log: {}, pantry: {}, history: [], example: true,
+  leftovers: {}, prices: {}, custom: {}, eaters: 2,
   days: { "SlowCooker-Smoky_Chicken_Bean_Lentil_Stew": 0, "InstantPot-Cheeseburger_Macaroni": 2, "Stovetop-Pork_Larb": 4 },
   dinner: "18:30",
 };
@@ -397,6 +455,10 @@ function prettyWeek(iso) {
 }
 function sanitize(s) {
   const out = Object.assign(clone(EXAMPLE), s || {});
+  out.custom = Object.fromEntries(Object.entries(out.custom || {}).filter(([, c]) => c && c.title && Array.isArray(c.ingredients) && Array.isArray(c.method)));
+  refreshCustom(out.custom);  // so planned custom recipes survive the checks below
+  out.leftovers = out.leftovers || {}; out.prices = out.prices || {};
+  out.eaters = [1, 2, 3, 4, 5, 6].includes(out.eaters) ? out.eaters : 2;
   out.slots = Object.assign({ slow: null, pressure: null, quick: null }, out.slots || {});
   for (const k of Object.keys(out.slots)) if (out.slots[k] && !BY_ID[out.slots[k]]) out.slots[k] = null;
   out.extras = (out.extras || []).filter(id => BY_ID[id]);
@@ -458,7 +520,7 @@ function setSync(t) { document.getElementById("sync").textContent = t; }
 const SYNC = /*SYNC*/null;
 const FIREBASE_VERSION = "10.12.2";
 const HOUSE_KEY = "george-meal-planner-household";
-const MAP_KEYS = ["checked", "cooked", "scale", "fav", "rating", "log", "pantry", "days"];
+const MAP_KEYS = ["checked", "cooked", "scale", "fav", "rating", "log", "pantry", "days", "leftovers", "prices", "custom"];
 let fb = null;          // { fs, ref } once connected
 let lastSynced = null;  // the state as the server last saw it
 function householdCode() { try { return localStorage.getItem(HOUSE_KEY); } catch { return null; } }
@@ -1083,6 +1145,417 @@ function downloadCalendar() {
   toast("Calendar file saved. Open it to add the reminders");
 }
 
+// ─── Nutrition and cost from ingredients ────────────────────────────────────
+// NUTR mirrors planner/nutrition.py (per-100 g values and unit weights) so
+// recipes added in the planner get estimates like the book's. PRICES are
+// rough NZ$ per kg from planner/prices.py; state.prices holds your own.
+const PRICES = /*PRICES*/{};
+const NUTR = /*NUTR*/{};
+function itemGrams(item) {
+  if (item.g != null) return item.g;
+  const { qty, unit } = item;
+  if (qty == null || !NUTR.foods) return null;
+  const key = item.key === "lentils" && unit === "can" ? "lentils-canned" : item.key;
+  const entry = NUTR.foods[key];
+  const per = entry ? entry[4] : {};
+  if (unit === "g" || unit === "ml") return qty;
+  if (unit === "kg" || unit === "L") return qty * 1000;
+  if (unit === "") return per.each != null ? qty * per.each : null;
+  if (per[unit] != null) return qty * per[unit];
+  return NUTR.units[unit] != null ? qty * NUTR.units[unit] : null;
+}
+function priceOf(key) { return state.prices[key] ?? PRICES[key] ?? null; }
+function servingsCountOf(r) {
+  if (r.nutrition && r.nutrition.count) return r.nutrition.count;
+  const m = String(r.servings).match(/(\d+)(?:\s*[–-]\s*(\d+))?/);
+  return m ? (m[2] ? (+m[1] + +m[2]) / 2 : +m[1]) : 4;
+}
+// Cost of the ingredients a recipe uses (not whole packets).
+function recipeCost(r) {
+  let total = 0, priced = 0, counted = 0;
+  for (const item of r.shop) {
+    if (item.optional || item.qty == null) continue;
+    counted++;
+    const g = itemGrams(item), p = priceOf(item.key);
+    if (g == null || p == null) continue;
+    total += g / 1000 * p;
+    priced++;
+  }
+  if (!priced) return null;
+  return { total, perServe: total / servingsCountOf(r), priced, counted };
+}
+const money = n => n < 10 ? `$${n.toFixed(2)}` : `$${Math.round(n)}`;
+const CHEAP = 3;  // $ per serve for the "cheap" filter
+function costSpan(r) { const c = recipeCost(r); return c ? `<span class="cost">${money(c.perServe)}/serve</span>` : ""; }
+function costLine(r) {
+  const c = recipeCost(r);
+  if (!c) return "";
+  return `<p class="macros-note">About <strong>${money(c.perServe)} a serve</strong> (${money(c.total)} for the recipe), from rough NZ prices for ${c.priced} of ${c.counted} ingredients. Change prices under Shopping.</p>`;
+}
+function weekCost() {
+  let total = 0, n = 0;
+  for (const id of plannedIds()) {
+    const c = recipeCost(BY_ID[id]);
+    if (c) { total += c.total * scaleOf(id); n++; }
+  }
+  return n ? `<p class="week-nutrition">Ingredients used this week cost about <strong>${money(total)}</strong> (rough prices; change them under Shopping).</p>` : "";
+}
+function renderPrices(groups) {
+  const rows = Object.values(groups).flat().filter(x => !x.optional).sort((a, b) => a.name.localeCompare(b.name));
+  if (!rows.length) return "";
+  return `<details class="prices"><summary>Prices (NZ$ per kg or litre)</summary>
+    <p class="muted-note">Rough supermarket prices used for the cost estimates. Change any to match where you shop; your prices are saved and shared with your household. For reference: 12 eggs weigh about 0.7 kg, a 400 g can of beans is about 0.24 kg drained.</p>
+    <ul class="price-list">${rows.map(x => {
+      const key = x.key.slice(5), mine = state.prices[key] != null, v = priceOf(key);
+      return `<li><label for="price-${esc(key)}">${esc(x.name)}</label><span class="with-unit">$<input type="number" inputmode="decimal" step="0.1" min="0" id="price-${esc(key)}" data-act="price" data-key="${esc(key)}" value="${v ?? ""}" placeholder="–">/kg</span>${mine ? `<button class="btn small ghost" data-act="price-reset" data-key="${esc(key)}">Reset</button>` : ""}</li>`;
+    }).join("")}</ul>
+  </details>`;
+}
+
+// ─── Leftovers and freezer ──────────────────────────────────────────────────
+// state.leftovers[lid] = { id, n, where: "fridge"|"freezer", date }. Shared
+// with the household, since the fridge is. Eating a portion also logs it in
+// your own (private) food log.
+const MEAL_CHAPTERS = ["slow", "pressure", "stovetop", "oven"];
+const KEEPS = { fridge: 3, freezer: 90 };  // days
+function useBy(l) { return isoAdd(l.date, KEEPS[l.where]); }
+function leftoverList() {
+  return Object.entries(state.leftovers).filter(([, l]) => BY_ID[l.id] && l.n > 0)
+    .map(([lid, l]) => ({ lid, ...l, by: useBy(l) }))
+    .sort((a, b) => (a.where === b.where ? 0 : a.where === "fridge" ? -1 : 1) || a.by.localeCompare(b.by));
+}
+function fmtUseBy(iso) {
+  const days = -daysSince(iso);
+  if (days < 0) return "past its use-by";
+  if (days === 0) return "use today";
+  if (days === 1) return "use by tomorrow";
+  return `use by ${prettyWeek(iso)}`;
+}
+function addLeftovers(s, id, n, where = "fridge") {
+  const lid = `${id}|${todayISO()}|${where}`;
+  const cur = s.leftovers[lid];
+  s.leftovers[lid] = { id, n: (cur ? cur.n : 0) + n, where, date: todayISO() };
+}
+function cookedPortions(id) {
+  const r = BY_ID[id];
+  return Math.max(0, Math.round(servingsCountOf(r) * scaleOf(id)) - state.eaters);
+}
+function renderLeftovers() {
+  const list = leftoverList();
+  const rows = list.map(l => {
+    const r = BY_ID[l.id], late = daysSince(l.by) > 0;
+    return `<li class="leftover${late ? " late" : ""}" data-m="${r.chapter}">
+      <div class="lo-main"><button class="lo-title" data-act="open" data-id="${l.id}">${esc(r.title)}</button>
+        <span class="lo-meta">${l.where === "fridge" ? "Fridge" : "Freezer"} · ${esc(fmtUseBy(l.by))}</span></div>
+      <div class="lo-count" role="group" aria-label="Portions">
+        <button class="btn small" data-act="lo-n" data-lid="${esc(l.lid)}" data-v="-1" aria-label="One fewer">−</button>
+        <span>${l.n}</span>
+        <button class="btn small" data-act="lo-n" data-lid="${esc(l.lid)}" data-v="1" aria-label="One more">+</button>
+      </div>
+      <div class="row">
+        <button class="btn small primary" data-act="lo-eat" data-lid="${esc(l.lid)}">Eat one</button>
+        <button class="btn small" data-act="lo-move" data-lid="${esc(l.lid)}">${l.where === "fridge" ? "Freeze" : "Thaw in fridge"}</button>
+        <button class="btn small ghost" data-act="lo-del" data-lid="${esc(l.lid)}">Remove</button>
+      </div>
+    </li>`;
+  }).join("");
+  const fridge = list.filter(l => l.where === "fridge").reduce((s, l) => s + l.n, 0);
+  return `<section aria-label="Leftovers">
+    <div class="section-head">
+      <div><h2>Leftovers</h2><p>${list.length ? `${fridge ? `${fridge} ${fridge === 1 ? "portion" : "portions"} in the fridge. Eat these before cooking something new.` : "Nothing in the fridge."}` : "Ticking Cooked adds the spare portions here."} Fridge portions keep ${KEEPS.fridge} days, frozen ones about 3 months.</p></div>
+      <label class="toggle eaters">Eating each meal
+        <select data-act="eaters">${[1, 2, 3, 4, 5, 6].map(n => `<option value="${n}" ${state.eaters === n ? "selected" : ""}>${n} ${n === 1 ? "person" : "people"}</option>`).join("")}</select></label>
+    </div>
+    ${rows ? `<ul class="leftovers">${rows}</ul>` : ""}
+  </section>`;
+}
+
+// ─── What can I make? ───────────────────────────────────────────────────────
+// Tick what you have; recipes are ranked by how few other things they need.
+// Spices and staples (the pantry aisle and anything marked "At home") count
+// as had unless you turn that off.
+const HAVE_KEY = "george-meal-planner-have";
+let haveSet = (() => { try { return new Set(JSON.parse(localStorage.getItem(HAVE_KEY) || "[]")); } catch { return new Set(); } })();
+function saveHave() { try { localStorage.setItem(HAVE_KEY, JSON.stringify([...haveSet])); } catch {} }
+function haveOptions() {
+  const count = new Map();
+  for (const r of RECIPES) for (const item of r.shop)
+    if (!item.optional && item.aisle !== "Pantry: check first") {
+      const c = count.get(item.key) || { key: item.key, name: item.name, aisle: item.aisle, n: 0 };
+      c.n++; count.set(item.key, c);
+    }
+  return [...count.values()].filter(c => c.n >= 3).sort((a, b) => AISLES.indexOf(a.aisle) - AISLES.indexOf(b.aisle) || b.n - a.n);
+}
+function makeable() {
+  const staples = ui.staples !== false;
+  const had = item => haveSet.has(item.key) || (staples && (item.aisle === "Pantry: check first" || state.pantry["item:" + item.key]));
+  const out = [];
+  for (const r of RECIPES) {
+    if (ui.chapter && r.chapter !== ui.chapter) continue;
+    const need = r.shop.filter(i => !i.optional && i.qty != null);
+    const using = need.filter(i => haveSet.has(i.key));
+    if (!using.length) continue;
+    const missing = [...new Map(need.filter(i => !had(i)).map(i => [i.key, i.name])).values()];
+    const used = new Set(using.map(i => i.key)).size;
+    // Fewest extras, but using more of what you have counts, and using your meat counts most.
+    const score = missing.length - used - (using.some(i => i.aisle === "Meat & fish") ? 2 : 0);
+    out.push({ r, missing, using: used, score });
+  }
+  return out.sort((a, b) => a.score - b.score || a.missing.length - b.missing.length || a.r.title.localeCompare(b.r.title)).slice(0, 30);
+}
+function renderMake() {
+  const opts = haveOptions();
+  const byAisle = AISLES.map(a => [a, opts.filter(o => o.aisle === a)]).filter(([, l]) => l.length);
+  const chips = byAisle.map(([a, l]) => `<div class="have-group"><strong>${esc(a)}</strong><div class="chips">${l.map(o =>
+    `<button class="fchip" data-act="have-toggle" data-key="${esc(o.key)}" aria-pressed="${haveSet.has(o.key)}">${esc(o.name)}</button>`).join("")}</div></div>`).join("");
+  const res = haveSet.size ? makeable() : [];
+  const cards = res.map(({ r, missing }) => `<button class="card" data-m="${r.chapter}" data-act="open" data-id="${r.id}">
+      <span class="chip">${esc(CHAPTER_LABEL[r.chapter])}</span>
+      <span class="name">${esc(r.title)}</span>
+      <span class="meta">${macroSpans(r)}${costSpan(r)}</span>
+      <span class="missing">${missing.length ? `Also need: ${missing.slice(0, 6).map(esc).join(", ")}${missing.length > 6 ? ` +${missing.length - 6} more` : ""}` : "You have everything"}</span>
+    </button>`).join("");
+  const names = opts.filter(o => haveSet.has(o.key)).map(o => o.name);
+  const open = !haveSet.size || ui.pickerOpen;
+  return `<section class="make">
+    <label class="toggle"><input type="checkbox" data-act="staples" ${ui.staples !== false ? "checked" : ""}> I have the usual spices, oils, sauces and stock</label>
+    <details id="have-picker"${open ? " open" : ""}><summary>${haveSet.size ? `You have: ${names.map(esc).join(", ")}` : "Tap what you've got"}</summary>
+      ${ui.chapter ? `<p class="muted-note">Showing ${esc(CHAPTER_LABEL[ui.chapter])} only (from the chapter filter).</p>` : ""}
+      ${chips}
+      ${haveSet.size ? `<div class="row"><button class="btn primary" data-act="have-done">See ${res.length} ${res.length === 1 ? "recipe" : "recipes"}</button><button class="btn small ghost" data-act="have-clear">Clear all</button></div>` : ""}
+    </details>
+  </section>
+  ${haveSet.size ? `<p class="result-count">${res.length ? `${res.length} recipes use what you have, best matches first` : "No recipes use those yet."}</p><section class="list">${cards}</section>` : ""}`;
+}
+
+// ─── Recipes added in the planner ───────────────────────────────────────────
+// Saved in state.custom (shared with the household) and turned into normal
+// recipe objects, so planning, shopping, cooking mode and the food log all
+// work with them. "Copy for the book" gives LaTeX to save as a recipe file.
+const FOLDERS = { pressure: "InstantPot", slow: "SlowCooker", stovetop: "Stovetop", oven: "Oven", sides: "Sides",
+  breakfast: "Breakfast", snacks: "Snacks", shakes: "Shakes", desserts: "Desserts", baking: "Baking", breadmaker: "BreadMaker" };
+const UNIT_WORDS = { g: "g", gram: "g", grams: "g", kg: "kg", ml: "ml", l: "L", litre: "L", litres: "L", tsp: "tsp", teaspoon: "tsp", teaspoons: "tsp",
+  tbsp: "tbsp", tablespoon: "tbsp", tablespoons: "tbsp", cup: "cup", cups: "cup", can: "can", cans: "can", tin: "can", tins: "can",
+  clove: "clove", cloves: "clove", slice: "slice", slices: "slice", bunch: "bunch", head: "head", stalk: "stalk", stalks: "stalk",
+  jar: "jar", packet: "packet", rasher: "rasher", rashers: "rasher", scoop: "scoop", scoops: "scoop" };
+const FRACTIONS = { "½": 0.5, "¼": 0.25, "¾": 0.75, "⅓": 1 / 3, "⅔": 2 / 3, "⅛": 0.125 };
+let knownItems = null;  // built-in ingredient names, longest first, for matching
+function knownList() {
+  if (knownItems) return knownItems;
+  const m = new Map();
+  for (const r of RECIPES) if (!r.custom) for (const i of r.shop) if (!m.has(i.key)) m.set(i.key, { key: i.key, name: i.name, aisle: i.aisle });
+  knownItems = [...m.values()].map(k => ({ ...k, match: k.name.toLowerCase().replace(/\s*\(.*\)/, "").replace(/s$/, "") }))
+    .filter(k => k.match.length > 2).sort((a, b) => b.match.length - a.match.length);
+  return knownItems;
+}
+function parseIngredient(text) {
+  let t = text.trim(), qty = null;
+  // "1 1/2", "1/2", "1½", "½", "1.5"
+  const num = /^(?:(\d+)\s+)?(\d+\/\d+)/.exec(t) || /^(\d+(?:\.\d+)?)?\s*([½¼¾⅓⅔⅛])?/.exec(t);
+  if (num && (num[1] || num[2])) {
+    const frac = !num[2] ? 0 : FRACTIONS[num[2]] ?? num[2].split("/").reduce((a, b) => a / b);
+    qty = (num[1] ? Number(num[1]) : 0) + frac;
+    t = t.slice(num[0].length).trim();
+  }
+  let unit = "";
+  const u = /^([a-zA-Z]+)\b\.?\s*/.exec(t);
+  if (qty != null && u && UNIT_WORDS[u[1].toLowerCase()]) { unit = UNIT_WORDS[u[1].toLowerCase()]; t = t.slice(u[0].length); }
+  if (unit === "kg") { qty *= 1000; unit = "g"; }
+  if (unit === "L") { qty *= 1000; unit = "ml"; }
+  const name = t.replace(/\([^)]*\)/g, " ").split(/,|;| – /)[0].replace(/^of\s+/i, "").replace(/\s+/g, " ").trim();
+  const low = " " + name.toLowerCase().replace(/s\b/g, "") + " ";
+  const hit = knownList().find(k => low.includes(" " + k.match + " ") || low.includes(" " + k.match));
+  const optional = /optional|to serve|to taste/i.test(text);
+  return hit ? { key: hit.key, name: hit.name, aisle: hit.aisle, qty, unit, optional, raw: text }
+    : { key: "custom-" + name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""), name: name ? name[0].toUpperCase() + name.slice(1) : text, aisle: aisleOf(text), qty, unit, optional, raw: text };
+}
+function minutesOf(time) {
+  let total = 0, found = false;
+  for (const m of String(time).matchAll(/(\d+)(?:\s*[–-]\s*(\d+))?\s*(hr|hours?|h|min)\b/g)) { total += (+(m[2] || m[1])) * (m[3].startsWith("h") ? 60 : 1); found = true; }
+  return found ? total : null;
+}
+function estimateNutrition(shop, count) {
+  const tot = [0, 0, 0, 0];
+  let any = false;
+  for (const item of shop) {
+    if (item.optional || item.qty == null) continue;
+    const key = item.key === "lentils" && item.unit === "can" ? "lentils-canned" : item.key;
+    const e = NUTR.foods && NUTR.foods[key], g = itemGrams(item);
+    if (!e || g == null) continue;
+    for (let i = 0; i < 4; i++) tot[i] += e[i] * g / 100;
+    any = true;
+  }
+  if (!any) return null;
+  const [kcal, protein, carbs, fat] = tot.map(x => x / count);
+  return { kcal: Math.round(kcal / 10) * 10, protein: Math.round(protein), carbs: Math.round(carbs), fat: Math.round(fat), per: "serving", count, estimated: true };
+}
+function buildCustom(id, c) {
+  const items = [], shop = [];
+  for (const line of c.ingredients) {
+    if (/:\s*$/.test(line)) { items.push({ group: line.replace(/:\s*$/, "") }); continue; }
+    items.push({ text: line });
+    shop.push(parseIngredient(line));
+  }
+  const m = String(c.servings).match(/\d+/);
+  const count = m ? +m[0] : 4;
+  const n = c.nutrition && c.nutrition.kcal ? { ...c.nutrition, per: "serving", count } : estimateNutrition(shop, count);
+  const text = (c.title + " " + c.ingredients.join(" ")).toLowerCase().replace(/(chicken|beef|pork) (stock|broth)/g, "");
+  const tags = PROTEINS.map(([k]) => k).filter(k => k !== "mince" && new RegExp(k === "fish" ? "fish|salmon|tuna|prawn" : `\\b${k}\\b`).test(text));
+  if (/\bmince\b/.test(text)) tags.push("mince");
+  const sections = [{ kind: "ingredients", heading: "Ingredients", items }, { kind: "steps", heading: "Method", items: c.method.map(t => ({ text: t })) }];
+  if (c.notes.length) sections.push({ kind: "notes", heading: "Notes", items: c.notes.map(t => ({ text: t })) });
+  const meatItem = shop.find(i => i.aisle === "Meat & fish" && !i.optional);
+  return { id, custom: true, title: c.title, servings: String(c.servings || "4"), time: c.time || "–", intro: c.intro || "", sections,
+    file: "Added in the planner", chapter: c.chapter, chapterName: CHAPTER_LABEL[c.chapter], group: null,
+    ingredients: c.ingredients.filter(l => !/:\s*$/.test(l)), shop, tags, nutrition: n, diet: [], storage: [],
+    minutes: minutesOf(c.time || ""), ahead: [], meat: meatItem ? meatItem.name : null };
+}
+let customSig = "";
+function refreshCustom(src = state.custom) {
+  const sig = JSON.stringify(src);
+  if (sig === customSig) return;
+  customSig = sig;
+  for (let i = RECIPES.length - 1; i >= 0; i--) if (RECIPES[i].custom) { delete BY_ID[RECIPES[i].id]; RECIPES.splice(i, 1); }
+  for (const [id, c] of Object.entries(src)) {
+    try { const r = buildCustom(id, c); RECIPES.push(r); BY_ID[id] = r; } catch {}
+  }
+}
+const lines = v => String(v || "").split("\n").map(s => s.trim()).filter(Boolean);
+function customForm() {
+  const id = ui.edit, c = (id && state.custom[id]) || { title: "", chapter: "stovetop", servings: "4", time: "", intro: "", ingredients: [], method: [], notes: [], nutrition: null };
+  const n = c.nutrition || {};
+  const field = (fid, label, v, attrs = "") => `<label class="field wide"><span>${label}</span><input id="${fid}" value="${esc(v)}" ${attrs}></label>`;
+  const area = (fid, label, v, hint, rows = 6) => `<label class="field full"><span>${label}${hint ? ` <em>${hint}</em>` : ""}</span><textarea id="${fid}" rows="${rows}">${esc(v)}</textarea></label>`;
+  return `<div class="overlay" data-act="close-overlay">
+    <article class="sheet" role="dialog" aria-modal="true" aria-labelledby="edit-title">
+      <div class="top-row"><h2 id="edit-title">${id ? "Edit recipe" : "Add a recipe"}</h2><button class="btn small ghost" data-act="close" aria-label="Close">Close</button></div>
+      <p class="muted-note">Saved in the planner and shared with your household. Use "Copy for the book" on the recipe afterwards to add it to the PDF.</p>
+      <div class="fields">
+        ${field("cf-title", "Name", c.title, 'placeholder="e.g. Pork & Kumara Curry"')}
+        <label class="field wide"><span>Chapter</span><select id="cf-chapter">${CHAPTERS.map(([k, l]) => `<option value="${k}" ${k === c.chapter ? "selected" : ""}>${esc(l)}</option>`).join("")}</select></label>
+        ${field("cf-servings", "Serves", c.servings, 'inputmode="numeric"')}
+        ${field("cf-time", "Time", c.time, 'placeholder="e.g. 15 min prep + 8 hr"')}
+        ${area("cf-intro", "Description", c.intro, "optional", 2)}
+        ${area("cf-ingredients", "Ingredients", c.ingredients.join("\n"), "one per line, amount first (500 g beef mince). End a line with : for a heading.", 8)}
+        ${area("cf-method", "Method", c.method.join("\n"), "one step per line", 8)}
+        ${area("cf-notes", "Notes", c.notes.join("\n"), "optional, one per line", 3)}
+      </div>
+      <details class="quick-add"${n.kcal ? " open" : ""}><summary>Nutrition per serve (optional)</summary>
+        <p class="muted-note">Leave blank to estimate it from the ingredients.</p>
+        <div class="fields">${MACROS.map(([k, l, u]) => `<label class="field"><span>${l}</span><span class="with-unit"><input type="number" inputmode="decimal" id="cf-${k}" value="${n[k] ?? ""}">${u.trim() || "kcal"}</span></label>`).join("")}</div>
+      </details>
+      <div class="sheet-actions"><button class="btn primary" data-act="custom-save">Save recipe</button>${id ? `<button class="btn ghost" data-act="custom-delete" data-id="${id}">Delete</button>` : ""}</div>
+    </article>
+  </div>`;
+}
+function readCustomForm() {
+  const v = id => document.getElementById(id).value;
+  const nut = Object.fromEntries(MACROS.map(([k]) => [k, Number(v(`cf-${k}`)) || 0]));
+  return { title: v("cf-title").trim(), chapter: v("cf-chapter"), servings: v("cf-servings").trim() || "4", time: v("cf-time").trim(),
+    intro: v("cf-intro").trim(), ingredients: lines(v("cf-ingredients")), method: lines(v("cf-method")), notes: lines(v("cf-notes")),
+    nutrition: nut.kcal ? nut : null };
+}
+function texEscape(s) {
+  return String(s).replace(/\\/g, "\\textbackslash{}").replace(/([&%$#_{}])/g, "\\$1").replace(/~/g, "\\textasciitilde{}").replace(/\^/g, "\\^{}")
+    .replace(/\*\*(.+?)\*\*/g, "\\textbf{$1}").replace(/(\d)\s?(g|kg|ml|L)\b/g, "$1\\,$2")
+    .replace(/½/g, "\\nicefrac{1}{2}").replace(/¼/g, "\\nicefrac{1}{4}").replace(/¾/g, "\\nicefrac{3}{4}").replace(/⅓/g, "\\nicefrac{1}{3}").replace(/⅔/g, "\\nicefrac{2}{3}");
+}
+function customTex(id) {
+  const c = state.custom[id], file = c.title.replace(/&/g, "and").replace(/[^A-Za-z0-9]+/g, "_").replace(/^_|_$/g, "");
+  const folder = FOLDERS[c.chapter];
+  const ing = c.ingredients.map(l => /:\s*$/.test(l) ? `  \\item[] \\textbf{${texEscape(l.replace(/:\s*$/, ""))}}` : `  \\item ${texEscape(l)}`).join("\n");
+  return `% ${c.title} (added in the meal planner)
+% Save as: ${folder}/${file}.tex
+% Then: python tools/add_to_book.py "${CHAPTERS.find(x => x[0] === c.chapter)[1]}" ${folder}/${file}
+
+\\begin{recipebox}{${texEscape(c.title)}}{${texEscape(c.servings)}}{${texEscape(c.time || "--")}}
+${c.intro ? `\n${texEscape(c.intro)}\n` : ""}
+\\begin{ingredients}
+${ing}
+\\end{ingredients}
+
+\\begin{method}
+${c.method.map(s => `  \\item ${texEscape(s)}`).join("\n")}
+\\end{method}
+${c.notes.length ? `\n\\begin{notelist}\n${c.notes.map(s => `  \\item ${texEscape(s)}`).join("\n")}\n\\end{notelist}\n` : ""}
+\\end{recipebox}
+`;
+}
+async function copyText(text, done) {
+  try { await navigator.clipboard.writeText(text); toast(done); }
+  catch {
+    const ta = document.createElement("textarea");
+    ta.value = text; ta.className = "copy-fallback"; document.body.appendChild(ta); ta.select();
+    toast("Press Ctrl+C or Copy to copy it");
+    setTimeout(() => ta.remove(), 10000);
+  }
+}
+
+function featureClick(act, el) {
+  const lid = el.dataset.lid;
+  switch (act) {
+    case "price-reset": commit(s => { delete s.prices[el.dataset.key]; }); return true;
+    case "lo-n": commit(s => { const l = s.leftovers[lid]; if (l) { l.n = Math.max(0, l.n + Number(el.dataset.v)); if (!l.n) delete s.leftovers[lid]; } }); return true;
+    case "lo-del": commit(s => { delete s.leftovers[lid]; }); return true;
+    case "lo-move": commit(s => {
+      const l = s.leftovers[lid];
+      if (!l) return;
+      delete s.leftovers[lid];
+      const where = l.where === "fridge" ? "freezer" : "fridge";
+      const nid = `${l.id}|${todayISO()}|${where}`;
+      s.leftovers[nid] = { id: l.id, n: l.n + (s.leftovers[nid] ? s.leftovers[nid].n : 0), where, date: todayISO() };
+    }); return true;
+    case "lo-eat": {
+      const l = state.leftovers[lid];
+      if (!l) return true;
+      if (l.where === "freezer") { toast("Thaw it in the fridge first (tap Thaw in fridge)"); return true; }
+      const r = BY_ID[l.id];
+      commit(s => { const x = s.leftovers[lid]; x.n--; if (!x.n) delete s.leftovers[lid]; });
+      const onLog = ui.tab === "track", day = onLog ? (ui.trackDay || todayISO()) : todayISO();
+      if (r.nutrition) { logEntry(day, recipeEntry(r, 1, onLog ? (ui.trackMeal || mealNow()) : mealNow())); toast(`Enjoy! Logged ${r.nutrition.kcal} kcal in your food log`); }
+      else toast("Enjoy!");
+      return true;
+    }
+    case "lo-add": {  // from a recipe sheet
+      const r = BY_ID[el.dataset.id];
+      commit(s => addLeftovers(s, r.id, 1));
+      toast(`1 portion of ${r.title} in the fridge`);
+      return true;
+    }
+    case "make-toggle": ui.make = !ui.make; render(); return true;
+    case "have-toggle": { const k = el.dataset.key; haveSet.has(k) ? haveSet.delete(k) : haveSet.add(k); saveHave(); ui.pickerOpen = true; render(); return true; }
+    case "have-done": ui.pickerOpen = false; render(); document.querySelector(".make").scrollIntoView({ block: "start" }); return true;
+    case "have-clear": haveSet.clear(); saveHave(); render(); return true;
+    case "custom-new": ui.edit = null; ui.open = null; ui.editing = true; renderSheet(); return true;
+    case "custom-edit": ui.edit = el.dataset.id; ui.open = null; ui.editing = true; renderSheet(); return true;
+    case "custom-save": {
+      const c = readCustomForm();
+      if (!c.title) { toast("Give it a name"); return true; }
+      if (!c.ingredients.length || !c.method.length) { toast("Add at least one ingredient and one step"); return true; }
+      const id = ui.edit || `custom-${Date.now().toString(36)}`;
+      commit(s => { s.custom[id] = c; });
+      ui.editing = false; ui.edit = null; ui.open = id; renderSheet();
+      toast("Recipe saved");
+      return true;
+    }
+    case "custom-delete": {
+      const id = el.dataset.id;
+      if (!confirm(`Delete ${state.custom[id].title}? This can't be undone.`)) return true;
+      commit(s => {
+        delete s.custom[id];
+        for (const k of Object.keys(s.slots)) if (s.slots[k] === id) s.slots[k] = null;
+        s.extras = s.extras.filter(x => x !== id);
+        for (const [lid2, l] of Object.entries(s.leftovers)) if (l.id === id) delete s.leftovers[lid2];
+      });
+      ui.editing = false; ui.edit = null; ui.open = null; renderSheet();
+      toast("Recipe deleted");
+      return true;
+    }
+    case "custom-tex": copyText(customTex(el.dataset.id), `Copied. Save it as the file named at the top, in the ${FOLDERS[state.custom[el.dataset.id].chapter]} folder`); return true;
+  }
+  return false;
+}
+
 // ─── Food log (calories and macros) ─────────────────────────────────────────
 // Private to this device: kept under its own localStorage key and never part
 // of `state`, so it isn't shared with the household or synced. Each entry
@@ -1104,7 +1577,7 @@ let tracker = loadTracker();
 function loadTracker() {
   let t = null;
   try { t = JSON.parse(localStorage.getItem(TRACK_KEY) || "null"); } catch {}
-  t = Object.assign({ profile: {}, targets: null, days: {} }, t || {});
+  t = Object.assign({ profile: {}, targets: null, days: {}, weights: {}, foods: {} }, t || {});
   t.profile = Object.assign({ sex: "male", age: "", height: "", weight: "", activity: "moderate", goal: "maintain" }, t.profile);
   return t;
 }
@@ -1215,6 +1688,9 @@ function renderTargetsForm() {
 
 function renderTrack() {
   const iso = ui.trackDay || todayISO();
+  // Draw charts at the size they'll show, so their text stays readable on a phone.
+  CH.w = Math.round(Math.max(280, Math.min(640, (document.getElementById("app").clientWidth || innerWidth) - 34)));
+  CH.h = CH.w < 420 ? 150 : 170;
   const t = tracker.targets, tot = dayTotals(iso), entries = dayEntries(iso);
   const bars = MACROS.map(([k, l, u]) => {
     const got = Math.round(tot[k]), want = t ? t[k] : 0;
@@ -1226,6 +1702,7 @@ function renderTrack() {
       ${want ? `<small>${over ? `${Math.abs(left).toLocaleString()}${u} over` : `${left.toLocaleString()}${u} left`}</small>` : ""}</div>`;
   }).join("");
   const planned = plannedFor(iso).filter(id => !entries.some(e => e.rid === id));
+  const fridge = leftoverList().filter(l => l.where === "fridge" && BY_ID[l.id].nutrition);
   const recent = recentFoods();
   const meals = MEALS.map(([k, l]) => {
     const list = entries.map((e, i) => [e, i]).filter(([e]) => e.meal === k);
@@ -1259,6 +1736,8 @@ function renderTrack() {
     <h3>Add food</h3>
     <div class="chips" role="group" aria-label="Meal">${mealChips}</div>
     <div class="chips qty" role="group" aria-label="How much">How much ${qtyChips}</div>
+    <div class="row"><button class="btn" data-act="scan-open">Scan a barcode</button></div>
+    ${fridge.length ? `<div class="planned"><strong>From the fridge</strong>${fridge.map(l => `<button class="btn small" data-act="lo-eat" data-lid="${esc(l.lid)}">+ ${esc(BY_ID[l.id].title)} (${l.n} left)</button>`).join("")}</div>` : ""}
     ${planned.length ? `<div class="planned"><strong>Planned for this day</strong>${planned.map(id => `<button class="btn small primary" data-act="track-recipe" data-id="${id}">+ ${esc(BY_ID[id].title)}</button>`).join("")}</div>` : ""}
     <input type="search" id="track-search" class="search" placeholder="Search your recipes…" value="${esc(ui.trackQ || "")}" autocomplete="off">
     <div id="track-results">${renderTrackSearch()}</div>
@@ -1277,6 +1756,8 @@ function renderTrack() {
     <table class="week-table"><thead><tr><th scope="col">Day</th><th scope="col">kcal</th><th scope="col">Protein</th><th scope="col"><span class="sr">On target</span></th></tr></thead><tbody>${week}</tbody></table>
     ${t ? `<p class="muted-note">✓ means within 10% of your calories and at least 90% of your protein.</p>` : ""}
   </section>
+  ${renderWeight(iso)}
+  ${renderTrends(iso)}
   <details class="targets"${t ? "" : " open"}><summary>Your targets${t ? `: ${t.kcal.toLocaleString()} kcal, ${t.protein} g protein` : ""}</summary>${renderTargetsForm()}</details>`;
 }
 function readNum(id) { const v = Number(document.getElementById(id)?.value); return Number.isFinite(v) && v >= 0 ? v : 0; }
@@ -1339,8 +1820,240 @@ function trackClick(act, el) {
   return false;
 }
 
+// ─── Barcode scanning ───────────────────────────────────────────────────────
+// Uses the browser's own barcode reader where there is one (Chrome on
+// Android), otherwise loads ZXing. Product details come from Open Food Facts,
+// a free shared database; found products are kept on this device.
+const ZXING_URL = "https://cdn.jsdelivr.net/npm/@zxing/library@0.21.3/umd/index.min.js";
+let scanner = null;  // { stream, stop() }
+function stopScanner() {
+  if (scanner) { try { scanner.stop(); } catch {} scanner = null; }
+}
+function loadScript(src) {
+  return new Promise((ok, fail) => {
+    if (document.querySelector(`script[src="${src}"]`)) return ok();
+    const s = document.createElement("script");
+    s.src = src; s.onload = ok; s.onerror = () => fail(new Error("load"));
+    document.head.appendChild(s);
+  });
+}
+async function startScanner() {
+  const video = document.getElementById("scan-video");
+  const status = document.getElementById("scan-status");
+  if (!video) return;
+  const found = code => { stopScanner(); lookupBarcode(code); };
+  try {
+    if ("BarcodeDetector" in window) {
+      const detector = new BarcodeDetector({ formats: ["ean_13", "ean_8", "upc_a", "upc_e"] });
+      const stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" } });
+      video.srcObject = stream; await video.play();
+      let live = true;
+      scanner = { stop() { live = false; stream.getTracks().forEach(t => t.stop()); } };
+      const tick = async () => {
+        if (!live) return;
+        try { const codes = await detector.detect(video); if (codes.length) return found(codes[0].rawValue); } catch {}
+        setTimeout(tick, 200);
+      };
+      tick();
+    } else {
+      status.textContent = "Starting the camera…";
+      await loadScript(ZXING_URL);
+      const reader = new ZXing.BrowserMultiFormatReader();
+      scanner = { stop() { reader.reset(); } };
+      reader.decodeFromVideoDevice(null, video, result => { if (result) found(result.getText()); });
+    }
+    status.textContent = "Point the camera at the barcode.";
+  } catch (e) {
+    stopScanner();
+    status.textContent = e && e.name === "NotAllowedError" ? "Camera access was blocked. Allow it in your browser settings, or type the number below."
+      : "The camera isn't available here. Type the number under the barcode instead.";
+  }
+}
+function offNumbers(p) {
+  const n = p.nutriments || {};
+  const kcal = n["energy-kcal_100g"] ?? (n.energy_100g != null ? n.energy_100g / 4.184 : null);
+  if (kcal == null) return null;
+  return { kcal, protein: n.proteins_100g || 0, carbs: n.carbohydrates_100g || 0, fat: n.fat_100g || 0 };
+}
+async function lookupBarcode(code) {
+  code = String(code).replace(/\D/g, "");
+  if (code.length < 8) { toast("That doesn't look like a barcode number"); return; }
+  const cached = tracker.foods && tracker.foods[code];
+  if (cached) { ui.scan = { stage: "found", code, food: cached }; renderSheet(); return; }
+  ui.scan = { stage: "looking", code }; renderSheet();
+  try {
+    const res = await fetch(`https://world.openfoodfacts.org/api/v2/product/${code}.json?fields=product_name,brands,nutriments,serving_quantity,serving_size`);
+    const data = await res.json();
+    const p = data && data.status === 1 && data.product;
+    const per100 = p && offNumbers(p);
+    if (!ui.scan) return;
+    if (!per100) { ui.scan = { stage: "missing", code }; renderSheet(); return; }
+    const food = { name: [p.brands && p.brands.split(",")[0], p.product_name].filter(Boolean).join(" ") || `Barcode ${code}`, per100, serving: Number(p.serving_quantity) || null, servingText: p.serving_size || "" };
+    trackCommit(t => { t.foods = Object.assign({}, t.foods, { [code]: food }); });
+    ui.scan = { stage: "found", code, food }; renderSheet();
+  } catch {
+    if (ui.scan) { ui.scan = { stage: "offline", code }; renderSheet(); }
+  }
+}
+function scanView() {
+  const s = ui.scan;
+  let body;
+  if (s.stage === "camera") {
+    body = `<div class="scan-box"><video id="scan-video" playsinline muted></video></div>
+      <p id="scan-status" class="muted-note">Starting the camera…</p>`;
+  } else if (s.stage === "looking") {
+    body = `<p>Looking up ${esc(s.code)}…</p>`;
+  } else if (s.stage === "found") {
+    const f = s.food, g = f.serving || 100;
+    body = `<h3>${esc(f.name)}</h3>
+      <p class="muted-note">Per 100 g: ${Math.round(f.per100.kcal)} kcal · ${Math.round(f.per100.protein)} g protein · ${Math.round(f.per100.carbs)} g carbs · ${Math.round(f.per100.fat)} g fat${f.servingText ? `. One serving is ${esc(f.servingText)}.` : ""}</p>
+      <div class="fields"><label class="field wide"><span>How much did you have?</span><span class="with-unit"><input type="number" inputmode="decimal" id="scan-grams" value="${g}" min="0">g or ml</span></label></div>
+      <div class="sheet-actions"><button class="btn primary" data-act="scan-add">Add to ${esc(MEALS.find(m => m[0] === (ui.trackMeal || mealNow()))[1].toLowerCase())}</button><button class="btn" data-act="scan-again">Scan another</button></div>
+      <p class="muted-note">From Open Food Facts, a free database anyone can edit. Check it against the packet.</p>`;
+  } else {
+    body = `<p>${s.stage === "offline" ? "Couldn't reach Open Food Facts. Check your signal and try again." : `Barcode ${esc(s.code)} isn't in Open Food Facts yet, or has no nutrition info.`}</p>
+      <div class="sheet-actions"><button class="btn" data-act="scan-again">Try again</button><button class="btn" data-act="scan-quick">Type it in with Quick add</button></div>`;
+  }
+  return `<div class="overlay" data-act="close-overlay">
+    <article class="sheet scan-sheet" role="dialog" aria-modal="true" aria-labelledby="scan-title">
+      <div class="top-row"><h2 id="scan-title">Scan a barcode</h2><button class="btn small ghost" data-act="close" aria-label="Close">Close</button></div>
+      ${body}
+      ${s.stage === "camera" || s.stage === "missing" || s.stage === "offline" ? `<div class="scan-type"><label class="field wide"><span>Or type the number under the barcode</span><input id="scan-code" inputmode="numeric" autocomplete="off" value="${esc(s.code || "")}"></label><button class="btn" data-act="scan-lookup">Look up</button></div>` : ""}
+    </article>
+  </div>`;
+}
+
+// ─── Bodyweight ─────────────────────────────────────────────────────────────
+// tracker.weights[iso] = kg. The trend is the average of weigh-ins over the
+// previous 7 days, which smooths out day-to-day water changes.
+function weightTrend(iso) {
+  const vals = Object.entries(tracker.weights || {}).filter(([d]) => d <= iso && d > isoAdd(iso, -7)).map(([, v]) => v);
+  return vals.length ? vals.reduce((a, b) => a + b, 0) / vals.length : null;
+}
+function renderWeight(iso) {
+  const w = tracker.weights || {};
+  const days = Object.keys(w).sort();
+  const latest = days.length ? days[days.length - 1] : null;
+  const trend = latest ? weightTrend(latest) : null;
+  const ago = latest ? weightTrend(isoAdd(latest, -28)) : null;
+  const p = tracker.profile;
+  const suggest = tracker.targets && trend && Number(p.weight) && Math.abs(trend - Number(p.weight)) >= 2;
+  const change = trend != null && ago != null ? trend - ago : null;
+  return `<section class="track-card">
+    <h3>Weight</h3>
+    <div class="weigh-row"><label class="field"><span>${esc(prettyDay(iso))}</span><span class="with-unit"><input type="number" inputmode="decimal" step="0.1" id="weigh-kg" value="${w[iso] ?? ""}" placeholder="kg">kg</span></label>
+      <button class="btn" data-act="weigh-save">Save</button>${w[iso] != null ? `<button class="btn small ghost" data-act="weigh-del">Remove</button>` : ""}</div>
+    ${trend != null ? `<p class="weight-summary">Trend <strong>${trend.toFixed(1)} kg</strong>${change != null ? `, ${Math.abs(change) < 0.05 ? "steady" : `${change < 0 ? "down" : "up"} ${Math.abs(change).toFixed(1)} kg`} over 4 weeks` : ""}.</p>` : `<p class="muted-note">Weigh in once or twice a week, at the same time of day, to see a trend.</p>`}
+    ${days.length >= 2 ? weightChart() : ""}
+    ${suggest ? `<p class="today">Your targets use ${Number(p.weight)} kg, but your trend is ${trend.toFixed(1)} kg. <button class="btn small primary" data-act="weigh-retarget">Update my targets</button></p>` : ""}
+  </section>`;
+}
+
+// ─── Charts ─────────────────────────────────────────────────────────────────
+// Single-series SVG charts in the accent colour, with a dashed target line.
+// Each mark has a hover/long-press title, and the 7-day table gives the
+// numbers as text.
+const CH = { w: 640, h: 170, l: 40, r: 10, t: 12, b: 24 };
+function niceMax(v) { const m = Math.pow(10, Math.floor(Math.log10(v || 1))); return Math.ceil(v / m / 0.5) * m * 0.5; }
+function axis(max, unit, fmt = v => v.toLocaleString()) {
+  const y = v => CH.t + (CH.h - CH.t - CH.b) * (1 - v / max);
+  return [0, max / 2, max].map(v => `<line class="grid" x1="${CH.l}" x2="${CH.w - CH.r}" y1="${y(v)}" y2="${y(v)}"/><text class="tick" x="${CH.l - 6}" y="${y(v) + 4}" text-anchor="end">${fmt(v)}${unit}</text>`).join("");
+}
+function barChart(label, days, values, target, unit) {
+  const max = niceMax(Math.max(target || 0, ...values) * 1.1);
+  const n = days.length, plotW = CH.w - CH.l - CH.r, step = plotW / n, bw = Math.max(4, step - 3);
+  const y = v => CH.t + (CH.h - CH.t - CH.b) * (1 - v / max);
+  const base = y(0);
+  const bars = values.map((v, i) => {
+    const x = CH.l + i * step + (step - bw) / 2;
+    const title = `<title>${prettyDay(days[i])}: ${v ? Math.round(v).toLocaleString() + unit : "nothing logged"}</title>`;
+    const hit = `<rect class="hit" x="${CH.l + i * step}" y="${CH.t}" width="${step}" height="${base - CH.t}">${title}</rect>`;
+    if (!v) return hit;
+    const h = Math.max(2, base - y(v)), r = Math.min(4, bw / 2, h);
+    return `<path class="bar-mark" d="M${x},${base} v${-(h - r)} q0,${-r} ${r},${-r} h${bw - 2 * r} q${r},0 ${r},${r} v${h - r} z"/>${hit}`;
+  }).join("");
+  const tl = target ? `<line class="target" x1="${CH.l}" x2="${CH.w - CH.r}" y1="${y(target)}" y2="${y(target)}"/><text class="tick target-label" x="${CH.w - CH.r}" y="${y(target) - 5}" text-anchor="end">Target ${target.toLocaleString()}${unit}</text>` : "";
+  const xl = `<text class="tick" x="${CH.l}" y="${CH.h - 6}">${esc(prettyWeek(days[0]))}</text><text class="tick" x="${CH.w - CH.r}" y="${CH.h - 6}" text-anchor="end">${esc(prettyDay(days[n - 1]))}</text>`;
+  return `<figure class="chart"><figcaption>${label}</figcaption><svg viewBox="0 0 ${CH.w} ${CH.h}" role="img" aria-label="${esc(label)}">${axis(max, unit)}${bars}${tl}${xl}</svg></figure>`;
+}
+function weightChart() {
+  const w = tracker.weights;
+  const last = Object.keys(w).sort().pop();
+  const days = Array.from({ length: 84 }, (_, i) => isoAdd(last, i - 83)).filter(d => d >= Object.keys(w).sort()[0]);
+  const vals = days.filter(d => w[d] != null).map(d => w[d]);
+  const lo = Math.floor(Math.min(...vals) - 1), hi = Math.ceil(Math.max(...vals) + 1);
+  const n = Math.max(2, days.length), plotW = CH.w - CH.l - CH.r;
+  const x = i => CH.l + plotW * i / (n - 1);
+  const y = v => CH.t + (CH.h - CH.t - CH.b) * (1 - (v - lo) / (hi - lo));
+  const trend = days.map((d, i) => [i, weightTrend(d)]).filter(([, v]) => v != null);
+  const path = trend.map(([i, v], k) => `${k ? "L" : "M"}${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(" ");
+  const dots = days.map((d, i) => w[d] != null ? `<circle class="dot" cx="${x(i)}" cy="${y(w[d])}" r="4"><title>${prettyDay(d)}: ${w[d]} kg</title></circle>` : "").join("");
+  const grid = [lo, (lo + hi) / 2, hi].map(v => `<line class="grid" x1="${CH.l}" x2="${CH.w - CH.r}" y1="${y(v)}" y2="${y(v)}"/><text class="tick" x="${CH.l - 6}" y="${y(v) + 4}" text-anchor="end">${v % 1 ? v.toFixed(1) : v}</text>`).join("");
+  const xl = `<text class="tick" x="${CH.l}" y="${CH.h - 6}">${esc(prettyWeek(days[0]))}</text><text class="tick" x="${CH.w - CH.r}" y="${CH.h - 6}" text-anchor="end">${esc(prettyDay(days[days.length - 1]))}</text>`;
+  return `<figure class="chart"><figcaption>Weight (kg): dots are weigh-ins, the line is the 7-day trend</figcaption><svg viewBox="0 0 ${CH.w} ${CH.h}" role="img" aria-label="Weight over time">${grid}<path class="trend" d="${path}"/>${dots}${xl}</svg></figure>`;
+}
+function renderTrends(iso) {
+  const days = Array.from({ length: 28 }, (_, i) => isoAdd(iso, i - 27));
+  const logged = days.filter(d => dayEntries(d).length);
+  if (logged.length < 2) return "";
+  const t = tracker.targets;
+  const kcal = days.map(d => dayTotals(d).kcal), protein = days.map(d => dayTotals(d).protein);
+  const avg = k => Math.round(logged.reduce((s, d) => s + dayTotals(d)[k], 0) / logged.length);
+  const perMeal = MEALS.map(([k, l]) => {
+    const vals = logged.map(d => dayEntries(d).filter(e => e.meal === k).reduce((s, e) => s + e.protein, 0)).filter(v => v > 0);
+    return vals.length ? `<li><span>${l}</span><strong>${Math.round(vals.reduce((a, b) => a + b, 0) / vals.length)} g</strong></li>` : "";
+  }).join("");
+  return `<section class="track-card">
+    <h3>Last 4 weeks</h3>
+    <p class="muted-note">${logged.length} days logged, averaging <strong>${avg("kcal").toLocaleString()} kcal</strong> and <strong>${avg("protein")} g protein</strong> a day.</p>
+    ${barChart("Calories per day", days, kcal, t && t.kcal, "")}
+    ${barChart("Protein per day (g)", days, protein, t && t.protein, " g")}
+    ${perMeal ? `<div><strong class="small-head">Average protein per meal</strong><ul class="per-meal">${perMeal}</ul></div>` : ""}
+  </section>`;
+}
+
+function trackClick2(act, el) {
+  const iso = ui.trackDay || todayISO();
+  switch (act) {
+    case "scan-open": ui.scan = { stage: "camera" }; renderSheet(); return true;
+    case "scan-again": stopScanner(); ui.scan = { stage: "camera" }; renderSheet(); return true;
+    case "scan-lookup": { const c = document.getElementById("scan-code").value; stopScanner(); lookupBarcode(c); return true; }
+    case "scan-quick": stopScanner(); ui.scan = null; ui.quickOpen = true; renderSheet(); render(); setTimeout(() => document.getElementById("qa-name")?.focus(), 50); return true;
+    case "scan-add": {
+      const f = ui.scan.food, g = readNum("scan-grams");
+      if (!g) { toast("Enter how much you had"); return true; }
+      const k = g / 100;
+      logEntry(iso, { name: f.name, meal: ui.trackMeal || mealNow(), barcode: ui.scan.code, grams: g,
+        kcal: Math.round(f.per100.kcal * k), protein: Math.round(f.per100.protein * k), carbs: Math.round(f.per100.carbs * k), fat: Math.round(f.per100.fat * k) });
+      toast(`Added ${f.name} (${Math.round(f.per100.kcal * k)} kcal)`);
+      ui.scan = null; renderSheet();
+      return true;
+    }
+    case "weigh-save": {
+      const kg = readNum("weigh-kg");
+      if (!(kg >= 30 && kg <= 300)) { toast("Enter your weight in kg"); return true; }
+      trackCommit(t => { t.weights = Object.assign({}, t.weights, { [iso]: Math.round(kg * 10) / 10 }); });
+      toast("Weight saved");
+      return true;
+    }
+    case "weigh-del": trackCommit(t => { delete t.weights[iso]; }); return true;
+    case "weigh-retarget": {
+      const days = Object.keys(tracker.weights).sort();
+      const kg = Math.round(weightTrend(days[days.length - 1]) * 10) / 10;
+      const profile = Object.assign({}, tracker.profile, { weight: String(kg) });
+      const calc = calcTargets(profile);
+      if (!calc) return true;
+      trackCommit(t => { t.profile = profile; t.targets = calc; });
+      toast(`Targets updated for ${kg} kg: ${calc.kcal.toLocaleString()} kcal, ${calc.protein} g protein`);
+      return true;
+    }
+  }
+  return false;
+}
+
 // ─── Render ─────────────────────────────────────────────────────────────────
 function render() {
+  refreshCustom();
   document.querySelectorAll(".tabs button").forEach(b => b.setAttribute("aria-selected", String(b.dataset.tab === ui.tab)));
   const groups = shoppingList();
   const toBuy = Object.values(groups).flat().filter(x => !x.atHome);
@@ -1399,6 +2112,7 @@ function renderWeek() {
       <h2>Week of ${esc(prettyWeek(state.week))}</h2>
       <p>${state.example ? "This is an example week. Swap or browse to make it yours." : "One slow cooker, one pressure cooker and one quick meal, 4 servings each."}</p>
       ${weekNutrition()}
+      ${weekCost()}
     </div>
     <div class="actions">
       <label class="toggle"><input type="checkbox" id="mince-only" data-act="mince-only" ${ui.minceOnly ? "checked" : ""}> Mince recipes only</label>
@@ -1408,6 +2122,7 @@ function renderWeek() {
     </div>
   </section>
   <section class="trio" aria-label="This week's trio">${SLOTS.map(slotCard).join("")}</section>
+  ${renderLeftovers()}
   <section class="extras" aria-label="Extras">
     <div class="section-head">
       <div><h2>Extras</h2><p>Sides, baking, breakfasts or anything else you want on the shopping list.</p></div>
@@ -1430,7 +2145,9 @@ function filteredRecipes() {
     (!ui.highProtein || isHighProtein(r)) &&
     ui.diet.every(t => r.diet.includes(t)) &&
     (!ui.favOnly || state.fav[r.id]) &&
-    (!q || r.title.toLowerCase().includes(q) || r.ingredients.some(l => l.toLowerCase().includes(q))));
+    (!ui.cheap || (recipeCost(r) && recipeCost(r).perServe <= CHEAP)) &&
+    (!q || r.title.toLowerCase().includes(q) || r.ingredients.some(l => l.toLowerCase().includes(q))))
+    .sort(ui.sortCheap ? (a, b) => (recipeCost(a)?.perServe ?? 99) - (recipeCost(b)?.perServe ?? 99) : () => 0);
 }
 
 function renderRecipes() {
@@ -1447,14 +2164,23 @@ function renderRecipes() {
   const cards = list.map(r => `<button class="card" data-m="${r.chapter}" data-act="open" data-id="${r.id}">
       <span class="chip">${esc(CHAPTER_LABEL[r.chapter])}${r.group ? ` · ${esc(r.group)}` : ""}</span>
       <span class="name">${state.fav[r.id] ? `<span class="fav-mark" aria-label="Favourite">★</span> ` : ""}${esc(r.title)}${state.rating[r.id] ? ` <span class="fav-mark">${"★".repeat(state.rating[r.id])}</span>` : ""}</span>
-      <span class="meta"><span>Serves ${esc(r.servings)}</span>${r.time !== "–" ? `<span>${esc(r.time)}</span>` : ""}${macroSpans(r)}</span>
+      <span class="meta"><span>Serves ${esc(r.servings)}</span>${r.time !== "–" ? `<span>${esc(r.time)}</span>` : ""}${macroSpans(r)}${costSpan(r)}</span>
       ${badges(r)}
       ${planned.has(r.id) ? `<span class="planned">On this week's plan</span>` : ""}
     </button>`).join("");
-  return `
+  const nCustom = RECIPES.filter(r => r.custom).length;
+  const head = `
   <section class="section-head">
-    <div><h2>Recipes</h2><p>All ${RECIPES.length} recipes from your book.</p></div>
-  </section>
+    <div><h2>${ui.make ? "What can I make?" : "Recipes"}</h2><p>${ui.make ? "Pick what's in the fridge and cupboard, and see what it makes." : `All ${RECIPES.length} recipes${nCustom ? `: ${RECIPES.length - nCustom} from your book and ${nCustom} added here` : " from your book"}.`}</p></div>
+    <div class="actions">
+      <button class="btn${ui.make ? " primary" : ""}" data-act="make-toggle" aria-pressed="${!!ui.make}">${ui.make ? "Back to all recipes" : "What can I make?"}</button>
+      <button class="btn" data-act="custom-new">Add a recipe</button>
+    </div>
+  </section>`;
+  if (ui.make && !slot) return `${head}
+  <section class="filters"><div class="chips" role="group" aria-label="Chapter">${chapterChips}</div></section>
+  ${renderMake()}`;
+  return `${head}
   ${slot ? `<div class="choosing" data-m="${slot.key}">Choosing the <strong>${slot.label}</strong> meal. Open a recipe and tap “Use this”. <button class="btn small ghost" data-act="cancel-choose">Cancel</button></div>` : ""}
   <section class="filters">
     <input class="search" id="search" type="search" placeholder="Search by name or ingredient, e.g. split peas" value="${esc(ui.q)}" aria-label="Search recipes">
@@ -1462,6 +2188,7 @@ function renderRecipes() {
     ${groupChips ? `<div class="chips" role="group" aria-label="Section">${groupChips}</div>` : ""}
     <div class="chips" role="group" aria-label="Main protein">${proteinChips}<button class="fchip" data-act="high-protein-chip" aria-pressed="${ui.highProtein}">${HIGH_PROTEIN} g+ protein</button></div>
     <div class="chips" role="group" aria-label="Diet and meal prep">${dietChips}<button class="fchip" data-act="fav-only" aria-pressed="${ui.favOnly}">★ Favourites</button></div>
+    <div class="chips" role="group" aria-label="Cost"><button class="fchip" data-act="cheap" aria-pressed="${!!ui.cheap}">Under $${CHEAP} a serve</button><button class="fchip" data-act="sort-cheap" aria-pressed="${!!ui.sortCheap}">Cheapest first</button></div>
   </section>
   <p class="result-count">${list.length} ${list.length === 1 ? "recipe" : "recipes"}</p>
   <section class="list">${cards || `<p class="empty-note">No recipes match. Try clearing a filter.</p>`}</section>`;
@@ -1492,7 +2219,7 @@ function renderShop(groups) {
   }).join("");
   return `
   <section class="section-head">
-    <div><h2>Shopping list</h2><p>${ids.length} ${ids.length === 1 ? "recipe" : "recipes"} this week. Amounts are added up across recipes. Tap a recipe name under an item to see exactly what each one needs.</p></div>
+    <div><h2>Shopping list</h2><p>${ids.length} ${ids.length === 1 ? "recipe" : "recipes"} this week. Amounts are added up across recipes. Tap a recipe name under an item to see exactly what each one needs.</p>${weekCost()}</div>
     <div class="actions">
       ${staples.length ? `<button class="btn ghost" data-act="have-staples">Spices &amp; staples are at home</button>` : ""}
       <button class="btn" data-act="share-list">Share list</button>
@@ -1501,6 +2228,7 @@ function renderShop(groups) {
     </div>
   </section>
   <section class="aisles">${aisleCards}</section>
+  ${renderPrices(groups)}
   ${home.length ? `<details class="at-home"><summary>At home (${home.length})</summary>
     <p>You've said you always have these, so they're left off the list. Tap one if you've run out.</p>
     <ul>${home.map(x => `<li><button data-act="need" data-key="${esc(x.key)}" title="Put back on the list">${esc(x.name)} · Need it</button></li>`).join("")}</ul>
@@ -1524,7 +2252,14 @@ function renderSections(sections, f = 1) {
 
 function renderSheet() {
   const root = document.getElementById("sheet-root");
+  // The scanner's camera and the recipe form keep their state across
+  // re-renders (e.g. a household sync arriving), so only draw them on change.
+  const view = ui.cook ? "" : ui.scan ? `scan:${ui.scan.stage}:${ui.scan.code || ""}` : ui.editing ? `edit:${ui.edit || "new"}` : "";
+  if (view && root.dataset.view === view) return;
+  root.dataset.view = view;
   if (ui.cook) { root.innerHTML = cookView(); return; }
+  if (ui.scan) { root.innerHTML = scanView(); if (ui.scan.stage === "camera") startScanner(); else document.getElementById("scan-grams")?.focus(); return; }
+  if (ui.editing) { root.innerHTML = customForm(); document.getElementById("cf-title").focus({ preventScroll: true }); return; }
   if (!ui.open) { root.innerHTML = ui.share ? shareDialog() : ""; return; }
   const r = BY_ID[ui.open];
   const target = ui.choosing || slotFor(r);
@@ -1550,8 +2285,9 @@ function renderSheet() {
         <div class="rate-row">Your rating ${stars(r.id, "rate")}</div>
         ${historyLine(r.id)}
         ${macroBlock(r)}
+        ${costLine(r)}
         ${r.intro ? `<p class="intro">${md(r.intro)}</p>` : ""}
-        <div class="sheet-actions">${cookSteps(r).length ? `<button class="btn primary" data-act="cook-start" data-id="${r.id}">Start cooking</button>` : ""}${actions}${r.nutrition ? `<button class="btn" data-act="track-log" data-id="${r.id}">Log a ${r.nutrition.per === "serving" ? "serve" : esc(r.nutrition.per)}</button>` : ""}</div>
+        <div class="sheet-actions">${cookSteps(r).length ? `<button class="btn primary" data-act="cook-start" data-id="${r.id}">Start cooking</button>` : ""}${actions}${r.nutrition ? `<button class="btn" data-act="track-log" data-id="${r.id}">Log a ${r.nutrition.per === "serving" ? "serve" : esc(r.nutrition.per)}</button>` : ""}${MEAL_CHAPTERS.includes(r.chapter) ? `<button class="btn ghost" data-act="lo-add" data-id="${r.id}">+1 leftover portion</button>` : ""}${r.custom ? `<button class="btn ghost" data-act="custom-edit" data-id="${r.id}">Edit</button><button class="btn ghost" data-act="custom-tex" data-id="${r.id}">Copy for the book</button>` : ""}</div>
       </div>
       ${storageBox(r)}
       ${renderSections(r.sections, scaleOf(r.id))}
@@ -1569,9 +2305,12 @@ document.addEventListener("click", e => {
   if (act === "close-overlay" && e.target !== el) return;
   const id = el.dataset.id, slot = el.dataset.slot;
   if (act.startsWith("track-") && trackClick(act, el)) return;
+  if (featureClick(act, el) || trackClick2(act, el)) return;
   switch (act) {
     case "open": ui.open = id; renderSheet(); break;
-    case "close": case "close-overlay": ui.open = null; ui.share = false; renderSheet(); break;
+    case "close": case "close-overlay": ui.open = null; ui.share = false; ui.editing = false; ui.edit = null; if (ui.scan) { stopScanner(); ui.scan = null; } renderSheet(); break;
+    case "cheap": ui.cheap = !ui.cheap; render(); break;
+    case "sort-cheap": ui.sortCheap = !ui.sortCheap; render(); break;
     case "share": ui.share = true; renderSheet(); break;
     case "have": commit(s => { s.pantry[el.dataset.key] = true; delete s.checked[el.dataset.key]; }); toast("Moved to At home"); break;
     case "need": commit(s => { delete s.pantry[el.dataset.key]; }); toast("Back on the list"); break;
@@ -1696,13 +2435,20 @@ document.addEventListener("change", e => {
     if (el.checked) {
       s.cooked[id] = true;
       if (log[log.length - 1] !== today) s.log[id] = [...log, today].slice(-20);
+      // The spare portions go into Leftovers.
+      const n = MEAL_CHAPTERS.includes(BY_ID[id].chapter) ? cookedPortions(id) : 0;
+      if (n && !s.leftovers[`${id}|${today}|fridge`]) { addLeftovers(s, id, n); setTimeout(() => toast(`${n} ${n === 1 ? "portion" : "portions"} added to Leftovers`), 0); }
     } else {
       delete s.cooked[id];
+      delete s.leftovers[`${id}|${today}|fridge`];
       // Unticking straight away undoes today's entry.
       if (log[log.length - 1] === today) s.log[id] = log.slice(0, -1);
       if (s.log[id] && !s.log[id].length) delete s.log[id];
     }
   });
+  if (act === "price") commit(s => { const v = parseFloat(el.value); if (el.value === "" || !(v >= 0)) delete s.prices[el.dataset.key]; else s.prices[el.dataset.key] = v; });
+  if (act === "eaters") commit(s => { s.eaters = Number(el.value); });
+  if (act === "staples") { ui.staples = el.checked; render(); }
   if (act === "check") commit(s => { if (el.checked) s.checked[el.dataset.key] = true; else delete s.checked[el.dataset.key]; });
   if (act === "day") commit(s => { if (el.value === "") delete s.days[el.dataset.id]; else s.days[el.dataset.id] = Number(el.value); });
   if (act === "dinner" && /^\d\d:\d\d$/.test(el.value)) commit(s => { s.dinner = el.value; });
@@ -1710,6 +2456,8 @@ document.addEventListener("change", e => {
   if (act === "high-protein") { ui.highProtein = el.checked; }
   if (act === "cook-have" && ui.cook) ui.cook.have[el.dataset.n] = el.checked;
 });
+// <details> toggles don't bubble, so listen while capturing.
+document.addEventListener("toggle", e => { if (e.target.id === "have-picker") ui.pickerOpen = e.target.open; }, true);
 document.addEventListener("input", e => {
   if (e.target.id === "track-search") {
     ui.trackQ = e.target.value;
@@ -1730,7 +2478,7 @@ document.addEventListener("keydown", e => {
     else if (e.key === "Escape") { ui.cook = null; keepAwake(false); renderSheet(); }
     return;
   }
-  if (e.key === "Escape" && (ui.open || ui.share)) { ui.open = null; ui.share = false; renderSheet(); }
+  if (e.key === "Escape" && (ui.open || ui.share || ui.scan || ui.editing)) { ui.open = null; ui.share = false; ui.editing = false; ui.edit = null; if (ui.scan) { stopScanner(); ui.scan = null; } renderSheet(); }
 });
 // Swipe left/right between cooking steps
 let touchX = null;

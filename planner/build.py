@@ -13,7 +13,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from ingredients import parse as parse_ingredient  # noqa: E402
-from nutrition import estimate  # noqa: E402
+from nutrition import DEFAULT_GRAMS, NUTR, estimate, grams  # noqa: E402
+from prices import PRICES  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 HERE = Path(__file__).resolve().parent
@@ -540,6 +541,10 @@ def main():
             r["group"] = group
             r["ingredients"] = ingredient_lines(r)
             r["shop"] = shop_items(r)
+            for item in r["shop"]:
+                g = grams(item)
+                if g is not None:
+                    item["g"] = round(g, 1)
             r["tags"] = tags(r)
             tex_title, book = r.pop("texTitle"), r.pop("bookNutrition")
             r["nutrition"] = nutrition(r, tex_title, book)
@@ -557,6 +562,9 @@ def main():
     html = template.replace("/*RECIPES*/[]", data.replace("</", "<\\/"))
     # Firebase settings for sharing between people (see README). Without the
     # file the planner just saves on each device.
+    html = html.replace("/*PRICES*/{}", json.dumps(PRICES))
+    # Per-100 g values and unit weights, so recipes added in the planner get estimates too.
+    html = html.replace("/*NUTR*/{}", json.dumps({"units": DEFAULT_GRAMS, "foods": {k: list(v) for k, v in NUTR.items()}}))
     sync = HERE / "sync-config.json"
     if sync.exists():
         html = html.replace("/*SYNC*/null", json.dumps(json.loads(sync.read_text(encoding="utf-8"))))
