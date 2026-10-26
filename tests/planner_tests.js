@@ -34,7 +34,7 @@ async function main() {
   });
 
   test("tabs render", () => {
-    for (const tab of ["recipes", "shop", "week"]) {
+    for (const tab of ["recipes", "shop", "track", "week"]) {
       click(document.querySelector(`[data-tab="${tab}"]`));
       check(`${tab} tab has content`, $("#app").textContent.trim().length > 50);
     }
@@ -142,6 +142,39 @@ async function main() {
     check("trio filled", run("Object.values(state.slots).every(Boolean)"));
     click($('[data-act="new-week"]'));
     check("new week clears the plan and nights", run("plannedIds().length === 0 && Object.keys(state.days).length === 0"));
+  });
+
+  test("food log", () => {
+    eq("targets from profile", run(`calcTargets({ sex: "male", age: 27, height: 180, weight: 80, activity: "moderate", goal: "maintain" })`),
+      { kcal: 2780, protein: 128, carbs: 394, fat: 77 });
+    check("cut is lower than maintenance", run(`calcTargets({ sex: "female", age: 30, height: 165, weight: 65, activity: "light", goal: "lose" }).kcal`) <
+      run(`calcTargets({ sex: "female", age: 30, height: 165, weight: 65, activity: "light", goal: "maintain" }).kcal`));
+    eq("bad profile gives no targets", run(`calcTargets({ sex: "male", age: "", height: 180, weight: 80 })`), null);
+    click(document.querySelector('[data-tab="track"]'));
+    check("food log tab rendered", /Food log/.test($("#app").textContent));
+    $("#tp-age").value = "27"; $("#tp-height").value = "180"; $("#tp-weight").value = "80";
+    click($('[data-act="track-calc"]'));
+    eq("targets saved", run("tracker.targets.protein"), 128);
+    const id = run(`RECIPES.find(r => r.nutrition && r.nutrition.per === "serving").id`);
+    const n = run(`BY_ID[${JSON.stringify(id)}].nutrition`);
+    click($('[data-act="track-qty"][data-v="2"]'));
+    run(`trackClick("track-recipe", { dataset: { id: ${JSON.stringify(id)} } })`);
+    eq("two serves logged", run("Math.round(dayTotals(todayISO()).kcal)"), Math.round(n.kcal * 2));
+    $("#qa-name").value = "Protein bar"; $("#qa-kcal").value = "200"; $("#qa-protein").value = "20";
+    click($('[data-act="track-quick"]'));
+    eq("quick add counted", run("Math.round(dayTotals(todayISO()).protein)"), Math.round(n.protein * 2) + 20);
+    check("recent foods offered", document.querySelectorAll('[data-act="track-again"]').length === 2);
+    click($('[data-act="track-del"]'));
+    eq("entry removed", run("dayEntries(todayISO()).length"), 1);
+    check("log is not part of the shared plan", run("!('days' in state && JSON.stringify(state).includes('Protein bar'))"));
+    run(`ui.open = ${JSON.stringify(id)}; renderSheet();`);
+    click($('[data-act="track-log"]'));
+    eq("logged from the recipe", run("dayEntries(todayISO()).length"), 2);
+    run("ui.open = null; renderSheet();");
+    click($('[data-act="track-day"]'));
+    check("previous day is empty", /Nothing logged/.test($("#app").textContent));
+    run("ui.trackDay = null; ui.trackQty = 1;");
+    click(document.querySelector('[data-tab="week"]'));
   });
 
   await wait(700);  // let any async errors surface
