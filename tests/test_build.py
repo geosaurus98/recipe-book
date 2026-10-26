@@ -97,3 +97,16 @@ class Helpers(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class Ingredients(unittest.TestCase):
+    def test_split_peas_are_not_frozen_peas(self):
+        import ingredients
+        self.assertEqual(ingredients.parse("1 cup dry yellow split peas, rinsed")["key"], "split-peas")
+        self.assertEqual(ingredients.parse("1 cup frozen peas")["key"], "frozen-peas")
+        self.assertEqual(ingredients.parse("1 cup peas")["key"], "frozen-peas")
+
+    def test_prices_are_sensible(self):
+        from prices import PRICES
+        for key, price in PRICES.items():
+            self.assertTrue(0 < price < 200, f"{key}: ${price}/kg")
