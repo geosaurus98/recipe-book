@@ -186,6 +186,60 @@ daily calories and protein with a tick for days on target.
 The log is private to each device: it's stored separately from the meal
 plan, so it isn't shared with your household or synced between devices.
 
+**Scan a barcode** opens the camera (or type the number under the barcode)
+and looks the product up in [Open Food Facts](https://world.openfoodfacts.org),
+a free shared database; enter how many grams you had. Products you've found
+are remembered on the device. Scanning uses the browser's barcode reader
+where there is one (Chrome on Android) and otherwise loads ZXing from
+jsDelivr, so the first scan needs a signal.
+
+**Weight** logs a weigh-in for the day and charts the last 12 weeks, with a
+line for the 7-day average. If that trend is 2 kg or more away from the
+weight your targets use, it offers to update them. **Last 4 weeks** charts
+daily calories and protein against your targets and shows your average
+protein at each meal.
+
+### Leftovers and freezer
+
+Ticking **Cooked** on a planned meal puts the spare portions in
+**Leftovers** on the week tab (servings, times the scale, minus the number of
+people eating each meal, which you can set there). Each lot shows where it is
+and when to eat it by: 3 days in the fridge, about 3 months frozen. **Eat
+one** takes a portion and logs it in your food log; **Freeze** and **Thaw in
+fridge** move it and restart the clock. Fridge leftovers also appear in the
+food log's Add food. Leftovers are shared with your household. Unticking
+Cooked the same day takes them back off.
+
+### Costs
+
+Every recipe shows a rough cost per serve, the week tab and shopping list
+show what the week's ingredients cost, and the recipe filters include
+**Under $3 a serve** and **Cheapest first**. Costs are worked out from the
+weight of each ingredient (the same weights the nutrition estimates use) and
+rough NZ prices per kg in `planner/prices.py`. They count what the recipe
+uses, not whole packets. Change any price under **Shopping > Prices**; your
+prices are saved and shared with your household. Add a line to `prices.py`
+for an ingredient that isn't priced yet.
+
+### What can I make?
+
+On the Recipes tab, **What can I make?** lists the main ingredients from your
+recipes to tick off. Recipes that use them are ranked by how few other things
+they need, with ones using your meat first. Spices, oils, sauces, stock and
+anything in your pantry count as had unless you untick that.
+
+### Adding recipes in the planner
+
+**Add a recipe** on the Recipes tab saves a recipe in the planner itself:
+name, chapter, servings, time, ingredients (one per line, amount first) and
+method. It's shared with your household and works like any other recipe:
+planning, the shopping list, cooking mode, costs and the food log. Nutrition
+is estimated from the ingredients unless you type it in. To put it in the
+PDF, open it and tap **Copy for the book**: that copies the recipe as LaTeX
+with the file name and `add_to_book.py` command at the top. Save it in that
+folder, run the command, and delete the planner copy once the book version
+is published.
+
 ### Sharing between people
 
 With Firebase set up, a **Share** button appears in the planner's header. It
