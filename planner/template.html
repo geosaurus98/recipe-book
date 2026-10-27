@@ -1399,7 +1399,7 @@ function buildCustom(id, c) {
   const m = String(c.servings).match(/\d+/);
   const count = m ? +m[0] : 4;
   const n = c.nutrition && c.nutrition.kcal ? { ...c.nutrition, per: "serving", count } : estimateNutrition(shop, count);
-  const text = (c.title + " " + c.ingredients.join(" ")).toLowerCase().replace(/(chicken|beef|pork) (stock|broth)/g, "");
+  const text = (c.title + " " + c.ingredients.join(" ")).toLowerCase().replace(/(chicken|beef|pork)( or \w+)? (stock|broth)/g, "");
   const tags = PROTEINS.map(([k]) => k).filter(k => k !== "mince" && new RegExp(k === "fish" ? "fish|salmon|tuna|prawn" : `\\b${k}\\b`).test(text));
   if (/\bmince\b/.test(text)) tags.push("mince");
   const sections = [{ kind: "ingredients", heading: "Ingredients", items }, { kind: "steps", heading: "Method", items: c.method.map(t => ({ text: t })) }];

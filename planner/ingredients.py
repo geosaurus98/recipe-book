@@ -127,6 +127,7 @@ CANON = [
     (r"\bmince\b", "mince", "Mince (beef or pork)", MEAT),
     (r"pork shoulder", "pork-shoulder", "Pork shoulder", MEAT),
     (r"pork loin", "pork-loin", "Pork loin", MEAT),
+    (r"pork leg|leg of pork", "pork-leg", "Pork leg", MEAT),
     (r"stewing beef|beef chuck|diced beef|chuck steak|gravy beef", "stewing-beef", "Stewing beef", MEAT),
     (r"rump steak|steak|topside|\brump\b", "steak", "Beef steak (rump or topside)", MEAT),
     (r"schnitzel", "schnitzel", "Beef schnitzel", MEAT),
