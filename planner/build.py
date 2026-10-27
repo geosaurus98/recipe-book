@@ -347,7 +347,7 @@ def split_and_parse(raw, optional):
 
 def tags(recipe):
     text = " ".join(ingredient_lines(recipe)).lower() + " " + recipe["title"].lower()
-    text = re.sub(r"(chicken|beef|pork) (stock|broth)", "", text)
+    text = re.sub(r"(chicken|beef|pork)( or \w+)? (stock|broth)", "", text)
     found = [name for name, pat in PROTEIN_WORDS if re.search(pat, text)]
     if re.search(r"\bmince\b", text):
         found.append("mince")

@@ -13529,6 +13529,363 @@
   "meat": "Pork mince"
  },
  {
+  "title": "Pulled Pork & Lentil Ragu",
+  "servings": "8",
+  "time": "15 min prep + 8–9 hours",
+  "intro": "A big batch of pulled pork leg in a smoky tomato sauce, thickened with red lentils once the pork is shredded. Serve over brown rice, and freeze half for later.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "group": "Pork and base"
+     },
+     {
+      "text": "1.5 kg bone-in pork leg, rind and excess fat trimmed"
+     },
+     {
+      "text": "2 brown onions, diced"
+     },
+     {
+      "text": "5 garlic cloves, crushed"
+     },
+     {
+      "text": "3 large carrots, grated"
+     },
+     {
+      "text": "2 cans (400 g) chopped tomatoes"
+     },
+     {
+      "text": "3 tbsp tomato paste"
+     },
+     {
+      "text": "300 ml stock (1 chicken or vegetable stock cube in water)"
+     },
+     {
+      "group": "Seasoning"
+     },
+     {
+      "text": "2 tsp dried Italian herbs"
+     },
+     {
+      "text": "2 tsp smoked paprika"
+     },
+     {
+      "text": "½ tsp chilli flakes"
+     },
+     {
+      "text": "1½ tsp salt"
+     },
+     {
+      "text": "1 tsp black pepper"
+     },
+     {
+      "group": "Last 1–1½ hours"
+     },
+     {
+      "text": "200 g red lentils, rinsed"
+     },
+     {
+      "text": "250 ml water"
+     },
+     {
+      "group": "To finish"
+     },
+     {
+      "text": "1 tbsp balsamic vinegar (or any red vinegar)"
+     },
+     {
+      "text": "150 g spinach (fresh or frozen)"
+     },
+     {
+      "group": "To serve"
+     },
+     {
+      "text": "400 g brown rice, uncooked (about 50 g per serve)"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Season the pork.** Mix the smoked paprika, Italian herbs, salt, pepper and chilli flakes and rub all over the pork."
+     },
+     {
+      "text": "**Build the base.** Put the onions, garlic and grated carrot in the slow cooker and sit the pork on top."
+     },
+     {
+      "text": "**Add the sauce.** Mix the chopped tomatoes, tomato paste and stock and pour around the pork. Start the slow cooker straight away rather than leaving the raw pork to sit."
+     },
+     {
+      "text": "**Slow cook.** Cook on Low for 7 hours, until the meat pulls away from the bone easily."
+     },
+     {
+      "text": "**Shred.** Lift the pork onto a board and pull the meat off the bone with two forks, discarding the bone, gristle and any fat. Skim any fat from the surface of the sauce."
+     },
+     {
+      "text": "**Add the lentils.** Stir the lentils and water into the sauce. Cook on High with the lid slightly ajar for 1–1½ hours, stirring once halfway, until the lentils are soft and the sauce is thick."
+     },
+     {
+      "text": "**Finish.** Return the shredded pork to the pot. Stir in the vinegar and spinach until wilted, about 5 minutes. Taste and adjust the salt."
+     },
+     {
+      "text": "**Rice.** Cook the brown rice while the pork finishes and serve the ragu over it."
+     }
+    ]
+   },
+   {
+    "kind": "variation",
+    "heading": "Smoky Chipotle Version",
+    "text": "Swap the Italian herbs for 2 tsp ground cumin and add 1 chipotle in adobo, finely chopped (or extra chilli flakes). Finish with a squeeze of lime instead of the vinegar. Serve over rice with salsa, like a Mexican-style bowl.",
+    "sections": []
+   },
+   {
+    "kind": "variation",
+    "heading": "Fennel & Chilli Version",
+    "text": "Replace the Italian herbs with 1 tsp crushed fennel seeds and double the chilli flakes. This gives a sausage-ragu flavour without the cost of sausages.",
+    "sections": []
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "A 1.5 kg bone-in leg may be a tight fit in a smaller slow cooker. If the lid won't close, cut the leg in two."
+     },
+     {
+      "text": "Leg cuts vary. If the pork isn't pulling off the bone at 7 hours, give it another hour before shredding."
+     },
+     {
+      "text": "The lentils go in after the pork is shredded so they don't turn to mush over the long cook."
+     },
+     {
+      "text": "If the sauce is too loose, simmer it on the stovetop for 10 minutes. If it's too thick, add a splash of water."
+     },
+     {
+      "text": "To bulk it out further, add 250 g chopped mushrooms with the lentils, grate in 1–2 courgettes at the end, or stir through frozen peas or mixed vegetables in the last 10 minutes."
+     },
+     {
+      "text": "Also good over mash, in a baked potato or kumara, or as a thick filling for wraps and toasties."
+     },
+     {
+      "text": "Freezes well for up to 3 months. Portion into containers and freeze the rice separately."
+     }
+    ]
+   }
+  ],
+  "id": "SlowCooker-Pulled_Pork_Lentil_Ragu",
+  "file": "SlowCooker/Pulled_Pork_Lentil_Ragu.tex",
+  "chapter": "slow",
+  "chapterName": "Slow Cooker",
+  "group": null,
+  "ingredients": [
+   "1.5 kg bone-in pork leg, rind and excess fat trimmed",
+   "2 brown onions, diced",
+   "5 garlic cloves, crushed",
+   "3 large carrots, grated",
+   "2 cans (400 g) chopped tomatoes",
+   "3 tbsp tomato paste",
+   "300 ml stock (1 chicken or vegetable stock cube in water)",
+   "2 tsp dried Italian herbs",
+   "2 tsp smoked paprika",
+   "½ tsp chilli flakes",
+   "1½ tsp salt",
+   "1 tsp black pepper",
+   "200 g red lentils, rinsed",
+   "250 ml water",
+   "1 tbsp balsamic vinegar (or any red vinegar)",
+   "150 g spinach (fresh or frozen)",
+   "400 g brown rice, uncooked (about 50 g per serve)"
+  ],
+  "shop": [
+   {
+    "key": "pork-leg",
+    "name": "Pork leg",
+    "aisle": "Meat & fish",
+    "qty": 1500.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "1.5 kg bone-in pork leg, rind and excess fat trimmed",
+    "g": 1500.0
+   },
+   {
+    "key": "onion",
+    "name": "Onions",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "",
+    "optional": false,
+    "raw": "2 brown onions, diced",
+    "g": 300.0
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 5.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "5 garlic cloves, crushed",
+    "g": 25.0
+   },
+   {
+    "key": "carrot",
+    "name": "Carrots",
+    "aisle": "Fruit & veg",
+    "qty": 3.0,
+    "unit": "",
+    "optional": false,
+    "raw": "3 large carrots, grated",
+    "g": 360.0
+   },
+   {
+    "key": "canned-tomatoes",
+    "name": "Canned tomatoes",
+    "aisle": "Cans, jars & pulses",
+    "qty": 2.0,
+    "unit": "can",
+    "optional": false,
+    "raw": "2 cans (400 g) chopped tomatoes",
+    "g": 800.0
+   },
+   {
+    "key": "tomato-paste",
+    "name": "Tomato paste",
+    "aisle": "Cans, jars & pulses",
+    "qty": 3.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "3 tbsp tomato paste",
+    "g": 48.0
+   },
+   {
+    "key": "stock",
+    "name": "Stock",
+    "aisle": "Pantry: check first",
+    "qty": 300.0,
+    "unit": "ml",
+    "optional": false,
+    "raw": "300 ml stock (1 chicken or vegetable stock cube in water)",
+    "g": 300.0
+   },
+   {
+    "key": "mixed-herbs",
+    "name": "Mixed herbs",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "2 tsp dried Italian herbs",
+    "g": 5.0
+   },
+   {
+    "key": "smoked-paprika",
+    "name": "Smoked paprika",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "2 tsp smoked paprika",
+    "g": 5.0
+   },
+   {
+    "key": "chilli-flakes",
+    "name": "Chilli flakes",
+    "aisle": "Pantry: check first",
+    "qty": 0.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "½ tsp chilli flakes",
+    "g": 1.2
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 1.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1½ tsp salt",
+    "g": 7.5
+   },
+   {
+    "key": "pepper",
+    "name": "Black pepper",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp black pepper",
+    "g": 5.0
+   },
+   {
+    "key": "red-lentils",
+    "name": "Red lentils (dry)",
+    "aisle": "Cans, jars & pulses",
+    "qty": 200.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "200 g red lentils, rinsed",
+    "g": 200.0
+   },
+   {
+    "key": "vinegar",
+    "name": "Vinegar",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp balsamic vinegar (or any red vinegar)",
+    "g": 15.0
+   },
+   {
+    "key": "spinach",
+    "name": "Baby spinach",
+    "aisle": "Fruit & veg",
+    "qty": 150.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "150 g spinach (fresh or frozen)",
+    "g": 150.0
+   },
+   {
+    "key": "brown-rice",
+    "name": "Brown rice",
+    "aisle": "Pasta, rice & grains",
+    "qty": 400.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "400 g brown rice, uncooked (about 50 g per serve)",
+    "g": 400.0
+   }
+  ],
+  "tags": [
+   "pork"
+  ],
+  "nutrition": {
+   "kcal": 550,
+   "protein": 43,
+   "carbs": 66,
+   "fat": 12,
+   "per": "serving",
+   "count": 8
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "Freezes well for up to 3 months.",
+   "Portion into containers and freeze the rice separately."
+  ],
+  "minutes": 555,
+  "ahead": [],
+  "meat": "Pork leg"
+ },
+ {
   "title": "Pulled Pork Wraps",
   "servings": "6",
   "time": "–",
@@ -21314,7 +21671,6 @@
    }
   ],
   "tags": [
-   "beef",
    "pork",
    "mince"
   ],
@@ -29324,9 +29680,7 @@
     "raw": "Salt and black pepper"
    }
   ],
-  "tags": [
-   "chicken"
-  ],
+  "tags": [],
   "nutrition": {
    "kcal": 200,
    "protein": 6,
