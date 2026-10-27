@@ -49,6 +49,7 @@ NUTR = {
     "chicken-thigh": n(150, 19, 0, 8, each=120),
     "chicken-drumstick": n(130, 13, 0, 8, each=120),  # weighed with the bone
     "pork-shoulder": n(230, 17, 0, 18), "pork-loin": n(145, 21, 0, 6),
+    "pork-leg": n(110, 16, 0, 5),  # bone-in, rind off: weighed with the bone
     "stewing-beef": n(150, 21, 0, 7), "steak": n(140, 22, 0, 5),
     "schnitzel": n(120, 22, 0, 3, each=150), "sausages": n(260, 13, 5, 21, each=70),
     "bacon": n(270, 15, 1, 23, each=30), "ham": n(120, 18, 2, 4, slice=20),

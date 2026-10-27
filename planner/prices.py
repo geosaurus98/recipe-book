@@ -12,7 +12,7 @@ PRICES = {
     # Meat and fish
     "beef-mince": 15, "pork-mince": 13, "mince": 14, "chicken": 13,
     "chicken-breast": 14, "chicken-thigh": 12, "chicken-drumstick": 7,
-    "pork-shoulder": 12, "pork-loin": 15, "stewing-beef": 18, "steak": 30,
+    "pork-shoulder": 12, "pork-loin": 15, "pork-leg": 9, "stewing-beef": 18, "steak": 30,
     "schnitzel": 18, "sausages": 11, "bacon": 18, "ham": 20, "chorizo": 30,
     "salmon": 40, "tuna": 14, "prawns": 30,
     # Cans and pulses (per kg drained for beans; dry for lentils and split peas)
