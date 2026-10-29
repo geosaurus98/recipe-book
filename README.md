@@ -240,6 +240,20 @@ with the file name and `add_to_book.py` command at the top. Save it in that
 folder, run the command, and delete the planner copy once the book version
 is published.
 
+### George's and GP's planners
+
+**Planning for** at the top switches between George's planner and GP's. GP's
+planner only shows basic recipes: everything in GP's Recipe Book, plus
+recipes that take 45 minutes or less with 14 ingredients or fewer and don't
+use the slow cooker or Instant Pot (about 77 recipes). Its week is three easy
+dinners instead of the slow cooker / pressure cooker / quick trio. Each
+planner has its own week, shopping list, favourites, leftovers, prices, added
+recipes and food log, saved separately on the device and, when sharing, in
+its own copy of the household. The share link opens whichever planner you
+shared from (it ends in `&as=gp` for GP's), and a link ending in `#as=gp`
+opens GP's planner directly. The limits are `BASIC_MINUTES` and
+`BASIC_INGREDIENTS` in `planner/template.html`.
+
 ### Sharing between people
 
 With Firebase set up, a **Share** button appears in the planner's header. It

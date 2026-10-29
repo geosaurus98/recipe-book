@@ -141,6 +141,8 @@ main.wrap { padding-block: 20px 48px; display: grid; gap: 28px; }
 .fav-mark { color: var(--star); }
 .history-line { font-size: 0.8rem; color: var(--muted); margin: 8px 0 0; }
 .share-btn { margin-left: 2px; }
+.profile { font-size: 0.78rem; color: var(--muted); white-space: nowrap; }
+.profile select { font: inherit; font-weight: 600; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 2px 4px; margin-left: 2px; }
 .share-sheet p { color: var(--muted); font-size: 0.92rem; margin: 0 0 12px; }
 .share-link { width: 100%; font-family: var(--font-mono); font-size: 0.8rem; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--sunk); color: var(--ink); margin-bottom: 12px; }
 .cook { position: fixed; inset: 0; z-index: 40; background: var(--bg); display: flex; flex-direction: column;
@@ -388,7 +390,7 @@ main.wrap { padding-block: 20px 48px; display: grid; gap: 28px; }
 
 <header class="top">
   <div class="wrap">
-    <div class="brand"><h1>George's Meal Planner</h1><span class="sync" id="sync">Loading…</span><button class="btn small ghost share-btn" id="share-btn" data-act="share" hidden>Share</button></div>
+    <div class="brand"><h1 id="app-title">George's Meal Planner</h1><label class="profile">Planning for <select id="profile" data-act="profile" aria-label="Who is planning"><option value="george">George</option><option value="gp">GP</option></select></label><span class="sync" id="sync">Loading…</span><button class="btn small ghost share-btn" id="share-btn" data-act="share" hidden>Share</button></div>
     <nav class="books" aria-label="Recipe books">PDF: <a href="books/main.pdf">Recipe Book</a> · <a href="books/palmer.pdf">GP's Book</a></nav>
     <nav class="tabs" role="tablist" aria-label="Sections">
       <button role="tab" id="tab-week" aria-selected="true" data-tab="week">This week</button>
@@ -407,7 +409,37 @@ main.wrap { padding-block: 20px 48px; display: grid; gap: 28px; }
 const RECIPES = /*RECIPES*/[];
 const BY_ID = Object.fromEntries(RECIPES.map(r => [r.id, r]));
 
-const SLOTS = [
+// ─── Who's planning ─────────────────────────────────────────────────────────
+// George plans a slow cooker, pressure cooker and quick meal from every
+// recipe. GP plans three easy dinners from the basic recipes only: GP's book,
+// plus anything quick and short with no slow cooker or Instant Pot. Each has
+// their own week, shopping list, favourites and food log, stored separately
+// (on the device, and in their own document when the household is shared).
+// "#as=gp" in the link (e.g. on the share link) opens GP's planner.
+const PROFILE_KEY = "george-meal-planner-profile";
+const PROFILES = { george: { name: "George", suffix: "" }, gp: { name: "GP", suffix: "-gp" } };
+const PROFILE = (() => {
+  const asked = location.hash.match(/[#&]as=(george|gp)\b/);
+  try {
+    if (asked) localStorage.setItem(PROFILE_KEY, asked[1]);
+    const p = asked ? asked[1] : localStorage.getItem(PROFILE_KEY);
+    return PROFILES[p] ? p : "george";
+  } catch { return asked ? asked[1] : "george"; }
+})();
+const GP = PROFILE === "gp";
+const SUFFIX = PROFILES[PROFILE].suffix;
+const BASIC_MINUTES = 45, BASIC_INGREDIENTS = 14;
+function isBasic(r) {
+  return !!(r.custom || r.palmer || (!["slow", "pressure"].includes(r.chapter) && r.minutes != null
+    && r.minutes <= BASIC_MINUTES && r.ingredients.length <= BASIC_INGREDIENTS));
+}
+function visibleRecipes() { return GP ? RECIPES.filter(isBasic) : RECIPES; }
+
+const SLOTS = GP ? [
+  { key: "d1", label: "Dinner 1", hint: "Easy stovetop or oven", chapters: ["stovetop", "oven"] },
+  { key: "d2", label: "Dinner 2", hint: "Easy stovetop or oven", chapters: ["stovetop", "oven"] },
+  { key: "d3", label: "Dinner 3", hint: "Easy stovetop or oven", chapters: ["stovetop", "oven"] },
+] : [
   { key: "slow", label: "Slow cooker", hint: "Start it in the morning", chapters: ["slow"] },
   { key: "pressure", label: "Pressure cooker", hint: "Instant Pot under pressure", chapters: ["pressure"] },
   { key: "quick", label: "Quick", hint: "Stovetop, sauté or oven", chapters: ["stovetop", "oven"] },
@@ -424,7 +456,11 @@ const PROTEINS = [["mince", "Mince"], ["beef", "Beef"], ["pork", "Pork"], ["chic
 
 // ─── State ──────────────────────────────────────────────────────────────────
 // Example week shown until a real plan is saved.
-const EXAMPLE = {
+const EXAMPLE = GP ? {
+  week: mondayOf(new Date()), slots: { d1: null, d2: null, d3: null },
+  extras: [], cooked: {}, checked: {}, scale: {}, fav: {}, rating: {}, log: {}, pantry: {}, history: [], example: true,
+  leftovers: {}, prices: {}, custom: {}, eaters: 2, days: {}, dinner: "18:30",
+} : {
   week: mondayOf(new Date()),
   slots: {
     slow: "SlowCooker-Smoky_Chicken_Bean_Lentil_Stew",
@@ -459,7 +495,7 @@ function sanitize(s) {
   refreshCustom(out.custom);  // so planned custom recipes survive the checks below
   out.leftovers = out.leftovers || {}; out.prices = out.prices || {};
   out.eaters = [1, 2, 3, 4, 5, 6].includes(out.eaters) ? out.eaters : 2;
-  out.slots = Object.assign({ slow: null, pressure: null, quick: null }, out.slots || {});
+  out.slots = Object.fromEntries(SLOTS.map(sl => [sl.key, (out.slots || {})[sl.key] || null]));
   for (const k of Object.keys(out.slots)) if (out.slots[k] && !BY_ID[out.slots[k]]) out.slots[k] = null;
   out.extras = (out.extras || []).filter(id => BY_ID[id]);
   out.cooked = out.cooked || {}; out.checked = out.checked || {}; out.scale = out.scale || {};
@@ -469,7 +505,7 @@ function sanitize(s) {
   return out;
 }
 
-const LOCAL_KEY = "george-meal-planner";
+const LOCAL_KEY = "george-meal-planner" + SUFFIX;
 function loadLocal() {
   try { const raw = localStorage.getItem(LOCAL_KEY); return raw ? JSON.parse(raw) : null; } catch { return null; }
 }
@@ -529,7 +565,7 @@ function newHouseholdCode() {
   const bytes = crypto.getRandomValues(new Uint8Array(24));
   return [...bytes].map(b => "abcdefghijkmnpqrstuvwxyz23456789"[b % 32]).join("");
 }
-function shareLink(code) { return `${location.origin}${location.pathname}#join=${code}`; }
+function shareLink(code) { return `${location.origin}${location.pathname}#join=${code}&as=${PROFILE}`; }
 
 // [[path...], value] for every part of the state that changed.
 function diffState(a, b) {
@@ -547,7 +583,7 @@ async function startSharing(code, { upload = false } = {}) {
   setSync("Connecting…");
   const base = `https://www.gstatic.com/firebasejs/${FIREBASE_VERSION}`;
   const [{ initializeApp }, fs] = await Promise.all([import(`${base}/firebase-app.js`), import(`${base}/firebase-firestore.js`)]);
-  const ref = fs.doc(fs.getFirestore(initializeApp(SYNC)), "households", code);
+  const ref = fs.doc(fs.getFirestore(initializeApp(SYNC)), "households", code + SUFFIX);
   const snap = await fs.getDoc(ref);
   if (upload || !snap.exists()) {
     await fs.setDoc(ref, { state: clone(state), updated: fs.serverTimestamp() });
@@ -718,6 +754,7 @@ function shareDialog() {
   const body = fb && code
     ? `<p>Send this link to anyone who should share the planner. You'll both see the same week, ticks and ratings as they change.</p>
        <input class="share-link" id="share-link" readonly value="${esc(shareLink(code))}" aria-label="Share link">
+       <p class="muted-note">The link opens ${esc(PROFILES[PROFILE].name)}'s planner. Each person can switch with "Planning for" at the top; George's and GP's weeks are kept separate.</p>
        <div class="sheet-actions"><button class="btn primary" data-act="share-send">Share link</button><button class="btn" data-act="share-copy">Copy</button><button class="btn ghost" data-act="share-stop">Stop sharing on this device</button></div>
        <p style="margin-top:12px">Anyone with the link can see and change the planner, so only send it to people you plan meals with.</p>`
     : `<p>Share this planner so someone else sees the same week, ticks off the same shopping list and adds their own ratings. Your current week and favourites are shared too.</p>
@@ -738,7 +775,7 @@ async function connect() {
   if (local) { state = sanitize(local); render(); }
   if (SYNC) {
     document.getElementById("share-btn").hidden = false;
-    const join = location.hash.match(/^#join=([a-z0-9]{20,})$/);
+    const join = location.hash.match(/^#join=([a-z0-9]{20,})(&as=\w+)?$/);
     if (join) {
       setHouseholdCode(join[1]);
       history.replaceState(null, "", location.pathname);
@@ -752,7 +789,7 @@ async function connect() {
   let db = null;
   try { db = window.claude && window.claude.use ? await window.claude.use("db") : null; } catch { db = null; }
   if (!db) { setSync(local ? "Saved on this device" : "Example week — your changes save on this device"); return; }
-  store = db.doc("planner/state");
+  store = db.doc("planner/state" + SUFFIX);
   saveMode = "db";
   setSync("Syncing…");
   store.onSnapshot(snap => {
@@ -767,6 +804,7 @@ const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": 
 const md = s => esc(s).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
 const plain = s => String(s).replace(/\*\*/g, "");
 function slotFor(r) {
+  if (GP) return isBasic(r) && ["stovetop", "oven"].includes(r.chapter) ? (SLOTS.find(sl => !state.slots[sl.key]) || SLOTS[0]).key : null;
   return r.chapter === "slow" ? "slow" : r.chapter === "pressure" ? "pressure"
     : ["stovetop", "oven"].includes(r.chapter) ? "quick" : null;
 }
@@ -850,7 +888,7 @@ function pickRandom(slotKey, exclude) {
   const slot = SLOTS.find(s => s.key === slotKey);
   const recent = recentIds();
   const used = new Set(plannedIds());
-  let pool = RECIPES.filter(r => slot.chapters.includes(r.chapter) && r.id !== exclude && !used.has(r.id));
+  let pool = visibleRecipes().filter(r => slot.chapters.includes(r.chapter) && r.id !== exclude && !used.has(r.id));
   if (ui.minceOnly) pool = pool.filter(r => r.tags.includes("mince"));
   if (ui.highProtein) pool = pool.filter(isHighProtein);
   // Skip anything planned in the last four weeks or cooked in the last 28 days, if there's enough left.
@@ -1274,12 +1312,12 @@ function renderLeftovers() {
 // Tick what you have; recipes are ranked by how few other things they need.
 // Spices and staples (the pantry aisle and anything marked "At home") count
 // as had unless you turn that off.
-const HAVE_KEY = "george-meal-planner-have";
+const HAVE_KEY = "george-meal-planner-have" + SUFFIX;
 let haveSet = (() => { try { return new Set(JSON.parse(localStorage.getItem(HAVE_KEY) || "[]")); } catch { return new Set(); } })();
 function saveHave() { try { localStorage.setItem(HAVE_KEY, JSON.stringify([...haveSet])); } catch {} }
 function haveOptions() {
   const count = new Map();
-  for (const r of RECIPES) for (const item of r.shop)
+  for (const r of visibleRecipes()) for (const item of r.shop)
     if (!item.optional && item.aisle !== "Pantry: check first") {
       const c = count.get(item.key) || { key: item.key, name: item.name, aisle: item.aisle, n: 0 };
       c.n++; count.set(item.key, c);
@@ -1290,7 +1328,7 @@ function makeable() {
   const staples = ui.staples !== false;
   const had = item => haveSet.has(item.key) || (staples && (item.aisle === "Pantry: check first" || state.pantry["item:" + item.key]));
   const out = [];
-  for (const r of RECIPES) {
+  for (const r of visibleRecipes()) {
     if (ui.chapter && r.chapter !== ui.chapter) continue;
     const need = r.shop.filter(i => !i.optional && i.qty != null);
     const using = need.filter(i => haveSet.has(i.key));
@@ -1561,7 +1599,7 @@ function featureClick(act, el) {
 // of `state`, so it isn't shared with the household or synced. Each entry
 // stores its own numbers, so later changes to a recipe's estimate don't
 // rewrite past days.
-const TRACK_KEY = "george-meal-planner-tracker";
+const TRACK_KEY = "george-meal-planner-tracker" + SUFFIX;
 const MEALS = [["breakfast", "Breakfast"], ["lunch", "Lunch"], ["dinner", "Dinner"], ["snacks", "Snacks"]];
 const ACTIVITY = [
   ["sedentary", "Mostly sitting", 1.2], ["light", "Light exercise 1–3 days a week", 1.375],
@@ -1652,7 +1690,7 @@ function plannedFor(iso) {
 function trackSearch(q) {
   const words = q.toLowerCase().split(/\s+/).filter(Boolean);
   if (!words.length) return [];
-  return RECIPES.filter(r => r.nutrition && words.every(w => r.title.toLowerCase().includes(w))).slice(0, 8);
+  return visibleRecipes().filter(r => r.nutrition && words.every(w => r.title.toLowerCase().includes(w))).slice(0, 8);
 }
 function entryLabel(e) { return e.rid ? `${esc(e.name)} <small class="qty-label">${QTYS.find(x => x[0] === e.q)?.[1] ?? e.q} ${esc(e.unit)}</small>` : esc(e.name); }
 function macroLine(e) { return `${e.kcal} kcal · ${e.protein} g P · ${e.carbs} g C · ${e.fat} g F`; }
@@ -2068,7 +2106,7 @@ function render() {
 function slotCard(s) {
   const id = state.slots[s.key];
   if (!id) {
-    return `<article class="slot empty" data-m="${s.key}">
+    return `<article class="slot empty" data-m="${GP ? "quick" : s.key}">
       <span class="chip">${s.label}</span>
       <p class="hint">${s.hint}</p>
       <p class="placeholder">Nothing picked yet.</p>
@@ -2080,7 +2118,7 @@ function slotCard(s) {
   }
   const r = BY_ID[id];
   const cooked = !!state.cooked[id];
-  return `<article class="slot${cooked ? " is-cooked" : ""}" data-m="${s.key}">
+  return `<article class="slot${cooked ? " is-cooked" : ""}" data-m="${GP ? "quick" : s.key}">
     <span class="chip">${s.label}</span>
     <h3><button data-act="open" data-id="${id}">${state.fav[id] ? `<span class="fav-mark" aria-label="Favourite">★</span> ` : ""}${esc(r.title)}</button></h3>
     <div class="meta">${state.days[id] != null ? `<span class="times">${DAY_NAMES[state.days[id]]}</span>` : ""}${scaleOf(id) !== 1 ? `<span class="times">${SCALE_LABEL[scaleOf(id)]}</span>` : ""}<span>Serves ${esc(scaledServingsText(r))}</span><span>${esc(r.time === "–" ? "Time not set" : r.time)}</span>${macroSpans(r)}</div>
@@ -2110,14 +2148,14 @@ function renderWeek() {
   <section class="section-head">
     <div>
       <h2>Week of ${esc(prettyWeek(state.week))}</h2>
-      <p>${state.example ? "This is an example week. Swap or browse to make it yours." : "One slow cooker, one pressure cooker and one quick meal, 4 servings each."}</p>
+      <p>${GP ? "Three easy dinners from the basic recipes: no slow cooker or Instant Pot." : state.example ? "This is an example week. Swap or browse to make it yours." : "One slow cooker, one pressure cooker and one quick meal, 4 servings each."}</p>
       ${weekNutrition()}
       ${weekCost()}
     </div>
     <div class="actions">
       <label class="toggle"><input type="checkbox" id="mince-only" data-act="mince-only" ${ui.minceOnly ? "checked" : ""}> Mince recipes only</label>
       <label class="toggle"><input type="checkbox" id="high-protein-week" data-act="high-protein" ${ui.highProtein ? "checked" : ""}> ${HIGH_PROTEIN} g+ protein</label>
-      <button class="btn" data-act="shuffle-all">Shuffle the trio</button>
+      <button class="btn" data-act="shuffle-all">${GP ? "Shuffle all three" : "Shuffle the trio"}</button>
       <button class="btn primary" data-act="new-week">Start next week</button>
     </div>
   </section>
@@ -2137,7 +2175,7 @@ function renderWeek() {
 function filteredRecipes() {
   const q = ui.q.trim().toLowerCase();
   const slot = ui.choosing && SLOTS.find(s => s.key === ui.choosing);
-  return RECIPES.filter(r =>
+  return visibleRecipes().filter(r =>
     (!slot || slot.chapters.includes(r.chapter)) &&
     (!ui.chapter || r.chapter === ui.chapter) &&
     (!ui.group || r.group === ui.group) &&
@@ -2154,7 +2192,7 @@ function renderRecipes() {
   const slot = ui.choosing && SLOTS.find(s => s.key === ui.choosing);
   const list = filteredRecipes();
   const planned = new Set(plannedIds());
-  const chapterChips = (slot ? CHAPTERS.filter(([k]) => slot.chapters.includes(k)) : CHAPTERS)
+  const chapterChips = (slot ? CHAPTERS.filter(([k]) => slot.chapters.includes(k)) : CHAPTERS.filter(([k]) => visibleRecipes().some(r => r.chapter === k)))
     .map(([k, l]) => `<button class="fchip" data-act="chapter" data-v="${k}" aria-pressed="${ui.chapter === k}">${l}</button>`).join("");
   // Chapters split into groups (e.g. Salads & sides) get a second row of chips.
   const groupNames = ui.chapter ? [...new Set(RECIPES.filter(r => r.chapter === ui.chapter && r.group).map(r => r.group))] : [];
@@ -2168,10 +2206,10 @@ function renderRecipes() {
       ${badges(r)}
       ${planned.has(r.id) ? `<span class="planned">On this week's plan</span>` : ""}
     </button>`).join("");
-  const nCustom = RECIPES.filter(r => r.custom).length;
+  const all = visibleRecipes(), nCustom = all.filter(r => r.custom).length;
   const head = `
   <section class="section-head">
-    <div><h2>${ui.make ? "What can I make?" : "Recipes"}</h2><p>${ui.make ? "Pick what's in the fridge and cupboard, and see what it makes." : `All ${RECIPES.length} recipes${nCustom ? `: ${RECIPES.length - nCustom} from your book and ${nCustom} added here` : " from your book"}.`}</p></div>
+    <div><h2>${ui.make ? "What can I make?" : "Recipes"}</h2><p>${ui.make ? "Pick what's in the fridge and cupboard, and see what it makes." : GP ? `${all.length} easy recipes: GP's book, plus quick ones (${BASIC_MINUTES} min or less, ${BASIC_INGREDIENTS} ingredients or fewer) with no slow cooker or Instant Pot.` : `All ${all.length} recipes${nCustom ? `: ${all.length - nCustom} from your book and ${nCustom} added here` : " from your book"}.`}</p></div>
     <div class="actions">
       <button class="btn${ui.make ? " primary" : ""}" data-act="make-toggle" aria-pressed="${!!ui.make}">${ui.make ? "Back to all recipes" : "What can I make?"}</button>
       <button class="btn" data-act="custom-new">Add a recipe</button>
@@ -2447,6 +2485,12 @@ document.addEventListener("change", e => {
     }
   });
   if (act === "price") commit(s => { const v = parseFloat(el.value); if (el.value === "" || !(v >= 0)) delete s.prices[el.dataset.key]; else s.prices[el.dataset.key] = v; });
+  if (act === "profile" && el.value !== PROFILE) {
+    flush();
+    try { localStorage.setItem(PROFILE_KEY, el.value); } catch {}
+    location.hash = "as=" + el.value;
+    location.reload();
+  }
   if (act === "eaters") commit(s => { s.eaters = Number(el.value); });
   if (act === "staples") { ui.staples = el.checked; render(); }
   if (act === "check") commit(s => { if (el.checked) s.checked[el.dataset.key] = true; else delete s.checked[el.dataset.key]; });
@@ -2522,6 +2566,9 @@ async function copyList(msg) {
   }
 }
 
+document.getElementById("profile").value = PROFILE;
+document.getElementById("app-title").textContent = document.title = `${PROFILES[PROFILE].name}'s Meal Planner`;
+if (/^#as=\w+$/.test(location.hash)) history.replaceState(null, "", location.pathname);
 render();
 connect();
 // Home-screen app: keep a copy on the phone so it opens with no signal
