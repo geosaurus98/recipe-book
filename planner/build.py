@@ -513,6 +513,44 @@ def recipe_info_tex(rows):
     return "\n".join(out) + "\n"
 
 
+# ─── Recipe ideas ───────────────────────────────────────────────────────────
+
+IDEA_FOLDERS = {
+    "InstantPot": "pressure", "SlowCooker": "slow", "Stovetop": "stovetop", "Oven": "oven",
+    "Sides": "sides", "Breakfast": "breakfast", "Snacks": "snacks", "Shakes": "shakes",
+    "Desserts": "desserts", "Baking": "baking", "BreadMaker": "breadmaker",
+}
+
+
+def tex_plain(text):
+    """Ideas.tex text as plain text: '\\&' -> '&', ``x'' -> "x", dashes."""
+    accents = {"'e": "\u00e9", "'a": "\u00e1", "`e": "\u00e8", "^e": "\u00ea", '"u': "\u00fc", "~n": "\u00f1"}
+    text = re.sub(r"\\(['`^\"~])\{?([a-z])\}?", lambda m: accents.get(m.group(1) + m.group(2), m.group(2)), text)
+    text = text.replace("\\&", "&").replace("``", "\u201c").replace("''", "\u201d").replace("---", "\u2014").replace("--", "\u2013")
+    text = re.sub(r"\\[a-zA-Z]+\*?\{([^}]*)\}", r"\1", text)
+    return re.sub(r"\\[a-zA-Z]+\s*", "", text).replace("{", "").replace("}", "").strip()
+
+
+def recipe_ideas():
+    """Every unticked idea from each folder's Ideas.tex, for the planner's Ideas list."""
+    ideas = []
+    for folder, chapter in IDEA_FOLDERS.items():
+        path = ROOT / folder / "Ideas.tex"
+        if not path.exists():
+            continue
+        group = None
+        for line in path.read_text(encoding="utf-8").splitlines():
+            g = re.match(r"\s*\\group\{(.*)\}", line)
+            if g:
+                group = tex_plain(g.group(1))
+                continue
+            m = re.match(r"\s*\\item\s*\\todo\s*(.*?)\s*(?:\\hint\{(.*)\})?\s*$", line)
+            if m:
+                ideas.append({"title": tex_plain(m.group(1)), "hint": tex_plain(m.group(2) or ""),
+                              "chapter": chapter, "group": group})
+    return ideas
+
+
 # ─── Build ──────────────────────────────────────────────────────────────────
 
 
@@ -566,6 +604,7 @@ def main():
     # Firebase settings for sharing between people (see README). Without the
     # file the planner just saves on each device.
     html = html.replace("/*PRICES*/{}", json.dumps(PRICES))
+    html = html.replace("/*IDEAS*/[]", json.dumps(recipe_ideas(), ensure_ascii=False).replace("</", "<\\/"))
     # Per-100 g values and unit weights, so recipes added in the planner get estimates too.
     html = html.replace("/*NUTR*/{}", json.dumps({"units": DEFAULT_GRAMS, "foods": {k: list(v) for k, v in NUTR.items()}}))
     sync = HERE / "sync-config.json"
