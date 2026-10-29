@@ -306,6 +306,7 @@ main.wrap { padding-block: 20px 48px; display: grid; gap: 28px; }
 .food-list li { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--line); }
 .food-list li:last-child { border-bottom: 0; }
 .food-list li > span { min-width: 0; }
+.food-list li > .btn { flex: none; white-space: nowrap; }
 .food-list small { display: block; font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted); }
 .food-list small.qty-label { display: inline; font-family: var(--font-body); margin-left: 4px; }
 .meals { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 24px; }
@@ -385,6 +386,36 @@ main.wrap { padding-block: 20px 48px; display: grid; gap: 28px; }
 .per-meal li { background: var(--sunk); border-radius: 10px; padding: 6px 10px; display: grid; font-size: 0.78rem; color: var(--muted); }
 .per-meal strong { font-family: var(--font-mono); font-size: 0.95rem; color: var(--ink); }
 @media (max-width: 560px) { .per-meal { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+/* Combined list, planning, prep, labels, swaps, summary, ideas */
+.who { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); background: var(--sunk); border-radius: 999px; padding: 1px 7px; margin-left: 6px; }
+.plan-result { display: grid; gap: 8px; margin-top: 12px; border-top: 1px solid var(--line); padding-top: 12px; }
+.sheet h3 { font-family: var(--font-display); font-weight: 400; font-size: 1.1rem; margin: 16px 0 6px; }
+.prep-list { margin: 0; padding-left: 1.3em; display: grid; gap: 6px; font-size: 0.92rem; }
+.prep-list small { display: block; color: var(--muted); font-size: 0.78rem; }
+.cook-hint { max-width: 760px; width: 100%; margin: 6px auto 0; font-size: 0.82rem; color: var(--accent); }
+.swaps { background: var(--sunk); border-radius: 12px; padding: 10px 14px; margin: 0 0 16px; font-size: 0.88rem; }
+.swaps summary { cursor: pointer; font-weight: 600; }
+.swaps ul { margin: 8px 0 0; padding-left: 1.1em; display: grid; gap: 4px; }
+.summary { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 12px 16px; box-shadow: var(--shadow); }
+.summary summary { cursor: pointer; font-weight: 600; }
+.tiles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 12px; }
+@media (max-width: 640px) { .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.tile { background: var(--sunk); border-radius: 12px; padding: 10px 12px; display: grid; gap: 2px; min-width: 0; }
+.tile span { font-size: 0.75rem; color: var(--muted); }
+.tile strong { font-family: var(--font-display); font-weight: 400; font-size: 1.3rem; line-height: 1.2; overflow-wrap: anywhere; }
+.tile small { font-size: 0.72rem; color: var(--muted); }
+.idea-group { display: grid; gap: 4px; }
+.idea-group h3 { font-size: 0.8rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+#print-root { display: none; }
+@media print {
+  body > *:not(#print-root) { display: none !important; }
+  body::before { display: none; }
+  #print-root { display: block; }
+  .labels { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6mm; }
+  .label { border: 1px dashed #777; border-radius: 3mm; padding: 4mm; display: grid; gap: 1mm; font: 10pt/1.3 system-ui, sans-serif; color: #000; break-inside: avoid; }
+  .label strong { font-size: 12pt; }
+  .label .small { font-size: 8pt; color: #333; }
+}
 @media (max-width: 560px) { .tabs { width: 100%; } .tabs button { flex: 1; padding: 6px 4px; font-size: 0.84rem; white-space: nowrap; } }
 </style>
 
@@ -459,7 +490,7 @@ const PROTEINS = [["mince", "Mince"], ["beef", "Beef"], ["pork", "Pork"], ["chic
 const EXAMPLE = GP ? {
   week: mondayOf(new Date()), slots: { d1: null, d2: null, d3: null },
   extras: [], cooked: {}, checked: {}, scale: {}, fav: {}, rating: {}, log: {}, pantry: {}, history: [], example: true,
-  leftovers: {}, prices: {}, custom: {}, eaters: 2, days: {}, dinner: "18:30",
+  leftovers: {}, prices: {}, custom: {}, eaters: 2, waste: [], days: {}, dinner: "18:30",
 } : {
   week: mondayOf(new Date()),
   slots: {
@@ -468,7 +499,7 @@ const EXAMPLE = GP ? {
     quick: "Stovetop-Pork_Larb",
   },
   extras: [], cooked: {}, checked: {}, scale: {}, fav: {}, rating: {}, log: {}, pantry: {}, history: [], example: true,
-  leftovers: {}, prices: {}, custom: {}, eaters: 2,
+  leftovers: {}, prices: {}, custom: {}, eaters: 2, waste: [],
   days: { "SlowCooker-Smoky_Chicken_Bean_Lentil_Stew": 0, "InstantPot-Cheeseburger_Macaroni": 2, "Stovetop-Pork_Larb": 4 },
   dinner: "18:30",
 };
@@ -494,6 +525,7 @@ function sanitize(s) {
   out.custom = Object.fromEntries(Object.entries(out.custom || {}).filter(([, c]) => c && c.title && Array.isArray(c.ingredients) && Array.isArray(c.method)));
   refreshCustom(out.custom);  // so planned custom recipes survive the checks below
   out.leftovers = out.leftovers || {}; out.prices = out.prices || {};
+  out.waste = Array.isArray(out.waste) ? out.waste.slice(-60) : [];
   out.eaters = [1, 2, 3, 4, 5, 6].includes(out.eaters) ? out.eaters : 2;
   out.slots = Object.fromEntries(SLOTS.map(sl => [sl.key, (out.slots || {})[sl.key] || null]));
   for (const k of Object.keys(out.slots)) if (out.slots[k] && !BY_ID[out.slots[k]]) out.slots[k] = null;
@@ -591,6 +623,7 @@ async function startSharing(code, { upload = false } = {}) {
   }
   fb = { fs, ref };
   saveMode = "shared";
+  watchOther(fs, ref);
   fs.onSnapshot(ref, snapshot => {
     if (snapshot.metadata.hasPendingWrites || dirty || saving) return;
     const data = snapshot.data();
@@ -732,8 +765,11 @@ function cookView() {
     <div class="cook-top">
       <span class="title">${esc(r.title)}</span>
       ${timer ? `<button class="timer-chip${timer.done ? " done" : ""}" id="timer-chip" data-act="cook-timer-clear" title="Tap to clear">${timer.done ? "Time's up" : fmtClock(timer.end - Date.now())}</button>` : ""}
+      <button class="btn small${ui.cook.speak ? " primary" : ""}" data-act="cook-speak" aria-pressed="${!!ui.cook.speak}">Read aloud</button>
+      <button class="btn small${ui.cook.listen ? " primary" : ""}" data-act="cook-listen" aria-pressed="${!!ui.cook.listen}">Voice</button>
       <button class="btn small ghost" data-act="cook-exit">Exit</button>
     </div>
+    ${ui.cook.listen ? `<p class="cook-hint">Listening: say "next", "back", "repeat" or "stop".</p>` : ""}
     <div class="cook-progress"><span style="width:${Math.round((i + 1) / total * 100)}%"></span></div>
     <div class="cook-body" id="cook-body">${body}</div>
     <div class="cook-nav">
@@ -1008,15 +1044,16 @@ function amountText(parts, key) {
 
 function shoppingList() {
   const rows = new Map();
-  for (const id of plannedIds()) {
+  for (const src of listSources()) for (const id of src.ids) {
     const r = BY_ID[id];
-    const f = scaleOf(id);
+    const f = src.scale(id);
     for (const item of r.shop) {
       let row = rows.get(item.key);
       if (!row) {
-        row = { key: "item:" + item.key, name: item.name, aisle: item.aisle || aisleOf(item.raw), parts: [], uses: [], optional: true };
+        row = { key: "item:" + item.key, name: item.name, aisle: item.aisle || aisleOf(item.raw), parts: [], uses: [], optional: true, who: new Set() };
         rows.set(item.key, row);
       }
+      row.who.add(src.who);
       row.parts.push({ qty: item.qty == null ? null : item.qty * f, unit: item.unit });
       row.optional = row.optional && item.optional;
       const use = row.uses.find(u => u.recipe === r);
@@ -1029,6 +1066,7 @@ function shoppingList() {
   for (const row of rows.values()) {
     row.amount = amountText(row.parts, row.key.slice(5));
     row.atHome = !!state.pantry[row.key];
+    row.done = !!state.checked[row.key] || otherChecked(row.key);
     groups[row.aisle].push(row);
   }
   for (const a of AISLES) groups[a].sort((x, y) => (x.optional - y.optional) || x.name.localeCompare(y.name));
@@ -1293,7 +1331,7 @@ function renderLeftovers() {
       <div class="row">
         <button class="btn small primary" data-act="lo-eat" data-lid="${esc(l.lid)}">Eat one</button>
         <button class="btn small" data-act="lo-move" data-lid="${esc(l.lid)}">${l.where === "fridge" ? "Freeze" : "Thaw in fridge"}</button>
-        <button class="btn small ghost" data-act="lo-del" data-lid="${esc(l.lid)}">Remove</button>
+        <button class="btn small ghost" data-act="lo-del" data-lid="${esc(l.lid)}">Throw out</button>
       </div>
     </li>`;
   }).join("");
@@ -1304,7 +1342,7 @@ function renderLeftovers() {
       <label class="toggle eaters">Eating each meal
         <select data-act="eaters">${[1, 2, 3, 4, 5, 6].map(n => `<option value="${n}" ${state.eaters === n ? "selected" : ""}>${n} ${n === 1 ? "person" : "people"}</option>`).join("")}</select></label>
     </div>
-    ${rows ? `<ul class="leftovers">${rows}</ul>` : ""}
+    ${rows ? `<ul class="leftovers">${rows}</ul><div class="row"><button class="btn small" data-act="labels-leftovers">Print labels</button></div>` : ""}
   </section>`;
 }
 
@@ -1460,7 +1498,7 @@ function refreshCustom(src = state.custom) {
 }
 const lines = v => String(v || "").split("\n").map(s => s.trim()).filter(Boolean);
 function customForm() {
-  const id = ui.edit, c = (id && state.custom[id]) || { title: "", chapter: "stovetop", servings: "4", time: "", intro: "", ingredients: [], method: [], notes: [], nutrition: null };
+  const id = ui.edit, c = (id && state.custom[id]) || Object.assign({ title: "", chapter: "stovetop", servings: "4", time: "", intro: "", ingredients: [], method: [], notes: [], nutrition: null }, ui.draft || {});
   const n = c.nutrition || {};
   const field = (fid, label, v, attrs = "") => `<label class="field wide"><span>${label}</span><input id="${fid}" value="${esc(v)}" ${attrs}></label>`;
   const area = (fid, label, v, hint, rows = 6) => `<label class="field full"><span>${label}${hint ? ` <em>${hint}</em>` : ""}</span><textarea id="${fid}" rows="${rows}">${esc(v)}</textarea></label>`;
@@ -1534,7 +1572,7 @@ function featureClick(act, el) {
   switch (act) {
     case "price-reset": commit(s => { delete s.prices[el.dataset.key]; }); return true;
     case "lo-n": commit(s => { const l = s.leftovers[lid]; if (l) { l.n = Math.max(0, l.n + Number(el.dataset.v)); if (!l.n) delete s.leftovers[lid]; } }); return true;
-    case "lo-del": commit(s => { delete s.leftovers[lid]; }); return true;
+    case "lo-del": commit(s => { const l = s.leftovers[lid]; if (l) s.waste = [...(s.waste || []), { date: todayISO(), id: l.id, n: l.n }].slice(-60); delete s.leftovers[lid]; }); return true;
     case "lo-move": commit(s => {
       const l = s.leftovers[lid];
       if (!l) return;
@@ -1560,7 +1598,7 @@ function featureClick(act, el) {
       toast(`1 portion of ${r.title} in the fridge`);
       return true;
     }
-    case "make-toggle": ui.make = !ui.make; render(); return true;
+    case "make-toggle": ui.make = !ui.make; ui.ideas = false; render(); return true;
     case "have-toggle": { const k = el.dataset.key; haveSet.has(k) ? haveSet.delete(k) : haveSet.add(k); saveHave(); ui.pickerOpen = true; render(); return true; }
     case "have-done": ui.pickerOpen = false; render(); document.querySelector(".make").scrollIntoView({ block: "start" }); return true;
     case "have-clear": haveSet.clear(); saveHave(); render(); return true;
@@ -1572,7 +1610,7 @@ function featureClick(act, el) {
       if (!c.ingredients.length || !c.method.length) { toast("Add at least one ingredient and one step"); return true; }
       const id = ui.edit || `custom-${Date.now().toString(36)}`;
       commit(s => { s.custom[id] = c; });
-      ui.editing = false; ui.edit = null; ui.open = id; renderSheet();
+      ui.editing = false; ui.edit = null; ui.draft = null; ui.open = id; renderSheet();
       toast("Recipe saved");
       return true;
     }
@@ -1590,6 +1628,434 @@ function featureClick(act, el) {
       return true;
     }
     case "custom-tex": copyText(customTex(el.dataset.id), `Copied. Save it as the file named at the top, in the ${FOLDERS[state.custom[el.dataset.id].chapter]} folder`); return true;
+  }
+  return false;
+}
+
+// ─── One shopping trip for both planners ────────────────────────────────────
+// With "Include GP's list" (or George's) on, the other planner's meals are
+// added to this list, each item tagged with who needs it. The other planner
+// is read from this device, or live from its household document when
+// sharing. A tick shows on both lists; unticking clears it on both.
+const OTHER = GP ? "george" : "gp";
+const COMBINE_KEY = "george-meal-planner-combine";
+let other = null;        // the other planner's state, or null
+let otherRef = null;     // its Firestore document when sharing
+let combine = (() => { try { return localStorage.getItem(COMBINE_KEY) === "1"; } catch { return false; } })();
+function loadOtherLocal() {
+  if (otherRef) return;
+  try { const raw = localStorage.getItem("george-meal-planner" + PROFILES[OTHER].suffix); other = raw ? JSON.parse(raw) : null; } catch { other = null; }
+}
+function watchOther(fs, ref) {
+  otherRef = fs.doc(ref.firestore, "households", householdCode() + PROFILES[OTHER].suffix);
+  fs.onSnapshot(otherRef, snap => {
+    const data = snap.data();
+    other = data && data.state ? data.state : null;
+    if (combine && ui.tab === "shop") render();
+  }, () => { otherRef = null; });
+}
+function otherIds() {
+  if (!other) return [];
+  return [...Object.values(other.slots || {}), ...(other.extras || [])].filter(id => id && BY_ID[id]);
+}
+function combineOn() { return combine && otherIds().length > 0; }
+// Sources for the shopping list: this planner, plus the other one when combined.
+function listSources() {
+  const out = [{ who: PROFILE, ids: plannedIds(), scale: scaleOf }];
+  if (combineOn()) out.push({ who: OTHER, ids: otherIds(), scale: id => (other.scale && other.scale[id]) || 1 });
+  return out;
+}
+function otherChecked(key) { return combineOn() && !!(other.checked && other.checked[key]); }
+async function otherUntick(key) {
+  if (!other || !other.checked || !other.checked[key]) return;
+  delete other.checked[key];
+  if (otherRef && fb) {
+    try { await fb.fs.updateDoc(otherRef, new fb.fs.FieldPath("state", "checked", key), fb.fs.deleteField()); } catch {}
+  } else {
+    try { localStorage.setItem("george-meal-planner" + PROFILES[OTHER].suffix, JSON.stringify(other)); } catch {}
+  }
+}
+function whoTag(row) {
+  if (!combineOn()) return "";
+  const w = [...row.who];
+  return `<span class="who">${w.length > 1 ? "Both" : esc(PROFILES[w[0]].name)}</span>`;
+}
+
+// ─── Plan my week ───────────────────────────────────────────────────────────
+// Tries a few hundred random combinations for the week's three slots and
+// keeps the best one that fits the budget and protein target, preferring
+// recipes that share ingredients (so the second half of the bag of spinach
+// gets used) and your favourites.
+function slotCandidates(slot) {
+  const recent = recentIds();
+  const pool = visibleRecipes().filter(r => slot.chapters.includes(r.chapter) && r.nutrition && r.nutrition.per === "serving" && recipeCost(r));
+  const fresh = pool.filter(r => !recent.has(r.id) && !cookedRecently(r.id));
+  return fresh.length >= 3 ? fresh : pool;
+}
+function sharedKeys(rs) {
+  const seen = new Map();
+  for (const r of rs) for (const k of new Set(r.shop.filter(i => !i.optional && i.aisle !== "Pantry: check first").map(i => i.key)))
+    seen.set(k, (seen.get(k) || 0) + 1);
+  return [...seen].filter(([, n]) => n > 1).map(([k]) => k);
+}
+function planWeek({ budget, protein, share }) {
+  const pools = SLOTS.map(slotCandidates);
+  if (pools.some(p => !p.length)) return null;
+  const pick = pool => {
+    let roll = Math.random() * pool.reduce((a, r) => a + weight(r), 0);
+    for (const r of pool) { roll -= weight(r); if (roll <= 0) return r; }
+    return pool[pool.length - 1];
+  };
+  let best = null;
+  for (let n = 0; n < 600; n++) {
+    const rs = pools.map(pick);
+    if (new Set(rs.map(r => r.id)).size < rs.length) continue;
+    const cost = rs.reduce((a, r) => a + recipeCost(r).total, 0);
+    const low = Math.min(...rs.map(r => r.nutrition.protein));
+    const shared = sharedKeys(rs);
+    const miss = Math.max(0, cost - budget) / budget + Math.max(0, protein - low) / protein;
+    const score = -miss * 100 + (share ? shared.length * 2 : 0) + rs.reduce((a, r) => a + Math.log(weight(r) + 1), 0) - cost / budget;
+    if (!best || score > best.score) best = { rs, cost, low, shared, fits: miss === 0, score };
+  }
+  return best;
+}
+function plannerView() {
+  const p = ui.plan || {};
+  const res = p.result;
+  const names = res ? res.shared.map(k => res.rs.flatMap(r => r.shop).find(i => i.key === k).name) : [];
+  return `<div class="overlay" data-act="close-overlay">
+    <article class="sheet" role="dialog" aria-modal="true" aria-labelledby="plan-title">
+      <div class="top-row"><h2 id="plan-title">Plan my week</h2><button class="btn small ghost" data-act="close" aria-label="Close">Close</button></div>
+      <p class="muted-note">Picks ${SLOTS.length} meals that fit your budget and protein target, favouring your favourites and skipping anything had recently.</p>
+      <div class="fields">
+        <label class="field"><span>Budget for the ${SLOTS.length} meals</span><span class="with-unit">$<input type="number" inputmode="decimal" id="plan-budget" value="${p.budget ?? 50}" min="10"></span></label>
+        <label class="field"><span>Protein per serve, at least</span><span class="with-unit"><input type="number" inputmode="numeric" id="plan-protein" value="${p.protein ?? 35}" min="0">g</span></label>
+      </div>
+      <label class="toggle"><input type="checkbox" id="plan-share" ${p.share !== false ? "checked" : ""}> Prefer meals that share ingredients</label>
+      <div class="sheet-actions"><button class="btn primary" data-act="plan-run">${res ? "Try another" : "Plan it"}</button></div>
+      ${res ? `<div class="plan-result">
+        ${res.fits ? "" : `<p class="today">Nothing quite fits, so this is the closest. Try a bigger budget or a lower protein target.</p>`}
+        <ul class="food-list">${res.rs.map((r, i) => `<li><span><strong>${esc(SLOTS[i].label)}:</strong> ${esc(r.title)}<small>${money(recipeCost(r).perServe)}/serve · ${r.nutrition.protein} g protein · ${r.nutrition.kcal} kcal</small></span></li>`).join("")}</ul>
+        <p class="muted-note">About <strong>${money(res.cost)}</strong> for all ${SLOTS.length}, at least <strong>${res.low} g</strong> protein a serve.${names.length ? ` Shares ${names.slice(0, 5).map(esc).join(", ")}.` : ""}</p>
+        <div class="sheet-actions"><button class="btn primary" data-act="plan-use">Use this plan</button></div>
+      </div>` : ""}
+    </article>
+  </div>`;
+}
+
+// ─── Meal-prep session ──────────────────────────────────────────────────────
+// For cooking several of the week's meals in one go: what to start first,
+// what can cook at the same time, all the chopping in one list, what to
+// defrost, and how many containers you'll fill.
+const APPLIANCE = { slow: "Slow cooker", pressure: "Instant Pot", stovetop: "Stovetop", oven: "Oven" };
+const PREP_WORDS = /\b(finely chopped|roughly chopped|chopped|diced|sliced|grated|crushed|minced|cubed|shredded|julienned|halved|quartered)\b/i;
+function prepRecipes() { return plannedIds().map(id => BY_ID[id]).filter(r => MEAL_CHAPTERS.includes(r.chapter)); }
+function prepPlan() {
+  const rs = prepRecipes().sort((a, b) => (cookMinutes(b) ?? 0) - (cookMinutes(a) ?? 0));
+  const chop = new Map(), defrost = new Map();
+  for (const r of rs) {
+    const f = scaleOf(r.id);
+    for (const item of r.shop) {
+      if (item.optional) continue;
+      const w = item.raw.match(PREP_WORDS);
+      if (w && !["Pantry: check first", "Cans, jars & pulses", "Frozen"].includes(item.aisle)) {
+        const c = chop.get(item.key) || { name: item.name, parts: [], how: new Set(), from: new Set() };
+        c.parts.push({ qty: item.qty == null ? null : item.qty * f, unit: item.unit });
+        c.how.add(w[1].toLowerCase()); c.from.add(r.title);
+        chop.set(item.key, c);
+      }
+      if (item.aisle === "Meat & fish") {
+        const d = defrost.get(item.key) || { name: item.name, parts: [] };
+        d.parts.push({ qty: item.qty == null ? null : item.qty * f, unit: item.unit });
+        defrost.set(item.key, d);
+      }
+    }
+  }
+  const portions = rs.reduce((a, r) => a + Math.round(servingsCountOf(r) * scaleOf(r.id)), 0);
+  return { rs, chop: [...chop.entries()], defrost: [...defrost.entries()], portions, spare: Math.max(0, portions - state.eaters) };
+}
+function prepView() {
+  const p = prepPlan();
+  if (!p.rs.length) return sheetWrap("prep-title", "Prep session", `<p>Plan some meals first, then come back for a prep plan.</p>`);
+  const fmtMin = m => m == null ? "time not set" : m >= 60 ? `${+(m / 60).toFixed(1)} hr` : `${m} min`;
+  const apps = new Set(p.rs.map(r => r.chapter));
+  const order = p.rs.map((r, i) => `<li><strong>${esc(APPLIANCE[r.chapter])}:</strong> ${esc(r.title)} <small>${fmtMin(cookMinutes(r))}</small>${i === 0 && p.rs.length > 1 ? " · start this first" : ""}</li>`).join("");
+  const chop = p.chop.sort((a, b) => b[1].from.size - a[1].from.size || a[1].name.localeCompare(b[1].name))
+    .map(([k, c]) => `<li><strong>${esc(c.name)}</strong> ${esc(amountText(c.parts, k))}, ${esc([...c.how].join(" / "))}<small>${[...c.from].map(esc).join(" · ")}</small></li>`).join("");
+  const thaw = p.defrost.map(([k, d]) => `<li>${esc(d.name)} ${esc(amountText(d.parts, k))}</li>`).join("");
+  const body = `
+    <h3>1. Cooking order</h3>
+    <ol class="prep-list">${order}</ol>
+    ${apps.size > 1 ? `<p class="muted-note">${[...apps].map(a => APPLIANCE[a]).join(", ")} can all run at the same time${apps.has("pressure") && apps.has("stovetop") ? " (the Instant Pot's Sauté uses the pot, not a hob)" : ""}.</p>` : ""}
+    ${thaw ? `<h3>2. The night before</h3><p class="muted-note">Move from the freezer to the fridge if frozen:</p><ul class="prep-list">${thaw}</ul>` : ""}
+    ${chop ? `<h3>${thaw ? 3 : 2}. Chop everything first</h3><ul class="prep-list chop">${chop}</ul>` : ""}
+    <h3>Containers</h3>
+    <p>${p.portions} portions in all. With ${state.eaters} eating tonight, that's <strong>${p.spare} to store</strong>: keep 3 days' worth in the fridge and freeze the rest.</p>
+    <div class="sheet-actions"><button class="btn" data-act="labels-prep">Print freezer labels</button></div>`;
+  return sheetWrap("prep-title", "Prep session", body);
+}
+function sheetWrap(id, title, body) {
+  return `<div class="overlay" data-act="close-overlay">
+    <article class="sheet" role="dialog" aria-modal="true" aria-labelledby="${id}">
+      <div class="top-row"><h2 id="${id}">${esc(title)}</h2><button class="btn small ghost" data-act="close" aria-label="Close">Close</button></div>
+      ${body}
+    </article>
+  </div>`;
+}
+
+// ─── Freezer labels ─────────────────────────────────────────────────────────
+// Printed (or saved as PDF from the print dialog) on plain paper, 2 across.
+function labelHtml(r, date, where, n) {
+  const by = isoAdd(date, KEEPS[where]);
+  const nut = r.nutrition ? `${r.nutrition.kcal} kcal · ${r.nutrition.protein} g protein` : "";
+  const reheat = (r.storage || []).find(s => /reheat|microwave|thaw/i.test(s));
+  return Array.from({ length: Math.min(n, 12) }, () => `<div class="label">
+    <strong>${esc(r.title)}</strong>
+    <span>Cooked ${esc(prettyWeek(date))} · ${where === "freezer" ? "Freezer" : "Fridge"}</span>
+    <span>Use by <b>${esc(prettyWeek(by))}</b></span>
+    ${nut ? `<span>1 portion: ${nut}</span>` : ""}
+    ${reheat ? `<span class="small">${esc(plain(reheat))}</span>` : ""}
+  </div>`).join("");
+}
+function printLabels(html) {
+  let root = document.getElementById("print-root");
+  if (!root) { root = document.createElement("div"); root.id = "print-root"; document.body.appendChild(root); }
+  root.innerHTML = `<div class="labels">${html}</div>`;
+  setTimeout(() => { window.print(); }, 50);
+}
+
+// ─── Hands-free cooking ─────────────────────────────────────────────────────
+// Read aloud speaks each step as you reach it. Voice control listens for
+// "next", "back", "repeat" and "stop" (Chrome and Edge; ignored while the
+// planner itself is speaking so a step that says "next" doesn't skip ahead).
+let recog = null;
+function cookStepText() {
+  const r = BY_ID[ui.cook.id], steps = cookSteps(r), i = ui.cook.step;
+  if (i === 0) {
+    const items = r.sections.filter(s => s.kind === "ingredients").flatMap(s => s.items).filter(it => !it.group);
+    return `Get ready. You'll need: ${items.map(it => plain(scaleText(it.text, scaleOf(r.id)))).join(". ")}.`;
+  }
+  const st = steps[Math.min(i, steps.length) - 1];
+  return `Step ${i}. ${plain(st.text)} ${st.sub.map(plain).join(". ")}`;
+}
+function speak(text) {
+  if (!("speechSynthesis" in window)) return;
+  speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = "en-NZ"; u.rate = 0.95;
+  speechSynthesis.speak(u);
+}
+function speakIfNeeded() {
+  if (!ui.cook || !ui.cook.speak || ui.cook.spoken === ui.cook.step) return;
+  ui.cook.spoken = ui.cook.step;
+  speak(cookStepText());
+}
+function startListening() {
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!SR) { toast("Voice control needs Chrome or Edge. Read aloud still works."); ui.cook.listen = false; return; }
+  recog = new SR();
+  recog.lang = "en-NZ"; recog.continuous = true; recog.interimResults = false;
+  recog.onresult = e => {
+    if (window.speechSynthesis && speechSynthesis.speaking) return;
+    const said = e.results[e.results.length - 1][0].transcript.toLowerCase();
+    if (/\b(next|forward|done)\b/.test(said)) cookGo(1);
+    else if (/\b(back|previous)\b/.test(said)) cookGo(-1);
+    else if (/\b(repeat|again|what)\b/.test(said)) speak(cookStepText());
+    else if (/\b(stop|quiet|shush)\b/.test(said)) { speechSynthesis.cancel(); }
+  };
+  recog.onend = () => { if (ui.cook && ui.cook.listen && recog) try { recog.start(); } catch {} };
+  recog.onerror = e => { if (e.error === "not-allowed") { toast("Microphone access was blocked"); ui.cook.listen = false; stopListening(); renderSheet(); } };
+  try { recog.start(); } catch {}
+}
+function stopListening() { if (recog) { const r = recog; recog = null; try { r.stop(); } catch {} } }
+function stopHandsFree() { stopListening(); if ("speechSynthesis" in window) speechSynthesis.cancel(); }
+
+// ─── Ingredient swaps ───────────────────────────────────────────────────────
+const SWAPS = {
+  "lentils": "a drained can of brown lentils (stir in at the end), or split red lentils (they go softer)",
+  "red-lentils": "yellow split peas (cook 15–20 min longer), or a drained can of brown lentils stirred in at the end",
+  "split-peas": "split red lentils (cook a bit less), or a drained can of chickpeas stirred in at the end",
+  "black-beans": "kidney beans, pinto beans or a can of mixed beans",
+  "kidney-beans": "black beans or a can of mixed beans",
+  "cannellini": "butter beans, chickpeas or any drained white beans",
+  "chickpeas": "cannellini or butter beans",
+  "edamame": "frozen peas or broad beans",
+  "beef-mince": "pork mince, chicken mince, or half mince and half red lentils",
+  "pork-mince": "beef or chicken mince",
+  "chicken-breast": "chicken thighs (juicier, cook a little longer)",
+  "chicken-thigh": "chicken breast (cook a little less so it doesn't dry out)",
+  "pork-shoulder": "pork leg, or boneless chicken thighs (cut the time by a third)",
+  "stewing-beef": "chuck steak or gravy beef",
+  "capsicum": "courgette, frozen mixed veg, or leave it out",
+  "courgette": "capsicum, eggplant or frozen mixed veg",
+  "spinach": "frozen spinach (squeeze it dry), kale or silverbeet",
+  "kumara": "pumpkin or potatoes",
+  "potato": "kumara or pumpkin",
+  "pumpkin": "kumara or carrots",
+  "celery": "extra onion and carrot",
+  "mushrooms": "courgette or eggplant",
+  "fresh-tomatoes": "a can of chopped tomatoes",
+  "tomato": "canned chopped tomatoes (drain them for salads)",
+  "canned-tomatoes": "passata, or 2 tbsp tomato paste with 1 cup water",
+  "passata": "a can of chopped tomatoes, blended",
+  "tomato-paste": "a little extra passata or ketchup",
+  "coconut-milk": "light coconut cream with water, or milk with 1 tsp coconut essence",
+  "coconut-cream": "coconut milk (thicken with 1 tsp cornflour)",
+  "greek-yoghurt": "plain yoghurt, or sour cream",
+  "yoghurt": "Greek yoghurt or sour cream",
+  "sour-cream": "Greek yoghurt",
+  "cream": "evaporated milk, or milk with 1 tsp cornflour",
+  "milk": "any milk, or water with milk powder",
+  "butter": "olive or canola oil (use a little less)",
+  "parmesan": "tasty cheese",
+  "cheese": "any hard cheese, or nutritional yeast",
+  "mozzarella": "tasty cheese",
+  "feta": "cottage cheese with a pinch of salt",
+  "eggs": "for baking, 1 tbsp chia or ground flax in 3 tbsp water per egg",
+  "rice": "any rice, quinoa or couscous (check the cooking time)",
+  "basmati-rice": "jasmine or long-grain rice",
+  "jasmine-rice": "basmati or long-grain rice",
+  "brown-rice": "white rice (cook less), or barley",
+  "pasta": "any pasta shape",
+  "noodles": "spaghetti or rice noodles",
+  "chicken-stock": "a stock cube or 1 tsp stock powder in water, or vegetable stock",
+  "beef-stock": "a stock cube or 1 tsp stock powder in water",
+  "soy-sauce": "tamari, or Worcestershire sauce with a pinch of salt",
+  "honey": "golden syrup, maple syrup or brown sugar",
+  "brown-sugar": "white sugar with 1 tsp golden syrup",
+  "lemon": "lime, or 1 tbsp vinegar for the juice",
+  "lime": "lemon",
+  "garlic": "½ tsp garlic powder per clove, or jarred garlic",
+  "ginger": "jarred ginger, or ¼ tsp ground ginger per tsp fresh",
+  "coriander": "parsley or spring onions",
+  "basil": "parsley, or 1 tsp dried basil per handful",
+  "parsley": "coriander or chives",
+  "spring-onion": "chives or a little red onion",
+  "onion": "red onion or 1 tsp onion powder",
+  "smoked-paprika": "sweet paprika with a pinch of chilli",
+  "cumin": "ground coriander or curry powder",
+  "curry-paste": "2 tsp curry powder fried with garlic and ginger",
+  "wine": "stock with 1 tbsp vinegar",
+  "vinegar": "lemon juice",
+  "frozen-mixed-veg": "any frozen or fresh veg, chopped small",
+  "frozen-peas": "frozen corn, edamame or mixed veg",
+  "corn": "frozen peas",
+  "tortillas": "pita or flatbreads",
+  "bread": "wraps or rolls",
+  "flour": "for thickening, half as much cornflour",
+  "cornflour": "twice as much plain flour",
+  "sr-flour": "1 cup plain flour plus 2 tsp baking powder",
+  "peanut-butter": "any nut butter, or tahini",
+};
+function swapsBox(r) {
+  const seen = new Set(), rows = [];
+  for (const i of r.shop) if (SWAPS[i.key] && !seen.has(i.key)) { seen.add(i.key); rows.push(`<li><strong>${esc(i.name)}</strong>: ${esc(SWAPS[i.key])}</li>`); }
+  return rows.length ? `<details class="swaps"><summary>Out of something? Swaps for ${rows.length} ingredients</summary><ul>${rows.join("")}</ul></details>` : "";
+}
+
+// ─── Weekly summary ─────────────────────────────────────────────────────────
+function weekSummary() {
+  const today = todayISO(), from = isoAdd(today, -6);
+  const inWeek = d => d >= from && d <= today;
+  const cooked = Object.entries(state.log).flatMap(([id, ds]) => ds.filter(inWeek).map(d => id)).filter(id => BY_ID[id]);
+  const spent = cooked.reduce((a, id) => a + (recipeCost(BY_ID[id])?.total || 0) * scaleOf(id), 0);
+  const days = Array.from({ length: 7 }, (_, i) => isoAdd(today, -i)).filter(d => dayEntries(d).length);
+  const protein = days.length ? Math.round(days.reduce((a, d) => a + dayTotals(d).protein, 0) / days.length) : null;
+  const wNow = weightTrend(today), wThen = weightTrend(isoAdd(today, -7));
+  const binned = (state.waste || []).filter(w => inWeek(w.date)).reduce((a, w) => a + w.n, 0);
+  const firsts = Object.entries(state.log).filter(([id, ds]) => BY_ID[id] && ds.length && inWeek(ds[0]) && state.rating[id])
+    .sort((a, b) => state.rating[b[0]] - state.rating[a[0]]);
+  const tile = (label, value, note = "") => `<div class="tile"><span>${label}</span><strong>${value}</strong>${note ? `<small>${note}</small>` : ""}</div>`;
+  if (!cooked.length && !days.length && !binned) return "";
+  return `<details class="summary"${[0, 1].includes(new Date().getDay()) ? " open" : ""}>
+    <summary>Your last 7 days</summary>
+    <div class="tiles">
+      ${tile("Meals cooked", cooked.length)}
+      ${tile("Spent on them", spent ? money(spent) : "–", "rough prices")}
+      ${tile("Protein a day", protein != null ? `${protein} g` : "–", protein != null ? `${days.length} days logged` : "log food to see this")}
+      ${tile("Weight", wNow != null && wThen != null ? `${wNow - wThen > 0 ? "+" : ""}${(wNow - wThen).toFixed(1)} kg` : "–", wNow != null ? `trend ${wNow.toFixed(1)} kg` : "")}
+      ${tile("Leftovers thrown out", binned ? `${binned}` : "None", binned ? "portions" : "nice work")}
+      ${tile("Best new recipe", firsts.length ? esc(BY_ID[firsts[0][0]].title) : "–", firsts.length ? "★".repeat(state.rating[firsts[0][0]]) : "rate new meals to see this")}
+    </div>
+  </details>`;
+}
+
+// ─── Recipe ideas ───────────────────────────────────────────────────────────
+// The To Add lists from each folder's Ideas.tex. "Write it up" starts an
+// Add a recipe draft with the name and chapter filled in.
+const IDEAS = /*IDEAS*/[];
+function ideaDone(idea) {
+  const t = idea.title.toLowerCase();
+  return RECIPES.some(r => r.title.toLowerCase() === t);
+}
+function renderIdeaList() {
+  const q = (ui.ideaQ || "").trim().toLowerCase();
+  const list = IDEAS.filter(i => (!ui.chapter || i.chapter === ui.chapter) && (!GP || !["slow", "pressure"].includes(i.chapter))
+    && (!q || (i.title + " " + i.hint).toLowerCase().includes(q)) && !ideaDone(i));
+  if (!list.length) return `<p class="empty-note">No ideas match.</p>`;
+  const groups = new Map();
+  for (const i of list) {
+    const k = `${CHAPTER_LABEL[i.chapter]}${i.group ? ` · ${i.group}` : ""}`;
+    if (!groups.has(k)) groups.set(k, []);
+    groups.get(k).push(i);
+  }
+  return `<p class="result-count">${list.length} ideas</p>` + [...groups].map(([k, is]) => `<section class="idea-group"><h3>${esc(k)}</h3><ul class="food-list">${is.map(i =>
+    `<li><span>${esc(i.title)}${i.hint ? `<small>${esc(i.hint)}</small>` : ""}</span><button class="btn small" data-act="idea-write" data-i="${IDEAS.indexOf(i)}">Write it up</button></li>`).join("")}</ul></section>`).join("");
+}
+function renderIdeas(chapterChips) {
+  return `<section class="filters">
+    <input class="search" id="idea-search" type="search" placeholder="Search ideas, e.g. curry" value="${esc(ui.ideaQ || "")}" aria-label="Search ideas">
+    <div class="chips" role="group" aria-label="Chapter">${chapterChips}</div>
+  </section>
+  <div id="idea-list">${renderIdeaList()}</div>`;
+}
+
+function featureClick2(act, el) {
+  switch (act) {
+    case "combine": return false;  // handled on change
+    case "plan-open": ui.plan = Object.assign({}, ui.plan, { result: null }); ui.planning = true; renderSheet(); return true;
+    case "plan-run": {
+      const budget = readNum("plan-budget") || 50, protein = readNum("plan-protein"), share = document.getElementById("plan-share").checked;
+      const result = planWeek({ budget, protein, share });
+      if (!result) { toast("Not enough recipes to choose from"); return true; }
+      ui.plan = { budget, protein, share, result };
+      document.getElementById("sheet-root").dataset.view = "";
+      renderSheet();
+      return true;
+    }
+    case "plan-use": {
+      const rs = ui.plan.result.rs;
+      commit(s => SLOTS.forEach((sl, i) => { moveDay(s, s.slots[sl.key], rs[i].id); s.slots[sl.key] = rs[i].id; }));
+      ui.planning = false; renderSheet();
+      toast("Week planned");
+      return true;
+    }
+    case "prep-open": ui.prep = true; renderSheet(); return true;
+    case "labels-prep": {
+      const rs = prepRecipes();
+      printLabels(rs.map(r => labelHtml(r, todayISO(), "freezer", Math.max(1, Math.round(servingsCountOf(r) * scaleOf(r.id)) - state.eaters))).join(""));
+      return true;
+    }
+    case "labels-leftovers": printLabels(leftoverList().map(l => labelHtml(BY_ID[l.id], l.date, l.where, l.n)).join("")); return true;
+    case "cook-speak": {
+      ui.cook.speak = !ui.cook.speak;
+      if (ui.cook.speak) { ui.cook.spoken = null; speakIfNeeded(); } else speechSynthesis.cancel();
+      renderSheet();
+      return true;
+    }
+    case "cook-listen": {
+      ui.cook.listen = !ui.cook.listen;
+      if (ui.cook.listen) { startListening(); if (!ui.cook.speak) { ui.cook.speak = true; ui.cook.spoken = null; speakIfNeeded(); } } else stopListening();
+      renderSheet();
+      return true;
+    }
+    case "ideas-toggle": ui.ideas = !ui.ideas; ui.make = false; render(); return true;
+    case "idea-write": {
+      const idea = IDEAS[Number(el.dataset.i)];
+      ui.draft = { title: idea.title, chapter: idea.chapter, intro: idea.hint ? idea.hint[0].toUpperCase() + idea.hint.slice(1) + "." : "" };
+      ui.edit = null; ui.open = null; ui.editing = true; renderSheet();
+      return true;
+    }
   }
   return false;
 }
@@ -2096,7 +2562,7 @@ function render() {
   const groups = shoppingList();
   const toBuy = Object.values(groups).flat().filter(x => !x.atHome);
   const total = toBuy.length;
-  const left = toBuy.filter(x => !state.checked[x.key]).length;
+  const left = toBuy.filter(x => !x.done).length;
   document.getElementById("shop-count").textContent = total ? left : "";
   const app = document.getElementById("app");
   app.innerHTML = ui.tab === "week" ? renderWeek() : ui.tab === "recipes" ? renderRecipes() : ui.tab === "track" ? renderTrack() : renderShop(groups);
@@ -2145,6 +2611,7 @@ function renderWeek() {
     `<li><strong>${esc(prettyWeek(h.week))}</strong> · ${h.ids.map(id => esc(BY_ID[id]?.title || "Removed recipe")).join(" · ")}</li>`).join("");
   return `
   ${todayBox()}
+  ${weekSummary()}
   <section class="section-head">
     <div>
       <h2>Week of ${esc(prettyWeek(state.week))}</h2>
@@ -2156,6 +2623,8 @@ function renderWeek() {
       <label class="toggle"><input type="checkbox" id="mince-only" data-act="mince-only" ${ui.minceOnly ? "checked" : ""}> Mince recipes only</label>
       <label class="toggle"><input type="checkbox" id="high-protein-week" data-act="high-protein" ${ui.highProtein ? "checked" : ""}> ${HIGH_PROTEIN} g+ protein</label>
       <button class="btn" data-act="shuffle-all">${GP ? "Shuffle all three" : "Shuffle the trio"}</button>
+      <button class="btn" data-act="plan-open">Plan my week</button>
+      <button class="btn" data-act="prep-open">Prep session</button>
       <button class="btn primary" data-act="new-week">Start next week</button>
     </div>
   </section>
@@ -2209,12 +2678,14 @@ function renderRecipes() {
   const all = visibleRecipes(), nCustom = all.filter(r => r.custom).length;
   const head = `
   <section class="section-head">
-    <div><h2>${ui.make ? "What can I make?" : "Recipes"}</h2><p>${ui.make ? "Pick what's in the fridge and cupboard, and see what it makes." : GP ? `${all.length} easy recipes: GP's book, plus quick ones (${BASIC_MINUTES} min or less, ${BASIC_INGREDIENTS} ingredients or fewer) with no slow cooker or Instant Pot.` : `All ${all.length} recipes${nCustom ? `: ${all.length - nCustom} from your book and ${nCustom} added here` : " from your book"}.`}</p></div>
+    <div><h2>${ui.ideas ? "Recipe ideas" : ui.make ? "What can I make?" : "Recipes"}</h2><p>${ui.ideas ? "Ideas from the To Add lists that aren't in the book yet. Write one up to add it." : ui.make ? "Pick what's in the fridge and cupboard, and see what it makes." : GP ? `${all.length} easy recipes: GP's book, plus quick ones (${BASIC_MINUTES} min or less, ${BASIC_INGREDIENTS} ingredients or fewer) with no slow cooker or Instant Pot.` : `All ${all.length} recipes${nCustom ? `: ${all.length - nCustom} from your book and ${nCustom} added here` : " from your book"}.`}</p></div>
     <div class="actions">
       <button class="btn${ui.make ? " primary" : ""}" data-act="make-toggle" aria-pressed="${!!ui.make}">${ui.make ? "Back to all recipes" : "What can I make?"}</button>
+      <button class="btn${ui.ideas ? " primary" : ""}" data-act="ideas-toggle" aria-pressed="${!!ui.ideas}">${ui.ideas ? "Back to all recipes" : "Ideas"}</button>
       <button class="btn" data-act="custom-new">Add a recipe</button>
     </div>
   </section>`;
+  if (ui.ideas && !slot) return `${head}${renderIdeas(chapterChips)}`;
   if (ui.make && !slot) return `${head}
   <section class="filters"><div class="chips" role="group" aria-label="Chapter">${chapterChips}</div></section>
   ${renderMake()}`;
@@ -2233,22 +2704,25 @@ function renderRecipes() {
 }
 
 function renderShop(groups) {
-  const ids = plannedIds();
+  loadOtherLocal();
+  const ids = listSources().flatMap(src => src.ids);
+  const otherName = PROFILES[OTHER].name;
+  const combineBox = otherIds().length ? `<label class="toggle"><input type="checkbox" data-act="combine" ${combine ? "checked" : ""}> Include ${esc(otherName)}'s list (${otherIds().length} ${otherIds().length === 1 ? "meal" : "meals"})</label>` : "";
   if (!ids.length) {
-    return `<section class="section-head"><div><h2>Shopping list</h2><p>Plan some meals and their ingredients will appear here, grouped by aisle.</p></div></section>`;
+    return `<section class="section-head"><div><h2>Shopping list</h2><p>Plan some meals and their ingredients will appear here, grouped by aisle.</p></div><div class="actions">${combineBox}</div></section>`;
   }
   const home = Object.values(groups).flat().filter(x => x.atHome).sort((x, y) => x.name.localeCompare(y.name));
   const staples = groups["Pantry: check first"].filter(x => !x.atHome);
   const aisleCards = AISLES.map(a => {
     const items = groups[a].filter(x => !x.atHome);
     if (!items.length) return "";
-    const left = items.filter(x => !state.checked[x.key]).length;
+    const left = items.filter(x => !x.done).length;
     return `<section class="aisle"><h3>${esc(a)}<span>${left}/${items.length}</span></h3><ul>${items.map(x => {
-      const done = !!state.checked[x.key];
+      const done = x.done;
       const uses = x.uses.map(u => `<li><span class="from" data-m="${u.recipe.chapter}">${esc(u.recipe.title)}</span>${u.lines.map(l => esc(l)).join("; ")}</li>`).join("");
       return `<li class="${done ? "done" : ""}">
         <label><input type="checkbox" data-act="check" data-key="${esc(x.key)}" ${done ? "checked" : ""}>
-          <span class="txt"><span class="item-name">${esc(x.name)}</span>${x.amount ? `<span class="amt">${esc(x.amount)}</span>` : ""}${x.optional ? `<span class="opt">optional</span>` : ""}</span>
+          <span class="txt"><span class="item-name">${esc(x.name)}</span>${whoTag(x)}${x.amount ? `<span class="amt">${esc(x.amount)}</span>` : ""}${x.optional ? `<span class="opt">optional</span>` : ""}</span>
         </label>
         <button class="have" data-act="have" data-key="${esc(x.key)}" title="Always have this at home">Have it</button>
         <details><summary>${x.uses.length === 1 ? esc(x.uses[0].recipe.title) : `${x.uses.length} recipes`}</summary><ul class="uses">${uses}</ul></details>
@@ -2257,8 +2731,9 @@ function renderShop(groups) {
   }).join("");
   return `
   <section class="section-head">
-    <div><h2>Shopping list</h2><p>${ids.length} ${ids.length === 1 ? "recipe" : "recipes"} this week. Amounts are added up across recipes. Tap a recipe name under an item to see exactly what each one needs.</p>${weekCost()}</div>
+    <div><h2>Shopping list</h2><p>${ids.length} ${ids.length === 1 ? "recipe" : "recipes"} this week${combineOn() ? ` (yours and ${esc(otherName)}'s)` : ""}. Amounts are added up across recipes. Tap a recipe name under an item to see exactly what each one needs.</p>${weekCost()}</div>
     <div class="actions">
+      ${combineBox}
       ${staples.length ? `<button class="btn ghost" data-act="have-staples">Spices &amp; staples are at home</button>` : ""}
       <button class="btn" data-act="share-list">Share list</button>
       <button class="btn ghost" data-act="copy-list">Copy list</button>
@@ -2292,10 +2767,12 @@ function renderSheet() {
   const root = document.getElementById("sheet-root");
   // The scanner's camera and the recipe form keep their state across
   // re-renders (e.g. a household sync arriving), so only draw them on change.
-  const view = ui.cook ? "" : ui.scan ? `scan:${ui.scan.stage}:${ui.scan.code || ""}` : ui.editing ? `edit:${ui.edit || "new"}` : "";
+  const view = ui.cook ? "" : ui.scan ? `scan:${ui.scan.stage}:${ui.scan.code || ""}` : ui.editing ? `edit:${ui.edit || "new"}` : ui.planning ? "plan" : "";
   if (view && root.dataset.view === view) return;
   root.dataset.view = view;
-  if (ui.cook) { root.innerHTML = cookView(); return; }
+  if (ui.cook) { root.innerHTML = cookView(); speakIfNeeded(); return; }
+  if (ui.planning) { root.innerHTML = plannerView(); return; }
+  if (ui.prep) { root.innerHTML = prepView(); return; }
   if (ui.scan) { root.innerHTML = scanView(); if (ui.scan.stage === "camera") startScanner(); else document.getElementById("scan-grams")?.focus(); return; }
   if (ui.editing) { root.innerHTML = customForm(); document.getElementById("cf-title").focus({ preventScroll: true }); return; }
   if (!ui.open) { root.innerHTML = ui.share ? shareDialog() : ""; return; }
@@ -2328,6 +2805,7 @@ function renderSheet() {
         <div class="sheet-actions">${cookSteps(r).length ? `<button class="btn primary" data-act="cook-start" data-id="${r.id}">Start cooking</button>` : ""}${actions}${r.nutrition ? `<button class="btn" data-act="track-log" data-id="${r.id}">Log a ${r.nutrition.per === "serving" ? "serve" : esc(r.nutrition.per)}</button>` : ""}${MEAL_CHAPTERS.includes(r.chapter) ? `<button class="btn ghost" data-act="lo-add" data-id="${r.id}">+1 leftover portion</button>` : ""}${r.custom ? `<button class="btn ghost" data-act="custom-edit" data-id="${r.id}">Edit</button><button class="btn ghost" data-act="custom-tex" data-id="${r.id}">Copy for the book</button>` : ""}</div>
       </div>
       ${storageBox(r)}
+      ${swapsBox(r)}
       ${renderSections(r.sections, scaleOf(r.id))}
       <span class="file">${esc(r.file)}</span>
     </article>
@@ -2343,10 +2821,10 @@ document.addEventListener("click", e => {
   if (act === "close-overlay" && e.target !== el) return;
   const id = el.dataset.id, slot = el.dataset.slot;
   if (act.startsWith("track-") && trackClick(act, el)) return;
-  if (featureClick(act, el) || trackClick2(act, el)) return;
+  if (featureClick(act, el) || featureClick2(act, el) || trackClick2(act, el)) return;
   switch (act) {
     case "open": ui.open = id; renderSheet(); break;
-    case "close": case "close-overlay": ui.open = null; ui.share = false; ui.editing = false; ui.edit = null; if (ui.scan) { stopScanner(); ui.scan = null; } renderSheet(); break;
+    case "close": case "close-overlay": ui.open = null; ui.share = false; ui.editing = false; ui.edit = null; ui.planning = false; ui.prep = false; ui.draft = null; if (ui.scan) { stopScanner(); ui.scan = null; } renderSheet(); break;
     case "cheap": ui.cheap = !ui.cheap; render(); break;
     case "sort-cheap": ui.sortCheap = !ui.sortCheap; render(); break;
     case "share": ui.share = true; renderSheet(); break;
@@ -2361,7 +2839,7 @@ document.addEventListener("click", e => {
     case "cook-start": ui.cook = { id, step: 0, have: {} }; keepAwake(true); renderSheet(); break;
     case "cook-next": cookGo(1); break;
     case "cook-prev": cookGo(-1); break;
-    case "cook-exit": ui.cook = null; keepAwake(false); renderSheet(); break;
+    case "cook-exit": ui.cook = null; stopHandsFree(); keepAwake(false); renderSheet(); break;
     case "cook-timer": startTimer(Number(el.dataset.min), plain(BY_ID[ui.cook.id].title)); break;
     case "cook-timer-clear": timer = null; clearInterval(timerTick); renderSheet(); break;
     case "share-start": {
@@ -2493,7 +2971,8 @@ document.addEventListener("change", e => {
   }
   if (act === "eaters") commit(s => { s.eaters = Number(el.value); });
   if (act === "staples") { ui.staples = el.checked; render(); }
-  if (act === "check") commit(s => { if (el.checked) s.checked[el.dataset.key] = true; else delete s.checked[el.dataset.key]; });
+  if (act === "check") { commit(s => { if (el.checked) s.checked[el.dataset.key] = true; else delete s.checked[el.dataset.key]; }); if (!el.checked && combineOn()) { otherUntick(el.dataset.key); render(); } }
+  if (act === "combine") { combine = el.checked; try { localStorage.setItem(COMBINE_KEY, combine ? "1" : "0"); } catch {} render(); }
   if (act === "day") commit(s => { if (el.value === "") delete s.days[el.dataset.id]; else s.days[el.dataset.id] = Number(el.value); });
   if (act === "dinner" && /^\d\d:\d\d$/.test(el.value)) commit(s => { s.dinner = el.value; });
   if (act === "mince-only") { ui.minceOnly = el.checked; }
@@ -2503,6 +2982,11 @@ document.addEventListener("change", e => {
 // <details> toggles don't bubble, so listen while capturing.
 document.addEventListener("toggle", e => { if (e.target.id === "have-picker") ui.pickerOpen = e.target.open; }, true);
 document.addEventListener("input", e => {
+  if (e.target.id === "idea-search") {
+    ui.ideaQ = e.target.value;
+    document.getElementById("idea-list").innerHTML = renderIdeaList();
+    return;
+  }
   if (e.target.id === "track-search") {
     ui.trackQ = e.target.value;
     document.getElementById("track-results").innerHTML = renderTrackSearch();
@@ -2519,10 +3003,10 @@ document.addEventListener("keydown", e => {
   if (ui.cook) {
     if (e.key === "ArrowRight") cookGo(1);
     else if (e.key === "ArrowLeft") cookGo(-1);
-    else if (e.key === "Escape") { ui.cook = null; keepAwake(false); renderSheet(); }
+    else if (e.key === "Escape") { ui.cook = null; stopHandsFree(); keepAwake(false); renderSheet(); }
     return;
   }
-  if (e.key === "Escape" && (ui.open || ui.share || ui.scan || ui.editing)) { ui.open = null; ui.share = false; ui.editing = false; ui.edit = null; if (ui.scan) { stopScanner(); ui.scan = null; } renderSheet(); }
+  if (e.key === "Escape" && (ui.open || ui.share || ui.scan || ui.editing || ui.planning || ui.prep)) { ui.open = null; ui.share = false; ui.editing = false; ui.edit = null; ui.planning = false; ui.prep = false; ui.draft = null; if (ui.scan) { stopScanner(); ui.scan = null; } renderSheet(); }
 });
 // Swipe left/right between cooking steps
 let touchX = null;
@@ -2540,7 +3024,7 @@ document.querySelectorAll(".tabs button").forEach(b => b.addEventListener("click
 function listText() {
   const groups = shoppingList();
   return AISLES
-    .map(a => [a, groups[a].filter(x => !state.checked[x.key] && !x.atHome)])
+    .map(a => [a, groups[a].filter(x => !x.done && !x.atHome)])
     .filter(([, items]) => items.length)
     .map(([a, items]) => `${a}\n${items.map(x => `- ${x.name}${x.amount ? ` (${x.amount})` : ""}${x.optional ? " [optional]" : ""}`).join("\n")}`)
     .join("\n\n");
