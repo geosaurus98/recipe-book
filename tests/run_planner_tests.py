@@ -67,11 +67,10 @@ def test_page(report_url):
     return html.replace("<head>", "<head>" + before, 1) + "<script>\n" + tests + "\n</script>\n"
 
 
-def main():
-    if not (ROOT / "planner" / "index.html").exists():
-        sys.exit("planner/index.html is missing. Run python planner/build.py first.")
-    server = http.server.ThreadingHTTPServer(("127.0.0.1", 0), Results)
-    threading.Thread(target=server.serve_forever, daemon=True).start()
+def run_page(server, uri_suffix=""):
+    """Open the test page once (George's planner, or GP's with "#as=gp") and return its results."""
+    Results.results = None
+    Results.done.clear()
     with tempfile.TemporaryDirectory() as tmp:
         # Loaded from a file: serving the 850 KB page over local HTTP sometimes stalled on Windows.
         page = Path(tmp) / "test.html"
@@ -80,18 +79,30 @@ def main():
             [find_browser(), "--headless=new", "--disable-gpu", "--no-sandbox", "--no-first-run",
              f"--user-data-dir={Path(tmp) / 'profile'}",
              # Offline: Google Fonts can stall the page, and the tests shouldn't need the internet.
-             "--host-resolver-rules=MAP * ~NOTFOUND, EXCLUDE 127.0.0.1", page.as_uri()],
+             "--host-resolver-rules=MAP * ~NOTFOUND, EXCLUDE 127.0.0.1", page.as_uri() + uri_suffix],
             stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, start_new_session=os.name != "nt")
         finished = Results.done.wait(180)
         close(browser)
-    server.shutdown()
     if not finished:
         sys.exit("The tests didn't finish within 3 minutes.")
-    res = Results.results
-    for f in res["failed"]:
+    return Results.results
+
+
+def main():
+    if not (ROOT / "planner" / "index.html").exists():
+        sys.exit("planner/index.html is missing. Run python planner/build.py first.")
+    server = http.server.ThreadingHTTPServer(("127.0.0.1", 0), Results)
+    threading.Thread(target=server.serve_forever, daemon=True).start()
+    passed, failed = 0, []
+    for label, suffix in (("George", ""), ("GP", "#as=gp")):
+        res = run_page(server, suffix)
+        passed += res["passed"]
+        failed += [f"[{label}] {f}" for f in res["failed"]]
+    server.shutdown()
+    for f in failed:
         print("FAIL", f)
-    print(f"{res['passed']} passed, {len(res['failed'])} failed")
-    sys.exit(1 if res["failed"] else 0)
+    print(f"{passed} passed, {len(failed)} failed")
+    sys.exit(1 if failed else 0)
 
 
 if __name__ == "__main__":

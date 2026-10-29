@@ -518,6 +518,8 @@ def recipe_info_tex(rows):
 
 def main():
     main_tex = (ROOT / "main.tex").read_text(encoding="utf-8")
+    # Recipes in GP's book always count as basic in the planner's GP mode.
+    palmer = set(re.findall(r"\\input\{(.*)\}", (ROOT / "Palmer Recipe Book.tex").read_text(encoding="utf-8")))
     recipes, info_rows = [], []
     chapter = group = None
     for line in main_tex.splitlines():
@@ -553,6 +555,7 @@ def main():
             r["minutes"] = minutes(r["time"])
             r["ahead"] = ahead_notes(r)
             r["meat"] = main_meat(r)
+            r["palmer"] = im.group(1) in palmer
             info_rows.append((tex_title, r["nutrition"], r["diet"]))
             recipes.append(r)
     (ROOT / "recipe_info.tex").write_text(recipe_info_tex(info_rows), encoding="utf-8", newline="\n")

@@ -19,8 +19,48 @@ const $ = sel => document.querySelector(sel);
 const click = el => el.dispatchEvent(new MouseEvent("click", { bubbles: true }));
 const pageErrors = window.__errors;
 
+// GP's planner (opened with "#as=gp"): basic recipes only, its own plan and storage.
+async function gpMain() {
+  test("GP's planner", () => {
+    eq("title", $("#app-title").textContent, "GP's Meal Planner");
+    eq("switcher shows GP", $("#profile").value, "gp");
+    eq("three dinner slots", run("SLOTS.map(s => s.key)"), ["d1", "d2", "d3"]);
+    const vis = run("visibleRecipes().map(r => [r.id, r.chapter, r.palmer])");
+    check("fewer recipes than George", vis.length > 40 && vis.length < run("RECIPES.length"), vis.length);
+    check("no slow cooker or Instant Pot", vis.every(([, ch, pal]) => pal || !["slow", "pressure"].includes(ch)));
+    eq("all of GP's book included", vis.filter(v => v[2]).length, run("RECIPES.filter(r => r.palmer).length"));
+    click(document.querySelector('[data-tab="recipes"]'));
+    eq("cards are the basic ones", document.querySelectorAll(".card").length, vis.length);
+    check("no slow cooker chip", !document.querySelector('[data-act="chapter"][data-v="slow"]') && !document.querySelector('[data-act="chapter"][data-v="pressure"]'));
+    click(document.querySelector('[data-tab="week"]'));
+    click($('[data-act="shuffle-all"]'));
+    const picked = run("Object.values(state.slots)");
+    check("shuffle fills three easy dinners", picked.every(id => id && run(`isBasic(BY_ID[${JSON.stringify(id)}]) && ["stovetop", "oven"].includes(BY_ID[${JSON.stringify(id)}].chapter)`)), picked);
+    run("clearTimeout(saveTimer); flush()");
+    check("only GP's planner is saved", run("localStorage.getItem('george-meal-planner-gp') !== null && localStorage.getItem('george-meal-planner') === null"));
+    eq("George's slots are dropped", Object.keys(run(`sanitize({ slots: { slow: RECIPES.find(r => r.chapter === "slow").id, d1: null } }).slots`)), ["d1", "d2", "d3"]);
+    run("commit(s => { s.slots = { d1: null, d2: null, d3: null }; })");
+    const easy = run(`visibleRecipes().find(r => r.chapter === "stovetop").id`);
+    run(`ui.open = ${JSON.stringify(easy)}; renderSheet();`);
+    check("add as a dinner", /dinner 1/i.test($('[data-act="use"]').textContent), $('[data-act="use"]').textContent);
+    click($('[data-act="use"]'));
+    eq("planned", run("state.slots.d1"), easy);
+    check("share link opens GP's planner", run(`shareLink("abcdefghijkmnpqrstuvwxyz")`).endsWith("&as=gp"));
+    check("food log kept separately", run("TRACK_KEY").endsWith("-gp"));
+    for (const tab of ["recipes", "shop", "track", "week"]) {
+      click(document.querySelector(`[data-tab="${tab}"]`));
+      check(`${tab} tab renders`, $("#app").textContent.trim().length > 50);
+    }
+  });
+  await wait(500);
+  check("no errors on the page", pageErrors.length === 0, pageErrors);
+  try { localStorage.clear(); } catch {}
+  report();
+}
+
 async function main() {
   await wait(300);
+  if (run("GP")) return gpMain();
 
   test("page loads", () => {
     check("week tab rendered", /Week of/.test($("#app").textContent), $("#app").textContent.slice(0, 200));
