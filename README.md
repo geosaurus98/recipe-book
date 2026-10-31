@@ -240,6 +240,66 @@ with the file name and `add_to_book.py` command at the top. Save it in that
 folder, run the command, and delete the planner copy once the book version
 is published.
 
+### George's and GP's planners
+
+**Planning for** at the top switches between George's planner and GP's. GP's
+planner only shows basic recipes: everything in GP's Recipe Book, plus
+recipes that take 45 minutes or less with 14 ingredients or fewer and don't
+use the slow cooker or Instant Pot (about 77 recipes). Its week is three easy
+dinners instead of the slow cooker / pressure cooker / quick trio. Each
+planner has its own week, shopping list, favourites, leftovers, prices, added
+recipes and food log, saved separately on the device and, when sharing, in
+its own copy of the household. The share link opens whichever planner you
+shared from (it ends in `&as=gp` for GP's), and a link ending in `#as=gp`
+opens GP's planner directly. The limits are `BASIC_MINUTES` and
+`BASIC_INGREDIENTS` in `planner/template.html`.
+
+### One shopping trip for both
+
+On the Shopping tab, **Include GP's list** (or George's, from GP's planner)
+adds the other planner's meals to your list, with each item tagged George,
+GP or Both. A tick on either list shows on both, and unticking clears it on
+both. It reads the other planner from the same device, or live from the
+shared household when sharing is on. The setting is remembered per device.
+
+### Plan my week
+
+**Plan my week** on the week tab asks for a budget for the week's meals and
+a minimum protein per serve, then tries a few hundred combinations and picks
+the best fit. It favours favourites and good ratings, skips recently cooked
+meals, and (optionally) prefers meals that share ingredients so nothing is
+half-used. If nothing fits it shows the closest and says so.
+
+### Prep session
+
+**Prep session** turns the week's meals into a batch-cooking plan: the
+cooking order (longest first, and which appliances can run at once), what to
+defrost the night before, every fresh ingredient to chop in one list (with
+the recipes that need it), and how many portions to store. **Print freezer
+labels** (also under Leftovers) prints labels 2 across with the name, date
+cooked, use-by date, calories and protein per portion, and reheating advice.
+Choose "Save as PDF" in the print dialog to keep them.
+
+### Hands-free cooking
+
+In cooking mode, **Read aloud** speaks each step as you reach it, and
+**Voice** listens for "next", "back", "repeat" and "stop" so you don't need
+to touch the phone. Voice control works in Chrome and Edge (Android or
+computer); Read aloud works in every browser. Words the planner says itself
+are ignored, so a step that contains "next" won't skip ahead.
+
+### Swaps, weekly summary and ideas
+
+- **Out of something?** on each recipe lists swaps for its ingredients
+  (`SWAPS` in `planner/template.html`).
+- **Your last 7 days** at the top of the week tab (open on Sundays and
+  Mondays) shows meals cooked and what they cost, average daily protein,
+  weight change, leftovers thrown out (the **Throw out** button under
+  Leftovers counts them) and your best-rated new recipe.
+- **Ideas** on the Recipes tab lists the ideas from every folder's
+  `Ideas.tex` that aren't in the book yet. **Write it up** starts an Add a
+  recipe draft with the name and chapter filled in.
+
 ### Sharing between people
 
 With Firebase set up, a **Share** button appears in the planner's header. It
