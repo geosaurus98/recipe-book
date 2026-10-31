@@ -19,8 +19,48 @@ const $ = sel => document.querySelector(sel);
 const click = el => el.dispatchEvent(new MouseEvent("click", { bubbles: true }));
 const pageErrors = window.__errors;
 
+// GP's planner (opened with "#as=gp"): basic recipes only, its own plan and storage.
+async function gpMain() {
+  test("GP's planner", () => {
+    eq("title", $("#app-title").textContent, "GP's Meal Planner");
+    eq("switcher shows GP", $("#profile").value, "gp");
+    eq("three dinner slots", run("SLOTS.map(s => s.key)"), ["d1", "d2", "d3"]);
+    const vis = run("visibleRecipes().map(r => [r.id, r.chapter, r.palmer])");
+    check("fewer recipes than George", vis.length > 40 && vis.length < run("RECIPES.length"), vis.length);
+    check("no slow cooker or Instant Pot", vis.every(([, ch, pal]) => pal || !["slow", "pressure"].includes(ch)));
+    eq("all of GP's book included", vis.filter(v => v[2]).length, run("RECIPES.filter(r => r.palmer).length"));
+    click(document.querySelector('[data-tab="recipes"]'));
+    eq("cards are the basic ones", document.querySelectorAll(".card").length, vis.length);
+    check("no slow cooker chip", !document.querySelector('[data-act="chapter"][data-v="slow"]') && !document.querySelector('[data-act="chapter"][data-v="pressure"]'));
+    click(document.querySelector('[data-tab="week"]'));
+    click($('[data-act="shuffle-all"]'));
+    const picked = run("Object.values(state.slots)");
+    check("shuffle fills three easy dinners", picked.every(id => id && run(`isBasic(BY_ID[${JSON.stringify(id)}]) && ["stovetop", "oven"].includes(BY_ID[${JSON.stringify(id)}].chapter)`)), picked);
+    run("clearTimeout(saveTimer); flush()");
+    check("only GP's planner is saved", run("localStorage.getItem('george-meal-planner-gp') !== null && localStorage.getItem('george-meal-planner') === null"));
+    eq("George's slots are dropped", Object.keys(run(`sanitize({ slots: { slow: RECIPES.find(r => r.chapter === "slow").id, d1: null } }).slots`)), ["d1", "d2", "d3"]);
+    run("commit(s => { s.slots = { d1: null, d2: null, d3: null }; })");
+    const easy = run(`visibleRecipes().find(r => r.chapter === "stovetop").id`);
+    run(`ui.open = ${JSON.stringify(easy)}; renderSheet();`);
+    check("add as a dinner", /dinner 1/i.test($('[data-act="use"]').textContent), $('[data-act="use"]').textContent);
+    click($('[data-act="use"]'));
+    eq("planned", run("state.slots.d1"), easy);
+    check("share link opens GP's planner", run(`shareLink("abcdefghijkmnpqrstuvwxyz")`).endsWith("&as=gp"));
+    check("food log kept separately", run("TRACK_KEY").endsWith("-gp"));
+    for (const tab of ["recipes", "shop", "track", "week"]) {
+      click(document.querySelector(`[data-tab="${tab}"]`));
+      check(`${tab} tab renders`, $("#app").textContent.trim().length > 50);
+    }
+  });
+  await wait(500);
+  check("no errors on the page", pageErrors.length === 0, pageErrors);
+  try { localStorage.clear(); } catch {}
+  report();
+}
+
 async function main() {
   await wait(300);
+  if (run("GP")) return gpMain();
 
   test("page loads", () => {
     check("week tab rendered", /Week of/.test($("#app").textContent), $("#app").textContent.slice(0, 200));
@@ -336,6 +376,96 @@ async function main() {
     click($('[data-act="weigh-save"]'));
     eq("weigh-in saved", run(`tracker.weights[${JSON.stringify(t)}]`), 83.5);
     click(document.querySelector('[data-tab="week"]'));
+  });
+
+  test("one shopping trip for both planners", () => {
+    const easy = run(`RECIPES.find(r => isBasic(r) && r.chapter === "stovetop" && r.shop.some(i => i.key === "spring-onion")).id`);
+    run(`commit(s => { s.slots = { slow: null, pressure: null, quick: null }; s.extras = []; s.checked = {}; s.pantry = {}; })`);
+    localStorage.setItem("george-meal-planner-gp", JSON.stringify({ slots: { d1: easy, d2: null, d3: null }, extras: [], scale: {}, checked: { "item:spring-onion": true } }));
+    click(document.querySelector('[data-tab="shop"]'));
+    const box = $('[data-act="combine"]');
+    check("offers GP's list", !!box && /GP's list/.test(box.parentElement.textContent));
+    box.checked = true; box.dispatchEvent(new Event("change", { bubbles: true }));
+    const rows = run(`Object.values(shoppingList()).flat().map(x => [x.key, [...x.who], x.done])`);
+    check("GP's items included", rows.some(r => r[0] === "item:spring-onion" && r[1].includes("gp")), rows.slice(0, 5));
+    check("GP's tick shows here", rows.find(r => r[0] === "item:spring-onion")[2]);
+    check("tagged with who needs it", /GP/.test(document.querySelector(".aisles .who").textContent));
+    const cb = document.querySelector('[data-act="check"][data-key="item:spring-onion"]');
+    cb.checked = false; cb.dispatchEvent(new Event("change", { bubbles: true }));
+    check("unticking clears GP's tick too", !JSON.parse(localStorage.getItem("george-meal-planner-gp")).checked["item:spring-onion"]);
+    const b2 = $('[data-act="combine"]'); b2.checked = false; b2.dispatchEvent(new Event("change", { bubbles: true }));
+    check("off again", !run("combineOn()"));
+    localStorage.removeItem("george-meal-planner-gp");
+  });
+
+  test("plan my week", () => {
+    const res = run(`(() => { const p = planWeek({ budget: 200, protein: 20, share: true }); return p && { ids: p.rs.map(r => r.id), fits: p.fits, cost: p.cost, low: p.low }; })()`);
+    check("plan found", res && res.fits, res);
+    eq("one per slot, right chapters", res.ids.map(id => run(`BY_ID[${JSON.stringify(id)}].chapter`)), ["slow", "pressure", res.ids[2] && run(`BY_ID[${JSON.stringify(res.ids[2])}].chapter`)]);
+    check("quick slot is stovetop or oven", ["stovetop", "oven"].includes(run(`BY_ID[${JSON.stringify(res.ids[2])}].chapter`)));
+    check("protein target met", res.low >= 20);
+    check("impossible budget says so", run(`planWeek({ budget: 1, protein: 20, share: true }).fits`) === false);
+    click(document.querySelector('[data-tab="week"]'));
+    click($('[data-act="plan-open"]'));
+    $("#plan-budget").value = "200"; $("#plan-protein").value = "20";
+    click($('[data-act="plan-run"]'));
+    check("result shown", !!$(".plan-result"));
+    click($('[data-act="plan-use"]'));
+    check("week filled", run("Object.values(state.slots).every(Boolean)"));
+  });
+
+  test("prep session and labels", () => {
+    const p = run(`(() => { const p = prepPlan(); return { n: p.rs.length, mins: p.rs.map(r => cookMinutes(r) ?? 0), chop: p.chop.map(c => c[0]), portions: p.portions }; })()`);
+    eq("three meals", p.n, 3);
+    check("longest first", p.mins.every((m, i) => !i || m <= p.mins[i - 1]), p.mins);
+    check("chopping list", p.chop.length > 0, p.chop);
+    click($('[data-act="prep-open"]'));
+    check("prep sheet", /Cooking order/.test($("#sheet-root").textContent) && /to store/.test($("#sheet-root").textContent));
+    let printed = 0; w.print = () => printed++;
+    click($('[data-act="labels-prep"]'));
+    check("labels made", document.querySelectorAll("#print-root .label").length >= 3);
+    check("labels show use-by", /Use by/.test($("#print-root").textContent));
+    click($('[data-act="close"]'));
+  });
+
+  await (async () => {
+    try {
+      run("window.__said = []; speak = t => __said.push(t);");
+      const id = run(`RECIPES.find(r => cookSteps(r).length > 2).id`);
+      run(`ui.cook = { id: ${JSON.stringify(id)}, step: 0, have: {} }; renderSheet();`);
+      click($('[data-act="cook-speak"]'));
+      check("reads the first screen", /^Get ready/.test(run("__said[0] || ''")), run("__said"));
+      click($('[data-act="cook-next"]'));
+      check("reads the next step", /^Step 1\./.test(run("__said[1] || ''")), run("__said"));
+      run("renderSheet()");
+      eq("doesn't repeat on redraw", run("__said.length"), 2);
+      click($('[data-act="cook-exit"]'));
+      check("cooking closed", !run("ui.cook"));
+    } catch (err) { results.failed.push("hands-free: threw " + (err && err.stack || err)); }
+  })();
+
+  test("swaps, summary and ideas", () => {
+    run(`ui.open = "InstantPot-Beef_Lentil_Bolognese"; renderSheet();`);
+    check("swaps listed", /Lentils/.test($(".swaps").textContent) && /canned|can of/.test($(".swaps").textContent));
+    run("ui.open = null; renderSheet();");
+    const id = run("state.slots.slow");
+    run(`commit(s => { s.log[${JSON.stringify(id)}] = [todayISO()]; s.rating[${JSON.stringify(id)}] = 5; s.waste = [{ date: todayISO(), id: ${JSON.stringify(id)}, n: 2 }]; })`);
+    click(document.querySelector('[data-tab="week"]'));
+    const sum = $(".summary");
+    check("weekly summary shown", !!sum && sum.querySelectorAll(".tile").length === 6);
+    check("best new recipe", sum.textContent.includes(run(`BY_ID[${JSON.stringify(id)}].title`)));
+    check("thrown out counted", /Leftovers thrown out\s*2/.test(sum.textContent.replace(/\s+/g, " ")), sum.textContent);
+    click(document.querySelector('[data-tab="recipes"]'));
+    click($('[data-act="ideas-toggle"]'));
+    const n = document.querySelectorAll("#idea-list .food-list li").length;
+    check("ideas listed", n > 300, n);
+    const s2 = $("#idea-search"); s2.value = "curry"; s2.dispatchEvent(new Event("input", { bubbles: true }));
+    const m = document.querySelectorAll("#idea-list .food-list li").length;
+    check("idea search", m > 0 && m < n, m);
+    click($('[data-act="idea-write"]'));
+    check("draft started from the idea", /curry/i.test($("#cf-title").value));
+    click($('[data-act="close"]'));
+    click($('[data-act="ideas-toggle"]'));
   });
 
   await wait(700);  // let any async errors surface
