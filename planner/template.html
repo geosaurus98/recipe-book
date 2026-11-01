@@ -1481,7 +1481,7 @@ function parseIngredient(text) {
 }
 function minutesOf(time) {
   let total = 0, found = false;
-  for (const m of String(time).matchAll(/(\d+)(?:\s*[–-]\s*(\d+))?\s*(hr|hours?|h|min)\b/g)) { total += (+(m[2] || m[1])) * (m[3].startsWith("h") ? 60 : 1); found = true; }
+  for (const m of String(time).split(" / ")[0].matchAll(/(\d+)(?:\s*[–-]\s*(\d+))?\s*(hrs?|hours?|h|mins?)\b/g)) { total += (+(m[2] || m[1])) * (m[3].startsWith("h") ? 60 : 1); found = true; }
   return found ? total : null;
 }
 function estimateNutrition(shop, count) {

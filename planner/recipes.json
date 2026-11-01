@@ -112,6 +112,18 @@
     "heading": "Lentil swaps",
     "text": "**Canned brown lentils:** use 2 cans (400 g), drained and rinsed. They're already cooked, so leave them out of the pot: use only ½ cup stock, pressure cook for **5 minutes** with a 5-minute natural release, then stir the lentils in with the frozen vegetables. **Red lentils:** use ¾ cup dry split red lentils, rinsed, and add ½ cup extra water with the stock. Pressure cook for **8 minutes** with a 10-minute natural release. They melt into the sauce, so it's thicker and smoother, with less lentil texture.",
     "sections": []
+   },
+   {
+    "kind": "variation",
+    "heading": "Big Batch Sauce (6 serves)",
+    "text": "For a week of meal prep, use 600 g lean beef mince and 1 cup dry split red lentils, 600 g frozen mixed vegetables plus 300 g frozen broccoli and cauliflower, 2 cans of tomatoes, 3 tbsp tomato paste, 1 cup water and 2 tbsp Italian herbs. Sauté the onion, garlic and mince, add everything else (vegetables before the tomatoes, unstirred), and pressure cook for **15 minutes** with a 10-minute natural release. Portion into 6 containers; cook pasta fresh for each meal (50–90 g dry per serve). Keeps 4 days in the fridge, or freeze.",
+    "sections": []
+   },
+   {
+    "kind": "variation",
+    "heading": "Lentils Only",
+    "text": "Leave out the mince and use 2½ cups dry split red lentils with the big-batch vegetables and 1½ cups water. Same timing. The lentils soften completely into the sauce.",
+    "sections": []
    }
   ],
   "id": "InstantPot-Beef_Lentil_Bolognese",
@@ -323,7 +335,9 @@
    "freezes",
    "dairy-free"
   ],
-  "storage": [],
+  "storage": [
+   "Keeps 4 days in the fridge, or freeze."
+  ],
   "minutes": 50,
   "ahead": [],
   "meat": "Beef mince",
@@ -1281,6 +1295,291 @@
   "minutes": 60,
   "ahead": [],
   "meat": "Stewing beef",
+  "palmer": false
+ },
+ {
+  "title": "Beef Mince Goulash",
+  "servings": "4",
+  "time": "15 min prep + 35 min",
+  "intro": "A quick Hungarian-style goulash: mince, potatoes and capsicum in a rich paprika and tomato sauce, with red lentils for extra protein.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "1 tbsp oil"
+     },
+     {
+      "text": "500 g beef mince"
+     },
+     {
+      "text": "1 onion, diced"
+     },
+     {
+      "text": "1 red capsicum, diced"
+     },
+     {
+      "text": "3 garlic cloves, crushed"
+     },
+     {
+      "text": "2 tbsp sweet paprika"
+     },
+     {
+      "text": "1 tsp smoked paprika"
+     },
+     {
+      "text": "1 tsp caraway seeds (optional)"
+     },
+     {
+      "text": "1½ cups beef stock"
+     },
+     {
+      "text": "600 g potatoes, cut into 2 cm cubes"
+     },
+     {
+      "text": "½ cup dry split red lentils, rinsed"
+     },
+     {
+      "text": "2 tbsp tomato paste"
+     },
+     {
+      "text": "1 can (400 g) chopped tomatoes"
+     },
+     {
+      "group": "To serve"
+     },
+     {
+      "text": "Greek yoghurt and chopped parsley"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Brown.** Select Sauté and heat the oil. Cook the mince and onion for 6–8 minutes, breaking up the mince, until browned. Add the capsicum, garlic, both paprikas and caraway, if using, and stir for 1 minute."
+     },
+     {
+      "text": "**Deglaze.** Pour in the stock and scrape the base of the pot clean."
+     },
+     {
+      "text": "**Layer — don't stir.** Add the potatoes, then scatter the lentils over. Dot with the tomato paste and pour the tomatoes over the top. **Do not stir.**"
+     },
+     {
+      "text": "**Pressure cook.** Lid on, valve sealed. Cook on High for **8 minutes**, then a **10-minute natural release**."
+     },
+     {
+      "text": "**Finish.** Stir well and season. Serve with a spoonful of yoghurt and some parsley."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Swap the potatoes for 300 g pasta cooked separately, and use only 1 cup stock."
+     },
+     {
+      "text": "Freezes well for up to 3 months."
+     }
+    ]
+   }
+  ],
+  "id": "InstantPot-Beef_Mince_Goulash",
+  "file": "InstantPot/Beef_Mince_Goulash.tex",
+  "chapter": "pressure",
+  "chapterName": "Instant Pot & Pressure Cooker",
+  "group": null,
+  "ingredients": [
+   "1 tbsp oil",
+   "500 g beef mince",
+   "1 onion, diced",
+   "1 red capsicum, diced",
+   "3 garlic cloves, crushed",
+   "2 tbsp sweet paprika",
+   "1 tsp smoked paprika",
+   "1 tsp caraway seeds (optional)",
+   "1½ cups beef stock",
+   "600 g potatoes, cut into 2 cm cubes",
+   "½ cup dry split red lentils, rinsed",
+   "2 tbsp tomato paste",
+   "1 can (400 g) chopped tomatoes",
+   "Greek yoghurt and chopped parsley"
+  ],
+  "shop": [
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp oil",
+    "g": 13.5
+   },
+   {
+    "key": "beef-mince",
+    "name": "Beef mince",
+    "aisle": "Meat & fish",
+    "qty": 500.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "500 g beef mince",
+    "g": 500.0
+   },
+   {
+    "key": "onion",
+    "name": "Onions",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 onion, diced",
+    "g": 150.0
+   },
+   {
+    "key": "capsicum",
+    "name": "Capsicums",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 red capsicum, diced",
+    "g": 160.0
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 3.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "3 garlic cloves, crushed",
+    "g": 15.0
+   },
+   {
+    "key": "paprika",
+    "name": "Paprika",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp sweet paprika",
+    "g": 14.0
+   },
+   {
+    "key": "smoked-paprika",
+    "name": "Smoked paprika",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp smoked paprika",
+    "g": 2.5
+   },
+   {
+    "key": "caraway-seeds",
+    "name": "Caraway seeds",
+    "aisle": null,
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": true,
+    "raw": "1 tsp caraway seeds (optional)"
+   },
+   {
+    "key": "beef-stock",
+    "name": "Beef stock",
+    "aisle": "Pantry: check first",
+    "qty": 1.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1½ cups beef stock",
+    "g": 375.0
+   },
+   {
+    "key": "potato",
+    "name": "Potatoes",
+    "aisle": "Fruit & veg",
+    "qty": 600.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "600 g potatoes, cut into 2 cm cubes",
+    "g": 600.0
+   },
+   {
+    "key": "red-lentils",
+    "name": "Red lentils (dry)",
+    "aisle": "Cans, jars & pulses",
+    "qty": 0.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "½ cup dry split red lentils, rinsed",
+    "g": 95.0
+   },
+   {
+    "key": "tomato-paste",
+    "name": "Tomato paste",
+    "aisle": "Cans, jars & pulses",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp tomato paste",
+    "g": 32.0
+   },
+   {
+    "key": "canned-tomatoes",
+    "name": "Canned tomatoes",
+    "aisle": "Cans, jars & pulses",
+    "qty": 1.0,
+    "unit": "can",
+    "optional": false,
+    "raw": "1 can (400 g) chopped tomatoes",
+    "g": 400.0
+   },
+   {
+    "key": "greek-yoghurt",
+    "name": "Greek yoghurt",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Greek yoghurt and chopped parsley"
+   },
+   {
+    "key": "parsley",
+    "name": "Fresh parsley",
+    "aisle": "Fruit & veg",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Greek yoghurt and chopped parsley"
+   }
+  ],
+  "tags": [
+   "beef",
+   "mince"
+  ],
+  "nutrition": {
+   "kcal": 540,
+   "protein": 37,
+   "carbs": 52,
+   "fat": 20,
+   "per": "serving",
+   "count": 4
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "Freezes well for up to 3 months."
+  ],
+  "minutes": 50,
+  "ahead": [],
+  "meat": "Beef mince",
   "palmer": false
  },
  {
@@ -3248,7 +3547,7 @@
       "text": "2 garlic cloves, minced"
      },
      {
-      "text": "2 lbs boneless, skinless chicken thighs (or breasts), cut into chunks"
+      "text": "900 g boneless, skinless chicken thighs (or breasts), cut into chunks"
      },
      {
       "text": "1½ tsp salt (or to taste)"
@@ -3306,7 +3605,7 @@
    "2 medium carrots, diced",
    "2 celery ribs, diced",
    "2 garlic cloves, minced",
-   "2 lbs boneless, skinless chicken thighs (or breasts), cut into chunks",
+   "900 g boneless, skinless chicken thighs (or breasts), cut into chunks",
    "1½ tsp salt (or to taste)",
    "½ tsp black pepper",
    "1 tsp paprika",
@@ -3369,11 +3668,11 @@
     "key": "chicken-thigh",
     "name": "Chicken thighs",
     "aisle": "Meat & fish",
-    "qty": 2.0,
-    "unit": "",
+    "qty": 900.0,
+    "unit": "g",
     "optional": false,
-    "raw": "2 lbs boneless, skinless chicken thighs (or breasts), cut into chunks",
-    "g": 240.0
+    "raw": "900 g boneless, skinless chicken thighs (or breasts), cut into chunks",
+    "g": 900.0
    },
    {
     "key": "salt",
@@ -3440,10 +3739,10 @@
    "chicken"
   ],
   "nutrition": {
-   "kcal": 360,
-   "protein": 14,
+   "kcal": 520,
+   "protein": 35,
    "carbs": 57,
-   "fat": 9,
+   "fat": 17,
    "per": "serving",
    "count": 6
   },
@@ -5216,362 +5515,6 @@
   "palmer": false
  },
  {
-  "title": "High-Protein Pasta Sauce (Beef or Lentil)",
-  "servings": "6",
-  "time": "Prep 10 min, cook 15 min pressure + 10 min natural release",
-  "intro": "",
-  "sections": [
-   {
-    "kind": "list",
-    "heading": "Why This Works",
-    "items": [
-     {
-      "text": "High protein without heavy meals"
-     },
-     {
-      "text": "Flexible: meat-based or plant-based"
-     },
-     {
-      "text": "Frozen vegetables add volume and fibre at low cost"
-     },
-     {
-      "text": "Ideal for structured meal prep and budget control"
-     },
-     {
-      "text": "Reheats cleanly and pairs with fresh pasta"
-     }
-    ]
-   },
-   {
-    "kind": "list",
-    "heading": "Protein (Choose One)",
-    "items": [
-     {
-      "text": "800 g lean beef mince (budget meat option)"
-     },
-     {
-      "text": "600 g lean beef mince + 1 cup dried red lentils (budget extender)"
-     }
-    ]
-   },
-   {
-    "kind": "text",
-    "heading": null,
-    "text": "OR plant-based option:"
-   },
-   {
-    "kind": "list",
-    "heading": null,
-    "items": [
-     {
-      "text": "2½ cups dried red lentils"
-     }
-    ]
-   },
-   {
-    "kind": "list",
-    "heading": "Vegetables (Frozen, Budget-Optimised)",
-    "items": [
-     {
-      "text": "600 g frozen mixed vegetables"
-     },
-     {
-      "text": "300 g frozen broccoli & cauliflower mix"
-     },
-     {
-      "text": "1 large onion, diced"
-     },
-     {
-      "text": "3 garlic cloves, minced"
-     }
-    ]
-   },
-   {
-    "kind": "list",
-    "heading": "Tomato Base",
-    "items": [
-     {
-      "text": "2 cans (400 g) crushed tomatoes"
-     },
-     {
-      "text": "3 tbsp tomato paste"
-     },
-     {
-      "text": "1 cup water"
-     }
-    ]
-   },
-   {
-    "kind": "list",
-    "heading": "Seasoning",
-    "items": [
-     {
-      "text": "2 tbsp Italian herbs"
-     },
-     {
-      "text": "1½ tsp salt"
-     },
-     {
-      "text": "1 tsp black pepper"
-     }
-    ]
-   },
-   {
-    "kind": "steps",
-    "heading": "Method",
-    "items": [
-     {
-      "text": "Set the Instant Pot to **Sauté**. Cook the onion and garlic for 2–3 minutes until softened."
-     },
-     {
-      "text": "If using beef mince, add it now and brown lightly. (Skip this step if using lentils only.)"
-     },
-     {
-      "text": "Add lentils (if using), frozen vegetables, crushed tomatoes, tomato paste, water, herbs, salt, and pepper."
-     },
-     {
-      "text": "Stir well, scraping the bottom of the pot to prevent sticking."
-     },
-     {
-      "text": "Secure the lid with the valve sealed and cook on **High Pressure** for 15 minutes."
-     },
-     {
-      "text": "Allow a **Natural Pressure Release** for 10 minutes, then vent remaining pressure."
-     },
-     {
-      "text": "Stir thoroughly. Adjust thickness as required:",
-      "sub": [
-       "If too thick: add water",
-       "If too thin: use **Sauté** mode for 5 minutes, lid off"
-      ]
-     }
-    ]
-   },
-   {
-    "kind": "list",
-    "heading": "Pasta Prep (Cook Fresh)",
-    "items": [
-     {
-      "text": "600 g dry pasta (total for the week)"
-     },
-     {
-      "text": "Cook per meal to prevent over-softening"
-     }
-    ]
-   },
-   {
-    "kind": "list",
-    "heading": "Portioning & Storage",
-    "items": [
-     {
-      "text": "Portion sauce into 6 containers"
-     },
-     {
-      "text": "Refrigerate up to 4 days or freeze individual portions"
-     }
-    ]
-   },
-   {
-    "kind": "list",
-    "heading": "How to Eat It",
-    "items": [
-     {
-      "text": "**Lunch:** Sauce with 75–90 g dry pasta, plus extra vegetables if desired"
-     },
-     {
-      "text": "**Dinner:** Sauce with 50–75 g dry pasta, plus a large vegetable portion"
-     }
-    ]
-   },
-   {
-    "kind": "list",
-    "heading": "Notes",
-    "items": [
-     {
-      "text": "Frozen vegetables reduce cost, waste, and prep time while maintaining volume."
-     },
-     {
-      "text": "Lentils soften completely and blend into the sauce, increasing protein and fibre."
-     },
-     {
-      "text": "This sauce freezes well without texture loss."
-     },
-     {
-      "text": "Lower pasta portions at dinner support lighter digestion and improved sleep."
-     }
-    ]
-   }
-  ],
-  "id": "InstantPot-High_Protein_Pasta_Sauce",
-  "file": "InstantPot/High_Protein_Pasta_Sauce.tex",
-  "chapter": "pressure",
-  "chapterName": "Instant Pot & Pressure Cooker",
-  "group": null,
-  "ingredients": [
-   "800 g lean beef mince (budget meat option)",
-   "600 g lean beef mince + 1 cup dried red lentils (budget extender)",
-   "2½ cups dried red lentils",
-   "600 g frozen mixed vegetables",
-   "300 g frozen broccoli & cauliflower mix",
-   "1 large onion, diced",
-   "3 garlic cloves, minced",
-   "2 cans (400 g) crushed tomatoes",
-   "3 tbsp tomato paste",
-   "1 cup water",
-   "2 tbsp Italian herbs",
-   "1½ tsp salt",
-   "1 tsp black pepper"
-  ],
-  "shop": [
-   {
-    "key": "beef-mince",
-    "name": "Beef mince",
-    "aisle": "Meat & fish",
-    "qty": 800.0,
-    "unit": "g",
-    "optional": false,
-    "raw": "800 g lean beef mince (budget meat option)",
-    "g": 800.0
-   },
-   {
-    "key": "beef-mince",
-    "name": "Beef mince",
-    "aisle": "Meat & fish",
-    "qty": 600.0,
-    "unit": "g",
-    "optional": false,
-    "raw": "600 g lean beef mince + 1 cup dried red lentils (budget extender)",
-    "g": 600.0
-   },
-   {
-    "key": "red-lentils",
-    "name": "Red lentils (dry)",
-    "aisle": "Cans, jars & pulses",
-    "qty": 2.5,
-    "unit": "cup",
-    "optional": false,
-    "raw": "2½ cups dried red lentils",
-    "g": 475.0
-   },
-   {
-    "key": "frozen-mixed-veg",
-    "name": "Frozen mixed vegetables",
-    "aisle": "Frozen",
-    "qty": 600.0,
-    "unit": "g",
-    "optional": false,
-    "raw": "600 g frozen mixed vegetables",
-    "g": 600.0
-   },
-   {
-    "key": "frozen-broccoli-cauli",
-    "name": "Frozen broccoli & cauliflower",
-    "aisle": "Frozen",
-    "qty": 300.0,
-    "unit": "g",
-    "optional": false,
-    "raw": "300 g frozen broccoli & cauliflower mix",
-    "g": 300.0
-   },
-   {
-    "key": "onion",
-    "name": "Onions",
-    "aisle": "Fruit & veg",
-    "qty": 1.0,
-    "unit": "",
-    "optional": false,
-    "raw": "1 large onion, diced",
-    "g": 150.0
-   },
-   {
-    "key": "garlic",
-    "name": "Garlic",
-    "aisle": "Fruit & veg",
-    "qty": 3.0,
-    "unit": "clove",
-    "optional": false,
-    "raw": "3 garlic cloves, minced",
-    "g": 15.0
-   },
-   {
-    "key": "canned-tomatoes",
-    "name": "Canned tomatoes",
-    "aisle": "Cans, jars & pulses",
-    "qty": 2.0,
-    "unit": "can",
-    "optional": false,
-    "raw": "2 cans (400 g) crushed tomatoes",
-    "g": 800.0
-   },
-   {
-    "key": "tomato-paste",
-    "name": "Tomato paste",
-    "aisle": "Cans, jars & pulses",
-    "qty": 3.0,
-    "unit": "tbsp",
-    "optional": false,
-    "raw": "3 tbsp tomato paste",
-    "g": 48.0
-   },
-   {
-    "key": "mixed-herbs",
-    "name": "Mixed herbs",
-    "aisle": "Pantry: check first",
-    "qty": 2.0,
-    "unit": "tbsp",
-    "optional": false,
-    "raw": "2 tbsp Italian herbs",
-    "g": 14.0
-   },
-   {
-    "key": "salt",
-    "name": "Salt",
-    "aisle": "Pantry: check first",
-    "qty": 1.5,
-    "unit": "tsp",
-    "optional": false,
-    "raw": "1½ tsp salt",
-    "g": 7.5
-   },
-   {
-    "key": "pepper",
-    "name": "Black pepper",
-    "aisle": "Pantry: check first",
-    "qty": 1.0,
-    "unit": "tsp",
-    "optional": false,
-    "raw": "1 tsp black pepper",
-    "g": 5.0
-   }
-  ],
-  "tags": [
-   "beef",
-   "mince"
-  ],
-  "nutrition": {
-   "kcal": 850,
-   "protein": 72,
-   "carbs": 65,
-   "fat": 30,
-   "per": "serving",
-   "count": 6
-  },
-  "diet": [
-   "freezes",
-   "dairy-free"
-  ],
-  "storage": [
-   "Reheats cleanly and pairs with fresh pasta",
-   "Portion sauce into 6 containers",
-   "Refrigerate up to 4 days or freeze individual portions",
-   "This sauce freezes well without texture loss."
-  ],
-  "minutes": 35,
-  "ahead": [],
-  "meat": "Beef mince",
-  "palmer": false
- },
- {
   "title": "Lentil Coconut Curry",
   "servings": "6",
   "time": "Prep 10 min, cook 12 min pressure + 10 min natural release",
@@ -6048,9 +5991,275 @@
   "palmer": false
  },
  {
+  "title": "Mince Stroganoff",
+  "servings": "4",
+  "time": "10 min prep + 25 min",
+  "intro": "A one-pot stroganoff: mince and mushrooms in a savoury sauce, with the pasta cooked right in it and Greek yoghurt stirred through instead of sour cream.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "1 tbsp oil"
+     },
+     {
+      "text": "500 g beef mince"
+     },
+     {
+      "text": "1 onion, diced"
+     },
+     {
+      "text": "250 g mushrooms, sliced"
+     },
+     {
+      "text": "3 garlic cloves, crushed"
+     },
+     {
+      "text": "1 tbsp sweet paprika"
+     },
+     {
+      "text": "2 tbsp Worcestershire sauce"
+     },
+     {
+      "text": "1 tbsp Dijon mustard"
+     },
+     {
+      "text": "3 cups beef stock"
+     },
+     {
+      "text": "300 g fusilli or other short pasta"
+     },
+     {
+      "text": "1 cup frozen peas"
+     },
+     {
+      "text": "½ cup Greek yoghurt"
+     },
+     {
+      "text": "Salt and pepper"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Brown.** Select Sauté and heat the oil. Cook the mince and onion for 6–8 minutes, breaking up the mince, until browned. Add the mushrooms and cook for 3 minutes, then the garlic and paprika for 30 seconds."
+     },
+     {
+      "text": "**Deglaze.** Add the Worcestershire sauce, mustard and stock and scrape the base of the pot clean."
+     },
+     {
+      "text": "**Add the pasta.** Stir in the pasta and push it under the liquid."
+     },
+     {
+      "text": "**Pressure cook.** Lid on, valve sealed. Cook on High for **4 minutes**, then **quick release**."
+     },
+     {
+      "text": "**Finish.** Stir in the peas and let them warm through for 2 minutes with the lid off. Turn the pot off, then stir in the yoghurt (off the heat so it doesn't split). Season."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Use pasta with a 9–11 minute packet time; for longer-cooking pasta, add a minute."
+     },
+     {
+      "text": "Best eaten fresh. Leftovers keep 3 days; add a splash of water when reheating."
+     }
+    ]
+   }
+  ],
+  "id": "InstantPot-Mince_Stroganoff",
+  "file": "InstantPot/Mince_Stroganoff.tex",
+  "chapter": "pressure",
+  "chapterName": "Instant Pot & Pressure Cooker",
+  "group": null,
+  "ingredients": [
+   "1 tbsp oil",
+   "500 g beef mince",
+   "1 onion, diced",
+   "250 g mushrooms, sliced",
+   "3 garlic cloves, crushed",
+   "1 tbsp sweet paprika",
+   "2 tbsp Worcestershire sauce",
+   "1 tbsp Dijon mustard",
+   "3 cups beef stock",
+   "300 g fusilli or other short pasta",
+   "1 cup frozen peas",
+   "½ cup Greek yoghurt",
+   "Salt and pepper"
+  ],
+  "shop": [
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp oil",
+    "g": 13.5
+   },
+   {
+    "key": "beef-mince",
+    "name": "Beef mince",
+    "aisle": "Meat & fish",
+    "qty": 500.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "500 g beef mince",
+    "g": 500.0
+   },
+   {
+    "key": "onion",
+    "name": "Onions",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 onion, diced",
+    "g": 150.0
+   },
+   {
+    "key": "mushrooms",
+    "name": "Mushrooms",
+    "aisle": "Fruit & veg",
+    "qty": 250.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "250 g mushrooms, sliced",
+    "g": 250.0
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 3.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "3 garlic cloves, crushed",
+    "g": 15.0
+   },
+   {
+    "key": "paprika",
+    "name": "Paprika",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp sweet paprika",
+    "g": 7.0
+   },
+   {
+    "key": "worcestershire",
+    "name": "Worcestershire sauce",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp Worcestershire sauce",
+    "g": 34.0
+   },
+   {
+    "key": "mustard",
+    "name": "Mustard",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp Dijon mustard",
+    "g": 15.0
+   },
+   {
+    "key": "beef-stock",
+    "name": "Beef stock",
+    "aisle": "Pantry: check first",
+    "qty": 3.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "3 cups beef stock",
+    "g": 750.0
+   },
+   {
+    "key": "pasta",
+    "name": "Pasta",
+    "aisle": "Pasta, rice & grains",
+    "qty": 300.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "300 g fusilli or other short pasta",
+    "g": 300.0
+   },
+   {
+    "key": "frozen-peas",
+    "name": "Frozen peas",
+    "aisle": "Frozen",
+    "qty": 1.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1 cup frozen peas",
+    "g": 140.0
+   },
+   {
+    "key": "greek-yoghurt",
+    "name": "Greek yoghurt",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 0.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "½ cup Greek yoghurt",
+    "g": 125.0
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Salt and pepper"
+   },
+   {
+    "key": "pepper",
+    "name": "Black pepper",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Salt and pepper"
+   }
+  ],
+  "tags": [
+   "beef",
+   "mince"
+  ],
+  "nutrition": {
+   "kcal": 650,
+   "protein": 43,
+   "carbs": 69,
+   "fat": 22,
+   "per": "serving",
+   "count": 4
+  },
+  "diet": [],
+  "storage": [
+   "Leftovers keep 3 days; add a splash of water when reheating."
+  ],
+  "minutes": 35,
+  "ahead": [],
+  "meat": "Beef mince",
+  "palmer": false
+ },
+ {
   "title": "Peanut Chicken & Sugar Snap Peas with Noodles",
   "servings": "6",
-  "time": "More than 2 hrs",
+  "time": "15 min prep + 2 hours (Slow Cook mode)",
   "intro": "",
   "sections": [
    {
@@ -6306,7 +6515,7 @@
    "dairy-free"
   ],
   "storage": [],
-  "minutes": null,
+  "minutes": 135,
   "ahead": [],
   "meat": "Chicken breast or tenderloins",
   "palmer": false
@@ -6732,6 +6941,16 @@
     "g": 180.0
    },
    {
+    "key": "curry-roux",
+    "name": "Japanese curry roux",
+    "aisle": "Cans, jars & pulses",
+    "qty": 0.5,
+    "unit": "box",
+    "optional": false,
+    "raw": "½ box (about 100 g) Japanese curry roux, e.g. Golden Curry, broken up",
+    "g": 125.0
+   },
+   {
     "key": "frozen-peas",
     "name": "Frozen peas",
     "aisle": "Frozen",
@@ -6757,10 +6976,10 @@
    "mince"
   ],
   "nutrition": {
-   "kcal": 440,
-   "protein": 29,
-   "carbs": 35,
-   "fat": 21,
+   "kcal": 600,
+   "protein": 31,
+   "carbs": 49,
+   "fat": 31,
    "per": "serving",
    "count": 4
   },
@@ -9382,8 +9601,8 @@
  },
  {
   "title": "Beef & Vegetable Soup",
-  "servings": "6",
-  "time": "–",
+  "servings": "4",
+  "time": "10 min prep + 8 hours (low)",
   "intro": "",
   "sections": [
    {
@@ -9456,9 +9675,6 @@
     "kind": "notes",
     "heading": "Notes",
     "items": [
-     {
-      "text": "Approx. 2.20/serve, 420 kcal, 40 g protein per serve."
-     },
      {
       "text": "**Tip:** This is a great winter warmer and keeps extremely well in the fridge for 4–5 days. The flavour improves the next day. Freeze any extra portions in individual containers."
      }
@@ -9630,12 +9846,12 @@
    "beef"
   ],
   "nutrition": {
-   "kcal": 280,
-   "protein": 24,
-   "carbs": 28,
-   "fat": 7,
+   "kcal": 410,
+   "protein": 36,
+   "carbs": 42,
+   "fat": 10,
    "per": "serving",
-   "count": 6
+   "count": 4
   },
   "diet": [
    "freezes",
@@ -9645,9 +9861,306 @@
    "Tip: This is a great winter warmer and keeps extremely well in the fridge for 4–5 days.",
    "Freeze any extra portions in individual containers."
   ],
-  "minutes": null,
+  "minutes": 490,
   "ahead": [],
   "meat": "Stewing beef",
+  "palmer": false
+ },
+ {
+  "title": "Beef Mince & Potato Curry (Keema Aloo)",
+  "servings": "4",
+  "time": "15 min prep + 6–7 hours (low)",
+  "intro": "A mild, warming mince and potato curry, with red lentils to stretch the mince and thicken the sauce. Cheap, filling and freezes well.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "group": "Slow cooker base"
+     },
+     {
+      "text": "600 g potatoes, cut into 2 cm cubes"
+     },
+     {
+      "text": "1 tbsp oil"
+     },
+     {
+      "text": "500 g beef mince"
+     },
+     {
+      "text": "1 onion, diced"
+     },
+     {
+      "text": "3 garlic cloves, crushed"
+     },
+     {
+      "text": "1 tbsp grated ginger"
+     },
+     {
+      "text": "2 tbsp mild curry powder"
+     },
+     {
+      "text": "1 tsp ground cumin"
+     },
+     {
+      "text": "2 tbsp tomato paste"
+     },
+     {
+      "text": "1 can (400 g) chopped tomatoes"
+     },
+     {
+      "text": "½ cup dry split red lentils, rinsed"
+     },
+     {
+      "text": "1½ cups beef stock"
+     },
+     {
+      "group": "Last 20 minutes"
+     },
+     {
+      "text": "1½ cups frozen peas"
+     },
+     {
+      "text": "1 tsp garam masala"
+     },
+     {
+      "text": "Salt, to taste"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Potatoes first.** Put the potatoes in the slow cooker, where they get the most heat."
+     },
+     {
+      "text": "**Brown the mince.** Heat the oil in a frying pan over medium-high heat. Cook the mince and onion for 6–8 minutes, breaking up the mince, until browned. Add the garlic, ginger, curry powder, cumin and tomato paste and stir for 1 minute."
+     },
+     {
+      "text": "**Load the cooker.** Tip the mince over the potatoes. Add the tomatoes, lentils and stock and stir gently."
+     },
+     {
+      "text": "**Slow cook.** Cook on Low for 6–7 hours (or High for 3–4), until the potatoes are tender and the lentils have melted into the sauce."
+     },
+     {
+      "text": "**Finish.** Stir in the peas and garam masala and cook 20 more minutes. Season with salt."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Short on time? Skip browning and put everything except the peas straight in; the flavour is a little less deep."
+     },
+     {
+      "text": "Serve as it is, or with rice or roti. A spoonful of Greek yoghurt on top cools it down."
+     },
+     {
+      "text": "Freezes well for up to 3 months."
+     }
+    ]
+   }
+  ],
+  "id": "SlowCooker-Beef_Mince_Potato_Curry",
+  "file": "SlowCooker/Beef_Mince_Potato_Curry.tex",
+  "chapter": "slow",
+  "chapterName": "Slow Cooker",
+  "group": null,
+  "ingredients": [
+   "600 g potatoes, cut into 2 cm cubes",
+   "1 tbsp oil",
+   "500 g beef mince",
+   "1 onion, diced",
+   "3 garlic cloves, crushed",
+   "1 tbsp grated ginger",
+   "2 tbsp mild curry powder",
+   "1 tsp ground cumin",
+   "2 tbsp tomato paste",
+   "1 can (400 g) chopped tomatoes",
+   "½ cup dry split red lentils, rinsed",
+   "1½ cups beef stock",
+   "1½ cups frozen peas",
+   "1 tsp garam masala",
+   "Salt, to taste"
+  ],
+  "shop": [
+   {
+    "key": "potato",
+    "name": "Potatoes",
+    "aisle": "Fruit & veg",
+    "qty": 600.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "600 g potatoes, cut into 2 cm cubes",
+    "g": 600.0
+   },
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp oil",
+    "g": 13.5
+   },
+   {
+    "key": "beef-mince",
+    "name": "Beef mince",
+    "aisle": "Meat & fish",
+    "qty": 500.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "500 g beef mince",
+    "g": 500.0
+   },
+   {
+    "key": "onion",
+    "name": "Onions",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 onion, diced",
+    "g": 150.0
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 3.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "3 garlic cloves, crushed",
+    "g": 15.0
+   },
+   {
+    "key": "ginger",
+    "name": "Fresh ginger",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp grated ginger",
+    "g": 6.0
+   },
+   {
+    "key": "curry-powder",
+    "name": "Curry powder",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp mild curry powder",
+    "g": 14.0
+   },
+   {
+    "key": "cumin",
+    "name": "Ground cumin",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp ground cumin",
+    "g": 2.5
+   },
+   {
+    "key": "tomato-paste",
+    "name": "Tomato paste",
+    "aisle": "Cans, jars & pulses",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp tomato paste",
+    "g": 32.0
+   },
+   {
+    "key": "canned-tomatoes",
+    "name": "Canned tomatoes",
+    "aisle": "Cans, jars & pulses",
+    "qty": 1.0,
+    "unit": "can",
+    "optional": false,
+    "raw": "1 can (400 g) chopped tomatoes",
+    "g": 400.0
+   },
+   {
+    "key": "red-lentils",
+    "name": "Red lentils (dry)",
+    "aisle": "Cans, jars & pulses",
+    "qty": 0.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "½ cup dry split red lentils, rinsed",
+    "g": 95.0
+   },
+   {
+    "key": "beef-stock",
+    "name": "Beef stock",
+    "aisle": "Pantry: check first",
+    "qty": 1.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1½ cups beef stock",
+    "g": 375.0
+   },
+   {
+    "key": "frozen-peas",
+    "name": "Frozen peas",
+    "aisle": "Frozen",
+    "qty": 1.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1½ cups frozen peas",
+    "g": 210.0
+   },
+   {
+    "key": "garam-masala",
+    "name": "Garam masala",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp garam masala",
+    "g": 2.5
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": false,
+    "raw": "Salt, to taste"
+   }
+  ],
+  "tags": [
+   "beef",
+   "mince"
+  ],
+  "nutrition": {
+   "kcal": 580,
+   "protein": 40,
+   "carbs": 57,
+   "fat": 20,
+   "per": "serving",
+   "count": 4
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "Freezes well for up to 3 months."
+  ],
+  "minutes": 435,
+  "ahead": [],
+  "meat": "Beef mince",
   "palmer": false
  },
  {
@@ -10605,7 +11118,7 @@
  {
   "title": "Chicken & Chickpea Stew",
   "servings": "6",
-  "time": "–",
+  "time": "10 min prep + 7–8 hours (low)",
   "intro": "",
   "sections": [
    {
@@ -10663,9 +11176,6 @@
     "kind": "notes",
     "heading": "Notes",
     "items": [
-     {
-      "text": "Approx. 2.50/serve, 500 kcal, 46 g protein per serve."
-     },
      {
       "text": "**Tip:** Use Panang or Tikka Masala curry paste for a medium heat. Rogan Josh will be spicier."
      }
@@ -10804,7 +11314,7 @@
    "dairy-free"
   ],
   "storage": [],
-  "minutes": null,
+  "minutes": 490,
   "ahead": [],
   "meat": "Chicken thighs",
   "palmer": false
@@ -11440,6 +11950,324 @@
   "palmer": false
  },
  {
+  "title": "Chipotle Beef Burrito Bowls",
+  "servings": "4",
+  "time": "15 min prep + 5–6 hours (low)",
+  "intro": "Smoky chipotle mince with black beans and red lentils, slow cooked and served over rice with your favourite burrito bowl toppings.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "group": "Slow cooker"
+     },
+     {
+      "text": "1 tbsp oil"
+     },
+     {
+      "text": "500 g beef mince"
+     },
+     {
+      "text": "1 onion, diced"
+     },
+     {
+      "text": "3 garlic cloves, crushed"
+     },
+     {
+      "text": "1 chipotle in adobo, finely chopped, plus 1 tbsp of the sauce"
+     },
+     {
+      "text": "2 tsp ground cumin"
+     },
+     {
+      "text": "1 tsp dried oregano"
+     },
+     {
+      "text": "1 can (400 g) black beans, drained and rinsed"
+     },
+     {
+      "text": "1 can (400 g) chopped tomatoes"
+     },
+     {
+      "text": "½ cup dry split red lentils, rinsed"
+     },
+     {
+      "text": "1 cup beef stock"
+     },
+     {
+      "group": "Last 30 minutes"
+     },
+     {
+      "text": "1 cup frozen corn"
+     },
+     {
+      "text": "1 lime, juiced"
+     },
+     {
+      "group": "To serve"
+     },
+     {
+      "text": "1½ cups rice"
+     },
+     {
+      "text": "Shredded lettuce, salsa and Greek yoghurt"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Brown the mince.** Heat the oil in a frying pan over medium-high heat. Cook the mince and onion for 6–8 minutes, breaking up the mince, until browned. Add the garlic, chipotle and adobo sauce, cumin and oregano and stir for 1 minute."
+     },
+     {
+      "text": "**Load the cooker.** Tip into the slow cooker with the beans, tomatoes, lentils and stock. Stir."
+     },
+     {
+      "text": "**Slow cook.** Cook on Low for 5–6 hours (or High for 3)."
+     },
+     {
+      "text": "**Finish.** Stir in the corn and lime juice and cook 30 more minutes. Season."
+     },
+     {
+      "text": "**Rice.** Cook the rice in a rice cooker or as the packet says. Serve the mince over the rice with lettuce, salsa and a spoonful of yoghurt."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "No chipotle? Use 2 tsp smoked paprika and ½ tsp chilli powder."
+     },
+     {
+      "text": "Freeze the leftover chipotles in the adobo sauce, in ice-cube portions."
+     },
+     {
+      "text": "The mince also makes great burritos or nachos. Freezes for up to 3 months."
+     }
+    ]
+   }
+  ],
+  "id": "SlowCooker-Chipotle_Beef_Burrito_Bowls",
+  "file": "SlowCooker/Chipotle_Beef_Burrito_Bowls.tex",
+  "chapter": "slow",
+  "chapterName": "Slow Cooker",
+  "group": null,
+  "ingredients": [
+   "1 tbsp oil",
+   "500 g beef mince",
+   "1 onion, diced",
+   "3 garlic cloves, crushed",
+   "1 chipotle in adobo, finely chopped, plus 1 tbsp of the sauce",
+   "2 tsp ground cumin",
+   "1 tsp dried oregano",
+   "1 can (400 g) black beans, drained and rinsed",
+   "1 can (400 g) chopped tomatoes",
+   "½ cup dry split red lentils, rinsed",
+   "1 cup beef stock",
+   "1 cup frozen corn",
+   "1 lime, juiced",
+   "1½ cups rice",
+   "Shredded lettuce, salsa and Greek yoghurt"
+  ],
+  "shop": [
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp oil",
+    "g": 13.5
+   },
+   {
+    "key": "beef-mince",
+    "name": "Beef mince",
+    "aisle": "Meat & fish",
+    "qty": 500.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "500 g beef mince",
+    "g": 500.0
+   },
+   {
+    "key": "onion",
+    "name": "Onions",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 onion, diced",
+    "g": 150.0
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 3.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "3 garlic cloves, crushed",
+    "g": 15.0
+   },
+   {
+    "key": "chipotle-in-adobo",
+    "name": "Chipotle in adobo",
+    "aisle": null,
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 chipotle in adobo, finely chopped, plus 1 tbsp of the sauce"
+   },
+   {
+    "key": "cumin",
+    "name": "Ground cumin",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "2 tsp ground cumin",
+    "g": 5.0
+   },
+   {
+    "key": "oregano",
+    "name": "Dried oregano",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp dried oregano",
+    "g": 2.5
+   },
+   {
+    "key": "black-beans",
+    "name": "Black beans",
+    "aisle": "Cans, jars & pulses",
+    "qty": 1.0,
+    "unit": "can",
+    "optional": false,
+    "raw": "1 can (400 g) black beans, drained and rinsed",
+    "g": 240.0
+   },
+   {
+    "key": "canned-tomatoes",
+    "name": "Canned tomatoes",
+    "aisle": "Cans, jars & pulses",
+    "qty": 1.0,
+    "unit": "can",
+    "optional": false,
+    "raw": "1 can (400 g) chopped tomatoes",
+    "g": 400.0
+   },
+   {
+    "key": "red-lentils",
+    "name": "Red lentils (dry)",
+    "aisle": "Cans, jars & pulses",
+    "qty": 0.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "½ cup dry split red lentils, rinsed",
+    "g": 95.0
+   },
+   {
+    "key": "beef-stock",
+    "name": "Beef stock",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1 cup beef stock",
+    "g": 250.0
+   },
+   {
+    "key": "corn",
+    "name": "Corn (frozen or canned)",
+    "aisle": "Frozen",
+    "qty": 1.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1 cup frozen corn",
+    "g": 160.0
+   },
+   {
+    "key": "lime",
+    "name": "Limes",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 lime, juiced",
+    "g": 40.0
+   },
+   {
+    "key": "rice",
+    "name": "Rice",
+    "aisle": "Pasta, rice & grains",
+    "qty": 1.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1½ cups rice",
+    "g": 277.5
+   },
+   {
+    "key": "lettuce",
+    "name": "Lettuce or salad leaves",
+    "aisle": "Fruit & veg",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Shredded lettuce, salsa and Greek yoghurt"
+   },
+   {
+    "key": "salsa",
+    "name": "Salsa",
+    "aisle": "Cans, jars & pulses",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Shredded lettuce, salsa and Greek yoghurt"
+   },
+   {
+    "key": "greek-yoghurt",
+    "name": "Greek yoghurt",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Shredded lettuce, salsa and Greek yoghurt"
+   }
+  ],
+  "tags": [
+   "beef",
+   "mince"
+  ],
+  "nutrition": {
+   "kcal": 750,
+   "protein": 44,
+   "carbs": 93,
+   "fat": 21,
+   "per": "serving",
+   "count": 4
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "Freeze the leftover chipotles in the adobo sauce, in ice-cube portions.",
+   "Freezes for up to 3 months."
+  ],
+  "minutes": 375,
+  "ahead": [],
+  "meat": "Beef mince",
+  "palmer": false
+ },
+ {
   "title": "Coconut Chicken, Kumara & Chickpea Curry",
   "servings": "3–4",
   "time": "6–7 hrs (low) / 3–4 hrs (high)",
@@ -11716,7 +12544,7 @@
    "dairy-free"
   ],
   "storage": [],
-  "minutes": null,
+  "minutes": 420,
   "ahead": [],
   "meat": "Chicken breast or tenderloins",
   "palmer": false
@@ -11724,7 +12552,7 @@
  {
   "title": "Honey Garlic Chicken",
   "servings": "6",
-  "time": "–",
+  "time": "10 min prep + 6–7 hours (low)",
   "intro": "",
   "sections": [
    {
@@ -11785,9 +12613,6 @@
     "kind": "notes",
     "heading": "Notes",
     "items": [
-     {
-      "text": "Approx. 2.40/serve, 480 kcal, 46 g protein per serve."
-     },
      {
       "text": "**Tip:** The cannellini beans soak up the honey garlic sauce beautifully and add extra protein without changing the flavour at all."
      }
@@ -11934,7 +12759,7 @@
    "dairy-free"
   ],
   "storage": [],
-  "minutes": null,
+  "minutes": 430,
   "ahead": [],
   "meat": "Chicken thighs",
   "palmer": false
@@ -12230,7 +13055,7 @@
  {
   "title": "Mexican Salsa Chicken",
   "servings": "6",
-  "time": "–",
+  "time": "10 min prep + 6–8 hours (low)",
   "intro": "",
   "sections": [
    {
@@ -12288,9 +13113,6 @@
     "kind": "notes",
     "heading": "Notes",
     "items": [
-     {
-      "text": "Approx. 2.20/serve, 470 kcal, 48 g protein per serve."
-     },
      {
       "text": "**Tip:** Makes 6 serves. Leftovers keep in the fridge for 3–4 days or freeze for up to 3 months."
      }
@@ -12429,7 +13251,7 @@
   "storage": [
    "Leftovers keep in the fridge for 3–4 days or freeze for up to 3 months."
   ],
-  "minutes": null,
+  "minutes": 490,
   "ahead": [],
   "meat": "Chicken thighs",
   "palmer": false
@@ -12737,7 +13559,7 @@
  {
   "title": "Pork & Kumara Curry",
   "servings": "6",
-  "time": "–",
+  "time": "15 min prep + 7–8 hours (low)",
   "intro": "",
   "sections": [
    {
@@ -12801,9 +13623,6 @@
     "kind": "notes",
     "heading": "Notes",
     "items": [
-     {
-      "text": "Approx. 2.50/serve, 490 kcal, 44 g protein per serve."
-     },
      {
       "text": "**Tip:** Kumara breaks down slightly during cooking, naturally thickening the curry. If you prefer more texture, add the kumara in the last 2 hours."
      }
@@ -12964,7 +13783,7 @@
    "dairy-free"
   ],
   "storage": [],
-  "minutes": null,
+  "minutes": 495,
   "ahead": [],
   "meat": "Pork shoulder",
   "palmer": false
@@ -12972,7 +13791,7 @@
  {
   "title": "Pork & Lentil Bolognese",
   "servings": "4",
-  "time": "6–7 hrs (slow cook)",
+  "time": "15 min prep + 6–7 hours (low)",
   "intro": "",
   "sections": [
    {
@@ -13065,11 +13884,14 @@
      },
      {
       "text": "For extra protein, stir through a drained can of chickpeas or extra lentils in the last 30 minutes."
-     },
-     {
-      "text": "Approx. per serving (with rice): 480 cal, 38 g protein, 52 g carbs, 10 g fat."
      }
     ]
+   },
+   {
+    "kind": "variation",
+    "heading": "Stovetop Version (45 min)",
+    "text": "No slow cooker? Brown the mince in a large pot and drain any fat. Add the onion, garlic, carrot, capsicum and celery and cook for 5 minutes, then the tomato paste for 1 minute. Add the lentils, tomatoes, stock, herbs and seasoning and simmer gently with the lid ajar for 30 minutes, stirring now and then and adding a splash of water if it gets thick, until the lentils are completely soft. Serve over rice, pasta or courgette noodles. For 6 serves, use 500 g mince, 1 cup lentils and 2 cans of tomatoes.",
+    "sections": []
    }
   ],
   "id": "SlowCooker-Pork_and_Lentil_Bolognese",
@@ -13287,7 +14109,7 @@
   "storage": [
    "Keeps well in the fridge for 4 days and freezes for up to 3 months – great for batch cooking."
   ],
-  "minutes": null,
+  "minutes": 435,
   "ahead": [],
   "meat": "Pork mince",
   "palmer": false
@@ -13945,7 +14767,7 @@
  {
   "title": "Pulled Pork Wraps",
   "servings": "6",
-  "time": "–",
+  "time": "15 min prep + 8 hours (low)",
   "intro": "",
   "sections": [
    {
@@ -14009,9 +14831,6 @@
     "kind": "notes",
     "heading": "Notes",
     "items": [
-     {
-      "text": "Approx. 2.60/serve, 495 kcal, 54 g protein per serve."
-     },
      {
       "text": "**Tip:** Pork shoulder is one of the cheapest cuts available. Buy it on special and freeze — it slow cooks perfectly from thawed."
      }
@@ -14150,7 +14969,7 @@
   "storage": [
    "Buy it on special and freeze — it slow cooks perfectly from thawed."
   ],
-  "minutes": null,
+  "minutes": 495,
   "ahead": [],
   "meat": "Pork shoulder",
   "palmer": false
@@ -15070,9 +15889,287 @@
   "palmer": false
  },
  {
+  "title": "Taco Soup with Beef Mince",
+  "servings": "4",
+  "time": "15 min prep + 6–7 hours (low)",
+  "intro": "Everything you like about tacos, as a thick, hearty soup: mince, two kinds of beans, corn and red lentils in a spiced tomato stock.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "1 tbsp oil"
+     },
+     {
+      "text": "500 g beef mince"
+     },
+     {
+      "text": "1 onion, diced"
+     },
+     {
+      "text": "2 garlic cloves, crushed"
+     },
+     {
+      "text": "2 tbsp taco seasoning"
+     },
+     {
+      "text": "1 capsicum, diced"
+     },
+     {
+      "text": "1 can (400 g) black beans, drained and rinsed"
+     },
+     {
+      "text": "1 can (400 g) kidney beans, drained and rinsed"
+     },
+     {
+      "text": "1 can (400 g) chopped tomatoes"
+     },
+     {
+      "text": "½ cup dry split red lentils, rinsed"
+     },
+     {
+      "text": "1 cup frozen corn"
+     },
+     {
+      "text": "3 cups beef stock"
+     },
+     {
+      "group": "To serve"
+     },
+     {
+      "text": "Grated cheese, Greek yoghurt and a handful of corn chips"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Brown the mince.** Heat the oil in a frying pan over medium-high heat. Cook the mince and onion for 6–8 minutes, breaking up the mince, until browned. Stir in the garlic and taco seasoning for 1 minute."
+     },
+     {
+      "text": "**Load the cooker.** Tip into the slow cooker with all the other ingredients. Stir."
+     },
+     {
+      "text": "**Slow cook.** Cook on Low for 6–7 hours (or High for 3–4). Add a splash of water if you like it thinner."
+     },
+     {
+      "text": "**Serve** in bowls topped with cheese, yoghurt and crushed corn chips."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "No taco seasoning? Use 2 tsp cumin, 2 tsp smoked paprika, 1 tsp oregano and ½ tsp chilli powder."
+     },
+     {
+      "text": "Freezes well for up to 3 months (freeze it before adding toppings)."
+     }
+    ]
+   }
+  ],
+  "id": "SlowCooker-Taco_Soup_Beef_Mince",
+  "file": "SlowCooker/Taco_Soup_Beef_Mince.tex",
+  "chapter": "slow",
+  "chapterName": "Slow Cooker",
+  "group": null,
+  "ingredients": [
+   "1 tbsp oil",
+   "500 g beef mince",
+   "1 onion, diced",
+   "2 garlic cloves, crushed",
+   "2 tbsp taco seasoning",
+   "1 capsicum, diced",
+   "1 can (400 g) black beans, drained and rinsed",
+   "1 can (400 g) kidney beans, drained and rinsed",
+   "1 can (400 g) chopped tomatoes",
+   "½ cup dry split red lentils, rinsed",
+   "1 cup frozen corn",
+   "3 cups beef stock",
+   "Grated cheese, Greek yoghurt and a handful of corn chips"
+  ],
+  "shop": [
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp oil",
+    "g": 13.5
+   },
+   {
+    "key": "beef-mince",
+    "name": "Beef mince",
+    "aisle": "Meat & fish",
+    "qty": 500.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "500 g beef mince",
+    "g": 500.0
+   },
+   {
+    "key": "onion",
+    "name": "Onions",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 onion, diced",
+    "g": 150.0
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "2 garlic cloves, crushed",
+    "g": 10.0
+   },
+   {
+    "key": "taco-seasoning",
+    "name": "Taco seasoning",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp taco seasoning",
+    "g": 16.0
+   },
+   {
+    "key": "capsicum",
+    "name": "Capsicums",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 capsicum, diced",
+    "g": 160.0
+   },
+   {
+    "key": "black-beans",
+    "name": "Black beans",
+    "aisle": "Cans, jars & pulses",
+    "qty": 1.0,
+    "unit": "can",
+    "optional": false,
+    "raw": "1 can (400 g) black beans, drained and rinsed",
+    "g": 240.0
+   },
+   {
+    "key": "kidney-beans",
+    "name": "Kidney beans",
+    "aisle": "Cans, jars & pulses",
+    "qty": 1.0,
+    "unit": "can",
+    "optional": false,
+    "raw": "1 can (400 g) kidney beans, drained and rinsed",
+    "g": 240.0
+   },
+   {
+    "key": "canned-tomatoes",
+    "name": "Canned tomatoes",
+    "aisle": "Cans, jars & pulses",
+    "qty": 1.0,
+    "unit": "can",
+    "optional": false,
+    "raw": "1 can (400 g) chopped tomatoes",
+    "g": 400.0
+   },
+   {
+    "key": "red-lentils",
+    "name": "Red lentils (dry)",
+    "aisle": "Cans, jars & pulses",
+    "qty": 0.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "½ cup dry split red lentils, rinsed",
+    "g": 95.0
+   },
+   {
+    "key": "corn",
+    "name": "Corn (frozen or canned)",
+    "aisle": "Frozen",
+    "qty": 1.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1 cup frozen corn",
+    "g": 160.0
+   },
+   {
+    "key": "beef-stock",
+    "name": "Beef stock",
+    "aisle": "Pantry: check first",
+    "qty": 3.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "3 cups beef stock",
+    "g": 750.0
+   },
+   {
+    "key": "cheese",
+    "name": "Tasty cheese",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Grated cheese, Greek yoghurt and a handful of corn chips"
+   },
+   {
+    "key": "greek-yoghurt",
+    "name": "Greek yoghurt",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Grated cheese, Greek yoghurt and a handful of corn chips"
+   },
+   {
+    "key": "corn-chips",
+    "name": "Corn chips",
+    "aisle": "Bread & wraps",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Grated cheese, Greek yoghurt and a handful of corn chips"
+   }
+  ],
+  "tags": [
+   "beef",
+   "mince"
+  ],
+  "nutrition": {
+   "kcal": 590,
+   "protein": 44,
+   "carbs": 50,
+   "fat": 21,
+   "per": "serving",
+   "count": 4
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "Freezes well for up to 3 months (freeze it before adding toppings)."
+  ],
+  "minutes": 435,
+  "ahead": [],
+  "meat": "Beef mince",
+  "palmer": false
+ },
+ {
   "title": "Beef & Broccoli Stir-Fry",
-  "servings": "6",
-  "time": "–",
+  "servings": "4",
+  "time": "30 min",
   "intro": "",
   "sections": [
    {
@@ -15145,9 +16242,6 @@
     "kind": "notes",
     "heading": "Notes",
     "items": [
-     {
-      "text": "Approx. 2.70/serve, 465 kcal, 46 g protein per serve."
-     },
      {
       "text": "**Tip:** Broccoli is one of the most protein-dense vegetables available. Combined with edamame, this stir fry punches well above its weight on protein per dollar."
      }
@@ -15288,26 +16382,27 @@
    "mince"
   ],
   "nutrition": {
-   "kcal": 270,
-   "protein": 24,
-   "carbs": 13,
-   "fat": 15,
+   "kcal": 410,
+   "protein": 36,
+   "carbs": 19,
+   "fat": 22,
    "per": "serving",
-   "count": 6
+   "count": 4
   },
   "diet": [
-   "dairy-free"
+   "dairy-free",
+   "quick"
   ],
   "storage": [],
-  "minutes": null,
+  "minutes": 30,
   "ahead": [],
   "meat": "Beef mince",
   "palmer": false
  },
  {
   "title": "Beef & Vegetable Chilli",
-  "servings": "6",
-  "time": "–",
+  "servings": "4",
+  "time": "10 min prep + 40 min",
   "intro": "",
   "sections": [
    {
@@ -15377,9 +16472,6 @@
     "kind": "notes",
     "heading": "Notes",
     "items": [
-     {
-      "text": "Approx. 2.60/serve, 490 kcal, 45 g protein per serve."
-     },
      {
       "text": "**Tip:** This freezes brilliantly — make a double batch and freeze half in portions for a quick future dinner."
      }
@@ -15549,12 +16641,12 @@
    "mince"
   ],
   "nutrition": {
-   "kcal": 340,
-   "protein": 26,
-   "carbs": 30,
-   "fat": 12,
+   "kcal": 520,
+   "protein": 39,
+   "carbs": 45,
+   "fat": 17,
    "per": "serving",
-   "count": 6
+   "count": 4
   },
   "diet": [
    "freezes",
@@ -15563,7 +16655,7 @@
   "storage": [
    "Tip: This freezes brilliantly — make a double batch and freeze half in portions for a quick future dinner."
   ],
-  "minutes": null,
+  "minutes": 50,
   "ahead": [],
   "meat": "Beef mince",
   "palmer": false
@@ -16173,8 +17265,8 @@
  },
  {
   "title": "Beef Mince Stir-Fry",
-  "servings": "6",
-  "time": "–",
+  "servings": "4",
+  "time": "25 min",
   "intro": "",
   "sections": [
    {
@@ -16241,9 +17333,6 @@
     "kind": "notes",
     "heading": "Notes",
     "items": [
-     {
-      "text": "Approx. 2.50/serve, 470 kcal, 52 g protein per serve."
-     },
      {
       "text": "**Tip:** Pork mince also works great here for a different flavour. Day-old rice works best for fried rice variants."
      }
@@ -16371,18 +17460,19 @@
    "mince"
   ],
   "nutrition": {
-   "kcal": 260,
-   "protein": 23,
-   "carbs": 11,
-   "fat": 14,
+   "kcal": 400,
+   "protein": 35,
+   "carbs": 16,
+   "fat": 21,
    "per": "serving",
-   "count": 6
+   "count": 4
   },
   "diet": [
-   "dairy-free"
+   "dairy-free",
+   "quick"
   ],
   "storage": [],
-  "minutes": null,
+  "minutes": 25,
   "ahead": [],
   "meat": "Beef mince",
   "palmer": false
@@ -20091,7 +21181,7 @@
  },
  {
   "title": "Homemade Burgers & Fries",
-  "servings": "2",
+  "servings": "4 (4–6 burgers)",
   "time": "40 min",
   "intro": "",
   "sections": [
@@ -20353,12 +21443,12 @@
    "mince"
   ],
   "nutrition": {
-   "kcal": 1450,
-   "protein": 81,
-   "carbs": 186,
-   "fat": 42,
+   "kcal": 730,
+   "protein": 40,
+   "carbs": 93,
+   "fat": 21,
    "per": "serving",
-   "count": 2
+   "count": 4
   },
   "diet": [
    "dairy-free"
@@ -20549,6 +21639,238 @@
   "ahead": [],
   "meat": "Ham",
   "palmer": false
+ },
+ {
+  "title": "Honey Soy Chicken Noodle Stir-Fry",
+  "servings": "4",
+  "time": "25 min",
+  "intro": "Sticky honey soy chicken and veg tossed through noodles. Faster than takeaway.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "500 g boneless chicken thighs, thinly sliced"
+     },
+     {
+      "text": "1 tbsp cornflour"
+     },
+     {
+      "text": "2 tbsp oil"
+     },
+     {
+      "text": "3 garlic cloves, crushed"
+     },
+     {
+      "text": "1 tbsp grated ginger"
+     },
+     {
+      "text": "500 g frozen stir-fry vegetables"
+     },
+     {
+      "text": "4 tbsp soy sauce"
+     },
+     {
+      "text": "2 tbsp honey"
+     },
+     {
+      "text": "1 tsp sesame oil"
+     },
+     {
+      "text": "400 g fresh hokkien noodles (or 250 g dried egg noodles, cooked)"
+     },
+     {
+      "text": "2 spring onions, sliced"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Coat the chicken.** Toss the chicken with the cornflour."
+     },
+     {
+      "text": "**Cook the chicken.** Heat 1 tbsp oil in a wok or large frying pan over high heat. Stir-fry the chicken for 5–6 minutes until golden and cooked through. Put it on a plate."
+     },
+     {
+      "text": "**Veg.** Add the rest of the oil, then the garlic and ginger for 30 seconds, then the frozen vegetables. Stir-fry for 4–5 minutes until hot."
+     },
+     {
+      "text": "**Sauce and noodles.** Mix the soy sauce, honey and sesame oil. Add the noodles, chicken and sauce to the wok and toss for 2 minutes until everything is coated and hot. (Loosen hokkien noodles in hot water first if they're stuck together.)"
+     },
+     {
+      "text": "**Serve** topped with spring onions."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Swap the chicken for beef strips or pork mince."
+     },
+     {
+      "text": "Keeps 2 days in the fridge."
+     }
+    ]
+   }
+  ],
+  "id": "Stovetop-Honey_Soy_Chicken_Noodle_Stir_Fry",
+  "file": "Stovetop/Honey_Soy_Chicken_Noodle_Stir_Fry.tex",
+  "chapter": "stovetop",
+  "chapterName": "Stovetop",
+  "group": null,
+  "ingredients": [
+   "500 g boneless chicken thighs, thinly sliced",
+   "1 tbsp cornflour",
+   "2 tbsp oil",
+   "3 garlic cloves, crushed",
+   "1 tbsp grated ginger",
+   "500 g frozen stir-fry vegetables",
+   "4 tbsp soy sauce",
+   "2 tbsp honey",
+   "1 tsp sesame oil",
+   "400 g fresh hokkien noodles (or 250 g dried egg noodles, cooked)",
+   "2 spring onions, sliced"
+  ],
+  "shop": [
+   {
+    "key": "chicken-thigh",
+    "name": "Chicken thighs",
+    "aisle": "Meat & fish",
+    "qty": 500.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "500 g boneless chicken thighs, thinly sliced",
+    "g": 500.0
+   },
+   {
+    "key": "cornflour",
+    "name": "Cornflour",
+    "aisle": "Baking",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp cornflour",
+    "g": 8.0
+   },
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp oil",
+    "g": 27.0
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 3.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "3 garlic cloves, crushed",
+    "g": 15.0
+   },
+   {
+    "key": "ginger",
+    "name": "Fresh ginger",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp grated ginger",
+    "g": 6.0
+   },
+   {
+    "key": "frozen-stir-fry",
+    "name": "Frozen stir-fry vegetables",
+    "aisle": "Frozen",
+    "qty": 500.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "500 g frozen stir-fry vegetables",
+    "g": 500.0
+   },
+   {
+    "key": "soy-sauce",
+    "name": "Soy sauce",
+    "aisle": "Pantry: check first",
+    "qty": 4.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "4 tbsp soy sauce",
+    "g": 72.0
+   },
+   {
+    "key": "honey",
+    "name": "Honey",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp honey",
+    "g": 42.0
+   },
+   {
+    "key": "sesame-oil",
+    "name": "Sesame oil",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp sesame oil",
+    "g": 4.5
+   },
+   {
+    "key": "noodles",
+    "name": "Noodles",
+    "aisle": "Pasta, rice & grains",
+    "qty": 400.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "400 g fresh hokkien noodles (or 250 g dried egg noodles, cooked)",
+    "g": 400.0
+   },
+   {
+    "key": "spring-onion",
+    "name": "Spring onions",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "",
+    "optional": false,
+    "raw": "2 spring onions, sliced",
+    "g": 30.0
+   }
+  ],
+  "tags": [
+   "chicken"
+  ],
+  "nutrition": {
+   "kcal": 720,
+   "protein": 40,
+   "carbs": 91,
+   "fat": 21,
+   "per": "serving",
+   "count": 4
+  },
+  "diet": [
+   "dairy-free",
+   "quick"
+  ],
+  "storage": [
+   "Keeps 2 days in the fridge."
+  ],
+  "minutes": 25,
+  "ahead": [],
+  "meat": "Chicken thighs",
+  "palmer": true
  },
  {
   "title": "Korean Bibimbap",
@@ -21013,312 +22335,6 @@
   "palmer": false
  },
  {
-  "title": "Lean Sausage Ragu with Brown Rice",
-  "servings": "4",
-  "time": "45 min",
-  "intro": "",
-  "sections": [
-   {
-    "kind": "ingredients",
-    "heading": "Ingredients",
-    "items": [
-     {
-      "text": "6 beef or pork sausages"
-     },
-     {
-      "text": "1 red onion, diced"
-     },
-     {
-      "text": "1 medium carrot, grated"
-     },
-     {
-      "text": "400 g tinned diced tomatoes"
-     },
-     {
-      "text": "125 ml red wine"
-     },
-     {
-      "text": "150 ml beef stock (or chicken stock if using pork sausages)"
-     },
-     {
-      "text": "4 garlic cloves, minced"
-     },
-     {
-      "text": "2 tbsp tomato paste"
-     },
-     {
-      "text": "1 tsp dried thyme (or dried oregano if using pork sausages)"
-     },
-     {
-      "text": "1 tsp fennel seeds"
-     },
-     {
-      "text": "½ tsp chilli flakes (optional)"
-     },
-     {
-      "text": "Salt and black pepper, to taste"
-     },
-     {
-      "text": "300 g frozen mixed vegetables"
-     },
-     {
-      "text": "1 large handful frozen spinach"
-     },
-     {
-      "text": "150 g brown rice, to serve"
-     }
-    ]
-   },
-   {
-    "kind": "steps",
-    "heading": "Method",
-    "items": [
-     {
-      "text": "Squeeze the sausage meat out of the casings and discard the skins. Heat a large pan over high heat with a little oil and brown the meat, breaking it up as you go, until well coloured (about 5 min)."
-     },
-     {
-      "text": "Reduce heat to medium. Add the red onion and grated carrot and cook for 3–4 min until softened."
-     },
-     {
-      "text": "Add the garlic, tomato paste, thyme (or oregano), fennel seeds, and chilli flakes. Stir and cook for 1 min until fragrant."
-     },
-     {
-      "text": "Pour in the red wine and scrape up any browned bits. Let it bubble and reduce by half (about 2 min)."
-     },
-     {
-      "text": "Add the tomatoes and stock. Stir to combine, season, and bring to a boil."
-     },
-     {
-      "text": "Reduce heat to low and simmer uncovered for 20 min, stirring occasionally, until the sauce is thickening nicely."
-     },
-     {
-      "text": "Stir in the frozen mixed vegetables and cook for 5 min, then add the frozen spinach (no need to thaw) and cook a further 3–5 min until wilted and the sauce is thick and rich."
-     },
-     {
-      "text": "Meanwhile, cook the brown rice according to the packet instructions."
-     },
-     {
-      "text": "Spoon the ragu over a modest portion of rice and serve."
-     }
-    ]
-   },
-   {
-    "kind": "notes",
-    "heading": "Notes",
-    "items": [
-     {
-      "text": "Pasta is replaced with extra veg and a small side of rice to keep calorie density down — aim for roughly ⅓–½ cup cooked rice per serve. Frozen spinach releases water, so simmer a couple of extra minutes uncovered if the sauce looks loose. Beef stock gives a noticeably richer sauce than chicken stock. Fennel seeds can go in whole or lightly crushed for a stronger flavour. Keeps 3–4 days in the fridge and freezes well."
-     }
-    ]
-   }
-  ],
-  "id": "Stovetop-Sausage_Ragu_Lean",
-  "file": "Stovetop/Sausage_Ragu_Lean.tex",
-  "chapter": "stovetop",
-  "chapterName": "Stovetop",
-  "group": null,
-  "ingredients": [
-   "6 beef or pork sausages",
-   "1 red onion, diced",
-   "1 medium carrot, grated",
-   "400 g tinned diced tomatoes",
-   "125 ml red wine",
-   "150 ml beef stock (or chicken stock if using pork sausages)",
-   "4 garlic cloves, minced",
-   "2 tbsp tomato paste",
-   "1 tsp dried thyme (or dried oregano if using pork sausages)",
-   "1 tsp fennel seeds",
-   "½ tsp chilli flakes (optional)",
-   "Salt and black pepper, to taste",
-   "300 g frozen mixed vegetables",
-   "1 large handful frozen spinach",
-   "150 g brown rice, to serve"
-  ],
-  "shop": [
-   {
-    "key": "sausages",
-    "name": "Sausages",
-    "aisle": "Meat & fish",
-    "qty": 6.0,
-    "unit": "",
-    "optional": false,
-    "raw": "6 beef or pork sausages",
-    "g": 420.0
-   },
-   {
-    "key": "red-onion",
-    "name": "Red onion",
-    "aisle": "Fruit & veg",
-    "qty": 1.0,
-    "unit": "",
-    "optional": false,
-    "raw": "1 red onion, diced",
-    "g": 150.0
-   },
-   {
-    "key": "carrot",
-    "name": "Carrots",
-    "aisle": "Fruit & veg",
-    "qty": 1.0,
-    "unit": "",
-    "optional": false,
-    "raw": "1 medium carrot, grated",
-    "g": 120.0
-   },
-   {
-    "key": "canned-tomatoes",
-    "name": "Canned tomatoes",
-    "aisle": "Cans, jars & pulses",
-    "qty": 1.0,
-    "unit": "can",
-    "optional": false,
-    "raw": "400 g tinned diced tomatoes",
-    "g": 400.0
-   },
-   {
-    "key": "wine",
-    "name": "Wine (for cooking)",
-    "aisle": "Pantry: check first",
-    "qty": 125.0,
-    "unit": "ml",
-    "optional": false,
-    "raw": "125 ml red wine",
-    "g": 125.0
-   },
-   {
-    "key": "beef-stock",
-    "name": "Beef stock",
-    "aisle": "Pantry: check first",
-    "qty": 150.0,
-    "unit": "ml",
-    "optional": false,
-    "raw": "150 ml beef stock (or chicken stock if using pork sausages)",
-    "g": 150.0
-   },
-   {
-    "key": "garlic",
-    "name": "Garlic",
-    "aisle": "Fruit & veg",
-    "qty": 4.0,
-    "unit": "clove",
-    "optional": false,
-    "raw": "4 garlic cloves, minced",
-    "g": 20.0
-   },
-   {
-    "key": "tomato-paste",
-    "name": "Tomato paste",
-    "aisle": "Cans, jars & pulses",
-    "qty": 2.0,
-    "unit": "tbsp",
-    "optional": false,
-    "raw": "2 tbsp tomato paste",
-    "g": 32.0
-   },
-   {
-    "key": "thyme",
-    "name": "Dried thyme",
-    "aisle": "Pantry: check first",
-    "qty": 1.0,
-    "unit": "tsp",
-    "optional": false,
-    "raw": "1 tsp dried thyme (or dried oregano if using pork sausages)",
-    "g": 2.5
-   },
-   {
-    "key": "fennel-seeds",
-    "name": "Fennel seeds",
-    "aisle": "Pantry: check first",
-    "qty": 1.0,
-    "unit": "tsp",
-    "optional": false,
-    "raw": "1 tsp fennel seeds",
-    "g": 2.5
-   },
-   {
-    "key": "chilli-flakes",
-    "name": "Chilli flakes",
-    "aisle": "Pantry: check first",
-    "qty": 0.5,
-    "unit": "tsp",
-    "optional": true,
-    "raw": "½ tsp chilli flakes (optional)",
-    "g": 1.2
-   },
-   {
-    "key": "salt",
-    "name": "Salt",
-    "aisle": "Pantry: check first",
-    "qty": null,
-    "unit": "",
-    "optional": true,
-    "raw": "Salt and black pepper, to taste"
-   },
-   {
-    "key": "pepper",
-    "name": "Black pepper",
-    "aisle": "Pantry: check first",
-    "qty": null,
-    "unit": "",
-    "optional": true,
-    "raw": "Salt and black pepper, to taste"
-   },
-   {
-    "key": "frozen-mixed-veg",
-    "name": "Frozen mixed vegetables",
-    "aisle": "Frozen",
-    "qty": 300.0,
-    "unit": "g",
-    "optional": false,
-    "raw": "300 g frozen mixed vegetables",
-    "g": 300.0
-   },
-   {
-    "key": "frozen-spinach",
-    "name": "Frozen spinach",
-    "aisle": "Frozen",
-    "qty": 1.0,
-    "unit": "",
-    "optional": false,
-    "raw": "1 large handful frozen spinach",
-    "g": 100.0
-   },
-   {
-    "key": "brown-rice",
-    "name": "Brown rice",
-    "aisle": "Pasta, rice & grains",
-    "qty": 150.0,
-    "unit": "g",
-    "optional": true,
-    "raw": "150 g brown rice, to serve",
-    "g": 150.0
-   }
-  ],
-  "tags": [
-   "beef",
-   "pork"
-  ],
-  "nutrition": {
-   "kcal": 420,
-   "protein": 19,
-   "carbs": 29,
-   "fat": 23,
-   "per": "serving",
-   "count": 4
-  },
-  "diet": [
-   "freezes",
-   "dairy-free"
-  ],
-  "storage": [
-   "Keeps 3–4 days in the fridge and freezes well."
-  ],
-  "minutes": 45,
-  "ahead": [],
-  "meat": "Sausages",
-  "palmer": false
- },
- {
   "title": "Mapo Tofu with Pork Mince",
   "servings": "4",
   "time": "10 min prep + 15 min",
@@ -21438,6 +22454,16 @@
     "g": 300.0
    },
    {
+    "key": "tofu",
+    "name": "Tofu",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 2.0,
+    "unit": "block",
+    "optional": false,
+    "raw": "2 blocks (about 600 g) firm or medium tofu, cut into 2 cm cubes",
+    "g": 600.0
+   },
+   {
     "key": "doubanjiang",
     "name": "Chilli bean paste",
     "aisle": "Cans, jars & pulses",
@@ -21552,10 +22578,10 @@
    "mince"
   ],
   "nutrition": {
-   "kcal": 240,
-   "protein": 18,
-   "carbs": 13,
-   "fat": 13,
+   "kcal": 420,
+   "protein": 37,
+   "carbs": 16,
+   "fat": 24,
    "per": "serving",
    "count": 4
   },
@@ -22441,50 +23467,38 @@
   "palmer": true
  },
  {
-  "title": "Pork & Lentil Bolognese",
-  "servings": "6",
-  "time": "–",
-  "intro": "",
+  "title": "Peri-Peri Chicken Wraps",
+  "servings": "4",
+  "time": "25 min",
+  "intro": "Spicy peri-peri chicken with crunchy salad and a peri-peri mayo, rolled up in wraps.",
   "sections": [
    {
     "kind": "ingredients",
     "heading": "Ingredients",
     "items": [
      {
-      "text": "500 g pork mince"
+      "text": "500 g boneless chicken thighs"
      },
      {
-      "text": "1 cup red lentils, rinsed"
+      "text": "4 tbsp peri-peri sauce"
      },
      {
-      "text": "2 cans diced tomatoes"
+      "text": "1 tbsp oil"
      },
      {
-      "text": "2 tbsp tomato paste"
+      "text": "8 wraps or tortillas"
      },
      {
-      "text": "1 onion, diced"
+      "text": "2 cups shredded lettuce"
      },
      {
-      "text": "2 carrots, diced"
+      "text": "2 tomatoes, sliced"
      },
      {
-      "text": "2 stalks celery, diced"
+      "text": "½ cucumber, sliced"
      },
      {
-      "text": "3 garlic cloves, minced"
-     },
-     {
-      "text": "1 tsp dried oregano"
-     },
-     {
-      "text": "1 tsp dried basil"
-     },
-     {
-      "text": "1 cup beef or chicken stock"
-     },
-     {
-      "text": "**To serve:** pasta or courgette noodles, parmesan"
+      "text": "4 tbsp mayonnaise"
      }
     ]
    },
@@ -22493,22 +23507,16 @@
     "heading": "Method",
     "items": [
      {
-      "text": "Brown pork mince in a large pot. Drain excess fat."
+      "text": "**Marinate.** Coat the chicken in 3 tbsp of the peri-peri sauce. Leave for 10 minutes if you have time (or overnight in the fridge)."
      },
      {
-      "text": "Add onion, carrots, celery, and garlic. Cook for 5 minutes until softened."
+      "text": "**Cook.** Heat the oil in a frying pan over medium-high heat. Cook the chicken for 5–6 minutes each side until cooked through. Rest for 2 minutes, then slice."
      },
      {
-      "text": "Stir in tomato paste and cook for 1 minute."
+      "text": "**Peri-peri mayo.** Mix the mayonnaise with the rest of the peri-peri sauce."
      },
      {
-      "text": "Add diced tomatoes, red lentils, stock, oregano, and basil."
-     },
-     {
-      "text": "Simmer on low for 30 minutes until lentils are completely soft and sauce has thickened."
-     },
-     {
-      "text": "Serve over pasta or courgette noodles with parmesan."
+      "text": "**Wrap.** Warm the wraps, then fill with lettuce, tomato, cucumber, chicken and a drizzle of the mayo. Roll up."
      }
     ]
    },
@@ -22517,193 +23525,130 @@
     "heading": "Notes",
     "items": [
      {
-      "text": "Approx. 2.30/serve, 460 kcal, 44 g protein per serve."
+      "text": "Pick a mild or hot peri-peri sauce to suit. Most mayonnaise is dairy-free (it's made with egg); check the label."
      },
      {
-      "text": "**Tip:** For a lower carb option, courgette noodles cut the calories significantly while keeping the meal filling."
+      "text": "The chicken also works on the barbecue or in an air fryer (200 °C, 15–18 minutes)."
      }
     ]
    }
   ],
-  "id": "Stovetop-Pork_and_Lentil_Bolognese",
-  "file": "Stovetop/Pork_and_Lentil_Bolognese.tex",
+  "id": "Stovetop-Peri_Peri_Chicken_Wraps",
+  "file": "Stovetop/Peri_Peri_Chicken_Wraps.tex",
   "chapter": "stovetop",
   "chapterName": "Stovetop",
   "group": null,
   "ingredients": [
-   "500 g pork mince",
-   "1 cup red lentils, rinsed",
-   "2 cans diced tomatoes",
-   "2 tbsp tomato paste",
-   "1 onion, diced",
-   "2 carrots, diced",
-   "2 stalks celery, diced",
-   "3 garlic cloves, minced",
-   "1 tsp dried oregano",
-   "1 tsp dried basil",
-   "1 cup beef or chicken stock",
-   "**To serve:** pasta or courgette noodles, parmesan"
+   "500 g boneless chicken thighs",
+   "4 tbsp peri-peri sauce",
+   "1 tbsp oil",
+   "8 wraps or tortillas",
+   "2 cups shredded lettuce",
+   "2 tomatoes, sliced",
+   "½ cucumber, sliced",
+   "4 tbsp mayonnaise"
   ],
   "shop": [
    {
-    "key": "pork-mince",
-    "name": "Pork mince",
+    "key": "chicken-thigh",
+    "name": "Chicken thighs",
     "aisle": "Meat & fish",
     "qty": 500.0,
     "unit": "g",
     "optional": false,
-    "raw": "500 g pork mince",
+    "raw": "500 g boneless chicken thighs",
     "g": 500.0
    },
    {
-    "key": "red-lentils",
-    "name": "Red lentils (dry)",
-    "aisle": "Cans, jars & pulses",
-    "qty": 1.0,
-    "unit": "cup",
-    "optional": false,
-    "raw": "1 cup red lentils, rinsed",
-    "g": 190.0
-   },
-   {
-    "key": "canned-tomatoes",
-    "name": "Canned tomatoes",
-    "aisle": "Cans, jars & pulses",
-    "qty": 2.0,
-    "unit": "can",
-    "optional": false,
-    "raw": "2 cans diced tomatoes",
-    "g": 800.0
-   },
-   {
-    "key": "tomato-paste",
-    "name": "Tomato paste",
-    "aisle": "Cans, jars & pulses",
-    "qty": 2.0,
+    "key": "peri-peri-sauce",
+    "name": "Peri-peri sauce",
+    "aisle": null,
+    "qty": 4.0,
     "unit": "tbsp",
     "optional": false,
-    "raw": "2 tbsp tomato paste",
-    "g": 32.0
+    "raw": "4 tbsp peri-peri sauce"
    },
    {
-    "key": "onion",
-    "name": "Onions",
-    "aisle": "Fruit & veg",
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
     "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp oil",
+    "g": 13.5
+   },
+   {
+    "key": "tortillas",
+    "name": "Tortillas or wraps",
+    "aisle": "Bread & wraps",
+    "qty": 8.0,
     "unit": "",
     "optional": false,
-    "raw": "1 onion, diced",
-    "g": 150.0
+    "raw": "8 wraps or tortillas",
+    "g": 320.0
    },
    {
-    "key": "carrot",
-    "name": "Carrots",
+    "key": "lettuce",
+    "name": "Lettuce or salad leaves",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "2 cups shredded lettuce",
+    "g": 100.0
+   },
+   {
+    "key": "tomato",
+    "name": "Tomatoes",
     "aisle": "Fruit & veg",
     "qty": 2.0,
     "unit": "",
     "optional": false,
-    "raw": "2 carrots, diced",
+    "raw": "2 tomatoes, sliced",
     "g": 240.0
    },
    {
-    "key": "celery",
-    "name": "Celery",
+    "key": "cucumber",
+    "name": "Cucumber",
     "aisle": "Fruit & veg",
-    "qty": 2.0,
-    "unit": "stalk",
+    "qty": 0.5,
+    "unit": "",
     "optional": false,
-    "raw": "2 stalks celery, diced",
-    "g": 80.0
+    "raw": "½ cucumber, sliced",
+    "g": 150.0
    },
    {
-    "key": "garlic",
-    "name": "Garlic",
-    "aisle": "Fruit & veg",
-    "qty": 3.0,
-    "unit": "clove",
-    "optional": false,
-    "raw": "3 garlic cloves, minced",
-    "g": 15.0
-   },
-   {
-    "key": "oregano",
-    "name": "Dried oregano",
+    "key": "mayonnaise",
+    "name": "Mayonnaise",
     "aisle": "Pantry: check first",
-    "qty": 1.0,
-    "unit": "tsp",
+    "qty": 4.0,
+    "unit": "tbsp",
     "optional": false,
-    "raw": "1 tsp dried oregano",
-    "g": 2.5
-   },
-   {
-    "key": "basil",
-    "name": "Fresh basil",
-    "aisle": "Fruit & veg",
-    "qty": 1.0,
-    "unit": "tsp",
-    "optional": false,
-    "raw": "1 tsp dried basil",
-    "g": 1.0
-   },
-   {
-    "key": "chicken-stock",
-    "name": "Chicken stock",
-    "aisle": "Pantry: check first",
-    "qty": 1.0,
-    "unit": "cup",
-    "optional": false,
-    "raw": "1 cup beef or chicken stock",
-    "g": 250.0
-   },
-   {
-    "key": "pasta",
-    "name": "Pasta",
-    "aisle": "Pasta, rice & grains",
-    "qty": null,
-    "unit": "",
-    "optional": true,
-    "raw": "To serve: pasta or courgette noodles, parmesan"
-   },
-   {
-    "key": "noodles",
-    "name": "Noodles",
-    "aisle": "Pasta, rice & grains",
-    "qty": null,
-    "unit": "",
-    "optional": true,
-    "raw": "To serve: pasta or courgette noodles, parmesan"
-   },
-   {
-    "key": "parmesan",
-    "name": "Parmesan",
-    "aisle": "Dairy, eggs & chilled",
-    "qty": null,
-    "unit": "",
-    "optional": true,
-    "raw": "To serve: pasta or courgette noodles, parmesan"
+    "raw": "4 tbsp mayonnaise",
+    "g": 56.0
    }
   ],
   "tags": [
-   "pork",
-   "mince"
+   "chicken"
   ],
   "nutrition": {
-   "kcal": 360,
-   "protein": 25,
-   "carbs": 30,
-   "fat": 14,
+   "kcal": 570,
+   "protein": 31,
+   "carbs": 45,
+   "fat": 30,
    "per": "serving",
-   "count": 6
+   "count": 4
   },
   "diet": [
-   "freezes",
-   "dairy-free"
+   "dairy-free",
+   "quick"
   ],
   "storage": [],
-  "minutes": null,
+  "minutes": 25,
   "ahead": [],
-  "meat": "Pork mince",
-  "palmer": false
+  "meat": "Chicken thighs",
+  "palmer": true
  },
  {
   "title": "Pork & Veg Dumplings",
@@ -23764,8 +24709,8 @@
  },
  {
   "title": "Pork Mince Lettuce Cups (San Choy Bow)",
-  "servings": "6",
-  "time": "–",
+  "servings": "4",
+  "time": "20 min",
   "intro": "",
   "sections": [
    {
@@ -23841,9 +24786,6 @@
     "kind": "notes",
     "heading": "Notes",
     "items": [
-     {
-      "text": "Approx. 2.30/serve, 410 kcal, 42 g protein per serve."
-     },
      {
       "text": "**Tip:** A fun meal to serve to your flatmate — the lettuce cups make it feel like a restaurant dish. Water chestnuts add a great crunch and are usually found in the Asian foods aisle at Pak'nSave."
      }
@@ -23996,18 +24938,19 @@
    "mince"
   ],
   "nutrition": {
-   "kcal": 270,
-   "protein": 21,
-   "carbs": 6,
-   "fat": 18,
+   "kcal": 400,
+   "protein": 31,
+   "carbs": 9,
+   "fat": 26,
    "per": "serving",
-   "count": 6
+   "count": 4
   },
   "diet": [
-   "dairy-free"
+   "dairy-free",
+   "quick"
   ],
   "storage": [],
-  "minutes": null,
+  "minutes": 20,
   "ahead": [],
   "meat": "Pork mince",
   "palmer": false
@@ -24488,6 +25431,12 @@
     "heading": "Extra Vegetables",
     "text": "For a heartier, more vegetable-forward ragu, add 1 diced or grated carrot and 150 g sliced mushrooms along with the onion in Step 3, cooking until softened (5–6 min total). Grated carrot melts further into the sauce; diced keeps more texture. Diced capsicum can also be added at this stage. For extra greens, stir through a handful of fresh spinach with the pasta in Step 10 until just wilted. The frozen vegetable quantity can also be increased up to 300 g for an even heartier, more veg-forward sauce.",
     "sections": []
+   },
+   {
+    "kind": "variation",
+    "heading": "Lean Version with Brown Rice",
+    "text": "For a lighter meal, swap the onion for a red onion and add 1 grated carrot with it. Use 300 g frozen mixed vegetables, and stir in a large handful of frozen spinach (no need to thaw) for the last 3–5 minutes, simmering a couple of extra minutes uncovered if it looks loose. Skip the pasta and serve over 150 g brown rice, cooked (about ⅓–½ cup cooked rice per serve). Keeps 3–4 days in the fridge and freezes well.",
+    "sections": []
    }
   ],
   "id": "Stovetop-Sausage_Ragu",
@@ -24676,7 +25625,9 @@
    "freezes",
    "dairy-free"
   ],
-  "storage": [],
+  "storage": [
+   "Keeps 3–4 days in the fridge and freezes well."
+  ],
   "minutes": 45,
   "ahead": [],
   "meat": "Sausages",
@@ -25455,7 +26406,7 @@
  },
  {
   "title": "Spicy Arrabbiata-Style Mince Pasta",
-  "servings": "2",
+  "servings": "4",
   "time": "30 min",
   "intro": "",
   "sections": [
@@ -25769,12 +26720,12 @@
    "mince"
   ],
   "nutrition": {
-   "kcal": 1180,
-   "protein": 67,
-   "carbs": 147,
-   "fat": 34,
+   "kcal": 590,
+   "protein": 34,
+   "carbs": 73,
+   "fat": 17,
    "per": "serving",
-   "count": 2
+   "count": 4
   },
   "diet": [
    "dairy-free",
@@ -26252,6 +27203,471 @@
   "palmer": false
  },
  {
+  "title": "Teriyaki Chicken Donburi",
+  "servings": "4",
+  "time": "30 min",
+  "intro": "Japanese-style rice bowls: glossy homemade teriyaki chicken with edamame over rice.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "1½ cups jasmine rice"
+     },
+     {
+      "text": "1 tbsp oil"
+     },
+     {
+      "text": "500 g boneless chicken thighs, cut into bite-sized pieces"
+     },
+     {
+      "text": "4 tbsp soy sauce"
+     },
+     {
+      "text": "3 tbsp honey"
+     },
+     {
+      "text": "1 tbsp rice vinegar"
+     },
+     {
+      "text": "1 tsp cornflour, mixed with 2 tbsp water"
+     },
+     {
+      "text": "2 cups frozen edamame (or frozen broccoli)"
+     },
+     {
+      "text": "2 spring onions, sliced"
+     },
+     {
+      "text": "1 tbsp sesame seeds (optional)"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Rice.** Cook the rice in a rice cooker or as the packet says."
+     },
+     {
+      "text": "**Chicken.** Heat the oil in a large frying pan over medium-high heat. Cook the chicken for 6–8 minutes until golden and cooked through."
+     },
+     {
+      "text": "**Teriyaki sauce.** Add the soy sauce, honey and vinegar and let it bubble for 2 minutes. Stir in the cornflour mix and cook for 1 minute until the sauce is thick and glossy."
+     },
+     {
+      "text": "**Edamame.** Meanwhile, cook the edamame in boiling water or the microwave for 3–4 minutes, then drain."
+     },
+     {
+      "text": "**Serve.** Spoon the rice into bowls and top with the chicken and sauce, edamame, spring onions and sesame seeds."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Add a fried egg on top for extra protein."
+     },
+     {
+      "text": "Keeps 3 days in the fridge."
+     }
+    ]
+   }
+  ],
+  "id": "Stovetop-Teriyaki_Chicken_Donburi",
+  "file": "Stovetop/Teriyaki_Chicken_Donburi.tex",
+  "chapter": "stovetop",
+  "chapterName": "Stovetop",
+  "group": null,
+  "ingredients": [
+   "1½ cups jasmine rice",
+   "1 tbsp oil",
+   "500 g boneless chicken thighs, cut into bite-sized pieces",
+   "4 tbsp soy sauce",
+   "3 tbsp honey",
+   "1 tbsp rice vinegar",
+   "1 tsp cornflour, mixed with 2 tbsp water",
+   "2 cups frozen edamame (or frozen broccoli)",
+   "2 spring onions, sliced",
+   "1 tbsp sesame seeds (optional)"
+  ],
+  "shop": [
+   {
+    "key": "jasmine-rice",
+    "name": "Jasmine rice",
+    "aisle": "Pasta, rice & grains",
+    "qty": 1.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1½ cups jasmine rice",
+    "g": 277.5
+   },
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp oil",
+    "g": 13.5
+   },
+   {
+    "key": "chicken-thigh",
+    "name": "Chicken thighs",
+    "aisle": "Meat & fish",
+    "qty": 500.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "500 g boneless chicken thighs, cut into bite-sized pieces",
+    "g": 500.0
+   },
+   {
+    "key": "soy-sauce",
+    "name": "Soy sauce",
+    "aisle": "Pantry: check first",
+    "qty": 4.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "4 tbsp soy sauce",
+    "g": 72.0
+   },
+   {
+    "key": "honey",
+    "name": "Honey",
+    "aisle": "Pantry: check first",
+    "qty": 3.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "3 tbsp honey",
+    "g": 63.0
+   },
+   {
+    "key": "rice-vinegar",
+    "name": "Rice vinegar",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp rice vinegar",
+    "g": 15.0
+   },
+   {
+    "key": "cornflour",
+    "name": "Cornflour",
+    "aisle": "Baking",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp cornflour, mixed with 2 tbsp water",
+    "g": 3.0
+   },
+   {
+    "key": "edamame",
+    "name": "Frozen edamame",
+    "aisle": "Frozen",
+    "qty": 2.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "2 cups frozen edamame (or frozen broccoli)",
+    "g": 310.0
+   },
+   {
+    "key": "spring-onion",
+    "name": "Spring onions",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "",
+    "optional": false,
+    "raw": "2 spring onions, sliced",
+    "g": 30.0
+   },
+   {
+    "key": "sesame-seeds",
+    "name": "Sesame or poppy seeds",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": true,
+    "raw": "1 tbsp sesame seeds (optional)",
+    "g": 9.0
+   }
+  ],
+  "tags": [
+   "chicken"
+  ],
+  "nutrition": {
+   "kcal": 620,
+   "protein": 39,
+   "carbs": 77,
+   "fat": 18,
+   "per": "serving",
+   "count": 4
+  },
+  "diet": [
+   "dairy-free",
+   "quick"
+  ],
+  "storage": [
+   "Keeps 3 days in the fridge."
+  ],
+  "minutes": 30,
+  "ahead": [],
+  "meat": "Chicken thighs",
+  "palmer": true
+ },
+ {
+  "title": "Thai Basil Chicken (Pad Krapow)",
+  "servings": "4",
+  "time": "25 min",
+  "intro": "A Thai street-food favourite: chicken mince stir-fried with garlic, chilli and basil, served over rice with a fried egg.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "1½ cups jasmine rice"
+     },
+     {
+      "text": "2 tbsp oil"
+     },
+     {
+      "text": "4 garlic cloves, crushed"
+     },
+     {
+      "text": "1–2 red chillies, sliced (or ½ tsp chilli flakes)"
+     },
+     {
+      "text": "1 onion, sliced"
+     },
+     {
+      "text": "500 g chicken mince"
+     },
+     {
+      "text": "1 capsicum, sliced"
+     },
+     {
+      "text": "2 tbsp soy sauce"
+     },
+     {
+      "text": "1 tbsp oyster sauce"
+     },
+     {
+      "text": "1 tsp sugar"
+     },
+     {
+      "text": "1 cup basil leaves (Thai basil if you can get it)"
+     },
+     {
+      "text": "4 eggs"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Rice.** Cook the rice in a rice cooker or as the packet says."
+     },
+     {
+      "text": "**Stir-fry.** Heat 1 tbsp oil in a wok or large frying pan over high heat. Stir-fry the garlic, chilli and onion for 1 minute. Add the mince and cook for 5–6 minutes, breaking it up, until cooked through. Add the capsicum for 2 minutes."
+     },
+     {
+      "text": "**Sauce.** Stir in the soy sauce, oyster sauce and sugar, then the basil until it wilts."
+     },
+     {
+      "text": "**Fried eggs.** In another pan, fry the eggs in the rest of the oil until the edges are crispy."
+     },
+     {
+      "text": "**Serve** the chicken over rice with an egg on top."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Make it with pork mince for Pad Krapow Moo."
+     },
+     {
+      "text": "Keeps 2 days in the fridge (cook eggs fresh)."
+     }
+    ]
+   }
+  ],
+  "id": "Stovetop-Thai_Basil_Chicken",
+  "file": "Stovetop/Thai_Basil_Chicken.tex",
+  "chapter": "stovetop",
+  "chapterName": "Stovetop",
+  "group": null,
+  "ingredients": [
+   "1½ cups jasmine rice",
+   "2 tbsp oil",
+   "4 garlic cloves, crushed",
+   "1–2 red chillies, sliced (or ½ tsp chilli flakes)",
+   "1 onion, sliced",
+   "500 g chicken mince",
+   "1 capsicum, sliced",
+   "2 tbsp soy sauce",
+   "1 tbsp oyster sauce",
+   "1 tsp sugar",
+   "1 cup basil leaves (Thai basil if you can get it)",
+   "4 eggs"
+  ],
+  "shop": [
+   {
+    "key": "jasmine-rice",
+    "name": "Jasmine rice",
+    "aisle": "Pasta, rice & grains",
+    "qty": 1.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1½ cups jasmine rice",
+    "g": 277.5
+   },
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp oil",
+    "g": 27.0
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 4.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "4 garlic cloves, crushed",
+    "g": 20.0
+   },
+   {
+    "key": "chilli",
+    "name": "Fresh chilli",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1–2 red chillies, sliced (or ½ tsp chilli flakes)",
+    "g": 20.0
+   },
+   {
+    "key": "onion",
+    "name": "Onions",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 onion, sliced",
+    "g": 150.0
+   },
+   {
+    "key": "mince",
+    "name": "Mince (beef or pork)",
+    "aisle": "Meat & fish",
+    "qty": 500.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "500 g chicken mince",
+    "g": 500.0
+   },
+   {
+    "key": "capsicum",
+    "name": "Capsicums",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 capsicum, sliced",
+    "g": 160.0
+   },
+   {
+    "key": "soy-sauce",
+    "name": "Soy sauce",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp soy sauce",
+    "g": 36.0
+   },
+   {
+    "key": "oyster-sauce",
+    "name": "Oyster sauce",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp oyster sauce",
+    "g": 18.0
+   },
+   {
+    "key": "sugar",
+    "name": "White sugar",
+    "aisle": "Baking",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp sugar",
+    "g": 4.0
+   },
+   {
+    "key": "basil",
+    "name": "Fresh basil",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1 cup basil leaves (Thai basil if you can get it)",
+    "g": 240.0
+   },
+   {
+    "key": "eggs",
+    "name": "Eggs",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 4.0,
+    "unit": "",
+    "optional": false,
+    "raw": "4 eggs",
+    "g": 220.0
+   }
+  ],
+  "tags": [
+   "chicken",
+   "mince"
+  ],
+  "nutrition": {
+   "kcal": 700,
+   "protein": 39,
+   "carbs": 69,
+   "fat": 29,
+   "per": "serving",
+   "count": 4
+  },
+  "diet": [
+   "dairy-free",
+   "quick"
+  ],
+  "storage": [
+   "Keeps 2 days in the fridge (cook eggs fresh)."
+  ],
+  "minutes": 25,
+  "ahead": [],
+  "meat": "Mince (beef or pork)",
+  "palmer": true
+ },
+ {
   "title": "Thai Green Chicken Curry",
   "servings": "4",
   "time": "Prep 5 min, Cook 25 min (Total 30 min)",
@@ -26671,8 +28087,8 @@
  },
  {
   "title": "Beef Mince & Lentil Shepherd's Pie",
-  "servings": "6",
-  "time": "–",
+  "servings": "4",
+  "time": "15 min prep + 50 min",
   "intro": "",
   "sections": [
    {
@@ -26739,9 +28155,6 @@
     "kind": "notes",
     "heading": "Notes",
     "items": [
-     {
-      "text": "Approx. 2.80/serve, 480 kcal, 42 g protein per serve."
-     },
      {
       "text": "**Tip:** The red lentils bulk out the mince significantly — you'd never notice they're there, but they add fibre and extra protein cheaply."
      }
@@ -26889,27 +28302,27 @@
    "mince"
   ],
   "nutrition": {
-   "kcal": 500,
-   "protein": 30,
-   "carbs": 68,
-   "fat": 11,
+   "kcal": 750,
+   "protein": 45,
+   "carbs": 103,
+   "fat": 17,
    "per": "serving",
-   "count": 6
+   "count": 4
   },
   "diet": [
    "freezes",
    "dairy-free"
   ],
   "storage": [],
-  "minutes": null,
+  "minutes": 65,
   "ahead": [],
   "meat": "Beef mince",
   "palmer": false
  },
  {
   "title": "Beef Mince Stuffed Capsicums",
-  "servings": "6",
-  "time": "–",
+  "servings": "4 (6 capsicums)",
+  "time": "15 min prep + 45 min",
   "intro": "",
   "sections": [
    {
@@ -26982,9 +28395,6 @@
     "kind": "notes",
     "heading": "Notes",
     "items": [
-     {
-      "text": "Approx. 2.80/serve, 460 kcal, 43 g protein per serve."
-     },
      {
       "text": "**Tip:** Makes 6 serves — one stuffed capsicum each. Leftovers reheat well in the microwave for 2 minutes. A great visually impressive meal to cook for your flatmate."
      }
@@ -27134,12 +28544,12 @@
    "mince"
   ],
   "nutrition": {
-   "kcal": 380,
-   "protein": 27,
-   "carbs": 28,
-   "fat": 16,
+   "kcal": 570,
+   "protein": 41,
+   "carbs": 42,
+   "fat": 25,
    "per": "serving",
-   "count": 6
+   "count": 4
   },
   "diet": [
    "leftovers"
@@ -27147,7 +28557,7 @@
   "storage": [
    "Leftovers reheat well in the microwave for 2 minutes."
   ],
-  "minutes": null,
+  "minutes": 60,
   "ahead": [],
   "meat": "Beef mince",
   "palmer": false
@@ -27378,7 +28788,7 @@
  {
   "title": "Chicken & Vegetable Bake",
   "servings": "6",
-  "time": "–",
+  "time": "10 min prep + 45 min",
   "intro": "",
   "sections": [
    {
@@ -27451,9 +28861,6 @@
     "kind": "notes",
     "heading": "Notes",
     "items": [
-     {
-      "text": "Approx. 2.60/serve, 455 kcal, 44 g protein per serve."
-     },
      {
       "text": "**Tip:** Everything cooks in one pan — minimal washing up. Prep the vegetables and marinate the chicken the night before to save time on cooking day."
      }
@@ -27635,7 +29042,7 @@
    "dairy-free"
   ],
   "storage": [],
-  "minutes": null,
+  "minutes": 55,
   "ahead": [
    "Prep the vegetables and marinate the chicken the night before to save time on cooking day."
   ],
@@ -28466,7 +29873,7 @@
  {
   "title": "Lemon Herb Salmon Tray Bake",
   "servings": "6",
-  "time": "–",
+  "time": "10 min prep + 25 min",
   "intro": "",
   "sections": [
    {
@@ -28533,9 +29940,6 @@
     "kind": "notes",
     "heading": "Notes",
     "items": [
-     {
-      "text": "Approx. 4.50/serve, 450 kcal, 42 g protein per serve."
-     },
      {
       "text": "**Tip:** Slightly pricier than other meals but worth it once a month. Watch for salmon on special at Pak'nSave or New World."
      }
@@ -28682,7 +30086,7 @@
    "dairy-free"
   ],
   "storage": [],
-  "minutes": null,
+  "minutes": 35,
   "ahead": [],
   "meat": "Salmon",
   "palmer": false
@@ -30297,6 +31701,228 @@
   "ahead": [],
   "meat": "Pork mince",
   "palmer": false
+ },
+ {
+  "title": "Sheet-Pan Chicken Fajitas",
+  "servings": "4",
+  "time": "10 min prep + 20 min",
+  "intro": "Spiced chicken, capsicum, onion and black beans roasted on one tray, then piled into warm tortillas.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "500 g chicken breast, cut into thin strips"
+     },
+     {
+      "text": "2 capsicums, sliced"
+     },
+     {
+      "text": "1 red onion, sliced"
+     },
+     {
+      "text": "2 tbsp oil"
+     },
+     {
+      "text": "2 tbsp taco seasoning"
+     },
+     {
+      "text": "1 can (400 g) black beans, drained and rinsed"
+     },
+     {
+      "text": "8 small tortillas"
+     },
+     {
+      "text": "1 lime, cut into wedges"
+     },
+     {
+      "group": "To serve"
+     },
+     {
+      "text": "Salsa, shredded lettuce and grated lactose-free cheese"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Heat the oven** to 220 °C (200 °C fan)."
+     },
+     {
+      "text": "**Season.** On a large oven tray, toss the chicken, capsicum and onion with the oil and taco seasoning. Spread out in one layer (use two trays if it's crowded)."
+     },
+     {
+      "text": "**Roast** for 15 minutes. Add the black beans to the tray, stir, and roast 5 more minutes, until the chicken is cooked through."
+     },
+     {
+      "text": "**Warm the tortillas** in a dry pan or the microwave."
+     },
+     {
+      "text": "**Serve.** Squeeze lime over the tray and let everyone fill their own tortillas with the fajita mix and toppings."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Check the taco seasoning is dairy-free, or use 2 tsp cumin, 2 tsp smoked paprika, 1 tsp garlic powder and ½ tsp chilli powder."
+     },
+     {
+      "text": "Leftover filling makes a good lunch bowl over rice."
+     }
+    ]
+   }
+  ],
+  "id": "Oven-Sheet_Pan_Chicken_Fajitas",
+  "file": "Oven/Sheet_Pan_Chicken_Fajitas.tex",
+  "chapter": "oven",
+  "chapterName": "Oven",
+  "group": null,
+  "ingredients": [
+   "500 g chicken breast, cut into thin strips",
+   "2 capsicums, sliced",
+   "1 red onion, sliced",
+   "2 tbsp oil",
+   "2 tbsp taco seasoning",
+   "1 can (400 g) black beans, drained and rinsed",
+   "8 small tortillas",
+   "1 lime, cut into wedges",
+   "Salsa, shredded lettuce and grated lactose-free cheese"
+  ],
+  "shop": [
+   {
+    "key": "chicken-breast",
+    "name": "Chicken breast or tenderloins",
+    "aisle": "Meat & fish",
+    "qty": 500.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "500 g chicken breast, cut into thin strips",
+    "g": 500.0
+   },
+   {
+    "key": "capsicum",
+    "name": "Capsicums",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "",
+    "optional": false,
+    "raw": "2 capsicums, sliced",
+    "g": 320.0
+   },
+   {
+    "key": "red-onion",
+    "name": "Red onion",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 red onion, sliced",
+    "g": 150.0
+   },
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp oil",
+    "g": 27.0
+   },
+   {
+    "key": "taco-seasoning",
+    "name": "Taco seasoning",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp taco seasoning",
+    "g": 16.0
+   },
+   {
+    "key": "black-beans",
+    "name": "Black beans",
+    "aisle": "Cans, jars & pulses",
+    "qty": 1.0,
+    "unit": "can",
+    "optional": false,
+    "raw": "1 can (400 g) black beans, drained and rinsed",
+    "g": 240.0
+   },
+   {
+    "key": "tortillas",
+    "name": "Tortillas or wraps",
+    "aisle": "Bread & wraps",
+    "qty": 8.0,
+    "unit": "",
+    "optional": false,
+    "raw": "8 small tortillas",
+    "g": 320.0
+   },
+   {
+    "key": "lime",
+    "name": "Limes",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 lime, cut into wedges",
+    "g": 40.0
+   },
+   {
+    "key": "salsa",
+    "name": "Salsa",
+    "aisle": "Cans, jars & pulses",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Salsa, shredded lettuce and grated lactose-free cheese"
+   },
+   {
+    "key": "lettuce",
+    "name": "Lettuce or salad leaves",
+    "aisle": "Fruit & veg",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Salsa, shredded lettuce and grated lactose-free cheese"
+   },
+   {
+    "key": "cheese",
+    "name": "Tasty cheese",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Salsa, shredded lettuce and grated lactose-free cheese"
+   }
+  ],
+  "tags": [
+   "chicken"
+  ],
+  "nutrition": {
+   "kcal": 560,
+   "protein": 41,
+   "carbs": 61,
+   "fat": 15,
+   "per": "serving",
+   "count": 4
+  },
+  "diet": [
+   "dairy-free",
+   "quick"
+  ],
+  "storage": [],
+  "minutes": 30,
+  "ahead": [],
+  "meat": "Chicken breast or tenderloins",
+  "palmer": true
  },
  {
   "title": "Rustic Chickpea & Rocket Salad with Mustard-Garlic Vinaigrette",
@@ -33859,8 +35485,8 @@
  },
  {
   "title": "Banana Protein Pancakes",
-  "servings": "9",
-  "time": "–",
+  "servings": "3 (9 pancakes)",
+  "time": "25 min",
   "intro": "Makes 9 pancakes — serve 3 per sitting. Batter keeps in fridge 2 days.",
   "sections": [
    {
@@ -33921,9 +35547,6 @@
     "kind": "notes",
     "heading": "Notes",
     "items": [
-     {
-      "text": "Approx. 1.00/serve (3 pancakes), 360 kcal, 30 g protein per serve."
-     },
      {
       "text": "**Tip:** The riper the bananas, the sweeter the pancakes. Overripe spotty bananas are ideal and cheapest at the supermarket."
      }
@@ -34054,19 +35677,20 @@
   ],
   "tags": [],
   "nutrition": {
-   "kcal": 90,
-   "protein": 7,
-   "carbs": 10,
-   "fat": 3,
+   "kcal": 270,
+   "protein": 20,
+   "carbs": 29,
+   "fat": 9,
    "per": "serving",
-   "count": 9
+   "count": 3
   },
   "diet": [
    "freezes",
-   "vegetarian"
+   "vegetarian",
+   "quick"
   ],
   "storage": [],
-  "minutes": null,
+  "minutes": 25,
   "ahead": [],
   "meat": null,
   "palmer": false
@@ -34074,7 +35698,7 @@
  {
   "title": "Breakfast Burritos",
   "servings": "6",
-  "time": "–",
+  "time": "25 min",
   "intro": "Makes 6 burritos — freeze and microwave as needed.",
   "sections": [
    {
@@ -34141,9 +35765,6 @@
     "kind": "notes",
     "heading": "Notes",
     "items": [
-     {
-      "text": "Approx. 1.80/burrito, 480 kcal, 38 g protein per serve."
-     },
      {
       "text": "**Reheat from frozen:** Remove foil, wrap in a damp paper towel, microwave for 2–3 minutes. Or reheat in foil in oven at 180°C for 15–20 minutes for a crispier result."
      }
@@ -34304,21 +35925,22 @@
    "count": 6
   },
   "diet": [
-   "freezes"
+   "freezes",
+   "quick"
   ],
   "storage": [
    "Reheat from frozen: Remove foil, wrap in a damp paper towel, microwave for 2–3 minutes.",
    "Or reheat in foil in oven at 180°C for 15–20 minutes for a crispier result."
   ],
-  "minutes": null,
+  "minutes": 25,
   "ahead": [],
   "meat": "Sausages",
   "palmer": false
  },
  {
   "title": "Egg Muffins",
-  "servings": "–",
-  "time": "–",
+  "servings": "6 (12 muffins)",
+  "time": "10 min prep + 20 min",
   "intro": "",
   "sections": [
    {
@@ -34376,9 +35998,6 @@
     "kind": "notes",
     "heading": "Notes",
     "items": [
-     {
-      "text": "Approx. 0.80/serve (2 muffins), 320 kcal, 28 g protein per serve."
-     },
      {
       "text": "**Reheat:** 60–90 seconds in the microwave. Eat 2 muffins per serving."
      }
@@ -34490,22 +36109,30 @@
   "tags": [
    "pork"
   ],
-  "nutrition": null,
+  "nutrition": {
+   "kcal": 210,
+   "protein": 16,
+   "carbs": 3,
+   "fat": 14,
+   "per": "serving",
+   "count": 6
+  },
   "diet": [
-   "freezes"
+   "freezes",
+   "quick"
   ],
   "storage": [
    "Reheat: 60–90 seconds in the microwave."
   ],
-  "minutes": null,
+  "minutes": 30,
   "ahead": [],
   "meat": "Bacon",
   "palmer": false
  },
  {
   "title": "Frittata Slices",
-  "servings": "8",
-  "time": "–",
+  "servings": "4 (8 slices)",
+  "time": "35 min",
   "intro": "Makes 8 slices — keep in fridge, reheat as needed.",
   "sections": [
    {
@@ -34575,9 +36202,6 @@
     "kind": "notes",
     "heading": "Notes",
     "items": [
-     {
-      "text": "Approx. 1.10/serve (2 slices), 380 kcal, 32 g protein per serve."
-     },
      {
       "text": "**Reheat:** 60–90 seconds in the microwave or a few minutes in a dry frying pan. Eat 2 slices per serving."
      }
@@ -34713,12 +36337,12 @@
    "chicken"
   ],
   "nutrition": {
-   "kcal": 160,
-   "protein": 16,
-   "carbs": 3,
-   "fat": 10,
+   "kcal": 330,
+   "protein": 31,
+   "carbs": 6,
+   "fat": 19,
    "per": "serving",
-   "count": 8
+   "count": 4
   },
   "diet": [
    "freezes",
@@ -34727,15 +36351,15 @@
   "storage": [
    "Reheat: 60–90 seconds in the microwave or a few minutes in a dry frying pan."
   ],
-  "minutes": null,
+  "minutes": 35,
   "ahead": [],
   "meat": "Chicken breast or tenderloins",
   "palmer": false
  },
  {
   "title": "High-Protein Chia Pudding",
-  "servings": "5",
-  "time": "–",
+  "servings": "1 jar (make 5 for the week)",
+  "time": "5 min (plus overnight in the fridge)",
   "intro": "Makes 5 jars — prep alongside overnight oats on the same evening.",
   "sections": [
    {
@@ -34790,9 +36414,6 @@
     "kind": "notes",
     "heading": "Notes",
     "items": [
-     {
-      "text": "Approx. 1.40/jar, 380 kcal, 32 g protein per serve."
-     },
      {
       "text": "**Tip:** Chia seeds are high in omega-3 fats and fibre, which help keep you full throughout the morning. Available cheaply in bulk at Pak'nSave."
      }
@@ -34902,26 +36523,27 @@
   ],
   "tags": [],
   "nutrition": {
-   "kcal": 120,
-   "protein": 10,
-   "carbs": 8,
-   "fat": 5,
+   "kcal": 600,
+   "protein": 48,
+   "carbs": 40,
+   "fat": 27,
    "per": "serving",
-   "count": 5
+   "count": 1
   },
   "diet": [
-   "vegetarian"
+   "vegetarian",
+   "quick"
   ],
   "storage": [],
-  "minutes": null,
+  "minutes": 5,
   "ahead": [],
   "meat": null,
   "palmer": false
  },
  {
   "title": "Overnight Oats",
-  "servings": "5",
-  "time": "–",
+  "servings": "1 jar (make 5 for the week)",
+  "time": "5 min (plus overnight in the fridge)",
   "intro": "Makes 5 jars — prep all at once on Monday evening.",
   "sections": [
    {
@@ -34973,9 +36595,6 @@
     "kind": "notes",
     "heading": "Notes",
     "items": [
-     {
-      "text": "Approx. 1.20/jar, 450 kcal, 35 g protein per serve."
-     },
      {
       "text": "**Tip:** Keeps in the fridge for up to 5 days. Prep all 5 jars on Sunday or Monday to cover the whole week."
      }
@@ -35085,28 +36704,29 @@
   ],
   "tags": [],
   "nutrition": {
-   "kcal": 130,
-   "protein": 10,
-   "carbs": 10,
-   "fat": 5,
+   "kcal": 630,
+   "protein": 50,
+   "carbs": 51,
+   "fat": 24,
    "per": "serving",
-   "count": 5
+   "count": 1
   },
   "diet": [
-   "vegetarian"
+   "vegetarian",
+   "quick"
   ],
   "storage": [
    "Tip: Keeps in the fridge for up to 5 days."
   ],
-  "minutes": null,
+  "minutes": 5,
   "ahead": [],
   "meat": null,
   "palmer": false
  },
  {
   "title": "Savoury Egg & Rice Bowl",
-  "servings": "–",
-  "time": "–",
+  "servings": "1",
+  "time": "10 min",
   "intro": "Great for using up leftover rice from dinner the night before.",
   "sections": [
    {
@@ -35167,9 +36787,6 @@
     "kind": "notes",
     "heading": "Notes",
     "items": [
-     {
-      "text": "Approx. 1.30/serve, 410 kcal, 34 g protein per serve."
-     },
      {
       "text": "**Tip:** This comes together in under 10 minutes and uses up leftovers. A great alternative when you want something warm and savoury in the morning."
      }
@@ -35285,13 +36902,21 @@
    "pork",
    "chicken"
   ],
-  "nutrition": null,
+  "nutrition": {
+   "kcal": 630,
+   "protein": 48,
+   "carbs": 53,
+   "fat": 25,
+   "per": "serving",
+   "count": 1
+  },
   "diet": [
    "dairy-free",
+   "quick",
    "leftovers"
   ],
   "storage": [],
-  "minutes": null,
+  "minutes": 10,
   "ahead": [],
   "meat": "Ham",
   "palmer": false
@@ -35299,7 +36924,7 @@
  {
   "title": "Boiled Eggs & Crackers",
   "servings": "1",
-  "time": "–",
+  "time": "15 min",
   "intro": "",
   "sections": [
    {
@@ -35339,9 +36964,6 @@
     "kind": "notes",
     "heading": "Notes",
     "items": [
-     {
-      "text": "Approx. 0.60/serve, 210 kcal, 18 g protein per serve."
-     },
      {
       "text": "**Tip:** Batch boil 6–8 eggs at once and keep them unpeeled in the fridge for up to a week — perfect grab-and-go snack."
      }
@@ -35427,12 +37049,13 @@
   },
   "diet": [
    "vegetarian",
-   "dairy-free"
+   "dairy-free",
+   "quick"
   ],
   "storage": [
    "Tip: Batch boil 6–8 eggs at once and keep them unpeeled in the fridge for up to a week — perfect grab-and-go snack."
   ],
-  "minutes": null,
+  "minutes": 15,
   "ahead": [],
   "meat": null,
   "palmer": false
@@ -35652,7 +37275,7 @@
  {
   "title": "Cottage Cheese & Tomato Toast",
   "servings": "1",
-  "time": "–",
+  "time": "5 min",
   "intro": "",
   "sections": [
    {
@@ -35692,9 +37315,6 @@
     "kind": "notes",
     "heading": "Notes",
     "items": [
-     {
-      "text": "Approx. 0.90/serve, 240 kcal, 22 g protein per serve."
-     },
      {
       "text": "**Tip:** Cottage cheese is one of the cheapest high-protein foods available — around 4–5 for a 500 g tub at Pak'nSave. Also great with cucumber or smashed avocado on top."
      }
@@ -35790,10 +37410,11 @@
    "count": 1
   },
   "diet": [
-   "vegetarian"
+   "vegetarian",
+   "quick"
   ],
   "storage": [],
-  "minutes": null,
+  "minutes": 5,
   "ahead": [],
   "meat": null,
   "palmer": false
@@ -36153,7 +37774,7 @@
  {
   "title": "Edamame with Sea Salt",
   "servings": "1",
-  "time": "–",
+  "time": "5 min",
   "intro": "",
   "sections": [
    {
@@ -36190,9 +37811,6 @@
     "kind": "notes",
     "heading": "Notes",
     "items": [
-     {
-      "text": "Approx. 1.00/serve, 190 kcal, 17 g protein per serve."
-     },
      {
       "text": "**Tip:** One of the most satisfying low-calorie, high-protein snacks. Frozen bags are available cheaply at Pak'nSave and keep in the freezer for months."
      }
@@ -36259,12 +37877,13 @@
   },
   "diet": [
    "vegetarian",
-   "dairy-free"
+   "dairy-free",
+   "quick"
   ],
   "storage": [
    "Frozen bags are available cheaply at Pak'nSave and keep in the freezer for months."
   ],
-  "minutes": null,
+  "minutes": 5,
   "ahead": [],
   "meat": null,
   "palmer": false
@@ -36272,7 +37891,7 @@
  {
   "title": "Greek Yoghurt & Berry Bowl",
   "servings": "1",
-  "time": "–",
+  "time": "2 min",
   "intro": "",
   "sections": [
    {
@@ -36312,9 +37931,6 @@
     "kind": "notes",
     "heading": "Notes",
     "items": [
-     {
-      "text": "Approx. 1.20/serve, 220 kcal, 20 g protein per serve."
-     },
      {
       "text": "**Tip:** Buy the 1 kg tub of Anchor or Cyclops Greek yoghurt at Pak'nSave — it's significantly cheaper per gram than individual pottles."
      }
@@ -36384,10 +38000,11 @@
    "count": 1
   },
   "diet": [
-   "vegetarian"
+   "vegetarian",
+   "quick"
   ],
   "storage": [],
-  "minutes": null,
+  "minutes": 2,
   "ahead": [],
   "meat": null,
   "palmer": false
@@ -36583,7 +38200,7 @@
  {
   "title": "Homemade Protein Balls",
   "servings": "20",
-  "time": "–",
+  "time": "15 min (plus 20 min chilling)",
   "intro": "",
   "sections": [
    {
@@ -36638,9 +38255,6 @@
     "kind": "notes",
     "heading": "Notes",
     "items": [
-     {
-      "text": "Approx. 0.50/ball (makes 20), 130 kcal/ball, 8 g/ball protein per serve."
-     },
      {
       "text": "**Tip:** Eat 2–3 balls as a snack (260–390 kcal, 16–24 g protein). These are great to batch make once a fortnight. Swap peanut butter for almond butter or add desiccated coconut for variety."
      }
@@ -36747,7 +38361,7 @@
    "vegetarian"
   ],
   "storage": [],
-  "minutes": null,
+  "minutes": 35,
   "ahead": [],
   "meat": null,
   "palmer": false
@@ -36755,7 +38369,7 @@
  {
   "title": "Hummus & Vegetable Sticks",
   "servings": "1",
-  "time": "–",
+  "time": "5 min",
   "intro": "",
   "sections": [
    {
@@ -36798,9 +38412,6 @@
     "kind": "notes",
     "heading": "Notes",
     "items": [
-     {
-      "text": "Approx. 1.10/serve, 200 kcal, 9 g protein per serve."
-     },
      {
       "text": "**Tip:** Prep a container of cut vegetables at the start of the week and keep in the fridge — it removes all friction from choosing this as a snack. Bluebird hummus is cheap and widely available at Pak'nSave."
      }
@@ -36882,12 +38493,13 @@
   },
   "diet": [
    "vegetarian",
-   "dairy-free"
+   "dairy-free",
+   "quick"
   ],
   "storage": [
    "Tip: Prep a container of cut vegetables at the start of the week and keep in the fridge — it removes all friction from choosing this as a snack."
   ],
-  "minutes": null,
+  "minutes": 5,
   "ahead": [],
   "meat": null,
   "palmer": false
@@ -37433,7 +39045,7 @@
  {
   "title": "Peanut Butter & Banana Rice Cakes",
   "servings": "1",
-  "time": "–",
+  "time": "2 min",
   "intro": "",
   "sections": [
    {
@@ -37470,9 +39082,6 @@
     "kind": "notes",
     "heading": "Notes",
     "items": [
-     {
-      "text": "Approx. 0.80/serve, 250 kcal, 8 g protein per serve."
-     },
      {
       "text": "**Tip:** Lower protein than other snacks but high in healthy fats and carbs — great as a pre-walk or post-exercise snack for energy. Add a scoop of protein powder to a glass of milk alongside it to boost protein."
      }
@@ -37543,10 +39152,11 @@
   "diet": [
    "freezes",
    "vegetarian",
-   "dairy-free"
+   "dairy-free",
+   "quick"
   ],
   "storage": [],
-  "minutes": null,
+  "minutes": 2,
   "ahead": [],
   "meat": null,
   "palmer": false
@@ -37849,7 +39459,7 @@
  {
   "title": "Tuna & Crackers",
   "servings": "1",
-  "time": "–",
+  "time": "5 min",
   "intro": "",
   "sections": [
    {
@@ -37895,9 +39505,6 @@
     "kind": "notes",
     "heading": "Notes",
     "items": [
-     {
-      "text": "Approx. 1.50/serve, 230 kcal, 28 g protein per serve."
-     },
      {
       "text": "**Tip:** One of the highest protein-per-dollar snacks available. Buy Sealord or Greenseas tuna in bulk packs at Pak'nSave for the best value."
      }
@@ -38016,10 +39623,11 @@
    "count": 1
   },
   "diet": [
-   "dairy-free"
+   "dairy-free",
+   "quick"
   ],
   "storage": [],
-  "minutes": null,
+  "minutes": 5,
   "ahead": [],
   "meat": null,
   "palmer": false
@@ -38517,9 +40125,6 @@
     "heading": "Notes",
     "items": [
      {
-      "text": "Approx. 1.50/shake, 400 kcal, 36 g protein per serve."
-     },
-     {
       "text": "**Tip:** The oats make this shake very filling — almost meal-replacement level. Great as a post-walk breakfast if you're short on time."
      }
     ]
@@ -38669,9 +40274,6 @@
     "heading": "Notes",
     "items": [
      {
-      "text": "Approx. 1.80/shake, 380 kcal, 38 g protein per serve."
-     },
-     {
       "text": "**Tip:** Frozen bananas make the shake thicker and creamier. Peel and freeze overripe bananas in a zip-lock bag — they last months and are perfect for shakes."
      }
     ]
@@ -38814,9 +40416,6 @@
     "kind": "notes",
     "heading": "Notes",
     "items": [
-     {
-      "text": "Approx. 1.40/shake, 330 kcal, 30 g protein per serve."
-     },
      {
       "text": "**Tip:** Don't let the green colour put you off — you can't taste the spinach at all. It adds a significant micronutrient boost with minimal calories. A great way to sneak in extra vegetables."
      }
@@ -38967,9 +40566,6 @@
     "heading": "Notes",
     "items": [
      {
-      "text": "Approx. 1.60/shake, 350 kcal, 32 g protein per serve."
-     },
-     {
       "text": "**Tip:** Frozen mango is much cheaper than fresh and works better in shakes. Available in large bags at Pak'nSave. Swap mango for frozen pineapple for variety."
      }
     ]
@@ -39098,9 +40694,6 @@
     "heading": "Notes",
     "items": [
      {
-      "text": "Approx. 1.20/shake, 310 kcal, 32 g protein per serve."
-     },
-     {
       "text": "**Tip:** The simplest shake in the book — works in a shaker bottle with no blender needed. Great for days when you just want something quick and simple."
      }
     ]
@@ -39191,8 +40784,8 @@
  },
  {
   "title": "Baked Cinnamon Apples",
-  "servings": "–",
-  "time": "–",
+  "servings": "2",
+  "time": "10 min prep + 30 min",
   "intro": "",
   "sections": [
    {
@@ -39250,9 +40843,6 @@
     "kind": "notes",
     "heading": "Notes",
     "items": [
-     {
-      "text": "Approx. 0.80/serve, 180 kcal, 5 g protein per serve."
-     },
      {
       "text": "**Tip:** Feels indulgent but is incredibly wholesome. Royal Gala or Granny Smith apples work best. A great dessert for cold evenings."
      }
@@ -39344,20 +40934,27 @@
    }
   ],
   "tags": [],
-  "nutrition": null,
+  "nutrition": {
+   "kcal": 170,
+   "protein": 1,
+   "carbs": 38,
+   "fat": 3,
+   "per": "serving",
+   "count": 2
+  },
   "diet": [
    "vegetarian"
   ],
   "storage": [],
-  "minutes": null,
+  "minutes": 40,
   "ahead": [],
   "meat": null,
   "palmer": false
  },
  {
   "title": "Banana Nice Cream",
-  "servings": "–",
-  "time": "–",
+  "servings": "2",
+  "time": "5 min",
   "intro": "",
   "sections": [
    {
@@ -39406,9 +41003,6 @@
     "kind": "notes",
     "heading": "Notes",
     "items": [
-     {
-      "text": "Approx. 0.60/serve, 210 kcal, 8 g protein per serve."
-     },
      {
       "text": "**Tip:** Only works with completely frozen bananas — the riper and more spotted, the sweeter the result. Keep a bag of frozen bananas in the freezer at all times for both shakes and this dessert."
      }
@@ -39497,23 +41091,31 @@
    }
   ],
   "tags": [],
-  "nutrition": null,
+  "nutrition": {
+   "kcal": 300,
+   "protein": 12,
+   "carbs": 46,
+   "fat": 10,
+   "per": "serving",
+   "count": 2
+  },
   "diet": [
    "freezes",
-   "vegetarian"
+   "vegetarian",
+   "quick"
   ],
   "storage": [
    "Keep a bag of frozen bananas in the freezer at all times for both shakes and this dessert."
   ],
-  "minutes": null,
+  "minutes": 5,
   "ahead": [],
   "meat": null,
   "palmer": false
  },
  {
   "title": "Chocolate Protein Mug Cake",
-  "servings": "–",
-  "time": "–",
+  "servings": "1",
+  "time": "5 min",
   "intro": "",
   "sections": [
    {
@@ -39571,9 +41173,6 @@
     "kind": "notes",
     "heading": "Notes",
     "items": [
-     {
-      "text": "Approx. 0.90/serve, 280 kcal, 26 g protein per serve."
-     },
      {
       "text": "**Tip:** Don't overcook it — it will go rubbery. It's ready when the top is just set but still slightly moist. Top with a spoonful of Greek yoghurt for an extra protein boost."
      }
@@ -39677,13 +41276,21 @@
    }
   ],
   "tags": [],
-  "nutrition": null,
+  "nutrition": {
+   "kcal": 310,
+   "protein": 33,
+   "carbs": 25,
+   "fat": 10,
+   "per": "serving",
+   "count": 1
+  },
   "diet": [
    "freezes",
-   "vegetarian"
+   "vegetarian",
+   "quick"
   ],
   "storage": [],
-  "minutes": null,
+  "minutes": 5,
   "ahead": [],
   "meat": null,
   "palmer": false
@@ -40140,7 +41747,7 @@
  {
   "title": "Frozen Yoghurt Bark",
   "servings": "8",
-  "time": "–",
+  "time": "10 min (plus 3 hours freezing)",
   "intro": "",
   "sections": [
    {
@@ -40192,9 +41799,6 @@
     "kind": "notes",
     "heading": "Notes",
     "items": [
-     {
-      "text": "Approx. 1.00/serve (makes 8 serves), 120 kcal, 10 g protein per serve."
-     },
      {
       "text": "**Tip:** Keeps in the freezer for up to 2 months. A brilliant alternative to ice cream on warm Christchurch evenings."
      }
@@ -40292,7 +41896,7 @@
   "storage": [
    "Tip: Keeps in the freezer for up to 2 months."
   ],
-  "minutes": null,
+  "minutes": 190,
   "ahead": [],
   "meat": null,
   "palmer": false
@@ -40300,7 +41904,7 @@
  {
   "title": "No-Bake Chocolate Oat Cookies",
   "servings": "18",
-  "time": "–",
+  "time": "15 min (plus 1–2 hours setting)",
   "intro": "",
   "sections": [
    {
@@ -40361,9 +41965,6 @@
     "kind": "notes",
     "heading": "Notes",
     "items": [
-     {
-      "text": "Approx. 0.40/cookie (makes 18), 140 kcal/cookie, 6 g/cookie protein per serve."
-     },
      {
       "text": "**Tip:** Eat 2–3 cookies as a dessert (280–420 kcal, 12–18 g protein). These double as a snack too and are a great alternative to store-bought protein bars which are usually very overpriced."
      }
@@ -40479,7 +42080,7 @@
    "vegetarian"
   ],
   "storage": [],
-  "minutes": null,
+  "minutes": 135,
   "ahead": [],
   "meat": null,
   "palmer": false
