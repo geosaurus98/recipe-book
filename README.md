@@ -307,6 +307,27 @@ are ignored, so a step that contains "next" won't skip ahead.
   `Ideas.tex` that aren't in the book yet. **Write it up** starts an Add a
   recipe draft with the name and chapter filled in.
 
+### Profile
+
+**Profile** at the top opens the current planner's profile (George's and
+GP's are separate):
+
+- **Name**, used in the planner's title.
+- **Goals and defaults:** protein per serve (sets the "g+ protein" filters
+  and Plan my week), the week's budget (Plan my week's starting point),
+  people eating each meal (leftovers) and dinner time (Day by day).
+- **Likes and dislikes:** ingredients to favour (picked twice as often) or
+  avoid (skipped by Pick for me, Shuffle, Plan my week and What can I make,
+  and noted on recipe cards).
+- **Your swaps:** shown on recipes, in cooking mode and on the shopping
+  list. GP's start as his dairy-free swaps; **Add lighter swaps** adds lite
+  coconut milk, Greek yoghurt for sour cream and similar.
+- **Body and daily targets** and **Weight** from the Food log, which stay on
+  the device.
+
+Everything except the body stats is saved with the planner, so it follows
+it to other devices when sharing.
+
 ### Sharing between people
 
 With Firebase set up, a **Share** button appears in the planner's header. It
