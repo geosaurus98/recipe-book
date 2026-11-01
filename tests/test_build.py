@@ -106,6 +106,13 @@ class Ingredients(unittest.TestCase):
         self.assertEqual(ingredients.parse("1 cup frozen peas")["key"], "frozen-peas")
         self.assertEqual(ingredients.parse("1 cup peas")["key"], "frozen-peas")
 
+    def test_second_amount_in_brackets(self):
+        import ingredients
+        milk = ingredients.parse("1 L (4 cups) whole milk")
+        self.assertEqual((milk["key"], milk["qty"], milk["unit"]), ("milk", 1000, "ml"))
+        self.assertEqual(ingredients.parse("100 g (7 tbsp) butter")["key"], "butter")
+        self.assertEqual(ingredients.parse("1 can (400 g) chopped tomatoes")["unit"], "can")
+
     def test_prices_are_sensible(self):
         from prices import PRICES
         for key, price in PRICES.items():

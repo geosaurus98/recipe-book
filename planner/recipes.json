@@ -327,8 +327,7 @@
   "minutes": 50,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Beef & Mixed Bean Chilli",
@@ -607,8 +606,7 @@
   "minutes": 35,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Beef & Red Lentil Moussaka-Style Stew",
@@ -939,8 +937,7 @@
   "minutes": 50,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Beef & Vegetable Stew",
@@ -1284,8 +1281,7 @@
   "minutes": 60,
   "ahead": [],
   "meat": "Stewing beef",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Beef, Barley & Mushroom Stew",
@@ -1575,8 +1571,7 @@
    "Defrost the beef in the fridge the night before; the vegetables can be chopped ahead."
   ],
   "meat": "Stewing beef",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Beef, Red Lentil & Vegetable Cottage Pie Bowls",
@@ -1720,6 +1715,16 @@
     "g": 500.0
    },
    {
+    "key": "red-lentils",
+    "name": "Red lentils (dry)",
+    "aisle": "Cans, jars & pulses",
+    "qty": 0.75,
+    "unit": "cup",
+    "optional": false,
+    "raw": "¾ cup (140–150 g) dry split red lentils, rinsed",
+    "g": 142.5
+   },
+   {
     "key": "carrot",
     "name": "Carrots",
     "aisle": "Fruit & veg",
@@ -1853,10 +1858,10 @@
    "mince"
   ],
   "nutrition": {
-   "kcal": 540,
-   "protein": 36,
-   "carbs": 60,
-   "fat": 17,
+   "kcal": 660,
+   "protein": 45,
+   "carbs": 78,
+   "fat": 18,
    "per": "serving",
    "count": 4
   },
@@ -1871,8 +1876,7 @@
    "Defrost the mince in the fridge the night before."
   ],
   "meat": "Beef mince",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Beefaroni",
@@ -2201,8 +2205,7 @@
   "minutes": 30,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Butter Chicken-Style Chicken & Lentil Curry",
@@ -2495,8 +2498,7 @@
   "minutes": 50,
   "ahead": [],
   "meat": "Chicken drumsticks",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Cajun Chicken, Bean & Rice Bowls",
@@ -2943,8 +2945,7 @@
    "Defrost the chicken overnight."
   ],
   "meat": "Chicken breast or tenderloins",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Cheeseburger Macaroni with Hidden Lentils",
@@ -3219,8 +3220,7 @@
   "minutes": 35,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Chicken & Rice",
@@ -3454,8 +3454,7 @@
   "minutes": 40,
   "ahead": [],
   "meat": "Chicken thighs",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Chicken & Vegetable Soup",
@@ -3780,8 +3779,7 @@
   "minutes": 35,
   "ahead": [],
   "meat": "Chicken thighs",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Chicken, Chickpea & Edamame Biryani Bowls",
@@ -4108,8 +4106,7 @@
    "Defrost the chicken in the fridge the night before."
   ],
   "meat": "Chicken breast or tenderloins",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Chicken, Lentil & Coconut Curry with Rice",
@@ -4399,8 +4396,7 @@
   "minutes": 40,
   "ahead": [],
   "meat": "Chicken thighs",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Chicken, Rice & Lentils",
@@ -4676,8 +4672,7 @@
   "minutes": 40,
   "ahead": [],
   "meat": "Chicken breast or tenderloins",
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Coconut Chicken, Potato & Chickpea Curry",
@@ -4976,8 +4971,7 @@
   "minutes": 40,
   "ahead": [],
   "meat": "Chicken breast or tenderloins",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Filipino-Style Pork Adobo with Edamame",
@@ -5219,8 +5213,7 @@
    "Defrost the pork in the fridge the night before."
   ],
   "meat": "Pork loin",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "High-Protein Pasta Sauce (Beef or Lentil)",
@@ -5576,8 +5569,7 @@
   "minutes": 35,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Lentil Coconut Curry",
@@ -5895,8 +5887,7 @@
   "minutes": 32,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Mac & Cheese with Vegetables",
@@ -6054,8 +6045,7 @@
   "minutes": 30,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Peanut Chicken & Sugar Snap Peas with Noodles",
@@ -6319,8 +6309,7 @@
   "minutes": null,
   "ahead": [],
   "meat": "Chicken breast or tenderloins",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Pork Mince Congee with Edamame",
@@ -6591,8 +6580,7 @@
   "minutes": 60,
   "ahead": [],
   "meat": "Pork mince",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Pork Mince Japanese Curry with Potato & Carrot",
@@ -6786,8 +6774,7 @@
   "minutes": 45,
   "ahead": [],
   "meat": "Pork mince",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Pulled BBQ Chicken with Lentils",
@@ -7198,8 +7185,7 @@
   "minutes": 32,
   "ahead": [],
   "meat": "Chicken breast or tenderloins",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Sausage & Rice",
@@ -7532,8 +7518,7 @@
   "minutes": 35,
   "ahead": [],
   "meat": "Sausages",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Sausage & Spinach Pasta",
@@ -7753,8 +7738,7 @@
   "minutes": 35,
   "ahead": [],
   "meat": "Sausages",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Stuffed Capsicum Soup",
@@ -8019,8 +8003,7 @@
   "minutes": 45,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Teriyaki Chicken & Veg",
@@ -8344,8 +8327,7 @@
   "minutes": 20,
   "ahead": [],
   "meat": "Chicken thighs",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Thai Peanut Chicken",
@@ -8734,8 +8716,7 @@
   "minutes": 30,
   "ahead": [],
   "meat": "Chicken breast or tenderloins",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Apple-Mustard Pork & Split-Pea Stew",
@@ -9048,8 +9029,7 @@
    "Cut the pork and vegetables the night before, and defrost any frozen pork in the fridge."
   ],
   "meat": "Pork shoulder",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Beef & Potato Stew over Rice",
@@ -9398,8 +9378,7 @@
   "minutes": 495,
   "ahead": [],
   "meat": "Stewing beef",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Beef & Vegetable Soup",
@@ -9669,8 +9648,7 @@
   "minutes": null,
   "ahead": [],
   "meat": "Stewing beef",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Beef Mince & Yellow Split Pea Keema",
@@ -9965,8 +9943,7 @@
    "Brown the mince the night before and refrigerate; load it into the slow cooker in the morning."
   ],
   "meat": "Beef mince",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Beef Mince Taco Filling (Freezer Batch)",
@@ -10330,8 +10307,7 @@
   "minutes": 375,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Butter Chicken-Style Chicken & Lentil Curry",
@@ -10624,8 +10600,7 @@
   "minutes": 435,
   "ahead": [],
   "meat": "Chicken drumsticks",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Chicken & Chickpea Stew",
@@ -10832,8 +10807,7 @@
   "minutes": null,
   "ahead": [],
   "meat": "Chicken thighs",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Chicken & Yellow Split Pea Soup",
@@ -11117,8 +11091,7 @@
    "Chop the onion and carrots and defrost the chicken in the fridge the night before."
   ],
   "meat": "Chicken breast or tenderloins",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Chilli Con Carne with Red Lentils & Kidney Beans",
@@ -11464,8 +11437,7 @@
   "minutes": 495,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Coconut Chicken, Kumara & Chickpea Curry",
@@ -11747,8 +11719,7 @@
   "minutes": null,
   "ahead": [],
   "meat": "Chicken breast or tenderloins",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Honey Garlic Chicken",
@@ -11966,8 +11937,7 @@
   "minutes": null,
   "ahead": [],
   "meat": "Chicken thighs",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Honey-Mustard Chicken & White Bean Stew",
@@ -12255,8 +12225,7 @@
    "Chop the vegetables the night before and defrost the chicken in the fridge."
   ],
   "meat": "Chicken breast or tenderloins",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Mexican Salsa Chicken",
@@ -12463,8 +12432,7 @@
   "minutes": null,
   "ahead": [],
   "meat": "Chicken thighs",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Mexican Shredded Chicken",
@@ -12764,8 +12732,7 @@
   "minutes": 370,
   "ahead": [],
   "meat": "Chicken thighs",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Pork & Kumara Curry",
@@ -13000,8 +12967,7 @@
   "minutes": null,
   "ahead": [],
   "meat": "Pork shoulder",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Pork & Lentil Bolognese",
@@ -13324,8 +13290,7 @@
   "minutes": null,
   "ahead": [],
   "meat": "Pork mince",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Pork Mince, Barley & Vegetable Soup",
@@ -13617,8 +13582,7 @@
   "minutes": 435,
   "ahead": [],
   "meat": "Pork mince",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Pulled Pork & Lentil Ragu",
@@ -13976,8 +13940,7 @@
   "minutes": 555,
   "ahead": [],
   "meat": "Pork leg",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Pulled Pork Wraps",
@@ -14190,8 +14153,7 @@
   "minutes": null,
   "ahead": [],
   "meat": "Pork shoulder",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Satay Chicken & Red Lentil Curry",
@@ -14479,8 +14441,7 @@
    "Dice the onion and defrost the chicken in the fridge the night before."
   ],
   "meat": "Chicken breast or tenderloins",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Savoury Mince with Barley & Veg",
@@ -14751,8 +14712,7 @@
   "minutes": 375,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Smoky Chicken, Black Bean & Red Lentil Stew",
@@ -15107,8 +15067,7 @@
   "minutes": 420,
   "ahead": [],
   "meat": "Chicken breast or tenderloins",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Beef & Broccoli Stir-Fry",
@@ -15343,8 +15302,7 @@
   "minutes": null,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Beef & Vegetable Chilli",
@@ -15608,8 +15566,7 @@
   "minutes": null,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Beef Kofta with Couscous & Yoghurt",
@@ -15965,8 +15922,7 @@
   "minutes": 35,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Beef Mince & Black Bean Quesadillas",
@@ -16213,8 +16169,7 @@
   "minutes": 30,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Beef Mince Stir-Fry",
@@ -16430,8 +16385,7 @@
   "minutes": null,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Beef Schnitzel Rolls",
@@ -16447,7 +16401,7 @@
       "text": "4 beef schnitzels (or chicken schnitzels)"
      },
      {
-      "text": "4 slices Edam cheese"
+      "text": "4 slices Edam cheese (or lactose-free cheese)"
      },
      {
       "text": "6 garlic cloves"
@@ -16522,7 +16476,7 @@
   "group": null,
   "ingredients": [
    "4 beef schnitzels (or chicken schnitzels)",
-   "4 slices Edam cheese",
+   "4 slices Edam cheese (or lactose-free cheese)",
    "6 garlic cloves",
    "Fresh rosemary",
    "2–3 slices streaky bacon",
@@ -16551,7 +16505,7 @@
     "qty": 4.0,
     "unit": "slice",
     "optional": false,
-    "raw": "4 slices Edam cheese",
+    "raw": "4 slices Edam cheese (or lactose-free cheese)",
     "g": 80.0
    },
    {
@@ -16649,8 +16603,7 @@
   "minutes": 45,
   "ahead": [],
   "meat": "Beef schnitzel",
-  "palmer": true,
-  "gpDairyOK": true
+  "palmer": true
  },
  {
   "title": "Burrito Bowls",
@@ -16798,8 +16751,7 @@
   "minutes": 30,
   "ahead": [],
   "meat": "Chicken",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Butter Chicken",
@@ -16842,10 +16794,10 @@
       "text": "400 g can crushed tomatoes (or tomato purée)"
      },
      {
-      "text": "½ cup cream (or coconut cream)"
+      "text": "½ cup cream (or coconut cream for dairy-free)"
      },
      {
-      "text": "2 tbsp butter"
+      "text": "2 tbsp butter (or dairy-free margarine)"
      },
      {
       "text": "2 tbsp oil"
@@ -16911,8 +16863,8 @@
    "2 garlic cloves, minced",
    "1 tbsp grated ginger",
    "400 g can crushed tomatoes (or tomato purée)",
-   "½ cup cream (or coconut cream)",
-   "2 tbsp butter",
+   "½ cup cream (or coconut cream for dairy-free)",
+   "2 tbsp butter (or dairy-free margarine)",
    "2 tbsp oil",
    "Salt and pepper, to taste",
    "Fresh coriander leaves, to garnish",
@@ -17026,7 +16978,7 @@
     "qty": 0.5,
     "unit": "cup",
     "optional": false,
-    "raw": "½ cup cream (or coconut cream)",
+    "raw": "½ cup cream (or coconut cream for dairy-free)",
     "g": 120.0
    },
    {
@@ -17036,7 +16988,7 @@
     "qty": 2.0,
     "unit": "tbsp",
     "optional": false,
-    "raw": "2 tbsp butter",
+    "raw": "2 tbsp butter (or dairy-free margarine)",
     "g": 28.0
    },
    {
@@ -17113,8 +17065,7 @@
   "minutes": 40,
   "ahead": [],
   "meat": "Chicken thighs",
-  "palmer": true,
-  "gpDairyOK": false
+  "palmer": true
  },
  {
   "title": "Cheesy Mexican Mince & Rice",
@@ -17327,8 +17278,7 @@
   "minutes": 35,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": true,
-  "gpDairyOK": true
+  "palmer": true
  },
  {
   "title": "Chicken & Veg Stir-Fry Bowl",
@@ -17621,8 +17571,7 @@
   "minutes": 30,
   "ahead": [],
   "meat": "Chicken breast or tenderloins",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Chicken & Vegetable Stir-Fry",
@@ -17891,8 +17840,7 @@
   "minutes": 30,
   "ahead": [],
   "meat": "Chicken breast or tenderloins",
-  "palmer": true,
-  "gpDairyOK": true
+  "palmer": true
  },
  {
   "title": "Chicken or Falafel Wraps",
@@ -18052,8 +18000,7 @@
   "minutes": 30,
   "ahead": [],
   "meat": "Chicken breast or tenderloins",
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Chicken Pad Thai",
@@ -18307,8 +18254,7 @@
   "minutes": 30,
   "ahead": [],
   "meat": "Chicken thighs",
-  "palmer": true,
-  "gpDairyOK": true
+  "palmer": true
  },
  {
   "title": "Chicken Shawarma Wraps",
@@ -18449,8 +18395,7 @@
   "minutes": 35,
   "ahead": [],
   "meat": "Chicken thighs",
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Chicken Tikka Masala",
@@ -18615,8 +18560,7 @@
   "minutes": 35,
   "ahead": [],
   "meat": "Chicken breast or tenderloins",
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Chicken, Tomato & White Bean Pasta",
@@ -18888,8 +18832,7 @@
    "Defrost the chicken overnight."
   ],
   "meat": "Chicken breast or tenderloins",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Classic Spaghetti Bolognese",
@@ -19124,8 +19067,7 @@
   "minutes": 60,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Creamy Garlic Chicken Pasta",
@@ -19361,8 +19303,7 @@
   "minutes": 30,
   "ahead": [],
   "meat": "Chicken breast or tenderloins",
-  "palmer": true,
-  "gpDairyOK": true
+  "palmer": true
  },
  {
   "title": "Freezer Burritos with Beef, Beans & Rice",
@@ -19615,8 +19556,7 @@
   "minutes": 40,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Gnocchi alla Sorrentina",
@@ -19638,7 +19578,7 @@
       "text": "2 tins crushed and sieved tomatoes"
      },
      {
-      "text": "4 tbsp Parmesan cheese"
+      "text": "4 tbsp Parmesan cheese (or lactose-free tasty cheese)"
      },
      {
       "text": "1 small onion, chopped"
@@ -19647,7 +19587,7 @@
       "text": "1 garlic clove, halved"
      },
      {
-      "text": "100 g grated mozzarella"
+      "text": "100 g grated mozzarella (or lactose-free mozzarella)"
      },
      {
       "text": "Fresh basil leaves"
@@ -19715,10 +19655,10 @@
    "500 g Desiree or Agria potatoes",
    "220 g high-grade flour (Champion brand)",
    "2 tins crushed and sieved tomatoes",
-   "4 tbsp Parmesan cheese",
+   "4 tbsp Parmesan cheese (or lactose-free tasty cheese)",
    "1 small onion, chopped",
    "1 garlic clove, halved",
-   "100 g grated mozzarella",
+   "100 g grated mozzarella (or lactose-free mozzarella)",
    "Fresh basil leaves",
    "Salt, to taste",
    "Chilli or pepper, to taste",
@@ -19762,7 +19702,7 @@
     "qty": 4.0,
     "unit": "tbsp",
     "optional": false,
-    "raw": "4 tbsp Parmesan cheese",
+    "raw": "4 tbsp Parmesan cheese (or lactose-free tasty cheese)",
     "g": 24.0
    },
    {
@@ -19792,7 +19732,7 @@
     "qty": 100.0,
     "unit": "g",
     "optional": false,
-    "raw": "100 g grated mozzarella",
+    "raw": "100 g grated mozzarella (or lactose-free mozzarella)",
     "g": 100.0
    },
    {
@@ -19859,8 +19799,7 @@
   "minutes": 90,
   "ahead": [],
   "meat": null,
-  "palmer": true,
-  "gpDairyOK": false
+  "palmer": true
  },
  {
   "title": "Greek-Style Chicken & Chickpea Couscous Bowls",
@@ -20148,8 +20087,7 @@
   "minutes": 35,
   "ahead": [],
   "meat": "Chicken breast or tenderloins",
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Homemade Burgers & Fries",
@@ -20429,8 +20367,7 @@
   "minutes": 40,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Homemade Sub Sandwiches",
@@ -20611,8 +20548,7 @@
   "minutes": 20,
   "ahead": [],
   "meat": "Ham",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Korean Bibimbap",
@@ -20762,8 +20698,7 @@
   "minutes": 35,
   "ahead": [],
   "meat": "Chicken",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Korean-Style Steak Bowl",
@@ -21075,8 +21010,7 @@
   "minutes": 40,
   "ahead": [],
   "meat": "Beef steak (rump or topside)",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Lean Sausage Ragu with Brown Rice",
@@ -21382,8 +21316,7 @@
   "minutes": 45,
   "ahead": [],
   "meat": "Sausages",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Mapo Tofu with Pork Mince",
@@ -21634,8 +21567,7 @@
   "minutes": 25,
   "ahead": [],
   "meat": "Pork mince",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Old School Beef Tacos",
@@ -22029,8 +21961,7 @@
   "minutes": 30,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "One-Pan Honey Soy Chicken & Rice",
@@ -22251,8 +22182,7 @@
   "minutes": 35,
   "ahead": [],
   "meat": "Chicken thighs",
-  "palmer": true,
-  "gpDairyOK": true
+  "palmer": true
  },
  {
   "title": "One-Pot Beef & Tomato Pasta",
@@ -22508,8 +22438,7 @@
   "minutes": 30,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": true,
-  "gpDairyOK": true
+  "palmer": true
  },
  {
   "title": "Pork & Lentil Bolognese",
@@ -22774,8 +22703,7 @@
   "minutes": null,
   "ahead": [],
   "meat": "Pork mince",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Pork & Veg Dumplings",
@@ -23045,8 +22973,7 @@
   "minutes": 70,
   "ahead": [],
   "meat": "Pork mince",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Pork Fried Rice with Omelette",
@@ -23269,8 +23196,7 @@
   "minutes": 30,
   "ahead": [],
   "meat": "Pork mince",
-  "palmer": true,
-  "gpDairyOK": true
+  "palmer": true
  },
  {
   "title": "Pork Mince Dan Dan-Style Noodles",
@@ -23568,8 +23494,7 @@
   "minutes": 25,
   "ahead": [],
   "meat": "Pork mince",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Pork Mince Larb with Rice & Crunchy Veg",
@@ -23835,8 +23760,7 @@
   "minutes": 25,
   "ahead": [],
   "meat": "Pork mince",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Pork Mince Lettuce Cups (San Choy Bow)",
@@ -24086,8 +24010,7 @@
   "minutes": null,
   "ahead": [],
   "meat": "Pork mince",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Quick Ramen Bowls",
@@ -24235,8 +24158,7 @@
   "minutes": 25,
   "ahead": [],
   "meat": "Chicken",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Rigatoni all’Amatriciana",
@@ -24267,7 +24189,7 @@
       "text": "Extra virgin olive oil"
      },
      {
-      "text": "100 g pecorino cheese"
+      "text": "100 g pecorino cheese (or lactose-free tasty cheese)"
      },
      {
       "text": "Salt and pepper, to taste"
@@ -24352,7 +24274,7 @@
    "2 cans whole tomatoes or 800 g passata",
    "½ glass white wine",
    "Extra virgin olive oil",
-   "100 g pecorino cheese",
+   "100 g pecorino cheese (or lactose-free tasty cheese)",
    "Salt and pepper, to taste"
   ],
   "shop": [
@@ -24422,7 +24344,7 @@
     "qty": 100.0,
     "unit": "g",
     "optional": false,
-    "raw": "100 g pecorino cheese",
+    "raw": "100 g pecorino cheese (or lactose-free tasty cheese)",
     "g": 100.0
    },
    {
@@ -24460,8 +24382,7 @@
   "minutes": 45,
   "ahead": [],
   "meat": "Bacon",
-  "palmer": true,
-  "gpDairyOK": false
+  "palmer": true
  },
  {
   "title": "Sausage Ragu",
@@ -24759,8 +24680,7 @@
   "minutes": 45,
   "ahead": [],
   "meat": "Sausages",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Savoury Mince on Rice",
@@ -24999,8 +24919,7 @@
   "minutes": 30,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": true,
-  "gpDairyOK": true
+  "palmer": true
  },
  {
   "title": "Sesame Beef, Edamame & Vegetable Noodles",
@@ -25259,8 +25178,7 @@
    "Defrost the mince overnight if frozen."
   ],
   "meat": "Beef mince",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Sloppy Joes with Lentils",
@@ -25533,8 +25451,7 @@
   "minutes": 35,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Spicy Arrabbiata-Style Mince Pasta",
@@ -25867,8 +25784,7 @@
   "minutes": 30,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Spicy Beef Bolognese with Rigatoni",
@@ -26187,8 +26103,7 @@
   "minutes": 40,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Sweet & Sour Chicken",
@@ -26334,8 +26249,7 @@
   "minutes": 35,
   "ahead": [],
   "meat": "Chicken breast or tenderloins",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Thai Green Chicken Curry",
@@ -26614,8 +26528,7 @@
   "minutes": 60,
   "ahead": [],
   "meat": "Chicken",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Vietnamese Banh Mi",
@@ -26754,8 +26667,7 @@
   "minutes": 35,
   "ahead": [],
   "meat": "Chicken",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Beef Mince & Lentil Shepherd's Pie",
@@ -26992,8 +26904,7 @@
   "minutes": null,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Beef Mince Stuffed Capsicums",
@@ -27239,8 +27150,7 @@
   "minutes": null,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Cheesy Tuna Pasta Bake",
@@ -27463,8 +27373,7 @@
   "minutes": 40,
   "ahead": [],
   "meat": null,
-  "palmer": true,
-  "gpDairyOK": true
+  "palmer": true
  },
  {
   "title": "Chicken & Vegetable Bake",
@@ -27731,8 +27640,7 @@
    "Prep the vegetables and marinate the chicken the night before to save time on cooking day."
   ],
   "meat": "Chicken thighs",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Classic Bolognese Lasagne",
@@ -27778,10 +27686,10 @@
       "group": "For the béchamel sauce"
      },
      {
-      "text": "1 L (4 cups) whole milk"
+      "text": "1 L (4 cups) whole milk (or lactose-free milk)"
      },
      {
-      "text": "100 g (7 tbsp) butter"
+      "text": "100 g (7 tbsp) butter (or dairy-free margarine)"
      },
      {
       "text": "100 g (¾ cup) plain flour"
@@ -27799,7 +27707,7 @@
       "text": "250–300 g fresh or dry egg lasagne sheets"
      },
      {
-      "text": "100 g grated parmesan cheese"
+      "text": "100 g grated parmesan cheese (or lactose-free tasty cheese)"
      }
     ]
    },
@@ -27871,13 +27779,13 @@
    "½ cup red wine",
    "Extra virgin olive oil",
    "Salt and pepper, to taste",
-   "1 L (4 cups) whole milk",
-   "100 g (7 tbsp) butter",
+   "1 L (4 cups) whole milk (or lactose-free milk)",
+   "100 g (7 tbsp) butter (or dairy-free margarine)",
    "100 g (¾ cup) plain flour",
    "Nutmeg, to taste",
    "Salt, to taste",
    "250–300 g fresh or dry egg lasagne sheets",
-   "100 g grated parmesan cheese"
+   "100 g grated parmesan cheese (or lactose-free tasty cheese)"
   ],
   "shop": [
    {
@@ -27978,6 +27886,36 @@
     "raw": "Salt and pepper, to taste"
    },
    {
+    "key": "milk",
+    "name": "Milk",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 1000.0,
+    "unit": "ml",
+    "optional": false,
+    "raw": "1 L (4 cups) whole milk (or lactose-free milk)",
+    "g": 1000.0
+   },
+   {
+    "key": "butter",
+    "name": "Butter",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 100.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "100 g (7 tbsp) butter (or dairy-free margarine)",
+    "g": 100.0
+   },
+   {
+    "key": "flour",
+    "name": "Plain flour",
+    "aisle": "Baking",
+    "qty": 100.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "100 g (¾ cup) plain flour",
+    "g": 100.0
+   },
+   {
     "key": "nutmeg",
     "name": "Nutmeg",
     "aisle": "Pantry: check first",
@@ -28012,7 +27950,7 @@
     "qty": 100.0,
     "unit": "g",
     "optional": false,
-    "raw": "100 g grated parmesan cheese",
+    "raw": "100 g grated parmesan cheese (or lactose-free tasty cheese)",
     "g": 100.0
    }
   ],
@@ -28022,10 +27960,10 @@
    "mince"
   ],
   "nutrition": {
-   "kcal": 440,
-   "protein": 29,
-   "carbs": 40,
-   "fat": 16,
+   "kcal": 690,
+   "protein": 35,
+   "carbs": 58,
+   "fat": 33,
    "per": "serving",
    "count": 7.0
   },
@@ -28036,8 +27974,7 @@
   "minutes": 150,
   "ahead": [],
   "meat": "Mince (beef or pork)",
-  "palmer": true,
-  "gpDairyOK": false
+  "palmer": true
  },
  {
   "title": "Crunchy Crumbed Chicken Drumsticks",
@@ -28281,8 +28218,7 @@
   "minutes": 60,
   "ahead": [],
   "meat": "Chicken drumsticks",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "DIY Pizzas",
@@ -28316,7 +28252,7 @@
       "text": "½ cup pizza sauce or passata"
      },
      {
-      "text": "1 cup shredded mozzarella"
+      "text": "1 cup shredded mozzarella (or lactose-free mozzarella)"
      },
      {
       "text": "Toppings: mushrooms, capsicum, olives, pineapple, chicken, ham"
@@ -28376,7 +28312,7 @@
    "5 tbsp Olive Oil",
    "230 ml Water",
    "½ cup pizza sauce or passata",
-   "1 cup shredded mozzarella",
+   "1 cup shredded mozzarella (or lactose-free mozzarella)",
    "Toppings: mushrooms, capsicum, olives, pineapple, chicken, ham"
   ],
   "shop": [
@@ -28447,7 +28383,7 @@
     "qty": 1.0,
     "unit": "cup",
     "optional": false,
-    "raw": "1 cup shredded mozzarella",
+    "raw": "1 cup shredded mozzarella (or lactose-free mozzarella)",
     "g": 110.0
    },
    {
@@ -28525,8 +28461,7 @@
   "minutes": 20,
   "ahead": [],
   "meat": null,
-  "palmer": true,
-  "gpDairyOK": true
+  "palmer": true
  },
  {
   "title": "Lemon Herb Salmon Tray Bake",
@@ -28750,8 +28685,7 @@
   "minutes": null,
   "ahead": [],
   "meat": "Salmon",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Lemon Pepper Chicken Thighs with Roast Veg",
@@ -28939,8 +28873,7 @@
   "minutes": 45,
   "ahead": [],
   "meat": "Chicken thighs",
-  "palmer": true,
-  "gpDairyOK": true
+  "palmer": true
  },
  {
   "title": "Loaded Beef Nachos",
@@ -29240,8 +29173,7 @@
   "minutes": 30,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Loaded Jacket Potatoes",
@@ -29370,8 +29302,7 @@
   "minutes": 60,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Meatloaf Muffins",
@@ -29625,8 +29556,7 @@
   "minutes": 40,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Mince & Cheese Pie Bake",
@@ -29898,8 +29828,7 @@
   "minutes": 55,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "One-Pan Sausage, Potato & Capsicum Bake",
@@ -30118,8 +30047,7 @@
   "minutes": 45,
   "ahead": [],
   "meat": "Sausages",
-  "palmer": true,
-  "gpDairyOK": true
+  "palmer": true
  },
  {
   "title": "Sausage Rolls with Grated Veg",
@@ -30368,8 +30296,7 @@
   "minutes": 50,
   "ahead": [],
   "meat": "Pork mince",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Rustic Chickpea & Rocket Salad with Mustard-Garlic Vinaigrette",
@@ -30400,7 +30327,7 @@
       "text": "2 tbsp pitted olives"
      },
      {
-      "text": "Parmesan or pecorino shavings (optional)"
+      "text": "Parmesan or pecorino shavings (optional; or lactose-free cheese)"
      },
      {
       "group": "For the dressing"
@@ -30475,7 +30402,7 @@
    "10 cherry tomatoes, halved",
    "¼ red onion, thinly sliced",
    "2 tbsp pitted olives",
-   "Parmesan or pecorino shavings (optional)",
+   "Parmesan or pecorino shavings (optional; or lactose-free cheese)",
    "1 garlic clove, finely minced or crushed",
    "½ tsp salt",
    "Black pepper, to taste",
@@ -30541,7 +30468,16 @@
     "qty": null,
     "unit": "",
     "optional": true,
-    "raw": "Parmesan or pecorino shavings (optional)"
+    "raw": "Parmesan or pecorino shavings (optional; or lactose-free cheese)"
+   },
+   {
+    "key": "cheese",
+    "name": "Tasty cheese",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Parmesan or pecorino shavings (optional; or lactose-free cheese)"
    },
    {
     "key": "garlic",
@@ -30621,8 +30557,7 @@
   "minutes": 15,
   "ahead": [],
   "meat": null,
-  "palmer": true,
-  "gpDairyOK": true
+  "palmer": true
  },
  {
   "title": "Cajun Rice",
@@ -30883,8 +30818,7 @@
   "minutes": 30,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Coconut Rice",
@@ -31022,8 +30956,7 @@
   "minutes": 25,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Coriander Lime Rice",
@@ -31174,8 +31107,7 @@
   "minutes": 25,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Egg Fried Rice",
@@ -31384,8 +31316,7 @@
   "minutes": 15,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Garlic Butter Rice",
@@ -31544,8 +31475,7 @@
   "minutes": 25,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Herbed Couscous",
@@ -31723,8 +31653,7 @@
   "minutes": 10,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Lemon & Herb Quinoa",
@@ -31916,8 +31845,7 @@
   "minutes": 25,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Mexican Tomato Rice",
@@ -32150,8 +32078,7 @@
   "minutes": 30,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Rice with Peas & Parmesan",
@@ -32311,8 +32238,7 @@
   "minutes": 25,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Turmeric Rice with Peas",
@@ -32509,8 +32435,7 @@
   "minutes": 25,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Asparagus with Capers and Parsley Mayonnaise",
@@ -32689,8 +32614,7 @@
   "minutes": 45,
   "ahead": [],
   "meat": null,
-  "palmer": true,
-  "gpDairyOK": true
+  "palmer": true
  },
  {
   "title": "Cauliflower Cheese",
@@ -32878,8 +32802,7 @@
   "minutes": 35,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Crispy Smashed Potatoes",
@@ -33039,8 +32962,7 @@
   "minutes": 60,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Garlic Green Beans",
@@ -33200,8 +33122,7 @@
   "minutes": 10,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Kumara Mash",
@@ -33360,8 +33281,7 @@
   "minutes": 25,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Kumara Wedges with Aioli",
@@ -33536,8 +33456,7 @@
   "minutes": 40,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Roast Vegetables",
@@ -33749,8 +33668,7 @@
   "minutes": 60,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Sesame Asian Greens",
@@ -33937,8 +33855,7 @@
   "minutes": 10,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Banana Protein Pancakes",
@@ -34152,8 +34069,7 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Breakfast Burritos",
@@ -34397,8 +34313,7 @@
   "minutes": null,
   "ahead": [],
   "meat": "Sausages",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Egg Muffins",
@@ -34585,8 +34500,7 @@
   "minutes": null,
   "ahead": [],
   "meat": "Bacon",
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Frittata Slices",
@@ -34816,8 +34730,7 @@
   "minutes": null,
   "ahead": [],
   "meat": "Chicken breast or tenderloins",
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "High-Protein Chia Pudding",
@@ -35003,8 +34916,7 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Overnight Oats",
@@ -35189,8 +35101,7 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Savoury Egg & Rice Bowl",
@@ -35383,8 +35294,7 @@
   "minutes": null,
   "ahead": [],
   "meat": "Ham",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Boiled Eggs & Crackers",
@@ -35525,8 +35435,7 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Cheese & Marmite Scrolls",
@@ -35738,8 +35647,7 @@
   "minutes": 40,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Cottage Cheese & Tomato Toast",
@@ -35888,8 +35796,7 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Crunchy Spiced Roasted Chickpeas",
@@ -36071,8 +35978,7 @@
   "minutes": 40,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Devilled Eggs",
@@ -36242,8 +36148,7 @@
   "minutes": 20,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Edamame with Sea Salt",
@@ -36362,8 +36267,7 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Greek Yoghurt & Berry Bowl",
@@ -36486,8 +36390,7 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Homemade Hummus",
@@ -36675,8 +36578,7 @@
   "minutes": 10,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Homemade Protein Balls",
@@ -36848,8 +36750,7 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Hummus & Vegetable Sticks",
@@ -36989,8 +36890,7 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Microwave Mug Omelette",
@@ -37158,8 +37058,7 @@
   "minutes": 3,
   "ahead": [],
   "meat": "Ham",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Oven Beef Jerky",
@@ -37371,8 +37270,7 @@
   "minutes": 255,
   "ahead": [],
   "meat": "Beef steak (rump or topside)",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Parmesan & Garlic Popcorn",
@@ -37530,8 +37428,7 @@
   "minutes": 10,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Peanut Butter & Banana Rice Cakes",
@@ -37652,8 +37549,7 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Pork Mince Rice Paper Rolls",
@@ -37948,8 +37844,7 @@
   "minutes": 30,
   "ahead": [],
   "meat": "Pork mince",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Tuna & Crackers",
@@ -38127,8 +38022,7 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Tuna & Sweetcorn Fritters",
@@ -38357,8 +38251,7 @@
   "minutes": 25,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Tzatziki with Baked Pita Chips",
@@ -38569,8 +38462,7 @@
   "minutes": 15,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Berry & Oat Power Shake",
@@ -38725,8 +38617,7 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Classic Chocolate Peanut Butter Shake",
@@ -38869,8 +38760,7 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Green Spinach & Banana Shake",
@@ -39025,8 +38915,7 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Mango & Coconut Tropical Shake",
@@ -39157,8 +39046,7 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Vanilla Cinnamon Shake",
@@ -39299,8 +39187,7 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Baked Cinnamon Apples",
@@ -39465,8 +39352,7 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Banana Nice Cream",
@@ -39622,8 +39508,7 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Chocolate Protein Mug Cake",
@@ -39801,8 +39686,7 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Chocolate Self-Saucing Pudding",
@@ -40028,8 +39912,7 @@
   "minutes": 50,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Feijoa & Apple Crumble",
@@ -40252,8 +40135,7 @@
   "minutes": 50,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Frozen Yoghurt Bark",
@@ -40413,8 +40295,7 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "No-Bake Chocolate Oat Cookies",
@@ -40601,8 +40482,7 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Pavlova",
@@ -40798,8 +40678,7 @@
   "minutes": 95,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Sticky Date Pudding",
@@ -41030,8 +40909,7 @@
   "minutes": 60,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Afghan Biscuits",
@@ -41256,8 +41134,7 @@
   "minutes": 45,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "ANZAC Biscuits",
@@ -41437,8 +41314,7 @@
   "minutes": 30,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Apple & Feijoa Crumble Muffins",
@@ -41717,8 +41593,7 @@
   "minutes": 40,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Apple Cinnamon Muffins",
@@ -41969,8 +41844,7 @@
   "minutes": 35,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Bacon, Corn & Cheddar Muffins",
@@ -42172,8 +42046,7 @@
   "minutes": 35,
   "ahead": [],
   "meat": "Bacon",
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Banana Bread",
@@ -42375,8 +42248,7 @@
   "minutes": 75,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Banana Chocolate Chip Muffins",
@@ -42582,8 +42454,7 @@
   "minutes": 30,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Blueberry Muffins",
@@ -42799,8 +42670,7 @@
   "minutes": 35,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Caramelised Onion & Cheddar Scones",
@@ -43020,8 +42890,7 @@
   "minutes": 50,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Carrot Cake Muffins with Cream Cheese Drizzle",
@@ -43359,8 +43228,7 @@
   "minutes": 40,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Cheese Scones",
@@ -43550,8 +43418,7 @@
   "minutes": 25,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Cheesy Garlic Pull-Apart Bread",
@@ -43698,8 +43565,7 @@
   "minutes": 35,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Chocolate Brownies",
@@ -43898,8 +43764,7 @@
   "minutes": 45,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Chocolate Muffins",
@@ -44116,8 +43981,7 @@
   "minutes": 40,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Corn Muffins",
@@ -44288,8 +44152,7 @@
   "minutes": 25,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Courgette & Parmesan Muffins",
@@ -44485,8 +44348,7 @@
   "minutes": 35,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Crunchy Lemon Poppyseed Muffins",
@@ -44683,8 +44545,7 @@
   "minutes": 25,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Date Scones",
@@ -44883,8 +44744,7 @@
   "minutes": 25,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Feijoa Muffins",
@@ -45093,8 +44953,7 @@
   "minutes": 30,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Garlic Butter Naan (Yeasted)",
@@ -45300,8 +45159,7 @@
   "minutes": 80,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Ginger Crunch",
@@ -45509,8 +45367,7 @@
   "minutes": 40,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Ham & Cheese Breakfast Muffins",
@@ -45707,8 +45564,7 @@
   "minutes": 30,
   "ahead": [],
   "meat": "Ham",
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Harry’s Favourite Chocolate Cake",
@@ -45974,8 +45830,7 @@
   "minutes": 75,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Lemon Muffins",
@@ -46184,8 +46039,7 @@
   "minutes": 30,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Louise Slice",
@@ -46411,8 +46265,7 @@
   "minutes": 50,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "No-Knead Overnight Bread",
@@ -46536,8 +46389,7 @@
   "minutes": 1135,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Passionfruit & White Chocolate Muffins",
@@ -46785,8 +46637,7 @@
   "minutes": 35,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Raspberry & White Chocolate Muffins",
@@ -46972,8 +46823,7 @@
   "minutes": 30,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Spinach & Feta Muffins",
@@ -47192,8 +47042,7 @@
   "minutes": 25,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Yoghurt Naan Bread",
@@ -47341,8 +47190,7 @@
   "minutes": 30,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Brioche",
@@ -47534,8 +47382,7 @@
   "minutes": 210,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Cheese & Mustard Loaf",
@@ -47733,8 +47580,7 @@
   "minutes": 240,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Date & Walnut Loaf",
@@ -47938,8 +47784,7 @@
   "minutes": 300,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "French Loaf",
@@ -48073,8 +47918,7 @@
   "minutes": 360,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Garlic Herb Loaf",
@@ -48258,8 +48102,7 @@
   "minutes": 240,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Half-and-Half Wholemeal Loaf",
@@ -48432,8 +48275,7 @@
   "minutes": 300,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Kumara Bread",
@@ -48609,8 +48451,7 @@
   "minutes": 240,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Mexican Chilli Loaf",
@@ -48836,8 +48677,7 @@
   "minutes": 240,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Mixed Grain Bread",
@@ -49083,8 +48923,7 @@
   "minutes": 300,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Soft Sandwich Bread",
@@ -49243,8 +49082,7 @@
   "minutes": 300,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Spicy Fruit Loaf",
@@ -49468,8 +49306,7 @@
   "minutes": 240,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "White Loaf",
@@ -49628,8 +49465,7 @@
   "minutes": 240,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Bagels",
@@ -49820,8 +49656,7 @@
   "minutes": 200,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Bread Maker Pizza Dough",
@@ -50014,8 +49849,7 @@
   "minutes": 75,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": true
+  "palmer": false
  },
  {
   "title": "Bread Rolls",
@@ -50207,8 +50041,7 @@
   "minutes": 200,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Cinnamon Tea Ring",
@@ -50450,8 +50283,7 @@
   "minutes": 200,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Focaccia",
@@ -50660,8 +50492,7 @@
   "minutes": 105,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Hot Cross Buns",
@@ -50951,8 +50782,7 @@
   "minutes": 200,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  },
  {
   "title": "Banana Yoghurt Tea Bread",
@@ -51147,7 +50977,6 @@
   "minutes": 70,
   "ahead": [],
   "meat": null,
-  "palmer": false,
-  "gpDairyOK": false
+  "palmer": false
  }
 ]
