@@ -24,7 +24,7 @@ UNITS = {
     "stalk": "stalk", "stalks": "stalk", "rasher": "rasher", "rashers": "rasher",
     "slice": "slice", "slices": "slice", "scoop": "scoop", "scoops": "scoop",
     "handful": "handful", "handfuls": "handful", "block": "block", "blocks": "block",
-    "box": "box", "lb": "lb", "oz": "oz",
+    "box": "box", "lb": "lb", "lbs": "lb", "oz": "oz",
     "bulb": "bulb", "bulbs": "bulb",
 }
 
@@ -344,7 +344,7 @@ def parse(raw):
             if u:
                 unit, text = UNITS[u.group(1).lower()], text[u.end():]
             # "1 can (400 g) ...", "1 L (4 cups) milk": drop a second amount in brackets
-            text = re.sub(r"^\(\s*[\d.¼½¾⅓⅔\\]+[^)]*\)\s*", "", text, flags=re.I)
+            text = re.sub(r"^\(\s*(?:about\s+|approx\.?\s+)?[\d.¼½¾⅓⅔\\]+[^)]*\)\s*", "", text, flags=re.I)
 
     # Name: up to the first comma / bracket / dash note.
     name = re.split(r",|\(|;| – | - |—", text)[0]

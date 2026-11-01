@@ -112,6 +112,12 @@ class Ingredients(unittest.TestCase):
         self.assertEqual((milk["key"], milk["qty"], milk["unit"]), ("milk", 1000, "ml"))
         self.assertEqual(ingredients.parse("100 g (7 tbsp) butter")["key"], "butter")
         self.assertEqual(ingredients.parse("1 can (400 g) chopped tomatoes")["unit"], "can")
+        self.assertEqual(ingredients.parse("2 blocks (about 600 g) firm tofu")["key"], "tofu")
+        self.assertEqual(ingredients.parse("2 lbs chicken thighs")["qty"], 908)
+
+    def test_time_formats(self):
+        self.assertEqual(build.minutes("6–7 hrs (low) / 3–4 hrs (high)"), 420)
+        self.assertEqual(build.minutes("15 min prep + 8–9 hours"), 555)
 
     def test_prices_are_sensible(self):
         from prices import PRICES

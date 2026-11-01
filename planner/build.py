@@ -392,7 +392,9 @@ def minutes(time):
 
     Ranges count at their top ('15–20 min' -> 20)."""
     total, found = 0, False
-    for m in re.finditer(r"(\d+)(?:\s*[–-]\s*(\d+))?\s*(hr|hours?|h|min)\b", time):
+    # Only the first of "6–7 hrs (low) / 3–4 hrs (high)".
+    time = time.split(" / ")[0]
+    for m in re.finditer(r"(\d+)(?:\s*[–-]\s*(\d+))?\s*(hrs?|hours?|h|mins?)\b", time):
         n = int(m.group(2) or m.group(1))
         total += n * 60 if m.group(3).startswith("h") else n
         found = True
