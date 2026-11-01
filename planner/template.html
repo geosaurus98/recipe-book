@@ -127,6 +127,9 @@ main.wrap { padding-block: 20px 48px; display: grid; gap: 28px; }
 .sheet-head .badges { margin-top: 8px; }
 .storage { background: var(--sunk); border-radius: 12px; padding: 10px 14px; margin: 4px 0 16px; }
 .storage strong { display: block; font-size: 0.8rem; margin-bottom: 4px; }
+.storage.dairy li strong { display: inline; font-size: inherit; }
+.avoid { font-size: 0.75rem; font-weight: 600; color: var(--oven); }
+.sheet-head .avoid { display: block; margin-top: 6px; }
 .storage ul { margin: 0; padding-left: 1.1em; font-size: 0.88rem; }
 .scale { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 10px; font-size: 0.85rem; color: var(--muted); }
 .scale .fchip { padding: 4px 12px; }
@@ -421,7 +424,7 @@ main.wrap { padding-block: 20px 48px; display: grid; gap: 28px; }
 
 <header class="top">
   <div class="wrap">
-    <div class="brand"><h1 id="app-title">George's Meal Planner</h1><label class="profile">Planning for <select id="profile" data-act="profile" aria-label="Who is planning"><option value="george">George</option><option value="gp">GP</option></select></label><span class="sync" id="sync">Loading…</span><button class="btn small ghost share-btn" id="share-btn" data-act="share" hidden>Share</button></div>
+    <div class="brand"><h1 id="app-title">George's Meal Planner</h1><label class="profile">Planning for <select id="profile" data-act="profile" aria-label="Who is planning"><option value="george">George</option><option value="gp">GP</option></select></label><button class="btn small ghost" data-act="profile-open">Profile</button><span class="sync" id="sync">Loading…</span><button class="btn small ghost share-btn" id="share-btn" data-act="share" hidden>Share</button></div>
     <nav class="books" aria-label="Recipe books">PDF: <a href="books/main.pdf">Recipe Book</a> · <a href="books/palmer.pdf">GP's Book</a></nav>
     <nav class="tabs" role="tablist" aria-label="Sections">
       <button role="tab" id="tab-week" aria-selected="true" data-tab="week">This week</button>
@@ -463,6 +466,29 @@ const BASIC_MINUTES = 45, BASIC_INGREDIENTS = 14;
 function isBasic(r) {
   return !!(r.custom || r.palmer || (!["slow", "pressure"].includes(r.chapter) && r.minutes != null
     && r.minutes <= BASIC_MINUTES && r.ingredients.length <= BASIC_INGREDIENTS));
+}
+// GP is dairy-free, using these instead. His planner shows the swap on
+// recipes, in cooking mode and on his shopping list.
+const DAIRY_SWAPS = {
+  butter: "Dairy-free margarine", milk: "Lactose-free milk", cheese: "Lactose-free cheese",
+  mozzarella: "Lactose-free mozzarella", parmesan: "Lactose-free tasty cheese", feta: "Dairy-free feta",
+  halloumi: "Firm tofu (or leave it out)", yoghurt: "Coconut yoghurt", "greek-yoghurt": "Coconut yoghurt",
+  "sour-cream": "Coconut yoghurt", cream: "Coconut cream", "cream-cheese": "Dairy-free cream cheese",
+  "cottage-cheese": "Dairy-free cream cheese", ricotta: "Dairy-free cream cheese",
+  "milk-powder": "Lactose-free milk powder", "protein-powder": "Dairy-free protein powder",
+};
+const ALREADY_FREE = /lactose[- ]free|dairy[- ]free|margarine|coconut|plant[- ]based|oat milk|soy milk|almond milk/i;
+// The recipe's dairy lines that need swapping (lines that already name a
+// dairy-free option are left alone).
+function dairySwaps(r) {
+  const seen = new Set(), sw = mySwaps();
+  const done = (i, to) => (DAIRY_SWAPS[i.key] && ALREADY_FREE.test(i.raw)) || i.raw.toLowerCase().includes(to.toLowerCase().split(/ \(| or /)[0]);
+  return r.shop.filter(i => sw[i.key] && !done(i, sw[i.key]) && !seen.has(i.key) && seen.add(i.key))
+    .map(i => ({ key: i.key, name: i.name, swap: sw[i.key] }));
+}
+function dairyBox(r) {
+  const sw = dairySwaps(r);
+  return sw.length ? `<div class="storage dairy"><strong>Your swaps</strong><ul>${sw.map(x => `<li>${esc(x.name)} → <strong>${esc(x.swap.toLowerCase())}</strong></li>`).join("")}</ul></div>` : "";
 }
 function visibleRecipes() { return GP ? RECIPES.filter(isBasic) : RECIPES; }
 
@@ -526,6 +552,8 @@ function sanitize(s) {
   refreshCustom(out.custom);  // so planned custom recipes survive the checks below
   out.leftovers = out.leftovers || {}; out.prices = out.prices || {};
   out.waste = Array.isArray(out.waste) ? out.waste.slice(-60) : [];
+  out.prefs = Object.assign({}, out.prefs);
+  for (const k of ["avoid", "favour"]) if (out.prefs[k] && !Array.isArray(out.prefs[k])) delete out.prefs[k];
   out.eaters = [1, 2, 3, 4, 5, 6].includes(out.eaters) ? out.eaters : 2;
   out.slots = Object.fromEntries(SLOTS.map(sl => [sl.key, (out.slots || {})[sl.key] || null]));
   for (const k of Object.keys(out.slots)) if (out.slots[k] && !BY_ID[out.slots[k]]) out.slots[k] = null;
@@ -747,6 +775,7 @@ function cookView() {
   if (i === 0) {
     const items = r.sections.filter(sec => sec.kind === "ingredients").flatMap(sec => sec.items);
     body = `<p class="cook-label">Get ready${f !== 1 ? ` · ${SCALE_LABEL[f]} amounts` : ""}</p>
+      ${dairyBox(r)}
       <ul class="cook-ready">${items.map((it, n) => it.group
         ? `<li class="group">${md(it.group)}</li>`
         : `<li><label><input type="checkbox" data-act="cook-have" data-n="${n}" ${ui.cook.have[n] ? "checked" : ""}><span>${md(scaleText(it.text, f))}</span></label></li>`).join("")}</ul>`;
@@ -856,8 +885,7 @@ function toast(msg) {
   clearTimeout(toast.t);
   toast.t = setTimeout(() => { root.innerHTML = ""; }, 2200);
 }
-const HIGH_PROTEIN = 30; // g per serving
-function isHighProtein(r) { return !!r.nutrition && r.nutrition.protein >= HIGH_PROTEIN; }
+function isHighProtein(r) { return !!r.nutrition && r.nutrition.protein >= proteinGoal(); }
 function macroSpans(r) {
   const n = r.nutrition;
   return n ? `<span class="kcal">${n.kcal} kcal</span><span class="kcal">${n.protein} g protein</span>` : "";
@@ -917,14 +945,14 @@ function historyLine(id) {
 // Favourites and well-rated recipes come up more often; low ratings less.
 const RATING_WEIGHT = { 1: 0.2, 2: 0.5, 3: 1, 4: 2, 5: 3 };
 function weight(r) {
-  return (state.fav[r.id] ? 3 : 1) * (RATING_WEIGHT[state.rating[r.id]] || 1);
+  return (state.fav[r.id] ? 3 : 1) * (RATING_WEIGHT[state.rating[r.id]] || 1) * (favours(r) ? 2 : 1);
 }
 
 function pickRandom(slotKey, exclude) {
   const slot = SLOTS.find(s => s.key === slotKey);
   const recent = recentIds();
   const used = new Set(plannedIds());
-  let pool = visibleRecipes().filter(r => slot.chapters.includes(r.chapter) && r.id !== exclude && !used.has(r.id));
+  let pool = withoutAvoided(visibleRecipes().filter(r => slot.chapters.includes(r.chapter) && r.id !== exclude && !used.has(r.id)));
   if (ui.minceOnly) pool = pool.filter(r => r.tags.includes("mince"));
   if (ui.highProtein) pool = pool.filter(isHighProtein);
   // Skip anything planned in the last four weeks or cooked in the last 28 days, if there's enough left.
@@ -1067,6 +1095,11 @@ function shoppingList() {
     row.amount = amountText(row.parts, row.key.slice(5));
     row.atHome = !!state.pantry[row.key];
     row.done = !!state.checked[row.key] || otherChecked(row.key);
+    // Each planner's swaps, on its own list or for its share of a combined one.
+    const mine = mySwaps()[row.key.slice(5)], theirs = otherSwaps()[row.key.slice(5)];
+    const meName = mine || row.name;
+    if (row.who.size > 1) row.name = theirs && theirs !== mine ? `${meName} + ${theirs.toLowerCase()} for ${PROFILES[OTHER].name}` : meName;
+    else row.name = row.who.has(PROFILE) ? meName : (theirs || row.name);
     groups[row.aisle].push(row);
   }
   for (const a of AISLES) groups[a].sort((x, y) => (x.optional - y.optional) || x.name.localeCompare(y.name));
@@ -1368,6 +1401,7 @@ function makeable() {
   const out = [];
   for (const r of visibleRecipes()) {
     if (ui.chapter && r.chapter !== ui.chapter) continue;
+    if (isAvoided(r)) continue;
     const need = r.shop.filter(i => !i.optional && i.qty != null);
     const using = need.filter(i => haveSet.has(i.key));
     if (!using.length) continue;
@@ -1688,7 +1722,7 @@ function whoTag(row) {
 // gets used) and your favourites.
 function slotCandidates(slot) {
   const recent = recentIds();
-  const pool = visibleRecipes().filter(r => slot.chapters.includes(r.chapter) && r.nutrition && r.nutrition.per === "serving" && recipeCost(r));
+  const pool = withoutAvoided(visibleRecipes().filter(r => slot.chapters.includes(r.chapter) && r.nutrition && r.nutrition.per === "serving" && recipeCost(r)));
   const fresh = pool.filter(r => !recent.has(r.id) && !cookedRecently(r.id));
   return fresh.length >= 3 ? fresh : pool;
 }
@@ -1728,8 +1762,8 @@ function plannerView() {
       <div class="top-row"><h2 id="plan-title">Plan my week</h2><button class="btn small ghost" data-act="close" aria-label="Close">Close</button></div>
       <p class="muted-note">Picks ${SLOTS.length} meals that fit your budget and protein target, favouring your favourites and skipping anything had recently.</p>
       <div class="fields">
-        <label class="field"><span>Budget for the ${SLOTS.length} meals</span><span class="with-unit">$<input type="number" inputmode="decimal" id="plan-budget" value="${p.budget ?? 50}" min="10"></span></label>
-        <label class="field"><span>Protein per serve, at least</span><span class="with-unit"><input type="number" inputmode="numeric" id="plan-protein" value="${p.protein ?? 35}" min="0">g</span></label>
+        <label class="field"><span>Budget for the ${SLOTS.length} meals</span><span class="with-unit">$<input type="number" inputmode="decimal" id="plan-budget" value="${p.budget ?? prefs().budget}" min="10"></span></label>
+        <label class="field"><span>Protein per serve, at least</span><span class="with-unit"><input type="number" inputmode="numeric" id="plan-protein" value="${p.protein ?? prefs().protein}" min="0">g</span></label>
       </div>
       <label class="toggle"><input type="checkbox" id="plan-share" ${p.share !== false ? "checked" : ""}> Prefer meals that share ingredients</label>
       <div class="sheet-actions"><button class="btn primary" data-act="plan-run">${res ? "Try another" : "Plan it"}</button></div>
@@ -2054,6 +2088,137 @@ function featureClick2(act, el) {
       const idea = IDEAS[Number(el.dataset.i)];
       ui.draft = { title: idea.title, chapter: idea.chapter, intro: idea.hint ? idea.hint[0].toUpperCase() + idea.hint.slice(1) + "." : "" };
       ui.edit = null; ui.open = null; ui.editing = true; renderSheet();
+      return true;
+    }
+  }
+  return false;
+}
+
+// ─── Profile ────────────────────────────────────────────────────────────────
+// Each planner's preferences, saved in its state (so they follow it between
+// devices and when sharing): name, protein goal, budget, ingredients to
+// favour or avoid, and swaps. Body stats and targets stay in the private
+// food log on each device; the Profile page just shows them.
+const LIGHTER_SWAPS = {
+  "coconut-cream": "Lite coconut milk", "coconut-milk": "Lite coconut milk", cream: "Lite coconut milk or evaporated milk",
+  "sour-cream": "Greek yoghurt", mayonnaise: "Half Greek yoghurt, half mayo", cheese: "Half as much tasty cheese",
+  "pork-mince": "Lean pork mince", "beef-mince": "Lean beef mince", sausages: "Lean or chicken sausages",
+};
+function prefs() {
+  const p = state.prefs || {};
+  return { name: p.name || PROFILES[PROFILE].name, protein: p.protein || 30, budget: p.budget || 50,
+    avoid: p.avoid || [], favour: p.favour || [] };
+}
+function mySwaps() { return (state.prefs && state.prefs.swaps) || (GP ? DAIRY_SWAPS : {}); }
+function otherSwaps() { return (other && other.prefs && other.prefs.swaps) || (OTHER === "gp" ? DAIRY_SWAPS : {}); }
+function proteinGoal() { return prefs().protein; }
+let ingredientNames = null;
+function ingredientIndex() {
+  if (ingredientNames) return ingredientNames;
+  const m = new Map();
+  for (const r of RECIPES) for (const i of r.shop) if (!m.has(i.key) && !i.key.startsWith("custom-")) m.set(i.key, i.name);
+  ingredientNames = [...m].sort((a, b) => a[1].localeCompare(b[1]));
+  return ingredientNames;
+}
+const ingredientName = key => (ingredientIndex().find(([k]) => k === key) || [key, key])[1];
+function keyFromText(text) {
+  const t = text.trim().toLowerCase();
+  if (!t) return null;
+  const exact = ingredientIndex().find(([, n]) => n.toLowerCase() === t);
+  if (exact) return exact[0];
+  const p = parseIngredient("1 " + text);
+  return p.key.startsWith("custom-") ? null : p.key;
+}
+function avoidedIn(r) {
+  const avoid = prefs().avoid;
+  return avoid.length ? [...new Set(r.shop.filter(i => !i.optional && avoid.includes(i.key)).map(i => i.name))] : [];
+}
+const isAvoided = r => avoidedIn(r).length > 0;
+const favours = r => { const f = prefs().favour; return f.length > 0 && r.shop.some(i => !i.optional && f.includes(i.key)); };
+function withoutAvoided(pool) { const ok = pool.filter(r => !isAvoided(r)); return ok.length ? ok : pool; }
+function avoidNote(r) {
+  const a = avoidedIn(r);
+  return a.length ? `<span class="avoid">Has ${a.map(esc).join(", ")}</span>` : "";
+}
+
+function renderProfile() {
+  const p = prefs(), sw = mySwaps();
+  const chipList = list => p[list].length ? p[list].map(k => `<button class="fchip" data-act="pref-remove" data-list="${list}" data-key="${esc(k)}" aria-label="Remove ${esc(ingredientName(k))}">${esc(ingredientName(k))} ×</button>`).join("") : `<span class="muted-note">None yet.</span>`;
+  const adder = (list, label) => `<div class="scan-type"><label class="field wide"><span>${label}</span><input id="pref-${list}-input" list="ingredient-names" autocomplete="off" placeholder="e.g. capsicum"></label><button class="btn" data-act="pref-add" data-list="${list}">Add</button></div>`;
+  const swapRows = Object.entries(sw).map(([k, v]) => `<li><span>${esc(ingredientName(k))} → <strong>${esc(v)}</strong></span><button class="btn small ghost" data-act="swap-remove" data-key="${esc(k)}">Remove</button></li>`).join("");
+  return `
+  <section class="section-head">
+    <div><h2>${esc(p.name)}'s profile</h2><p>Your preferences for this planner. They're saved with your plan (and shared if you share it); your body stats stay on this device.</p></div>
+  </section>
+  <datalist id="ingredient-names">${ingredientIndex().map(([, n]) => `<option value="${esc(n)}">`).join("")}</datalist>
+  <section class="track-card">
+    <h3>About you</h3>
+    <div class="fields">
+      <label class="field wide"><span>Name</span><input id="pref-name" data-act="pref-name" value="${esc(p.name)}"></label>
+    </div>
+  </section>
+  <section class="track-card">
+    <h3>Goals and defaults</h3>
+    <div class="fields">
+      <label class="field"><span>Protein per serve, at least</span><span class="with-unit"><input type="number" inputmode="numeric" data-act="pref-protein" value="${p.protein}" min="0" max="120">g</span></label>
+      <label class="field"><span>Budget for the week's meals</span><span class="with-unit">$<input type="number" inputmode="decimal" data-act="pref-budget" value="${p.budget}" min="5"></span></label>
+      <label class="field"><span>People eating each meal</span><select data-act="eaters">${[1, 2, 3, 4, 5, 6].map(n => `<option value="${n}" ${state.eaters === n ? "selected" : ""}>${n}</option>`).join("")}</select></label>
+      <label class="field"><span>Dinner at</span><input type="time" data-act="dinner" value="${esc(state.dinner)}"></label>
+    </div>
+    <p class="muted-note">The protein goal sets the "${p.protein} g+ protein" filters and Plan my week; the budget is Plan my week's starting point; people eating sets how many leftovers each meal makes.</p>
+  </section>
+  <section class="track-card">
+    <h3>Likes and dislikes</h3>
+    <div><strong class="small-head">Favour recipes with</strong><div class="chips">${chipList("favour")}</div></div>
+    ${adder("favour", "Add an ingredient you love")}
+    <div><strong class="small-head">Avoid recipes with</strong><div class="chips">${chipList("avoid")}</div></div>
+    ${adder("avoid", "Add an ingredient you don't want")}
+    <p class="muted-note">Pick for me, Shuffle, Plan my week and What can I make skip recipes with something you avoid, and pick favoured ones twice as often. Recipes with an avoided ingredient are still listed, with a note.</p>
+  </section>
+  <section class="track-card">
+    <h3>Your swaps</h3>
+    <p class="muted-note">Shown on every recipe that uses the ingredient, in cooking mode, and on your shopping list.</p>
+    ${swapRows ? `<ul class="food-list">${swapRows}</ul>` : `<p class="muted-note">No swaps yet.</p>`}
+    <div class="fields">
+      <label class="field wide"><span>Instead of</span><input id="swap-from" list="ingredient-names" autocomplete="off" placeholder="e.g. sour cream"></label>
+      <label class="field wide"><span>Use</span><input id="swap-to" autocomplete="off" placeholder="e.g. Greek yoghurt"></label>
+    </div>
+    <div class="row"><button class="btn primary" data-act="swap-add">Add swap</button>
+      <button class="btn" data-act="swap-preset" data-v="dairy">Add dairy-free swaps</button>
+      <button class="btn" data-act="swap-preset" data-v="lighter">Add lighter swaps</button>
+      ${Object.keys(sw).length ? `<button class="btn ghost" data-act="swap-preset" data-v="clear">Clear all</button>` : ""}</div>
+  </section>
+  <section class="section-head"><div><h2>Body and daily targets</h2><p>Used by the Food log. Kept on this device only.</p></div></section>
+  ${renderTargetsForm().replace('<div class="track-card">', '<div class="track-card profile-targets">')}
+  ${renderWeight(todayISO())}`;
+}
+function setPrefs(fn) { commit(s => { s.prefs = Object.assign({}, s.prefs); fn(s.prefs); }); }
+function profileClick(act, el) {
+  switch (act) {
+    case "profile-open": ui.tab = "profile"; ui.open = null; render(); window.scrollTo(0, 0); return true;
+    case "pref-add": {
+      const list = el.dataset.list, input = document.getElementById(`pref-${list}-input`);
+      const key = keyFromText(input.value);
+      if (!key) { toast("Pick an ingredient from the list"); return true; }
+      setPrefs(p => {
+        const otherList = list === "avoid" ? "favour" : "avoid";
+        p[list] = [...new Set([...(p[list] || []), key])];
+        p[otherList] = (p[otherList] || []).filter(k => k !== key);
+      });
+      toast(`${list === "avoid" ? "Avoiding" : "Favouring"} ${ingredientName(key).toLowerCase()}`);
+      return true;
+    }
+    case "pref-remove": setPrefs(p => { p[el.dataset.list] = (p[el.dataset.list] || []).filter(k => k !== el.dataset.key); }); return true;
+    case "swap-add": {
+      const key = keyFromText(document.getElementById("swap-from").value), to = document.getElementById("swap-to").value.trim();
+      if (!key || !to) { toast("Pick an ingredient and what to use instead"); return true; }
+      setPrefs(p => { p.swaps = Object.assign({}, mySwaps(), { [key]: to[0].toUpperCase() + to.slice(1) }); });
+      return true;
+    }
+    case "swap-remove": setPrefs(p => { const sw = Object.assign({}, mySwaps()); delete sw[el.dataset.key]; p.swaps = sw; }); return true;
+    case "swap-preset": {
+      const v = el.dataset.v;
+      setPrefs(p => { p.swaps = v === "clear" ? {} : Object.assign({}, mySwaps(), v === "dairy" ? DAIRY_SWAPS : LIGHTER_SWAPS); });
       return true;
     }
   }
@@ -2558,6 +2723,7 @@ function trackClick2(act, el) {
 // ─── Render ─────────────────────────────────────────────────────────────────
 function render() {
   refreshCustom();
+  setTitle();
   document.querySelectorAll(".tabs button").forEach(b => b.setAttribute("aria-selected", String(b.dataset.tab === ui.tab)));
   const groups = shoppingList();
   const toBuy = Object.values(groups).flat().filter(x => !x.atHome);
@@ -2565,7 +2731,7 @@ function render() {
   const left = toBuy.filter(x => !x.done).length;
   document.getElementById("shop-count").textContent = total ? left : "";
   const app = document.getElementById("app");
-  app.innerHTML = ui.tab === "week" ? renderWeek() : ui.tab === "recipes" ? renderRecipes() : ui.tab === "track" ? renderTrack() : renderShop(groups);
+  app.innerHTML = ui.tab === "week" ? renderWeek() : ui.tab === "recipes" ? renderRecipes() : ui.tab === "track" ? renderTrack() : ui.tab === "profile" ? renderProfile() : renderShop(groups);
   renderSheet();
 }
 
@@ -2621,7 +2787,7 @@ function renderWeek() {
     </div>
     <div class="actions">
       <label class="toggle"><input type="checkbox" id="mince-only" data-act="mince-only" ${ui.minceOnly ? "checked" : ""}> Mince recipes only</label>
-      <label class="toggle"><input type="checkbox" id="high-protein-week" data-act="high-protein" ${ui.highProtein ? "checked" : ""}> ${HIGH_PROTEIN} g+ protein</label>
+      <label class="toggle"><input type="checkbox" id="high-protein-week" data-act="high-protein" ${ui.highProtein ? "checked" : ""}> ${proteinGoal()} g+ protein</label>
       <button class="btn" data-act="shuffle-all">${GP ? "Shuffle all three" : "Shuffle the trio"}</button>
       <button class="btn" data-act="plan-open">Plan my week</button>
       <button class="btn" data-act="prep-open">Prep session</button>
@@ -2672,13 +2838,13 @@ function renderRecipes() {
       <span class="chip">${esc(CHAPTER_LABEL[r.chapter])}${r.group ? ` · ${esc(r.group)}` : ""}</span>
       <span class="name">${state.fav[r.id] ? `<span class="fav-mark" aria-label="Favourite">★</span> ` : ""}${esc(r.title)}${state.rating[r.id] ? ` <span class="fav-mark">${"★".repeat(state.rating[r.id])}</span>` : ""}</span>
       <span class="meta"><span>Serves ${esc(r.servings)}</span>${r.time !== "–" ? `<span>${esc(r.time)}</span>` : ""}${macroSpans(r)}${costSpan(r)}</span>
-      ${badges(r)}
+      ${badges(r)}${avoidNote(r)}
       ${planned.has(r.id) ? `<span class="planned">On this week's plan</span>` : ""}
     </button>`).join("");
   const all = visibleRecipes(), nCustom = all.filter(r => r.custom).length;
   const head = `
   <section class="section-head">
-    <div><h2>${ui.ideas ? "Recipe ideas" : ui.make ? "What can I make?" : "Recipes"}</h2><p>${ui.ideas ? "Ideas from the To Add lists that aren't in the book yet. Write one up to add it." : ui.make ? "Pick what's in the fridge and cupboard, and see what it makes." : GP ? `${all.length} easy recipes: GP's book, plus quick ones (${BASIC_MINUTES} min or less, ${BASIC_INGREDIENTS} ingredients or fewer) with no slow cooker or Instant Pot.` : `All ${all.length} recipes${nCustom ? `: ${all.length - nCustom} from your book and ${nCustom} added here` : " from your book"}.`}</p></div>
+    <div><h2>${ui.ideas ? "Recipe ideas" : ui.make ? "What can I make?" : "Recipes"}</h2><p>${ui.ideas ? "Ideas from the To Add lists that aren't in the book yet. Write one up to add it." : ui.make ? "Pick what's in the fridge and cupboard, and see what it makes." : GP ? `${all.length} easy recipes: GP's book, plus quick ones (${BASIC_MINUTES} min or less, ${BASIC_INGREDIENTS} ingredients or fewer) with no slow cooker or Instant Pot. Dairy items show his dairy-free swap.` : `All ${all.length} recipes${nCustom ? `: ${all.length - nCustom} from your book and ${nCustom} added here` : " from your book"}.`}</p></div>
     <div class="actions">
       <button class="btn${ui.make ? " primary" : ""}" data-act="make-toggle" aria-pressed="${!!ui.make}">${ui.make ? "Back to all recipes" : "What can I make?"}</button>
       <button class="btn${ui.ideas ? " primary" : ""}" data-act="ideas-toggle" aria-pressed="${!!ui.ideas}">${ui.ideas ? "Back to all recipes" : "Ideas"}</button>
@@ -2695,7 +2861,7 @@ function renderRecipes() {
     <input class="search" id="search" type="search" placeholder="Search by name or ingredient, e.g. split peas" value="${esc(ui.q)}" aria-label="Search recipes">
     <div class="chips" role="group" aria-label="Chapter">${chapterChips}</div>
     ${groupChips ? `<div class="chips" role="group" aria-label="Section">${groupChips}</div>` : ""}
-    <div class="chips" role="group" aria-label="Main protein">${proteinChips}<button class="fchip" data-act="high-protein-chip" aria-pressed="${ui.highProtein}">${HIGH_PROTEIN} g+ protein</button></div>
+    <div class="chips" role="group" aria-label="Main protein">${proteinChips}<button class="fchip" data-act="high-protein-chip" aria-pressed="${ui.highProtein}">${proteinGoal()} g+ protein</button></div>
     <div class="chips" role="group" aria-label="Diet and meal prep">${dietChips}<button class="fchip" data-act="fav-only" aria-pressed="${ui.favOnly}">★ Favourites</button></div>
     <div class="chips" role="group" aria-label="Cost"><button class="fchip" data-act="cheap" aria-pressed="${!!ui.cheap}">Under $${CHEAP} a serve</button><button class="fchip" data-act="sort-cheap" aria-pressed="${!!ui.sortCheap}">Cheapest first</button></div>
   </section>
@@ -2783,7 +2949,7 @@ function renderSheet() {
   let actions;
   if (inSlot || inExtras) actions = `<button class="btn" data-act="unplan" data-id="${r.id}">Remove from this week</button>`;
   else if (ui.choosing) actions = `<button class="btn primary" data-act="use" data-id="${r.id}">Use this for ${esc(SLOTS.find(s => s.key === ui.choosing).label.toLowerCase())}</button>`;
-  else if (target) actions = `<button class="btn primary" data-act="use" data-id="${r.id}">${state.slots[target] ? "Replace" : "Add as"} this week's ${esc(SLOTS.find(s => s.key === target).label.toLowerCase())} meal</button>
+  else if (target) actions = `<button class="btn primary" data-act="use" data-id="${r.id}">${GP ? `${state.slots[target] ? "Replace" : "Add as"} ${esc(SLOTS.find(s => s.key === target).label)}` : `${state.slots[target] ? "Replace" : "Add as"} this week's ${esc(SLOTS.find(s => s.key === target).label.toLowerCase())} meal`}</button>
       <button class="btn" data-act="add-extra" data-id="${r.id}">Add as an extra</button>`;
   else actions = `<button class="btn primary" data-act="add-extra" data-id="${r.id}">Add to this week</button>`;
   root.innerHTML = `<div class="overlay" data-act="close-overlay">
@@ -2796,7 +2962,7 @@ function renderSheet() {
           ${SCALES.map(([v, l]) => `<button class="fchip" data-act="scale" data-id="${r.id}" data-v="${v}" aria-pressed="${scaleOf(r.id) === v}">${l}</button>`).join("")}
         </div>
         ${scaleOf(r.id) !== 1 ? `<p class="scale-note">Ingredient amounts and the shopping list are scaled. Cooking times and pot size may need adjusting.</p>` : ""}
-        ${badges(r)}
+        ${badges(r)}${avoidNote(r)}
         <div class="rate-row">Your rating ${stars(r.id, "rate")}</div>
         ${historyLine(r.id)}
         ${macroBlock(r)}
@@ -2805,6 +2971,7 @@ function renderSheet() {
         <div class="sheet-actions">${cookSteps(r).length ? `<button class="btn primary" data-act="cook-start" data-id="${r.id}">Start cooking</button>` : ""}${actions}${r.nutrition ? `<button class="btn" data-act="track-log" data-id="${r.id}">Log a ${r.nutrition.per === "serving" ? "serve" : esc(r.nutrition.per)}</button>` : ""}${MEAL_CHAPTERS.includes(r.chapter) ? `<button class="btn ghost" data-act="lo-add" data-id="${r.id}">+1 leftover portion</button>` : ""}${r.custom ? `<button class="btn ghost" data-act="custom-edit" data-id="${r.id}">Edit</button><button class="btn ghost" data-act="custom-tex" data-id="${r.id}">Copy for the book</button>` : ""}</div>
       </div>
       ${storageBox(r)}
+      ${dairyBox(r)}
       ${swapsBox(r)}
       ${renderSections(r.sections, scaleOf(r.id))}
       <span class="file">${esc(r.file)}</span>
@@ -2821,6 +2988,7 @@ document.addEventListener("click", e => {
   if (act === "close-overlay" && e.target !== el) return;
   const id = el.dataset.id, slot = el.dataset.slot;
   if (act.startsWith("track-") && trackClick(act, el)) return;
+  if (profileClick(act, el)) return;
   if (featureClick(act, el) || featureClick2(act, el) || trackClick2(act, el)) return;
   switch (act) {
     case "open": ui.open = id; renderSheet(); break;
@@ -2969,6 +3137,9 @@ document.addEventListener("change", e => {
     location.hash = "as=" + el.value;
     location.reload();
   }
+  if (act === "pref-name") { setPrefs(p => { p.name = el.value.trim() || undefined; }); setTitle(); }
+  if (act === "pref-protein") setPrefs(p => { p.protein = Math.max(0, Math.round(Number(el.value))) || undefined; });
+  if (act === "pref-budget") setPrefs(p => { p.budget = Math.max(5, Number(el.value)) || undefined; });
   if (act === "eaters") commit(s => { s.eaters = Number(el.value); });
   if (act === "staples") { ui.staples = el.checked; render(); }
   if (act === "check") { commit(s => { if (el.checked) s.checked[el.dataset.key] = true; else delete s.checked[el.dataset.key]; }); if (!el.checked && combineOn()) { otherUntick(el.dataset.key); render(); } }
@@ -3051,7 +3222,8 @@ async function copyList(msg) {
 }
 
 document.getElementById("profile").value = PROFILE;
-document.getElementById("app-title").textContent = document.title = `${PROFILES[PROFILE].name}'s Meal Planner`;
+function setTitle() { document.getElementById("app-title").textContent = document.title = `${prefs().name}'s Meal Planner`; }
+setTitle();
 if (/^#as=\w+$/.test(location.hash)) history.replaceState(null, "", location.pathname);
 render();
 connect();

@@ -1715,6 +1715,16 @@
     "g": 500.0
    },
    {
+    "key": "red-lentils",
+    "name": "Red lentils (dry)",
+    "aisle": "Cans, jars & pulses",
+    "qty": 0.75,
+    "unit": "cup",
+    "optional": false,
+    "raw": "¾ cup (140–150 g) dry split red lentils, rinsed",
+    "g": 142.5
+   },
+   {
     "key": "carrot",
     "name": "Carrots",
     "aisle": "Fruit & veg",
@@ -1848,10 +1858,10 @@
    "mince"
   ],
   "nutrition": {
-   "kcal": 540,
-   "protein": 36,
-   "carbs": 60,
-   "fat": 17,
+   "kcal": 660,
+   "protein": 45,
+   "carbs": 78,
+   "fat": 18,
    "per": "serving",
    "count": 4
   },
@@ -16391,7 +16401,7 @@
       "text": "4 beef schnitzels (or chicken schnitzels)"
      },
      {
-      "text": "4 slices Edam cheese"
+      "text": "4 slices Edam cheese (or lactose-free cheese)"
      },
      {
       "text": "6 garlic cloves"
@@ -16466,7 +16476,7 @@
   "group": null,
   "ingredients": [
    "4 beef schnitzels (or chicken schnitzels)",
-   "4 slices Edam cheese",
+   "4 slices Edam cheese (or lactose-free cheese)",
    "6 garlic cloves",
    "Fresh rosemary",
    "2–3 slices streaky bacon",
@@ -16495,7 +16505,7 @@
     "qty": 4.0,
     "unit": "slice",
     "optional": false,
-    "raw": "4 slices Edam cheese",
+    "raw": "4 slices Edam cheese (or lactose-free cheese)",
     "g": 80.0
    },
    {
@@ -16784,10 +16794,10 @@
       "text": "400 g can crushed tomatoes (or tomato purée)"
      },
      {
-      "text": "½ cup cream (or coconut cream)"
+      "text": "½ cup cream (or coconut cream for dairy-free)"
      },
      {
-      "text": "2 tbsp butter"
+      "text": "2 tbsp butter (or dairy-free margarine)"
      },
      {
       "text": "2 tbsp oil"
@@ -16853,8 +16863,8 @@
    "2 garlic cloves, minced",
    "1 tbsp grated ginger",
    "400 g can crushed tomatoes (or tomato purée)",
-   "½ cup cream (or coconut cream)",
-   "2 tbsp butter",
+   "½ cup cream (or coconut cream for dairy-free)",
+   "2 tbsp butter (or dairy-free margarine)",
    "2 tbsp oil",
    "Salt and pepper, to taste",
    "Fresh coriander leaves, to garnish",
@@ -16968,7 +16978,7 @@
     "qty": 0.5,
     "unit": "cup",
     "optional": false,
-    "raw": "½ cup cream (or coconut cream)",
+    "raw": "½ cup cream (or coconut cream for dairy-free)",
     "g": 120.0
    },
    {
@@ -16978,7 +16988,7 @@
     "qty": 2.0,
     "unit": "tbsp",
     "optional": false,
-    "raw": "2 tbsp butter",
+    "raw": "2 tbsp butter (or dairy-free margarine)",
     "g": 28.0
    },
    {
@@ -17055,6 +17065,219 @@
   "minutes": 40,
   "ahead": [],
   "meat": "Chicken thighs",
+  "palmer": true
+ },
+ {
+  "title": "Cheesy Mexican Mince & Rice",
+  "servings": "4",
+  "time": "35 min",
+  "intro": "Taco-spiced mince, rice and black beans cooked together, with melted cheese on top.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "1 tbsp oil"
+     },
+     {
+      "text": "500 g beef mince"
+     },
+     {
+      "text": "1 onion, diced"
+     },
+     {
+      "text": "2 tbsp taco seasoning"
+     },
+     {
+      "text": "1 cup long-grain rice, rinsed"
+     },
+     {
+      "text": "1 can (400 g) chopped tomatoes"
+     },
+     {
+      "text": "1 can (400 g) black beans, drained and rinsed"
+     },
+     {
+      "text": "2 cups beef stock"
+     },
+     {
+      "text": "1 cup frozen corn"
+     },
+     {
+      "text": "¾ cup grated lactose-free tasty cheese"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Brown the mince.** Heat the oil in a large pan with a lid over medium-high heat. Cook the mince and onion for 6–8 minutes, breaking up the mince, until browned. Stir in the taco seasoning."
+     },
+     {
+      "text": "**Add the rice.** Stir in the rice, tomatoes, beans and stock and bring to the boil."
+     },
+     {
+      "text": "**Simmer.** Turn the heat to low, put the lid on and cook for 18 minutes, stirring once halfway, until the rice is tender."
+     },
+     {
+      "text": "**Corn and cheese.** Stir in the corn, scatter the cheese over the top, put the lid back on and cook 3 more minutes, until the cheese melts."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Check the taco seasoning is dairy-free, or use 2 tsp cumin, 2 tsp smoked paprika, 1 tsp garlic powder and ½ tsp chilli powder."
+     },
+     {
+      "text": "Good in wraps with lettuce and salsa. Keeps 3 days in the fridge."
+     }
+    ]
+   }
+  ],
+  "id": "Stovetop-Cheesy_Mexican_Mince_Rice",
+  "file": "Stovetop/Cheesy_Mexican_Mince_Rice.tex",
+  "chapter": "stovetop",
+  "chapterName": "Stovetop",
+  "group": null,
+  "ingredients": [
+   "1 tbsp oil",
+   "500 g beef mince",
+   "1 onion, diced",
+   "2 tbsp taco seasoning",
+   "1 cup long-grain rice, rinsed",
+   "1 can (400 g) chopped tomatoes",
+   "1 can (400 g) black beans, drained and rinsed",
+   "2 cups beef stock",
+   "1 cup frozen corn",
+   "¾ cup grated lactose-free tasty cheese"
+  ],
+  "shop": [
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp oil",
+    "g": 13.5
+   },
+   {
+    "key": "beef-mince",
+    "name": "Beef mince",
+    "aisle": "Meat & fish",
+    "qty": 500.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "500 g beef mince",
+    "g": 500.0
+   },
+   {
+    "key": "onion",
+    "name": "Onions",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 onion, diced",
+    "g": 150.0
+   },
+   {
+    "key": "taco-seasoning",
+    "name": "Taco seasoning",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp taco seasoning",
+    "g": 16.0
+   },
+   {
+    "key": "rice",
+    "name": "Rice",
+    "aisle": "Pasta, rice & grains",
+    "qty": 1.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1 cup long-grain rice, rinsed",
+    "g": 185.0
+   },
+   {
+    "key": "canned-tomatoes",
+    "name": "Canned tomatoes",
+    "aisle": "Cans, jars & pulses",
+    "qty": 1.0,
+    "unit": "can",
+    "optional": false,
+    "raw": "1 can (400 g) chopped tomatoes",
+    "g": 400.0
+   },
+   {
+    "key": "black-beans",
+    "name": "Black beans",
+    "aisle": "Cans, jars & pulses",
+    "qty": 1.0,
+    "unit": "can",
+    "optional": false,
+    "raw": "1 can (400 g) black beans, drained and rinsed",
+    "g": 240.0
+   },
+   {
+    "key": "beef-stock",
+    "name": "Beef stock",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "2 cups beef stock",
+    "g": 500.0
+   },
+   {
+    "key": "corn",
+    "name": "Corn (frozen or canned)",
+    "aisle": "Frozen",
+    "qty": 1.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1 cup frozen corn",
+    "g": 160.0
+   },
+   {
+    "key": "cheese",
+    "name": "Tasty cheese",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 0.75,
+    "unit": "cup",
+    "optional": false,
+    "raw": "¾ cup grated lactose-free tasty cheese",
+    "g": 75.0
+   }
+  ],
+  "tags": [
+   "beef",
+   "mince"
+  ],
+  "nutrition": {
+   "kcal": 670,
+   "protein": 41,
+   "carbs": 62,
+   "fat": 26,
+   "per": "serving",
+   "count": 4
+  },
+  "diet": [],
+  "storage": [
+   "Keeps 3 days in the fridge."
+  ],
+  "minutes": 35,
+  "ahead": [],
+  "meat": "Beef mince",
   "palmer": true
  },
  {
@@ -18847,6 +19070,242 @@
   "palmer": false
  },
  {
+  "title": "Creamy Garlic Chicken Pasta",
+  "servings": "4",
+  "time": "30 min",
+  "intro": "A creamy garlic sauce made with lactose-free milk instead of cream, with chicken and spinach.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "350 g spaghetti or fettuccine"
+     },
+     {
+      "text": "2 tbsp oil"
+     },
+     {
+      "text": "500 g chicken breast, thinly sliced"
+     },
+     {
+      "text": "4 garlic cloves, crushed"
+     },
+     {
+      "text": "2 tbsp plain flour"
+     },
+     {
+      "text": "2 cups lactose-free milk"
+     },
+     {
+      "text": "1 cup chicken stock"
+     },
+     {
+      "text": "1 tsp mixed herbs"
+     },
+     {
+      "text": "100 g baby spinach"
+     },
+     {
+      "text": "½ cup grated lactose-free tasty cheese"
+     },
+     {
+      "text": "Salt and pepper"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Pasta.** Cook the pasta in salted water. Save ½ cup of the pasta water, then drain."
+     },
+     {
+      "text": "**Chicken.** Meanwhile, heat 1 tbsp oil in a large frying pan over medium-high heat. Cook the chicken for 5–6 minutes until cooked through, then put it on a plate."
+     },
+     {
+      "text": "**Start the sauce.** Turn the heat to medium and add the rest of the oil. Cook the garlic for 30 seconds, then stir in the flour for 1 minute."
+     },
+     {
+      "text": "**Make it creamy.** Slowly whisk in the milk, a little at a time so it stays smooth, then the stock. Simmer for 3–4 minutes, stirring, until it thickens."
+     },
+     {
+      "text": "**Finish.** Stir in the herbs, spinach and cheese until the spinach wilts. Add the chicken and pasta and toss, adding pasta water if it's too thick. Season."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Best eaten fresh. Leftovers keep 2 days in the fridge; add a splash of milk when reheating."
+     }
+    ]
+   }
+  ],
+  "id": "Stovetop-Creamy_Garlic_Chicken_Pasta",
+  "file": "Stovetop/Creamy_Garlic_Chicken_Pasta.tex",
+  "chapter": "stovetop",
+  "chapterName": "Stovetop",
+  "group": null,
+  "ingredients": [
+   "350 g spaghetti or fettuccine",
+   "2 tbsp oil",
+   "500 g chicken breast, thinly sliced",
+   "4 garlic cloves, crushed",
+   "2 tbsp plain flour",
+   "2 cups lactose-free milk",
+   "1 cup chicken stock",
+   "1 tsp mixed herbs",
+   "100 g baby spinach",
+   "½ cup grated lactose-free tasty cheese",
+   "Salt and pepper"
+  ],
+  "shop": [
+   {
+    "key": "spaghetti",
+    "name": "Spaghetti",
+    "aisle": "Pasta, rice & grains",
+    "qty": 350.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "350 g spaghetti or fettuccine",
+    "g": 350.0
+   },
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp oil",
+    "g": 27.0
+   },
+   {
+    "key": "chicken-breast",
+    "name": "Chicken breast or tenderloins",
+    "aisle": "Meat & fish",
+    "qty": 500.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "500 g chicken breast, thinly sliced",
+    "g": 500.0
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 4.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "4 garlic cloves, crushed",
+    "g": 20.0
+   },
+   {
+    "key": "flour",
+    "name": "Plain flour",
+    "aisle": "Baking",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp plain flour",
+    "g": 18.0
+   },
+   {
+    "key": "milk",
+    "name": "Milk",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 2.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "2 cups lactose-free milk",
+    "g": 500.0
+   },
+   {
+    "key": "chicken-stock",
+    "name": "Chicken stock",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1 cup chicken stock",
+    "g": 250.0
+   },
+   {
+    "key": "mixed-herbs",
+    "name": "Mixed herbs",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp mixed herbs",
+    "g": 2.5
+   },
+   {
+    "key": "spinach",
+    "name": "Baby spinach",
+    "aisle": "Fruit & veg",
+    "qty": 100.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "100 g baby spinach",
+    "g": 100.0
+   },
+   {
+    "key": "cheese",
+    "name": "Tasty cheese",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 0.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "½ cup grated lactose-free tasty cheese",
+    "g": 50.0
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Salt and pepper"
+   },
+   {
+    "key": "pepper",
+    "name": "Black pepper",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Salt and pepper"
+   }
+  ],
+  "tags": [
+   "chicken"
+  ],
+  "nutrition": {
+   "kcal": 670,
+   "protein": 49,
+   "carbs": 75,
+   "fat": 19,
+   "per": "serving",
+   "count": 4
+  },
+  "diet": [
+   "quick"
+  ],
+  "storage": [
+   "Leftovers keep 2 days in the fridge; add a splash of milk when reheating."
+  ],
+  "minutes": 30,
+  "ahead": [],
+  "meat": "Chicken breast or tenderloins",
+  "palmer": true
+ },
+ {
   "title": "Freezer Burritos with Beef, Beans & Rice",
   "servings": "4 (8 burritos)",
   "time": "40 min",
@@ -19119,7 +19578,7 @@
       "text": "2 tins crushed and sieved tomatoes"
      },
      {
-      "text": "4 tbsp Parmesan cheese"
+      "text": "4 tbsp Parmesan cheese (or lactose-free tasty cheese)"
      },
      {
       "text": "1 small onion, chopped"
@@ -19128,7 +19587,7 @@
       "text": "1 garlic clove, halved"
      },
      {
-      "text": "100 g grated mozzarella"
+      "text": "100 g grated mozzarella (or lactose-free mozzarella)"
      },
      {
       "text": "Fresh basil leaves"
@@ -19196,10 +19655,10 @@
    "500 g Desiree or Agria potatoes",
    "220 g high-grade flour (Champion brand)",
    "2 tins crushed and sieved tomatoes",
-   "4 tbsp Parmesan cheese",
+   "4 tbsp Parmesan cheese (or lactose-free tasty cheese)",
    "1 small onion, chopped",
    "1 garlic clove, halved",
-   "100 g grated mozzarella",
+   "100 g grated mozzarella (or lactose-free mozzarella)",
    "Fresh basil leaves",
    "Salt, to taste",
    "Chilli or pepper, to taste",
@@ -19243,7 +19702,7 @@
     "qty": 4.0,
     "unit": "tbsp",
     "optional": false,
-    "raw": "4 tbsp Parmesan cheese",
+    "raw": "4 tbsp Parmesan cheese (or lactose-free tasty cheese)",
     "g": 24.0
    },
    {
@@ -19273,7 +19732,7 @@
     "qty": 100.0,
     "unit": "g",
     "optional": false,
-    "raw": "100 g grated mozzarella",
+    "raw": "100 g grated mozzarella (or lactose-free mozzarella)",
     "g": 100.0
    },
    {
@@ -21505,6 +21964,483 @@
   "palmer": false
  },
  {
+  "title": "One-Pan Honey Soy Chicken & Rice",
+  "servings": "4",
+  "time": "35 min",
+  "intro": "Chicken, rice and veg cooked together in one pan, in a sticky honey soy sauce. One pan to wash.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "1 tbsp oil"
+     },
+     {
+      "text": "500 g boneless chicken thighs, cut into bite-sized pieces"
+     },
+     {
+      "text": "1 onion, diced"
+     },
+     {
+      "text": "3 garlic cloves, crushed"
+     },
+     {
+      "text": "1½ cups jasmine rice, rinsed"
+     },
+     {
+      "text": "3 cups chicken stock"
+     },
+     {
+      "text": "3 tbsp soy sauce"
+     },
+     {
+      "text": "2 tbsp honey"
+     },
+     {
+      "text": "2 cups frozen mixed vegetables"
+     },
+     {
+      "text": "2 spring onions, sliced (to serve)"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Brown the chicken.** Heat the oil in a large frying pan or wide pot (one with a lid) over medium-high heat. Cook the chicken for 5 minutes, until browned."
+     },
+     {
+      "text": "**Onion and garlic.** Add the onion and cook for 3 minutes, then the garlic for 30 seconds."
+     },
+     {
+      "text": "**Add the rice.** Stir in the rice for 1 minute so it's coated."
+     },
+     {
+      "text": "**Simmer.** Add the stock, soy sauce and honey and bring to the boil. Turn the heat to low, put the lid on and cook for 12 minutes. Don't lift the lid."
+     },
+     {
+      "text": "**Veg.** Scatter the frozen vegetables over the top, put the lid back on and cook for 5 more minutes, until the rice is tender and the liquid has gone."
+     },
+     {
+      "text": "**Serve.** Fluff with a fork and top with spring onions."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "If the rice is still firm but the pan is dry, add ¼ cup water and cook 3 more minutes."
+     },
+     {
+      "text": "Keeps 3 days in the fridge. Reheat with a splash of water."
+     }
+    ]
+   }
+  ],
+  "id": "Stovetop-One_Pan_Honey_Soy_Chicken_Rice",
+  "file": "Stovetop/One_Pan_Honey_Soy_Chicken_Rice.tex",
+  "chapter": "stovetop",
+  "chapterName": "Stovetop",
+  "group": null,
+  "ingredients": [
+   "1 tbsp oil",
+   "500 g boneless chicken thighs, cut into bite-sized pieces",
+   "1 onion, diced",
+   "3 garlic cloves, crushed",
+   "1½ cups jasmine rice, rinsed",
+   "3 cups chicken stock",
+   "3 tbsp soy sauce",
+   "2 tbsp honey",
+   "2 cups frozen mixed vegetables",
+   "2 spring onions, sliced (to serve)"
+  ],
+  "shop": [
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp oil",
+    "g": 13.5
+   },
+   {
+    "key": "chicken-thigh",
+    "name": "Chicken thighs",
+    "aisle": "Meat & fish",
+    "qty": 500.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "500 g boneless chicken thighs, cut into bite-sized pieces",
+    "g": 500.0
+   },
+   {
+    "key": "onion",
+    "name": "Onions",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 onion, diced",
+    "g": 150.0
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 3.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "3 garlic cloves, crushed",
+    "g": 15.0
+   },
+   {
+    "key": "jasmine-rice",
+    "name": "Jasmine rice",
+    "aisle": "Pasta, rice & grains",
+    "qty": 1.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1½ cups jasmine rice, rinsed",
+    "g": 277.5
+   },
+   {
+    "key": "chicken-stock",
+    "name": "Chicken stock",
+    "aisle": "Pantry: check first",
+    "qty": 3.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "3 cups chicken stock",
+    "g": 750.0
+   },
+   {
+    "key": "soy-sauce",
+    "name": "Soy sauce",
+    "aisle": "Pantry: check first",
+    "qty": 3.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "3 tbsp soy sauce",
+    "g": 54.0
+   },
+   {
+    "key": "honey",
+    "name": "Honey",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp honey",
+    "g": 42.0
+   },
+   {
+    "key": "frozen-mixed-veg",
+    "name": "Frozen mixed vegetables",
+    "aisle": "Frozen",
+    "qty": 2.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "2 cups frozen mixed vegetables",
+    "g": 270.0
+   },
+   {
+    "key": "spring-onion",
+    "name": "Spring onions",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "",
+    "optional": true,
+    "raw": "2 spring onions, sliced (to serve)",
+    "g": 30.0
+   }
+  ],
+  "tags": [
+   "chicken"
+  ],
+  "nutrition": {
+   "kcal": 580,
+   "protein": 33,
+   "carbs": 77,
+   "fat": 15,
+   "per": "serving",
+   "count": 4
+  },
+  "diet": [
+   "dairy-free"
+  ],
+  "storage": [
+   "Keeps 3 days in the fridge.",
+   "Reheat with a splash of water."
+  ],
+  "minutes": 35,
+  "ahead": [],
+  "meat": "Chicken thighs",
+  "palmer": true
+ },
+ {
+  "title": "One-Pot Beef & Tomato Pasta",
+  "servings": "4",
+  "time": "30 min",
+  "intro": "Spaghetti bolognese flavours, but the pasta cooks in the sauce, so it's all in one pot.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "1 tbsp oil"
+     },
+     {
+      "text": "500 g beef mince"
+     },
+     {
+      "text": "1 onion, diced"
+     },
+     {
+      "text": "2 garlic cloves, crushed"
+     },
+     {
+      "text": "1 tbsp tomato paste"
+     },
+     {
+      "text": "2 tsp mixed herbs"
+     },
+     {
+      "text": "2 cans (400 g) chopped tomatoes"
+     },
+     {
+      "text": "3 cups beef stock"
+     },
+     {
+      "text": "350 g penne or other short pasta"
+     },
+     {
+      "text": "2 cups frozen mixed vegetables"
+     },
+     {
+      "text": "Salt and pepper"
+     },
+     {
+      "text": "½ cup grated lactose-free tasty cheese (optional, to serve)"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Brown the mince.** Heat the oil in a large pot over medium-high heat. Cook the mince and onion for 6–8 minutes, breaking up the mince, until browned."
+     },
+     {
+      "text": "**Flavour.** Stir in the garlic, tomato paste and herbs for 1 minute."
+     },
+     {
+      "text": "**Sauce.** Add the tomatoes and stock and bring to the boil."
+     },
+     {
+      "text": "**Cook the pasta in it.** Stir in the pasta. Simmer without the lid for 12–14 minutes, stirring often so it doesn't stick, until the pasta is tender and the sauce has thickened. Add a splash of water if it gets dry."
+     },
+     {
+      "text": "**Veg.** Stir in the frozen vegetables for the last 4 minutes."
+     },
+     {
+      "text": "**Serve.** Season with salt and pepper and top with cheese, if using."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Keeps 3 days in the fridge, or freeze portions for up to 3 months."
+     }
+    ]
+   }
+  ],
+  "id": "Stovetop-One_Pot_Beef_Tomato_Pasta",
+  "file": "Stovetop/One_Pot_Beef_Tomato_Pasta.tex",
+  "chapter": "stovetop",
+  "chapterName": "Stovetop",
+  "group": null,
+  "ingredients": [
+   "1 tbsp oil",
+   "500 g beef mince",
+   "1 onion, diced",
+   "2 garlic cloves, crushed",
+   "1 tbsp tomato paste",
+   "2 tsp mixed herbs",
+   "2 cans (400 g) chopped tomatoes",
+   "3 cups beef stock",
+   "350 g penne or other short pasta",
+   "2 cups frozen mixed vegetables",
+   "Salt and pepper",
+   "½ cup grated lactose-free tasty cheese (optional, to serve)"
+  ],
+  "shop": [
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp oil",
+    "g": 13.5
+   },
+   {
+    "key": "beef-mince",
+    "name": "Beef mince",
+    "aisle": "Meat & fish",
+    "qty": 500.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "500 g beef mince",
+    "g": 500.0
+   },
+   {
+    "key": "onion",
+    "name": "Onions",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 onion, diced",
+    "g": 150.0
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "2 garlic cloves, crushed",
+    "g": 10.0
+   },
+   {
+    "key": "tomato-paste",
+    "name": "Tomato paste",
+    "aisle": "Cans, jars & pulses",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp tomato paste",
+    "g": 16.0
+   },
+   {
+    "key": "mixed-herbs",
+    "name": "Mixed herbs",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "2 tsp mixed herbs",
+    "g": 5.0
+   },
+   {
+    "key": "canned-tomatoes",
+    "name": "Canned tomatoes",
+    "aisle": "Cans, jars & pulses",
+    "qty": 2.0,
+    "unit": "can",
+    "optional": false,
+    "raw": "2 cans (400 g) chopped tomatoes",
+    "g": 800.0
+   },
+   {
+    "key": "beef-stock",
+    "name": "Beef stock",
+    "aisle": "Pantry: check first",
+    "qty": 3.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "3 cups beef stock",
+    "g": 750.0
+   },
+   {
+    "key": "pasta",
+    "name": "Pasta",
+    "aisle": "Pasta, rice & grains",
+    "qty": 350.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "350 g penne or other short pasta",
+    "g": 350.0
+   },
+   {
+    "key": "frozen-mixed-veg",
+    "name": "Frozen mixed vegetables",
+    "aisle": "Frozen",
+    "qty": 2.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "2 cups frozen mixed vegetables",
+    "g": 270.0
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Salt and pepper"
+   },
+   {
+    "key": "pepper",
+    "name": "Black pepper",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Salt and pepper"
+   },
+   {
+    "key": "cheese",
+    "name": "Tasty cheese",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 0.5,
+    "unit": "cup",
+    "optional": true,
+    "raw": "½ cup grated lactose-free tasty cheese (optional, to serve)",
+    "g": 50.0
+   }
+  ],
+  "tags": [
+   "beef",
+   "mince"
+  ],
+  "nutrition": {
+   "kcal": 700,
+   "protein": 42,
+   "carbs": 83,
+   "fat": 21,
+   "per": "serving",
+   "count": 4
+  },
+  "diet": [
+   "freezes",
+   "dairy-free",
+   "quick"
+  ],
+  "storage": [
+   "Keeps 3 days in the fridge, or freeze portions for up to 3 months."
+  ],
+  "minutes": 30,
+  "ahead": [],
+  "meat": "Beef mince",
+  "palmer": true
+ },
+ {
   "title": "Pork & Lentil Bolognese",
   "servings": "6",
   "time": "–",
@@ -23253,7 +24189,7 @@
       "text": "Extra virgin olive oil"
      },
      {
-      "text": "100 g pecorino cheese"
+      "text": "100 g pecorino cheese (or lactose-free tasty cheese)"
      },
      {
       "text": "Salt and pepper, to taste"
@@ -23338,7 +24274,7 @@
    "2 cans whole tomatoes or 800 g passata",
    "½ glass white wine",
    "Extra virgin olive oil",
-   "100 g pecorino cheese",
+   "100 g pecorino cheese (or lactose-free tasty cheese)",
    "Salt and pepper, to taste"
   ],
   "shop": [
@@ -23408,7 +24344,7 @@
     "qty": 100.0,
     "unit": "g",
     "optional": false,
-    "raw": "100 g pecorino cheese",
+    "raw": "100 g pecorino cheese (or lactose-free tasty cheese)",
     "g": 100.0
    },
    {
@@ -23745,6 +24681,245 @@
   "ahead": [],
   "meat": "Sausages",
   "palmer": false
+ },
+ {
+  "title": "Savoury Mince on Rice",
+  "servings": "4",
+  "time": "30 min",
+  "intro": "The Kiwi classic: mince in a rich gravy with carrots and peas, over rice.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "1½ cups rice (to serve)"
+     },
+     {
+      "text": "1 tbsp oil"
+     },
+     {
+      "text": "500 g beef mince"
+     },
+     {
+      "text": "1 onion, diced"
+     },
+     {
+      "text": "2 carrots, grated"
+     },
+     {
+      "text": "2 tbsp tomato paste"
+     },
+     {
+      "text": "1 tbsp Worcestershire sauce"
+     },
+     {
+      "text": "1½ cups beef stock"
+     },
+     {
+      "text": "1 cup frozen peas"
+     },
+     {
+      "text": "1 tbsp cornflour, mixed with 2 tbsp cold water"
+     },
+     {
+      "text": "Salt and pepper"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Rice.** Cook the rice in a rice cooker or as the packet says."
+     },
+     {
+      "text": "**Brown the mince.** Heat the oil in a large frying pan over medium-high heat. Cook the mince and onion for 6–8 minutes, breaking up the mince, until browned."
+     },
+     {
+      "text": "**Simmer.** Stir in the carrot, tomato paste, Worcestershire sauce and stock. Simmer for 10 minutes."
+     },
+     {
+      "text": "**Thicken.** Add the peas and the cornflour mix and stir for 2 minutes until the gravy thickens. Season and serve over the rice."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Also good on toast or mashed potato (mash with oil or lactose-free milk)."
+     },
+     {
+      "text": "Freezes well for up to 3 months."
+     }
+    ]
+   }
+  ],
+  "id": "Stovetop-Savoury_Mince_on_Rice",
+  "file": "Stovetop/Savoury_Mince_on_Rice.tex",
+  "chapter": "stovetop",
+  "chapterName": "Stovetop",
+  "group": null,
+  "ingredients": [
+   "1½ cups rice (to serve)",
+   "1 tbsp oil",
+   "500 g beef mince",
+   "1 onion, diced",
+   "2 carrots, grated",
+   "2 tbsp tomato paste",
+   "1 tbsp Worcestershire sauce",
+   "1½ cups beef stock",
+   "1 cup frozen peas",
+   "1 tbsp cornflour, mixed with 2 tbsp cold water",
+   "Salt and pepper"
+  ],
+  "shop": [
+   {
+    "key": "rice",
+    "name": "Rice",
+    "aisle": "Pasta, rice & grains",
+    "qty": 1.5,
+    "unit": "cup",
+    "optional": true,
+    "raw": "1½ cups rice (to serve)",
+    "g": 277.5
+   },
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp oil",
+    "g": 13.5
+   },
+   {
+    "key": "beef-mince",
+    "name": "Beef mince",
+    "aisle": "Meat & fish",
+    "qty": 500.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "500 g beef mince",
+    "g": 500.0
+   },
+   {
+    "key": "onion",
+    "name": "Onions",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 onion, diced",
+    "g": 150.0
+   },
+   {
+    "key": "carrot",
+    "name": "Carrots",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "",
+    "optional": false,
+    "raw": "2 carrots, grated",
+    "g": 240.0
+   },
+   {
+    "key": "tomato-paste",
+    "name": "Tomato paste",
+    "aisle": "Cans, jars & pulses",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp tomato paste",
+    "g": 32.0
+   },
+   {
+    "key": "worcestershire",
+    "name": "Worcestershire sauce",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp Worcestershire sauce",
+    "g": 17.0
+   },
+   {
+    "key": "beef-stock",
+    "name": "Beef stock",
+    "aisle": "Pantry: check first",
+    "qty": 1.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1½ cups beef stock",
+    "g": 375.0
+   },
+   {
+    "key": "frozen-peas",
+    "name": "Frozen peas",
+    "aisle": "Frozen",
+    "qty": 1.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1 cup frozen peas",
+    "g": 140.0
+   },
+   {
+    "key": "cornflour",
+    "name": "Cornflour",
+    "aisle": "Baking",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp cornflour, mixed with 2 tbsp cold water",
+    "g": 8.0
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Salt and pepper"
+   },
+   {
+    "key": "pepper",
+    "name": "Black pepper",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Salt and pepper"
+   }
+  ],
+  "tags": [
+   "beef",
+   "mince"
+  ],
+  "nutrition": {
+   "kcal": 360,
+   "protein": 29,
+   "carbs": 18,
+   "fat": 19,
+   "per": "serving",
+   "count": 4
+  },
+  "diet": [
+   "freezes",
+   "dairy-free",
+   "quick"
+  ],
+  "storage": [
+   "Freezes well for up to 3 months."
+  ],
+  "minutes": 30,
+  "ahead": [],
+  "meat": "Beef mince",
+  "palmer": true
  },
  {
   "title": "Sesame Beef, Edamame & Vegetable Noodles",
@@ -25978,6 +27153,229 @@
   "palmer": false
  },
  {
+  "title": "Cheesy Tuna Pasta Bake",
+  "servings": "4",
+  "time": "40 min",
+  "intro": "A pantry-staple pasta bake: tuna, peas and corn in a cheese sauce made with lactose-free milk and oil instead of butter.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "350 g penne or macaroni"
+     },
+     {
+      "text": "2 tbsp oil"
+     },
+     {
+      "text": "1 onion, diced"
+     },
+     {
+      "text": "3 tbsp plain flour"
+     },
+     {
+      "text": "3 cups lactose-free milk"
+     },
+     {
+      "text": "1 tsp Dijon mustard"
+     },
+     {
+      "text": "3 cans (185 g) tuna in springwater, drained"
+     },
+     {
+      "text": "2 cups frozen peas and corn"
+     },
+     {
+      "text": "1 cup grated lactose-free tasty cheese"
+     },
+     {
+      "text": "Salt and pepper"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Heat the oven** to 200 °C (180 °C fan)."
+     },
+     {
+      "text": "**Pasta.** Cook the pasta for 2 minutes less than the packet says, then drain."
+     },
+     {
+      "text": "**Cheese sauce.** Meanwhile, heat the oil in a large pot over medium heat and cook the onion for 3 minutes. Stir in the flour for 1 minute, then slowly whisk in the milk, a little at a time so it stays smooth. Simmer for 3–4 minutes, stirring, until thick. Stir in the mustard and half the cheese, and season."
+     },
+     {
+      "text": "**Mix.** Stir the pasta, tuna, and peas and corn into the sauce. Tip into a baking dish and scatter over the rest of the cheese."
+     },
+     {
+      "text": "**Bake** for 15 minutes, until bubbling and golden on top."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Swap the tuna for 2 cups shredded cooked chicken."
+     },
+     {
+      "text": "Keeps 3 days in the fridge."
+     }
+    ]
+   }
+  ],
+  "id": "Oven-Cheesy_Tuna_Pasta_Bake",
+  "file": "Oven/Cheesy_Tuna_Pasta_Bake.tex",
+  "chapter": "oven",
+  "chapterName": "Oven",
+  "group": null,
+  "ingredients": [
+   "350 g penne or macaroni",
+   "2 tbsp oil",
+   "1 onion, diced",
+   "3 tbsp plain flour",
+   "3 cups lactose-free milk",
+   "1 tsp Dijon mustard",
+   "3 cans (185 g) tuna in springwater, drained",
+   "2 cups frozen peas and corn",
+   "1 cup grated lactose-free tasty cheese",
+   "Salt and pepper"
+  ],
+  "shop": [
+   {
+    "key": "macaroni",
+    "name": "Macaroni",
+    "aisle": "Pasta, rice & grains",
+    "qty": 350.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "350 g penne or macaroni",
+    "g": 350.0
+   },
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp oil",
+    "g": 27.0
+   },
+   {
+    "key": "onion",
+    "name": "Onions",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 onion, diced",
+    "g": 150.0
+   },
+   {
+    "key": "flour",
+    "name": "Plain flour",
+    "aisle": "Baking",
+    "qty": 3.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "3 tbsp plain flour",
+    "g": 27.0
+   },
+   {
+    "key": "milk",
+    "name": "Milk",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 3.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "3 cups lactose-free milk",
+    "g": 750.0
+   },
+   {
+    "key": "mustard",
+    "name": "Mustard",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp Dijon mustard",
+    "g": 5.0
+   },
+   {
+    "key": "tuna",
+    "name": "Tuna",
+    "aisle": "Cans, jars & pulses",
+    "qty": 3.0,
+    "unit": "can",
+    "optional": false,
+    "raw": "3 cans (185 g) tuna in springwater, drained",
+    "g": 450.0
+   },
+   {
+    "key": "frozen-peas",
+    "name": "Frozen peas",
+    "aisle": "Frozen",
+    "qty": 2.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "2 cups frozen peas and corn",
+    "g": 280.0
+   },
+   {
+    "key": "cheese",
+    "name": "Tasty cheese",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 1.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1 cup grated lactose-free tasty cheese",
+    "g": 100.0
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Salt and pepper"
+   },
+   {
+    "key": "pepper",
+    "name": "Black pepper",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Salt and pepper"
+   }
+  ],
+  "tags": [
+   "fish"
+  ],
+  "nutrition": {
+   "kcal": 810,
+   "protein": 57,
+   "carbs": 89,
+   "fat": 24,
+   "per": "serving",
+   "count": 4
+  },
+  "diet": [],
+  "storage": [
+   "Keeps 3 days in the fridge."
+  ],
+  "minutes": 40,
+  "ahead": [],
+  "meat": null,
+  "palmer": true
+ },
+ {
   "title": "Chicken & Vegetable Bake",
   "servings": "6",
   "time": "–",
@@ -26288,10 +27686,10 @@
       "group": "For the béchamel sauce"
      },
      {
-      "text": "1 L (4 cups) whole milk"
+      "text": "1 L (4 cups) whole milk (or lactose-free milk)"
      },
      {
-      "text": "100 g (7 tbsp) butter"
+      "text": "100 g (7 tbsp) butter (or dairy-free margarine)"
      },
      {
       "text": "100 g (¾ cup) plain flour"
@@ -26309,7 +27707,7 @@
       "text": "250–300 g fresh or dry egg lasagne sheets"
      },
      {
-      "text": "100 g grated parmesan cheese"
+      "text": "100 g grated parmesan cheese (or lactose-free tasty cheese)"
      }
     ]
    },
@@ -26381,13 +27779,13 @@
    "½ cup red wine",
    "Extra virgin olive oil",
    "Salt and pepper, to taste",
-   "1 L (4 cups) whole milk",
-   "100 g (7 tbsp) butter",
+   "1 L (4 cups) whole milk (or lactose-free milk)",
+   "100 g (7 tbsp) butter (or dairy-free margarine)",
    "100 g (¾ cup) plain flour",
    "Nutmeg, to taste",
    "Salt, to taste",
    "250–300 g fresh or dry egg lasagne sheets",
-   "100 g grated parmesan cheese"
+   "100 g grated parmesan cheese (or lactose-free tasty cheese)"
   ],
   "shop": [
    {
@@ -26488,6 +27886,36 @@
     "raw": "Salt and pepper, to taste"
    },
    {
+    "key": "milk",
+    "name": "Milk",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 1000.0,
+    "unit": "ml",
+    "optional": false,
+    "raw": "1 L (4 cups) whole milk (or lactose-free milk)",
+    "g": 1000.0
+   },
+   {
+    "key": "butter",
+    "name": "Butter",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 100.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "100 g (7 tbsp) butter (or dairy-free margarine)",
+    "g": 100.0
+   },
+   {
+    "key": "flour",
+    "name": "Plain flour",
+    "aisle": "Baking",
+    "qty": 100.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "100 g (¾ cup) plain flour",
+    "g": 100.0
+   },
+   {
     "key": "nutmeg",
     "name": "Nutmeg",
     "aisle": "Pantry: check first",
@@ -26522,7 +27950,7 @@
     "qty": 100.0,
     "unit": "g",
     "optional": false,
-    "raw": "100 g grated parmesan cheese",
+    "raw": "100 g grated parmesan cheese (or lactose-free tasty cheese)",
     "g": 100.0
    }
   ],
@@ -26532,10 +27960,10 @@
    "mince"
   ],
   "nutrition": {
-   "kcal": 440,
-   "protein": 29,
-   "carbs": 40,
-   "fat": 16,
+   "kcal": 690,
+   "protein": 35,
+   "carbs": 58,
+   "fat": 33,
    "per": "serving",
    "count": 7.0
   },
@@ -26824,7 +28252,7 @@
       "text": "½ cup pizza sauce or passata"
      },
      {
-      "text": "1 cup shredded mozzarella"
+      "text": "1 cup shredded mozzarella (or lactose-free mozzarella)"
      },
      {
       "text": "Toppings: mushrooms, capsicum, olives, pineapple, chicken, ham"
@@ -26884,7 +28312,7 @@
    "5 tbsp Olive Oil",
    "230 ml Water",
    "½ cup pizza sauce or passata",
-   "1 cup shredded mozzarella",
+   "1 cup shredded mozzarella (or lactose-free mozzarella)",
    "Toppings: mushrooms, capsicum, olives, pineapple, chicken, ham"
   ],
   "shop": [
@@ -26955,7 +28383,7 @@
     "qty": 1.0,
     "unit": "cup",
     "optional": false,
-    "raw": "1 cup shredded mozzarella",
+    "raw": "1 cup shredded mozzarella (or lactose-free mozzarella)",
     "g": 110.0
    },
    {
@@ -27258,6 +28686,194 @@
   "ahead": [],
   "meat": "Salmon",
   "palmer": false
+ },
+ {
+  "title": "Lemon Pepper Chicken Thighs with Roast Veg",
+  "servings": "4",
+  "time": "45 min",
+  "intro": "Lemony chicken thighs roasted on the same tray as potatoes and green beans.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "750 g potatoes, cut into 2 cm chunks"
+     },
+     {
+      "text": "2 tbsp oil"
+     },
+     {
+      "text": "600 g boneless chicken thighs"
+     },
+     {
+      "text": "1 lemon, zested and juiced"
+     },
+     {
+      "text": "2 tsp lemon pepper seasoning"
+     },
+     {
+      "text": "3 garlic cloves, crushed"
+     },
+     {
+      "text": "300 g frozen green beans"
+     },
+     {
+      "text": "Salt"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Heat the oven** to 220 °C (200 °C fan)."
+     },
+     {
+      "text": "**Potatoes first.** Toss the potatoes with 1 tbsp oil and a pinch of salt on a large oven tray and roast for 15 minutes."
+     },
+     {
+      "text": "**Season the chicken.** Meanwhile, mix the rest of the oil with the lemon zest, half the juice, the lemon pepper and garlic. Coat the chicken in it."
+     },
+     {
+      "text": "**Roast together.** Push the potatoes to the sides and add the chicken and green beans. Roast for 20–25 minutes, until the chicken is cooked through (no pink in the middle) and the potatoes are golden."
+     },
+     {
+      "text": "**Serve.** Squeeze over the rest of the lemon juice."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Bone-in thighs or drumsticks work too: give them 35–40 minutes."
+     },
+     {
+      "text": "Keeps 3 days in the fridge."
+     }
+    ]
+   }
+  ],
+  "id": "Oven-Lemon_Pepper_Chicken_Roast_Veg",
+  "file": "Oven/Lemon_Pepper_Chicken_Roast_Veg.tex",
+  "chapter": "oven",
+  "chapterName": "Oven",
+  "group": null,
+  "ingredients": [
+   "750 g potatoes, cut into 2 cm chunks",
+   "2 tbsp oil",
+   "600 g boneless chicken thighs",
+   "1 lemon, zested and juiced",
+   "2 tsp lemon pepper seasoning",
+   "3 garlic cloves, crushed",
+   "300 g frozen green beans",
+   "Salt"
+  ],
+  "shop": [
+   {
+    "key": "potato",
+    "name": "Potatoes",
+    "aisle": "Fruit & veg",
+    "qty": 750.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "750 g potatoes, cut into 2 cm chunks",
+    "g": 750.0
+   },
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp oil",
+    "g": 27.0
+   },
+   {
+    "key": "chicken-thigh",
+    "name": "Chicken thighs",
+    "aisle": "Meat & fish",
+    "qty": 600.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "600 g boneless chicken thighs",
+    "g": 600.0
+   },
+   {
+    "key": "lemon",
+    "name": "Lemons",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 lemon, zested and juiced",
+    "g": 40.0
+   },
+   {
+    "key": "lemon-pepper",
+    "name": "Lemon pepper seasoning",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "2 tsp lemon pepper seasoning",
+    "g": 10.0
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 3.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "3 garlic cloves, crushed",
+    "g": 15.0
+   },
+   {
+    "key": "green-beans",
+    "name": "Green beans",
+    "aisle": "Frozen",
+    "qty": 300.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "300 g frozen green beans",
+    "g": 300.0
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": false,
+    "raw": "Salt"
+   }
+  ],
+  "tags": [
+   "chicken"
+  ],
+  "nutrition": {
+   "kcal": 460,
+   "protein": 34,
+   "carbs": 39,
+   "fat": 19,
+   "per": "serving",
+   "count": 4
+  },
+  "diet": [
+   "dairy-free"
+  ],
+  "storage": [
+   "Keeps 3 days in the fridge."
+  ],
+  "minutes": 45,
+  "ahead": [],
+  "meat": "Chicken thighs",
+  "palmer": true
  },
  {
   "title": "Loaded Beef Nachos",
@@ -28215,6 +29831,225 @@
   "palmer": false
  },
  {
+  "title": "One-Pan Sausage, Potato & Capsicum Bake",
+  "servings": "4",
+  "time": "10 min prep + 35 min",
+  "intro": "Sausages, potatoes, kumara and capsicum roasted on one tray, with chickpeas for extra protein.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "8 sausages"
+     },
+     {
+      "text": "600 g potatoes, cut into 3 cm chunks"
+     },
+     {
+      "text": "1 kumara (about 400 g), cut into 3 cm chunks"
+     },
+     {
+      "text": "1 red onion, cut into wedges"
+     },
+     {
+      "text": "1 capsicum, cut into chunks"
+     },
+     {
+      "text": "1 can (400 g) chickpeas, drained and rinsed"
+     },
+     {
+      "text": "2 tbsp oil"
+     },
+     {
+      "text": "2 tsp mixed herbs"
+     },
+     {
+      "text": "1 tsp smoked paprika"
+     },
+     {
+      "text": "Salt and pepper"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Heat the oven** to 220 °C (200 °C fan)."
+     },
+     {
+      "text": "**Veg first.** Toss the potatoes, kumara, onion, capsicum and chickpeas with the oil, herbs, paprika, salt and pepper on a large oven tray. Use two trays if it's crowded, or the veg steams instead of browning. Roast for 15 minutes."
+     },
+     {
+      "text": "**Add the sausages.** Nestle the sausages in among the veg and roast for 20 minutes more, turning them once, until they're cooked through and the veg is golden."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Check the sausage label: some contain milk powder or cheese."
+     },
+     {
+      "text": "Keeps 3 days in the fridge."
+     }
+    ]
+   }
+  ],
+  "id": "Oven-Sausage_Potato_Capsicum_Bake",
+  "file": "Oven/Sausage_Potato_Capsicum_Bake.tex",
+  "chapter": "oven",
+  "chapterName": "Oven",
+  "group": null,
+  "ingredients": [
+   "8 sausages",
+   "600 g potatoes, cut into 3 cm chunks",
+   "1 kumara (about 400 g), cut into 3 cm chunks",
+   "1 red onion, cut into wedges",
+   "1 capsicum, cut into chunks",
+   "1 can (400 g) chickpeas, drained and rinsed",
+   "2 tbsp oil",
+   "2 tsp mixed herbs",
+   "1 tsp smoked paprika",
+   "Salt and pepper"
+  ],
+  "shop": [
+   {
+    "key": "sausages",
+    "name": "Sausages",
+    "aisle": "Meat & fish",
+    "qty": 8.0,
+    "unit": "",
+    "optional": false,
+    "raw": "8 sausages",
+    "g": 560.0
+   },
+   {
+    "key": "potato",
+    "name": "Potatoes",
+    "aisle": "Fruit & veg",
+    "qty": 600.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "600 g potatoes, cut into 3 cm chunks",
+    "g": 600.0
+   },
+   {
+    "key": "kumara",
+    "name": "Kumara",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 kumara (about 400 g), cut into 3 cm chunks",
+    "g": 300.0
+   },
+   {
+    "key": "red-onion",
+    "name": "Red onion",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 red onion, cut into wedges",
+    "g": 150.0
+   },
+   {
+    "key": "capsicum",
+    "name": "Capsicums",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 capsicum, cut into chunks",
+    "g": 160.0
+   },
+   {
+    "key": "chickpeas",
+    "name": "Chickpeas",
+    "aisle": "Cans, jars & pulses",
+    "qty": 1.0,
+    "unit": "can",
+    "optional": false,
+    "raw": "1 can (400 g) chickpeas, drained and rinsed",
+    "g": 240.0
+   },
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp oil",
+    "g": 27.0
+   },
+   {
+    "key": "mixed-herbs",
+    "name": "Mixed herbs",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "2 tsp mixed herbs",
+    "g": 5.0
+   },
+   {
+    "key": "smoked-paprika",
+    "name": "Smoked paprika",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp smoked paprika",
+    "g": 2.5
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Salt and pepper"
+   },
+   {
+    "key": "pepper",
+    "name": "Black pepper",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Salt and pepper"
+   }
+  ],
+  "tags": [
+   "pork"
+  ],
+  "nutrition": {
+   "kcal": 710,
+   "protein": 28,
+   "carbs": 64,
+   "fat": 38,
+   "per": "serving",
+   "count": 4
+  },
+  "diet": [
+   "dairy-free"
+  ],
+  "storage": [
+   "Keeps 3 days in the fridge."
+  ],
+  "minutes": 45,
+  "ahead": [],
+  "meat": "Sausages",
+  "palmer": true
+ },
+ {
   "title": "Sausage Rolls with Grated Veg",
   "servings": "4 (24 pieces)",
   "time": "20 min prep + 30 min",
@@ -28492,7 +30327,7 @@
       "text": "2 tbsp pitted olives"
      },
      {
-      "text": "Parmesan or pecorino shavings (optional)"
+      "text": "Parmesan or pecorino shavings (optional; or lactose-free cheese)"
      },
      {
       "group": "For the dressing"
@@ -28567,7 +30402,7 @@
    "10 cherry tomatoes, halved",
    "¼ red onion, thinly sliced",
    "2 tbsp pitted olives",
-   "Parmesan or pecorino shavings (optional)",
+   "Parmesan or pecorino shavings (optional; or lactose-free cheese)",
    "1 garlic clove, finely minced or crushed",
    "½ tsp salt",
    "Black pepper, to taste",
@@ -28633,7 +30468,16 @@
     "qty": null,
     "unit": "",
     "optional": true,
-    "raw": "Parmesan or pecorino shavings (optional)"
+    "raw": "Parmesan or pecorino shavings (optional; or lactose-free cheese)"
+   },
+   {
+    "key": "cheese",
+    "name": "Tasty cheese",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Parmesan or pecorino shavings (optional; or lactose-free cheese)"
    },
    {
     "key": "garlic",

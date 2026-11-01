@@ -47,7 +47,7 @@ PRICES = {
     "chicken-stock": 3, "beef-stock": 3, "honey": 15, "worcestershire": 12,
     "peanut-butter": 10, "curry-paste": 25, "protein-powder": 40,
     "mayonnaise": 12, "tomato-sauce": 6, "mustard": 15, "wine": 15,
-    "vanilla": 100, "salt": 2, "pepper": 60,
+    "vanilla": 100, "salt": 2, "pepper": 60, "lemon-pepper": 60, "taco-seasoning": 40,
     "smoked-paprika": SPICE, "paprika": SPICE, "cumin": SPICE, "oregano": SPICE,
     "thyme": SPICE, "cinnamon": SPICE, "chilli-flakes": SPICE, "chilli-powder": SPICE,
     "mixed-herbs": SPICE, "garlic-powder": SPICE, "garam-masala": SPICE, "turmeric": SPICE,
