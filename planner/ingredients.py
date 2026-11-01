@@ -110,6 +110,7 @@ CANON = [
     (r"taco seasoning", "taco-seasoning", "Taco seasoning", PANTRY),
     (r"salt and (black )?pepper|salt & pepper", "salt-pepper", "Salt and pepper", PANTRY),
     (r"\bsalt\b", "salt", "Salt", PANTRY),
+    (r"lemon pepper", "lemon-pepper", "Lemon pepper seasoning", PANTRY),
     (r"black pepper|\bpepper\b(?!s)", "pepper", "Black pepper", PANTRY),
     (r"mustard", "mustard", "Mustard", PANTRY),
     (r"golden syrup", "golden-syrup", "Golden syrup", PANTRY),

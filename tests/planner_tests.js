@@ -28,7 +28,9 @@ async function gpMain() {
     const vis = run("visibleRecipes().map(r => [r.id, r.chapter, r.palmer])");
     check("fewer recipes than George", vis.length > 40 && vis.length < run("RECIPES.length"), vis.length);
     check("no slow cooker or Instant Pot", vis.every(([, ch, pal]) => pal || !["slow", "pressure"].includes(ch)));
-    eq("all of GP's book included", vis.filter(v => v[2]).length, run("RECIPES.filter(r => r.palmer).length"));
+    eq("all of GP's book included, except dairy", vis.filter(v => v[2]).length, run("RECIPES.filter(r => r.palmer && r.gpDairyOK).length"));
+    check("no butter, cream or yoghurt", run(`visibleRecipes().every(r => r.custom || !r.shop.some(i => !i.optional && ["butter", "cream", "yoghurt", "greek-yoghurt", "sour-cream", "parmesan"].includes(i.key)))`));
+    check("lactose-free cheese and milk are fine", run(`visibleRecipes().some(r => r.shop.some(i => i.key === "milk")) && visibleRecipes().some(r => r.id === "Oven-Cheesy_Tuna_Pasta_Bake")`));
     click(document.querySelector('[data-tab="recipes"]'));
     eq("cards are the basic ones", document.querySelectorAll(".card").length, vis.length);
     check("no slow cooker chip", !document.querySelector('[data-act="chapter"][data-v="slow"]') && !document.querySelector('[data-act="chapter"][data-v="pressure"]'));
