@@ -254,6 +254,13 @@ shared from (it ends in `&as=gp` for GP's), and a link ending in `#as=gp`
 opens GP's planner directly. The limits are `BASIC_MINUTES` and
 `BASIC_INGREDIENTS` in `planner/template.html`.
 
+GP is dairy-free, using dairy-free margarine, coconut yoghurt, coconut cream
+and lactose-free milk and cheese instead. His planner shows a **Dairy-free**
+box on any recipe with dairy (and on the cooking mode's Get ready screen),
+and his shopping list names the swap ("Dairy-free margarine", not "Butter").
+Lines that already give a dairy-free option, as in GP's book, are left as
+they are. The swaps are `DAIRY_SWAPS` in `planner/template.html`.
+
 ### One shopping trip for both
 
 On the Shopping tab, **Include GP's list** (or George's, from GP's planner)

@@ -127,6 +127,7 @@ main.wrap { padding-block: 20px 48px; display: grid; gap: 28px; }
 .sheet-head .badges { margin-top: 8px; }
 .storage { background: var(--sunk); border-radius: 12px; padding: 10px 14px; margin: 4px 0 16px; }
 .storage strong { display: block; font-size: 0.8rem; margin-bottom: 4px; }
+.storage.dairy li strong { display: inline; font-size: inherit; }
 .storage ul { margin: 0; padding-left: 1.1em; font-size: 0.88rem; }
 .scale { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 10px; font-size: 0.85rem; color: var(--muted); }
 .scale .fchip { padding: 4px 12px; }
@@ -460,10 +461,32 @@ const PROFILE = (() => {
 const GP = PROFILE === "gp";
 const SUFFIX = PROFILES[PROFILE].suffix;
 const BASIC_MINUTES = 45, BASIC_INGREDIENTS = 14;
-// GP is dairy-free but has lactose-free milk and cheese: hide recipes needing other dairy.
 function isBasic(r) {
-  return !!(r.custom || (r.gpDairyOK !== false && (r.palmer || (!["slow", "pressure"].includes(r.chapter) && r.minutes != null
-    && r.minutes <= BASIC_MINUTES && r.ingredients.length <= BASIC_INGREDIENTS))));
+  return !!(r.custom || r.palmer || (!["slow", "pressure"].includes(r.chapter) && r.minutes != null
+    && r.minutes <= BASIC_MINUTES && r.ingredients.length <= BASIC_INGREDIENTS));
+}
+// GP is dairy-free, using these instead. His planner shows the swap on
+// recipes, in cooking mode and on his shopping list.
+const DAIRY_SWAPS = {
+  butter: "Dairy-free margarine", milk: "Lactose-free milk", cheese: "Lactose-free cheese",
+  mozzarella: "Lactose-free mozzarella", parmesan: "Lactose-free tasty cheese", feta: "Dairy-free feta",
+  halloumi: "Firm tofu (or leave it out)", yoghurt: "Coconut yoghurt", "greek-yoghurt": "Coconut yoghurt",
+  "sour-cream": "Coconut yoghurt", cream: "Coconut cream", "cream-cheese": "Dairy-free cream cheese",
+  "cottage-cheese": "Dairy-free cream cheese", ricotta: "Dairy-free cream cheese",
+  "milk-powder": "Lactose-free milk powder", "protein-powder": "Dairy-free protein powder",
+};
+const ALREADY_FREE = /lactose[- ]free|dairy[- ]free|margarine|coconut|plant[- ]based|oat milk|soy milk|almond milk/i;
+// The recipe's dairy lines that need swapping (lines that already name a
+// dairy-free option are left alone).
+function dairySwaps(r) {
+  const seen = new Set();
+  return r.shop.filter(i => DAIRY_SWAPS[i.key] && !ALREADY_FREE.test(i.raw) && !seen.has(i.key) && seen.add(i.key))
+    .map(i => ({ key: i.key, name: i.name, swap: DAIRY_SWAPS[i.key] }));
+}
+function dairyBox(r) {
+  if (!GP) return "";
+  const sw = dairySwaps(r);
+  return sw.length ? `<div class="storage dairy"><strong>Dairy-free</strong><ul>${sw.map(x => `<li>${esc(x.name)} → <strong>${esc(x.swap.toLowerCase())}</strong></li>`).join("")}</ul></div>` : "";
 }
 function visibleRecipes() { return GP ? RECIPES.filter(isBasic) : RECIPES; }
 
@@ -748,6 +771,7 @@ function cookView() {
   if (i === 0) {
     const items = r.sections.filter(sec => sec.kind === "ingredients").flatMap(sec => sec.items);
     body = `<p class="cook-label">Get ready${f !== 1 ? ` · ${SCALE_LABEL[f]} amounts` : ""}</p>
+      ${dairyBox(r)}
       <ul class="cook-ready">${items.map((it, n) => it.group
         ? `<li class="group">${md(it.group)}</li>`
         : `<li><label><input type="checkbox" data-act="cook-have" data-n="${n}" ${ui.cook.have[n] ? "checked" : ""}><span>${md(scaleText(it.text, f))}</span></label></li>`).join("")}</ul>`;
@@ -1068,6 +1092,9 @@ function shoppingList() {
     row.amount = amountText(row.parts, row.key.slice(5));
     row.atHome = !!state.pantry[row.key];
     row.done = !!state.checked[row.key] || otherChecked(row.key);
+    // GP's dairy swap, on his list or for his share of a combined one.
+    const sw = DAIRY_SWAPS[row.key.slice(5)];
+    if (sw && row.who.has("gp")) row.name = row.who.size > 1 ? `${row.name} + ${sw.toLowerCase()} for GP` : sw;
     groups[row.aisle].push(row);
   }
   for (const a of AISLES) groups[a].sort((x, y) => (x.optional - y.optional) || x.name.localeCompare(y.name));
@@ -2679,7 +2706,7 @@ function renderRecipes() {
   const all = visibleRecipes(), nCustom = all.filter(r => r.custom).length;
   const head = `
   <section class="section-head">
-    <div><h2>${ui.ideas ? "Recipe ideas" : ui.make ? "What can I make?" : "Recipes"}</h2><p>${ui.ideas ? "Ideas from the To Add lists that aren't in the book yet. Write one up to add it." : ui.make ? "Pick what's in the fridge and cupboard, and see what it makes." : GP ? `${all.length} easy recipes: GP's book, plus quick ones (${BASIC_MINUTES} min or less, ${BASIC_INGREDIENTS} ingredients or fewer) with no slow cooker or Instant Pot. No butter, cream or yoghurt; use lactose-free milk and cheese.` : `All ${all.length} recipes${nCustom ? `: ${all.length - nCustom} from your book and ${nCustom} added here` : " from your book"}.`}</p></div>
+    <div><h2>${ui.ideas ? "Recipe ideas" : ui.make ? "What can I make?" : "Recipes"}</h2><p>${ui.ideas ? "Ideas from the To Add lists that aren't in the book yet. Write one up to add it." : ui.make ? "Pick what's in the fridge and cupboard, and see what it makes." : GP ? `${all.length} easy recipes: GP's book, plus quick ones (${BASIC_MINUTES} min or less, ${BASIC_INGREDIENTS} ingredients or fewer) with no slow cooker or Instant Pot. Dairy items show his dairy-free swap.` : `All ${all.length} recipes${nCustom ? `: ${all.length - nCustom} from your book and ${nCustom} added here` : " from your book"}.`}</p></div>
     <div class="actions">
       <button class="btn${ui.make ? " primary" : ""}" data-act="make-toggle" aria-pressed="${!!ui.make}">${ui.make ? "Back to all recipes" : "What can I make?"}</button>
       <button class="btn${ui.ideas ? " primary" : ""}" data-act="ideas-toggle" aria-pressed="${!!ui.ideas}">${ui.ideas ? "Back to all recipes" : "Ideas"}</button>
@@ -2784,7 +2811,7 @@ function renderSheet() {
   let actions;
   if (inSlot || inExtras) actions = `<button class="btn" data-act="unplan" data-id="${r.id}">Remove from this week</button>`;
   else if (ui.choosing) actions = `<button class="btn primary" data-act="use" data-id="${r.id}">Use this for ${esc(SLOTS.find(s => s.key === ui.choosing).label.toLowerCase())}</button>`;
-  else if (target) actions = `<button class="btn primary" data-act="use" data-id="${r.id}">${state.slots[target] ? "Replace" : "Add as"} this week's ${esc(SLOTS.find(s => s.key === target).label.toLowerCase())} meal</button>
+  else if (target) actions = `<button class="btn primary" data-act="use" data-id="${r.id}">${GP ? `${state.slots[target] ? "Replace" : "Add as"} ${esc(SLOTS.find(s => s.key === target).label)}` : `${state.slots[target] ? "Replace" : "Add as"} this week's ${esc(SLOTS.find(s => s.key === target).label.toLowerCase())} meal`}</button>
       <button class="btn" data-act="add-extra" data-id="${r.id}">Add as an extra</button>`;
   else actions = `<button class="btn primary" data-act="add-extra" data-id="${r.id}">Add to this week</button>`;
   root.innerHTML = `<div class="overlay" data-act="close-overlay">
@@ -2806,6 +2833,7 @@ function renderSheet() {
         <div class="sheet-actions">${cookSteps(r).length ? `<button class="btn primary" data-act="cook-start" data-id="${r.id}">Start cooking</button>` : ""}${actions}${r.nutrition ? `<button class="btn" data-act="track-log" data-id="${r.id}">Log a ${r.nutrition.per === "serving" ? "serve" : esc(r.nutrition.per)}</button>` : ""}${MEAL_CHAPTERS.includes(r.chapter) ? `<button class="btn ghost" data-act="lo-add" data-id="${r.id}">+1 leftover portion</button>` : ""}${r.custom ? `<button class="btn ghost" data-act="custom-edit" data-id="${r.id}">Edit</button><button class="btn ghost" data-act="custom-tex" data-id="${r.id}">Copy for the book</button>` : ""}</div>
       </div>
       ${storageBox(r)}
+      ${dairyBox(r)}
       ${swapsBox(r)}
       ${renderSections(r.sections, scaleOf(r.id))}
       <span class="file">${esc(r.file)}</span>
