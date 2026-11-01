@@ -29,6 +29,17 @@ async function gpMain() {
     check("fewer recipes than George", vis.length > 40 && vis.length < run("RECIPES.length"), vis.length);
     check("no slow cooker or Instant Pot", vis.every(([, ch, pal]) => pal || !["slow", "pressure"].includes(ch)));
     eq("all of GP's book included", vis.filter(v => v[2]).length, run("RECIPES.filter(r => r.palmer).length"));
+    const buttery = run(`visibleRecipes().find(r => dairySwaps(r).some(x => x.key === "butter")).id`);
+    run(`ui.open = ${JSON.stringify(buttery)}; renderSheet();`);
+    check("dairy-free swaps on the recipe", /margarine/.test($(".storage.dairy") && $(".storage.dairy").textContent), buttery);
+    run(`ui.open = "Italian-Lasagne"; renderSheet();`);
+    check("GP's book already says dairy-free", !$(".storage.dairy") && /dairy-free margarine/.test($("#sheet-root").textContent));
+    run(`ui.open = "Oven-Cheesy_Tuna_Pasta_Bake"; renderSheet();`);
+    check("no swap box when it's already lactose-free", !$(".storage.dairy"));
+    run("ui.open = null; renderSheet();");
+    run(`commit(s => { s.slots = { d1: "Fakeaways-Butter_Chicken", d2: null, d3: null }; s.extras = []; })`);
+    const names = run("Object.values(shoppingList()).flat().map(x => x.name)");
+    check("margarine on GP's list, not butter", names.includes("Dairy-free margarine") && !names.includes("Butter"), names);
     click(document.querySelector('[data-tab="recipes"]'));
     eq("cards are the basic ones", document.querySelectorAll(".card").length, vis.length);
     check("no slow cooker chip", !document.querySelector('[data-act="chapter"][data-v="slow"]') && !document.querySelector('[data-act="chapter"][data-v="pressure"]'));
@@ -42,11 +53,14 @@ async function gpMain() {
     run("commit(s => { s.slots = { d1: null, d2: null, d3: null }; })");
     const easy = run(`visibleRecipes().find(r => r.chapter === "stovetop").id`);
     run(`ui.open = ${JSON.stringify(easy)}; renderSheet();`);
-    check("add as a dinner", /dinner 1/i.test($('[data-act="use"]').textContent), $('[data-act="use"]').textContent);
+    check("add as a dinner", /Add as Dinner 1/.test($('[data-act="use"]').textContent), $('[data-act="use"]').textContent);
     click($('[data-act="use"]'));
     eq("planned", run("state.slots.d1"), easy);
     check("share link opens GP's planner", run(`shareLink("abcdefghijkmnpqrstuvwxyz")`).endsWith("&as=gp"));
     check("food log kept separately", run("TRACK_KEY").endsWith("-gp"));
+    check("GP's swaps default to dairy-free", run("mySwaps().butter") === "Dairy-free margarine");
+    click($('[data-act="profile-open"]'));
+    check("GP's profile", /GP's profile/.test($("#app").textContent) && /margarine/.test($("#app").textContent));
     for (const tab of ["recipes", "shop", "track", "week"]) {
       click(document.querySelector(`[data-tab="${tab}"]`));
       check(`${tab} tab renders`, $("#app").textContent.trim().length > 50);
@@ -466,6 +480,41 @@ async function main() {
     check("draft started from the idea", /curry/i.test($("#cf-title").value));
     click($('[data-act="close"]'));
     click($('[data-act="ideas-toggle"]'));
+  });
+
+  test("profile", () => {
+    click($('[data-act="profile-open"]'));
+    check("profile page", /George's profile/.test($("#app").textContent));
+    const name = $("#pref-name"); name.value = "Georgie"; name.dispatchEvent(new Event("change", { bubbles: true }));
+    eq("name in the title", $("#app-title").textContent, "Georgie's Meal Planner");
+    const pg = document.querySelector('[data-act="pref-protein"]'); pg.value = "40"; pg.dispatchEvent(new Event("change", { bubbles: true }));
+    eq("protein goal", run("proteinGoal()"), 40);
+    check("40 g filter", run("RECIPES.filter(isHighProtein).every(r => r.nutrition.protein >= 40)"));
+    $("#pref-avoid-input").value = "Capsicums";
+    click($('[data-act="pref-add"][data-list="avoid"]'));
+    eq("avoiding capsicum", run("prefs().avoid"), ["capsicum"]);
+    const picked = run(`(() => { const out = []; for (let i = 0; i < 25; i++) out.push(pickRandom("quick")); return out.filter(Boolean); })()`);
+    check("Pick for me skips avoided recipes", picked.every(id => !run(`isAvoided(BY_ID[${JSON.stringify(id)}])`)), picked);
+    check("plan skips them", run("planWeek({ budget: 200, protein: 10, share: false }).rs.every(r => !isAvoided(r))"));
+    $("#pref-favour-input").value = "Beef mince";
+    click($('[data-act="pref-add"][data-list="favour"]'));
+    const mince = run(`RECIPES.find(r => r.shop.some(i => i.key === "beef-mince") && !state.fav[r.id] && !state.rating[r.id]).id`);
+    eq("favoured twice as often", run(`weight(BY_ID[${JSON.stringify(mince)}])`), 2);
+    $("#swap-from").value = "Sour cream"; $("#swap-to").value = "greek yoghurt";
+    click($('[data-act="swap-add"]'));
+    eq("swap saved", run("mySwaps()['sour-cream']"), "Greek yoghurt");
+    const sc = run(`RECIPES.find(r => r.shop.some(i => i.key === "sour-cream" && !/yoghurt/i.test(i.raw))).id`);
+    run(`ui.open = ${JSON.stringify(sc)}; renderSheet();`);
+    check("swap on the recipe", /greek yoghurt/i.test($(".storage.dairy").textContent));
+    run(`ui.open = null; renderSheet(); commit(s => { s.slots.quick = ${JSON.stringify(sc)}; })`);
+    check("swap on the shopping list", run("Object.values(shoppingList()).flat().some(x => x.name === 'Greek yoghurt')"));
+    click($('[data-act="profile-open"]'));
+    click($('[data-act="swap-preset"][data-v="clear"]'));
+    eq("swaps cleared", run("Object.keys(mySwaps()).length"), 0);
+    check("body stats on the profile", !!$("#tp-age") && /Weight/.test($("#app").textContent));
+    check("saved with the plan", run("JSON.stringify(sanitize(clone(state)).prefs)").includes("capsicum"));
+    run("commit(s => { s.prefs = {}; })");
+    click(document.querySelector('[data-tab="week"]'));
   });
 
   await wait(700);  // let any async errors surface

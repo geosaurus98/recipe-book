@@ -110,6 +110,7 @@ CANON = [
     (r"taco seasoning", "taco-seasoning", "Taco seasoning", PANTRY),
     (r"salt and (black )?pepper|salt & pepper", "salt-pepper", "Salt and pepper", PANTRY),
     (r"\bsalt\b", "salt", "Salt", PANTRY),
+    (r"lemon pepper", "lemon-pepper", "Lemon pepper seasoning", PANTRY),
     (r"black pepper|\bpepper\b(?!s)", "pepper", "Black pepper", PANTRY),
     (r"mustard", "mustard", "Mustard", PANTRY),
     (r"golden syrup", "golden-syrup", "Golden syrup", PANTRY),
@@ -342,8 +343,8 @@ def parse(raw):
             u = UNIT_RE.match(text)
             if u:
                 unit, text = UNITS[u.group(1).lower()], text[u.end():]
-            # "1 can (400 g) ...": drop the size note after a can
-            text = re.sub(r"^\(\s*[\d.]+\s*(g|ml|oz|ml|mL)\b[^)]*\)\s*", "", text, flags=re.I)
+            # "1 can (400 g) ...", "1 L (4 cups) milk": drop a second amount in brackets
+            text = re.sub(r"^\(\s*[\d.¼½¾⅓⅔\\]+[^)]*\)\s*", "", text, flags=re.I)
 
     # Name: up to the first comma / bracket / dash note.
     name = re.split(r",|\(|;| – | - |—", text)[0]
