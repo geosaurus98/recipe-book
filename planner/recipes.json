@@ -327,7 +327,8 @@
   "minutes": 50,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Beef & Mixed Bean Chilli",
@@ -606,7 +607,8 @@
   "minutes": 35,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Beef & Red Lentil Moussaka-Style Stew",
@@ -937,7 +939,8 @@
   "minutes": 50,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Beef & Vegetable Stew",
@@ -1281,7 +1284,8 @@
   "minutes": 60,
   "ahead": [],
   "meat": "Stewing beef",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Beef, Barley & Mushroom Stew",
@@ -1571,7 +1575,8 @@
    "Defrost the beef in the fridge the night before; the vegetables can be chopped ahead."
   ],
   "meat": "Stewing beef",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Beef, Red Lentil & Vegetable Cottage Pie Bowls",
@@ -1866,7 +1871,8 @@
    "Defrost the mince in the fridge the night before."
   ],
   "meat": "Beef mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Beefaroni",
@@ -2195,7 +2201,8 @@
   "minutes": 30,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Butter Chicken-Style Chicken & Lentil Curry",
@@ -2488,7 +2495,8 @@
   "minutes": 50,
   "ahead": [],
   "meat": "Chicken drumsticks",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Cajun Chicken, Bean & Rice Bowls",
@@ -2935,7 +2943,8 @@
    "Defrost the chicken overnight."
   ],
   "meat": "Chicken breast or tenderloins",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Cheeseburger Macaroni with Hidden Lentils",
@@ -3210,7 +3219,8 @@
   "minutes": 35,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Chicken & Rice",
@@ -3444,7 +3454,8 @@
   "minutes": 40,
   "ahead": [],
   "meat": "Chicken thighs",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Chicken & Vegetable Soup",
@@ -3769,7 +3780,8 @@
   "minutes": 35,
   "ahead": [],
   "meat": "Chicken thighs",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Chicken, Chickpea & Edamame Biryani Bowls",
@@ -4096,7 +4108,8 @@
    "Defrost the chicken in the fridge the night before."
   ],
   "meat": "Chicken breast or tenderloins",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Chicken, Lentil & Coconut Curry with Rice",
@@ -4386,7 +4399,8 @@
   "minutes": 40,
   "ahead": [],
   "meat": "Chicken thighs",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Chicken, Rice & Lentils",
@@ -4662,7 +4676,8 @@
   "minutes": 40,
   "ahead": [],
   "meat": "Chicken breast or tenderloins",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Coconut Chicken, Potato & Chickpea Curry",
@@ -4961,7 +4976,8 @@
   "minutes": 40,
   "ahead": [],
   "meat": "Chicken breast or tenderloins",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Filipino-Style Pork Adobo with Edamame",
@@ -5203,7 +5219,8 @@
    "Defrost the pork in the fridge the night before."
   ],
   "meat": "Pork loin",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "High-Protein Pasta Sauce (Beef or Lentil)",
@@ -5559,7 +5576,8 @@
   "minutes": 35,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Lentil Coconut Curry",
@@ -5877,7 +5895,8 @@
   "minutes": 32,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Mac & Cheese with Vegetables",
@@ -6035,7 +6054,8 @@
   "minutes": 30,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Peanut Chicken & Sugar Snap Peas with Noodles",
@@ -6299,7 +6319,8 @@
   "minutes": null,
   "ahead": [],
   "meat": "Chicken breast or tenderloins",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Pork Mince Congee with Edamame",
@@ -6570,7 +6591,8 @@
   "minutes": 60,
   "ahead": [],
   "meat": "Pork mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Pork Mince Japanese Curry with Potato & Carrot",
@@ -6764,7 +6786,8 @@
   "minutes": 45,
   "ahead": [],
   "meat": "Pork mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Pulled BBQ Chicken with Lentils",
@@ -7175,7 +7198,8 @@
   "minutes": 32,
   "ahead": [],
   "meat": "Chicken breast or tenderloins",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Sausage & Rice",
@@ -7508,7 +7532,8 @@
   "minutes": 35,
   "ahead": [],
   "meat": "Sausages",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Sausage & Spinach Pasta",
@@ -7728,7 +7753,8 @@
   "minutes": 35,
   "ahead": [],
   "meat": "Sausages",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Stuffed Capsicum Soup",
@@ -7993,7 +8019,8 @@
   "minutes": 45,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Teriyaki Chicken & Veg",
@@ -8317,7 +8344,8 @@
   "minutes": 20,
   "ahead": [],
   "meat": "Chicken thighs",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Thai Peanut Chicken",
@@ -8706,7 +8734,8 @@
   "minutes": 30,
   "ahead": [],
   "meat": "Chicken breast or tenderloins",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Apple-Mustard Pork & Split-Pea Stew",
@@ -9019,7 +9048,8 @@
    "Cut the pork and vegetables the night before, and defrost any frozen pork in the fridge."
   ],
   "meat": "Pork shoulder",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Beef & Potato Stew over Rice",
@@ -9368,7 +9398,8 @@
   "minutes": 495,
   "ahead": [],
   "meat": "Stewing beef",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Beef & Vegetable Soup",
@@ -9638,7 +9669,8 @@
   "minutes": null,
   "ahead": [],
   "meat": "Stewing beef",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Beef Mince & Yellow Split Pea Keema",
@@ -9933,7 +9965,8 @@
    "Brown the mince the night before and refrigerate; load it into the slow cooker in the morning."
   ],
   "meat": "Beef mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Beef Mince Taco Filling (Freezer Batch)",
@@ -10297,7 +10330,8 @@
   "minutes": 375,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Butter Chicken-Style Chicken & Lentil Curry",
@@ -10590,7 +10624,8 @@
   "minutes": 435,
   "ahead": [],
   "meat": "Chicken drumsticks",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Chicken & Chickpea Stew",
@@ -10797,7 +10832,8 @@
   "minutes": null,
   "ahead": [],
   "meat": "Chicken thighs",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Chicken & Yellow Split Pea Soup",
@@ -11081,7 +11117,8 @@
    "Chop the onion and carrots and defrost the chicken in the fridge the night before."
   ],
   "meat": "Chicken breast or tenderloins",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Chilli Con Carne with Red Lentils & Kidney Beans",
@@ -11427,7 +11464,8 @@
   "minutes": 495,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Coconut Chicken, Kumara & Chickpea Curry",
@@ -11709,7 +11747,8 @@
   "minutes": null,
   "ahead": [],
   "meat": "Chicken breast or tenderloins",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Honey Garlic Chicken",
@@ -11927,7 +11966,8 @@
   "minutes": null,
   "ahead": [],
   "meat": "Chicken thighs",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Honey-Mustard Chicken & White Bean Stew",
@@ -12215,7 +12255,8 @@
    "Chop the vegetables the night before and defrost the chicken in the fridge."
   ],
   "meat": "Chicken breast or tenderloins",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Mexican Salsa Chicken",
@@ -12422,7 +12463,8 @@
   "minutes": null,
   "ahead": [],
   "meat": "Chicken thighs",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Mexican Shredded Chicken",
@@ -12722,7 +12764,8 @@
   "minutes": 370,
   "ahead": [],
   "meat": "Chicken thighs",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Pork & Kumara Curry",
@@ -12957,7 +13000,8 @@
   "minutes": null,
   "ahead": [],
   "meat": "Pork shoulder",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Pork & Lentil Bolognese",
@@ -13280,7 +13324,8 @@
   "minutes": null,
   "ahead": [],
   "meat": "Pork mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Pork Mince, Barley & Vegetable Soup",
@@ -13572,7 +13617,8 @@
   "minutes": 435,
   "ahead": [],
   "meat": "Pork mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Pulled Pork & Lentil Ragu",
@@ -13930,7 +13976,8 @@
   "minutes": 555,
   "ahead": [],
   "meat": "Pork leg",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Pulled Pork Wraps",
@@ -14143,7 +14190,8 @@
   "minutes": null,
   "ahead": [],
   "meat": "Pork shoulder",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Satay Chicken & Red Lentil Curry",
@@ -14431,7 +14479,8 @@
    "Dice the onion and defrost the chicken in the fridge the night before."
   ],
   "meat": "Chicken breast or tenderloins",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Savoury Mince with Barley & Veg",
@@ -14702,7 +14751,8 @@
   "minutes": 375,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Smoky Chicken, Black Bean & Red Lentil Stew",
@@ -15057,7 +15107,8 @@
   "minutes": 420,
   "ahead": [],
   "meat": "Chicken breast or tenderloins",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Beef & Broccoli Stir-Fry",
@@ -15292,7 +15343,8 @@
   "minutes": null,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Beef & Vegetable Chilli",
@@ -15556,7 +15608,8 @@
   "minutes": null,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Beef Kofta with Couscous & Yoghurt",
@@ -15912,7 +15965,8 @@
   "minutes": 35,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Beef Mince & Black Bean Quesadillas",
@@ -16159,7 +16213,8 @@
   "minutes": 30,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Beef Mince Stir-Fry",
@@ -16375,7 +16430,8 @@
   "minutes": null,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Beef Schnitzel Rolls",
@@ -16593,7 +16649,8 @@
   "minutes": 45,
   "ahead": [],
   "meat": "Beef schnitzel",
-  "palmer": true
+  "palmer": true,
+  "gpDairyOK": true
  },
  {
   "title": "Burrito Bowls",
@@ -16741,7 +16798,8 @@
   "minutes": 30,
   "ahead": [],
   "meat": "Chicken",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Butter Chicken",
@@ -17055,7 +17113,222 @@
   "minutes": 40,
   "ahead": [],
   "meat": "Chicken thighs",
-  "palmer": true
+  "palmer": true,
+  "gpDairyOK": false
+ },
+ {
+  "title": "Cheesy Mexican Mince & Rice",
+  "servings": "4",
+  "time": "35 min",
+  "intro": "Taco-spiced mince, rice and black beans cooked together, with melted cheese on top.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "1 tbsp oil"
+     },
+     {
+      "text": "500 g beef mince"
+     },
+     {
+      "text": "1 onion, diced"
+     },
+     {
+      "text": "2 tbsp taco seasoning"
+     },
+     {
+      "text": "1 cup long-grain rice, rinsed"
+     },
+     {
+      "text": "1 can (400 g) chopped tomatoes"
+     },
+     {
+      "text": "1 can (400 g) black beans, drained and rinsed"
+     },
+     {
+      "text": "2 cups beef stock"
+     },
+     {
+      "text": "1 cup frozen corn"
+     },
+     {
+      "text": "¾ cup grated lactose-free tasty cheese"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Brown the mince.** Heat the oil in a large pan with a lid over medium-high heat. Cook the mince and onion for 6–8 minutes, breaking up the mince, until browned. Stir in the taco seasoning."
+     },
+     {
+      "text": "**Add the rice.** Stir in the rice, tomatoes, beans and stock and bring to the boil."
+     },
+     {
+      "text": "**Simmer.** Turn the heat to low, put the lid on and cook for 18 minutes, stirring once halfway, until the rice is tender."
+     },
+     {
+      "text": "**Corn and cheese.** Stir in the corn, scatter the cheese over the top, put the lid back on and cook 3 more minutes, until the cheese melts."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Check the taco seasoning is dairy-free, or use 2 tsp cumin, 2 tsp smoked paprika, 1 tsp garlic powder and ½ tsp chilli powder."
+     },
+     {
+      "text": "Good in wraps with lettuce and salsa. Keeps 3 days in the fridge."
+     }
+    ]
+   }
+  ],
+  "id": "Stovetop-Cheesy_Mexican_Mince_Rice",
+  "file": "Stovetop/Cheesy_Mexican_Mince_Rice.tex",
+  "chapter": "stovetop",
+  "chapterName": "Stovetop",
+  "group": null,
+  "ingredients": [
+   "1 tbsp oil",
+   "500 g beef mince",
+   "1 onion, diced",
+   "2 tbsp taco seasoning",
+   "1 cup long-grain rice, rinsed",
+   "1 can (400 g) chopped tomatoes",
+   "1 can (400 g) black beans, drained and rinsed",
+   "2 cups beef stock",
+   "1 cup frozen corn",
+   "¾ cup grated lactose-free tasty cheese"
+  ],
+  "shop": [
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp oil",
+    "g": 13.5
+   },
+   {
+    "key": "beef-mince",
+    "name": "Beef mince",
+    "aisle": "Meat & fish",
+    "qty": 500.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "500 g beef mince",
+    "g": 500.0
+   },
+   {
+    "key": "onion",
+    "name": "Onions",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 onion, diced",
+    "g": 150.0
+   },
+   {
+    "key": "taco-seasoning",
+    "name": "Taco seasoning",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp taco seasoning",
+    "g": 16.0
+   },
+   {
+    "key": "rice",
+    "name": "Rice",
+    "aisle": "Pasta, rice & grains",
+    "qty": 1.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1 cup long-grain rice, rinsed",
+    "g": 185.0
+   },
+   {
+    "key": "canned-tomatoes",
+    "name": "Canned tomatoes",
+    "aisle": "Cans, jars & pulses",
+    "qty": 1.0,
+    "unit": "can",
+    "optional": false,
+    "raw": "1 can (400 g) chopped tomatoes",
+    "g": 400.0
+   },
+   {
+    "key": "black-beans",
+    "name": "Black beans",
+    "aisle": "Cans, jars & pulses",
+    "qty": 1.0,
+    "unit": "can",
+    "optional": false,
+    "raw": "1 can (400 g) black beans, drained and rinsed",
+    "g": 240.0
+   },
+   {
+    "key": "beef-stock",
+    "name": "Beef stock",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "2 cups beef stock",
+    "g": 500.0
+   },
+   {
+    "key": "corn",
+    "name": "Corn (frozen or canned)",
+    "aisle": "Frozen",
+    "qty": 1.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1 cup frozen corn",
+    "g": 160.0
+   },
+   {
+    "key": "cheese",
+    "name": "Tasty cheese",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 0.75,
+    "unit": "cup",
+    "optional": false,
+    "raw": "¾ cup grated lactose-free tasty cheese",
+    "g": 75.0
+   }
+  ],
+  "tags": [
+   "beef",
+   "mince"
+  ],
+  "nutrition": {
+   "kcal": 670,
+   "protein": 41,
+   "carbs": 62,
+   "fat": 26,
+   "per": "serving",
+   "count": 4
+  },
+  "diet": [],
+  "storage": [
+   "Keeps 3 days in the fridge."
+  ],
+  "minutes": 35,
+  "ahead": [],
+  "meat": "Beef mince",
+  "palmer": true,
+  "gpDairyOK": true
  },
  {
   "title": "Chicken & Veg Stir-Fry Bowl",
@@ -17348,7 +17621,8 @@
   "minutes": 30,
   "ahead": [],
   "meat": "Chicken breast or tenderloins",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Chicken & Vegetable Stir-Fry",
@@ -17617,7 +17891,8 @@
   "minutes": 30,
   "ahead": [],
   "meat": "Chicken breast or tenderloins",
-  "palmer": true
+  "palmer": true,
+  "gpDairyOK": true
  },
  {
   "title": "Chicken or Falafel Wraps",
@@ -17777,7 +18052,8 @@
   "minutes": 30,
   "ahead": [],
   "meat": "Chicken breast or tenderloins",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Chicken Pad Thai",
@@ -18031,7 +18307,8 @@
   "minutes": 30,
   "ahead": [],
   "meat": "Chicken thighs",
-  "palmer": true
+  "palmer": true,
+  "gpDairyOK": true
  },
  {
   "title": "Chicken Shawarma Wraps",
@@ -18172,7 +18449,8 @@
   "minutes": 35,
   "ahead": [],
   "meat": "Chicken thighs",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Chicken Tikka Masala",
@@ -18337,7 +18615,8 @@
   "minutes": 35,
   "ahead": [],
   "meat": "Chicken breast or tenderloins",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Chicken, Tomato & White Bean Pasta",
@@ -18609,7 +18888,8 @@
    "Defrost the chicken overnight."
   ],
   "meat": "Chicken breast or tenderloins",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Classic Spaghetti Bolognese",
@@ -18844,7 +19124,245 @@
   "minutes": 60,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
+ },
+ {
+  "title": "Creamy Garlic Chicken Pasta",
+  "servings": "4",
+  "time": "30 min",
+  "intro": "A creamy garlic sauce made with lactose-free milk instead of cream, with chicken and spinach.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "350 g spaghetti or fettuccine"
+     },
+     {
+      "text": "2 tbsp oil"
+     },
+     {
+      "text": "500 g chicken breast, thinly sliced"
+     },
+     {
+      "text": "4 garlic cloves, crushed"
+     },
+     {
+      "text": "2 tbsp plain flour"
+     },
+     {
+      "text": "2 cups lactose-free milk"
+     },
+     {
+      "text": "1 cup chicken stock"
+     },
+     {
+      "text": "1 tsp mixed herbs"
+     },
+     {
+      "text": "100 g baby spinach"
+     },
+     {
+      "text": "½ cup grated lactose-free tasty cheese"
+     },
+     {
+      "text": "Salt and pepper"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Pasta.** Cook the pasta in salted water. Save ½ cup of the pasta water, then drain."
+     },
+     {
+      "text": "**Chicken.** Meanwhile, heat 1 tbsp oil in a large frying pan over medium-high heat. Cook the chicken for 5–6 minutes until cooked through, then put it on a plate."
+     },
+     {
+      "text": "**Start the sauce.** Turn the heat to medium and add the rest of the oil. Cook the garlic for 30 seconds, then stir in the flour for 1 minute."
+     },
+     {
+      "text": "**Make it creamy.** Slowly whisk in the milk, a little at a time so it stays smooth, then the stock. Simmer for 3–4 minutes, stirring, until it thickens."
+     },
+     {
+      "text": "**Finish.** Stir in the herbs, spinach and cheese until the spinach wilts. Add the chicken and pasta and toss, adding pasta water if it's too thick. Season."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Best eaten fresh. Leftovers keep 2 days in the fridge; add a splash of milk when reheating."
+     }
+    ]
+   }
+  ],
+  "id": "Stovetop-Creamy_Garlic_Chicken_Pasta",
+  "file": "Stovetop/Creamy_Garlic_Chicken_Pasta.tex",
+  "chapter": "stovetop",
+  "chapterName": "Stovetop",
+  "group": null,
+  "ingredients": [
+   "350 g spaghetti or fettuccine",
+   "2 tbsp oil",
+   "500 g chicken breast, thinly sliced",
+   "4 garlic cloves, crushed",
+   "2 tbsp plain flour",
+   "2 cups lactose-free milk",
+   "1 cup chicken stock",
+   "1 tsp mixed herbs",
+   "100 g baby spinach",
+   "½ cup grated lactose-free tasty cheese",
+   "Salt and pepper"
+  ],
+  "shop": [
+   {
+    "key": "spaghetti",
+    "name": "Spaghetti",
+    "aisle": "Pasta, rice & grains",
+    "qty": 350.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "350 g spaghetti or fettuccine",
+    "g": 350.0
+   },
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp oil",
+    "g": 27.0
+   },
+   {
+    "key": "chicken-breast",
+    "name": "Chicken breast or tenderloins",
+    "aisle": "Meat & fish",
+    "qty": 500.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "500 g chicken breast, thinly sliced",
+    "g": 500.0
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 4.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "4 garlic cloves, crushed",
+    "g": 20.0
+   },
+   {
+    "key": "flour",
+    "name": "Plain flour",
+    "aisle": "Baking",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp plain flour",
+    "g": 18.0
+   },
+   {
+    "key": "milk",
+    "name": "Milk",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 2.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "2 cups lactose-free milk",
+    "g": 500.0
+   },
+   {
+    "key": "chicken-stock",
+    "name": "Chicken stock",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1 cup chicken stock",
+    "g": 250.0
+   },
+   {
+    "key": "mixed-herbs",
+    "name": "Mixed herbs",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp mixed herbs",
+    "g": 2.5
+   },
+   {
+    "key": "spinach",
+    "name": "Baby spinach",
+    "aisle": "Fruit & veg",
+    "qty": 100.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "100 g baby spinach",
+    "g": 100.0
+   },
+   {
+    "key": "cheese",
+    "name": "Tasty cheese",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 0.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "½ cup grated lactose-free tasty cheese",
+    "g": 50.0
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Salt and pepper"
+   },
+   {
+    "key": "pepper",
+    "name": "Black pepper",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Salt and pepper"
+   }
+  ],
+  "tags": [
+   "chicken"
+  ],
+  "nutrition": {
+   "kcal": 670,
+   "protein": 49,
+   "carbs": 75,
+   "fat": 19,
+   "per": "serving",
+   "count": 4
+  },
+  "diet": [
+   "quick"
+  ],
+  "storage": [
+   "Leftovers keep 2 days in the fridge; add a splash of milk when reheating."
+  ],
+  "minutes": 30,
+  "ahead": [],
+  "meat": "Chicken breast or tenderloins",
+  "palmer": true,
+  "gpDairyOK": true
  },
  {
   "title": "Freezer Burritos with Beef, Beans & Rice",
@@ -19097,7 +19615,8 @@
   "minutes": 40,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Gnocchi alla Sorrentina",
@@ -19340,7 +19859,8 @@
   "minutes": 90,
   "ahead": [],
   "meat": null,
-  "palmer": true
+  "palmer": true,
+  "gpDairyOK": false
  },
  {
   "title": "Greek-Style Chicken & Chickpea Couscous Bowls",
@@ -19628,7 +20148,8 @@
   "minutes": 35,
   "ahead": [],
   "meat": "Chicken breast or tenderloins",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Homemade Burgers & Fries",
@@ -19908,7 +20429,8 @@
   "minutes": 40,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Homemade Sub Sandwiches",
@@ -20089,7 +20611,8 @@
   "minutes": 20,
   "ahead": [],
   "meat": "Ham",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Korean Bibimbap",
@@ -20239,7 +20762,8 @@
   "minutes": 35,
   "ahead": [],
   "meat": "Chicken",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Korean-Style Steak Bowl",
@@ -20551,7 +21075,8 @@
   "minutes": 40,
   "ahead": [],
   "meat": "Beef steak (rump or topside)",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Lean Sausage Ragu with Brown Rice",
@@ -20857,7 +21382,8 @@
   "minutes": 45,
   "ahead": [],
   "meat": "Sausages",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Mapo Tofu with Pork Mince",
@@ -21108,7 +21634,8 @@
   "minutes": 25,
   "ahead": [],
   "meat": "Pork mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Old School Beef Tacos",
@@ -21502,7 +22029,487 @@
   "minutes": 30,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
+ },
+ {
+  "title": "One-Pan Honey Soy Chicken & Rice",
+  "servings": "4",
+  "time": "35 min",
+  "intro": "Chicken, rice and veg cooked together in one pan, in a sticky honey soy sauce. One pan to wash.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "1 tbsp oil"
+     },
+     {
+      "text": "500 g boneless chicken thighs, cut into bite-sized pieces"
+     },
+     {
+      "text": "1 onion, diced"
+     },
+     {
+      "text": "3 garlic cloves, crushed"
+     },
+     {
+      "text": "1½ cups jasmine rice, rinsed"
+     },
+     {
+      "text": "3 cups chicken stock"
+     },
+     {
+      "text": "3 tbsp soy sauce"
+     },
+     {
+      "text": "2 tbsp honey"
+     },
+     {
+      "text": "2 cups frozen mixed vegetables"
+     },
+     {
+      "text": "2 spring onions, sliced (to serve)"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Brown the chicken.** Heat the oil in a large frying pan or wide pot (one with a lid) over medium-high heat. Cook the chicken for 5 minutes, until browned."
+     },
+     {
+      "text": "**Onion and garlic.** Add the onion and cook for 3 minutes, then the garlic for 30 seconds."
+     },
+     {
+      "text": "**Add the rice.** Stir in the rice for 1 minute so it's coated."
+     },
+     {
+      "text": "**Simmer.** Add the stock, soy sauce and honey and bring to the boil. Turn the heat to low, put the lid on and cook for 12 minutes. Don't lift the lid."
+     },
+     {
+      "text": "**Veg.** Scatter the frozen vegetables over the top, put the lid back on and cook for 5 more minutes, until the rice is tender and the liquid has gone."
+     },
+     {
+      "text": "**Serve.** Fluff with a fork and top with spring onions."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "If the rice is still firm but the pan is dry, add ¼ cup water and cook 3 more minutes."
+     },
+     {
+      "text": "Keeps 3 days in the fridge. Reheat with a splash of water."
+     }
+    ]
+   }
+  ],
+  "id": "Stovetop-One_Pan_Honey_Soy_Chicken_Rice",
+  "file": "Stovetop/One_Pan_Honey_Soy_Chicken_Rice.tex",
+  "chapter": "stovetop",
+  "chapterName": "Stovetop",
+  "group": null,
+  "ingredients": [
+   "1 tbsp oil",
+   "500 g boneless chicken thighs, cut into bite-sized pieces",
+   "1 onion, diced",
+   "3 garlic cloves, crushed",
+   "1½ cups jasmine rice, rinsed",
+   "3 cups chicken stock",
+   "3 tbsp soy sauce",
+   "2 tbsp honey",
+   "2 cups frozen mixed vegetables",
+   "2 spring onions, sliced (to serve)"
+  ],
+  "shop": [
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp oil",
+    "g": 13.5
+   },
+   {
+    "key": "chicken-thigh",
+    "name": "Chicken thighs",
+    "aisle": "Meat & fish",
+    "qty": 500.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "500 g boneless chicken thighs, cut into bite-sized pieces",
+    "g": 500.0
+   },
+   {
+    "key": "onion",
+    "name": "Onions",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 onion, diced",
+    "g": 150.0
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 3.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "3 garlic cloves, crushed",
+    "g": 15.0
+   },
+   {
+    "key": "jasmine-rice",
+    "name": "Jasmine rice",
+    "aisle": "Pasta, rice & grains",
+    "qty": 1.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1½ cups jasmine rice, rinsed",
+    "g": 277.5
+   },
+   {
+    "key": "chicken-stock",
+    "name": "Chicken stock",
+    "aisle": "Pantry: check first",
+    "qty": 3.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "3 cups chicken stock",
+    "g": 750.0
+   },
+   {
+    "key": "soy-sauce",
+    "name": "Soy sauce",
+    "aisle": "Pantry: check first",
+    "qty": 3.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "3 tbsp soy sauce",
+    "g": 54.0
+   },
+   {
+    "key": "honey",
+    "name": "Honey",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp honey",
+    "g": 42.0
+   },
+   {
+    "key": "frozen-mixed-veg",
+    "name": "Frozen mixed vegetables",
+    "aisle": "Frozen",
+    "qty": 2.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "2 cups frozen mixed vegetables",
+    "g": 270.0
+   },
+   {
+    "key": "spring-onion",
+    "name": "Spring onions",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "",
+    "optional": true,
+    "raw": "2 spring onions, sliced (to serve)",
+    "g": 30.0
+   }
+  ],
+  "tags": [
+   "chicken"
+  ],
+  "nutrition": {
+   "kcal": 580,
+   "protein": 33,
+   "carbs": 77,
+   "fat": 15,
+   "per": "serving",
+   "count": 4
+  },
+  "diet": [
+   "dairy-free"
+  ],
+  "storage": [
+   "Keeps 3 days in the fridge.",
+   "Reheat with a splash of water."
+  ],
+  "minutes": 35,
+  "ahead": [],
+  "meat": "Chicken thighs",
+  "palmer": true,
+  "gpDairyOK": true
+ },
+ {
+  "title": "One-Pot Beef & Tomato Pasta",
+  "servings": "4",
+  "time": "30 min",
+  "intro": "Spaghetti bolognese flavours, but the pasta cooks in the sauce, so it's all in one pot.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "1 tbsp oil"
+     },
+     {
+      "text": "500 g beef mince"
+     },
+     {
+      "text": "1 onion, diced"
+     },
+     {
+      "text": "2 garlic cloves, crushed"
+     },
+     {
+      "text": "1 tbsp tomato paste"
+     },
+     {
+      "text": "2 tsp mixed herbs"
+     },
+     {
+      "text": "2 cans (400 g) chopped tomatoes"
+     },
+     {
+      "text": "3 cups beef stock"
+     },
+     {
+      "text": "350 g penne or other short pasta"
+     },
+     {
+      "text": "2 cups frozen mixed vegetables"
+     },
+     {
+      "text": "Salt and pepper"
+     },
+     {
+      "text": "½ cup grated lactose-free tasty cheese (optional, to serve)"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Brown the mince.** Heat the oil in a large pot over medium-high heat. Cook the mince and onion for 6–8 minutes, breaking up the mince, until browned."
+     },
+     {
+      "text": "**Flavour.** Stir in the garlic, tomato paste and herbs for 1 minute."
+     },
+     {
+      "text": "**Sauce.** Add the tomatoes and stock and bring to the boil."
+     },
+     {
+      "text": "**Cook the pasta in it.** Stir in the pasta. Simmer without the lid for 12–14 minutes, stirring often so it doesn't stick, until the pasta is tender and the sauce has thickened. Add a splash of water if it gets dry."
+     },
+     {
+      "text": "**Veg.** Stir in the frozen vegetables for the last 4 minutes."
+     },
+     {
+      "text": "**Serve.** Season with salt and pepper and top with cheese, if using."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Keeps 3 days in the fridge, or freeze portions for up to 3 months."
+     }
+    ]
+   }
+  ],
+  "id": "Stovetop-One_Pot_Beef_Tomato_Pasta",
+  "file": "Stovetop/One_Pot_Beef_Tomato_Pasta.tex",
+  "chapter": "stovetop",
+  "chapterName": "Stovetop",
+  "group": null,
+  "ingredients": [
+   "1 tbsp oil",
+   "500 g beef mince",
+   "1 onion, diced",
+   "2 garlic cloves, crushed",
+   "1 tbsp tomato paste",
+   "2 tsp mixed herbs",
+   "2 cans (400 g) chopped tomatoes",
+   "3 cups beef stock",
+   "350 g penne or other short pasta",
+   "2 cups frozen mixed vegetables",
+   "Salt and pepper",
+   "½ cup grated lactose-free tasty cheese (optional, to serve)"
+  ],
+  "shop": [
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp oil",
+    "g": 13.5
+   },
+   {
+    "key": "beef-mince",
+    "name": "Beef mince",
+    "aisle": "Meat & fish",
+    "qty": 500.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "500 g beef mince",
+    "g": 500.0
+   },
+   {
+    "key": "onion",
+    "name": "Onions",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 onion, diced",
+    "g": 150.0
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "2 garlic cloves, crushed",
+    "g": 10.0
+   },
+   {
+    "key": "tomato-paste",
+    "name": "Tomato paste",
+    "aisle": "Cans, jars & pulses",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp tomato paste",
+    "g": 16.0
+   },
+   {
+    "key": "mixed-herbs",
+    "name": "Mixed herbs",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "2 tsp mixed herbs",
+    "g": 5.0
+   },
+   {
+    "key": "canned-tomatoes",
+    "name": "Canned tomatoes",
+    "aisle": "Cans, jars & pulses",
+    "qty": 2.0,
+    "unit": "can",
+    "optional": false,
+    "raw": "2 cans (400 g) chopped tomatoes",
+    "g": 800.0
+   },
+   {
+    "key": "beef-stock",
+    "name": "Beef stock",
+    "aisle": "Pantry: check first",
+    "qty": 3.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "3 cups beef stock",
+    "g": 750.0
+   },
+   {
+    "key": "pasta",
+    "name": "Pasta",
+    "aisle": "Pasta, rice & grains",
+    "qty": 350.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "350 g penne or other short pasta",
+    "g": 350.0
+   },
+   {
+    "key": "frozen-mixed-veg",
+    "name": "Frozen mixed vegetables",
+    "aisle": "Frozen",
+    "qty": 2.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "2 cups frozen mixed vegetables",
+    "g": 270.0
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Salt and pepper"
+   },
+   {
+    "key": "pepper",
+    "name": "Black pepper",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Salt and pepper"
+   },
+   {
+    "key": "cheese",
+    "name": "Tasty cheese",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 0.5,
+    "unit": "cup",
+    "optional": true,
+    "raw": "½ cup grated lactose-free tasty cheese (optional, to serve)",
+    "g": 50.0
+   }
+  ],
+  "tags": [
+   "beef",
+   "mince"
+  ],
+  "nutrition": {
+   "kcal": 700,
+   "protein": 42,
+   "carbs": 83,
+   "fat": 21,
+   "per": "serving",
+   "count": 4
+  },
+  "diet": [
+   "freezes",
+   "dairy-free",
+   "quick"
+  ],
+  "storage": [
+   "Keeps 3 days in the fridge, or freeze portions for up to 3 months."
+  ],
+  "minutes": 30,
+  "ahead": [],
+  "meat": "Beef mince",
+  "palmer": true,
+  "gpDairyOK": true
  },
  {
   "title": "Pork & Lentil Bolognese",
@@ -21767,7 +22774,8 @@
   "minutes": null,
   "ahead": [],
   "meat": "Pork mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Pork & Veg Dumplings",
@@ -22037,7 +23045,8 @@
   "minutes": 70,
   "ahead": [],
   "meat": "Pork mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Pork Fried Rice with Omelette",
@@ -22260,7 +23269,8 @@
   "minutes": 30,
   "ahead": [],
   "meat": "Pork mince",
-  "palmer": true
+  "palmer": true,
+  "gpDairyOK": true
  },
  {
   "title": "Pork Mince Dan Dan-Style Noodles",
@@ -22558,7 +23568,8 @@
   "minutes": 25,
   "ahead": [],
   "meat": "Pork mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Pork Mince Larb with Rice & Crunchy Veg",
@@ -22824,7 +23835,8 @@
   "minutes": 25,
   "ahead": [],
   "meat": "Pork mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Pork Mince Lettuce Cups (San Choy Bow)",
@@ -23074,7 +24086,8 @@
   "minutes": null,
   "ahead": [],
   "meat": "Pork mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Quick Ramen Bowls",
@@ -23222,7 +24235,8 @@
   "minutes": 25,
   "ahead": [],
   "meat": "Chicken",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Rigatoni all’Amatriciana",
@@ -23446,7 +24460,8 @@
   "minutes": 45,
   "ahead": [],
   "meat": "Bacon",
-  "palmer": true
+  "palmer": true,
+  "gpDairyOK": false
  },
  {
   "title": "Sausage Ragu",
@@ -23744,7 +24759,248 @@
   "minutes": 45,
   "ahead": [],
   "meat": "Sausages",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
+ },
+ {
+  "title": "Savoury Mince on Rice",
+  "servings": "4",
+  "time": "30 min",
+  "intro": "The Kiwi classic: mince in a rich gravy with carrots and peas, over rice.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "1½ cups rice (to serve)"
+     },
+     {
+      "text": "1 tbsp oil"
+     },
+     {
+      "text": "500 g beef mince"
+     },
+     {
+      "text": "1 onion, diced"
+     },
+     {
+      "text": "2 carrots, grated"
+     },
+     {
+      "text": "2 tbsp tomato paste"
+     },
+     {
+      "text": "1 tbsp Worcestershire sauce"
+     },
+     {
+      "text": "1½ cups beef stock"
+     },
+     {
+      "text": "1 cup frozen peas"
+     },
+     {
+      "text": "1 tbsp cornflour, mixed with 2 tbsp cold water"
+     },
+     {
+      "text": "Salt and pepper"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Rice.** Cook the rice in a rice cooker or as the packet says."
+     },
+     {
+      "text": "**Brown the mince.** Heat the oil in a large frying pan over medium-high heat. Cook the mince and onion for 6–8 minutes, breaking up the mince, until browned."
+     },
+     {
+      "text": "**Simmer.** Stir in the carrot, tomato paste, Worcestershire sauce and stock. Simmer for 10 minutes."
+     },
+     {
+      "text": "**Thicken.** Add the peas and the cornflour mix and stir for 2 minutes until the gravy thickens. Season and serve over the rice."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Also good on toast or mashed potato (mash with oil or lactose-free milk)."
+     },
+     {
+      "text": "Freezes well for up to 3 months."
+     }
+    ]
+   }
+  ],
+  "id": "Stovetop-Savoury_Mince_on_Rice",
+  "file": "Stovetop/Savoury_Mince_on_Rice.tex",
+  "chapter": "stovetop",
+  "chapterName": "Stovetop",
+  "group": null,
+  "ingredients": [
+   "1½ cups rice (to serve)",
+   "1 tbsp oil",
+   "500 g beef mince",
+   "1 onion, diced",
+   "2 carrots, grated",
+   "2 tbsp tomato paste",
+   "1 tbsp Worcestershire sauce",
+   "1½ cups beef stock",
+   "1 cup frozen peas",
+   "1 tbsp cornflour, mixed with 2 tbsp cold water",
+   "Salt and pepper"
+  ],
+  "shop": [
+   {
+    "key": "rice",
+    "name": "Rice",
+    "aisle": "Pasta, rice & grains",
+    "qty": 1.5,
+    "unit": "cup",
+    "optional": true,
+    "raw": "1½ cups rice (to serve)",
+    "g": 277.5
+   },
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp oil",
+    "g": 13.5
+   },
+   {
+    "key": "beef-mince",
+    "name": "Beef mince",
+    "aisle": "Meat & fish",
+    "qty": 500.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "500 g beef mince",
+    "g": 500.0
+   },
+   {
+    "key": "onion",
+    "name": "Onions",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 onion, diced",
+    "g": 150.0
+   },
+   {
+    "key": "carrot",
+    "name": "Carrots",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "",
+    "optional": false,
+    "raw": "2 carrots, grated",
+    "g": 240.0
+   },
+   {
+    "key": "tomato-paste",
+    "name": "Tomato paste",
+    "aisle": "Cans, jars & pulses",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp tomato paste",
+    "g": 32.0
+   },
+   {
+    "key": "worcestershire",
+    "name": "Worcestershire sauce",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp Worcestershire sauce",
+    "g": 17.0
+   },
+   {
+    "key": "beef-stock",
+    "name": "Beef stock",
+    "aisle": "Pantry: check first",
+    "qty": 1.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1½ cups beef stock",
+    "g": 375.0
+   },
+   {
+    "key": "frozen-peas",
+    "name": "Frozen peas",
+    "aisle": "Frozen",
+    "qty": 1.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1 cup frozen peas",
+    "g": 140.0
+   },
+   {
+    "key": "cornflour",
+    "name": "Cornflour",
+    "aisle": "Baking",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp cornflour, mixed with 2 tbsp cold water",
+    "g": 8.0
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Salt and pepper"
+   },
+   {
+    "key": "pepper",
+    "name": "Black pepper",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Salt and pepper"
+   }
+  ],
+  "tags": [
+   "beef",
+   "mince"
+  ],
+  "nutrition": {
+   "kcal": 360,
+   "protein": 29,
+   "carbs": 18,
+   "fat": 19,
+   "per": "serving",
+   "count": 4
+  },
+  "diet": [
+   "freezes",
+   "dairy-free",
+   "quick"
+  ],
+  "storage": [
+   "Freezes well for up to 3 months."
+  ],
+  "minutes": 30,
+  "ahead": [],
+  "meat": "Beef mince",
+  "palmer": true,
+  "gpDairyOK": true
  },
  {
   "title": "Sesame Beef, Edamame & Vegetable Noodles",
@@ -24003,7 +25259,8 @@
    "Defrost the mince overnight if frozen."
   ],
   "meat": "Beef mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Sloppy Joes with Lentils",
@@ -24276,7 +25533,8 @@
   "minutes": 35,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Spicy Arrabbiata-Style Mince Pasta",
@@ -24609,7 +25867,8 @@
   "minutes": 30,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Spicy Beef Bolognese with Rigatoni",
@@ -24928,7 +26187,8 @@
   "minutes": 40,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Sweet & Sour Chicken",
@@ -25074,7 +26334,8 @@
   "minutes": 35,
   "ahead": [],
   "meat": "Chicken breast or tenderloins",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Thai Green Chicken Curry",
@@ -25353,7 +26614,8 @@
   "minutes": 60,
   "ahead": [],
   "meat": "Chicken",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Vietnamese Banh Mi",
@@ -25492,7 +26754,8 @@
   "minutes": 35,
   "ahead": [],
   "meat": "Chicken",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Beef Mince & Lentil Shepherd's Pie",
@@ -25729,7 +26992,8 @@
   "minutes": null,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Beef Mince Stuffed Capsicums",
@@ -25975,7 +27239,232 @@
   "minutes": null,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
+ },
+ {
+  "title": "Cheesy Tuna Pasta Bake",
+  "servings": "4",
+  "time": "40 min",
+  "intro": "A pantry-staple pasta bake: tuna, peas and corn in a cheese sauce made with lactose-free milk and oil instead of butter.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "350 g penne or macaroni"
+     },
+     {
+      "text": "2 tbsp oil"
+     },
+     {
+      "text": "1 onion, diced"
+     },
+     {
+      "text": "3 tbsp plain flour"
+     },
+     {
+      "text": "3 cups lactose-free milk"
+     },
+     {
+      "text": "1 tsp Dijon mustard"
+     },
+     {
+      "text": "3 cans (185 g) tuna in springwater, drained"
+     },
+     {
+      "text": "2 cups frozen peas and corn"
+     },
+     {
+      "text": "1 cup grated lactose-free tasty cheese"
+     },
+     {
+      "text": "Salt and pepper"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Heat the oven** to 200 °C (180 °C fan)."
+     },
+     {
+      "text": "**Pasta.** Cook the pasta for 2 minutes less than the packet says, then drain."
+     },
+     {
+      "text": "**Cheese sauce.** Meanwhile, heat the oil in a large pot over medium heat and cook the onion for 3 minutes. Stir in the flour for 1 minute, then slowly whisk in the milk, a little at a time so it stays smooth. Simmer for 3–4 minutes, stirring, until thick. Stir in the mustard and half the cheese, and season."
+     },
+     {
+      "text": "**Mix.** Stir the pasta, tuna, and peas and corn into the sauce. Tip into a baking dish and scatter over the rest of the cheese."
+     },
+     {
+      "text": "**Bake** for 15 minutes, until bubbling and golden on top."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Swap the tuna for 2 cups shredded cooked chicken."
+     },
+     {
+      "text": "Keeps 3 days in the fridge."
+     }
+    ]
+   }
+  ],
+  "id": "Oven-Cheesy_Tuna_Pasta_Bake",
+  "file": "Oven/Cheesy_Tuna_Pasta_Bake.tex",
+  "chapter": "oven",
+  "chapterName": "Oven",
+  "group": null,
+  "ingredients": [
+   "350 g penne or macaroni",
+   "2 tbsp oil",
+   "1 onion, diced",
+   "3 tbsp plain flour",
+   "3 cups lactose-free milk",
+   "1 tsp Dijon mustard",
+   "3 cans (185 g) tuna in springwater, drained",
+   "2 cups frozen peas and corn",
+   "1 cup grated lactose-free tasty cheese",
+   "Salt and pepper"
+  ],
+  "shop": [
+   {
+    "key": "macaroni",
+    "name": "Macaroni",
+    "aisle": "Pasta, rice & grains",
+    "qty": 350.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "350 g penne or macaroni",
+    "g": 350.0
+   },
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp oil",
+    "g": 27.0
+   },
+   {
+    "key": "onion",
+    "name": "Onions",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 onion, diced",
+    "g": 150.0
+   },
+   {
+    "key": "flour",
+    "name": "Plain flour",
+    "aisle": "Baking",
+    "qty": 3.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "3 tbsp plain flour",
+    "g": 27.0
+   },
+   {
+    "key": "milk",
+    "name": "Milk",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 3.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "3 cups lactose-free milk",
+    "g": 750.0
+   },
+   {
+    "key": "mustard",
+    "name": "Mustard",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp Dijon mustard",
+    "g": 5.0
+   },
+   {
+    "key": "tuna",
+    "name": "Tuna",
+    "aisle": "Cans, jars & pulses",
+    "qty": 3.0,
+    "unit": "can",
+    "optional": false,
+    "raw": "3 cans (185 g) tuna in springwater, drained",
+    "g": 450.0
+   },
+   {
+    "key": "frozen-peas",
+    "name": "Frozen peas",
+    "aisle": "Frozen",
+    "qty": 2.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "2 cups frozen peas and corn",
+    "g": 280.0
+   },
+   {
+    "key": "cheese",
+    "name": "Tasty cheese",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 1.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1 cup grated lactose-free tasty cheese",
+    "g": 100.0
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Salt and pepper"
+   },
+   {
+    "key": "pepper",
+    "name": "Black pepper",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Salt and pepper"
+   }
+  ],
+  "tags": [
+   "fish"
+  ],
+  "nutrition": {
+   "kcal": 810,
+   "protein": 57,
+   "carbs": 89,
+   "fat": 24,
+   "per": "serving",
+   "count": 4
+  },
+  "diet": [],
+  "storage": [
+   "Keeps 3 days in the fridge."
+  ],
+  "minutes": 40,
+  "ahead": [],
+  "meat": null,
+  "palmer": true,
+  "gpDairyOK": true
  },
  {
   "title": "Chicken & Vegetable Bake",
@@ -26242,7 +27731,8 @@
    "Prep the vegetables and marinate the chicken the night before to save time on cooking day."
   ],
   "meat": "Chicken thighs",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Classic Bolognese Lasagne",
@@ -26546,7 +28036,8 @@
   "minutes": 150,
   "ahead": [],
   "meat": "Mince (beef or pork)",
-  "palmer": true
+  "palmer": true,
+  "gpDairyOK": false
  },
  {
   "title": "Crunchy Crumbed Chicken Drumsticks",
@@ -26790,7 +28281,8 @@
   "minutes": 60,
   "ahead": [],
   "meat": "Chicken drumsticks",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "DIY Pizzas",
@@ -27033,7 +28525,8 @@
   "minutes": 20,
   "ahead": [],
   "meat": null,
-  "palmer": true
+  "palmer": true,
+  "gpDairyOK": true
  },
  {
   "title": "Lemon Herb Salmon Tray Bake",
@@ -27257,7 +28750,197 @@
   "minutes": null,
   "ahead": [],
   "meat": "Salmon",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
+ },
+ {
+  "title": "Lemon Pepper Chicken Thighs with Roast Veg",
+  "servings": "4",
+  "time": "45 min",
+  "intro": "Lemony chicken thighs roasted on the same tray as potatoes and green beans.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "750 g potatoes, cut into 2 cm chunks"
+     },
+     {
+      "text": "2 tbsp oil"
+     },
+     {
+      "text": "600 g boneless chicken thighs"
+     },
+     {
+      "text": "1 lemon, zested and juiced"
+     },
+     {
+      "text": "2 tsp lemon pepper seasoning"
+     },
+     {
+      "text": "3 garlic cloves, crushed"
+     },
+     {
+      "text": "300 g frozen green beans"
+     },
+     {
+      "text": "Salt"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Heat the oven** to 220 °C (200 °C fan)."
+     },
+     {
+      "text": "**Potatoes first.** Toss the potatoes with 1 tbsp oil and a pinch of salt on a large oven tray and roast for 15 minutes."
+     },
+     {
+      "text": "**Season the chicken.** Meanwhile, mix the rest of the oil with the lemon zest, half the juice, the lemon pepper and garlic. Coat the chicken in it."
+     },
+     {
+      "text": "**Roast together.** Push the potatoes to the sides and add the chicken and green beans. Roast for 20–25 minutes, until the chicken is cooked through (no pink in the middle) and the potatoes are golden."
+     },
+     {
+      "text": "**Serve.** Squeeze over the rest of the lemon juice."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Bone-in thighs or drumsticks work too: give them 35–40 minutes."
+     },
+     {
+      "text": "Keeps 3 days in the fridge."
+     }
+    ]
+   }
+  ],
+  "id": "Oven-Lemon_Pepper_Chicken_Roast_Veg",
+  "file": "Oven/Lemon_Pepper_Chicken_Roast_Veg.tex",
+  "chapter": "oven",
+  "chapterName": "Oven",
+  "group": null,
+  "ingredients": [
+   "750 g potatoes, cut into 2 cm chunks",
+   "2 tbsp oil",
+   "600 g boneless chicken thighs",
+   "1 lemon, zested and juiced",
+   "2 tsp lemon pepper seasoning",
+   "3 garlic cloves, crushed",
+   "300 g frozen green beans",
+   "Salt"
+  ],
+  "shop": [
+   {
+    "key": "potato",
+    "name": "Potatoes",
+    "aisle": "Fruit & veg",
+    "qty": 750.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "750 g potatoes, cut into 2 cm chunks",
+    "g": 750.0
+   },
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp oil",
+    "g": 27.0
+   },
+   {
+    "key": "chicken-thigh",
+    "name": "Chicken thighs",
+    "aisle": "Meat & fish",
+    "qty": 600.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "600 g boneless chicken thighs",
+    "g": 600.0
+   },
+   {
+    "key": "lemon",
+    "name": "Lemons",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 lemon, zested and juiced",
+    "g": 40.0
+   },
+   {
+    "key": "lemon-pepper",
+    "name": "Lemon pepper seasoning",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "2 tsp lemon pepper seasoning",
+    "g": 10.0
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 3.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "3 garlic cloves, crushed",
+    "g": 15.0
+   },
+   {
+    "key": "green-beans",
+    "name": "Green beans",
+    "aisle": "Frozen",
+    "qty": 300.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "300 g frozen green beans",
+    "g": 300.0
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": false,
+    "raw": "Salt"
+   }
+  ],
+  "tags": [
+   "chicken"
+  ],
+  "nutrition": {
+   "kcal": 460,
+   "protein": 34,
+   "carbs": 39,
+   "fat": 19,
+   "per": "serving",
+   "count": 4
+  },
+  "diet": [
+   "dairy-free"
+  ],
+  "storage": [
+   "Keeps 3 days in the fridge."
+  ],
+  "minutes": 45,
+  "ahead": [],
+  "meat": "Chicken thighs",
+  "palmer": true,
+  "gpDairyOK": true
  },
  {
   "title": "Loaded Beef Nachos",
@@ -27557,7 +29240,8 @@
   "minutes": 30,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Loaded Jacket Potatoes",
@@ -27686,7 +29370,8 @@
   "minutes": 60,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Meatloaf Muffins",
@@ -27940,7 +29625,8 @@
   "minutes": 40,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Mince & Cheese Pie Bake",
@@ -28212,7 +29898,228 @@
   "minutes": 55,
   "ahead": [],
   "meat": "Beef mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
+ },
+ {
+  "title": "One-Pan Sausage, Potato & Capsicum Bake",
+  "servings": "4",
+  "time": "10 min prep + 35 min",
+  "intro": "Sausages, potatoes, kumara and capsicum roasted on one tray, with chickpeas for extra protein.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "8 sausages"
+     },
+     {
+      "text": "600 g potatoes, cut into 3 cm chunks"
+     },
+     {
+      "text": "1 kumara (about 400 g), cut into 3 cm chunks"
+     },
+     {
+      "text": "1 red onion, cut into wedges"
+     },
+     {
+      "text": "1 capsicum, cut into chunks"
+     },
+     {
+      "text": "1 can (400 g) chickpeas, drained and rinsed"
+     },
+     {
+      "text": "2 tbsp oil"
+     },
+     {
+      "text": "2 tsp mixed herbs"
+     },
+     {
+      "text": "1 tsp smoked paprika"
+     },
+     {
+      "text": "Salt and pepper"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Heat the oven** to 220 °C (200 °C fan)."
+     },
+     {
+      "text": "**Veg first.** Toss the potatoes, kumara, onion, capsicum and chickpeas with the oil, herbs, paprika, salt and pepper on a large oven tray. Use two trays if it's crowded, or the veg steams instead of browning. Roast for 15 minutes."
+     },
+     {
+      "text": "**Add the sausages.** Nestle the sausages in among the veg and roast for 20 minutes more, turning them once, until they're cooked through and the veg is golden."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Check the sausage label: some contain milk powder or cheese."
+     },
+     {
+      "text": "Keeps 3 days in the fridge."
+     }
+    ]
+   }
+  ],
+  "id": "Oven-Sausage_Potato_Capsicum_Bake",
+  "file": "Oven/Sausage_Potato_Capsicum_Bake.tex",
+  "chapter": "oven",
+  "chapterName": "Oven",
+  "group": null,
+  "ingredients": [
+   "8 sausages",
+   "600 g potatoes, cut into 3 cm chunks",
+   "1 kumara (about 400 g), cut into 3 cm chunks",
+   "1 red onion, cut into wedges",
+   "1 capsicum, cut into chunks",
+   "1 can (400 g) chickpeas, drained and rinsed",
+   "2 tbsp oil",
+   "2 tsp mixed herbs",
+   "1 tsp smoked paprika",
+   "Salt and pepper"
+  ],
+  "shop": [
+   {
+    "key": "sausages",
+    "name": "Sausages",
+    "aisle": "Meat & fish",
+    "qty": 8.0,
+    "unit": "",
+    "optional": false,
+    "raw": "8 sausages",
+    "g": 560.0
+   },
+   {
+    "key": "potato",
+    "name": "Potatoes",
+    "aisle": "Fruit & veg",
+    "qty": 600.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "600 g potatoes, cut into 3 cm chunks",
+    "g": 600.0
+   },
+   {
+    "key": "kumara",
+    "name": "Kumara",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 kumara (about 400 g), cut into 3 cm chunks",
+    "g": 300.0
+   },
+   {
+    "key": "red-onion",
+    "name": "Red onion",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 red onion, cut into wedges",
+    "g": 150.0
+   },
+   {
+    "key": "capsicum",
+    "name": "Capsicums",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 capsicum, cut into chunks",
+    "g": 160.0
+   },
+   {
+    "key": "chickpeas",
+    "name": "Chickpeas",
+    "aisle": "Cans, jars & pulses",
+    "qty": 1.0,
+    "unit": "can",
+    "optional": false,
+    "raw": "1 can (400 g) chickpeas, drained and rinsed",
+    "g": 240.0
+   },
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp oil",
+    "g": 27.0
+   },
+   {
+    "key": "mixed-herbs",
+    "name": "Mixed herbs",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "2 tsp mixed herbs",
+    "g": 5.0
+   },
+   {
+    "key": "smoked-paprika",
+    "name": "Smoked paprika",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp smoked paprika",
+    "g": 2.5
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Salt and pepper"
+   },
+   {
+    "key": "pepper",
+    "name": "Black pepper",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Salt and pepper"
+   }
+  ],
+  "tags": [
+   "pork"
+  ],
+  "nutrition": {
+   "kcal": 710,
+   "protein": 28,
+   "carbs": 64,
+   "fat": 38,
+   "per": "serving",
+   "count": 4
+  },
+  "diet": [
+   "dairy-free"
+  ],
+  "storage": [
+   "Keeps 3 days in the fridge."
+  ],
+  "minutes": 45,
+  "ahead": [],
+  "meat": "Sausages",
+  "palmer": true,
+  "gpDairyOK": true
  },
  {
   "title": "Sausage Rolls with Grated Veg",
@@ -28461,7 +30368,8 @@
   "minutes": 50,
   "ahead": [],
   "meat": "Pork mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Rustic Chickpea & Rocket Salad with Mustard-Garlic Vinaigrette",
@@ -28713,7 +30621,8 @@
   "minutes": 15,
   "ahead": [],
   "meat": null,
-  "palmer": true
+  "palmer": true,
+  "gpDairyOK": true
  },
  {
   "title": "Cajun Rice",
@@ -28974,7 +30883,8 @@
   "minutes": 30,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Coconut Rice",
@@ -29112,7 +31022,8 @@
   "minutes": 25,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Coriander Lime Rice",
@@ -29263,7 +31174,8 @@
   "minutes": 25,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Egg Fried Rice",
@@ -29472,7 +31384,8 @@
   "minutes": 15,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Garlic Butter Rice",
@@ -29631,7 +31544,8 @@
   "minutes": 25,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Herbed Couscous",
@@ -29809,7 +31723,8 @@
   "minutes": 10,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Lemon & Herb Quinoa",
@@ -30001,7 +31916,8 @@
   "minutes": 25,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Mexican Tomato Rice",
@@ -30234,7 +32150,8 @@
   "minutes": 30,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Rice with Peas & Parmesan",
@@ -30394,7 +32311,8 @@
   "minutes": 25,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Turmeric Rice with Peas",
@@ -30591,7 +32509,8 @@
   "minutes": 25,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Asparagus with Capers and Parsley Mayonnaise",
@@ -30770,7 +32689,8 @@
   "minutes": 45,
   "ahead": [],
   "meat": null,
-  "palmer": true
+  "palmer": true,
+  "gpDairyOK": true
  },
  {
   "title": "Cauliflower Cheese",
@@ -30958,7 +32878,8 @@
   "minutes": 35,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Crispy Smashed Potatoes",
@@ -31118,7 +33039,8 @@
   "minutes": 60,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Garlic Green Beans",
@@ -31278,7 +33200,8 @@
   "minutes": 10,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Kumara Mash",
@@ -31437,7 +33360,8 @@
   "minutes": 25,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Kumara Wedges with Aioli",
@@ -31612,7 +33536,8 @@
   "minutes": 40,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Roast Vegetables",
@@ -31824,7 +33749,8 @@
   "minutes": 60,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Sesame Asian Greens",
@@ -32011,7 +33937,8 @@
   "minutes": 10,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Banana Protein Pancakes",
@@ -32225,7 +34152,8 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Breakfast Burritos",
@@ -32469,7 +34397,8 @@
   "minutes": null,
   "ahead": [],
   "meat": "Sausages",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Egg Muffins",
@@ -32656,7 +34585,8 @@
   "minutes": null,
   "ahead": [],
   "meat": "Bacon",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Frittata Slices",
@@ -32886,7 +34816,8 @@
   "minutes": null,
   "ahead": [],
   "meat": "Chicken breast or tenderloins",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "High-Protein Chia Pudding",
@@ -33072,7 +35003,8 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Overnight Oats",
@@ -33257,7 +35189,8 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Savoury Egg & Rice Bowl",
@@ -33450,7 +35383,8 @@
   "minutes": null,
   "ahead": [],
   "meat": "Ham",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Boiled Eggs & Crackers",
@@ -33591,7 +35525,8 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Cheese & Marmite Scrolls",
@@ -33803,7 +35738,8 @@
   "minutes": 40,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Cottage Cheese & Tomato Toast",
@@ -33952,7 +35888,8 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Crunchy Spiced Roasted Chickpeas",
@@ -34134,7 +36071,8 @@
   "minutes": 40,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Devilled Eggs",
@@ -34304,7 +36242,8 @@
   "minutes": 20,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Edamame with Sea Salt",
@@ -34423,7 +36362,8 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Greek Yoghurt & Berry Bowl",
@@ -34546,7 +36486,8 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Homemade Hummus",
@@ -34734,7 +36675,8 @@
   "minutes": 10,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Homemade Protein Balls",
@@ -34906,7 +36848,8 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Hummus & Vegetable Sticks",
@@ -35046,7 +36989,8 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Microwave Mug Omelette",
@@ -35214,7 +37158,8 @@
   "minutes": 3,
   "ahead": [],
   "meat": "Ham",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Oven Beef Jerky",
@@ -35426,7 +37371,8 @@
   "minutes": 255,
   "ahead": [],
   "meat": "Beef steak (rump or topside)",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Parmesan & Garlic Popcorn",
@@ -35584,7 +37530,8 @@
   "minutes": 10,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Peanut Butter & Banana Rice Cakes",
@@ -35705,7 +37652,8 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Pork Mince Rice Paper Rolls",
@@ -36000,7 +37948,8 @@
   "minutes": 30,
   "ahead": [],
   "meat": "Pork mince",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Tuna & Crackers",
@@ -36178,7 +38127,8 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Tuna & Sweetcorn Fritters",
@@ -36407,7 +38357,8 @@
   "minutes": 25,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Tzatziki with Baked Pita Chips",
@@ -36618,7 +38569,8 @@
   "minutes": 15,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Berry & Oat Power Shake",
@@ -36773,7 +38725,8 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Classic Chocolate Peanut Butter Shake",
@@ -36916,7 +38869,8 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Green Spinach & Banana Shake",
@@ -37071,7 +39025,8 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Mango & Coconut Tropical Shake",
@@ -37202,7 +39157,8 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Vanilla Cinnamon Shake",
@@ -37343,7 +39299,8 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Baked Cinnamon Apples",
@@ -37508,7 +39465,8 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Banana Nice Cream",
@@ -37664,7 +39622,8 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Chocolate Protein Mug Cake",
@@ -37842,7 +39801,8 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Chocolate Self-Saucing Pudding",
@@ -38068,7 +40028,8 @@
   "minutes": 50,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Feijoa & Apple Crumble",
@@ -38291,7 +40252,8 @@
   "minutes": 50,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Frozen Yoghurt Bark",
@@ -38451,7 +40413,8 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "No-Bake Chocolate Oat Cookies",
@@ -38638,7 +40601,8 @@
   "minutes": null,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Pavlova",
@@ -38834,7 +40798,8 @@
   "minutes": 95,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Sticky Date Pudding",
@@ -39065,7 +41030,8 @@
   "minutes": 60,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Afghan Biscuits",
@@ -39290,7 +41256,8 @@
   "minutes": 45,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "ANZAC Biscuits",
@@ -39470,7 +41437,8 @@
   "minutes": 30,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Apple & Feijoa Crumble Muffins",
@@ -39749,7 +41717,8 @@
   "minutes": 40,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Apple Cinnamon Muffins",
@@ -40000,7 +41969,8 @@
   "minutes": 35,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Bacon, Corn & Cheddar Muffins",
@@ -40202,7 +42172,8 @@
   "minutes": 35,
   "ahead": [],
   "meat": "Bacon",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Banana Bread",
@@ -40404,7 +42375,8 @@
   "minutes": 75,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Banana Chocolate Chip Muffins",
@@ -40610,7 +42582,8 @@
   "minutes": 30,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Blueberry Muffins",
@@ -40826,7 +42799,8 @@
   "minutes": 35,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Caramelised Onion & Cheddar Scones",
@@ -41046,7 +43020,8 @@
   "minutes": 50,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Carrot Cake Muffins with Cream Cheese Drizzle",
@@ -41384,7 +43359,8 @@
   "minutes": 40,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Cheese Scones",
@@ -41574,7 +43550,8 @@
   "minutes": 25,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Cheesy Garlic Pull-Apart Bread",
@@ -41721,7 +43698,8 @@
   "minutes": 35,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Chocolate Brownies",
@@ -41920,7 +43898,8 @@
   "minutes": 45,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Chocolate Muffins",
@@ -42137,7 +44116,8 @@
   "minutes": 40,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Corn Muffins",
@@ -42308,7 +44288,8 @@
   "minutes": 25,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Courgette & Parmesan Muffins",
@@ -42504,7 +44485,8 @@
   "minutes": 35,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Crunchy Lemon Poppyseed Muffins",
@@ -42701,7 +44683,8 @@
   "minutes": 25,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Date Scones",
@@ -42900,7 +44883,8 @@
   "minutes": 25,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Feijoa Muffins",
@@ -43109,7 +45093,8 @@
   "minutes": 30,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Garlic Butter Naan (Yeasted)",
@@ -43315,7 +45300,8 @@
   "minutes": 80,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Ginger Crunch",
@@ -43523,7 +45509,8 @@
   "minutes": 40,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Ham & Cheese Breakfast Muffins",
@@ -43720,7 +45707,8 @@
   "minutes": 30,
   "ahead": [],
   "meat": "Ham",
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Harry’s Favourite Chocolate Cake",
@@ -43986,7 +45974,8 @@
   "minutes": 75,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Lemon Muffins",
@@ -44195,7 +46184,8 @@
   "minutes": 30,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Louise Slice",
@@ -44421,7 +46411,8 @@
   "minutes": 50,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "No-Knead Overnight Bread",
@@ -44545,7 +46536,8 @@
   "minutes": 1135,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Passionfruit & White Chocolate Muffins",
@@ -44793,7 +46785,8 @@
   "minutes": 35,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Raspberry & White Chocolate Muffins",
@@ -44979,7 +46972,8 @@
   "minutes": 30,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Spinach & Feta Muffins",
@@ -45198,7 +47192,8 @@
   "minutes": 25,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Yoghurt Naan Bread",
@@ -45346,7 +47341,8 @@
   "minutes": 30,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Brioche",
@@ -45538,7 +47534,8 @@
   "minutes": 210,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Cheese & Mustard Loaf",
@@ -45736,7 +47733,8 @@
   "minutes": 240,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Date & Walnut Loaf",
@@ -45940,7 +47938,8 @@
   "minutes": 300,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "French Loaf",
@@ -46074,7 +48073,8 @@
   "minutes": 360,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Garlic Herb Loaf",
@@ -46258,7 +48258,8 @@
   "minutes": 240,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Half-and-Half Wholemeal Loaf",
@@ -46431,7 +48432,8 @@
   "minutes": 300,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Kumara Bread",
@@ -46607,7 +48609,8 @@
   "minutes": 240,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Mexican Chilli Loaf",
@@ -46833,7 +48836,8 @@
   "minutes": 240,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Mixed Grain Bread",
@@ -47079,7 +49083,8 @@
   "minutes": 300,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Soft Sandwich Bread",
@@ -47238,7 +49243,8 @@
   "minutes": 300,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Spicy Fruit Loaf",
@@ -47462,7 +49468,8 @@
   "minutes": 240,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "White Loaf",
@@ -47621,7 +49628,8 @@
   "minutes": 240,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Bagels",
@@ -47812,7 +49820,8 @@
   "minutes": 200,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Bread Maker Pizza Dough",
@@ -48005,7 +50014,8 @@
   "minutes": 75,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": true
  },
  {
   "title": "Bread Rolls",
@@ -48197,7 +50207,8 @@
   "minutes": 200,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Cinnamon Tea Ring",
@@ -48439,7 +50450,8 @@
   "minutes": 200,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Focaccia",
@@ -48648,7 +50660,8 @@
   "minutes": 105,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Hot Cross Buns",
@@ -48938,7 +50951,8 @@
   "minutes": 200,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  },
  {
   "title": "Banana Yoghurt Tea Bread",
@@ -49133,6 +51147,7 @@
   "minutes": 70,
   "ahead": [],
   "meat": null,
-  "palmer": false
+  "palmer": false,
+  "gpDairyOK": false
  }
 ]

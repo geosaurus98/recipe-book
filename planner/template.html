@@ -460,9 +460,10 @@ const PROFILE = (() => {
 const GP = PROFILE === "gp";
 const SUFFIX = PROFILES[PROFILE].suffix;
 const BASIC_MINUTES = 45, BASIC_INGREDIENTS = 14;
+// GP is dairy-free but has lactose-free milk and cheese: hide recipes needing other dairy.
 function isBasic(r) {
-  return !!(r.custom || r.palmer || (!["slow", "pressure"].includes(r.chapter) && r.minutes != null
-    && r.minutes <= BASIC_MINUTES && r.ingredients.length <= BASIC_INGREDIENTS));
+  return !!(r.custom || (r.gpDairyOK !== false && (r.palmer || (!["slow", "pressure"].includes(r.chapter) && r.minutes != null
+    && r.minutes <= BASIC_MINUTES && r.ingredients.length <= BASIC_INGREDIENTS))));
 }
 function visibleRecipes() { return GP ? RECIPES.filter(isBasic) : RECIPES; }
 
@@ -2678,7 +2679,7 @@ function renderRecipes() {
   const all = visibleRecipes(), nCustom = all.filter(r => r.custom).length;
   const head = `
   <section class="section-head">
-    <div><h2>${ui.ideas ? "Recipe ideas" : ui.make ? "What can I make?" : "Recipes"}</h2><p>${ui.ideas ? "Ideas from the To Add lists that aren't in the book yet. Write one up to add it." : ui.make ? "Pick what's in the fridge and cupboard, and see what it makes." : GP ? `${all.length} easy recipes: GP's book, plus quick ones (${BASIC_MINUTES} min or less, ${BASIC_INGREDIENTS} ingredients or fewer) with no slow cooker or Instant Pot.` : `All ${all.length} recipes${nCustom ? `: ${all.length - nCustom} from your book and ${nCustom} added here` : " from your book"}.`}</p></div>
+    <div><h2>${ui.ideas ? "Recipe ideas" : ui.make ? "What can I make?" : "Recipes"}</h2><p>${ui.ideas ? "Ideas from the To Add lists that aren't in the book yet. Write one up to add it." : ui.make ? "Pick what's in the fridge and cupboard, and see what it makes." : GP ? `${all.length} easy recipes: GP's book, plus quick ones (${BASIC_MINUTES} min or less, ${BASIC_INGREDIENTS} ingredients or fewer) with no slow cooker or Instant Pot. No butter, cream or yoghurt; use lactose-free milk and cheese.` : `All ${all.length} recipes${nCustom ? `: ${all.length - nCustom} from your book and ${nCustom} added here` : " from your book"}.`}</p></div>
     <div class="actions">
       <button class="btn${ui.make ? " primary" : ""}" data-act="make-toggle" aria-pressed="${!!ui.make}">${ui.make ? "Back to all recipes" : "What can I make?"}</button>
       <button class="btn${ui.ideas ? " primary" : ""}" data-act="ideas-toggle" aria-pressed="${!!ui.ideas}">${ui.ideas ? "Back to all recipes" : "Ideas"}</button>

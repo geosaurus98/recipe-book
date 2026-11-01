@@ -175,7 +175,7 @@ NUTR = {
     "stock": STOCK, "chicken-stock": STOCK, "beef-stock": STOCK,
     "stock-powder": n(250, 10, 30, 10, tsp=3, tbsp=8),
     "taco-seasoning": n(320, 6, 60, 5, packet=30, tbsp=8),
-    "salt": ZERO, "pepper": ZERO, "salt-pepper": ZERO, "white-pepper": ZERO,
+    "salt": ZERO, "pepper": ZERO, "lemon-pepper": ZERO, "salt-pepper": ZERO, "white-pepper": ZERO,
     # Fresh fruit and veg (edible weight)
     "onion": n(40, 1.1, 9, 0.1, each=150, cup=160),
     "red-onion": n(40, 1.1, 9, 0.1, each=150, cup=160),

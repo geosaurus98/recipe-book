@@ -364,6 +364,9 @@ NOT_VEGETARIAN = {"chicken-stock", "beef-stock", "fish-sauce", "oyster-sauce", "
 DAIRY = {"milk", "cream", "sour-cream", "cream-cheese", "cottage-cheese", "greek-yoghurt", "yoghurt",
          "butter", "cheese", "mozzarella", "parmesan", "feta", "halloumi", "ricotta", "milk-powder",
          "protein-powder"}
+# GP is dairy-free but uses lactose-free milk and cheese, so his planner only
+# hides recipes that need other dairy.
+GP_DAIRY_OK = {"milk", "cheese", "mozzarella"}
 # Dishes that freeze well even when the recipe doesn't say so
 FREEZES_TITLE = re.compile(
     r"stew|curry|soup|chilli|bolognese|ragu|keema|congee|adobo|pulled|shredded|taco filling|"
@@ -594,6 +597,7 @@ def main():
             r["ahead"] = ahead_notes(r)
             r["meat"] = main_meat(r)
             r["palmer"] = im.group(1) in palmer
+            r["gpDairyOK"] = not ({x["key"] for x in r["shop"] if not x["optional"]} & (DAIRY - GP_DAIRY_OK))
             info_rows.append((tex_title, r["nutrition"], r["diet"]))
             recipes.append(r)
     (ROOT / "recipe_info.tex").write_text(recipe_info_tex(info_rows), encoding="utf-8", newline="\n")
