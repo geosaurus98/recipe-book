@@ -29,12 +29,12 @@ Each folder (except the course folders) also has an `Ideas.tex`: a checklist of
 recipes that could go in that chapter. `To_Add.tex` shows them all in one PDF.
 Tick an idea with `\done`, or delete its line once the recipe is in the book.
 
-Recipes converted from earlier Claude-made books start with a `% From ...`
+Recipes converted from earlier recipe books start with a `% From ...`
 comment saying where they came from (those books have since been removed).
 Those from `recipe_book.tex` have `--` for the time because the original
 didn't give one.
 
-## Adding a recipe made in Claude
+## Adding a recipe
 
 1. Save it as `Folder/Recipe_Name.tex` (no spaces or `&` in the file name).
 2. Add it to the right chapter in `main.tex`, which keeps chapters in title order:
@@ -72,7 +72,7 @@ a comma:
   plain flour, cornflour, yoghurt, coriander.
 
 `python3 tools/standardise_ingredients.py` rewrites recipes into this style.
-It's safe to run again after adding recipes from Claude; it only changes
+It's safe to run again after adding new recipes; it only changes
 lines that don't match yet.
 
 Recipe files can use `recipebox`, `ingredients`, `method` (optionally
