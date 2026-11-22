@@ -270,6 +270,7 @@ main.wrap { padding-block: 20px 48px; display: grid; gap: 28px; }
 .sheet .file { font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted); }
 .sheet-actions { display: flex; flex-wrap: wrap; gap: 8px; }
 
+.toast-act { border: 0; background: none; color: var(--bg); font: inherit; font-weight: 700; text-decoration: underline; margin-left: 8px; cursor: pointer; }
 .toast { position: fixed; left: 50%; bottom: calc(18px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: var(--ink); color: var(--bg); padding: 8px 16px; border-radius: 999px; font-size: 0.88rem; font-weight: 600; z-index: 30; box-shadow: var(--shadow); }
 @media (prefers-reduced-motion: no-preference) {
   .sheet { animation: rise 0.18s ease-out; }
@@ -562,6 +563,7 @@ function sanitize(s) {
   out.fav = out.fav || {}; out.rating = out.rating || {}; out.log = out.log || {}; out.pantry = out.pantry || {};
   out.days = out.days || {}; out.dinner = /^\d\d:\d\d$/.test(out.dinner || "") ? out.dinner : "18:30";
   out.history = (out.history || []).slice(0, 12);
+  if (!out.lastWeek || typeof out.lastWeek !== "object") delete out.lastWeek;
   return out;
 }
 
@@ -879,11 +881,12 @@ function plannedIds() {
 function recentIds() {
   return new Set(state.history.slice(0, 4).flatMap(h => h.ids));
 }
-function toast(msg) {
+// An optional action button (e.g. Undo) keeps the message up for longer.
+function toast(msg, action) {
   const root = document.getElementById("toast-root");
-  root.innerHTML = `<div class="toast">${esc(msg)}</div>`;
+  root.innerHTML = `<div class="toast">${esc(msg)}${action ? ` <button class="toast-act" data-act="${action.act}">${esc(action.label)}</button>` : ""}</div>`;
   clearTimeout(toast.t);
-  toast.t = setTimeout(() => { root.innerHTML = ""; }, 2200);
+  toast.t = setTimeout(() => { root.innerHTML = ""; }, action ? 8000 : 2200);
 }
 function isHighProtein(r) { return !!r.nutrition && r.nutrition.protein >= proteinGoal(); }
 function macroSpans(r) {
@@ -2794,6 +2797,7 @@ function renderWeek() {
       <button class="btn primary" data-act="new-week">Start next week</button>
     </div>
   </section>
+  ${state.lastWeek && !plannedIds().length ? `<p class="today undo-week">Started a new week by mistake? <button class="btn small primary" data-act="undo-week">Bring back the week of ${esc(prettyWeek(state.lastWeek.week))}</button></p>` : ""}
   <section class="trio" aria-label="This week's trio">${SLOTS.map(slotCard).join("")}</section>
   ${renderLeftovers()}
   <section class="extras" aria-label="Extras">
@@ -3069,16 +3073,30 @@ document.addEventListener("click", e => {
     case "new-week": {
       const ids = plannedIds();
       commit(s => {
+        // Kept so "Bring back last week" can undo this.
+        s.lastWeek = clone({ week: s.week, slots: s.slots, extras: s.extras, cooked: s.cooked, checked: s.checked, days: s.days, saved: ids.length > 0 });
         if (ids.length) s.history.unshift({ week: s.week, ids });
         s.history = s.history.slice(0, 12);
         const [y, m, d] = s.week.split("-").map(Number);
         const next = mondayOf(new Date(y, m - 1, d + 7));
         const thisWeek = mondayOf(new Date());
         s.week = next > thisWeek ? next : thisWeek;
-        s.slots = { slow: null, pressure: null, quick: null };
+        s.slots = Object.fromEntries(SLOTS.map(sl => [sl.key, null]));
         s.extras = []; s.cooked = {}; s.checked = {}; s.days = {};
       });
-      toast("Last week saved to history");
+      toast("New week started", { act: "undo-week", label: "Undo" });
+      break;
+    }
+    case "undo-week": {
+      const lw = state.lastWeek;
+      if (!lw) break;
+      commit(s => {
+        if (lw.saved && s.history[0] && s.history[0].week === lw.week) s.history.shift();
+        Object.assign(s, { week: lw.week, slots: lw.slots, extras: lw.extras, cooked: lw.cooked, checked: lw.checked, days: lw.days });
+        delete s.lastWeek;
+      });
+      document.getElementById("toast-root").innerHTML = "";
+      toast("Last week is back");
       break;
     }
     case "chapter": ui.chapter = ui.chapter === el.dataset.v ? null : el.dataset.v; ui.group = null; render(); break;
