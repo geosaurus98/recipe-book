@@ -214,6 +214,7 @@ main.wrap { padding-block: 20px 48px; display: grid; gap: 28px; }
 .toggle { display: inline-flex; align-items: center; gap: 8px; font-size: 0.85rem; color: var(--muted); }
 .history { display: grid; gap: 6px; font-size: 0.88rem; }
 .history li { color: var(--muted); }
+.history li .btn { margin-left: 6px; }
 .history strong { color: var(--ink); font-weight: 600; }
 
 /* Recipes */
@@ -2776,8 +2777,9 @@ function renderWeek() {
       <button class="btn small ghost" data-act="remove-extra" data-id="${id}">Remove</button>
     </div>`;
   }).join("");
-  const hist = state.history.slice(0, 6).map(h =>
-    `<li><strong>${esc(prettyWeek(h.week))}</strong> · ${h.ids.map(id => esc(BY_ID[id]?.title || "Removed recipe")).join(" · ")}</li>`).join("");
+  const hist = state.history.slice(0, 6).map((h, i) =>
+    `<li><strong>${esc(prettyWeek(h.week))}</strong> · ${h.ids.map(id => esc(BY_ID[id]?.title || "Removed recipe")).join(" · ")}
+      <button class="btn small" data-act="reuse-week" data-i="${i}">Use this week again</button></li>`).join("");
   return `
   ${todayBox()}
   ${weekSummary()}
@@ -2808,7 +2810,7 @@ function renderWeek() {
     ${extras || `<p class="empty-note">No extras this week.</p>`}
   </section>
   ${renderDays()}
-  ${hist ? `<section><div class="section-head"><div><h2>Recent weeks</h2><p>Shuffle avoids these for four weeks.</p></div></div><ul class="history">${hist}</ul></section>` : ""}`;
+  ${hist ? `<section><div class="section-head"><div><h2>Recent weeks</h2><p>Shuffle avoids these for four weeks. Tap "Use this week again" to put one back on the plan.</p></div></div><ul class="history">${hist}</ul></section>` : ""}`;
 }
 
 function filteredRecipes() {
@@ -3085,6 +3087,25 @@ document.addEventListener("click", e => {
         s.extras = []; s.cooked = {}; s.checked = {}; s.days = {};
       });
       toast("New week started", { act: "undo-week", label: "Undo" });
+      break;
+    }
+    case "reuse-week": {
+      // Put a past week's meals back on the plan: each into its slot by
+      // chapter, the rest as extras. Nights and ticks aren't saved in history.
+      const h = state.history[Number(el.dataset.i)];
+      if (!h) break;
+      const ids = h.ids.filter(x => BY_ID[x]);
+      if (plannedIds().length && !confirm("Replace this week's plan with the meals from the week of " + prettyWeek(h.week) + "?")) break;
+      commit(s => {
+        s.slots = Object.fromEntries(SLOTS.map(sl => [sl.key, null]));
+        s.extras = []; s.days = {}; s.cooked = {};
+        for (const x of ids) {
+          const sl = SLOTS.find(sl => !s.slots[sl.key] && sl.chapters.includes(BY_ID[x].chapter));
+          if (sl) s.slots[sl.key] = x; else s.extras.push(x);
+        }
+      });
+      window.scrollTo(0, 0);
+      toast(`${ids.length} meals back on the plan`);
       break;
     }
     case "undo-week": {

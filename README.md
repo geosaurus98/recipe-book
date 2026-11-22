@@ -134,7 +134,9 @@ cooking times aren't adjusted.
 **Start next week** saves the week to Recent weeks and clears it. Straight
 after, an **Undo** button shows for a few seconds, and until you plan
 something new the week tab offers **Bring back the week of ...**, which
-restores the meals, nights and shopping ticks.
+restores the meals, nights and shopping ticks. For an older week, tap **Use this
+week again** under Recent weeks to put its meals back on the plan (nights
+and ticks aren't kept for those).
 
 ### Favourites, ratings and history
 

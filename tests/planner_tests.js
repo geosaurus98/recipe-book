@@ -203,6 +203,10 @@ async function main() {
     check("undo offered", !!document.querySelector('#toast-root [data-act="undo-week"]') && !!document.querySelector('.undo-week'));
     click($('.undo-week [data-act="undo-week"]'));
     eq("undo brings the week back", run("JSON.stringify({ slots: state.slots, week: state.week, h: state.history.length })"), before);
+    const planned = run("JSON.stringify(state.slots)");
+    click($('[data-act="new-week"]'));
+    click($('[data-act="reuse-week"][data-i="0"]'));
+    eq("use a past week again", run("JSON.stringify(state.slots)"), planned);
     click($('[data-act="new-week"]'));
   });
 
