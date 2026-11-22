@@ -58,6 +58,9 @@ async function gpMain() {
     eq("planned", run("state.slots.d1"), easy);
     check("share link opens GP's planner", run(`shareLink("abcdefghijkmnpqrstuvwxyz")`).endsWith("&as=gp"));
     check("food log kept separately", run("TRACK_KEY").endsWith("-gp"));
+    click(document.querySelector('[data-tab="week"]'));
+    click($('[data-act="new-week"]'));
+    eq("GP's new week keeps his dinner slots", run("Object.keys(state.slots)"), ["d1", "d2", "d3"]);
     check("GP's swaps default to dairy-free", run("mySwaps().butter") === "Dairy-free margarine");
     click($('[data-act="profile-open"]'));
     check("GP's profile", /GP's profile/.test($("#app").textContent) && /margarine/.test($("#app").textContent));
@@ -194,8 +197,17 @@ async function main() {
     click(document.querySelector('[data-tab="week"]'));
     click($('[data-act="shuffle-all"]'));
     check("trio filled", run("Object.values(state.slots).every(Boolean)"));
+    const before = run("JSON.stringify({ slots: state.slots, week: state.week, h: state.history.length })");
     click($('[data-act="new-week"]'));
     check("new week clears the plan and nights", run("plannedIds().length === 0 && Object.keys(state.days).length === 0"));
+    check("undo offered", !!document.querySelector('#toast-root [data-act="undo-week"]') && !!document.querySelector('.undo-week'));
+    click($('.undo-week [data-act="undo-week"]'));
+    eq("undo brings the week back", run("JSON.stringify({ slots: state.slots, week: state.week, h: state.history.length })"), before);
+    const planned = run("JSON.stringify(state.slots)");
+    click($('[data-act="new-week"]'));
+    click($('[data-act="reuse-week"][data-i="0"]'));
+    eq("use a past week again", run("JSON.stringify(state.slots)"), planned);
+    click($('[data-act="new-week"]'));
   });
 
   test("food log", () => {
