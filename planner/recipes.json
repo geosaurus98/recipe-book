@@ -19488,294 +19488,6 @@
   "palmer": false
  },
  {
-  "title": "Chicken Stir-Fry with Creamy Peanut Sauce",
-  "servings": "4",
-  "time": "30 min",
-  "intro": "A Thai-style chicken stir-fry in a creamy, slightly sweet satay sauce made from scratch, with a bag of frozen stir-fry veg and a little chilli heat. Medium spice.",
-  "sections": [
-   {
-    "kind": "ingredients",
-    "heading": "Ingredients",
-    "items": [
-     {
-      "group": "Chicken and vegetables"
-     },
-     {
-      "text": "300 g jasmine rice, rinsed"
-     },
-     {
-      "text": "1 tbsp oil"
-     },
-     {
-      "text": "500 g chicken breast or tenderloins, sliced into bite-sized strips"
-     },
-     {
-      "text": "750 g frozen stir-fry vegetables (e.g. Pam's International mix)"
-     },
-     {
-      "text": "3 garlic cloves, crushed"
-     },
-     {
-      "text": "2 tsp grated ginger"
-     },
-     {
-      "group": "Peanut sauce"
-     },
-     {
-      "text": "100 g smooth peanut butter"
-     },
-     {
-      "text": "3 tbsp soy sauce"
-     },
-     {
-      "text": "2 tbsp sweet chilli sauce"
-     },
-     {
-      "text": "2 tbsp lime juice"
-     },
-     {
-      "text": "1 tbsp brown sugar or honey"
-     },
-     {
-      "text": "1 tbsp rice vinegar"
-     },
-     {
-      "text": "Sriracha or chilli flakes, to taste"
-     },
-     {
-      "text": "150 ml warm water"
-     }
-    ]
-   },
-   {
-    "kind": "steps",
-    "heading": "Method",
-    "items": [
-     {
-      "text": "**Rice.** Cook the rice in a rice cooker or as the packet says, and keep it warm."
-     },
-     {
-      "text": "**Peanut sauce.** Mix the peanut butter, soy sauce, sweet chilli, lime juice, sugar, vinegar and chilli in a bowl. Gradually whisk in the warm water until smooth. It should be creamy and thick enough to coat a spoon."
-     },
-     {
-      "text": "**Chicken.** Heat the oil in a large frying pan or wok over medium-high heat. Cook the chicken in two batches for 2–3 minutes each, until lightly golden (it finishes cooking later). Put it on a plate."
-     },
-     {
-      "text": "**Vegetables.** Add the frozen vegetables straight to the hot pan (no need to thaw). Stir-fry over high heat for 6–9 minutes, until hot and the extra water has cooked off. Do it in two batches if your pan is small. Add the garlic and ginger for the last minute."
-     },
-     {
-      "text": "**Bring it together.** Return the chicken, pour over the sauce and simmer gently for 3–4 minutes, stirring, until the chicken is cooked through (75 °C in the centre) and everything is coated. Add a splash of water if it's too thick. Taste and add more lime, soy or chilli."
-     },
-     {
-      "text": "**Serve** over the rice."
-     }
-    ]
-   },
-   {
-    "kind": "notes",
-    "heading": "Notes",
-    "items": [
-     {
-      "text": "More protein: add 200 g frozen shelled edamame with the vegetables."
-     },
-     {
-      "text": "Richer satay: swap 75 ml of the water for lite coconut milk."
-     },
-     {
-      "text": "Using a 1 kg bag of vegetables? Use it all and keep the sauce the same; it's just more veg."
-     },
-     {
-      "text": "For meal prep, keep the rice separate, refrigerate promptly and eat within 3–4 days. Reheat until piping hot."
-     }
-    ]
-   }
-  ],
-  "id": "Stovetop-Chicken_Peanut_Stir_Fry",
-  "file": "Stovetop/Chicken_Peanut_Stir_Fry.tex",
-  "chapter": "stovetop",
-  "chapterName": "Stovetop",
-  "group": null,
-  "ingredients": [
-   "300 g jasmine rice, rinsed",
-   "1 tbsp oil",
-   "500 g chicken breast or tenderloins, sliced into bite-sized strips",
-   "750 g frozen stir-fry vegetables (e.g. Pam's International mix)",
-   "3 garlic cloves, crushed",
-   "2 tsp grated ginger",
-   "100 g smooth peanut butter",
-   "3 tbsp soy sauce",
-   "2 tbsp sweet chilli sauce",
-   "2 tbsp lime juice",
-   "1 tbsp brown sugar or honey",
-   "1 tbsp rice vinegar",
-   "Sriracha or chilli flakes, to taste",
-   "150 ml warm water"
-  ],
-  "shop": [
-   {
-    "key": "jasmine-rice",
-    "name": "Jasmine rice",
-    "aisle": "Pasta, rice & grains",
-    "qty": 300.0,
-    "unit": "g",
-    "optional": false,
-    "raw": "300 g jasmine rice, rinsed",
-    "g": 300.0
-   },
-   {
-    "key": "oil",
-    "name": "Cooking oil",
-    "aisle": "Pantry: check first",
-    "qty": 1.0,
-    "unit": "tbsp",
-    "optional": false,
-    "raw": "1 tbsp oil",
-    "g": 13.5
-   },
-   {
-    "key": "chicken-breast",
-    "name": "Chicken breast or tenderloins",
-    "aisle": "Meat & fish",
-    "qty": 500.0,
-    "unit": "g",
-    "optional": false,
-    "raw": "500 g chicken breast or tenderloins, sliced into bite-sized strips",
-    "g": 500.0
-   },
-   {
-    "key": "frozen-stir-fry",
-    "name": "Frozen stir-fry vegetables",
-    "aisle": "Frozen",
-    "qty": 750.0,
-    "unit": "g",
-    "optional": false,
-    "raw": "750 g frozen stir-fry vegetables (e.g. Pam's International mix)",
-    "g": 750.0
-   },
-   {
-    "key": "garlic",
-    "name": "Garlic",
-    "aisle": "Fruit & veg",
-    "qty": 3.0,
-    "unit": "clove",
-    "optional": false,
-    "raw": "3 garlic cloves, crushed",
-    "g": 15.0
-   },
-   {
-    "key": "ginger",
-    "name": "Fresh ginger",
-    "aisle": "Fruit & veg",
-    "qty": 2.0,
-    "unit": "tsp",
-    "optional": false,
-    "raw": "2 tsp grated ginger",
-    "g": 4.0
-   },
-   {
-    "key": "peanut-butter",
-    "name": "Peanut butter",
-    "aisle": "Pantry: check first",
-    "qty": 100.0,
-    "unit": "g",
-    "optional": false,
-    "raw": "100 g smooth peanut butter",
-    "g": 100.0
-   },
-   {
-    "key": "soy-sauce",
-    "name": "Soy sauce",
-    "aisle": "Pantry: check first",
-    "qty": 3.0,
-    "unit": "tbsp",
-    "optional": false,
-    "raw": "3 tbsp soy sauce",
-    "g": 54.0
-   },
-   {
-    "key": "sweet-chilli",
-    "name": "Sweet chilli sauce",
-    "aisle": "Pantry: check first",
-    "qty": 2.0,
-    "unit": "tbsp",
-    "optional": false,
-    "raw": "2 tbsp sweet chilli sauce",
-    "g": 36.0
-   },
-   {
-    "key": "lime",
-    "name": "Limes",
-    "aisle": "Fruit & veg",
-    "qty": 1.0,
-    "unit": "",
-    "optional": false,
-    "raw": "2 tbsp lime juice",
-    "g": 40.0
-   },
-   {
-    "key": "honey",
-    "name": "Honey",
-    "aisle": "Pantry: check first",
-    "qty": 1.0,
-    "unit": "tbsp",
-    "optional": false,
-    "raw": "1 tbsp brown sugar or honey",
-    "g": 21.0
-   },
-   {
-    "key": "rice-vinegar",
-    "name": "Rice vinegar",
-    "aisle": "Pantry: check first",
-    "qty": 1.0,
-    "unit": "tbsp",
-    "optional": false,
-    "raw": "1 tbsp rice vinegar",
-    "g": 15.0
-   },
-   {
-    "key": "hot-sauce",
-    "name": "Hot sauce",
-    "aisle": "Pantry: check first",
-    "qty": null,
-    "unit": "",
-    "optional": true,
-    "raw": "Sriracha or chilli flakes, to taste"
-   },
-   {
-    "key": "chilli-flakes",
-    "name": "Chilli flakes",
-    "aisle": "Pantry: check first",
-    "qty": null,
-    "unit": "",
-    "optional": true,
-    "raw": "Sriracha or chilli flakes, to taste"
-   }
-  ],
-  "tags": [
-   "chicken"
-  ],
-  "nutrition": {
-   "kcal": 700,
-   "protein": 45,
-   "carbs": 88,
-   "fat": 19,
-   "per": "serving",
-   "count": 4
-  },
-  "diet": [
-   "dairy-free",
-   "quick"
-  ],
-  "storage": [
-   "For meal prep, keep the rice separate, refrigerate promptly and eat within 3–4 days.",
-   "Reheat until piping hot."
-  ],
-  "minutes": 30,
-  "ahead": [],
-  "meat": "Chicken breast or tenderloins",
-  "palmer": true
- },
- {
   "title": "Chicken Tikka Masala",
   "servings": "2–3",
   "time": "35 min",
@@ -20677,6 +20389,288 @@
   ],
   "storage": [
    "Leftovers keep 2 days in the fridge; add a splash of milk when reheating."
+  ],
+  "minutes": 30,
+  "ahead": [],
+  "meat": "Chicken breast or tenderloins",
+  "palmer": true
+ },
+ {
+  "title": "Creamy Peanut Chicken Stir-Fry with Lemon",
+  "servings": "4",
+  "time": "30 min",
+  "intro": "A quick, affordable chicken stir-fry in a rich peanut sauce with soy, sweet chilli, garlic, ginger and lemon, made mostly with frozen vegetables. Easy, medium spice, and good for meal prep.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "group": "Chicken, vegetables and rice"
+     },
+     {
+      "text": "300 g jasmine or basmati rice, rinsed"
+     },
+     {
+      "text": "1 tbsp oil"
+     },
+     {
+      "text": "500 g chicken breast or tenderloins, cut into 1 cm strips"
+     },
+     {
+      "text": "750 g–1 kg frozen stir-fry vegetables (e.g. Pam's International mix)"
+     },
+     {
+      "text": "3 garlic cloves, crushed"
+     },
+     {
+      "text": "2 tsp grated ginger"
+     },
+     {
+      "group": "Creamy peanut sauce"
+     },
+     {
+      "text": "100 g smooth peanut butter"
+     },
+     {
+      "text": "3 tbsp soy sauce"
+     },
+     {
+      "text": "2 tbsp sweet chilli sauce"
+     },
+     {
+      "text": "2 tbsp lemon juice (fresh or bottled)"
+     },
+     {
+      "text": "1 tbsp brown sugar or honey"
+     },
+     {
+      "text": "1 tbsp rice vinegar"
+     },
+     {
+      "text": "½–1 tsp sriracha or chilli flakes (optional)"
+     },
+     {
+      "text": "150 ml warm water"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Start the rice** (15–20 minutes). Cook the rice in a rice cooker with the right amount of water for your rice while you make everything else."
+     },
+     {
+      "text": "**Peanut sauce** (3 minutes). Mix the peanut butter, soy sauce, sweet chilli, lemon juice, sugar, vinegar and chilli, if using. Gradually whisk in the warm water until smooth. It should be pourable but creamy."
+     },
+     {
+      "text": "**Brown the chicken** (5–7 minutes). Heat the oil in a large frying pan or wok over medium-high heat. Cook the chicken in two batches, so it browns rather than steams, until lightly golden. Put it on a plate; it finishes cooking later."
+     },
+     {
+      "text": "**Vegetables** (7–10 minutes). Add the frozen vegetables straight to the hot pan (no need to thaw). Stir often over medium-high heat and let the extra water cook off; do two batches if the pan is crowded. Add the garlic and ginger for the last minute. The veg should be hot through, with a slight crunch."
+     },
+     {
+      "text": "**Bring it together** (3–4 minutes). Return the chicken and its juices, pour in the sauce and stir well. Simmer over medium heat until the sauce thickens slightly and the chicken is cooked through (75 °C in the centre). Add water 1 tbsp at a time if it's too thick."
+     },
+     {
+      "text": "**Serve** over the rice. Taste first: add a squeeze of lemon to brighten it, or a little more soy for salt."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Use the whole 1 kg bag of vegetables if you have one: the sauce covers it, and the portions get bigger without more chicken or rice."
+     },
+     {
+      "text": "Lime juice works instead of lemon. For more protein, add 200 g frozen shelled edamame with the vegetables; for a richer satay, swap 75 ml of the water for lite coconut milk."
+     },
+     {
+      "text": "Meal prep: cool promptly and keep in airtight containers for 3–4 days in the fridge, or freeze portions for 2–3 months. Refrigerate the rice within an hour of cooking."
+     },
+     {
+      "text": "Reheat until steaming hot all the way through, adding a splash of water if the sauce has thickened."
+     }
+    ]
+   }
+  ],
+  "id": "Stovetop-Chicken_Peanut_Stir_Fry",
+  "file": "Stovetop/Chicken_Peanut_Stir_Fry.tex",
+  "chapter": "stovetop",
+  "chapterName": "Stovetop",
+  "group": null,
+  "ingredients": [
+   "300 g jasmine or basmati rice, rinsed",
+   "1 tbsp oil",
+   "500 g chicken breast or tenderloins, cut into 1 cm strips",
+   "750 g–1 kg frozen stir-fry vegetables (e.g. Pam's International mix)",
+   "3 garlic cloves, crushed",
+   "2 tsp grated ginger",
+   "100 g smooth peanut butter",
+   "3 tbsp soy sauce",
+   "2 tbsp sweet chilli sauce",
+   "2 tbsp lemon juice (fresh or bottled)",
+   "1 tbsp brown sugar or honey",
+   "1 tbsp rice vinegar",
+   "½–1 tsp sriracha or chilli flakes (optional)",
+   "150 ml warm water"
+  ],
+  "shop": [
+   {
+    "key": "basmati-rice",
+    "name": "Basmati rice",
+    "aisle": "Pasta, rice & grains",
+    "qty": 300.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "300 g jasmine or basmati rice, rinsed",
+    "g": 300.0
+   },
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp oil",
+    "g": 13.5
+   },
+   {
+    "key": "chicken-breast",
+    "name": "Chicken breast or tenderloins",
+    "aisle": "Meat & fish",
+    "qty": 500.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "500 g chicken breast or tenderloins, cut into 1 cm strips",
+    "g": 500.0
+   },
+   {
+    "key": "frozen-stir-fry",
+    "name": "Frozen stir-fry vegetables",
+    "aisle": "Frozen",
+    "qty": 750.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "750 g–1 kg frozen stir-fry vegetables (e.g. Pam's International mix)",
+    "g": 750.0
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 3.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "3 garlic cloves, crushed",
+    "g": 15.0
+   },
+   {
+    "key": "ginger",
+    "name": "Fresh ginger",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "2 tsp grated ginger",
+    "g": 4.0
+   },
+   {
+    "key": "peanut-butter",
+    "name": "Peanut butter",
+    "aisle": "Pantry: check first",
+    "qty": 100.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "100 g smooth peanut butter",
+    "g": 100.0
+   },
+   {
+    "key": "soy-sauce",
+    "name": "Soy sauce",
+    "aisle": "Pantry: check first",
+    "qty": 3.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "3 tbsp soy sauce",
+    "g": 54.0
+   },
+   {
+    "key": "sweet-chilli",
+    "name": "Sweet chilli sauce",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp sweet chilli sauce",
+    "g": 36.0
+   },
+   {
+    "key": "lemon",
+    "name": "Lemons",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "2 tbsp lemon juice (fresh or bottled)",
+    "g": 40.0
+   },
+   {
+    "key": "honey",
+    "name": "Honey",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp brown sugar or honey",
+    "g": 21.0
+   },
+   {
+    "key": "rice-vinegar",
+    "name": "Rice vinegar",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp rice vinegar",
+    "g": 15.0
+   },
+   {
+    "key": "hot-sauce",
+    "name": "Hot sauce",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": true,
+    "raw": "½–1 tsp sriracha or chilli flakes (optional)",
+    "g": 5.0
+   }
+  ],
+  "tags": [
+   "chicken"
+  ],
+  "nutrition": {
+   "kcal": 700,
+   "protein": 45,
+   "carbs": 88,
+   "fat": 19,
+   "per": "serving",
+   "count": 4
+  },
+  "diet": [
+   "freezes",
+   "dairy-free",
+   "quick"
+  ],
+  "storage": [
+   "Meal prep: cool promptly and keep in airtight containers for 3–4 days in the fridge, or freeze portions for 2–3 months.",
+   "Refrigerate the rice within an hour of cooking.",
+   "Reheat until steaming hot all the way through, adding a splash of water if the sauce has thickened."
   ],
   "minutes": 30,
   "ahead": [],
