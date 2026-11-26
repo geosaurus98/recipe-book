@@ -13053,6 +13053,321 @@
   "palmer": false
  },
  {
+  "title": "Irish Beef & Guinness Stew",
+  "servings": "6",
+  "time": "30 min prep + 8 hours (low)",
+  "intro": "A rich, dark Irish stew: beef, bacon, carrots and celery in a Guinness gravy. Serve with mashed potatoes.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "2 tbsp olive oil"
+     },
+     {
+      "text": "1.25 kg chuck steak, cut into 5 cm chunks"
+     },
+     {
+      "text": "¾ tsp salt"
+     },
+     {
+      "text": "¾ tsp black pepper"
+     },
+     {
+      "text": "3 garlic cloves, crushed"
+     },
+     {
+      "text": "2 onions, chopped"
+     },
+     {
+      "text": "180 g bacon, diced"
+     },
+     {
+      "text": "3 carrots, cut into 1 cm pieces"
+     },
+     {
+      "text": "2 large celery stalks, cut into 2 cm pieces"
+     },
+     {
+      "text": "3 tbsp plain flour"
+     },
+     {
+      "text": "440 ml Guinness (1 can)"
+     },
+     {
+      "text": "4 tbsp tomato paste"
+     },
+     {
+      "text": "2 cups chicken or beef stock"
+     },
+     {
+      "text": "2 bay leaves"
+     },
+     {
+      "text": "3 sprigs thyme (or 1 tsp dried)"
+     },
+     {
+      "group": "To serve"
+     },
+     {
+      "text": "Mashed potatoes"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Brown the beef.** Pat the beef dry and season with the salt and pepper. Heat the oil in a large pot over high heat and brown the beef well in batches. Set aside."
+     },
+     {
+      "text": "**Base.** Turn to medium. Cook the garlic and onion for 3 minutes, then the bacon until browned. Stir in the carrot and celery, then the flour for 1 minute."
+     },
+     {
+      "text": "**Liquid.** Add the Guinness, stock and tomato paste and stir well, scraping the bottom of the pot clean, until it simmers."
+     },
+     {
+      "text": "**Slow cook.** Tip everything into the slow cooker with the beef and its juices, the bay leaves and thyme. Cook on Low for 8 hours, until the beef falls apart."
+     },
+     {
+      "text": "**Finish.** Skim off the fat, remove the bay leaves and thyme stalks, and season. If the sauce needs thickening, simmer some of it in a pan on the stove. Serve with mash."
+     }
+    ]
+   },
+   {
+    "kind": "variation",
+    "heading": "Stovetop or Oven",
+    "text": "Use 3 cups stock. Simmer gently, covered, for 2 hours, then uncovered for 30–45 minutes until the beef is falling apart. Or bake covered at 160 °C for 2½ hours, then uncovered for 30–45 minutes.",
+    "sections": []
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "No alcohol? Replace the Guinness with 2 cups water, 1 tbsp Worcestershire sauce and 2 beef stock cubes: a classic beef stew."
+     },
+     {
+      "text": "Freezes well for up to 3 months."
+     }
+    ]
+   },
+   {
+    "kind": "text",
+    "heading": null,
+    "text": "**Source:** https://www.recipetineats.com/irish-beef-and-guinness-stew/RecipeTin Eats – Irish Beef and Guinness Stew"
+   }
+  ],
+  "id": "SlowCooker-Beef_Guinness_Stew",
+  "file": "SlowCooker/Beef_Guinness_Stew.tex",
+  "chapter": "slow",
+  "chapterName": "Slow Cooker",
+  "group": null,
+  "ingredients": [
+   "2 tbsp olive oil",
+   "1.25 kg chuck steak, cut into 5 cm chunks",
+   "¾ tsp salt",
+   "¾ tsp black pepper",
+   "3 garlic cloves, crushed",
+   "2 onions, chopped",
+   "180 g bacon, diced",
+   "3 carrots, cut into 1 cm pieces",
+   "2 large celery stalks, cut into 2 cm pieces",
+   "3 tbsp plain flour",
+   "440 ml Guinness (1 can)",
+   "4 tbsp tomato paste",
+   "2 cups chicken or beef stock",
+   "2 bay leaves",
+   "3 sprigs thyme (or 1 tsp dried)",
+   "Mashed potatoes"
+  ],
+  "shop": [
+   {
+    "key": "olive-oil",
+    "name": "Olive oil",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp olive oil",
+    "g": 27.0
+   },
+   {
+    "key": "stewing-beef",
+    "name": "Stewing beef",
+    "aisle": "Meat & fish",
+    "qty": 1250.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "1.25 kg chuck steak, cut into 5 cm chunks",
+    "g": 1250.0
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 0.75,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "¾ tsp salt",
+    "g": 3.8
+   },
+   {
+    "key": "pepper",
+    "name": "Black pepper",
+    "aisle": "Pantry: check first",
+    "qty": 0.75,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "¾ tsp black pepper",
+    "g": 3.8
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 3.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "3 garlic cloves, crushed",
+    "g": 15.0
+   },
+   {
+    "key": "onion",
+    "name": "Onions",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "",
+    "optional": false,
+    "raw": "2 onions, chopped",
+    "g": 300.0
+   },
+   {
+    "key": "bacon",
+    "name": "Bacon",
+    "aisle": "Meat & fish",
+    "qty": 180.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "180 g bacon, diced",
+    "g": 180.0
+   },
+   {
+    "key": "carrot",
+    "name": "Carrots",
+    "aisle": "Fruit & veg",
+    "qty": 3.0,
+    "unit": "",
+    "optional": false,
+    "raw": "3 carrots, cut into 1 cm pieces",
+    "g": 360.0
+   },
+   {
+    "key": "celery",
+    "name": "Celery",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "",
+    "optional": false,
+    "raw": "2 large celery stalks, cut into 2 cm pieces",
+    "g": 80.0
+   },
+   {
+    "key": "flour",
+    "name": "Plain flour",
+    "aisle": "Baking",
+    "qty": 3.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "3 tbsp plain flour",
+    "g": 27.0
+   },
+   {
+    "key": "guinness",
+    "name": "Guinness",
+    "aisle": null,
+    "qty": 440.0,
+    "unit": "ml",
+    "optional": false,
+    "raw": "440 ml Guinness (1 can)"
+   },
+   {
+    "key": "tomato-paste",
+    "name": "Tomato paste",
+    "aisle": "Cans, jars & pulses",
+    "qty": 4.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "4 tbsp tomato paste",
+    "g": 64.0
+   },
+   {
+    "key": "beef-stock",
+    "name": "Beef stock",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "2 cups chicken or beef stock",
+    "g": 500.0
+   },
+   {
+    "key": "bay-leaves",
+    "name": "Bay leaves",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "",
+    "optional": false,
+    "raw": "2 bay leaves",
+    "g": 2.0
+   },
+   {
+    "key": "thyme",
+    "name": "Dried thyme",
+    "aisle": "Pantry: check first",
+    "qty": 3.0,
+    "unit": "",
+    "optional": false,
+    "raw": "3 sprigs thyme (or 1 tsp dried)",
+    "g": 3.0
+   },
+   {
+    "key": "potato",
+    "name": "Potatoes",
+    "aisle": "Fruit & veg",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Mashed potatoes"
+   }
+  ],
+  "tags": [
+   "beef",
+   "pork"
+  ],
+  "nutrition": {
+   "kcal": 520,
+   "protein": 51,
+   "carbs": 18,
+   "fat": 27,
+   "per": "serving",
+   "count": 6
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "Freezes well for up to 3 months."
+  ],
+  "minutes": 510,
+  "ahead": [],
+  "meat": "Stewing beef",
+  "palmer": false
+ },
+ {
   "title": "Mexican Salsa Chicken",
   "servings": "6",
   "time": "10 min prep + 6–8 hours (low)",
@@ -14112,6 +14427,294 @@
   "minutes": 435,
   "ahead": [],
   "meat": "Pork mince",
+  "palmer": false
+ },
+ {
+  "title": "Pork Carnitas",
+  "servings": "5",
+  "time": "15 min prep + 8 hours (low)",
+  "intro": "Mexican pulled pork, slow cooked with orange, cumin and oregano, then crisped in a hot pan. Halved from the original to 1 kg of pork.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "group": "Pork"
+     },
+     {
+      "text": "1 kg boneless pork shoulder, skin off"
+     },
+     {
+      "text": "1¼ tsp salt"
+     },
+     {
+      "text": "½ tsp black pepper"
+     },
+     {
+      "group": "Rub"
+     },
+     {
+      "text": "1½ tsp dried oregano"
+     },
+     {
+      "text": "1 tsp ground cumin"
+     },
+     {
+      "text": "½ tbsp olive oil"
+     },
+     {
+      "group": "Slow cooker"
+     },
+     {
+      "text": "1 onion, chopped"
+     },
+     {
+      "text": "1 jalapeño, deseeded and chopped"
+     },
+     {
+      "text": "3 garlic cloves, crushed"
+     },
+     {
+      "text": "1 orange, juiced (about ⅓ cup)"
+     },
+     {
+      "group": "To crisp and serve"
+     },
+     {
+      "text": "1 tbsp oil"
+     },
+     {
+      "text": "Tortillas, salsa, lettuce and lime"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Season.** Pat the pork dry and rub all over with the salt and pepper, then with the rub ingredients mixed together."
+     },
+     {
+      "text": "**Slow cook.** Put the pork in the slow cooker, fat side up. Top with the onion, jalapeño and garlic and squeeze over the orange juice. Cook on Low for 8 hours, until it shreds easily."
+     },
+     {
+      "text": "**Shred.** Lift out the pork, let it cool slightly and shred with two forks. Skim the fat off the juices; if there's much more than 1 cup, boil it down. The juices are salty: they're the seasoning."
+     },
+     {
+      "text": "**Crisp.** Heat the oil in a large non-stick pan over high heat. Spread out some of the pork, drizzle with juices, and leave until the juices cook off and the bottom is golden and crusty. Turn and sear the other side briefly. Repeat in batches without crowding the pan."
+     },
+     {
+      "text": "**Serve** drizzled with more juices, in tortillas with salsa, lettuce and lime."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Instant Pot: 1 hour 30 minutes on High with a natural release."
+     },
+     {
+      "text": "Freeze the shredded pork with its juices for up to 3 months; crisp it after thawing."
+     }
+    ]
+   },
+   {
+    "kind": "text",
+    "heading": null,
+    "text": "**Source:** https://www.recipetineats.com/pork-carnitas-mexican-slow-cooker-pulled-pork/RecipeTin Eats – Carnitas (Mexican Slow Cooker Pulled Pork)"
+   }
+  ],
+  "id": "SlowCooker-Pork_Carnitas",
+  "file": "SlowCooker/Pork_Carnitas.tex",
+  "chapter": "slow",
+  "chapterName": "Slow Cooker",
+  "group": null,
+  "ingredients": [
+   "1 kg boneless pork shoulder, skin off",
+   "1¼ tsp salt",
+   "½ tsp black pepper",
+   "1½ tsp dried oregano",
+   "1 tsp ground cumin",
+   "½ tbsp olive oil",
+   "1 onion, chopped",
+   "1 jalapeño, deseeded and chopped",
+   "3 garlic cloves, crushed",
+   "1 orange, juiced (about ⅓ cup)",
+   "1 tbsp oil",
+   "Tortillas, salsa, lettuce and lime"
+  ],
+  "shop": [
+   {
+    "key": "pork-shoulder",
+    "name": "Pork shoulder",
+    "aisle": "Meat & fish",
+    "qty": 1000.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "1 kg boneless pork shoulder, skin off",
+    "g": 1000.0
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 1.25,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1¼ tsp salt",
+    "g": 6.2
+   },
+   {
+    "key": "pepper",
+    "name": "Black pepper",
+    "aisle": "Pantry: check first",
+    "qty": 0.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "½ tsp black pepper",
+    "g": 2.5
+   },
+   {
+    "key": "oregano",
+    "name": "Dried oregano",
+    "aisle": "Pantry: check first",
+    "qty": 1.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1½ tsp dried oregano",
+    "g": 3.8
+   },
+   {
+    "key": "cumin",
+    "name": "Ground cumin",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp ground cumin",
+    "g": 2.5
+   },
+   {
+    "key": "olive-oil",
+    "name": "Olive oil",
+    "aisle": "Pantry: check first",
+    "qty": 0.5,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "½ tbsp olive oil",
+    "g": 6.8
+   },
+   {
+    "key": "onion",
+    "name": "Onions",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 onion, chopped",
+    "g": 150.0
+   },
+   {
+    "key": "jalape-o",
+    "name": "Jalapeño",
+    "aisle": null,
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 jalapeño, deseeded and chopped"
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 3.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "3 garlic cloves, crushed",
+    "g": 15.0
+   },
+   {
+    "key": "orange",
+    "name": "Oranges",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 orange, juiced (about ⅓ cup)",
+    "g": 150.0
+   },
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp oil",
+    "g": 13.5
+   },
+   {
+    "key": "tortillas",
+    "name": "Tortillas or wraps",
+    "aisle": "Bread & wraps",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Tortillas, salsa, lettuce and lime"
+   },
+   {
+    "key": "salsa",
+    "name": "Salsa",
+    "aisle": "Cans, jars & pulses",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Tortillas, salsa, lettuce and lime"
+   },
+   {
+    "key": "lettuce",
+    "name": "Lettuce or salad leaves",
+    "aisle": "Fruit & veg",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Tortillas, salsa, lettuce and lime"
+   },
+   {
+    "key": "lime",
+    "name": "Limes",
+    "aisle": "Fruit & veg",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Tortillas, salsa, lettuce and lime"
+   }
+  ],
+  "tags": [
+   "pork"
+  ],
+  "nutrition": {
+   "kcal": 530,
+   "protein": 35,
+   "carbs": 8,
+   "fat": 40,
+   "per": "serving",
+   "count": 5
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "Freeze the shredded pork with its juices for up to 3 months; crisp it after thawing."
+  ],
+  "minutes": 495,
+  "ahead": [],
+  "meat": "Pork shoulder",
   "palmer": false
  },
  {
@@ -15531,6 +16134,280 @@
   "minutes": 375,
   "ahead": [],
   "meat": "Beef mince",
+  "palmer": false
+ },
+ {
+  "title": "Slow Cooker Beef & Broccoli",
+  "servings": "4",
+  "time": "10 min prep + 3 hours (high)",
+  "intro": "Tender sliced beef in a savoury ginger, soy and oyster sauce, tossed with broccoli and edamame. Freezes well.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "group": "Slow cooker"
+     },
+     {
+      "text": "500 g chuck steak, thinly sliced against the grain"
+     },
+     {
+      "text": "2 tbsp cornflour"
+     },
+     {
+      "text": "1 cup water"
+     },
+     {
+      "text": "2 tbsp oil"
+     },
+     {
+      "text": "2 tbsp finely sliced ginger"
+     },
+     {
+      "text": "3 tbsp soy sauce"
+     },
+     {
+      "text": "2 tbsp oyster sauce"
+     },
+     {
+      "text": "4 tsp Chinese cooking wine (or dry sherry)"
+     },
+     {
+      "text": "1 tsp sesame oil (optional)"
+     },
+     {
+      "text": "1 tsp sugar"
+     },
+     {
+      "text": "Pinch of white pepper"
+     },
+     {
+      "group": "To finish"
+     },
+     {
+      "text": "300 g broccoli florets"
+     },
+     {
+      "text": "1½ cups frozen shelled edamame"
+     },
+     {
+      "text": "1½ cups rice"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Load the cooker.** Put the beef in the slow cooker. Mix the cornflour with the water and add it, then all the other slow cooker ingredients."
+     },
+     {
+      "text": "**Slow cook** on High for 3 hours (or pressure cook on High for 40 minutes)."
+     },
+     {
+      "text": "**Rice.** Cook the rice in a rice cooker or as the packet says."
+     },
+     {
+      "text": "**Greens.** Steam or boil the broccoli and edamame until the broccoli is just tender and bright green."
+     },
+     {
+      "text": "**Serve.** Toss the broccoli and edamame through the beef and sauce, and serve over rice."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "If your slow cooker lets out a lot of steam, add a little more water; if the sauce ends up thin, simmer it on the stove."
+     },
+     {
+      "text": "To freeze: blanch the broccoli briefly, cool, mix with the beef and sauce, and freeze for up to 2 months."
+     }
+    ]
+   },
+   {
+    "kind": "text",
+    "heading": null,
+    "text": "**Source:** https://www.recipetineats.com/slow-cooker-beef-broccoli/RecipeTin Eats – Slow Cooker Beef and Broccoli"
+   }
+  ],
+  "id": "SlowCooker-Beef_Broccoli_Slow_Cooker",
+  "file": "SlowCooker/Beef_Broccoli_Slow_Cooker.tex",
+  "chapter": "slow",
+  "chapterName": "Slow Cooker",
+  "group": null,
+  "ingredients": [
+   "500 g chuck steak, thinly sliced against the grain",
+   "2 tbsp cornflour",
+   "1 cup water",
+   "2 tbsp oil",
+   "2 tbsp finely sliced ginger",
+   "3 tbsp soy sauce",
+   "2 tbsp oyster sauce",
+   "4 tsp Chinese cooking wine (or dry sherry)",
+   "1 tsp sesame oil (optional)",
+   "1 tsp sugar",
+   "Pinch of white pepper",
+   "300 g broccoli florets",
+   "1½ cups frozen shelled edamame",
+   "1½ cups rice"
+  ],
+  "shop": [
+   {
+    "key": "stewing-beef",
+    "name": "Stewing beef",
+    "aisle": "Meat & fish",
+    "qty": 500.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "500 g chuck steak, thinly sliced against the grain",
+    "g": 500.0
+   },
+   {
+    "key": "cornflour",
+    "name": "Cornflour",
+    "aisle": "Baking",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp cornflour",
+    "g": 16.0
+   },
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp oil",
+    "g": 27.0
+   },
+   {
+    "key": "ginger",
+    "name": "Fresh ginger",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp finely sliced ginger",
+    "g": 12.0
+   },
+   {
+    "key": "soy-sauce",
+    "name": "Soy sauce",
+    "aisle": "Pantry: check first",
+    "qty": 3.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "3 tbsp soy sauce",
+    "g": 54.0
+   },
+   {
+    "key": "oyster-sauce",
+    "name": "Oyster sauce",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp oyster sauce",
+    "g": 36.0
+   },
+   {
+    "key": "wine",
+    "name": "Wine (for cooking)",
+    "aisle": "Pantry: check first",
+    "qty": 4.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "4 tsp Chinese cooking wine (or dry sherry)",
+    "g": 20.0
+   },
+   {
+    "key": "sesame-oil",
+    "name": "Sesame oil",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": true,
+    "raw": "1 tsp sesame oil (optional)",
+    "g": 4.5
+   },
+   {
+    "key": "sugar",
+    "name": "White sugar",
+    "aisle": "Baking",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp sugar",
+    "g": 4.0
+   },
+   {
+    "key": "white-pepper",
+    "name": "White pepper",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": false,
+    "raw": "Pinch of white pepper"
+   },
+   {
+    "key": "broccoli",
+    "name": "Broccoli",
+    "aisle": "Fruit & veg",
+    "qty": 300.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "300 g broccoli florets",
+    "g": 300.0
+   },
+   {
+    "key": "edamame",
+    "name": "Frozen edamame",
+    "aisle": "Frozen",
+    "qty": 1.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1½ cups frozen shelled edamame",
+    "g": 232.5
+   },
+   {
+    "key": "rice",
+    "name": "Rice",
+    "aisle": "Pasta, rice & grains",
+    "qty": 1.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1½ cups rice",
+    "g": 277.5
+   }
+  ],
+  "tags": [
+   "beef"
+  ],
+  "nutrition": {
+   "kcal": 630,
+   "protein": 42,
+   "carbs": 74,
+   "fat": 19,
+   "per": "serving",
+   "count": 4
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "To freeze: blanch the broccoli briefly, cool, mix with the beef and sauce, and freeze for up to 2 months."
+  ],
+  "minutes": 190,
+  "ahead": [],
+  "meat": "Stewing beef",
   "palmer": false
  },
  {
@@ -18025,6 +18902,380 @@
   "palmer": false
  },
  {
+  "title": "Beef Rendang",
+  "servings": "6",
+  "time": "20 min prep + 3 hours",
+  "intro": "A rich, dry Malaysian curry: beef slow-simmered in coconut milk and spice paste until the sauce cooks down and coats the meat. A weekend cook that's worth it.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "group": "Spice paste"
+     },
+     {
+      "text": "12 dried chillies, soaked in boiling water (or 6 for milder)"
+     },
+     {
+      "text": "1 small onion, finely chopped"
+     },
+     {
+      "text": "5 garlic cloves"
+     },
+     {
+      "text": "3 lemongrass stalks, white part only, sliced (or 2 tsp lemongrass paste)"
+     },
+     {
+      "text": "1½ tbsp chopped galangal (or more ginger)"
+     },
+     {
+      "text": "1½ tbsp grated ginger"
+     },
+     {
+      "text": "2 tbsp oil"
+     },
+     {
+      "group": "Curry"
+     },
+     {
+      "text": "1 tbsp oil"
+     },
+     {
+      "text": "1 kg chuck steak, cut into 4 cm cubes"
+     },
+     {
+      "text": "1 cinnamon stick"
+     },
+     {
+      "text": "¼ tsp ground cloves"
+     },
+     {
+      "text": "3 star anise"
+     },
+     {
+      "text": "½ tsp ground cardamom"
+     },
+     {
+      "text": "1 lemongrass stalk, bottom half, smashed"
+     },
+     {
+      "text": "1 can (400 ml) coconut milk"
+     },
+     {
+      "text": "2 tsp tamarind paste"
+     },
+     {
+      "text": "4 kaffir lime leaves, very finely sliced"
+     },
+     {
+      "text": "⅓ cup desiccated coconut"
+     },
+     {
+      "text": "1 tbsp brown sugar"
+     },
+     {
+      "text": "1½ tsp salt"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Paste.** Blitz the spice paste ingredients in a small food processor until fine."
+     },
+     {
+      "text": "**Brown the beef.** Heat 1 tbsp oil in a large heavy pot over high heat. Brown the beef in two batches and set aside."
+     },
+     {
+      "text": "**Fry the paste.** Turn the heat to medium-low. Cook the paste for 2–3 minutes until it darkens (it's fiery, so don't breathe it in)."
+     },
+     {
+      "text": "**Simmer.** Add the beef and all the other curry ingredients. Bring to a simmer, then turn the heat right down so it bubbles very gently. Lid on, 1 hour 15 minutes."
+     },
+     {
+      "text": "**Reduce.** Take the lid off. Turn to medium and cook for 30–40 minutes more, stirring now and then (then often near the end), until the sauce cooks down to a paste that coats the beef and the beef is falling apart. Add a splash of water and keep going if it needs longer."
+     },
+     {
+      "text": "**Serve** with rice."
+     }
+    ]
+   },
+   {
+    "kind": "variation",
+    "heading": "Slow Cooker",
+    "text": "Do steps 1–3 in a pan, then put everything in the slow cooker on Low for 7–8 hours. Tip into a wide pan and simmer, stirring, for 20–30 minutes until the sauce reduces to a thick paste.",
+    "sections": []
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "12 chillies is fairly spicy but mellows with the long cook; use 6 for a mild curry."
+     },
+     {
+      "text": "Freezes well for up to 3 months."
+     }
+    ]
+   },
+   {
+    "kind": "text",
+    "heading": null,
+    "text": "**Source:** https://www.recipetineats.com/beef-rendang/RecipeTin Eats – Beef Rendang"
+   }
+  ],
+  "id": "Stovetop-Beef_Rendang",
+  "file": "Stovetop/Beef_Rendang.tex",
+  "chapter": "stovetop",
+  "chapterName": "Stovetop",
+  "group": null,
+  "ingredients": [
+   "12 dried chillies, soaked in boiling water (or 6 for milder)",
+   "1 small onion, finely chopped",
+   "5 garlic cloves",
+   "3 lemongrass stalks, white part only, sliced (or 2 tsp lemongrass paste)",
+   "1½ tbsp chopped galangal (or more ginger)",
+   "1½ tbsp grated ginger",
+   "2 tbsp oil",
+   "1 tbsp oil",
+   "1 kg chuck steak, cut into 4 cm cubes",
+   "1 cinnamon stick",
+   "¼ tsp ground cloves",
+   "3 star anise",
+   "½ tsp ground cardamom",
+   "1 lemongrass stalk, bottom half, smashed",
+   "1 can (400 ml) coconut milk",
+   "2 tsp tamarind paste",
+   "4 kaffir lime leaves, very finely sliced",
+   "⅓ cup desiccated coconut",
+   "1 tbsp brown sugar",
+   "1½ tsp salt"
+  ],
+  "shop": [
+   {
+    "key": "chilli",
+    "name": "Fresh chilli",
+    "aisle": "Fruit & veg",
+    "qty": 12.0,
+    "unit": "",
+    "optional": false,
+    "raw": "12 dried chillies, soaked in boiling water (or 6 for milder)",
+    "g": 120.0
+   },
+   {
+    "key": "onion",
+    "name": "Onions",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 small onion, finely chopped",
+    "g": 150.0
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 5.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "5 garlic cloves",
+    "g": 25.0
+   },
+   {
+    "key": "lemon",
+    "name": "Lemons",
+    "aisle": "Fruit & veg",
+    "qty": 3.0,
+    "unit": "",
+    "optional": false,
+    "raw": "3 lemongrass stalks, white part only, sliced (or 2 tsp lemongrass paste)",
+    "g": 120.0
+   },
+   {
+    "key": "ginger",
+    "name": "Fresh ginger",
+    "aisle": "Fruit & veg",
+    "qty": 1.5,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1½ tbsp chopped galangal (or more ginger)",
+    "g": 9.0
+   },
+   {
+    "key": "ginger",
+    "name": "Fresh ginger",
+    "aisle": "Fruit & veg",
+    "qty": 1.5,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1½ tbsp grated ginger",
+    "g": 9.0
+   },
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp oil",
+    "g": 27.0
+   },
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp oil",
+    "g": 13.5
+   },
+   {
+    "key": "stewing-beef",
+    "name": "Stewing beef",
+    "aisle": "Meat & fish",
+    "qty": 1000.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "1 kg chuck steak, cut into 4 cm cubes",
+    "g": 1000.0
+   },
+   {
+    "key": "cinnamon",
+    "name": "Ground cinnamon",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 cinnamon stick",
+    "g": 1.0
+   },
+   {
+    "key": "ground-cloves",
+    "name": "Ground cloves",
+    "aisle": null,
+    "qty": 0.25,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "¼ tsp ground cloves"
+   },
+   {
+    "key": "star-anise",
+    "name": "Star anise",
+    "aisle": null,
+    "qty": 3.0,
+    "unit": "",
+    "optional": false,
+    "raw": "3 star anise"
+   },
+   {
+    "key": "ground-cardamom",
+    "name": "Ground cardamom",
+    "aisle": null,
+    "qty": 0.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "½ tsp ground cardamom"
+   },
+   {
+    "key": "lemon",
+    "name": "Lemons",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 lemongrass stalk, bottom half, smashed",
+    "g": 40.0
+   },
+   {
+    "key": "coconut-milk",
+    "name": "Coconut milk",
+    "aisle": "Cans, jars & pulses",
+    "qty": 1.0,
+    "unit": "can",
+    "optional": false,
+    "raw": "1 can (400 ml) coconut milk",
+    "g": 400.0
+   },
+   {
+    "key": "tamarind-paste",
+    "name": "Tamarind paste",
+    "aisle": null,
+    "qty": 2.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "2 tsp tamarind paste"
+   },
+   {
+    "key": "lime",
+    "name": "Limes",
+    "aisle": "Fruit & veg",
+    "qty": 4.0,
+    "unit": "",
+    "optional": false,
+    "raw": "4 kaffir lime leaves, very finely sliced",
+    "g": 160.0
+   },
+   {
+    "key": "coconut",
+    "name": "Desiccated coconut",
+    "aisle": "Baking",
+    "qty": 0.3333333333333333,
+    "unit": "cup",
+    "optional": false,
+    "raw": "⅓ cup desiccated coconut",
+    "g": 28.3
+   },
+   {
+    "key": "brown-sugar",
+    "name": "Brown sugar",
+    "aisle": "Baking",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp brown sugar",
+    "g": 13.0
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 1.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1½ tsp salt",
+    "g": 7.5
+   }
+  ],
+  "tags": [
+   "beef"
+  ],
+  "nutrition": {
+   "kcal": 500,
+   "protein": 38,
+   "carbs": 16,
+   "fat": 33,
+   "per": "serving",
+   "count": 6
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [
+   "Freezes well for up to 3 months."
+  ],
+  "minutes": 200,
+  "ahead": [],
+  "meat": "Stewing beef",
+  "palmer": false
+ },
+ {
   "title": "Beef Schnitzel Rolls",
   "servings": "4",
   "time": "45 min",
@@ -18943,6 +20194,286 @@
   ],
   "storage": [],
   "minutes": 40,
+  "ahead": [],
+  "meat": "Chicken thighs",
+  "palmer": true
+ },
+ {
+  "title": "Cashew Chicken",
+  "servings": "4",
+  "time": "15 min prep + 6 min",
+  "intro": "The Chinese takeaway classic: chicken, capsicum and roasted cashews in a glossy savoury sauce.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "group": "Sauce"
+     },
+     {
+      "text": "1 tbsp cornflour"
+     },
+     {
+      "text": "3 tbsp soy sauce (regular, not dark)"
+     },
+     {
+      "text": "1½ tbsp Chinese cooking wine (or mirin)"
+     },
+     {
+      "text": "3 tbsp oyster sauce"
+     },
+     {
+      "text": "2 tsp sesame oil"
+     },
+     {
+      "text": "Pinch of white pepper"
+     },
+     {
+      "group": "Stir-fry"
+     },
+     {
+      "text": "500 g boneless chicken thighs, cut into 2.5 cm pieces"
+     },
+     {
+      "text": "2 tbsp oil"
+     },
+     {
+      "text": "2 garlic cloves, crushed"
+     },
+     {
+      "text": "½ onion, cut into 2 cm pieces"
+     },
+     {
+      "text": "1 green capsicum, cut into 2 cm pieces"
+     },
+     {
+      "text": "6 tbsp water"
+     },
+     {
+      "text": "¾ cup roasted unsalted cashews"
+     },
+     {
+      "group": "To serve"
+     },
+     {
+      "text": "1½ cups rice"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Sauce.** Mix the cornflour and soy sauce until smooth, then the rest of the sauce ingredients."
+     },
+     {
+      "text": "**Marinate.** Toss the chicken with 2 tbsp of the sauce and leave for 10 minutes or more."
+     },
+     {
+      "text": "**Cook.** Heat the oil in a wok or large pan over high heat. Cook the garlic and onion for 1 minute. Add the chicken for 2 minutes, then the capsicum for 1 minute."
+     },
+     {
+      "text": "**Sauce.** Add the rest of the sauce and the water and simmer, stirring, for about 1 minute until thickened."
+     },
+     {
+      "text": "**Serve.** Stir through the cashews and serve straight away with rice."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Breast or tenderloins work too; thighs are juicier."
+     },
+     {
+      "text": "No cooking wine? Use chicken stock in place of both the wine and the water."
+     },
+     {
+      "text": "Keeps 3–4 days in the fridge. Doesn't freeze well (the sauce goes watery)."
+     }
+    ]
+   },
+   {
+    "kind": "text",
+    "heading": null,
+    "text": "**Source:** https://www.recipetineats.com/chinese-cashew-chicken/RecipeTin Eats – Chinese Cashew Chicken"
+   }
+  ],
+  "id": "Stovetop-Cashew_Chicken",
+  "file": "Stovetop/Cashew_Chicken.tex",
+  "chapter": "stovetop",
+  "chapterName": "Stovetop",
+  "group": null,
+  "ingredients": [
+   "1 tbsp cornflour",
+   "3 tbsp soy sauce (regular, not dark)",
+   "1½ tbsp Chinese cooking wine (or mirin)",
+   "3 tbsp oyster sauce",
+   "2 tsp sesame oil",
+   "Pinch of white pepper",
+   "500 g boneless chicken thighs, cut into 2.5 cm pieces",
+   "2 tbsp oil",
+   "2 garlic cloves, crushed",
+   "½ onion, cut into 2 cm pieces",
+   "1 green capsicum, cut into 2 cm pieces",
+   "6 tbsp water",
+   "¾ cup roasted unsalted cashews",
+   "1½ cups rice"
+  ],
+  "shop": [
+   {
+    "key": "cornflour",
+    "name": "Cornflour",
+    "aisle": "Baking",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp cornflour",
+    "g": 8.0
+   },
+   {
+    "key": "soy-sauce",
+    "name": "Soy sauce",
+    "aisle": "Pantry: check first",
+    "qty": 3.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "3 tbsp soy sauce (regular, not dark)",
+    "g": 54.0
+   },
+   {
+    "key": "wine",
+    "name": "Wine (for cooking)",
+    "aisle": "Pantry: check first",
+    "qty": 1.5,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1½ tbsp Chinese cooking wine (or mirin)",
+    "g": 22.5
+   },
+   {
+    "key": "oyster-sauce",
+    "name": "Oyster sauce",
+    "aisle": "Pantry: check first",
+    "qty": 3.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "3 tbsp oyster sauce",
+    "g": 54.0
+   },
+   {
+    "key": "sesame-oil",
+    "name": "Sesame oil",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "2 tsp sesame oil",
+    "g": 9.0
+   },
+   {
+    "key": "white-pepper",
+    "name": "White pepper",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": false,
+    "raw": "Pinch of white pepper"
+   },
+   {
+    "key": "chicken-thigh",
+    "name": "Chicken thighs",
+    "aisle": "Meat & fish",
+    "qty": 500.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "500 g boneless chicken thighs, cut into 2.5 cm pieces",
+    "g": 500.0
+   },
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp oil",
+    "g": 27.0
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "2 garlic cloves, crushed",
+    "g": 10.0
+   },
+   {
+    "key": "onion",
+    "name": "Onions",
+    "aisle": "Fruit & veg",
+    "qty": 0.5,
+    "unit": "",
+    "optional": false,
+    "raw": "½ onion, cut into 2 cm pieces",
+    "g": 75.0
+   },
+   {
+    "key": "capsicum",
+    "name": "Capsicums",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 green capsicum, cut into 2 cm pieces",
+    "g": 160.0
+   },
+   {
+    "key": "roasted-unsalted-cashews",
+    "name": "Roasted unsalted cashews",
+    "aisle": null,
+    "qty": 0.75,
+    "unit": "cup",
+    "optional": false,
+    "raw": "¾ cup roasted unsalted cashews"
+   },
+   {
+    "key": "rice",
+    "name": "Rice",
+    "aisle": "Pasta, rice & grains",
+    "qty": 1.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1½ cups rice",
+    "g": 277.5
+   }
+  ],
+  "tags": [
+   "chicken"
+  ],
+  "nutrition": {
+   "kcal": 570,
+   "protein": 31,
+   "carbs": 66,
+   "fat": 20,
+   "per": "serving",
+   "count": 4
+  },
+  "diet": [
+   "dairy-free",
+   "quick"
+  ],
+  "storage": [
+   "Keeps 3–4 days in the fridge.",
+   "Doesn't freeze well (the sauce goes watery)."
+  ],
+  "minutes": 21,
   "ahead": [],
   "meat": "Chicken thighs",
   "palmer": true
@@ -22062,6 +23593,271 @@
   "palmer": false
  },
  {
+  "title": "Filipino Chicken Adobo",
+  "servings": "4",
+  "time": "10 min prep + 35 min (plus 20 min marinating)",
+  "intro": "Chicken thighs braised in soy, vinegar, garlic and pepper until the sauce turns into a sticky glaze. Big flavour from cheap pantry staples.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "group": "Chicken and marinade"
+     },
+     {
+      "text": "750 g boneless chicken thighs"
+     },
+     {
+      "text": "3 garlic cloves, crushed"
+     },
+     {
+      "text": "⅓ cup soy sauce (regular, not dark)"
+     },
+     {
+      "text": "⅓ cup + 2 tbsp white vinegar"
+     },
+     {
+      "text": "3 bay leaves"
+     },
+     {
+      "group": "Sauce"
+     },
+     {
+      "text": "2 tbsp oil"
+     },
+     {
+      "text": "3 garlic cloves, crushed"
+     },
+     {
+      "text": "1 small onion, diced"
+     },
+     {
+      "text": "1½ cups water"
+     },
+     {
+      "text": "2 tbsp brown sugar"
+     },
+     {
+      "text": "1 tbsp whole black peppercorns (or 2 tsp cracked pepper)"
+     },
+     {
+      "text": "2 spring onions, sliced"
+     },
+     {
+      "group": "To serve"
+     },
+     {
+      "text": "1½ cups rice"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Marinate.** Mix the chicken with the marinade ingredients and leave for at least 20 minutes (or overnight in the fridge)."
+     },
+     {
+      "text": "**Sear.** Heat 1 tbsp oil in a large frying pan over high heat. Lift the chicken out of the marinade (keep the marinade) and sear for about 1 minute each side, until browned but not cooked through. Set aside."
+     },
+     {
+      "text": "**Sauce.** Heat the rest of the oil and cook the garlic and onion for 1½ minutes. Add the marinade, water, sugar and pepper. Simmer for 5 minutes."
+     },
+     {
+      "text": "**Glaze.** Return the chicken, smooth side down, and simmer uncovered for 20–25 minutes, turning it at about 15 minutes, until the sauce reduces to a thick, jam-like glaze. If it's not thick enough, lift out the chicken and boil the sauce on its own for a few minutes."
+     },
+     {
+      "text": "**Serve** the glazed chicken over rice, scattered with spring onions."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Use thighs, not breast: the fat is what turns the sauce into a glaze."
+     },
+     {
+      "text": "Rice vinegar or apple cider vinegar can stand in for white vinegar."
+     },
+     {
+      "text": "Leftover sauce is very strong: use it to flavour fried rice."
+     }
+    ]
+   },
+   {
+    "kind": "text",
+    "heading": null,
+    "text": "**Source:** https://www.recipetineats.com/filipino-chicken-adobo-flavour-kapow/RecipeTin Eats – Filipino Chicken Adobo"
+   }
+  ],
+  "id": "Stovetop-Filipino_Chicken_Adobo",
+  "file": "Stovetop/Filipino_Chicken_Adobo.tex",
+  "chapter": "stovetop",
+  "chapterName": "Stovetop",
+  "group": null,
+  "ingredients": [
+   "750 g boneless chicken thighs",
+   "3 garlic cloves, crushed",
+   "⅓ cup soy sauce (regular, not dark)",
+   "⅓ cup + 2 tbsp white vinegar",
+   "3 bay leaves",
+   "2 tbsp oil",
+   "3 garlic cloves, crushed",
+   "1 small onion, diced",
+   "1½ cups water",
+   "2 tbsp brown sugar",
+   "1 tbsp whole black peppercorns (or 2 tsp cracked pepper)",
+   "2 spring onions, sliced",
+   "1½ cups rice"
+  ],
+  "shop": [
+   {
+    "key": "chicken-thigh",
+    "name": "Chicken thighs",
+    "aisle": "Meat & fish",
+    "qty": 750.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "750 g boneless chicken thighs",
+    "g": 750.0
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 3.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "3 garlic cloves, crushed",
+    "g": 15.0
+   },
+   {
+    "key": "soy-sauce",
+    "name": "Soy sauce",
+    "aisle": "Pantry: check first",
+    "qty": 0.3333333333333333,
+    "unit": "cup",
+    "optional": false,
+    "raw": "⅓ cup soy sauce (regular, not dark)",
+    "g": 90.0
+   },
+   {
+    "key": "vinegar",
+    "name": "Vinegar",
+    "aisle": "Pantry: check first",
+    "qty": 0.3333333333333333,
+    "unit": "cup",
+    "optional": false,
+    "raw": "⅓ cup + 2 tbsp white vinegar",
+    "g": 80.0
+   },
+   {
+    "key": "bay-leaves",
+    "name": "Bay leaves",
+    "aisle": "Pantry: check first",
+    "qty": 3.0,
+    "unit": "",
+    "optional": false,
+    "raw": "3 bay leaves",
+    "g": 3.0
+   },
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp oil",
+    "g": 27.0
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 3.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "3 garlic cloves, crushed",
+    "g": 15.0
+   },
+   {
+    "key": "onion",
+    "name": "Onions",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 small onion, diced",
+    "g": 150.0
+   },
+   {
+    "key": "brown-sugar",
+    "name": "Brown sugar",
+    "aisle": "Baking",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp brown sugar",
+    "g": 26.0
+   },
+   {
+    "key": "pepper",
+    "name": "Black pepper",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp whole black peppercorns (or 2 tsp cracked pepper)",
+    "g": 15.0
+   },
+   {
+    "key": "spring-onion",
+    "name": "Spring onions",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "",
+    "optional": false,
+    "raw": "2 spring onions, sliced",
+    "g": 30.0
+   },
+   {
+    "key": "rice",
+    "name": "Rice",
+    "aisle": "Pasta, rice & grains",
+    "qty": 1.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1½ cups rice",
+    "g": 277.5
+   }
+  ],
+  "tags": [
+   "chicken"
+  ],
+  "nutrition": {
+   "kcal": 660,
+   "protein": 43,
+   "carbs": 69,
+   "fat": 22,
+   "per": "serving",
+   "count": 4
+  },
+  "diet": [
+   "freezes",
+   "dairy-free"
+  ],
+  "storage": [],
+  "minutes": 65,
+  "ahead": [],
+  "meat": "Chicken thighs",
+  "palmer": true
+ },
+ {
   "title": "Freezer Burritos with Beef, Beans & Rice",
   "servings": "4 (8 burritos)",
   "time": "40 min",
@@ -24001,6 +25797,327 @@
   "palmer": false
  },
  {
+  "title": "Kung Pao Chicken",
+  "servings": "4",
+  "time": "15 min prep + 10 min",
+  "intro": "Sichuan-style chicken with dried chillies, peanuts and a sweet, sour and savoury sauce, with the tingle of Sichuan pepper.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "group": "Sauce"
+     },
+     {
+      "text": "2 tsp cornflour"
+     },
+     {
+      "text": "1 tbsp light soy sauce"
+     },
+     {
+      "text": "1½ tbsp dark soy sauce"
+     },
+     {
+      "text": "2 tbsp Chinese black vinegar (or 1½ tbsp rice vinegar)"
+     },
+     {
+      "text": "1 tbsp Chinese cooking wine"
+     },
+     {
+      "text": "3 tbsp sugar"
+     },
+     {
+      "text": "½ tsp sesame oil"
+     },
+     {
+      "text": "⅓ cup water"
+     },
+     {
+      "group": "Stir-fry"
+     },
+     {
+      "text": "500 g boneless chicken thighs, cut into bite-sized pieces"
+     },
+     {
+      "text": "2 tbsp oil"
+     },
+     {
+      "text": "2 garlic cloves, crushed"
+     },
+     {
+      "text": "1 tsp finely chopped ginger"
+     },
+     {
+      "text": "6–10 dried chillies, cut into 2 cm pieces, most seeds removed"
+     },
+     {
+      "text": "3 spring onions, cut into 2 cm pieces, white and green parts separated"
+     },
+     {
+      "text": "1½ tsp ground Sichuan pepper"
+     },
+     {
+      "text": "¾ cup roasted unsalted peanuts"
+     },
+     {
+      "group": "To serve"
+     },
+     {
+      "text": "1½ cups rice"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Sauce.** Mix the cornflour and soy sauces until smooth, then add the rest of the sauce ingredients except the water."
+     },
+     {
+      "text": "**Marinate.** Toss the chicken with 1½ tbsp of the sauce and leave for 10–20 minutes. Add the water to the rest of the sauce."
+     },
+     {
+      "text": "**Fry.** Heat the oil in a wok over high heat. Cook the garlic, ginger and chillies for 30 seconds."
+     },
+     {
+      "text": "**Chicken.** Add the chicken and cook until white, then the white parts of the spring onions, until the chicken is cooked through (about 2 minutes)."
+     },
+     {
+      "text": "**Sauce.** Add the sauce and Sichuan pepper and stir until it reduces to a thick syrup. Toss through the peanuts and green spring onion."
+     },
+     {
+      "text": "**Serve** straight away with rice."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Adjust the heat with the number of chillies and the Sichuan pepper."
+     },
+     {
+      "text": "All-purpose soy sauce can replace both soy sauces."
+     }
+    ]
+   },
+   {
+    "kind": "text",
+    "heading": null,
+    "text": "**Source:** https://www.recipetineats.com/kung-pao-chicken/RecipeTin Eats – Kung Pao Chicken"
+   }
+  ],
+  "id": "Stovetop-Kung_Pao_Chicken",
+  "file": "Stovetop/Kung_Pao_Chicken.tex",
+  "chapter": "stovetop",
+  "chapterName": "Stovetop",
+  "group": null,
+  "ingredients": [
+   "2 tsp cornflour",
+   "1 tbsp light soy sauce",
+   "1½ tbsp dark soy sauce",
+   "2 tbsp Chinese black vinegar (or 1½ tbsp rice vinegar)",
+   "1 tbsp Chinese cooking wine",
+   "3 tbsp sugar",
+   "½ tsp sesame oil",
+   "⅓ cup water",
+   "500 g boneless chicken thighs, cut into bite-sized pieces",
+   "2 tbsp oil",
+   "2 garlic cloves, crushed",
+   "1 tsp finely chopped ginger",
+   "6–10 dried chillies, cut into 2 cm pieces, most seeds removed",
+   "3 spring onions, cut into 2 cm pieces, white and green parts separated",
+   "1½ tsp ground Sichuan pepper",
+   "¾ cup roasted unsalted peanuts",
+   "1½ cups rice"
+  ],
+  "shop": [
+   {
+    "key": "cornflour",
+    "name": "Cornflour",
+    "aisle": "Baking",
+    "qty": 2.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "2 tsp cornflour",
+    "g": 6.0
+   },
+   {
+    "key": "soy-sauce",
+    "name": "Soy sauce",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp light soy sauce",
+    "g": 18.0
+   },
+   {
+    "key": "soy-sauce",
+    "name": "Soy sauce",
+    "aisle": "Pantry: check first",
+    "qty": 1.5,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1½ tbsp dark soy sauce",
+    "g": 27.0
+   },
+   {
+    "key": "vinegar",
+    "name": "Vinegar",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp Chinese black vinegar (or 1½ tbsp rice vinegar)",
+    "g": 30.0
+   },
+   {
+    "key": "wine",
+    "name": "Wine (for cooking)",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp Chinese cooking wine",
+    "g": 15.0
+   },
+   {
+    "key": "sugar",
+    "name": "White sugar",
+    "aisle": "Baking",
+    "qty": 3.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "3 tbsp sugar",
+    "g": 39.0
+   },
+   {
+    "key": "sesame-oil",
+    "name": "Sesame oil",
+    "aisle": "Pantry: check first",
+    "qty": 0.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "½ tsp sesame oil",
+    "g": 2.2
+   },
+   {
+    "key": "chicken-thigh",
+    "name": "Chicken thighs",
+    "aisle": "Meat & fish",
+    "qty": 500.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "500 g boneless chicken thighs, cut into bite-sized pieces",
+    "g": 500.0
+   },
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp oil",
+    "g": 27.0
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "2 garlic cloves, crushed",
+    "g": 10.0
+   },
+   {
+    "key": "ginger",
+    "name": "Fresh ginger",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp finely chopped ginger",
+    "g": 2.0
+   },
+   {
+    "key": "chilli",
+    "name": "Fresh chilli",
+    "aisle": "Fruit & veg",
+    "qty": 10.0,
+    "unit": "",
+    "optional": false,
+    "raw": "6–10 dried chillies, cut into 2 cm pieces, most seeds removed",
+    "g": 100.0
+   },
+   {
+    "key": "spring-onion",
+    "name": "Spring onions",
+    "aisle": "Fruit & veg",
+    "qty": 3.0,
+    "unit": "",
+    "optional": false,
+    "raw": "3 spring onions, cut into 2 cm pieces, white and green parts separated",
+    "g": 45.0
+   },
+   {
+    "key": "sichuan-pepper",
+    "name": "Sichuan pepper",
+    "aisle": "Pantry: check first",
+    "qty": 1.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1½ tsp ground Sichuan pepper",
+    "g": 3.8
+   },
+   {
+    "key": "peanuts",
+    "name": "Peanuts",
+    "aisle": "Pantry: check first",
+    "qty": 0.75,
+    "unit": "cup",
+    "optional": false,
+    "raw": "¾ cup roasted unsalted peanuts",
+    "g": 108.8
+   },
+   {
+    "key": "rice",
+    "name": "Rice",
+    "aisle": "Pasta, rice & grains",
+    "qty": 1.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1½ cups rice",
+    "g": 277.5
+   }
+  ],
+  "tags": [
+   "chicken"
+  ],
+  "nutrition": {
+   "kcal": 740,
+   "protein": 37,
+   "carbs": 75,
+   "fat": 32,
+   "per": "serving",
+   "count": 4
+  },
+  "diet": [
+   "dairy-free",
+   "quick"
+  ],
+  "storage": [],
+  "minutes": 25,
+  "ahead": [],
+  "meat": "Chicken thighs",
+  "palmer": true
+ },
+ {
   "title": "Mapo Tofu with Pork Mince",
   "servings": "4",
   "time": "10 min prep + 15 min",
@@ -24260,6 +26377,312 @@
   "ahead": [],
   "meat": "Pork mince",
   "palmer": false
+ },
+ {
+  "title": "Middle Eastern Lamb & Lentil Rice Pilaf",
+  "servings": "4",
+  "time": "5 min prep + 15 min (plus 10 min resting)",
+  "intro": "A one-pot spiced rice with mince, lentils and spinach. Lamb is traditional; beef mince makes it cheaper.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "group": "Spice mix"
+     },
+     {
+      "text": "2 tsp ground coriander"
+     },
+     {
+      "text": "2½ tsp ground cumin"
+     },
+     {
+      "text": "½ tsp cinnamon"
+     },
+     {
+      "text": "½ tsp chilli powder (optional)"
+     },
+     {
+      "text": "1½ tsp salt"
+     },
+     {
+      "text": "½ tsp black pepper"
+     },
+     {
+      "text": "1 tsp sugar"
+     },
+     {
+      "group": "Pilaf"
+     },
+     {
+      "text": "2 tbsp olive oil"
+     },
+     {
+      "text": "1 onion, diced"
+     },
+     {
+      "text": "2 garlic cloves, crushed"
+     },
+     {
+      "text": "500 g lamb or beef mince"
+     },
+     {
+      "text": "1 cup basmati rice"
+     },
+     {
+      "text": "1½ cups water"
+     },
+     {
+      "text": "1 can (400 g) brown lentils, drained"
+     },
+     {
+      "text": "6 cups spinach or silverbeet leaves, roughly shredded"
+     },
+     {
+      "group": "To serve"
+     },
+     {
+      "text": "3 tomatoes, thickly sliced, and parsley"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Onion.** Heat the oil in a large pot (with a lid) over medium-high heat. Cook the garlic and onion for 2–3 minutes until golden."
+     },
+     {
+      "text": "**Mince.** Turn up to high, add the mince and cook, breaking it up, until browned. Add the spice mix and cook for 30 seconds."
+     },
+     {
+      "text": "**Rice.** If using silverbeet, add half now for 15 seconds. Add the rice, water and lentils and stir. Bring to a simmer, put the lid on and turn the heat to medium-low. Cook for 10–12 minutes until the water is absorbed."
+     },
+     {
+      "text": "**Rest.** Take off the heat, spread the spinach (or the rest of the silverbeet) on top, put the lid back on and rest for 10 minutes."
+     },
+     {
+      "text": "**Serve.** Stir through the greens, fluff the rice, and serve with sliced tomatoes and parsley."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Long-grain rice works instead of basmati; not arborio."
+     },
+     {
+      "text": "Crispy fried shallots from the Asian aisle are a great topping."
+     }
+    ]
+   },
+   {
+    "kind": "text",
+    "heading": null,
+    "text": "**Source:** https://www.recipetineats.com/middle-eastern-lamb-lentil-rice-pilaf/RecipeTin Eats – Middle Eastern Lamb and Lentil Rice Pilaf"
+   }
+  ],
+  "id": "Stovetop-Lamb_Lentil_Rice_Pilaf",
+  "file": "Stovetop/Lamb_Lentil_Rice_Pilaf.tex",
+  "chapter": "stovetop",
+  "chapterName": "Stovetop",
+  "group": null,
+  "ingredients": [
+   "2 tsp ground coriander",
+   "2½ tsp ground cumin",
+   "½ tsp cinnamon",
+   "½ tsp chilli powder (optional)",
+   "1½ tsp salt",
+   "½ tsp black pepper",
+   "1 tsp sugar",
+   "2 tbsp olive oil",
+   "1 onion, diced",
+   "2 garlic cloves, crushed",
+   "500 g lamb or beef mince",
+   "1 cup basmati rice",
+   "1½ cups water",
+   "1 can (400 g) brown lentils, drained",
+   "6 cups spinach or silverbeet leaves, roughly shredded",
+   "3 tomatoes, thickly sliced, and parsley"
+  ],
+  "shop": [
+   {
+    "key": "ground-coriander",
+    "name": "Ground coriander",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "2 tsp ground coriander",
+    "g": 5.0
+   },
+   {
+    "key": "cumin",
+    "name": "Ground cumin",
+    "aisle": "Pantry: check first",
+    "qty": 2.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "2½ tsp ground cumin",
+    "g": 6.2
+   },
+   {
+    "key": "cinnamon",
+    "name": "Ground cinnamon",
+    "aisle": "Pantry: check first",
+    "qty": 0.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "½ tsp cinnamon",
+    "g": 1.2
+   },
+   {
+    "key": "chilli-powder",
+    "name": "Chilli powder",
+    "aisle": "Pantry: check first",
+    "qty": 0.5,
+    "unit": "tsp",
+    "optional": true,
+    "raw": "½ tsp chilli powder (optional)",
+    "g": 1.2
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 1.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1½ tsp salt",
+    "g": 7.5
+   },
+   {
+    "key": "pepper",
+    "name": "Black pepper",
+    "aisle": "Pantry: check first",
+    "qty": 0.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "½ tsp black pepper",
+    "g": 2.5
+   },
+   {
+    "key": "sugar",
+    "name": "White sugar",
+    "aisle": "Baking",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp sugar",
+    "g": 4.0
+   },
+   {
+    "key": "olive-oil",
+    "name": "Olive oil",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp olive oil",
+    "g": 27.0
+   },
+   {
+    "key": "onion",
+    "name": "Onions",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 onion, diced",
+    "g": 150.0
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "2 garlic cloves, crushed",
+    "g": 10.0
+   },
+   {
+    "key": "beef-mince",
+    "name": "Beef mince",
+    "aisle": "Meat & fish",
+    "qty": 500.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "500 g lamb or beef mince",
+    "g": 500.0
+   },
+   {
+    "key": "basmati-rice",
+    "name": "Basmati rice",
+    "aisle": "Pasta, rice & grains",
+    "qty": 1.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1 cup basmati rice",
+    "g": 185.0
+   },
+   {
+    "key": "lentils",
+    "name": "Lentils",
+    "aisle": "Cans, jars & pulses",
+    "qty": 1.0,
+    "unit": "can",
+    "optional": false,
+    "raw": "1 can (400 g) brown lentils, drained",
+    "g": 240.0
+   },
+   {
+    "key": "spinach",
+    "name": "Baby spinach",
+    "aisle": "Fruit & veg",
+    "qty": 6.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "6 cups spinach or silverbeet leaves, roughly shredded",
+    "g": 180.0
+   },
+   {
+    "key": "tomato",
+    "name": "Tomatoes",
+    "aisle": "Fruit & veg",
+    "qty": 3.0,
+    "unit": "",
+    "optional": false,
+    "raw": "3 tomatoes, thickly sliced, and parsley",
+    "g": 360.0
+   }
+  ],
+  "tags": [
+   "beef",
+   "lamb",
+   "mince"
+  ],
+  "nutrition": {
+   "kcal": 580,
+   "protein": 36,
+   "carbs": 57,
+   "fat": 23,
+   "per": "serving",
+   "count": 4
+  },
+  "diet": [
+   "dairy-free",
+   "quick"
+  ],
+  "storage": [],
+  "minutes": 30,
+  "ahead": [],
+  "meat": "Beef mince",
+  "palmer": true
  },
  {
   "title": "Old School Beef Tacos",
@@ -30010,6 +32433,658 @@
   "palmer": false
  },
  {
+  "title": "Vietnamese Caramelised Pork Bowls",
+  "servings": "4",
+  "time": "10 min prep + 10 min",
+  "intro": "Pork mince caramelised with brown sugar and fish sauce, over rice with fresh cucumber. Quick, cheap and very moreish.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "1½ cups jasmine rice"
+     },
+     {
+      "text": "1½ tbsp oil"
+     },
+     {
+      "text": "½ onion, finely diced"
+     },
+     {
+      "text": "2 tsp grated ginger"
+     },
+     {
+      "text": "2 garlic cloves, crushed"
+     },
+     {
+      "text": "1 red chilli, deseeded and finely chopped (optional)"
+     },
+     {
+      "text": "500 g lean pork mince"
+     },
+     {
+      "text": "5 tbsp brown sugar, tightly packed"
+     },
+     {
+      "text": "2 tbsp fish sauce"
+     },
+     {
+      "text": "1 spring onion, sliced"
+     },
+     {
+      "group": "To serve"
+     },
+     {
+      "text": "1½ cups frozen shelled edamame, cooked"
+     },
+     {
+      "text": "Cucumber, carrot and tomato, cut into chunks"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Rice.** Cook the rice in a rice cooker or as the packet says."
+     },
+     {
+      "text": "**Sauté.** Heat the oil in a large frying pan over high heat. Cook the onion, ginger, garlic and chilli for 2 minutes."
+     },
+     {
+      "text": "**Pork.** Add the mince and cook for about 2 minutes, breaking it up, until white all over."
+     },
+     {
+      "text": "**Caramelise.** Add the sugar and fish sauce and stir, then leave it without touching for about 2 minutes, until the juices cook off and the pork starts to caramelise. Stir, then leave 30 seconds more. Repeat twice, until it's as caramelised as you like."
+     },
+     {
+      "text": "**Serve** over rice with the edamame and fresh veg, topped with spring onion."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Don't cut back the sugar, or the pork won't caramelise."
+     },
+     {
+      "text": "Works with chicken or beef mince too. Add a finely chopped stalk of lemongrass with the garlic for a more traditional flavour."
+     },
+     {
+      "text": "Serve sriracha on the side for extra heat."
+     }
+    ]
+   },
+   {
+    "kind": "text",
+    "heading": null,
+    "text": "**Source:** https://www.recipetineats.com/vietnamese-caramelised-pork-bowls/RecipeTin Eats – Vietnamese Caramelised Pork Bowls"
+   }
+  ],
+  "id": "Stovetop-Vietnamese_Caramelised_Pork_Bowls",
+  "file": "Stovetop/Vietnamese_Caramelised_Pork_Bowls.tex",
+  "chapter": "stovetop",
+  "chapterName": "Stovetop",
+  "group": null,
+  "ingredients": [
+   "1½ cups jasmine rice",
+   "1½ tbsp oil",
+   "½ onion, finely diced",
+   "2 tsp grated ginger",
+   "2 garlic cloves, crushed",
+   "1 red chilli, deseeded and finely chopped (optional)",
+   "500 g lean pork mince",
+   "5 tbsp brown sugar, tightly packed",
+   "2 tbsp fish sauce",
+   "1 spring onion, sliced",
+   "1½ cups frozen shelled edamame, cooked",
+   "Cucumber, carrot and tomato, cut into chunks"
+  ],
+  "shop": [
+   {
+    "key": "jasmine-rice",
+    "name": "Jasmine rice",
+    "aisle": "Pasta, rice & grains",
+    "qty": 1.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1½ cups jasmine rice",
+    "g": 277.5
+   },
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 1.5,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1½ tbsp oil",
+    "g": 20.2
+   },
+   {
+    "key": "onion",
+    "name": "Onions",
+    "aisle": "Fruit & veg",
+    "qty": 0.5,
+    "unit": "",
+    "optional": false,
+    "raw": "½ onion, finely diced",
+    "g": 75.0
+   },
+   {
+    "key": "ginger",
+    "name": "Fresh ginger",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "2 tsp grated ginger",
+    "g": 4.0
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "2 garlic cloves, crushed",
+    "g": 10.0
+   },
+   {
+    "key": "chilli",
+    "name": "Fresh chilli",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": true,
+    "raw": "1 red chilli, deseeded and finely chopped (optional)",
+    "g": 10.0
+   },
+   {
+    "key": "pork-mince",
+    "name": "Pork mince",
+    "aisle": "Meat & fish",
+    "qty": 500.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "500 g lean pork mince",
+    "g": 500.0
+   },
+   {
+    "key": "brown-sugar",
+    "name": "Brown sugar",
+    "aisle": "Baking",
+    "qty": 5.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "5 tbsp brown sugar, tightly packed",
+    "g": 65.0
+   },
+   {
+    "key": "fish-sauce",
+    "name": "Fish sauce",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp fish sauce",
+    "g": 36.0
+   },
+   {
+    "key": "spring-onion",
+    "name": "Spring onions",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 spring onion, sliced",
+    "g": 15.0
+   },
+   {
+    "key": "edamame",
+    "name": "Frozen edamame",
+    "aisle": "Frozen",
+    "qty": 1.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1½ cups frozen shelled edamame, cooked",
+    "g": 232.5
+   },
+   {
+    "key": "cucumber",
+    "name": "Cucumber",
+    "aisle": "Fruit & veg",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Cucumber, carrot and tomato, cut into chunks"
+   },
+   {
+    "key": "carrot",
+    "name": "Carrots",
+    "aisle": "Fruit & veg",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Cucumber, carrot and tomato, cut into chunks"
+   },
+   {
+    "key": "tomato",
+    "name": "Tomatoes",
+    "aisle": "Fruit & veg",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Cucumber, carrot and tomato, cut into chunks"
+   },
+   {
+    "key": "cut-into-chunks",
+    "name": "Cut into chunks",
+    "aisle": null,
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Cucumber, carrot and tomato, cut into chunks"
+   }
+  ],
+  "tags": [
+   "pork",
+   "fish",
+   "mince"
+  ],
+  "nutrition": {
+   "kcal": 710,
+   "protein": 35,
+   "carbs": 79,
+   "fat": 29,
+   "per": "serving",
+   "count": 4
+  },
+  "diet": [
+   "dairy-free",
+   "quick"
+  ],
+  "storage": [],
+  "minutes": 20,
+  "ahead": [],
+  "meat": "Pork mince",
+  "palmer": true
+ },
+ {
+  "title": "Beef Enchiladas",
+  "servings": "4",
+  "time": "10 min prep + 35 min",
+  "intro": "Beef mince and two kinds of beans rolled in tortillas, baked in a homemade enchilada sauce with melted cheese on top.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "group": "Spice mix"
+     },
+     {
+      "text": "1 tsp onion powder"
+     },
+     {
+      "text": "1 tsp garlic powder"
+     },
+     {
+      "text": "1 tbsp ground cumin"
+     },
+     {
+      "text": "1 tbsp paprika"
+     },
+     {
+      "text": "1 tbsp dried oregano"
+     },
+     {
+      "text": "½–1 tsp cayenne pepper (optional)"
+     },
+     {
+      "group": "Enchilada sauce"
+     },
+     {
+      "text": "2 tbsp olive oil"
+     },
+     {
+      "text": "3 tbsp plain flour"
+     },
+     {
+      "text": "2 cups low-sodium chicken stock"
+     },
+     {
+      "text": "1½ cups tomato passata"
+     },
+     {
+      "text": "¼ tsp salt and pepper"
+     },
+     {
+      "group": "Filling"
+     },
+     {
+      "text": "1 tbsp olive oil"
+     },
+     {
+      "text": "2 garlic cloves, crushed"
+     },
+     {
+      "text": "1 onion, finely chopped"
+     },
+     {
+      "text": "500 g beef mince"
+     },
+     {
+      "text": "1 can (400 g) refried beans"
+     },
+     {
+      "text": "1 can (400 g) black beans, drained"
+     },
+     {
+      "text": "8 tortillas"
+     },
+     {
+      "text": "1½ cups grated tasty cheese"
+     },
+     {
+      "text": "Coriander, to serve (optional)"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Spice mix.** Mix the spices together."
+     },
+     {
+      "text": "**Sauce.** Heat the oil in a saucepan over medium heat. Stir in the flour for 1 minute. Whisk in ½ cup stock until smooth and thick, then the rest of the stock, the passata, salt, pepper and 2 tbsp of the spice mix. Turn up to medium-high and whisk often for 3–5 minutes, until it's like thick syrup."
+     },
+     {
+      "text": "**Heat the oven** to 180 °C."
+     },
+     {
+      "text": "**Filling.** Heat the oil in a frying pan over high heat. Cook the garlic and onion for 2 minutes. Add the beef and cook, breaking it up, for 2 minutes, then the rest of the spice mix for 2 minutes more, until browned. Stir in both beans, about ¼ cup of the sauce, and salt and pepper, and cook 2 minutes."
+     },
+     {
+      "text": "**Roll.** Smear a little sauce over the base of a baking dish. Put filling along the lower third of each tortilla, roll up, and lay seam-side down."
+     },
+     {
+      "text": "**Bake.** Pour over the rest of the sauce and top with the cheese. Bake covered for 10 minutes, then uncovered for 10 minutes. Scatter with coriander."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Kidney beans work instead of black beans."
+     },
+     {
+      "text": "Out of onion or garlic powder? Use 3 crushed garlic cloves, fried in the oil before the flour."
+     }
+    ]
+   },
+   {
+    "kind": "text",
+    "heading": null,
+    "text": "**Source:** https://www.recipetineats.com/beef-enchiladas/RecipeTin Eats – Beef Enchiladas"
+   }
+  ],
+  "id": "Oven-Beef_Enchiladas",
+  "file": "Oven/Beef_Enchiladas.tex",
+  "chapter": "oven",
+  "chapterName": "Oven",
+  "group": null,
+  "ingredients": [
+   "1 tsp onion powder",
+   "1 tsp garlic powder",
+   "1 tbsp ground cumin",
+   "1 tbsp paprika",
+   "1 tbsp dried oregano",
+   "½–1 tsp cayenne pepper (optional)",
+   "2 tbsp olive oil",
+   "3 tbsp plain flour",
+   "2 cups low-sodium chicken stock",
+   "1½ cups tomato passata",
+   "¼ tsp salt and pepper",
+   "1 tbsp olive oil",
+   "2 garlic cloves, crushed",
+   "1 onion, finely chopped",
+   "500 g beef mince",
+   "1 can (400 g) refried beans",
+   "1 can (400 g) black beans, drained",
+   "8 tortillas",
+   "1½ cups grated tasty cheese",
+   "Coriander, to serve (optional)"
+  ],
+  "shop": [
+   {
+    "key": "onion-powder",
+    "name": "Onion powder",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp onion powder",
+    "g": 2.5
+   },
+   {
+    "key": "garlic-powder",
+    "name": "Garlic powder",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp garlic powder",
+    "g": 2.5
+   },
+   {
+    "key": "cumin",
+    "name": "Ground cumin",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp ground cumin",
+    "g": 7.0
+   },
+   {
+    "key": "paprika",
+    "name": "Paprika",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp paprika",
+    "g": 7.0
+   },
+   {
+    "key": "oregano",
+    "name": "Dried oregano",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp dried oregano",
+    "g": 7.0
+   },
+   {
+    "key": "cayenne",
+    "name": "Cayenne pepper",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": true,
+    "raw": "½–1 tsp cayenne pepper (optional)",
+    "g": 2.5
+   },
+   {
+    "key": "olive-oil",
+    "name": "Olive oil",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp olive oil",
+    "g": 27.0
+   },
+   {
+    "key": "flour",
+    "name": "Plain flour",
+    "aisle": "Baking",
+    "qty": 3.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "3 tbsp plain flour",
+    "g": 27.0
+   },
+   {
+    "key": "chicken-stock",
+    "name": "Chicken stock",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "2 cups low-sodium chicken stock",
+    "g": 500.0
+   },
+   {
+    "key": "passata",
+    "name": "Passata",
+    "aisle": "Cans, jars & pulses",
+    "qty": 1.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1½ cups tomato passata",
+    "g": 375.0
+   },
+   {
+    "key": "salt-pepper",
+    "name": "Salt and pepper",
+    "aisle": "Pantry: check first",
+    "qty": 0.25,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "¼ tsp salt and pepper",
+    "g": 1.2
+   },
+   {
+    "key": "olive-oil",
+    "name": "Olive oil",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp olive oil",
+    "g": 13.5
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "2 garlic cloves, crushed",
+    "g": 10.0
+   },
+   {
+    "key": "onion",
+    "name": "Onions",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 onion, finely chopped",
+    "g": 150.0
+   },
+   {
+    "key": "beef-mince",
+    "name": "Beef mince",
+    "aisle": "Meat & fish",
+    "qty": 500.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "500 g beef mince",
+    "g": 500.0
+   },
+   {
+    "key": "refried-beans",
+    "name": "Refried beans",
+    "aisle": null,
+    "qty": 1.0,
+    "unit": "can",
+    "optional": false,
+    "raw": "1 can (400 g) refried beans"
+   },
+   {
+    "key": "black-beans",
+    "name": "Black beans",
+    "aisle": "Cans, jars & pulses",
+    "qty": 1.0,
+    "unit": "can",
+    "optional": false,
+    "raw": "1 can (400 g) black beans, drained",
+    "g": 240.0
+   },
+   {
+    "key": "tortillas",
+    "name": "Tortillas or wraps",
+    "aisle": "Bread & wraps",
+    "qty": 8.0,
+    "unit": "",
+    "optional": false,
+    "raw": "8 tortillas",
+    "g": 320.0
+   },
+   {
+    "key": "cheese",
+    "name": "Tasty cheese",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 1.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1½ cups grated tasty cheese",
+    "g": 150.0
+   },
+   {
+    "key": "coriander",
+    "name": "Fresh coriander",
+    "aisle": "Fruit & veg",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Coriander, to serve (optional)"
+   }
+  ],
+  "tags": [
+   "beef",
+   "mince"
+  ],
+  "nutrition": {
+   "kcal": 880,
+   "protein": 49,
+   "carbs": 67,
+   "fat": 45,
+   "per": "serving",
+   "count": 4
+  },
+  "diet": [],
+  "storage": [],
+  "minutes": 45,
+  "ahead": [],
+  "meat": "Beef mince",
+  "palmer": false
+ },
+ {
   "title": "Beef Mince & Lentil Shepherd's Pie",
   "servings": "4",
   "time": "15 min prep + 50 min",
@@ -33159,6 +36234,386 @@
   "palmer": false
  },
  {
+  "title": "Nachos Pie",
+  "servings": "6",
+  "time": "10 min prep + 40 min",
+  "intro": "Layers of spicy beef and beans between tortillas, topped with corn chips and melted cheese, and served with fresh pico de gallo.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "group": "Filling"
+     },
+     {
+      "text": "1 tbsp olive oil"
+     },
+     {
+      "text": "1 onion, diced"
+     },
+     {
+      "text": "2 garlic cloves, crushed"
+     },
+     {
+      "text": "500 g lean beef mince"
+     },
+     {
+      "text": "2 tbsp taco seasoning"
+     },
+     {
+      "text": "½ tsp black pepper"
+     },
+     {
+      "text": "700 g tomato passata"
+     },
+     {
+      "text": "½ cup water"
+     },
+     {
+      "text": "1 can (400 g) kidney beans, drained"
+     },
+     {
+      "group": "Layers and topping"
+     },
+     {
+      "text": "3–4 soft tortillas"
+     },
+     {
+      "text": "70 g corn chips"
+     },
+     {
+      "text": "1 cup grated cheese"
+     },
+     {
+      "group": "Pico de gallo"
+     },
+     {
+      "text": "1 large tomato, deseeded and diced"
+     },
+     {
+      "text": "¼ red onion, diced"
+     },
+     {
+      "text": "½ avocado, diced"
+     },
+     {
+      "text": "2 tbsp lime juice"
+     },
+     {
+      "text": "3 tbsp coriander leaves"
+     },
+     {
+      "text": "½ tbsp olive oil"
+     },
+     {
+      "text": "Salt and pepper"
+     },
+     {
+      "group": "To serve"
+     },
+     {
+      "text": "Sour cream or Greek yoghurt"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Heat the oven** to 180 °C."
+     },
+     {
+      "text": "**Filling.** Heat the oil in a large frying pan over high heat. Cook the garlic and onion until translucent. Add the beef and cook, breaking it up, adding the taco seasoning and pepper halfway, until browned. Add the passata, water and beans and simmer for 5 minutes, until thickened but still saucy."
+     },
+     {
+      "text": "**Layer.** Lay a tortilla in a 24 cm pie dish. Spoon on just under half the meat with a slotted spoon, leaving most of the sauce behind. Cover with another tortilla (tear pieces to fill gaps), then the rest of the meat, then the last tortillas. Pour over all the remaining sauce."
+     },
+     {
+      "text": "**Bake** for 20 minutes (on a tray in case it bubbles over)."
+     },
+     {
+      "text": "**Top and bake.** Cover with corn chips, scatter with cheese and bake 10–15 minutes more, until golden and melted."
+     },
+     {
+      "text": "**Pico de gallo.** Toss the ingredients together and season. Serve on top of the pie, with sour cream or yoghurt on the side."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Use corn tortillas for gluten-free."
+     },
+     {
+      "text": "No taco seasoning? Mix 1 tsp onion powder, 2 tsp paprika, 1 tbsp oregano, 1 tbsp cumin and 1½ tsp salt."
+     }
+    ]
+   },
+   {
+    "kind": "text",
+    "heading": null,
+    "text": "**Source:** https://www.recipetineats.com/nachos-pie/RecipeTin Eats – Nachos Pie"
+   }
+  ],
+  "id": "Oven-Nachos_Pie",
+  "file": "Oven/Nachos_Pie.tex",
+  "chapter": "oven",
+  "chapterName": "Oven",
+  "group": null,
+  "ingredients": [
+   "1 tbsp olive oil",
+   "1 onion, diced",
+   "2 garlic cloves, crushed",
+   "500 g lean beef mince",
+   "2 tbsp taco seasoning",
+   "½ tsp black pepper",
+   "700 g tomato passata",
+   "½ cup water",
+   "1 can (400 g) kidney beans, drained",
+   "3–4 soft tortillas",
+   "70 g corn chips",
+   "1 cup grated cheese",
+   "1 large tomato, deseeded and diced",
+   "¼ red onion, diced",
+   "½ avocado, diced",
+   "2 tbsp lime juice",
+   "3 tbsp coriander leaves",
+   "½ tbsp olive oil",
+   "Salt and pepper",
+   "Sour cream or Greek yoghurt"
+  ],
+  "shop": [
+   {
+    "key": "olive-oil",
+    "name": "Olive oil",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp olive oil",
+    "g": 13.5
+   },
+   {
+    "key": "onion",
+    "name": "Onions",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 onion, diced",
+    "g": 150.0
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "2 garlic cloves, crushed",
+    "g": 10.0
+   },
+   {
+    "key": "beef-mince",
+    "name": "Beef mince",
+    "aisle": "Meat & fish",
+    "qty": 500.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "500 g lean beef mince",
+    "g": 500.0
+   },
+   {
+    "key": "taco-seasoning",
+    "name": "Taco seasoning",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2 tbsp taco seasoning",
+    "g": 16.0
+   },
+   {
+    "key": "pepper",
+    "name": "Black pepper",
+    "aisle": "Pantry: check first",
+    "qty": 0.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "½ tsp black pepper",
+    "g": 2.5
+   },
+   {
+    "key": "passata",
+    "name": "Passata",
+    "aisle": "Cans, jars & pulses",
+    "qty": 700.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "700 g tomato passata",
+    "g": 700.0
+   },
+   {
+    "key": "kidney-beans",
+    "name": "Kidney beans",
+    "aisle": "Cans, jars & pulses",
+    "qty": 1.0,
+    "unit": "can",
+    "optional": false,
+    "raw": "1 can (400 g) kidney beans, drained",
+    "g": 240.0
+   },
+   {
+    "key": "tortillas",
+    "name": "Tortillas or wraps",
+    "aisle": "Bread & wraps",
+    "qty": 4.0,
+    "unit": "",
+    "optional": false,
+    "raw": "3–4 soft tortillas",
+    "g": 160.0
+   },
+   {
+    "key": "corn-chips",
+    "name": "Corn chips",
+    "aisle": "Bread & wraps",
+    "qty": 70.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "70 g corn chips",
+    "g": 70.0
+   },
+   {
+    "key": "cheese",
+    "name": "Tasty cheese",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 1.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1 cup grated cheese",
+    "g": 100.0
+   },
+   {
+    "key": "tomato",
+    "name": "Tomatoes",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 large tomato, deseeded and diced",
+    "g": 120.0
+   },
+   {
+    "key": "red-onion",
+    "name": "Red onion",
+    "aisle": "Fruit & veg",
+    "qty": 0.25,
+    "unit": "",
+    "optional": false,
+    "raw": "¼ red onion, diced",
+    "g": 37.5
+   },
+   {
+    "key": "avocado",
+    "name": "Avocado",
+    "aisle": "Fruit & veg",
+    "qty": 0.5,
+    "unit": "",
+    "optional": false,
+    "raw": "½ avocado, diced",
+    "g": 75.0
+   },
+   {
+    "key": "lime",
+    "name": "Limes",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "2 tbsp lime juice",
+    "g": 40.0
+   },
+   {
+    "key": "coriander",
+    "name": "Fresh coriander",
+    "aisle": "Fruit & veg",
+    "qty": 3.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "3 tbsp coriander leaves",
+    "g": 6.0
+   },
+   {
+    "key": "olive-oil",
+    "name": "Olive oil",
+    "aisle": "Pantry: check first",
+    "qty": 0.5,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "½ tbsp olive oil",
+    "g": 6.8
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Salt and pepper"
+   },
+   {
+    "key": "pepper",
+    "name": "Black pepper",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Salt and pepper"
+   },
+   {
+    "key": "sour-cream",
+    "name": "Sour cream",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Sour cream or Greek yoghurt"
+   },
+   {
+    "key": "greek-yoghurt",
+    "name": "Greek yoghurt",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Sour cream or Greek yoghurt"
+   }
+  ],
+  "tags": [
+   "beef",
+   "mince"
+  ],
+  "nutrition": {
+   "kcal": 520,
+   "protein": 29,
+   "carbs": 39,
+   "fat": 26,
+   "per": "serving",
+   "count": 6
+  },
+  "diet": [],
+  "storage": [],
+  "minutes": 50,
+  "ahead": [],
+  "meat": "Beef mince",
+  "palmer": false
+ },
+ {
   "title": "One-Pan Sausage, Potato & Capsicum Bake",
   "servings": "4",
   "time": "10 min prep + 35 min",
@@ -33376,6 +36831,649 @@
   "ahead": [],
   "meat": "Sausages",
   "palmer": true
+ },
+ {
+  "title": "One-Pot Greek Chicken & Lemon Rice",
+  "servings": "5",
+  "time": "10 min prep + 50 min (plus 20 min marinating)",
+  "intro": "Lemon, garlic and oregano chicken thighs baked on top of rice, which soaks up all the juices. One pan.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "group": "Chicken and marinade"
+     },
+     {
+      "text": "1 kg bone-in chicken thighs (about 5)"
+     },
+     {
+      "text": "1–2 lemons, zested, plus 4 tbsp juice"
+     },
+     {
+      "text": "1 tbsp dried oregano"
+     },
+     {
+      "text": "4 garlic cloves, crushed"
+     },
+     {
+      "text": "½ tsp salt"
+     },
+     {
+      "group": "Rice"
+     },
+     {
+      "text": "1½ tbsp olive oil"
+     },
+     {
+      "text": "1 small onion, finely diced"
+     },
+     {
+      "text": "1 cup long-grain rice"
+     },
+     {
+      "text": "1½ cups chicken stock"
+     },
+     {
+      "text": "¾ cup water"
+     },
+     {
+      "text": "1 tbsp dried oregano"
+     },
+     {
+      "text": "¾ tsp salt"
+     },
+     {
+      "text": "Black pepper"
+     },
+     {
+      "group": "To serve"
+     },
+     {
+      "text": "Chopped parsley and lemon zest"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Marinate** the chicken with the marinade ingredients for at least 20 minutes, ideally overnight."
+     },
+     {
+      "text": "**Heat the oven** to 180 °C."
+     },
+     {
+      "text": "**Brown.** Lift the chicken out of the marinade (keep the marinade). Heat ½ tbsp oil in a deep ovenproof pan with a lid over medium-high heat. Brown the chicken, skin side first, on both sides. Set aside, pour off the fat and wipe out the pan."
+     },
+     {
+      "text": "**Rice.** Heat the rest of the oil and cook the onion for a few minutes until translucent. Add the rest of the rice ingredients and the reserved marinade. Simmer for 30 seconds."
+     },
+     {
+      "text": "**Bake.** Sit the chicken on top, put the lid on (or foil), and bake for 35 minutes. Uncover and bake 10 minutes more, until the liquid is absorbed and the rice is tender."
+     },
+     {
+      "text": "**Rest** 5–10 minutes, then serve with parsley and fresh lemon zest."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Lighter: use skinless, boneless thighs and add them 20 minutes into the bake."
+     },
+     {
+      "text": "Drumsticks work too: sear briefly and bake for the full 45 minutes."
+     }
+    ]
+   },
+   {
+    "kind": "text",
+    "heading": null,
+    "text": "**Source:** https://www.recipetineats.com/one-pot-greek-chicken-lemon-rice/RecipeTin Eats – One Pot Greek Chicken and Lemon Rice"
+   }
+  ],
+  "id": "Oven-Greek_Chicken_Lemon_Rice",
+  "file": "Oven/Greek_Chicken_Lemon_Rice.tex",
+  "chapter": "oven",
+  "chapterName": "Oven",
+  "group": null,
+  "ingredients": [
+   "1 kg bone-in chicken thighs (about 5)",
+   "1–2 lemons, zested, plus 4 tbsp juice",
+   "1 tbsp dried oregano",
+   "4 garlic cloves, crushed",
+   "½ tsp salt",
+   "1½ tbsp olive oil",
+   "1 small onion, finely diced",
+   "1 cup long-grain rice",
+   "1½ cups chicken stock",
+   "¾ cup water",
+   "1 tbsp dried oregano",
+   "¾ tsp salt",
+   "Black pepper",
+   "Chopped parsley and lemon zest"
+  ],
+  "shop": [
+   {
+    "key": "chicken-thigh",
+    "name": "Chicken thighs",
+    "aisle": "Meat & fish",
+    "qty": 1000.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "1 kg bone-in chicken thighs (about 5)",
+    "g": 1000.0
+   },
+   {
+    "key": "lemon",
+    "name": "Lemons",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1–2 lemons, zested, plus 4 tbsp juice",
+    "g": 80.0
+   },
+   {
+    "key": "oregano",
+    "name": "Dried oregano",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp dried oregano",
+    "g": 7.0
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 4.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "4 garlic cloves, crushed",
+    "g": 20.0
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 0.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "½ tsp salt",
+    "g": 2.5
+   },
+   {
+    "key": "olive-oil",
+    "name": "Olive oil",
+    "aisle": "Pantry: check first",
+    "qty": 1.5,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1½ tbsp olive oil",
+    "g": 20.2
+   },
+   {
+    "key": "onion",
+    "name": "Onions",
+    "aisle": "Fruit & veg",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 small onion, finely diced",
+    "g": 150.0
+   },
+   {
+    "key": "rice",
+    "name": "Rice",
+    "aisle": "Pasta, rice & grains",
+    "qty": 1.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1 cup long-grain rice",
+    "g": 185.0
+   },
+   {
+    "key": "chicken-stock",
+    "name": "Chicken stock",
+    "aisle": "Pantry: check first",
+    "qty": 1.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1½ cups chicken stock",
+    "g": 375.0
+   },
+   {
+    "key": "oregano",
+    "name": "Dried oregano",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp dried oregano",
+    "g": 7.0
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 0.75,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "¾ tsp salt",
+    "g": 3.8
+   },
+   {
+    "key": "pepper",
+    "name": "Black pepper",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": false,
+    "raw": "Black pepper"
+   },
+   {
+    "key": "parsley",
+    "name": "Fresh parsley",
+    "aisle": "Fruit & veg",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Chopped parsley and lemon zest"
+   },
+   {
+    "key": "lemon",
+    "name": "Lemons",
+    "aisle": "Fruit & veg",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Chopped parsley and lemon zest"
+   }
+  ],
+  "tags": [
+   "chicken"
+  ],
+  "nutrition": {
+   "kcal": 500,
+   "protein": 42,
+   "carbs": 36,
+   "fat": 21,
+   "per": "serving",
+   "count": 5
+  },
+  "diet": [
+   "dairy-free"
+  ],
+  "storage": [],
+  "minutes": 80,
+  "ahead": [
+   "Marinate the chicken with the marinade ingredients for at least 20 minutes, ideally overnight."
+  ],
+  "meat": "Chicken thighs",
+  "palmer": true
+ },
+ {
+  "title": "Oven-Baked Italian Meatballs",
+  "servings": "4",
+  "time": "20 min prep + 30 min",
+  "intro": "Soft, juicy meatballs baked on a rack over their own tomato sauce, so the juices drip into it. Serve with spaghetti.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "group": "Sauce"
+     },
+     {
+      "text": "½ onion, finely chopped"
+     },
+     {
+      "text": "2 garlic cloves, crushed"
+     },
+     {
+      "text": "1 tbsp olive oil"
+     },
+     {
+      "text": "2 cans (400 g) crushed tomatoes"
+     },
+     {
+      "text": "¾ cup chicken stock"
+     },
+     {
+      "text": "1 tsp chilli flakes (optional)"
+     },
+     {
+      "text": "2 tsp dried Italian herbs"
+     },
+     {
+      "text": "1 tsp salt and black pepper"
+     },
+     {
+      "group": "Meatballs"
+     },
+     {
+      "text": "1 cup white sandwich bread, crusts off, torn into small pieces"
+     },
+     {
+      "text": "½ onion, grated, with its juices"
+     },
+     {
+      "text": "500 g beef mince (or 400 g beef and 100 g pork)"
+     },
+     {
+      "text": "1 egg"
+     },
+     {
+      "text": "¼ cup parsley, finely chopped"
+     },
+     {
+      "text": "2 garlic cloves, crushed"
+     },
+     {
+      "text": "¼ cup grated parmesan"
+     },
+     {
+      "text": "¾ tsp salt"
+     },
+     {
+      "text": "¼ tsp black pepper"
+     },
+     {
+      "text": "Oil spray"
+     },
+     {
+      "group": "To serve"
+     },
+     {
+      "text": "350 g spaghetti, parsley and parmesan"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Heat the oven** to 180 °C."
+     },
+     {
+      "text": "**Start the sauce.** Mix the onion, garlic and oil in a baking dish about 30 × 25 cm and bake for 8 minutes. Stir in the rest of the sauce ingredients and set a wire rack over the dish."
+     },
+     {
+      "text": "**Mix the meatballs.** Turn the oven up to 200 °C. Mix the bread and grated onion in a bowl and leave 3 minutes, until the bread turns to mush (add a splash of water if needed). Add the rest of the meatball ingredients except the oil and mix well with your hands."
+     },
+     {
+      "text": "**Roll.** Roll heaped tablespoons into firm balls (about 20). Put them on the rack over the sauce and spray with oil."
+     },
+     {
+      "text": "**Bake** for 20 minutes (grill for the last 2 minutes for extra colour)."
+     },
+     {
+      "text": "**Serve.** Tip the meatballs into the sauce, stir to coat, and serve over spaghetti with parsley and parmesan."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Bread makes softer meatballs than breadcrumbs, but ½ cup panko works."
+     }
+    ]
+   },
+   {
+    "kind": "text",
+    "heading": null,
+    "text": "**Source:** https://www.recipetineats.com/oven-baked-italian-meatballs/RecipeTin Eats – Oven Baked Italian Meatballs"
+   }
+  ],
+  "id": "Oven-Italian_Meatballs_Oven_Baked",
+  "file": "Oven/Italian_Meatballs_Oven_Baked.tex",
+  "chapter": "oven",
+  "chapterName": "Oven",
+  "group": null,
+  "ingredients": [
+   "½ onion, finely chopped",
+   "2 garlic cloves, crushed",
+   "1 tbsp olive oil",
+   "2 cans (400 g) crushed tomatoes",
+   "¾ cup chicken stock",
+   "1 tsp chilli flakes (optional)",
+   "2 tsp dried Italian herbs",
+   "1 tsp salt and black pepper",
+   "1 cup white sandwich bread, crusts off, torn into small pieces",
+   "½ onion, grated, with its juices",
+   "500 g beef mince (or 400 g beef and 100 g pork)",
+   "1 egg",
+   "¼ cup parsley, finely chopped",
+   "2 garlic cloves, crushed",
+   "¼ cup grated parmesan",
+   "¾ tsp salt",
+   "¼ tsp black pepper",
+   "Oil spray",
+   "350 g spaghetti, parsley and parmesan"
+  ],
+  "shop": [
+   {
+    "key": "onion",
+    "name": "Onions",
+    "aisle": "Fruit & veg",
+    "qty": 0.5,
+    "unit": "",
+    "optional": false,
+    "raw": "½ onion, finely chopped",
+    "g": 75.0
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "2 garlic cloves, crushed",
+    "g": 10.0
+   },
+   {
+    "key": "olive-oil",
+    "name": "Olive oil",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1 tbsp olive oil",
+    "g": 13.5
+   },
+   {
+    "key": "canned-tomatoes",
+    "name": "Canned tomatoes",
+    "aisle": "Cans, jars & pulses",
+    "qty": 2.0,
+    "unit": "can",
+    "optional": false,
+    "raw": "2 cans (400 g) crushed tomatoes",
+    "g": 800.0
+   },
+   {
+    "key": "chicken-stock",
+    "name": "Chicken stock",
+    "aisle": "Pantry: check first",
+    "qty": 0.75,
+    "unit": "cup",
+    "optional": false,
+    "raw": "¾ cup chicken stock",
+    "g": 187.5
+   },
+   {
+    "key": "chilli-flakes",
+    "name": "Chilli flakes",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": true,
+    "raw": "1 tsp chilli flakes (optional)",
+    "g": 2.5
+   },
+   {
+    "key": "mixed-herbs",
+    "name": "Mixed herbs",
+    "aisle": "Pantry: check first",
+    "qty": 2.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "2 tsp dried Italian herbs",
+    "g": 5.0
+   },
+   {
+    "key": "salt-pepper",
+    "name": "Salt and pepper",
+    "aisle": "Pantry: check first",
+    "qty": 1.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "1 tsp salt and black pepper",
+    "g": 5.0
+   },
+   {
+    "key": "bread",
+    "name": "Bread",
+    "aisle": "Bread & wraps",
+    "qty": 1.0,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1 cup white sandwich bread, crusts off, torn into small pieces",
+    "g": 110.0
+   },
+   {
+    "key": "onion",
+    "name": "Onions",
+    "aisle": "Fruit & veg",
+    "qty": 0.5,
+    "unit": "",
+    "optional": false,
+    "raw": "½ onion, grated, with its juices",
+    "g": 75.0
+   },
+   {
+    "key": "beef-mince",
+    "name": "Beef mince",
+    "aisle": "Meat & fish",
+    "qty": 500.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "500 g beef mince (or 400 g beef and 100 g pork)",
+    "g": 500.0
+   },
+   {
+    "key": "eggs",
+    "name": "Eggs",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 1.0,
+    "unit": "",
+    "optional": false,
+    "raw": "1 egg",
+    "g": 55.0
+   },
+   {
+    "key": "parsley",
+    "name": "Fresh parsley",
+    "aisle": "Fruit & veg",
+    "qty": 0.25,
+    "unit": "cup",
+    "optional": false,
+    "raw": "¼ cup parsley, finely chopped",
+    "g": 60.0
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "2 garlic cloves, crushed",
+    "g": 10.0
+   },
+   {
+    "key": "parmesan",
+    "name": "Parmesan",
+    "aisle": "Dairy, eggs & chilled",
+    "qty": 0.25,
+    "unit": "cup",
+    "optional": false,
+    "raw": "¼ cup grated parmesan",
+    "g": 22.5
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 0.75,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "¾ tsp salt",
+    "g": 3.8
+   },
+   {
+    "key": "pepper",
+    "name": "Black pepper",
+    "aisle": "Pantry: check first",
+    "qty": 0.25,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "¼ tsp black pepper",
+    "g": 1.2
+   },
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": null,
+    "unit": "",
+    "optional": false,
+    "raw": "Oil spray"
+   },
+   {
+    "key": "spaghetti",
+    "name": "Spaghetti",
+    "aisle": "Pasta, rice & grains",
+    "qty": 350.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "350 g spaghetti, parsley and parmesan",
+    "g": 350.0
+   }
+  ],
+  "tags": [
+   "beef",
+   "pork",
+   "mince"
+  ],
+  "nutrition": {
+   "kcal": 770,
+   "protein": 46,
+   "carbs": 88,
+   "fat": 24,
+   "per": "serving",
+   "count": 4
+  },
+  "diet": [
+   "freezes"
+  ],
+  "storage": [],
+  "minutes": 50,
+  "ahead": [],
+  "meat": "Beef mince",
+  "palmer": false
  },
  {
   "title": "Sausage Rolls with Grated Veg",
