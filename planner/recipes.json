@@ -20678,6 +20678,287 @@
   "palmer": true
  },
  {
+  "title": "Easy Chicken Curry",
+  "servings": "4",
+  "time": "8 min prep + 20 min",
+  "intro": "A quick, mild weeknight curry: chicken thighs simmered in curry powder, coconut milk and stock, with peas stirred through at the end.",
+  "sections": [
+   {
+    "kind": "ingredients",
+    "heading": "Ingredients",
+    "items": [
+     {
+      "text": "1½ tbsp oil"
+     },
+     {
+      "text": "2 garlic cloves, crushed"
+     },
+     {
+      "text": "2 tsp grated ginger"
+     },
+     {
+      "text": "½ onion, finely chopped"
+     },
+     {
+      "text": "500 g boneless chicken thighs, sliced"
+     },
+     {
+      "text": "2½ tbsp curry powder"
+     },
+     {
+      "text": "270 ml coconut milk (full fat, or lite)"
+     },
+     {
+      "text": "1½ cups (375 ml) low-sodium chicken stock"
+     },
+     {
+      "text": "½ tsp salt"
+     },
+     {
+      "text": "¾ cup frozen peas"
+     },
+     {
+      "text": "¼ cup coriander leaves, chopped"
+     },
+     {
+      "group": "To serve"
+     },
+     {
+      "text": "Rice, noodles or mashed potato"
+     }
+    ]
+   },
+   {
+    "kind": "steps",
+    "heading": "Method",
+    "items": [
+     {
+      "text": "**Aromatics.** Heat the oil in a large frying pan over medium-high heat. Cook the garlic, ginger and onion for 3 minutes, until the onion is translucent."
+     },
+     {
+      "text": "**Chicken.** Add the chicken and cook until it changes from pink to white."
+     },
+     {
+      "text": "**Spice.** Add the curry powder and cook for 2 minutes."
+     },
+     {
+      "text": "**Simmer.** Add the coconut milk and stock and stir. Lower the heat to medium and simmer briskly for 10 minutes, until the sauce reduces and thickens."
+     },
+     {
+      "text": "**Peas.** Add the peas and salt and cook for 2 more minutes. Taste and add more salt if needed. Scatter with coriander."
+     },
+     {
+      "text": "**Serve** over rice, noodles or mashed potato."
+     }
+    ]
+   },
+   {
+    "kind": "notes",
+    "heading": "Notes",
+    "items": [
+     {
+      "text": "Boneless, skinless thighs are best: they stay juicy through the simmer."
+     },
+     {
+      "text": "More protein (for about 40 g a serve): add a drained can of chickpeas with the stock, and 1 cup frozen edamame with the peas."
+     },
+     {
+      "text": "Lite coconut milk keeps the saturated fat down; the sauce is a little thinner, so simmer a couple of minutes longer."
+     },
+     {
+      "text": "Keeps 3 days in the fridge and freezes well."
+     }
+    ]
+   },
+   {
+    "kind": "text",
+    "heading": null,
+    "text": "**Source:** https://www.recipetineats.com/chicken-curry/RecipeTin Eats – Easy Chicken Curry"
+   }
+  ],
+  "id": "Stovetop-Easy_Chicken_Curry",
+  "file": "Stovetop/Easy_Chicken_Curry.tex",
+  "chapter": "stovetop",
+  "chapterName": "Stovetop",
+  "group": null,
+  "ingredients": [
+   "1½ tbsp oil",
+   "2 garlic cloves, crushed",
+   "2 tsp grated ginger",
+   "½ onion, finely chopped",
+   "500 g boneless chicken thighs, sliced",
+   "2½ tbsp curry powder",
+   "270 ml coconut milk (full fat, or lite)",
+   "1½ cups (375 ml) low-sodium chicken stock",
+   "½ tsp salt",
+   "¾ cup frozen peas",
+   "¼ cup coriander leaves, chopped",
+   "Rice, noodles or mashed potato"
+  ],
+  "shop": [
+   {
+    "key": "oil",
+    "name": "Cooking oil",
+    "aisle": "Pantry: check first",
+    "qty": 1.5,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "1½ tbsp oil",
+    "g": 20.2
+   },
+   {
+    "key": "garlic",
+    "name": "Garlic",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "clove",
+    "optional": false,
+    "raw": "2 garlic cloves, crushed",
+    "g": 10.0
+   },
+   {
+    "key": "ginger",
+    "name": "Fresh ginger",
+    "aisle": "Fruit & veg",
+    "qty": 2.0,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "2 tsp grated ginger",
+    "g": 4.0
+   },
+   {
+    "key": "onion",
+    "name": "Onions",
+    "aisle": "Fruit & veg",
+    "qty": 0.5,
+    "unit": "",
+    "optional": false,
+    "raw": "½ onion, finely chopped",
+    "g": 75.0
+   },
+   {
+    "key": "chicken-thigh",
+    "name": "Chicken thighs",
+    "aisle": "Meat & fish",
+    "qty": 500.0,
+    "unit": "g",
+    "optional": false,
+    "raw": "500 g boneless chicken thighs, sliced",
+    "g": 500.0
+   },
+   {
+    "key": "curry-powder",
+    "name": "Curry powder",
+    "aisle": "Pantry: check first",
+    "qty": 2.5,
+    "unit": "tbsp",
+    "optional": false,
+    "raw": "2½ tbsp curry powder",
+    "g": 17.5
+   },
+   {
+    "key": "coconut-milk",
+    "name": "Coconut milk",
+    "aisle": "Cans, jars & pulses",
+    "qty": 0.5,
+    "unit": "can",
+    "optional": false,
+    "raw": "270 ml coconut milk (full fat, or lite)",
+    "g": 200.0
+   },
+   {
+    "key": "chicken-stock",
+    "name": "Chicken stock",
+    "aisle": "Pantry: check first",
+    "qty": 1.5,
+    "unit": "cup",
+    "optional": false,
+    "raw": "1½ cups (375 ml) low-sodium chicken stock",
+    "g": 375.0
+   },
+   {
+    "key": "salt",
+    "name": "Salt",
+    "aisle": "Pantry: check first",
+    "qty": 0.5,
+    "unit": "tsp",
+    "optional": false,
+    "raw": "½ tsp salt",
+    "g": 2.5
+   },
+   {
+    "key": "frozen-peas",
+    "name": "Frozen peas",
+    "aisle": "Frozen",
+    "qty": 0.75,
+    "unit": "cup",
+    "optional": false,
+    "raw": "¾ cup frozen peas",
+    "g": 105.0
+   },
+   {
+    "key": "coriander",
+    "name": "Fresh coriander",
+    "aisle": "Fruit & veg",
+    "qty": 0.25,
+    "unit": "cup",
+    "optional": false,
+    "raw": "¼ cup coriander leaves, chopped",
+    "g": 60.0
+   },
+   {
+    "key": "rice",
+    "name": "Rice",
+    "aisle": "Pasta, rice & grains",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Rice, noodles or mashed potato"
+   },
+   {
+    "key": "noodles",
+    "name": "Noodles",
+    "aisle": "Pasta, rice & grains",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Rice, noodles or mashed potato"
+   },
+   {
+    "key": "potato",
+    "name": "Potatoes",
+    "aisle": "Fruit & veg",
+    "qty": null,
+    "unit": "",
+    "optional": true,
+    "raw": "Rice, noodles or mashed potato"
+   }
+  ],
+  "tags": [
+   "chicken"
+  ],
+  "nutrition": {
+   "kcal": 370,
+   "protein": 28,
+   "carbs": 11,
+   "fat": 24,
+   "per": "serving",
+   "count": 4
+  },
+  "diet": [
+   "freezes",
+   "dairy-free",
+   "quick"
+  ],
+  "storage": [
+   "Keeps 3 days in the fridge and freezes well."
+  ],
+  "minutes": 28,
+  "ahead": [],
+  "meat": "Chicken thighs",
+  "palmer": false
+ },
+ {
   "title": "Freezer Burritos with Beef, Beans & Rice",
   "servings": "4 (8 burritos)",
   "time": "40 min",
