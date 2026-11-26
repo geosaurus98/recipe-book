@@ -179,6 +179,7 @@ CANON = [
     (r"rigatoni", "rigatoni", "Rigatoni", GRAINS),
     (r"lasagne sheets|lasagne", "lasagne-sheets", "Lasagne sheets", GRAINS),
     (r"gnocchi", "gnocchi", "Gnocchi", GRAINS),
+    (r"udon|hokkien|fresh (?:egg |white |thick )*noodle", "fresh-noodles", "Fresh noodles (udon or hokkien)", GRAINS),
     (r"noodle", "noodles", "Noodles", GRAINS),
     (r"couscous", "couscous", "Couscous", GRAINS),
     (r"quinoa", "quinoa", "Quinoa", GRAINS),
@@ -289,7 +290,7 @@ CANON_RE = [(re.compile(p, re.I), k, n, a) for p, k, n, a in CANON]
 CANNED = {"canned-tomatoes", "black-beans", "kidney-beans", "cannellini", "chickpeas",
           "coconut-milk", "coconut-cream", "baked-beans", "lentils", "tuna"}
 
-SKIP = re.compile(r"^(boiling |cold |warm |hot |lukewarm )?water\b|^ice\b|ice cubes|baking paper|toothpick|frypan|frying pan", re.I)
+SKIP = re.compile(r"^(boiling |cold |warm |hot |lukewarm )?water\b|^ice\b|ice cubes|cooking water|baking paper|toothpick|frypan|frying pan", re.I)
 
 
 def num(s):

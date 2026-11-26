@@ -89,6 +89,7 @@ NUTR = {
     "lasagne-sheets": n(355, 12.5, 71, 1.5, each=20, sheet=20),
     "gnocchi": n(155, 4, 33, 0.5),
     "noodles": n(360, 12, 70, 3, each=80, cup=100, packet=80),
+    "fresh-noodles": n(150, 5, 30, 1, packet=400, each=200),  # udon, hokkien: ready to heat
     "rice-noodles": n(360, 6, 82, 0.6),
     "couscous": n(365, 12.5, 73, 1.5, cup=175),
     "quinoa": n(370, 14, 64, 6, cup=170),

@@ -23,7 +23,7 @@ PRICES = {
     "corn": 5, "edamame": 10,
     # Pasta, rice and grains
     "rice": 3, "basmati-rice": 4, "jasmine-rice": 3.5, "brown-rice": 4,
-    "pasta": 3, "spaghetti": 3, "noodles": 6, "oats": 4, "barley": 4, "couscous": 6,
+    "pasta": 3, "spaghetti": 3, "noodles": 6, "fresh-noodles": 7, "oats": 4, "barley": 4, "couscous": 6,
     # Baking
     "flour": 2, "bread-flour": 3, "sr-flour": 3, "sugar": 2.5, "brown-sugar": 3.5,
     "caster-sugar": 3.5, "icing-sugar": 4, "cornflour": 6, "cocoa": 25,
